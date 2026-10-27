@@ -1,0 +1,4 @@
+total 12
+drwxr-xr-x 2 root root 4096 Oct 27 14:46 .
+drwxr-xr-x 3 root root 4096 Oct 27 14:45 ..
+-rw-r--r-- 1 root root  152 Oct 27 14:46 claude_desktop_config.json

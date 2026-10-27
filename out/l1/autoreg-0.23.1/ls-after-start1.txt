@@ -1,0 +1,23 @@
+~/:
+total 36
+drwx------ 1 root root 4096 Oct 27 14:43 .
+drwxr-xr-x 1 root root 4096 Oct 27 14:43 ..
+-rw-r--r-- 1 root root 3106 Apr 22  2024 .bashrc
+drwx------ 3 root root 4096 Oct 27 14:43 .cache
+drwxr-xr-x 2 root root 4096 Oct 27 14:43 .claude
+-rw-r--r-- 1 root root    3 Oct 27 14:43 .claude.json
+drwxr-xr-x 3 root root 4096 Oct 27 14:43 .config
+drwxr-xr-x 3 root root 4096 Oct 27 14:43 .local
+-rw-r--r-- 1 root root  161 Apr 22  2024 .profile
+
+~/.config/Claude/:
+total 8
+drwxr-xr-x 2 root root 4096 Oct 27 14:43 .
+drwxr-xr-x 3 root root 4096 Oct 27 14:43 ..
+total 24
+drwx------ 2 root root 4096 Oct 27 14:43 .
+drwxr-xr-x 5 root root 4096 Oct 27 14:43 ..
+-rw-r--r-- 1 root root   12 Oct 27 14:43 27878.pid
+-rw------- 1 root root   65 Oct 27 14:43 27878.token
+-rw-r--r-- 1 root root   12 Oct 27 14:43 current.pid
+-rw------- 1 root root    6 Oct 27 14:43 current.port

@@ -1,0 +1,6 @@
+6827b80cebb71c87fe8ab7f2fc0a2b2f50564952f3ae00cc169a612effc37805  /root/.config/Claude/claude_desktop_config.json
+c2bc6c3c8d03ed056ec9ca5d588cca35b8c3aa4216f3bc7cebc339e1e0b4a072  /root/.claude.json
+total 12
+drwxr-xr-x 2 root root 4096 Oct 27 14:46 .
+drwxr-xr-x 3 root root 4096 Oct 27 14:45 ..
+-rw-r--r-- 1 root root  152 Oct 27 14:46 claude_desktop_config.json

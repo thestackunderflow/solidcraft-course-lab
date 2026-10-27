@@ -1,0 +1,38 @@
+{
+ "version": "solidcraft 0.24.1",
+ "claude_desktop": {
+  "path": "~/.config/Claude/claude_desktop_config.json",
+  "exists": false,
+  "found": false,
+  "command": null,
+  "args": null,
+  "other_servers": [],
+  "problems": []
+ },
+ "claude_code": {
+  "path": "~/.claude.json",
+  "exists": true,
+  "found": false,
+  "command": null,
+  "args": null,
+  "other_servers": [],
+  "problems": []
+ },
+ "hashes": {
+  "0-before": [
+   "(none)",
+   "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  ],
+  "1-after-start1": [
+   "(none)",
+   "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  ],
+  "2-after-start2": [
+   "(none)",
+   "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  ]
+ },
+ "first_start_wrote_an_entry": false,
+ "announced_file": false,
+ "second_start_changed_files": false
+}

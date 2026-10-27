@@ -1,0 +1,6 @@
+{"t": "2026-10-27T14:45:52.929Z", "event": "A-no-claude: Help > Connect AI assistants clicked"}
+{"t": "2026-10-27T14:45:54.053Z", "event": "B: Claude Desktop and Claude Code config folders created (the apps installed)"}
+{"t": "2026-10-27T14:46:04.361Z", "event": "B-claude-installed: Help > Connect AI assistants clicked"}
+{"t": "2026-10-27T14:46:17.516Z", "event": "C: quit"}
+{"t": "2026-10-27T14:46:55.858Z", "event": "C: second start, 38 s"}
+{"t": "2026-10-27T14:47:00.848Z", "event": "D-menu-again: Help > Connect AI assistants clicked"}

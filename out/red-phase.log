@@ -1,0 +1,25 @@
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_sitecheck.py:7: in <module>
+    from sitecheck import parse  # noqa: E402
+E   ImportError: cannot import name 'parse' from 'sitecheck' (unknown location)
+______________________ ERROR collecting tests/test_stl.py ______________________
+ImportError while importing test module '/work/tests/test_stl.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_stl.py:7: in <module>
+    from checker import stl  # noqa: E402
+E   ImportError: cannot import name 'stl' from 'checker' (unknown location)
+=========================== short test summary info ============================
+ERROR tests/test_budget.py
+ERROR tests/test_client.py
+ERROR tests/test_entry.py
+ERROR tests/test_replay.py
+ERROR tests/test_sitecheck.py
+ERROR tests/test_stl.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 6 errors during collection !!!!!!!!!!!!!!!!!!!!
+6 errors in 0.38s

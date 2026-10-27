@@ -1,0 +1,1 @@
+MSYS_NO_PATHCONV=1 docker exec sc1-live-1 bash -c 'export DISPLAY=:99; xdotool mousemove 700 520; sleep 0.5; xdotool mousemove 800 600; sleep 1; import -window root /work/out/l1/runs/plug-1/turn-$1.png'

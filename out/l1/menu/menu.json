@@ -1,0 +1,72 @@
+{
+ "hashes [claude_desktop_config.json, ~/.claude.json]": {
+  "A-before": [
+   "(none)",
+   "(none)"
+  ],
+  "A-after": [
+   "(none)",
+   "(none)"
+  ],
+  "B-before": [
+   "(none)",
+   "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  ],
+  "B-after": [
+   "6827b80cebb71c87fe8ab7f2fc0a2b2f50564952f3ae00cc169a612effc37805",
+   "c2bc6c3c8d03ed056ec9ca5d588cca35b8c3aa4216f3bc7cebc339e1e0b4a072"
+  ],
+  "C-after-second-start": [
+   "6827b80cebb71c87fe8ab7f2fc0a2b2f50564952f3ae00cc169a612effc37805",
+   "c2bc6c3c8d03ed056ec9ca5d588cca35b8c3aa4216f3bc7cebc339e1e0b4a072"
+  ],
+  "D-after-menu-again": [
+   "6827b80cebb71c87fe8ab7f2fc0a2b2f50564952f3ae00cc169a612effc37805",
+   "c2bc6c3c8d03ed056ec9ca5d588cca35b8c3aa4216f3bc7cebc339e1e0b4a072"
+  ]
+ },
+ "A_menu_without_claude_wrote_files": false,
+ "B_menu_after_install_wrote_files": true,
+ "C_second_start_changed_files": false,
+ "D_menu_again_changed_files": false,
+ "backups": [
+  "claude_desktop_config.json",
+  ".claude.json",
+  ".claude.json.bak"
+ ],
+ "claude_desktop": {
+  "path": "~/.config/Claude/claude_desktop_config.json",
+  "exists": true,
+  "found": true,
+  "command": "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+  "args": [
+   "mcp"
+  ],
+  "other_servers": [],
+  "problems": [],
+  "entry": {
+   "args": [
+    "mcp"
+   ],
+   "command": "/opt/solidcraft-0.24.1/bin/solidcraft-cli"
+  }
+ },
+ "claude_code": {
+  "path": "~/.claude.json",
+  "exists": true,
+  "found": true,
+  "command": "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+  "args": [
+   "mcp"
+  ],
+  "other_servers": [],
+  "problems": [],
+  "entry": {
+   "args": [
+    "mcp"
+   ],
+   "command": "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+   "type": "stdio"
+  }
+ }
+}

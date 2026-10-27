@@ -1,0 +1,151 @@
+{
+ "replayed_from": "out/l1/runs/plug-1/transcript.jsonl",
+ "entry_command": [
+  "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+  "mcp"
+ ],
+ "calls": 3,
+ "names": [
+  "inspect_design",
+  "execute",
+  "measure"
+ ],
+ "errors": 0,
+ "solidcraft_measure_volume_mm3": 8000.0,
+ "export": {
+  "isError": false,
+  "reply": {
+   "bytes": 684,
+   "format": "StlBinary",
+   "path": "/tmp/solidcraft-mcp-165-1aa4a9d9/cube.stl"
+  }
+ },
+ "our_checker": {
+  "file": "cube.stl",
+  "triangles": 12,
+  "volume_mm3": 8000.0,
+  "outward": true,
+  "size_mm": [
+   20.0,
+   20.0,
+   20.0
+  ],
+  "min_mm": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "closed": true
+ },
+ "rows": [
+  {
+   "logged_seq": 13,
+   "name": "inspect_design",
+   "arguments": {},
+   "isError": false,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 0,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 1,
+    "selection": [],
+    "sketches": [],
+    "timeline": [],
+    "undo": 0,
+    "units": "mm"
+   }
+  },
+  {
+   "logged_seq": 15,
+   "name": "execute",
+   "arguments": {
+    "command": "solid.box",
+    "params": {
+     "length": 20,
+     "width": 20,
+     "height": 20
+    },
+    "verbose": false
+   },
+   "isError": false,
+   "reply": {
+    "changed_bodies": [],
+    "created_bodies": [
+     "Body1"
+    ],
+    "feature": 1,
+    "ms": 4.690939,
+    "name": "Box1",
+    "removed_bodies": [],
+    "warning": null
+   }
+  },
+  {
+   "logged_seq": 17,
+   "name": "measure",
+   "arguments": {
+    "body": "Body1"
+   },
+   "isError": false,
+   "reply": {
+    "bodies": [
+     {
+      "area_mm2": 2400.0,
+      "bbox": {
+       "max": [
+        20.0,
+        20.0,
+        20.0
+       ],
+       "min": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       10.0,
+       10.0,
+       10.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+       "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+       "edges": 12,
+       "faces": 6,
+       "shells": 1,
+       "vertices": 8
+      },
+      "mass_g": 10.32,
+      "material": "Default",
+      "name": "Body1",
+      "vertices": 8,
+      "volume_mm3": 8000.0
+     }
+    ],
+    "body_count": 1,
+    "total": {
+     "area_mm2": 2400.0,
+     "edges": 12,
+     "faces": 6,
+     "mass_g": 10.32,
+     "open_bodies_skipped": 0,
+     "vertices": 8,
+     "volume_mm3": 8000.0
+    }
+   }
+  }
+ ]
+}

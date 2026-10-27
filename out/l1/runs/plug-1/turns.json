@@ -1,0 +1,40 @@
+{
+ "turns": [
+  {
+   "turn": 1,
+   "message": "What's in my SolidCraft design?",
+   "start": "2026-10-27T14:50:04.027+00:00",
+   "end": "2026-10-27T14:50:12.497+00:00",
+   "result_text": "Your SolidCraft design is empty. It's an unsaved design called \"Untitled\", and it has:\n\n- no bodies\n- no sketches\n- no timeline features\n- no user parameters\n- nothing to undo or redo\n\nThe units are millimetres. If you expected something here, it may be in a file that isn't open. Give me the path and I can open it. I can also start building a part from scratch.",
+   "cost": 0.0431105,
+   "is_error": false,
+   "subtype": "success",
+   "num_turns": 2
+  },
+  {
+   "turn": 2,
+   "message": "Make a 20 mm cube in SolidCraft.",
+   "start": "2026-10-27T14:50:14.460+00:00",
+   "end": "2026-10-27T14:50:21.300+00:00",
+   "result_text": "I made a 20 \u00d7 20 \u00d7 20 mm cube. It's a single body named `Body1`, created by the feature `Box1`. I didn't measure it or check its position afterward.",
+   "cost": 0.048641300000000005,
+   "is_error": false,
+   "subtype": "success",
+   "num_turns": 2
+  },
+  {
+   "turn": 3,
+   "message": "Measure it.",
+   "start": "2026-10-27T14:50:23.291+00:00",
+   "end": "2026-10-27T14:50:33.073+00:00",
+   "result_text": "`Body1` measures as a correct 20 mm cube:\n\n- **Bounding box:** from (0, 0, 0) to (20, 20, 20) mm.\n- **Volume:** 8,000 mm\u00b3, which is 20\u00b3.\n- **Surface area:** 2,400 mm\u00b2, which is 6 \u00d7 20\u00b2.\n- **Center of mass:** (10, 10, 10).\n- **Topology:** 6 planar faces, 12 edges and 8 vertices. It is one closed shell.\n- **Mass:** 10.32 g, using the default material at 1.29 g/cm\u00b3.",
+   "cost": 0.05564080000000001,
+   "is_error": false,
+   "subtype": "success",
+   "num_turns": 2
+  }
+ ],
+ "exit": 0,
+ "cost_last": 0.05564080000000001,
+ "cost_sum": 0.147393
+}

@@ -1,0 +1,23 @@
+{
+ "mcpServers": {
+  "solidcraft": {
+   "command": "docker",
+   "args": [
+    "exec",
+    "-i",
+    "sc1-live-1",
+    "python3",
+    "/work/proxy/mcp_log_proxy.py",
+    "--log",
+    "/work/out/l1/runs/plug-1/transcript.jsonl",
+    "--png-dir",
+    "/work/out/l1/runs/plug-1",
+    "--watchdog",
+    "330",
+    "--",
+    "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+    "mcp"
+   ]
+  }
+ }
+}

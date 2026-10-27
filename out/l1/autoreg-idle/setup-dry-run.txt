@@ -1,0 +1,25 @@
+claude-desktop: would write /root/.config/Claude/claude_desktop_config.json (added solidcraft):
+{
+  "mcpServers": {
+    "solidcraft": {
+      "args": [
+        "mcp"
+      ],
+      "command": "/opt/solidcraft-0.24.1/bin/solidcraft-cli"
+    }
+  }
+}
+
+claude-code: would write /root/.claude.json (added solidcraft):
+{
+  "mcpServers": {
+    "solidcraft": {
+      "args": [
+        "mcp"
+      ],
+      "command": "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+      "type": "stdio"
+    }
+  }
+}
+

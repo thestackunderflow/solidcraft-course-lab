@@ -1,0 +1,4 @@
+solidcraft 0.24.1
+0e7dbef282b87e05c92cb6761eb63cafafbd6159e29b73b71065aa255643d5c3  /opt/solidcraft/bin/solidcraft
+559cf8419518bef01ae77ff302cd75e9d71f6e530fbec9145032c79b8f23963c  /opt/solidcraft/bin/solidcraft-cli
+bcc46c84e49dae6ae27a67cbf187fac540122954a954b7d63cf84e56fdd973bc  solidcraft-0.24.1-linux-x86_64.tar.gz

@@ -1,0 +1,796 @@
+{
+ "entry_command": [
+  "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+  "mcp"
+ ],
+ "cases": {
+  "1_app_open_first": {
+   "instructions": "SolidCraft is an independent parametric 3D CAD app, and these tools drive it: when its window is open the user watches the model appear, otherwise a headless session builds it. When asked to design or build a part (a bracket, an enclosure, a gear) do it with these tools straight away; nothing needs explaining first. Units are millimetres and degrees in expressions (internally radians), Z is up. Model like this: `sketch.create {plane: XY}`, draw (`sketch.rectangle.two_point {p0, p1}`, `sketch.circle.center {center, radius}`, `sketch.line {points, closed}`), constrain and dimension (`sketch.dimension {entities, value}`; values may name parameters), `sketch.finish`, then features (`solid.extrude {distance, operation?: new|join|cut|intersect}`, `solid.revolve`, `solid.fillet {edges: [[x,y,z] point on edge], radius}`, `solid.chamfer`, patterns, mirror, primitives). Use `batch` for several steps at once, `list_commands` for ids and parameter docs, `describe_command` for a command's schemas, `inspect_design` / `measure` to verify, `body_topology` to find edge points, `set_parameter` to drive the design and `screenshot` to look at it. A call whose error starts `still running:` was not cancelled: don't send it again; `pending` waits for its result. Backend: connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so.",
+   "tools": 19,
+   "volume_mm3": 8000.0,
+   "errors": 0
+  },
+  "3_app_closed_mid_session": {
+   "reply": "the SolidCraft app at 127.0.0.1:27878 did not answer (connection closed): it may have quit or crashed during this call, after                  running it or not. Inspect the design before sending a change again; if the app quit, start it with                  `solidcraft --control 27878`",
+   "isError": true
+  },
+  "4_app_reopened": {
+   "first_reply_isError": false,
+   "volume_mm3": 8000.0,
+   "errors": 0
+  },
+  "2_plug_started_before_app": {
+   "instructions": "SolidCraft is an independent parametric 3D CAD app, and these tools drive it: when its window is open the user watches the model appear, otherwise a headless session builds it. When asked to design or build a part (a bracket, an enclosure, a gear) do it with these tools straight away; nothing needs explaining first. Units are millimetres and degrees in expressions (internally radians), Z is up. Model like this: `sketch.create {plane: XY}`, draw (`sketch.rectangle.two_point {p0, p1}`, `sketch.circle.center {center, radius}`, `sketch.line {points, closed}`), constrain and dimension (`sketch.dimension {entities, value}`; values may name parameters), `sketch.finish`, then features (`solid.extrude {distance, operation?: new|join|cut|intersect}`, `solid.revolve`, `solid.fillet {edges: [[x,y,z] point on edge], radius}`, `solid.chamfer`, patterns, mirror, primitives). Use `batch` for several steps at once, `list_commands` for ids and parameter docs, `describe_command` for a command's schemas, `inspect_design` / `measure` to verify, `body_topology` to find edge points, `set_parameter` to drive the design and `screenshot` to look at it. A call whose error starts `still running:` was not cancelled: don't send it again; `pending` waits for its result. Backend: headless in-process SolidCraft session, because the SolidCraft app was not running when this server started; if it starts before any design work is done here, the next call is bridged to it.",
+   "first_reply": {
+    "active_sketch": null,
+    "bodies": [],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 0,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 1,
+    "selection": [],
+    "sketches": [],
+    "timeline": [],
+    "undo": 0,
+    "units": "mm"
+   },
+   "first_isError": false,
+   "volume_mm3": 8000.0,
+   "errors": 0
+  }
+ },
+ "rows": [
+  {
+   "case": "case1",
+   "tool": "inspect_design",
+   "arguments": {},
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 0,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 1,
+    "selection": [],
+    "sketches": [],
+    "timeline": [],
+    "undo": 0,
+    "units": "mm"
+   }
+  },
+  {
+   "case": "case1",
+   "tool": "batch",
+   "arguments": {
+    "commands": [
+     {
+      "command": "sketch.create",
+      "params": {
+       "plane": "XY"
+      }
+     },
+     {
+      "command": "sketch.rectangle.two_point",
+      "params": {
+       "p0": [
+        0,
+        0
+       ],
+       "p1": [
+        20,
+        20
+       ]
+      }
+     },
+     {
+      "command": "sketch.finish",
+      "params": {}
+     },
+     {
+      "command": "solid.extrude",
+      "params": {
+       "distance": 20
+      }
+     }
+    ]
+   },
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "completed": 4,
+    "ok": true,
+    "results": [
+     {
+      "attachment": "fixed",
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [],
+       "points": []
+      },
+      "name": "Sketch1",
+      "projected": null,
+      "sketch": 1
+     },
+     {
+      "constraints": [
+       "k1",
+       "k2",
+       "k3",
+       "k4",
+       "k5"
+      ],
+      "corners": {
+       "bottom_left": "p1",
+       "bottom_right": "p2",
+       "top_left": "p4",
+       "top_right": "p3"
+      },
+      "created": {
+       "constraints": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+       ],
+       "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+       ],
+       "dimensions": [],
+       "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+       ]
+      },
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4"
+      ],
+      "sides": {
+       "bottom": "l1",
+       "left": "l4",
+       "right": "l2",
+       "top": "l3"
+      },
+      "sketch": {
+       "dof": 2,
+       "solved": true
+      }
+     },
+     {
+      "profiles": 1,
+      "sketch": 1
+     },
+     {
+      "bodies": [
+       "Body1"
+      ],
+      "changed_bodies": [],
+      "created_bodies": [
+       "Body1"
+      ],
+      "feature": 2,
+      "ms": 4.446349,
+      "name": "Extrude1",
+      "removed_bodies": [],
+      "warning": null
+     }
+    ]
+   }
+  },
+  {
+   "case": "case1",
+   "tool": "measure",
+   "arguments": {},
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "bodies": [
+     {
+      "area_mm2": 2400.0,
+      "bbox": {
+       "max": [
+        20.0,
+        20.0,
+        20.0
+       ],
+       "min": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       10.0,
+       10.0,
+       10.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+       "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+       "edges": 12,
+       "faces": 6,
+       "shells": 1,
+       "vertices": 8
+      },
+      "mass_g": 10.32,
+      "material": "Default",
+      "name": "Body1",
+      "vertices": 8,
+      "volume_mm3": 8000.0
+     }
+    ],
+    "body_count": 1,
+    "total": {
+     "area_mm2": 2400.0,
+     "edges": 12,
+     "faces": 6,
+     "mass_g": 10.32,
+     "open_bodies_skipped": 0,
+     "vertices": 8,
+     "volume_mm3": 8000.0
+    }
+   }
+  },
+  {
+   "case": "case3",
+   "tool": "inspect_design",
+   "arguments": {},
+   "isError": true,
+   "seconds": 0.0,
+   "reply": "the SolidCraft app at 127.0.0.1:27878 did not answer (connection closed): it may have quit or crashed during this call, after                  running it or not. Inspect the design before sending a change again; if the app quit, start it with                  `solidcraft --control 27878`"
+  },
+  {
+   "case": "case4",
+   "tool": "inspect_design",
+   "arguments": {},
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 0,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 1,
+    "selection": [],
+    "sketches": [],
+    "timeline": [],
+    "undo": 0,
+    "units": "mm"
+   }
+  },
+  {
+   "case": "case4",
+   "tool": "batch",
+   "arguments": {
+    "commands": [
+     {
+      "command": "sketch.create",
+      "params": {
+       "plane": "XY"
+      }
+     },
+     {
+      "command": "sketch.rectangle.two_point",
+      "params": {
+       "p0": [
+        0,
+        0
+       ],
+       "p1": [
+        20,
+        20
+       ]
+      }
+     },
+     {
+      "command": "sketch.finish",
+      "params": {}
+     },
+     {
+      "command": "solid.extrude",
+      "params": {
+       "distance": 20
+      }
+     }
+    ]
+   },
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "completed": 4,
+    "ok": true,
+    "results": [
+     {
+      "attachment": "fixed",
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [],
+       "points": []
+      },
+      "name": "Sketch1",
+      "projected": null,
+      "sketch": 1
+     },
+     {
+      "constraints": [
+       "k1",
+       "k2",
+       "k3",
+       "k4",
+       "k5"
+      ],
+      "corners": {
+       "bottom_left": "p1",
+       "bottom_right": "p2",
+       "top_left": "p4",
+       "top_right": "p3"
+      },
+      "created": {
+       "constraints": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+       ],
+       "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+       ],
+       "dimensions": [],
+       "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+       ]
+      },
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4"
+      ],
+      "sides": {
+       "bottom": "l1",
+       "left": "l4",
+       "right": "l2",
+       "top": "l3"
+      },
+      "sketch": {
+       "dof": 2,
+       "solved": true
+      }
+     },
+     {
+      "profiles": 1,
+      "sketch": 1
+     },
+     {
+      "bodies": [
+       "Body1"
+      ],
+      "changed_bodies": [],
+      "created_bodies": [
+       "Body1"
+      ],
+      "feature": 2,
+      "ms": 3.835419,
+      "name": "Extrude1",
+      "removed_bodies": [],
+      "warning": null
+     }
+    ]
+   }
+  },
+  {
+   "case": "case4",
+   "tool": "measure",
+   "arguments": {},
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "bodies": [
+     {
+      "area_mm2": 2400.0,
+      "bbox": {
+       "max": [
+        20.0,
+        20.0,
+        20.0
+       ],
+       "min": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       10.0,
+       10.0,
+       10.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+       "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+       "edges": 12,
+       "faces": 6,
+       "shells": 1,
+       "vertices": 8
+      },
+      "mass_g": 10.32,
+      "material": "Default",
+      "name": "Body1",
+      "vertices": 8,
+      "volume_mm3": 8000.0
+     }
+    ],
+    "body_count": 1,
+    "total": {
+     "area_mm2": 2400.0,
+     "edges": 12,
+     "faces": 6,
+     "mass_g": 10.32,
+     "open_bodies_skipped": 0,
+     "vertices": 8,
+     "volume_mm3": 8000.0
+    }
+   }
+  },
+  {
+   "case": "case2-no-app",
+   "tool": "inspect_design",
+   "arguments": {},
+   "isError": false,
+   "seconds": 0.0,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 0,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 1,
+    "selection": [],
+    "sketches": [],
+    "timeline": [],
+    "undo": 0,
+    "units": "mm"
+   }
+  },
+  {
+   "case": "case2-app-opened",
+   "tool": "batch",
+   "arguments": {
+    "commands": [
+     {
+      "command": "sketch.create",
+      "params": {
+       "plane": "XY"
+      }
+     },
+     {
+      "command": "sketch.rectangle.two_point",
+      "params": {
+       "p0": [
+        0,
+        0
+       ],
+       "p1": [
+        20,
+        20
+       ]
+      }
+     },
+     {
+      "command": "sketch.finish",
+      "params": {}
+     },
+     {
+      "command": "solid.extrude",
+      "params": {
+       "distance": 20
+      }
+     }
+    ]
+   },
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "completed": 4,
+    "ok": true,
+    "results": [
+     {
+      "attachment": "fixed",
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [],
+       "points": []
+      },
+      "name": "Sketch1",
+      "projected": null,
+      "sketch": 1
+     },
+     {
+      "constraints": [
+       "k1",
+       "k2",
+       "k3",
+       "k4",
+       "k5"
+      ],
+      "corners": {
+       "bottom_left": "p1",
+       "bottom_right": "p2",
+       "top_left": "p4",
+       "top_right": "p3"
+      },
+      "created": {
+       "constraints": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+       ],
+       "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+       ],
+       "dimensions": [],
+       "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+       ]
+      },
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4"
+      ],
+      "sides": {
+       "bottom": "l1",
+       "left": "l4",
+       "right": "l2",
+       "top": "l3"
+      },
+      "sketch": {
+       "dof": 2,
+       "solved": true
+      }
+     },
+     {
+      "profiles": 1,
+      "sketch": 1
+     },
+     {
+      "bodies": [
+       "Body1"
+      ],
+      "changed_bodies": [],
+      "created_bodies": [
+       "Body1"
+      ],
+      "feature": 2,
+      "ms": 3.7969000000000004,
+      "name": "Extrude1",
+      "removed_bodies": [],
+      "warning": null
+     }
+    ]
+   }
+  },
+  {
+   "case": "case2-app-opened",
+   "tool": "measure",
+   "arguments": {},
+   "isError": false,
+   "seconds": 0.01,
+   "reply": {
+    "bodies": [
+     {
+      "area_mm2": 2400.0,
+      "bbox": {
+       "max": [
+        20.0,
+        20.0,
+        20.0
+       ],
+       "min": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       10.0,
+       10.0,
+       10.0
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+       "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+       "edges": 12,
+       "faces": 6,
+       "shells": 1,
+       "vertices": 8
+      },
+      "mass_g": 10.32,
+      "material": "Default",
+      "name": "Body1",
+      "vertices": 8,
+      "volume_mm3": 8000.0
+     }
+    ],
+    "body_count": 1,
+    "total": {
+     "area_mm2": 2400.0,
+     "edges": 12,
+     "faces": 6,
+     "mass_g": 10.32,
+     "open_bodies_skipped": 0,
+     "vertices": 8,
+     "volume_mm3": 8000.0
+    }
+   }
+  },
+  {
+   "case": "case2-app-opened",
+   "tool": "inspect_design",
+   "arguments": {
+    "sketches": false
+   },
+   "isError": false,
+   "seconds": 0.02,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [
+     {
+      "area_mm2": 2400.0,
+      "bbox": {
+       "max": [
+        20.0,
+        20.0,
+        20.0
+       ],
+       "min": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       10.0,
+       10.0,
+       10.0
+      ],
+      "closed": true,
+      "edges": 12,
+      "face_types": {
+       "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+       "edges": 12,
+       "faces": 6,
+       "shells": 1,
+       "vertices": 8
+      },
+      "name": "Body1",
+      "vertices": 8,
+      "visible": true,
+      "volume_mm3": 8000.0
+     }
+    ],
+    "dirty": true,
+    "hidden_origin": [],
+    "marker": 2,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 6,
+    "selection": [],
+    "sketches": [
+     {
+      "curves": 4,
+      "dof": 2,
+      "id": 1,
+      "name": "Sketch1",
+      "profiles": 1,
+      "status": "solved",
+      "visible": false
+     }
+    ],
+    "timeline": [
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 1,
+      "ms": 0.06527799999999999,
+      "name": "Sketch1",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "Sketch",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 2,
+      "ms": 3.7969000000000004,
+      "name": "Extrude1",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "ExtrudeFeature",
+      "warning": null
+     }
+    ],
+    "undo": 0,
+    "units": "mm"
+   }
+  }
+ ]
+}

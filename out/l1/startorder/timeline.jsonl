@@ -1,0 +1,17 @@
+{"t": "2026-10-27T14:47:36Z", "event": "case1: app started (no flags), light theme, New design"}
+{"t": "2026-10-27T14:47:36Z", "event": "case1: inspect_design -> ok"}
+{"t": "2026-10-27T14:47:36Z", "event": "case1: batch -> ok"}
+{"t": "2026-10-27T14:47:38Z", "event": "case1: measure -> ok"}
+{"t": "2026-10-27T14:47:48Z", "event": "case3: app closed (Ctrl+Q did not close it: TERM)"}
+{"t": "2026-10-27T14:47:50Z", "event": "case3: inspect_design -> ERROR"}
+{"t": "2026-10-27T14:48:03Z", "event": "case4: app started (no flags), light theme, New design"}
+{"t": "2026-10-27T14:48:03Z", "event": "case4: inspect_design -> ok"}
+{"t": "2026-10-27T14:48:03Z", "event": "case4: batch -> ok"}
+{"t": "2026-10-27T14:48:06Z", "event": "case4: measure -> ok"}
+{"t": "2026-10-27T14:48:16Z", "event": "case4-end: app closed (Ctrl+Q did not close it: TERM)"}
+{"t": "2026-10-27T14:48:18Z", "event": "case2-no-app: inspect_design -> ok"}
+{"t": "2026-10-27T14:48:31Z", "event": "case2: app started (no flags), light theme, New design"}
+{"t": "2026-10-27T14:48:31Z", "event": "case2-app-opened: batch -> ok"}
+{"t": "2026-10-27T14:48:34Z", "event": "case2-app-opened: measure -> ok"}
+{"t": "2026-10-27T14:48:34Z", "event": "case2-app-opened: inspect_design -> ok"}
+{"t": "2026-10-27T14:48:44Z", "event": "case2-end: app closed (Ctrl+Q did not close it: TERM)"}

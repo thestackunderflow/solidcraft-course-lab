@@ -1,0 +1,40 @@
+{
+ "replayed_from": "out/l1/runs/plug-1/transcript.jsonl",
+ "entry_command": [
+  "/opt/solidcraft-0.24.1/bin/solidcraft-cli",
+  "mcp"
+ ],
+ "calls": 3,
+ "names": [
+  "inspect_design",
+  "execute",
+  "measure"
+ ],
+ "errors": 0,
+ "solidcraft_measure_volume_mm3": 8000.0,
+ "export": {
+  "isError": false,
+  "reply": {
+   "bytes": 684,
+   "format": "StlBinary",
+   "path": "/tmp/solidcraft-mcp-165-1aa4a9d9/cube.stl"
+  }
+ },
+ "our_checker": {
+  "file": "cube.stl",
+  "triangles": 12,
+  "volume_mm3": 8000.0,
+  "outward": true,
+  "size_mm": [
+   20.0,
+   20.0,
+   20.0
+  ],
+  "min_mm": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "closed": true
+ }
+}
