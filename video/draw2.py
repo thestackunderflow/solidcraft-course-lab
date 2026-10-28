@@ -309,7 +309,7 @@ def short_assets():
     chip(d, (745, 905), 'hangs down', 52, anchor='m', bg=RED)
     save(im, 'sc2s-both.png')
     im, d = canvas(1000, 1000)
-    text(d, (500, 40), 'Same outline, top pointing down', 50, anchor='ma')
+    text(d, (500, 40), 'Same outline: one up, one down', 50, anchor='ma')
     for i, (label, flip, col) in enumerate((('by hand: picked on screen', False, GREEN), ('Claude: typed "XZ"', True, RED))):
         x0 = 60 + i * 480
         sheet(d, (x0, 160, x0 + 400, 720))
