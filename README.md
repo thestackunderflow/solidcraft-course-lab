@@ -87,6 +87,21 @@ during Claude's run and no cursor is drawn in it. Claude Code is started with `c
 permission flags (its own default mode); it gets this PC's Claude sign-in as an environment variable that never
 reaches the run folder. Keyboard input under Xvfb needs `xdotool windowfocus` first (Ctrl+Q still does not quit).
 
+## Lesson 2: what it found (27-28 Oct 2026, SolidCraft 0.25.0, Linux x86_64 in Docker)
+| # | Answer | File |
+|---|---|---|
+| L2-Q1 | The download page in a real browser offers **0.25.0**, GitHub's latest stable (read 00:05 and again 00:55 UTC on 28 Oct); curl alone sees the 0.22.0 fallback. | `out/l2/sitecheck.json`, `out/l2/recday/` |
+| L2-Q2 | The by-hand path works as filmed: New design, New Sketch, Origin > XZ (no OK needed), Line, seven typed lengths with the H/V snap and a click on the first point, Esc, Finish Sketch, Extrude (the Distance box opens at 10 mm; typed 20), the house on the view's bar, right-drag, wheel, History tooltips, right-click Body1 > Properties. Take 2 (161 s) is the one used; it is take 1 with longer holds where the narration is longer. In take 1's first try the slower pan moved 20 px less, the last line missed its snap and the volume came out 8392.7: the script now pans the same distance more slowly. | `out/l2/hand/` (events, cursor log, 1440x900 copy of the recording) |
+| L2-Q3 | By hand: **8,500.0 mm³**, 25 x 20 x 60, box z 0 to 60 (stands up), extruded toward -Y; History: Sketch1 (Sketch), Extrude1 (ExtrudeFeature); sketch fully constrained (dof 0), 8 lines, 7 dimensions, profile 425.0 mm². 0.25.0's plug offers **19 tools**. | `out/l2/hand/read.json`, `tools.json` |
+| L2-Q4 | Claude Code 2.1.311, "Sonnet 5.5 · Claude API", started in **auto mode** (its start notice): no approval was asked. Two runs. claude-2 (the one filmed): one `batch` of four commands (`sketch.create {plane: "XZ"}`, `sketch.line` with the 8 corner points and `closed: true`, `sketch.finish`, `solid.extrude {distance: 20, operation: "new"}`), then `measure`; message 2: `inspect_design`. claude-1: three `describe_command` calls first, then the same batch. Both: **8,500.0 mm³**, but **z from -60 to 0**: the sketch made through the plug on "XZ" has its up along -Z (y_dir 0,0,-1), while the XZ picked in the Browser has up +Z. Claude's own reply said so both times and offered to flip it (not tested). Its sketch: no dimensions, 14 degrees of freedom. The window drew the part with nobody touching the mouse (no input during the run). Cost $0.1413 + $0.0890 (Claude Code's /cost). | `out/l2/runs/claude-1/`, `claude-2/` |
+| L2-Q5 | **"same shape, size and steps, but upside down"**: same volume, size, corners in the sketch, steps and plane (XZ); the sketch's up is opposite. | `out/l2/compare.json` |
+| L2-Q6 | Claude's three logged calls replayed in a fresh window with no AI: 0 errors, **8,500.0 mm³**, upside down again; our STL checker on the export: closed, **8,500.0 mm³**. | `out/l2/replay.json` |
+
+Lab notes: keyboard input under Xvfb needs `xdotool windowfocus` first; without a UTF-8 locale xterm draws a minus sign
+and ³ as "_" (claude-1's terminal shows it; claude-2 runs with `LANG=C.UTF-8` and `xterm -u8`); Claude Code 2.1.311
+ends a turn with a line like "Baked for 12s · done 1:21 AM" (no "esc to interrupt" was ever sampled), which the driver
+now watches for; the input box shows Claude Code's own greyed suggestion for the next message (never sent).
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker
@@ -98,6 +113,16 @@ docker run --rm --memory 3g --shm-size 1g --network none -v "$PWD:/work" sc1-app
 bash claude-run/run.sh noplug 1 && bash claude-run/run.sh plug 1      # paid: needs Claude Code on the host
 docker run --rm --memory 3g --shm-size 1g --network none -v "$PWD:/work" sc1-app:0.24.1 bash /work/lab/replay.sh plug-1
 docker run --rm --memory 3g --shm-size 1g -v "$PWD:/work" sc1-app:0.24.1 bash /work/lab/update.sh
+# lesson 2
+docker build -t sc2-app:0.25.0 --build-arg SC_VER=0.25.0 --build-arg SC_OLD=0.24.1 -f docker/app.Dockerfile docker
+docker build -t sc2-l2:0.25.0 -f docker/l2.Dockerfile docker
+docker run --rm --memory 1g --network none -v "$PWD:/work" -w /work sc2-app:0.25.0 python3 -m pytest -q tests/
+docker run --rm --memory 2g --shm-size 1g -e LESSON=l2 -v "$PWD:/work" sc1-browser:1 bash /work/sitecheck/check.sh
+docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc2-l2:0.25.0 bash /work/lab/l2hand.sh hand
+bash claude-run/l2run.sh claude-2                                     # paid: uses this PC's Claude sign-in
+docker run --rm --network none -v "$PWD:/work" -w /work sc2-app:0.25.0 python3 lab/l2compare.py claude-2
+docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc2-l2:0.25.0 bash /work/lab/l2replay.sh claude-2
+docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw2.py   # cards (any image with PIL)
 ```
 
 ## Licence

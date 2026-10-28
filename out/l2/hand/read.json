@@ -41,6 +41,11 @@
    -1.0,
    0.0
   ],
+  "sketch_up": [
+   0.0,
+   0.0,
+   1.0
+  ],
   "corners": [
    [
     0.0,
@@ -662,7 +667,7 @@
     },
     "error": null,
     "id": 1,
-    "ms": 0.114024,
+    "ms": 0.25835600000000003,
     "name": "Sketch1",
     "rolled_back": false,
     "suppressed": false,
@@ -676,7 +681,7 @@
     },
     "error": null,
     "id": 2,
-    "ms": 4.8619259999999995,
+    "ms": 5.615374999999999,
     "name": "Extrude1",
     "rolled_back": false,
     "suppressed": false,

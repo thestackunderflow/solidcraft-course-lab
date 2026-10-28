@@ -42,23 +42,23 @@ glide 122 384 10; nap 0.5; glide 122 478 14; nap 0.5; glide 122 509 6; nap 0.5; 
 mark "$E" "axis view: the directions"
 glide 1850 262 34; nap 2.8
 mark "$E" "new sketch: XZ in the Browser"
-glide 122 540 34; nap 1.4; xdotool click 1; nap 2.5
+glide 122 540 34; nap 2.0; xdotool click 1; nap 2.5
 mark "$E" "sketch: view faces XZ"
-glide 960 620; nap 1.0
+nap 2.5; glide 960 620 30; nap 2.5
 mark "$E" "sketch: middle-drag pan"
-xdotool mousedown 2; for i in $(seq 1 20); do rel 0 19; sleep 0.035; done; xdotool mouseup 2; nap 1.0
+xdotool mousedown 2; for i in $(seq 1 20); do rel 0 19; sleep 0.1; done; xdotool mouseup 2; nap 2.0
 mark "$E" "sketch: Line tool"
 glide 155 115; nap 1.0; xdotool click 1; nap 1.2
 mark "$E" "sketch: click the origin"
 glide 960 1000; nap 1.0; xdotool click 1; nap 1.0
 focus_app
-seg() {   # seg X Y LENGTH NAME: point the way the line goes (to its end), type the length, Enter
-  glide "$1" "$2" 22; nap "${5:-0.8}"
+seg() {   # seg X Y LENGTH NAME [HOLD DELAY STEPS]: point the way the line goes, type the length, Enter
+  glide "$1" "$2" "${7:-22}"; nap "${5:-0.8}"
   mark "$E" "line: $4 type $3"
   xdotool type --delay "${6:-200}" "$3"; nap 0.6; xdotool key Return
-  mark "$E" "line: $4 placed"; nap 0.9
+  mark "$E" "line: $4 placed"; nap "${8:-0.9}"
 }
-seg 1200 1000 25 "right 25" 1.6 320
+seg 1200 1000 25 "right 25" 3.4 650 60 3.0
 seg 1200 904 10 "up 10"
 seg 1152 904 5 "left 5"
 seg 1152 952 5 "down 5"
@@ -92,7 +92,7 @@ for i in 1 2 3; do xdotool click 4; sleep 0.3; done; nap 0.8; for i in 1 2 3; do
 mark "$E" "home: the house again"
 glide 1170 1109; nap 0.6; xdotool click 1; nap 1.8
 mark "$E" "history: two chips"
-glide 271 1167; nap 1.6; glide 309 1167; nap 2.2
+glide 271 1167 24; nap 3.2; glide 309 1167 16; nap 3.6
 mark "$E" "properties: right-click Body1"
 glide 135 634; nap 1.0; xdotool click 3; nap 1.4
 glide 213 653; nap 0.8
