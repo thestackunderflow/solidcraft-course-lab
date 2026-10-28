@@ -1,0 +1,4 @@
+{"question": "Does SolidCraft 0.25.0's window repaint by itself when a command arrives through the plug (lab Xvfb display)?",
+ "how": "window open on a design; mouse still; screenshot r0; a scripted MCP client (no AI) sends execute solid.box 30x30x30; 4 s later screenshot r1 with no input; then the mouse moves 3 px and screenshot r2",
+ "result": {"r0_vs_r1_pixels_changed": 277778, "r1_vs_r2_pixels_changed": 0},
+ "answer": "yes: the box was drawn with no input; moving the mouse changed nothing more. The lesson-1 note (repaints only on input) holds for screenshots of UI-only changes, not for changes through the plug, in 0.25.0."}

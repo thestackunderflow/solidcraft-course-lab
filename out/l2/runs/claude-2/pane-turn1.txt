@@ -1,0 +1,36 @@
+▎ https://code.claude.com/docs/en/permission-m
+▎ odes
+  1 more notice hidden
+
+❯ In SolidCraft, sketch this outline on the
+  XZ plane, starting at 0,0: right 25, up 10,
+  left 5, down 5, left 15, up 55, left 5,
+  then back to the start. Extrude it 20 mm.
+
+  Called solidcraft 2 times
+
+● I sketched the outline on the XZ plane and
+  extruded it 20 mm as a new body (Body1).
+  It's a closed solid with a volume of 8,500
+  mm³, which matches the outline's 425 mm²
+  area times 20.
+
+  The path was (0,0) → (25,0) → (25,10) →
+  (20,10) → (20,5) → (5,5) → (5,60) → (0,60) →
+  back to (0,0).
+
+  - Direction: On this XZ plane, the sketch's
+    "up" runs toward −Z, so the part sits at Z
+    from −60 to 0 instead of 0 to 60. The
+    extrusion goes +Y, so Y spans 0 to 20 and
+    X spans 0 to 25.
+  - Fix if you want it: If you meant "up" as
+    world +Z, I can flip the part to sit above
+    the plane.
+
+✻ Baked for 12s · done 1:21 AM
+
+──────────────────────────────────────────────
+❯ Yes, flip it so it sits above the plane
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

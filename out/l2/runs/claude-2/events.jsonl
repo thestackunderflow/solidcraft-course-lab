@@ -1,0 +1,15 @@
+{"t": 0.503, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.57, "event": "turn 1: typing"}
+{"t": 11.217, "event": "turn 1: Enter"}
+{"t": 17.516, "event": "tool call: batch", "seq": 13}
+{"t": 17.524, "event": "tool reply: batch", "seq": 14, "isError": false}
+{"t": 19.101, "event": "tool call: measure", "seq": 15}
+{"t": 19.114, "event": "tool reply: measure", "seq": 16, "isError": false}
+{"t": 24.23, "event": "turn 1: end-of-turn line seen"}
+{"t": 26.233, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 29.238, "event": "turn 2: typing"}
+{"t": 32.25, "event": "turn 2: Enter"}
+{"t": 34.214, "event": "tool call: inspect_design", "seq": 17}
+{"t": 34.234, "event": "tool reply: inspect_design", "seq": 18, "isError": false}
+{"t": 452.416, "event": "turn 2: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": true}
+{"t": 457.944, "event": "recording stopped"}

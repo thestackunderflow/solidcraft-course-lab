@@ -1,0 +1,4 @@
+543  Window 543   Position: 0,0 (screen: 0)   Geometry: 2880x1800 
+2097154 SolidCraft Window 2097154   Position: 1150,0 (screen: 0)   Geometry: 1730x1800 
+6291486 Claude Code Window 6291486   Position: 0,0 (screen: 0)   Geometry: 1154x1768 
+6291499  Window 6291499   Position: 1,1 (screen: 0)   Geometry: 1154x1768 

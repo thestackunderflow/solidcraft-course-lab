@@ -1,0 +1,359 @@
+{
+ "replayed_from": "out/l2/runs/claude-2/transcript.jsonl",
+ "calls": 3,
+ "names": [
+  "batch",
+  "measure",
+  "inspect_design"
+ ],
+ "errors": 0,
+ "summary": {
+  "steps": [
+   "Sketch",
+   "ExtrudeFeature"
+  ],
+  "step_names": [
+   "Sketch1",
+   "Extrude1"
+  ],
+  "sketch_lines": [
+   8
+  ],
+  "profile_areas_mm2": [
+   425.0
+  ],
+  "bodies": 1,
+  "volume_mm3": 8500.0,
+  "closed": true,
+  "bbox_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "bbox_min": [
+   0.0,
+   0.0,
+   -60.0
+  ],
+  "bbox_max": [
+   25.0,
+   20.0,
+   0.0
+  ],
+  "plane_normal": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "sketch_up": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "corners": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    60.0
+   ],
+   [
+    5.0,
+    5.0
+   ],
+   [
+    5.0,
+    60.0
+   ],
+   [
+    20.0,
+    5.0
+   ],
+   [
+    20.0,
+    10.0
+   ],
+   [
+    25.0,
+    0.0
+   ],
+   [
+    25.0,
+    10.0
+   ]
+  ],
+  "errors": 0
+ },
+ "volume_matches_expected": true,
+ "export": {
+  "isError": false,
+  "reply": {
+   "bytes": 1484,
+   "format": "StlBinary",
+   "path": "/tmp/solidcraft-mcp-200-6f96678/hook.stl"
+  }
+ },
+ "our_checker": {
+  "file": "hook.stl",
+  "triangles": 28,
+  "volume_mm3": 8500.0,
+  "outward": true,
+  "size_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "min_mm": [
+   0.0,
+   0.0,
+   -60.0
+  ],
+  "closed": true
+ },
+ "rows": [
+  {
+   "logged_seq": 13,
+   "name": "batch",
+   "isError": false,
+   "reply": {
+    "completed": 4,
+    "ok": true,
+    "results": [
+     {
+      "attachment": "fixed",
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [],
+       "points": []
+      },
+      "name": "Sketch1",
+      "projected": null,
+      "sketch": 1
+     },
+     {
+      "constraints": [
+       "k1"
+      ],
+      "created": {
+       "constraints": [
+        "k1"
+       ],
+       "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6",
+        "l7",
+        "l8"
+       ],
+       "dimensions": [],
+       "points": [
+        "l1.start",
+        "l1.end",
+        "l2.end",
+        "l3.end",
+        "l4.end",
+        "l5.end",
+        "l6.end",
+        "l7.end"
+       ]
+      },
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4",
+       "l5",
+       "l6",
+       "l7",
+       "l8"
+      ],
+      "sketch": {
+       "dof": 14,
+       "solved": true
+      }
+     },
+     {
+      "profiles": 1,
+      "sketch": 1
+     },
+     {
+      "bodies": [
+       "Body1"
+      ],
+      "changed_bodies": [],
+      "created_bodies": [
+       "Body1"
+      ],
+      "feature": 2,
+      "ms": 4.619835,
+      "name": "Extrude1",
+      "removed_bodies": [],
+      "warning": null
+     }
+    ]
+   }
+  },
+  {
+   "logged_seq": 15,
+   "name": "measure",
+   "isError": false,
+   "reply": {
+    "bodies": [
+     {
+      "area_mm2": 4450.0,
+      "bbox": {
+       "max": [
+        25.0,
+        20.0,
+        0.0
+       ],
+       "min": [
+        0.0,
+        0.0,
+        -60.0
+       ]
+      },
+      "center_of_mass": [
+       6.617647058823529,
+       10.0,
+       -22.205882352941178
+      ],
+      "closed": true,
+      "density_g_cm3": 1.29,
+      "edges": 24,
+      "face_types": {
+       "plane": 10
+      },
+      "faces": 10,
+      "kernel": {
+       "edges": 24,
+       "faces": 10,
+       "shells": 1,
+       "vertices": 16
+      },
+      "mass_g": 10.965,
+      "material": "Default",
+      "name": "Body1",
+      "vertices": 16,
+      "volume_mm3": 8500.0
+     }
+    ],
+    "body_count": 1,
+    "total": {
+     "area_mm2": 4450.0,
+     "edges": 24,
+     "faces": 10,
+     "mass_g": 10.965,
+     "open_bodies_skipped": 0,
+     "vertices": 16,
+     "volume_mm3": 8500.0
+    }
+   }
+  },
+  {
+   "logged_seq": 17,
+   "name": "inspect_design",
+   "isError": false,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [
+     {
+      "area_mm2": 4450.0,
+      "bbox": {
+       "max": [
+        25.0,
+        20.0,
+        0.0
+       ],
+       "min": [
+        0.0,
+        0.0,
+        -60.0
+       ]
+      },
+      "center_of_mass": [
+       6.617647058823529,
+       10.0,
+       -22.205882352941178
+      ],
+      "closed": true,
+      "edges": 24,
+      "face_types": {
+       "plane": 10
+      },
+      "faces": 10,
+      "kernel": {
+       "edges": 24,
+       "faces": 10,
+       "shells": 1,
+       "vertices": 16
+      },
+      "name": "Body1",
+      "vertices": 16,
+      "visible": true,
+      "volume_mm3": 8500.0
+     }
+    ],
+    "dirty": true,
+    "hidden_origin": [],
+    "marker": 2,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 6,
+    "selection": [],
+    "sketches": [
+     {
+      "curves": 8,
+      "dof": 14,
+      "id": 1,
+      "name": "Sketch1",
+      "profiles": 1,
+      "status": "solved",
+      "visible": false
+     }
+    ],
+    "timeline": [
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 1,
+      "ms": 0.06586499999999999,
+      "name": "Sketch1",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "Sketch",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 2,
+      "ms": 4.619835,
+      "name": "Extrude1",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "ExtrudeFeature",
+      "warning": null
+     }
+    ],
+    "undo": 0,
+    "units": "mm"
+   }
+  }
+ ]
+}

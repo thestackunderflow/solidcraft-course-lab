@@ -2,6 +2,7 @@
 
 The 27 Oct 2026 GO ("GO SolidCraft course episode 1") set a $1.00 cap for everything logged below the line that
 starts with "# --- GO 27 Oct 2026". Paid runs stop at $0.90.
+Each later lesson has its own GO line and cap: BUDGET_MARK="# --- GO 27 Oct 2026 L2" counts only lesson 2's rows.
 
     python budget.py check  LEDGER RUN_CAP [STOP_AT]      exit 0 = may start, 2 = stop
     python budget.py record LEDGER RUN COST_OR_EMPTY RUN_CAP LAB   (empty cost = a killed run, counted at RUN_CAP)
@@ -14,13 +15,14 @@ MARK = '# --- GO 27 Oct 2026'
 STOP_AT = 0.90
 
 
-def total(path):
+def total(path, mark=None):
+    mark = mark or os.environ.get('BUDGET_MARK') or MARK
     if not os.path.exists(path):
         return 0.0
     s, on = 0.0, False
     with open(path, encoding='utf-8') as f:
         for line in f:
-            if line.startswith(MARK):
+            if line.startswith(mark):
                 on = True
                 continue
             if not on or line.startswith('#') or not line.strip():

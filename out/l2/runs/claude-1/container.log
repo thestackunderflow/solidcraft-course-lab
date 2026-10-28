@@ -1,0 +1,104 @@
+{
+ "summary": {
+  "steps": [
+   "Sketch",
+   "ExtrudeFeature"
+  ],
+  "step_names": [
+   "Sketch1",
+   "Extrude1"
+  ],
+  "sketch_lines": [
+   8
+  ],
+  "profile_areas_mm2": [
+   425.0
+  ],
+  "bodies": 1,
+  "volume_mm3": 8500.0,
+  "closed": true,
+  "bbox_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "bbox_min": [
+   0.0,
+   0.0,
+   -60.0
+  ],
+  "bbox_max": [
+   25.0,
+   20.0,
+   0.0
+  ],
+  "plane_normal": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "corners": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    60.0
+   ],
+   [
+    5.0,
+    5.0
+   ],
+   [
+    5.0,
+    60.0
+   ],
+   [
+    20.0,
+    5.0
+   ],
+   [
+    20.0,
+    10.0
+   ],
+   [
+    25.0,
+    0.0
+   ],
+   [
+    25.0,
+    10.0
+   ]
+  ],
+  "errors": 0
+ },
+ "sketch": {
+  "fully_constrained": false,
+  "dof": 14,
+  "dimensions": 0,
+  "constraints": 1,
+  "plane": {
+   "origin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "x_dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ }
+}
+app still running after Ctrl+Q: TERM

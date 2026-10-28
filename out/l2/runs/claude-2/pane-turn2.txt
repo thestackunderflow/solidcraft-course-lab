@@ -1,0 +1,36 @@
+
+❯ Measure it, and list the steps in its
+  timeline.
+
+  Called solidcraft
+
+● Measurements (Body1)
+  - Volume: 8,500 mm³
+  - Surface area: 4,450 mm²
+  - Mass: about 10.97 g (default material,
+    1.29 g/cm³)
+  - Bounding box: X 0 to 25, Y 0 to 20, Z −60
+    to 0 (so 25 × 20 × 60 mm)
+  - Center of mass: (6.62, 10.0, −22.21)
+  - Topology: 10 planar faces, 24 edges, 16
+    vertices, one closed shell
+
+  Timeline
+  1. Sketch1 (Sketch) on the XZ plane, with 8
+     lines forming 1 closed profile. It's
+     solved but still has 14 degrees of
+     freedom, because I added no dimensions or
+     constraints beyond the line coordinates.
+  2. Extrude1 (ExtrudeFeature), 20 mm, new
+     body.
+
+  Neither step has errors, warnings, or
+  suppression. The design is unsaved, and its
+  name is still "Untitled".
+
+✻ Cooked for 4s · done 1:21 AM
+
+──────────────────────────────────────────────
+❯ flip it so it sits above the plane
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

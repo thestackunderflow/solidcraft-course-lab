@@ -60,6 +60,33 @@ Lab notes: Ctrl+Q did not close the window under Xvfb (the scripts then stop the
 Crash Reports dialog, as in `startorder/case4-after-cube.png`). The window repaints only on input, so the scripts move
 the mouse before every screenshot. The light theme is set over the control channel (`ui.prefs`).
 
+## Lesson 2: what the lab must show (written before the recorded runs)
+"SolidCraft Tutorial for Beginners: Sketch a 3D Part by Hand vs Claude | SolidCraft + Claude Course 2". **Pinned
+build: SolidCraft 0.25.0** (the stable release on GitHub on the lab's start day, 27 Oct 2026, published 22:53 UTC; it
+writes design format 41, which 0.24.1 refuses). Claude Code 2.1.311 with Claude Sonnet 5.5. Images `sc2-app:0.25.0`
+(`docker/app.Dockerfile` with `SC_VER=0.25.0 SC_OLD=0.24.1`) and `sc2-l2:0.25.0` (`docker/l2.Dockerfile`: xterm,
+tmux, a large cursor theme, Claude Code).
+
+The part: a wall hook's side outline, a J (back plate 60 tall and 5 thick, hook arm 25 deep, lip 10 high, all 5 thick)
+on the front plane XZ, extruded 20. Worked out without SolidCraft (`checker/outline.py`, tested): area 425 mm²,
+volume 8,500 mm³, outside size 25 x 20 x 60.
+
+| # | Question | How it is measured | Answer file |
+|---|---|---|---|
+| L2-Q1 | Which version does the download page offer? | `sitecheck/check.sh` with `LESSON=l2` (and again on recording day, `l2/recday`) | `out/l2/sitecheck.json` |
+| L2-Q2 | Does the by-hand path work as the lesson says? | `lab/l2hand.sh`: the real window at 2880x1800 (UI scale 1.8), filmed at 30 fps with a cursor log; xdotool moves, clicks and typed numbers only (no control channel or MCP until the recording stops) | `out/l2/hand/` |
+| L2-Q3 | What does SolidCraft report for the hand-made part? | after Q2, a scripted MCP client (no AI) over the entry `solidcraft-cli mcp setup` wrote: `tools/list`, `inspect_design`, `measure` | `out/l2/hand/read.json`, `tools.json` |
+| L2-Q4 | What does Claude do with the same moves? | `claude-run/l2run.sh` + `lab/l2claude.sh` + `lab/l2drive.py`: one Claude Code session in its real terminal (xterm + tmux) beside the window, filmed; two messages typed into it; approvals answered with their "Yes" if asked; the entry wrapped in the logging proxy | `out/l2/runs/claude-1/` |
+| L2-Q5 | Same part? | `lab/l2compare.py`: steps, volume, profile area, plane, corner points, size; position reported apart | `out/l2/compare.json` |
+| L2-Q6 | Is Claude's result real? | `lab/l2replay.sh`: Claude's logged calls replayed in a fresh window, no AI; measure; our STL checker | `out/l2/replay.json` |
+
+How it is filmed, said plainly: the by-hand clicks are played by a script (xdotool) into the real SolidCraft window at
+a person's pace, so the footage shows exactly the clicks a person makes. A $0 probe found that a change sent through
+the plug repaints the window with no mouse input in 0.25.0 (`out/l2/probe/repaint.json`), so nobody touches the mouse
+during Claude's run and no cursor is drawn in it. Claude Code is started with `claude --model claude-sonnet-5-5` and no
+permission flags (its own default mode); it gets this PC's Claude sign-in as an environment variable that never
+reaches the run folder. Keyboard input under Xvfb needs `xdotool windowfocus` first (Ctrl+Q still does not quit).
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker

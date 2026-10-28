@@ -1,0 +1,239 @@
+{
+ "same_steps": true,
+ "same_volume": true,
+ "volume_matches_expected": true,
+ "same_profile_area": true,
+ "same_plane": true,
+ "same_up": false,
+ "opposite_up": true,
+ "same_corners": true,
+ "same_size": true,
+ "same_place": false,
+ "hand_volume_mm3": 8500.0,
+ "claude_volume_mm3": 8500.0,
+ "expected_volume_mm3": 8500.0,
+ "hand_steps": [
+  "Sketch",
+  "ExtrudeFeature"
+ ],
+ "claude_steps": [
+  "Sketch",
+  "ExtrudeFeature"
+ ],
+ "same_shape": true,
+ "verdict": "same shape, size and steps, but upside down",
+ "hand_sketch": {
+  "fully_constrained": true,
+  "dof": 0,
+  "dimensions": 7,
+  "constraints": 15,
+  "plane": {
+   "origin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "x_dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_dir": [
+    -0.0,
+    -0.0,
+    1.0
+   ]
+  }
+ },
+ "claude_sketch": {
+  "fully_constrained": false,
+  "dof": 14,
+  "dimensions": 0,
+  "constraints": 1,
+  "plane": {
+   "origin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "x_dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ },
+ "expected": {
+  "area_mm2": 425.0,
+  "width_mm": 20.0,
+  "volume_mm3": 8500.0,
+  "bbox_mm": [
+   25.0,
+   20.0,
+   60.0
+  ]
+ },
+ "hand_summary": {
+  "steps": [
+   "Sketch",
+   "ExtrudeFeature"
+  ],
+  "step_names": [
+   "Sketch1",
+   "Extrude1"
+  ],
+  "sketch_lines": [
+   8
+  ],
+  "profile_areas_mm2": [
+   425.0
+  ],
+  "bodies": 1,
+  "volume_mm3": 8500.0,
+  "closed": true,
+  "bbox_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "bbox_min": [
+   0.0,
+   -20.0,
+   0.0
+  ],
+  "bbox_max": [
+   25.0,
+   0.0,
+   60.0
+  ],
+  "plane_normal": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "sketch_up": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "corners": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    60.0
+   ],
+   [
+    5.0,
+    5.0
+   ],
+   [
+    5.0,
+    60.0
+   ],
+   [
+    20.0,
+    5.0
+   ],
+   [
+    20.0,
+    10.0
+   ],
+   [
+    25.0,
+    0.0
+   ],
+   [
+    25.0,
+    10.0
+   ]
+  ],
+  "errors": 0
+ },
+ "claude_summary": {
+  "steps": [
+   "Sketch",
+   "ExtrudeFeature"
+  ],
+  "step_names": [
+   "Sketch1",
+   "Extrude1"
+  ],
+  "sketch_lines": [
+   8
+  ],
+  "profile_areas_mm2": [
+   425.0
+  ],
+  "bodies": 1,
+  "volume_mm3": 8500.0,
+  "closed": true,
+  "bbox_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "bbox_min": [
+   0.0,
+   0.0,
+   -60.0
+  ],
+  "bbox_max": [
+   25.0,
+   20.0,
+   0.0
+  ],
+  "plane_normal": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "sketch_up": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "corners": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    60.0
+   ],
+   [
+    5.0,
+    5.0
+   ],
+   [
+    5.0,
+    60.0
+   ],
+   [
+    20.0,
+    5.0
+   ],
+   [
+    20.0,
+    10.0
+   ],
+   [
+    25.0,
+    0.0
+   ],
+   [
+    25.0,
+    10.0
+   ]
+  ],
+  "errors": 0
+ }
+}

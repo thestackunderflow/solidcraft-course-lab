@@ -1,0 +1,47 @@
+{"t": 0.502, "event": "recording started: the start page"}
+{"t": 2.508, "event": "start page: New design (millimetres)"}
+{"t": 9.699, "event": "window: held for the five areas"}
+{"t": 16.704, "event": "new sketch: Model tab"}
+{"t": 19.564, "event": "new sketch: hover New Sketch"}
+{"t": 23.659, "event": "new sketch: the plane panel"}
+{"t": 26.745, "event": "browser: open Origin"}
+{"t": 34.953, "event": "axis view: the directions"}
+{"t": 39.013, "event": "new sketch: XZ in the Browser"}
+{"t": 44.249, "event": "sketch: view faces XZ"}
+{"t": 45.908, "event": "sketch: middle-drag pan"}
+{"t": 47.804, "event": "sketch: Line tool"}
+{"t": 50.766, "event": "sketch: click the origin"}
+{"t": 55.933, "event": "line: right 25 type 25"}
+{"t": 56.879, "event": "line: right 25 placed"}
+{"t": 59.385, "event": "line: up 10 type 10"}
+{"t": 60.214, "event": "line: up 10 placed"}
+{"t": 62.726, "event": "line: left 5 type 5"}
+{"t": 63.464, "event": "line: left 5 placed"}
+{"t": 65.979, "event": "line: down 5 type 5"}
+{"t": 66.703, "event": "line: down 5 placed"}
+{"t": 69.215, "event": "line: left 15 type 15"}
+{"t": 70.047, "event": "line: left 15 placed"}
+{"t": 72.547, "event": "line: up 55 type 55"}
+{"t": 73.372, "event": "line: up 55 placed"}
+{"t": 75.875, "event": "line: left 5 type 5"}
+{"t": 76.610, "event": "line: left 5 placed"}
+{"t": 77.526, "event": "line: close on the first point"}
+{"t": 80.329, "event": "line: Esc puts the Line tool down"}
+{"t": 81.952, "event": "sketch: closed, fully constrained"}
+{"t": 85.017, "event": "finish sketch"}
+{"t": 88.784, "event": "extrude: Model tab, Extrude"}
+{"t": 95.446, "event": "extrude: the panel"}
+{"t": 99.190, "event": "extrude: type 20"}
+{"t": 100.718, "event": "extrude: OK"}
+{"t": 104.286, "event": "home: the 3D hook"}
+{"t": 109.352, "event": "home: right-drag turns"}
+{"t": 111.800, "event": "home: wheel zooms"}
+{"t": 115.850, "event": "home: the house again"}
+{"t": 119.037, "event": "history: two chips"}
+{"t": 124.209, "event": "properties: right-click Body1"}
+{"t": 128.843, "event": "properties: open"}
+{"t": 130.150, "event": "properties: drag the panel aside"}
+{"t": 132.775, "event": "properties: volume row"}
+{"t": 135.769, "event": "properties: bounding box row"}
+{"t": 138.617, "event": "properties: close"}
+{"t": 143.150, "event": "recording stopped"}

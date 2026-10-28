@@ -1,0 +1,36 @@
+
+✻ Cooked for 4s · done 1:21 AM
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+   Settings  Status   Config   Usage
+    Stats
+
+   Session
+
+   Total cost:            $0.0890
+   Total duration (API):  21s
+   Total duration (wall): 7m 52s
+   Total code changes:    0 lines added, 0
+   lines removed
+   Usage by model:
+       claude-haiku-5-5:  1.2k input, 342
+   output, 0 cache read, 0 cache write
+   ($0.0003)
+      claude-sonnet-5-5:  1.0k input, 1.5k
+   output, 280.4k cache read, 10.9k cache
+   write ($0.0887)
+   Prompt cache (main):   6 requests · 95%
+   of input tokens from cache · no misses ·
+   warm (1h TTL, last activity 7m 2s ago)
+
+   What's contributing to your limits
+   usage?
+   Approximate · sessions on this machine
+   only
+
+   Last 24h · shares overlap
+
+   44%  Turn off solidcraft when you don't
+        need it
+
+   MCP servers             % of usage
+   solidcraft                     44%       ↓

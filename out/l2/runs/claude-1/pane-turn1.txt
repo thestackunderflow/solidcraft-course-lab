@@ -1,0 +1,36 @@
+▎ odes
+  1 more notice hidden
+
+❯ In SolidCraft, sketch this outline on the
+  XZ plane, starting at 0,0: right 25, up 10,
+  left 5, down 5, left 15, up 55, left 5,
+  then back to the start. Extrude it 20 mm.
+
+  Called solidcraft 5 times
+
+● I sketched the outline on the XZ plane and
+  extruded it 20 mm. The result is one closed
+  solid, Body1, with a volume of 8,500 mm³.
+  That is a 425 mm² profile times 20 mm.
+
+  The sketch is a closed loop through these
+  points: (0,0), (25,0), (25,10), (20,10),
+  (20,5), (5,5), (5,60), (0,60), then back to
+  (0,0).
+
+  SolidCraft's XZ sketch plane maps the
+  sketch's "up" (+Y) to world −Z, so the part
+  hangs below the XY plane. The bounding box
+  is X 0 to 25, Y 0 to 20 and Z −60 to 0. The
+  extrusion runs along +Y.
+
+  If you meant "up" as world +Z, I can redo
+  the sketch flipped so the part rises from Z
+  = 0 to 60.
+
+✻ Baked for 13s · done 1:03 AM
+
+──────────────────────────────────────────────
+❯ Yes, flip it so it goes up in +Z
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

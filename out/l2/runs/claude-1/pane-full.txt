@@ -1,0 +1,36 @@
+  │            │ material, 1.29 g/cm³)    │
+  ├────────────┼──────────────────────────┤
+  │ Bounding   │ X 0 to 25, Y 0 to 20, Z  │
+  │ box        │ −60 to 0                 │
+  ├────────────┼──────────────────────────┤
+  │ Center of  │ (6.62, 10.0, −22.21)     │
+  │ mass       │                          │
+  ├────────────┼──────────────────────────┤
+  │            │ 10 planar faces, 24      │
+  │ Topology   │ edges, 16 vertices, 1    │
+  │            │ closed shell             │
+  └────────────┴──────────────────────────┘
+
+  Timeline
+
+  1. Sketch1 (Sketch, id 1): 8 lines on the XZ
+     plane forming one closed profile. It is
+     fully solved but has 14 degrees of
+     freedom left, because the lines carry no
+     dimensions or constraints. It takes about
+     0.06 ms to evaluate.
+  2. Extrude1 (ExtrudeFeature, id 2): 20 mm
+     along +Y, creating Body1. It takes about
+     4.4 ms to evaluate.
+
+  Neither step has errors, warnings,
+  suppression or rollback. The design is
+  unsaved (still "Untitled", with unsaved
+  changes) and has no user parameters.
+
+✻ Worked for 6s · done 1:10 AM
+
+──────────────────────────────────────────────
+❯ Flip it so it rises up in +Z
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

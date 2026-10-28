@@ -1,9 +1,9 @@
 #!/bin/bash
 # Q1: which version does solidcraft.io/download offer today? The page in a real browser (headless Chromium, JavaScript
 # on, the DOM after scripts ran), the same page with curl (no JavaScript), and GitHub's latest stable release. Host side:
-#   docker run --rm --memory 2g --shm-size 1g -v "$PWD:/work" sc1-browser:1 bash /work/sitecheck/check.sh
+#   docker run --rm --memory 2g --shm-size 1g -v "$PWD:/work" [-e LESSON=l2] sc1-browser:1 bash /work/sitecheck/check.sh
 set -u
-O=/work/out/l1/sitecheck
+O=/work/out/${LESSON:-l1}/sitecheck
 [ -e "$O" ] && { echo "refusing: $O exists"; exit 1; }
 mkdir -p "$O"
 URL=https://solidcraft.io/download/
