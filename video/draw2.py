@@ -195,11 +195,13 @@ def card_paperup():
         body = (mx, y, mx + 170, y + 200)
         d.rectangle(body, fill=(200, 210, 225), outline=INK, width=5)
         d.arc((mx + 140, y + 40, mx + 240, y + 160), -90, 90, fill=INK, width=12)
-        if up:
-            d.rectangle((mx + 10, y + 40, mx + 160, y + 190), fill=(110, 150, 220))
-        else:
-            d.line((mx, y + 200, mx + 170, y + 200), fill=INK, width=14)
-    text(d, (mx + 100, 870), 'same volume', 48, INK, anchor='ma')
+        # the open rim: on top when standing, at the bottom when turned upside down
+        ry = y if up else y + 200
+        d.line((mx - 6, ry, mx + 176, ry), fill=(236, 239, 244), width=12)
+        d.ellipse((mx, ry - 14, mx + 170, ry + 14), outline=INK, width=5)
+        text(d, (mx + 85, y + 100), 'up' if up else 'over', 30, GREY, anchor='mm')
+    text(d, (mx + 60, 870), 'same size,', 40, INK, anchor='ma')
+    text(d, (mx + 60, 920), 'same weight', 40, INK, anchor='ma')
     chip(d, (W / 2, 1000), 'volume can\'t tell which way is up', 54, anchor='m', bg=RED)
     save(im, 'card-paperup.png')
 
@@ -218,6 +220,8 @@ def card_compare():
         tip = [(x - 26, y1 + (24 if up else -24)), (x + 26, y1 + (24 if up else -24)), (x, y1 - (20 if up else -20))]
         d.polygon(tip, fill=col)
         text(d, (x, 540 if up else 170), lab, 44, col, anchor='ma')
+    chip(d, (615, 580), 'picked in the Browser', 30, anchor='m', bg=GREEN, pad=10)
+    chip(d, (1180, 580), 'made through the plug', 30, anchor='m', bg=RED, pad=10)
     hs, cs = CMP['hand_summary'], CMP['claude_summary']
     rows = [('volume', f"{hs['volume_mm3']:,.0f}", f"{cs['volume_mm3']:,.0f}", True),
             ('size', 'x'.join(f'{v:g}' for v in hs['bbox_mm']), 'x'.join(f'{v:g}' for v in cs['bbox_mm']), True),
@@ -225,15 +229,15 @@ def card_compare():
             ('steps', 'Sketch, Extrude', 'Sketch, Extrude', CMP['same_steps']),
             ('plane', 'XZ', 'XZ', CMP['same_plane']),
             ("plane's up", '+Z', '-Z', CMP['same_up'])]
-    y = 610
+    y = 650
     for name, a, b, ok in rows:
         big = name == "plane's up"
         text(d, (60, y), name, 58 if big else 50, RED if big else GREY, B if big else R)
         text(d, (640, y), a, 58 if big else 50, INK, anchor='ma')
         text(d, (1180, y), b, 58 if big else 50, INK if ok else RED, anchor='ma')
         text(d, (1530, y), '✓' if ok else '✗', 56, GREEN if ok else RED, anchor='ma')
-        y += 82
-    chip(d, (W / 2, 1110), f"replay, no AI: {REP['summary']['volume_mm3']:,.0f} mm³, upside down again", 44, anchor='m')
+        y += 74
+    # (cut 5: the replay line left the card; the replay's own window says it when the voice does)
     save(im, 'card-compare.png')
 
 
@@ -267,14 +271,15 @@ def hook(w, h, vertical=False):
         chip(d, (w // 4, 40), 'BY HAND', 72, anchor='m', bg=GREEN)
         chip(d, (3 * w // 4, 40), 'CLAUDE · 1 message', 72, anchor='m', bg=BLUE)
         chip(d, (w // 2, h - 150), 'SAME PART?', 84, anchor='m', bg=RED)
-    else:
-        a = fit(hand, w - 80, h // 2 - 220)
-        b = fit(cl, w - 80, h // 2 - 220)
-        paste_c(im, a, w // 2, h // 4 + 80)
-        paste_c(im, b, w // 2, 3 * h // 4 - 40)
-        chip(d, (w // 2, 40), 'BY HAND', 72, anchor='m', bg=GREEN)
-        chip(d, (w // 2, h // 2 + 10), 'CLAUDE · 1 message', 64, anchor='m', bg=BLUE)
-        chip(d, (w // 2, h - 240), 'SAME PART?', 84, anchor='m', bg=RED)
+    else:   # the Short's frame 0: the question in large words (it hides the captions for its first seconds)
+        text(d, (w // 2, 130), 'Same hook, two ways:', 76, anchor='ma')
+        text(d, (w // 2, 230), 'same part?', 96, RED, anchor='ma')
+        a = fit(hand, w // 2 - 50, 1050)
+        b = fit(still('claude-after.png', (1850, 620, 2600, 1700)), w // 2 - 50, 1050)
+        paste_c(im, a, w // 4 + 5, 950)
+        paste_c(im, b, 3 * w // 4 - 5, 950)
+        chip(d, (w // 4 + 5, 950 + a.height // 2 + 30), 'BY HAND', 58, anchor='m', bg=GREEN)
+        chip(d, (3 * w // 4 - 5, 950 + b.height // 2 + 30), 'CLAUDE', 58, anchor='m', bg=BLUE)
     return im
 
 
@@ -287,31 +292,41 @@ def short_assets():
         paste_c(im, fit(pic, 960, 960), 500, 500)
         save(im, name)
     im = Image.new('RGB', (1000, 1000), BG)
-    a = fit(still('hand-hook.png', (1150, 260, 2000, 1680)), 470, 900)
-    b = fit(cl, 470, 900)
+    a = fit(still('hand-hook.png', (1150, 260, 2000, 1680)), 470, 760)
+    b = fit(still('claude-after.png', (1850, 620, 2600, 1700)), 470, 760)
     paste_c(im, a, 255, 470)
     paste_c(im, b, 745, 470)
     d = ImageDraw.Draw(im)
+    # the floor (Z = 0): the hand hook's base, Claude's origin (measured on the drawn thumbnails)
+    fa = 470 - a.height // 2 + int((1627 - 260) * a.height / 1420)
+    fb = 470 - b.height // 2 + int((925 - 620) * b.height / 1080)
+    for y, x0, x1 in ((fa, 25, 485), (fb, 515, 975)):
+        for x in range(x0, x1, 28):
+            d.line((x, y, x + 16, y), fill=AMBER, width=7)
+    chip(d, (255, fa + 12), 'floor', 34, anchor='m', bg=AMBER)
+    chip(d, (745, fb + 12), 'floor', 34, anchor='m', bg=AMBER)
     chip(d, (255, 905), 'stands up', 52, anchor='m', bg=GREEN)
     chip(d, (745, 905), 'hangs down', 52, anchor='m', bg=RED)
     save(im, 'sc2s-both.png')
     im, d = canvas(1000, 1000)
-    text(d, (500, 40), 'Same J, top pointing down', 54, anchor='ma')
-    for i, (label, flip, col) in enumerate((('by hand: top up', False, GREEN), ("Claude's: top down", True, RED))):
+    text(d, (500, 40), 'Same outline, top pointing down', 50, anchor='ma')
+    for i, (label, flip, col) in enumerate((('by hand: picked on screen', False, GREEN), ('Claude: typed "XZ"', True, RED))):
         x0 = 60 + i * 480
         sheet(d, (x0, 160, x0 + 400, 720))
         if flip:
             d.line(j_poly(x0 + 140, 220, 7, flip=True) + [j_poly(x0 + 140, 220, 7, flip=True)[0]], fill=INK, width=8)
             d.line((x0 + 360, 660, x0 + 360, 520), fill=col, width=10)
             d.polygon([(x0 + 340, 660), (x0 + 380, 660), (x0 + 360, 700)], fill=col)
-            text(d, (x0 + 360, 480), 'TOP', 40, col, anchor='ma')
+            text(d, (x0 + 320, 470), 'up = -Z', 44, col, anchor='ma')
         else:
             d.line(j_poly(x0 + 140, 660, 7) + [j_poly(x0 + 140, 660, 7)[0]], fill=INK, width=8)
             d.line((x0 + 360, 340, x0 + 360, 200), fill=col, width=10)
             d.polygon([(x0 + 340, 200), (x0 + 380, 200), (x0 + 360, 160)], fill=col)
-            text(d, (x0 + 360, 350), 'TOP', 40, col, anchor='ma')
-        text(d, (x0 + 200, 750), label, 46, col, anchor='ma')
-    chip(d, (500, 860), 'the plane is the same; its up is not', 46, anchor='m', bg=RED)
+            text(d, (x0 + 320, 350), 'up = +Z', 44, col, anchor='ma')
+        who, how = label.split(': ')
+        text(d, (x0 + 200, 740), who + ':', 40, col, anchor='ma')
+        text(d, (x0 + 200, 790), how, 40, col, anchor='ma')
+    chip(d, (500, 860), 'same XZ, set up two ways', 50, anchor='m', bg=RED)
     save(im, 'sc2s-why.png')
 
 
