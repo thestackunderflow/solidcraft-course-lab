@@ -38,3 +38,30 @@ def expected(moves, width):
     a = area(pts)
     return {'area_mm2': a, 'width_mm': float(width), 'volume_mm3': a * width,
             'bbox_mm': [x1 - x0, float(width), y1 - y0], 'vertices': pts}
+
+
+# Lesson 3: the same walk written from five named sizes (SolidCraft user parameters). Each typed length is an
+# expression of the names; the closing line (down to the start) is not typed: a click on the first point closes it.
+J_EXPRESSIONS = [('right', 'hook_depth'), ('up', 'lip_height'), ('left', 'thickness'), ('down', 'lip_height - thickness'),
+                 ('left', 'hook_depth - 2 * thickness'), ('up', 'plate_height - thickness'), ('left', 'thickness')]
+J_NAMES = ('plate_height', 'width', 'thickness', 'hook_depth', 'lip_height')
+
+
+def _value(expr, sizes):
+    import ast
+    tree = ast.parse(expr, mode='eval')
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Name) and n.id not in sizes:
+            raise KeyError(n.id)
+        if not isinstance(n, (ast.Expression, ast.BinOp, ast.Name, ast.Constant, ast.Load, ast.Sub, ast.Add, ast.Mult)):
+            raise ValueError(f'not a simple sum: {expr}')
+    return eval(compile(tree, '<expr>', 'eval'), {'__builtins__': {}}, dict(sizes))
+
+
+def j_moves(sizes):
+    """The walk (direction, length) for these sizes, with the closing line down the back plate."""
+    for k in J_NAMES:
+        if k not in sizes:
+            raise KeyError(k)
+    moves = [(d, _value(e, sizes)) for d, e in J_EXPRESSIONS]
+    return moves + [('down', sizes['plate_height'])]

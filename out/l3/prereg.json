@@ -1,0 +1,19 @@
+{
+ "written_at_utc": "2026-10-29T19:25:11+00:00",
+ "plan": "Refream-Canvas/inputs/video-plans/2026-10-27-solidcraft-course/PLAN-L3.md rev 2 \u00a73",
+ "runs": {
+  "A1": "not asked",
+  "A2": "not asked (repeat)",
+  "B1": "asked in one sentence",
+  "B2": "asked (repeat)"
+ },
+ "messages": "claude-run/l3messages.sh",
+ "setup_per_run": "fresh container (fresh home folder), fresh SolidCraft 0.26.1 window with a new design, fresh Claude Code 2.1.311 session (claude --model claude-sonnet-5-5, default mode), the plug added with solidcraft-cli mcp setup and wrapped in the logging proxy, no CLAUDE.md, auto memory off",
+ "scoring": {
+  "names_used": "count of user parameters in parameters.list after the run, and which of the 7 sketch dimensions and the extrude distance have an expression that references a user parameter",
+  "edit_followed": "the 8 sketch corners at (0,0) (40,0) (40,10) (35,10) (35,5) (5,5) (5,60) (0,60) within 0.01 mm in the sketch plane (either orientation reported), Z from 0 to 60, volume 10000 +-0.1 mm3, bounding box 40 x 20 x 60",
+  "edit_by_parameter": "the calls sent after message 2 change hook_depth (set_parameter or parameters.change) and move no sketch point",
+  "reading_of_40_deep": "recorded: outside depth 40 (box 40) or arm 40 (box 45) or other; a different reading is reported as such, not as a failure of names"
+ },
+ "narration_branches": "PLAN-L3.md \u00a73.1"
+}
