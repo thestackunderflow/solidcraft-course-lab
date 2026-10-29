@@ -105,6 +105,8 @@ def card_expected():
         y = 230 + i * 150
         text(d, (1110, y), a, 58, c, anchor='ra')
         text(d, (1170, y), b, 58, c, path=B)
+        if i < 4:
+            save(im, f'card-expected-{i + 1}.png')
     save(im, 'card-expected.png')
 
 
@@ -148,6 +150,7 @@ def card_compare():
                 while font(B, fs).getlength(ln) > cw - 30:
                     fs -= 2
                 text(d, (x + cw / 2, y + 56 + j * 56), ln, fs, INK, anchor='ma')
+        save(im, f'card-compare-{i + 1}.png')
     text(d, (W / 2, 1110), f'replay, no AI: A1 {n(REP["A1"]["summary"]["volume_mm3"])} · B1 {n(REP["B1"]["summary"]["volume_mm3"])} mm³', 52, INK, anchor='ma')
     save(im, 'card-compare.png')
 
@@ -169,6 +172,10 @@ def card_bwrong():
     text(d, (W / 2, 50), "Claude's run B1: one corner", 64, anchor='ma')
     s = 12
     draw_j(d, j_pts(25, 5), 200, 1040, s, fill=(214, 236, 220), outline=GREEN)
+    text(d, (350, 150), 'needed', 56, GREEN, anchor='ma')
+    text(d, (350, 230), 'x = thickness', 52, GREEN, path=M, anchor='ma')
+    chip(d, (350, 1110), 'plate 5 · 8,500', 46, anchor='m', bg=GREEN)
+    save(im, 'card-bwrong-1.png')
     draw_j(d, j_pts(25, 15), 950, 1040, s, fill=(240, 214, 214), outline=RED)
     text(d, (350, 150), 'needed', 56, GREEN, anchor='ma')
     text(d, (350, 230), 'x = thickness', 52, GREEN, path=M, anchor='ma')
