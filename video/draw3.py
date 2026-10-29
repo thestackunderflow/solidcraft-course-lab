@@ -113,16 +113,21 @@ def card_expected():
 def card_plainwhy():
     im, d = canvas()
     text(d, (W / 2, 50), 'Plain numbers: d1 = 40', 64, anchor='ma')
-    s = 13
-    ox, oy = 160, 1100
+    s = 15
+    ox, oy = 160, 1080
     pts = j_pts()
     p = draw_j(d, pts, ox, oy, s)
-    # the wanted bottom: 40
     d.line((p[0], (ox + 40 * s, oy)), fill=RED, width=14)
     text(d, (ox + 20 * s, oy + 20), 'd1 = 40', 56, RED, anchor='ma')
-    for a, b, lab in ((p[3], p[2], '5'), (p[5], p[4], '15'), ((ox, p[6][1]), p[6], '5')):
+    save(im, 'card-plainwhy-0.png')
+    # the four upright lines the message names (k3, k7, k11, k15)
+    for a, b in ((p[1], p[2]), (p[3], p[4]), (p[5], p[6]), (p[7], p[0])):
+        d.line((a, b), fill=AMBER, width=12)
+    chip(d, (1150, 300), '4 upright lines', 52, anchor='m', bg=AMBER)
+    for a, b, lab in ((p[3], p[2], '5'), (p[5], p[4], 'd5 = 15'), ((ox, p[6][1]), p[6], '5')):
         d.line((a, b), fill=BLUE, width=14)
-        text(d, ((a[0] + b[0]) / 2 + (40 if lab == '5' and a[0] == ox else 0), a[1] - 80), lab, 60, BLUE, anchor='ma')
+        dy = 150 if lab.startswith('d5') else 80
+        text(d, ((a[0] + b[0]) / 2 + (40 if lab == '5' and a[0] == ox else 0), a[1] - dy), lab, 60, BLUE, anchor='ma')
     chip(d, (1150, 420), '5 + 15 + 5 = 25, not 40', 58, anchor='m', bg=RED)
     save(im, 'card-plainwhy-a.png')
     chip(d, (1150, 560), 'fix: d5 = d1 − 10', 58, anchor='m', bg=GREEN)
@@ -151,7 +156,7 @@ def card_compare():
                     fs -= 2
                 text(d, (x + cw / 2, y + 56 + j * 56), ln, fs, INK, anchor='ma')
         save(im, f'card-compare-{i + 1}.png')
-    text(d, (W / 2, 1110), f'replay, no AI: A1 {n(REP["A1"]["summary"]["volume_mm3"])} · B1 {n(REP["B1"]["summary"]["volume_mm3"])} mm³', 52, INK, anchor='ma')
+    text(d, (W / 2, 1110), f'replay, no AI: not asked run 1 {n(REP["A1"]["summary"]["volume_mm3"])} · asked run 1 {n(REP["B1"]["summary"]["volume_mm3"])} mm³', 42, INK, anchor='ma')
     save(im, 'card-compare.png')
 
 
@@ -163,25 +168,26 @@ def card_recap():
         y = 260 + i * 260
         d.rounded_rectangle((160, y, 1472, y + 170), radius=24, fill=PAPER, outline=c, width=8)
         text(d, (W / 2, y + 50), s, 64, c, anchor='ma')
-    save(im, 'card-recap.png')
+        save(im, f'card-recap-{i + 1}.png' if i < 2 else 'card-recap.png')
 
 
 def card_bwrong():
-    """B1: Claude's corner list against the right one (from its logged sketch.line points)."""
+    """Asked run 1: the plate's inner edge where it was placed against where it belongs (its logged sketch.line points)."""
     im, d = canvas()
-    text(d, (W / 2, 50), "Claude's run B1: one corner", 64, anchor='ma')
+    text(d, (W / 2, 50), 'Claude, asked, run 1: the plate edge', 60, anchor='ma')
     s = 12
-    draw_j(d, j_pts(25, 5), 200, 1040, s, fill=(214, 236, 220), outline=GREEN)
+    pg = draw_j(d, j_pts(25, 5), 200, 1040, s, fill=(214, 236, 220), outline=GREEN)
+    d.line((pg[5], pg[6]), fill=GREEN, width=18)
+    text(d, (pg[5][0] + 30, (pg[5][1] + pg[6][1]) / 2), 'edge at 5', 48, GREEN)
     text(d, (350, 150), 'needed', 56, GREEN, anchor='ma')
     text(d, (350, 230), 'x = thickness', 52, GREEN, path=M, anchor='ma')
     chip(d, (350, 1110), 'plate 5 · 8,500', 46, anchor='m', bg=GREEN)
     save(im, 'card-bwrong-1.png')
-    draw_j(d, j_pts(25, 15), 950, 1040, s, fill=(240, 214, 214), outline=RED)
-    text(d, (350, 150), 'needed', 56, GREEN, anchor='ma')
-    text(d, (350, 230), 'x = thickness', 52, GREEN, path=M, anchor='ma')
-    text(d, (1100, 160), 'Claude wrote', 56, RED, anchor='ma')
+    pr = draw_j(d, j_pts(25, 15), 950, 1040, s, fill=(240, 214, 214), outline=RED)
+    d.line((pr[5], pr[6]), fill=RED, width=18)
+    text(d, (pr[5][0] + 30, (pr[5][1] + pr[6][1]) / 2), 'edge at 15', 48, RED)
+    text(d, (1100, 160), 'Claude placed it at', 52, RED, anchor='ma')
     text(d, (1100, 230), 'x = hook_depth − 2·thickness', 44, RED, path=M, anchor='ma')
-    chip(d, (350, 1110), 'plate 5 · 8,500', 46, anchor='m', bg=GREEN)
     chip(d, (1100, 1110), 'plate 15 · 19,500', 46, anchor='m', bg=RED)
     save(im, 'card-bwrong.png')
 
