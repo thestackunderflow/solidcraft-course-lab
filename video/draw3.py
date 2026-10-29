@@ -215,6 +215,16 @@ def short_assets():
         text(d, ((a[0] + b[0]) / 2 + (36 if lab == '5' and a[0] == ox else 0), a[1] - 62), lab, 48, BLUE, anchor='ma')
     chip(d, (640, 300), '5 + 15 + 5 = 25', 50, anchor='m', bg=RED)
     save(im, 'sc3s-why.png')
+    im = Image.new('RGB', (1000, 1000), BG)
+    d = ImageDraw.Draw(im)
+    a = fit(still('hand-40.png', (1000, 300, 2150, 1650)), 480, 820)
+    b = fit(still('plain-25.png', (1000, 300, 2150, 1650)), 480, 820)
+    paste_c(im, a, 255, 520)
+    paste_c(im, b, 745, 520)
+    chip(d, (255, 20), 'NAMES · 40', 50, anchor='m', bg=GREEN)
+    chip(d, (745, 20), 'PLAIN · REFUSED', 44, anchor='m', bg=RED)
+    chip(d, (500, 900), '25 → 40', 56, anchor='m', bg=INK)
+    save(im, 'sc3s-pair.png')
     for name, src, box in (('sc3s-formula.png', 'hand-formula.png', (1150, 900, 2150, 1650)),
                            ('sc3s-thick.png', 'B1-thick.png', B1BOX)):
         im = Image.new('RGB', (1000, 1000), BG)

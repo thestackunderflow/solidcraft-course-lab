@@ -20,7 +20,7 @@ STILLS = {
     'hand-props-before.png': ('hand', 'properties: rows held', 2.0),
     'hand-props-after.png': ('hand', 'properties after: rows held', 2.0),
     'hand-j.png': ('hand', 'sketch: closed', 2.5),
-    'hand-formula.png': ('hand', 'line: left hook_depth - 2 * thickness placed', 0.4),
+    'hand-formula.png': ('hand', 'line: left hook_depth - 2 * thickness type', 2.7),
     'plain-25.png': ('plain', 'plain: the hook unchanged', 2.8),
     'plain-refused.png': ('plain', 'plain: the message held', 0.6),
     'plain-props.png': ('plain', 'plain properties: rows held', 2.0),

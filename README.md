@@ -102,6 +102,44 @@ and ³ as "_" (claude-1's terminal shows it; claude-2 runs with `LANG=C.UTF-8` a
 ends a turn with a line like "Baked for 12s · done 1:21 AM" (no "esc to interrupt" was ever sampled), which the driver
 now watches for; the input box shows Claude Code's own greyed suggestion for the next message (never sent).
 
+## Lesson 3: what the lab must show (written before the recorded runs)
+"SolidCraft Parameters by Hand vs Claude: Named Sizes for Beginners | SolidCraft + Claude Course 3". **Pinned build:
+SolidCraft 0.26.1** (the stable release on GitHub on 29 Oct 2026, published 11:46 UTC; the download page in a real
+browser offers the same; 0.26.0 writes design format 43, which 0.25.1 and older refuse). Claude Code 2.1.311 with
+Claude Sonnet 5.5. Images `sc3-app:0.26.1` (`docker/app.Dockerfile`, `SC_VER=0.26.1 SC_OLD=0.25.0`) and `sc3-l3:0.26.1`
+(`docker/l3.Dockerfile`).
+
+The part: lesson 2's wall hook with five named sizes (user parameters): `plate_height` 60, `width` 20, `thickness` 5,
+`hook_depth` 25, `lip_height` 10; the J typed with names and formulas (`checker/outline.py` `J_EXPRESSIONS`, tested:
+the same corners as lesson 2). The change: `hook_depth` 25 to 40; expected 500 mm², 10,000 mm³, 40 x 20 x 60.
+The Claude requests and the scoring rules were written to `out/l3/prereg.json` (committed) before the first run.
+
+| # | Question | How it is measured | Answer file |
+|---|---|---|---|
+| L3-Q1 | Which version does the download page offer? | `sitecheck/check.sh` with `LESSON=l3` | `out/l3/sitecheck.json` |
+| L3-Q2 | Does the by-hand path with names work? | `lab/l3hand.sh`: the real window, filmed, xdotool only | `out/l3/hand/` |
+| L3-Q3 | What does SolidCraft report before and after the change? | Properties (filmed) and `lab/l3read.py` (no AI: inspect_design, measure, parameters.list) | `out/l3/hand/read.json` |
+| L3-Q4 | Lesson 2's plain-number J: d1 25 to 40? | `lab/l3plain.sh`: filmed; reads after the refusal and after a formula fix | `out/l3/plain/` |
+| L3-Q5 | Claude not asked (A1, A2) and asked in one sentence (B1, B2) | `claude-run/l3run.sh` + `lab/l3claude.sh` (lesson 2's driver), messages in `claude-run/l3messages.sh` | `out/l3/runs/*/` |
+| L3-Q6 | Scored against the pre-registered rules | `lab/l3compare.py` | `out/l3/compare.json` |
+| L3-Q7 | Is it real? | `lab/l3replay.sh A1`, `B1`: logged calls, fresh window, no AI; STL checker | `out/l3/replay-*.json` |
+
+## Lesson 3: what it found (29 Oct 2026, SolidCraft 0.26.1, Linux x86_64 in Docker)
+| # | Answer | File |
+|---|---|---|
+| L3-Q1 | The download page in a real browser offers **0.26.1** = GitHub latest; curl alone sees the 0.22.0 fallback. | `out/l3/sitecheck.json` |
+| L3-Q2 | Works as filmed: Parameters is on the **Model** tab (the docs say Manage); Add parameter, name, Tab, Tab, value, Enter; the Line tool's length box takes names and formulas (`hook_depth - 2 * thickness`), the dimensions read "fx: 15.00 mm"; Extrude Distance `width`. | `out/l3/hand/` |
+| L3-Q3 | Before: **8,500.0 mm³, 25 x 20 x 60**. After `hook_depth` 40 (the hook rebuilt with the dialog open): **10,000.0 mm³, 40 x 20 x 60**; 5 user parameters; all 8 sizes (7 dimensions + the extrude) written from names; fully constrained. | `out/l3/hand/read.json`, `props-*.png` |
+| L3-Q4 | d1 = 40 is **refused**: "sketch `Sketch1`: its constraints would conflict (k2, k3, k6, k7, k10, k11, k14, k15); the values were not changed". The ids are d1, d3, d5, d7 (the lengths across: 25, 5, 15, 5) and the four upright lines. The dialog's box and Value column show 40, but the model keeps 25 (8,500, 25 x 20 x 60). Fix filmed: d5 = `d1 - 10` (the Filter finds the row), then d1 = 40: accepted, 10,000 / 40 x 20 x 60. | `out/l3/plain/`, `after-refusal/read.json` |
+| L3-Q5 | **Not asked: 0 user parameters in 2 of 2.** A1: built it hanging (Z -60..0), checked, rebuilt it standing; the edit = a new design and the J drawn again with new corners: 40 x 20 x 60, 10,000. A2: read "40 deep" as the extrude: 25 x 40 x 60, 17,000, and said so. **Asked: 5 user parameters and a one-number edit (`set_parameter hook_depth 40`) in 2 of 2.** B1 placed the plate's inner edge at x = `hook_depth - 2 * thickness` (15) instead of `thickness` (5): **19,500 mm³** at 25 (its reply gave the number and did not flag it), **37,500 mm³** at 40 (plate 30 thick). B2: all corners right, **10,000 / 40 x 20 x 60**. Every run first built the hook hanging (lesson 2's plane) and rebuilt it standing. Cost $0.1312 + $0.1900 + $0.1805 + $0.1741. | `out/l3/runs/`, `compare.json` |
+| L3-Q7 | A1's 9 logged calls, no AI: 0 errors, **10,000.0**; B1's 11: 0 errors, **37,500.0**; our STL checker: closed, the same volumes. | `out/l3/replay-A1.json`, `replay-B1.json` |
+
+Lab notes: the turn-end line can carry a non-ASCII verb ("Sautéed for 41s"): the driver's pattern now takes `\w`
+(B1 waited 6 minutes for its time-out before turn 2; the recording's idle part is not used). `parameters.list` does
+not count point expressions in `sketch.line` as uses (B1/B2 show `used_by: []`), so the names-in-corners evidence is
+the logged `sketch.line` points. The 2880x1800 masters stay in `out/scratch/l3-masters` (not committed); each run
+folder has a 1440x900 copy.
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker
@@ -123,6 +161,15 @@ bash claude-run/l2run.sh claude-2                                     # paid: us
 docker run --rm --network none -v "$PWD:/work" -w /work sc2-app:0.25.0 python3 lab/l2compare.py claude-2
 docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc2-l2:0.25.0 bash /work/lab/l2replay.sh claude-2
 docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw2.py   # cards (any image with PIL)
+# lesson 3
+docker build -t sc3-app:0.26.1 --build-arg SC_VER=0.26.1 --build-arg SC_OLD=0.25.0 -f docker/app.Dockerfile docker
+docker build -t sc3-l3:0.26.1 -f docker/l3.Dockerfile docker
+for t in l3hand.sh l3plain.sh; do docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc3-l3:0.26.1 bash /work/lab/$t; done
+for r in A1 B1 A2 B2; do bash claude-run/l3run.sh $r; done                 # paid: uses this PC's Claude sign-in
+python3 lab/l3compare.py
+for r in A1 B1; do docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc3-l3:0.26.1 bash /work/lab/l3replay.sh $r; done
+docker run --rm --network none -v "$PWD:/work" -w /work sc3-app:0.26.1 python3 video/stills3.py
+docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw3.py
 ```
 
 ## Licence
