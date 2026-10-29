@@ -1,0 +1,69 @@
+{"t": 0.503, "event": "recording started: the start page"}
+{"t": 2.008, "event": "start page: New design"}
+{"t": 7.803, "event": "params: hover Parameters"}
+{"t": 10.477, "event": "params: open"}
+{"t": 12.983, "event": "params: Add parameter"}
+{"t": 16.538, "event": "params: type hook_depth"}
+{"t": 18.129, "event": "params: Tab Tab"}
+{"t": 19.371, "event": "params: hook_depth value 25"}
+{"t": 20.421, "event": "params: hook_depth added"}
+{"t": 23.038, "event": "params: type thickness"}
+{"t": 24.186, "event": "params: Tab Tab"}
+{"t": 25.428, "event": "params: thickness value 5"}
+{"t": 26.367, "event": "params: thickness added"}
+{"t": 27.379, "event": "params: type lip_height"}
+{"t": 28.562, "event": "params: Tab Tab"}
+{"t": 29.810, "event": "params: lip_height value 10"}
+{"t": 30.862, "event": "params: lip_height added"}
+{"t": 31.867, "event": "params: type plate_height"}
+{"t": 33.156, "event": "params: Tab Tab"}
+{"t": 34.404, "event": "params: plate_height value 60"}
+{"t": 35.453, "event": "params: plate_height added"}
+{"t": 36.469, "event": "params: type width"}
+{"t": 37.411, "event": "params: Tab Tab"}
+{"t": 38.651, "event": "params: width value 20"}
+{"t": 39.701, "event": "params: width added"}
+{"t": 41.307, "event": "params: OK"}
+{"t": 44.875, "event": "new sketch: New Sketch"}
+{"t": 48.120, "event": "browser: open Origin"}
+{"t": 50.857, "event": "new sketch: XZ in the Browser"}
+{"t": 56.738, "event": "sketch: middle-drag pan"}
+{"t": 59.886, "event": "sketch: Line tool"}
+{"t": 62.683, "event": "sketch: click the origin"}
+{"t": 71.151, "event": "line: right hook_depth type"}
+{"t": 73.105, "event": "line: right hook_depth placed"}
+{"t": 78.238, "event": "line: up lip_height type"}
+{"t": 79.833, "event": "line: up lip_height placed"}
+{"t": 82.565, "event": "line: left thickness type"}
+{"t": 84.098, "event": "line: left thickness placed"}
+{"t": 86.805, "event": "line: down lip_height - thickness type"}
+{"t": 89.351, "event": "line: down lip_height - thickness placed"}
+{"t": 92.377, "event": "line: left hook_depth - 2 * thickness type"}
+{"t": 95.218, "event": "line: left hook_depth - 2 * thickness placed"}
+{"t": 98.868, "event": "line: up plate_height - thickness type"}
+{"t": 101.555, "event": "line: up plate_height - thickness placed"}
+{"t": 104.693, "event": "line: left thickness (top) type"}
+{"t": 106.213, "event": "line: left thickness (top) placed"}
+{"t": 107.220, "event": "line: close on the first point"}
+{"t": 110.132, "event": "line: Esc puts the Line tool down"}
+{"t": 111.762, "event": "sketch: closed, fully constrained"}
+{"t": 115.401, "event": "finish sketch"}
+{"t": 118.945, "event": "extrude: Model tab, Extrude"}
+{"t": 125.001, "event": "extrude: type width"}
+{"t": 127.125, "event": "extrude: OK"}
+{"t": 130.571, "event": "home: the 3D hook"}
+{"t": 134.366, "event": "properties: right-click Body1"}
+{"t": 139.092, "event": "properties: open"}
+{"t": 141.623, "event": "properties: rows held"}
+{"t": 146.756, "event": "properties: close"}
+{"t": 149.216, "event": "view: slide left"}
+{"t": 151.642, "event": "change: open Parameters"}
+{"t": 155.570, "event": "change: click hook_depth's 25"}
+{"t": 159.166, "event": "change: type 40"}
+{"t": 160.480, "event": "change: Enter"}
+{"t": 165.212, "event": "change: OK"}
+{"t": 168.552, "event": "home: the 40 hook"}
+{"t": 172.343, "event": "properties after: right-click Body1"}
+{"t": 177.053, "event": "properties after: open"}
+{"t": 179.584, "event": "properties after: rows held"}
+{"t": 184.681, "event": "recording stopped"}

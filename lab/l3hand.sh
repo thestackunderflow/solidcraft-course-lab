@@ -113,7 +113,7 @@ xdotool key Escape; nap 1.2
 # --- F16: slide the hook left so the dialog doesn't cover it, then hook_depth 25 -> 40
 glide 1300 700 16; nap 0.6
 mark "$E" "view: slide left"
-xdotool mousedown 2; for i in $(seq 1 20); do rel -14 0; sleep 0.06; done; xdotool mouseup 2; nap 1.0
+xdotool mousedown 2; for i in $(seq 1 20); do rel -22 -5; sleep 0.06; done; xdotool mouseup 2; nap 1.0
 mark "$E" "change: open Parameters"
 glide 1013 117 22; nap 1.0; xdotool click 1; nap 2.0
 mark "$E" "change: click hook_depth's 25"

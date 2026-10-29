@@ -1,0 +1,875 @@
+{
+ "summary": {
+  "steps": [
+   "Sketch",
+   "ExtrudeFeature"
+  ],
+  "step_names": [
+   "Sketch1",
+   "Extrude1"
+  ],
+  "sketch_lines": [
+   8
+  ],
+  "profile_areas_mm2": [
+   500.0
+  ],
+  "bodies": 1,
+  "volume_mm3": 10000.0,
+  "closed": true,
+  "bbox_mm": [
+   40.0,
+   20.0,
+   60.0
+  ],
+  "bbox_min": [
+   0.0,
+   -20.0,
+   0.0
+  ],
+  "bbox_max": [
+   40.0,
+   0.0,
+   60.0
+  ],
+  "plane_normal": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "sketch_up": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "corners": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    60.0
+   ],
+   [
+    5.0,
+    5.0
+   ],
+   [
+    5.0,
+    60.0
+   ],
+   [
+    35.0,
+    5.0
+   ],
+   [
+    35.0,
+    10.0
+   ],
+   [
+    40.0,
+    0.0
+   ],
+   [
+    40.0,
+    10.0
+   ]
+  ],
+  "errors": 0,
+  "user_parameters": [],
+  "user_parameter_names": [],
+  "model_parameters": [
+   {
+    "name": "d1",
+    "expression": "40",
+    "value": 40.0,
+    "feature": null,
+    "input": null
+   },
+   {
+    "name": "d2",
+    "expression": "10",
+    "value": 10.0,
+    "feature": null,
+    "input": null
+   },
+   {
+    "name": "d3",
+    "expression": "5",
+    "value": 5.0,
+    "feature": null,
+    "input": null
+   },
+   {
+    "name": "d4",
+    "expression": "5",
+    "value": 5.0,
+    "feature": null,
+    "input": null
+   },
+   {
+    "name": "d5",
+    "expression": "d1 - 10",
+    "value": 30.0,
+    "feature": null,
+    "input": null
+   },
+   {
+    "name": "d6",
+    "expression": "55",
+    "value": 55.0,
+    "feature": null,
+    "input": null
+   },
+   {
+    "name": "d7",
+    "expression": "5",
+    "value": 5.0,
+    "feature": null,
+    "input": null
+   },
+   {
+    "name": "d8",
+    "expression": "20",
+    "value": 20.0,
+    "feature": "Extrude1",
+    "input": "Distance"
+   }
+  ],
+  "model_parameters_from_names": 0,
+  "sketch_fully_constrained": true,
+  "sketch_dof": 0
+ },
+ "inspect_design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 5200.0,
+    "bbox": {
+     "max": [
+      40.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     11.25,
+     -10.0,
+     19.25
+    ],
+    "closed": true,
+    "edges": 24,
+    "face_types": {
+     "plane": 10
+    },
+    "faces": 10,
+    "kernel": {
+     "edges": 24,
+     "faces": 10,
+     "shells": 1,
+     "vertices": 16
+    },
+    "name": "Body1",
+    "vertices": 16,
+    "visible": true,
+    "volume_mm3": 10000.0
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 2,
+  "metadata": {},
+  "name": "Untitled",
+  "params": [
+   {
+    "comment": "",
+    "error": null,
+    "expression": "40",
+    "model": true,
+    "name": "d1",
+    "unit": "mm",
+    "value": 40.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "10",
+    "model": true,
+    "name": "d2",
+    "unit": "mm",
+    "value": 10.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "5",
+    "model": true,
+    "name": "d3",
+    "unit": "mm",
+    "value": 5.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "5",
+    "model": true,
+    "name": "d4",
+    "unit": "mm",
+    "value": 5.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "d1 - 10",
+    "model": true,
+    "name": "d5",
+    "unit": "mm",
+    "value": 30.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "55",
+    "model": true,
+    "name": "d6",
+    "unit": "mm",
+    "value": 55.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "5",
+    "model": true,
+    "name": "d7",
+    "unit": "mm",
+    "value": 5.0
+   }
+  ],
+  "path": null,
+  "redo": 0,
+  "revision": 47,
+  "selection": [],
+  "sketches": [
+   {
+    "constraints": [
+     {
+      "id": "k1",
+      "l": 0,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "expression": "40",
+      "id": "k2",
+      "l": 0,
+      "name": "LinearDimension",
+      "param": "d1",
+      "type": "length",
+      "value": 40.0
+     },
+     {
+      "id": "k3",
+      "l": 1,
+      "name": "Vertical",
+      "type": "vertical"
+     },
+     {
+      "expression": "10",
+      "id": "k4",
+      "l": 1,
+      "name": "LinearDimension",
+      "param": "d2",
+      "type": "length",
+      "value": 10.0
+     },
+     {
+      "id": "k5",
+      "l": 2,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "expression": "5",
+      "id": "k6",
+      "l": 2,
+      "name": "LinearDimension",
+      "param": "d3",
+      "type": "length",
+      "value": 5.0
+     },
+     {
+      "id": "k7",
+      "l": 3,
+      "name": "Vertical",
+      "type": "vertical"
+     },
+     {
+      "expression": "5",
+      "id": "k8",
+      "l": 3,
+      "name": "LinearDimension",
+      "param": "d4",
+      "type": "length",
+      "value": 5.0
+     },
+     {
+      "id": "k9",
+      "l": 4,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "expression": "d1 - 10",
+      "id": "k10",
+      "l": 4,
+      "name": "LinearDimension",
+      "param": "d5",
+      "type": "length",
+      "value": 30.0
+     },
+     {
+      "id": "k11",
+      "l": 5,
+      "name": "Vertical",
+      "type": "vertical"
+     },
+     {
+      "expression": "55",
+      "id": "k12",
+      "l": 5,
+      "name": "LinearDimension",
+      "param": "d6",
+      "type": "length",
+      "value": 55.0
+     },
+     {
+      "id": "k13",
+      "l": 6,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "expression": "5",
+      "id": "k14",
+      "l": 6,
+      "name": "LinearDimension",
+      "param": "d7",
+      "type": "length",
+      "value": 5.0
+     },
+     {
+      "id": "k15",
+      "l": 7,
+      "name": "Vertical",
+      "type": "vertical"
+     }
+    ],
+    "curves": [
+     {
+      "construction": false,
+      "end": "l1.end",
+      "end_at": [
+       40.0,
+       0.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l1",
+      "start": "origin",
+      "start_at": [
+       0.0,
+       0.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "l2.end",
+      "end_at": [
+       40.0,
+       10.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l2",
+      "start": "l1.end",
+      "start_at": [
+       40.0,
+       0.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "l3.end",
+      "end_at": [
+       35.0,
+       10.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l3",
+      "start": "l2.end",
+      "start_at": [
+       40.0,
+       10.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "l4.end",
+      "end_at": [
+       35.0,
+       5.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l4",
+      "start": "l3.end",
+      "start_at": [
+       35.0,
+       10.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "l5.end",
+      "end_at": [
+       5.0,
+       5.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l5",
+      "start": "l4.end",
+      "start_at": [
+       35.0,
+       5.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "l6.end",
+      "end_at": [
+       5.0,
+       60.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l6",
+      "start": "l5.end",
+      "start_at": [
+       5.0,
+       5.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "l7.end",
+      "end_at": [
+       0.0,
+       60.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l7",
+      "start": "l6.end",
+      "start_at": [
+       5.0,
+       60.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "origin",
+      "end_at": [
+       0.0,
+       0.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l8",
+      "start": "l7.end",
+      "start_at": [
+       0.0,
+       60.0
+      ],
+      "type": "line"
+     }
+    ],
+    "dof": 0,
+    "failing": [],
+    "fully_constrained": true,
+    "id": 1,
+    "links": [],
+    "name": "Sketch1",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "y_dir": [
+      -0.0,
+      -0.0,
+      1.0
+     ]
+    },
+    "points": [
+     {
+      "at": [
+       0.0,
+       0.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "origin",
+      "link": null,
+      "world": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       40.0,
+       0.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l1.end",
+      "link": null,
+      "world": [
+       40.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       40.0,
+       10.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l2.end",
+      "link": null,
+      "world": [
+       40.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "at": [
+       35.0,
+       10.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l3.end",
+      "link": null,
+      "world": [
+       35.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "at": [
+       35.0,
+       5.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l4.end",
+      "link": null,
+      "world": [
+       35.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "at": [
+       5.0,
+       5.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l5.end",
+      "link": null,
+      "world": [
+       5.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "at": [
+       5.0,
+       60.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l6.end",
+      "link": null,
+      "world": [
+       5.0,
+       0.0,
+       60.0
+      ]
+     },
+     {
+      "at": [
+       0.0,
+       60.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l7.end",
+      "link": null,
+      "world": [
+       0.0,
+       0.0,
+       60.0
+      ]
+     }
+    ],
+    "profiles": [
+     {
+      "area_mm2": 500.0,
+      "centroid_sketch": [
+       11.25,
+       19.25
+      ],
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4",
+       "l5",
+       "l6",
+       "l7",
+       "l8"
+      ],
+      "holes": [],
+      "index": 0
+     }
+    ],
+    "status": "solved",
+    "visible": false,
+    "wires": []
+   }
+  ],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 1,
+    "ms": 0.109527,
+    "name": "Sketch1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "Sketch",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 2,
+    "ms": 2.398516,
+    "name": "Extrude1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "ExtrudeFeature",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ },
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 5200.0,
+    "bbox": {
+     "max": [
+      40.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     11.25,
+     -10.0,
+     19.25
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 24,
+    "face_types": {
+     "plane": 10
+    },
+    "faces": 10,
+    "kernel": {
+     "edges": 24,
+     "faces": 10,
+     "shells": 1,
+     "vertices": 16
+    },
+    "mass_g": 12.9,
+    "material": "Default",
+    "name": "Body1",
+    "vertices": 16,
+    "volume_mm3": 10000.0
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 5200.0,
+   "edges": 24,
+   "faces": 10,
+   "mass_g": 12.9,
+   "open_bodies_skipped": 0,
+   "vertices": 16,
+   "volume_mm3": 10000.0
+  }
+ },
+ "parameters_list": {
+  "count": 8,
+  "cycles": [],
+  "parameters": [
+   {
+    "comment": "",
+    "error": null,
+    "expression": "40",
+    "favorite": false,
+    "name": "d1",
+    "source": "sketch",
+    "unit": "mm",
+    "used_by": [
+     "d5"
+    ],
+    "uses": [],
+    "value": 40.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "10",
+    "favorite": false,
+    "name": "d2",
+    "source": "sketch",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 10.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "5",
+    "favorite": false,
+    "name": "d3",
+    "source": "sketch",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 5.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "5",
+    "favorite": false,
+    "name": "d4",
+    "source": "sketch",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 5.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "d1 - 10",
+    "favorite": false,
+    "name": "d5",
+    "source": "sketch",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [
+     "d1"
+    ],
+    "value": 30.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "55",
+    "favorite": false,
+    "name": "d6",
+    "source": "sketch",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 55.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "5",
+    "favorite": false,
+    "name": "d7",
+    "source": "sketch",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 5.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "20",
+    "favorite": false,
+    "feature": "Extrude1",
+    "input": "Distance",
+    "name": "d8",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 20.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{"t": 0.502, "event": "recording started: lesson 2's plain-number hook"}
+{"t": 2.508, "event": "plain: open Parameters"}
+{"t": 7.223, "event": "plain: d1 to d7 under Sketch1"}
+{"t": 10.629, "event": "plain: click d1's 25"}
+{"t": 14.197, "event": "plain: type 40"}
+{"t": 15.510, "event": "plain: Enter"}
+{"t": 17.856, "event": "plain: the message held"}
+{"t": 22.847, "event": "plain: OK"}
+{"t": 26.627, "event": "plain: the hook unchanged"}
+{"t": 30.853, "event": "plain properties: right-click Body1"}
+{"t": 35.524, "event": "plain properties: open"}
+{"t": 38.033, "event": "plain properties: rows held"}
+{"t": 43.174, "event": "plain properties: close"}
+{"t": 47.895, "event": "remedy: open Parameters"}
+{"t": 51.892, "event": "remedy: filter d5"}
+{"t": 55.636, "event": "remedy: click d5's 15"}
+{"t": 58.635, "event": "remedy: type d1 - 10"}
+{"t": 60.461, "event": "remedy: d5 accepted"}
+{"t": 62.879, "event": "remedy: filter d1"}
+{"t": 66.612, "event": "remedy: click d1's 25"}
+{"t": 69.668, "event": "remedy: type 40"}
+{"t": 71.006, "event": "remedy: the hook grows"}
+{"t": 75.686, "event": "remedy: OK"}
+{"t": 79.063, "event": "remedy properties: right-click Body1"}
+{"t": 83.787, "event": "remedy properties: open"}
+{"t": 86.306, "event": "remedy properties: rows held"}
+{"t": 91.404, "event": "recording stopped"}
