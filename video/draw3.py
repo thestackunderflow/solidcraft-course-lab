@@ -133,7 +133,7 @@ def card_compare():
     cols = [('By hand,\nnames', '5 names', 'one number', '10,000', GREEN),
             ('By hand,\nplain', 'd1 to d7', 'refused', 'still 8,500', RED),
             ('Claude,\nnot asked', '0 names\n(2 runs)', 'drew it again /\nread "deep"\nas the push', '10,000 /\n17,000', AMBER),
-            ('Claude,\nasked', '5 names\n(2 runs)', 'one call', '10,000 /\n37,500', BLUE)]
+            ('Claude,\nasked', '5 names\n(2 runs)', 'one change', '10,000 /\n37,500', BLUE)]
     cw = 390
     for i, (head, names, edit, after, c) in enumerate(cols):
         x = 30 + i * (cw + 10)
