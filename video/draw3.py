@@ -63,9 +63,9 @@ def card_recipe():
     d.line((360, 410, 1300, 410), fill=GREY, width=3)
     text(d, (360, 330 + 120), 'milk   =  300 ml', 64, path=M)
     text(d, (320, 600), 'Steps', 60, BLUE)
-    text(d, (360, 690), '2. add the flour', 60, path=R)
-    text(d, (360, 790), '3. stir in the milk', 60, path=R)
-    text(d, (360, 890), '4. add the rest of the flour', 60, path=R)
+    text(d, (360, 690), '1. add the flour', 60, path=R)
+    text(d, (360, 790), '2. stir in the milk', 60, path=R)
+    text(d, (360, 890), '3. add the rest of the flour', 60, path=R)
     save(im, 'card-recipe-a.png')
     d.rectangle((560, 290, 1000, 380), fill=PAPER)
     text(d, (360, 300), 'flour  =  400 g', 64, RED, path=M)
@@ -88,8 +88,8 @@ def card_catch():
     d.line((p[4], p[5]), fill=BLUE, width=18)
     text(d, ((p[4][0] + p[5][0]) / 2, p[4][1] - 100), '15', 72, BLUE, anchor='ma')
     save(im, 'card-catch-b.png')
-    chip(d, (1180, 360), '15 = hook_depth − 5 − 5', 56, anchor='m', bg=BLUE)
-    chip(d, (1180, 470), 'a formula of the names', 52, anchor='m', bg=GREEN)
+    chip(d, (1060, 360), '15 = hook_depth − 2 × thickness', 46, anchor='m', bg=BLUE)
+    chip(d, (1060, 470), 'a formula of the names', 50, anchor='m', bg=GREEN)
     save(im, 'card-catch.png')
 
 
@@ -99,7 +99,7 @@ def card_expected():
     s = 13
     ox, oy = 90, 1100
     draw_j(d, j_pts(40), ox, oy, s)
-    rows = [('25 → 40', '+15 mm', INK), ('plate 5 x 60', '300', INK), ('arm 35 x 5', '175', INK), ('lip 5 x 5', '25', INK),
+    rows = [('25 → 40', '+15 mm', INK), ('plate 5 x 60', '300', INK), ('arm (40 − 5) x 5', '175', INK), ('lip 5 x 5', '25', INK),
             ('500 mm² x 20', '10,000 mm³', GREEN)]
     for i, (a, b, c) in enumerate(rows):
         y = 230 + i * 150
@@ -126,11 +126,13 @@ def card_plainwhy():
     chip(d, (1150, 300), '4 upright lines', 52, anchor='m', bg=AMBER)
     for a, b, lab in ((p[3], p[2], '5'), (p[5], p[4], 'd5 = 15'), ((ox, p[6][1]), p[6], '5')):
         d.line((a, b), fill=BLUE, width=14)
-        dy = 150 if lab.startswith('d5') else 80
-        text(d, ((a[0] + b[0]) / 2 + (40 if lab == '5' and a[0] == ox else 0), a[1] - dy), lab, 60, BLUE, anchor='ma')
+        dy = 80
+        dx = -60 if lab.startswith('d5') else (40 if lab == '5' and a[0] == ox else 0)
+        text(d, ((a[0] + b[0]) / 2 + dx, a[1] - dy), lab, 54 if lab.startswith('d5') else 60, BLUE, anchor='ma')
     chip(d, (1150, 420), '5 + 15 + 5 = 25, not 40', 58, anchor='m', bg=RED)
     save(im, 'card-plainwhy-a.png')
     chip(d, (1150, 560), 'fix: d5 = d1 − 10', 58, anchor='m', bg=GREEN)
+    text(d, (1150, 650), '(10 = two thicknesses of 5)', 44, GREEN, anchor='ma')
     save(im, 'card-plainwhy.png')
 
 
@@ -174,18 +176,22 @@ def card_recap():
 def card_bwrong():
     """Asked run 1: the plate's inner edge where it was placed against where it belongs (its logged sketch.line points)."""
     im, d = canvas()
-    text(d, (W / 2, 50), 'Claude, asked, run 1: the plate edge', 60, anchor='ma')
+    text(d, (W / 2, 40), 'Claude, asked, run 1: a length used as a position', 52, anchor='ma')
     s = 12
     pg = draw_j(d, j_pts(25, 5), 200, 1040, s, fill=(214, 236, 220), outline=GREEN)
     d.line((pg[5], pg[6]), fill=GREEN, width=18)
-    text(d, (pg[5][0] + 30, (pg[5][1] + pg[6][1]) / 2), 'edge at 5', 48, GREEN)
+    text(d, (pg[5][0] + 30, (pg[5][1] + pg[6][1]) / 2), 'edge at x = 5', 44, GREEN)
+    d.line((pg[4][0], pg[4][1] - 40, pg[5][0], pg[5][1] - 40), fill=BLUE, width=8)
+    text(d, ((pg[4][0] + pg[5][0]) / 2, pg[4][1] - 110), 'move left 15', 40, BLUE, anchor='ma')
     text(d, (350, 150), 'needed', 56, GREEN, anchor='ma')
     text(d, (350, 230), 'x = thickness', 52, GREEN, path=M, anchor='ma')
     chip(d, (350, 1110), 'plate 5 · 8,500', 46, anchor='m', bg=GREEN)
     save(im, 'card-bwrong-1.png')
     pr = draw_j(d, j_pts(25, 15), 950, 1040, s, fill=(240, 214, 214), outline=RED)
     d.line((pr[5], pr[6]), fill=RED, width=18)
-    text(d, (pr[5][0] + 30, (pr[5][1] + pr[6][1]) / 2), 'edge at 15', 48, RED)
+    text(d, (pr[5][0] + 30, (pr[5][1] + pr[6][1]) / 2), 'edge at x = 15', 44, RED)
+    for k, ln in enumerate(('the move (15)', 'used as', 'the place')):
+        text(d, (1290, 820 + k * 50), ln, 40, RED)
     text(d, (1100, 160), 'Claude placed it at', 52, RED, anchor='ma')
     text(d, (1100, 230), 'x = hook_depth − 2·thickness', 44, RED, path=M, anchor='ma')
     chip(d, (1100, 1110), 'plate 15 · 19,500', 46, anchor='m', bg=RED)
@@ -217,7 +223,7 @@ def hook(w, h, vertical=False):
 
 def short_assets():
     im, d = canvas(1000, 1000)
-    text(d, (500, 40), 'Plain numbers: d1 = 40', 54, anchor='ma')
+    text(d, (500, 40), 'Plain numbers: bottom 25 → 40', 50, anchor='ma')
     s = 11
     ox, oy = 160, 900
     p = draw_j(d, j_pts(), ox, oy, s)
@@ -227,6 +233,12 @@ def short_assets():
         d.line((a, b), fill=BLUE, width=12)
         text(d, ((a[0] + b[0]) / 2 + (36 if lab == '5' and a[0] == ox else 0), a[1] - 62), lab, 48, BLUE, anchor='ma')
     chip(d, (640, 300), '5 + 15 + 5 = 25', 50, anchor='m', bg=RED)
+    # the gap: the lip ends at 25, the bottom at 40
+    gx0, gx1, gy = ox + 25 * s, ox + 40 * s, oy - 10 * s
+    for x in range(int(gx0), int(gx1), 22):
+        d.line((x, gy, x + 12, gy), fill=RED, width=6)
+    d.line((gx1, oy, gx1, gy), fill=RED, width=6)
+    chip(d, ((gx0 + gx1) / 2 + 40, gy - 130), "can't meet", 44, anchor='m', bg=RED)
     save(im, 'sc3s-why.png')
     im = Image.new('RGB', (1000, 1000), BG)
     d = ImageDraw.Draw(im)
