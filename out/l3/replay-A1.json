@@ -1,0 +1,134 @@
+{
+ "replayed_from": "out/l3/runs/A1/transcript.jsonl",
+ "calls": 9,
+ "names": [
+  "describe_command",
+  "batch",
+  "inspect_design",
+  "new_design",
+  "batch",
+  "inspect_design",
+  "new_design",
+  "batch",
+  "measure"
+ ],
+ "errors": 0,
+ "summary": {
+  "steps": [
+   "Sketch",
+   "ExtrudeFeature"
+  ],
+  "step_names": [
+   "Sketch1",
+   "Extrude1"
+  ],
+  "sketch_lines": [
+   8
+  ],
+  "profile_areas_mm2": [
+   500.0
+  ],
+  "bodies": 1,
+  "volume_mm3": 10000.0,
+  "closed": true,
+  "bbox_mm": [
+   40.0,
+   20.0,
+   60.0
+  ],
+  "bbox_min": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max": [
+   40.0,
+   20.0,
+   60.0
+  ],
+  "plane_normal": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "sketch_up": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "corners": [
+   [
+    0.0,
+    -60.0
+   ],
+   [
+    0.0,
+    0.0
+   ],
+   [
+    5.0,
+    -60.0
+   ],
+   [
+    5.0,
+    -5.0
+   ],
+   [
+    35.0,
+    -10.0
+   ],
+   [
+    35.0,
+    -5.0
+   ],
+   [
+    40.0,
+    -10.0
+   ],
+   [
+    40.0,
+    0.0
+   ]
+  ],
+  "errors": 0,
+  "user_parameters": [],
+  "user_parameter_names": [],
+  "model_parameters": [
+   {
+    "name": "d1",
+    "expression": "20",
+    "value": 20.0,
+    "feature": "Extrude1",
+    "input": "Distance"
+   }
+  ],
+  "model_parameters_from_names": 0,
+  "sketch_fully_constrained": false,
+  "sketch_dof": 14
+ },
+ "export": {
+  "isError": false,
+  "reply": {
+   "bytes": 1484,
+   "format": "StlBinary",
+   "path": "/tmp/solidcraft-mcp-202-2a917211/hook.stl"
+  }
+ },
+ "our_checker": {
+  "file": "hook.stl",
+  "triangles": 28,
+  "volume_mm3": 10000.0,
+  "outward": true,
+  "size_mm": [
+   40.0,
+   20.0,
+   60.0
+  ],
+  "min_mm": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "closed": true
+ }
+}

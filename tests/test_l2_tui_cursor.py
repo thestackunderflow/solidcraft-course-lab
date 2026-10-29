@@ -68,3 +68,9 @@ def test_claude_code_2_1_311_end_of_turn_line_is_seen():
     assert tui.turns_done(DONE_2_1_311) == 1
     assert tui.turns_done(IDLE) == 0
     assert tui.turns_done(DONE_2_1_311 + '\n✻ Worked for 3s · done 1:12 AM') == 2
+
+
+def test_end_of_turn_line_with_a_non_ascii_verb():
+    # lesson 3 run B1: Claude Code 2.1.311 ended a turn with "Sautéed for 41s"; the ASCII-only pattern missed it
+    from client import tui
+    assert tui.turns_done('✻ Sautéed for 41s · done 7:40 PM') == 1

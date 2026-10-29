@@ -1,0 +1,36 @@
+  (5,−60) and so on. The new design is unsaved
+  and still named "Untitled".
+
+✻ Worked for 26s · done 7:38 PM
+
+❯ Make the hook 40 deep instead of 25.
+
+  Called solidcraft 3 times
+
+● I rebuilt the hook with the 25 mm dimension
+  changed to 40. It now measures 40 × 20 × 60
+  mm (X × Y × Z) and still spans Z 0 to 60.
+
+  I took "deep" to mean the 25 mm reach in X,
+  not the 20 mm extrusion. The 20 mm extrusion
+  is unchanged. If you meant the extrusion
+  depth, tell me and I'll change that instead.
+
+  - Outline points (X, Z): (0,0) → (40,0) →
+    (40,10) → (35,10) → (35,5) → (5,5) →
+    (5,60) → (0,60) → back to (0,0).
+  - Lip and uprights: the lip is still 5 wide
+    and 5 tall, and the upright stays at X 0
+    to 5. The "left 15" leg became "left 30"
+    so it still lands on the upright at X = 5.
+  - Check: the volume is 10,000 mm³, which is
+    a 500 mm² profile times 20.
+
+  This is still the unsaved "Untitled" design.
+
+✻ Cooked for 16s · done 7:38 PM
+
+──────────────────────────────────────────────
+❯ save it as hook
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

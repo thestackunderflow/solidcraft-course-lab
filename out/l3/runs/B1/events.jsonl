@@ -1,0 +1,31 @@
+{"t": 0.504, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.545, "event": "turn 1: typing"}
+{"t": 20.04, "event": "turn 1: Enter"}
+{"t": 29.19, "event": "tool call: describe_command", "seq": 13}
+{"t": 29.191, "event": "tool call: describe_command", "seq": 14}
+{"t": 29.191, "event": "tool call: describe_command", "seq": 15}
+{"t": 29.193, "event": "tool reply: describe_command", "seq": 16, "isError": false}
+{"t": 29.219, "event": "tool reply: describe_command", "seq": 17, "isError": false}
+{"t": 29.239, "event": "tool reply: describe_command", "seq": 18, "isError": false}
+{"t": 35.346, "event": "tool call: new_design", "seq": 19}
+{"t": 35.348, "event": "tool reply: new_design", "seq": 20, "isError": false}
+{"t": 39.061, "event": "tool call: batch", "seq": 21}
+{"t": 39.07, "event": "tool reply: batch", "seq": 22, "isError": false}
+{"t": 40.987, "event": "tool call: inspect_design", "seq": 23}
+{"t": 41.016, "event": "tool reply: inspect_design", "seq": 24, "isError": false}
+{"t": 46.107, "event": "tool call: new_design", "seq": 25}
+{"t": 46.109, "event": "tool reply: new_design", "seq": 26, "isError": false}
+{"t": 49.914, "event": "tool call: batch", "seq": 27}
+{"t": 49.921, "event": "tool reply: batch", "seq": 28, "isError": false}
+{"t": 51.933, "event": "tool call: measure", "seq": 29}
+{"t": 51.947, "event": "tool reply: measure", "seq": 30, "isError": false}
+{"t": 440.434, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": true}
+{"t": 443.438, "event": "turn 2: typing"}
+{"t": 445.932, "event": "turn 2: Enter"}
+{"t": 449.156, "event": "tool call: set_parameter", "seq": 31}
+{"t": 449.164, "event": "tool reply: set_parameter", "seq": 32, "isError": false}
+{"t": 449.185, "event": "tool call: measure", "seq": 33}
+{"t": 449.232, "event": "tool reply: measure", "seq": 34, "isError": false}
+{"t": 452.461, "event": "turn 2: end-of-turn line seen"}
+{"t": 454.463, "event": "turn 2: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 459.982, "event": "recording stopped"}

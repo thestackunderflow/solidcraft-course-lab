@@ -1,0 +1,180 @@
+{
+ "replayed_from": "out/l3/runs/B1/transcript.jsonl",
+ "calls": 11,
+ "names": [
+  "describe_command",
+  "describe_command",
+  "describe_command",
+  "new_design",
+  "batch",
+  "inspect_design",
+  "new_design",
+  "batch",
+  "measure",
+  "set_parameter",
+  "measure"
+ ],
+ "errors": 0,
+ "summary": {
+  "steps": [
+   "Sketch",
+   "ExtrudeFeature"
+  ],
+  "step_names": [
+   "hook_profile",
+   "hook"
+  ],
+  "sketch_lines": [
+   8
+  ],
+  "profile_areas_mm2": [
+   1875.0
+  ],
+  "bodies": 1,
+  "volume_mm3": 37500.0,
+  "closed": true,
+  "bbox_mm": [
+   40.0,
+   20.0,
+   60.0
+  ],
+  "bbox_min": [
+   0.0,
+   -20.0,
+   0.0
+  ],
+  "bbox_max": [
+   40.0,
+   0.0,
+   60.0
+  ],
+  "plane_normal": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "sketch_up": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "corners": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    60.0
+   ],
+   [
+    30.0,
+    5.0
+   ],
+   [
+    30.0,
+    60.0
+   ],
+   [
+    35.0,
+    5.0
+   ],
+   [
+    35.0,
+    10.0
+   ],
+   [
+    40.0,
+    0.0
+   ],
+   [
+    40.0,
+    10.0
+   ]
+  ],
+  "errors": 0,
+  "user_parameters": [
+   {
+    "name": "plate_height",
+    "expression": "60 mm",
+    "value": 60.0,
+    "unit": "mm",
+    "used_by": []
+   },
+   {
+    "name": "width",
+    "expression": "20 mm",
+    "value": 20.0,
+    "unit": "mm",
+    "used_by": [
+     "d1"
+    ]
+   },
+   {
+    "name": "thickness",
+    "expression": "5 mm",
+    "value": 5.0,
+    "unit": "mm",
+    "used_by": []
+   },
+   {
+    "name": "hook_depth",
+    "expression": "40",
+    "value": 40.0,
+    "unit": "mm",
+    "used_by": []
+   },
+   {
+    "name": "lip_height",
+    "expression": "10 mm",
+    "value": 10.0,
+    "unit": "mm",
+    "used_by": []
+   }
+  ],
+  "user_parameter_names": [
+   "plate_height",
+   "width",
+   "thickness",
+   "hook_depth",
+   "lip_height"
+  ],
+  "model_parameters": [
+   {
+    "name": "d1",
+    "expression": "width",
+    "value": 20.0,
+    "feature": "hook",
+    "input": "Distance"
+   }
+  ],
+  "model_parameters_from_names": 1,
+  "sketch_fully_constrained": true,
+  "sketch_dof": 0
+ },
+ "export": {
+  "isError": false,
+  "reply": {
+   "bytes": 1484,
+   "format": "StlBinary",
+   "path": "/tmp/solidcraft-mcp-202-13f72d77/hook.stl"
+  }
+ },
+ "our_checker": {
+  "file": "hook.stl",
+  "triangles": 28,
+  "volume_mm3": 37500.0,
+  "outward": true,
+  "size_mm": [
+   40.0,
+   20.0,
+   60.0
+  ],
+  "min_mm": [
+   0.0,
+   -20.0,
+   0.0
+  ],
+  "closed": true
+ }
+}

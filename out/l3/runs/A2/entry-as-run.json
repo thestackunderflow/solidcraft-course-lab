@@ -1,0 +1,20 @@
+{
+ "mcpServers": {
+  "solidcraft": {
+   "args": [
+    "/work/proxy/mcp_log_proxy.py",
+    "--log",
+    "/work/out/l3/runs/A2/transcript.jsonl",
+    "--png-dir",
+    "/work/out/l3/runs/A2",
+    "--watchdog",
+    "330",
+    "--",
+    "/opt/solidcraft-0.26.1/bin/solidcraft-cli",
+    "mcp"
+   ],
+   "command": "python3",
+   "type": "stdio"
+  }
+ }
+}

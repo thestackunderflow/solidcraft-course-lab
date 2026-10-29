@@ -1,0 +1,384 @@
+{
+ "prereg": {
+  "written_at_utc": "2026-10-29T19:25:11+00:00",
+  "plan": "Refream-Canvas/inputs/video-plans/2026-10-27-solidcraft-course/PLAN-L3.md rev 2 \u00a73",
+  "runs": {
+   "A1": "not asked",
+   "A2": "not asked (repeat)",
+   "B1": "asked in one sentence",
+   "B2": "asked (repeat)"
+  },
+  "messages": "claude-run/l3messages.sh",
+  "setup_per_run": "fresh container (fresh home folder), fresh SolidCraft 0.26.1 window with a new design, fresh Claude Code 2.1.311 session (claude --model claude-sonnet-5-5, default mode), the plug added with solidcraft-cli mcp setup and wrapped in the logging proxy, no CLAUDE.md, auto memory off",
+  "scoring": {
+   "names_used": "count of user parameters in parameters.list after the run, and which of the 7 sketch dimensions and the extrude distance have an expression that references a user parameter",
+   "edit_followed": "the 8 sketch corners at (0,0) (40,0) (40,10) (35,10) (35,5) (5,5) (5,60) (0,60) within 0.01 mm in the sketch plane (either orientation reported), Z from 0 to 60, volume 10000 +-0.1 mm3, bounding box 40 x 20 x 60",
+   "edit_by_parameter": "the calls sent after message 2 change hook_depth (set_parameter or parameters.change) and move no sketch point",
+   "reading_of_40_deep": "recorded: outside depth 40 (box 40) or arm 40 (box 45) or other; a different reading is reported as such, not as a failure of names"
+  },
+  "narration_branches": "PLAN-L3.md \u00a73.1"
+ },
+ "parts": {
+  "hand": {
+   "names_used": {
+    "user_parameters": 5,
+    "names": [
+     "hook_depth",
+     "thickness",
+     "lip_height",
+     "plate_height",
+     "width"
+    ],
+    "sizes_written_from_names": 8,
+    "of_sizes": 8
+   },
+   "edit_followed": {
+    "corners": true,
+    "z_0_60": true,
+    "volume_10000": true,
+    "box_40_20_60": true,
+    "all": true
+   },
+   "reading": "outside depth 40 (box 40)",
+   "volume_mm3": 10000.0,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ]
+  },
+  "plain": {
+   "names_used": {
+    "user_parameters": 0,
+    "names": [],
+    "sizes_written_from_names": 0,
+    "of_sizes": 8
+   },
+   "edit_followed": {
+    "corners": true,
+    "z_0_60": true,
+    "volume_10000": true,
+    "box_40_20_60": true,
+    "all": true
+   },
+   "reading": "outside depth 40 (box 40)",
+   "volume_mm3": 10000.0,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "after_refusal": {
+    "d1_expression": "25",
+    "d1_value": 25.0,
+    "volume_mm3": 8500.0,
+    "bbox_mm": [
+     25.0,
+     20.0,
+     60.0
+    ]
+   },
+   "refused_constraints": [
+    {
+     "id": "k2",
+     "type": "length",
+     "param": "d1",
+     "expression": "25",
+     "l": 0
+    },
+    {
+     "id": "k3",
+     "type": "vertical",
+     "param": null,
+     "expression": null,
+     "l": 1
+    },
+    {
+     "id": "k6",
+     "type": "length",
+     "param": "d3",
+     "expression": "5",
+     "l": 2
+    },
+    {
+     "id": "k7",
+     "type": "vertical",
+     "param": null,
+     "expression": null,
+     "l": 3
+    },
+    {
+     "id": "k10",
+     "type": "length",
+     "param": "d5",
+     "expression": "15",
+     "l": 4
+    },
+    {
+     "id": "k11",
+     "type": "vertical",
+     "param": null,
+     "expression": null,
+     "l": 5
+    },
+    {
+     "id": "k14",
+     "type": "length",
+     "param": "d7",
+     "expression": "5",
+     "l": 6
+    },
+    {
+     "id": "k15",
+     "type": "vertical",
+     "param": null,
+     "expression": null,
+     "l": 7
+    }
+   ]
+  },
+  "A1": {
+   "asked_for_names": false,
+   "names_used": {
+    "user_parameters": 0,
+    "names": [],
+    "sizes_written_from_names": 0,
+    "of_sizes": 1
+   },
+   "edit_followed": {
+    "corners": true,
+    "z_0_60": true,
+    "volume_10000": true,
+    "box_40_20_60": true,
+    "all": true
+   },
+   "edit": {
+    "kind": "drew it again in a new design",
+    "by_parameter": false,
+    "commands": [
+     "new_design",
+     "sketch.create",
+     "sketch.line",
+     "sketch.finish",
+     "solid.extrude",
+     "measure"
+    ]
+   },
+   "reading": "outside depth 40 (box 40)",
+   "volume_mm3": 10000.0,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "bbox_min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox_max": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "turn1_calls": [
+    "describe_command",
+    "batch",
+    "inspect_design",
+    "new_design",
+    "batch",
+    "inspect_design"
+   ],
+   "turn2_calls": [
+    "new_design",
+    "batch",
+    "measure"
+   ]
+  },
+  "A2": {
+   "asked_for_names": false,
+   "names_used": {
+    "user_parameters": 0,
+    "names": [],
+    "sizes_written_from_names": 0,
+    "of_sizes": 1
+   },
+   "edit_followed": {
+    "corners": false,
+    "z_0_60": true,
+    "volume_10000": false,
+    "box_40_20_60": false,
+    "all": false
+   },
+   "edit": {
+    "kind": "other",
+    "by_parameter": false,
+    "commands": [
+     "undo",
+     null,
+     "solid.extrude",
+     "measure"
+    ]
+   },
+   "reading": "other (box [25.0, 40.0, 60.0])",
+   "volume_mm3": 17000.0,
+   "bbox_mm": [
+    25.0,
+    40.0,
+    60.0
+   ],
+   "bbox_min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox_max": [
+    25.0,
+    40.0,
+    60.0
+   ],
+   "turn1_calls": [
+    "describe_command",
+    "describe_command",
+    "describe_command",
+    "batch",
+    "inspect_design",
+    "undo",
+    "undo",
+    "new_design",
+    "batch",
+    "inspect_design"
+   ],
+   "turn2_calls": [
+    "undo",
+    "execute",
+    "batch",
+    "measure"
+   ]
+  },
+  "B1": {
+   "asked_for_names": true,
+   "names_used": {
+    "user_parameters": 5,
+    "names": [
+     "plate_height",
+     "width",
+     "thickness",
+     "hook_depth",
+     "lip_height"
+    ],
+    "sizes_written_from_names": 1,
+    "of_sizes": 1
+   },
+   "edit_followed": {
+    "corners": false,
+    "z_0_60": true,
+    "volume_10000": false,
+    "box_40_20_60": true,
+    "all": false
+   },
+   "edit": {
+    "kind": "one parameter change",
+    "by_parameter": true,
+    "commands": [
+     "set_parameter",
+     "measure"
+    ]
+   },
+   "reading": "outside depth 40 (box 40)",
+   "volume_mm3": 37500.0,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "bbox_min": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "bbox_max": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "turn1_calls": [
+    "describe_command",
+    "describe_command",
+    "describe_command",
+    "new_design",
+    "batch",
+    "inspect_design",
+    "new_design",
+    "batch",
+    "measure"
+   ],
+   "turn2_calls": [
+    "set_parameter",
+    "measure"
+   ]
+  },
+  "B2": {
+   "asked_for_names": true,
+   "names_used": {
+    "user_parameters": 5,
+    "names": [
+     "plate_height",
+     "width",
+     "thickness",
+     "hook_depth",
+     "lip_height"
+    ],
+    "sizes_written_from_names": 1,
+    "of_sizes": 1
+   },
+   "edit_followed": {
+    "corners": true,
+    "z_0_60": true,
+    "volume_10000": true,
+    "box_40_20_60": true,
+    "all": true
+   },
+   "edit": {
+    "kind": "one parameter change",
+    "by_parameter": true,
+    "commands": [
+     "set_parameter",
+     "measure"
+    ]
+   },
+   "reading": "outside depth 40 (box 40)",
+   "volume_mm3": 10000.0,
+   "bbox_mm": [
+    40.0,
+    20.0,
+    60.0
+   ],
+   "bbox_min": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "bbox_max": [
+    40.0,
+    0.0,
+    60.0
+   ],
+   "turn1_calls": [
+    "describe_command",
+    "describe_command",
+    "describe_command",
+    "new_design",
+    "batch",
+    "inspect_design",
+    "new_design",
+    "batch",
+    "measure"
+   ],
+   "turn2_calls": [
+    "set_parameter",
+    "measure"
+   ]
+  }
+ }
+}

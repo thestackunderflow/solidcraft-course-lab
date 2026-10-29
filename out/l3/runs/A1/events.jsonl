@@ -1,0 +1,28 @@
+{"t": 0.502, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.542, "event": "turn 1: typing"}
+{"t": 12.613, "event": "turn 1: Enter"}
+{"t": 20.969, "event": "tool call: describe_command", "seq": 13}
+{"t": 20.971, "event": "tool reply: describe_command", "seq": 14, "isError": false}
+{"t": 25.233, "event": "tool call: batch", "seq": 15}
+{"t": 25.242, "event": "tool reply: batch", "seq": 16, "isError": false}
+{"t": 25.249, "event": "tool call: inspect_design", "seq": 17}
+{"t": 25.885, "event": "tool reply: inspect_design", "seq": 18, "isError": false}
+{"t": 31.998, "event": "tool call: new_design", "seq": 19}
+{"t": 32.002, "event": "tool reply: new_design", "seq": 20, "isError": false}
+{"t": 35.435, "event": "tool call: batch", "seq": 21}
+{"t": 35.447, "event": "tool reply: batch", "seq": 22, "isError": false}
+{"t": 35.455, "event": "tool call: inspect_design", "seq": 23}
+{"t": 35.503, "event": "tool reply: inspect_design", "seq": 24, "isError": false}
+{"t": 39.402, "event": "turn 1: end-of-turn line seen"}
+{"t": 41.404, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 44.409, "event": "turn 2: typing"}
+{"t": 46.899, "event": "turn 2: Enter"}
+{"t": 53.28, "event": "tool call: new_design", "seq": 25}
+{"t": 53.281, "event": "tool reply: new_design", "seq": 26, "isError": false}
+{"t": 58.362, "event": "tool call: batch", "seq": 27}
+{"t": 58.371, "event": "tool reply: batch", "seq": 28, "isError": false}
+{"t": 58.386, "event": "tool call: measure", "seq": 29}
+{"t": 58.409, "event": "tool reply: measure", "seq": 30, "isError": false}
+{"t": 63.5, "event": "turn 2: end-of-turn line seen"}
+{"t": 65.538, "event": "turn 2: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 71.055, "event": "recording stopped"}

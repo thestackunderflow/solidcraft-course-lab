@@ -1,0 +1,36 @@
+
+  Extrude: distance width (20 mm), as a new
+  body named "Hook".
+
+  My first attempt put the part at Z −60 to 0
+  because the plain XZ plane maps sketch-up to
+  world −Z. I rebuilt it on the XZ plane
+  flipped about its x axis, which puts it at Z
+  0 to 60. If you'd rather have the extrusion
+  run toward +Y, I can reverse the extrude
+  direction.
+
+  The design isn't saved to disk yet.
+
+✻ Brewed for 26s · done 7:51 PM
+
+❯ Make the hook 40 deep instead of 25.
+
+  Called solidcraft 2 times
+
+● hook_depth is now 40, and the model rebuilt
+  cleanly with no errors. The hook spans X 0
+  to 40, with the same height (Z 0 to 60) and
+  width (Y 0 to −20). I measured it as one
+  closed solid with a volume of 10,000 mm³.
+
+  The sketch and extrude are driven by the
+  parameter, so nothing else needed editing.
+  The design still isn't saved to disk.
+
+✻ Cooked for 4s · done 7:52 PM
+
+──────────────────────────────────────────────
+❯ save it as hook.solidcraft
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

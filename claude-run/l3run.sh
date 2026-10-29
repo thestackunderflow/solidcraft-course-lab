@@ -3,14 +3,14 @@
 # SolidCraft 0.26.1's window, both filmed (lab/l3claude.sh). The run's two messages are in claude-run/l3messages.sh. The container needs the network (Claude's servers); it
 # gets this PC's Claude sign-in as one environment variable, read here from the Claude Code credentials file and
 # written to a temporary env file that is deleted when the run ends. Nothing about it reaches the run folder.
-#   bash claude-run/l3run.sh A1     (A1, A2: not asked for names; B1: asked)
+#   bash claude-run/l3run.sh A1     (A1, A2: not asked for names; B1, B2: asked)
 set -euo pipefail
 RUN=${1:-A1}
 cd "$(dirname "$0")/.."
 LAB="$(pwd -W 2>/dev/null || pwd)"
 S=out/l3/runs/$RUN
 LEDGER="${LEDGER:-$LAB/../solidcraft-course-BUDGET.tsv}"
-CAP="${CAP:-0.30}"
+CAP="${CAP:-0.20}"
 export BUDGET_MARK="# --- GO 29 Oct 2026 L3"
 . claude-run/l3messages.sh "$RUN"
 [ -e "$S/meta.json" ] && { echo "refusing to overwrite $S"; exit 3; }

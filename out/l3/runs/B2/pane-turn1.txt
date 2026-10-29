@@ -1,0 +1,36 @@
+  ├────────┼──────────────────────────────┤
+  │ left 5 │ hook_depth - thickness,      │
+  │        │ lip_height                   │
+  ├────────┼──────────────────────────────┤
+  │ down 5 │ hook_depth - thickness,      │
+  │        │ lip_height - thickness       │
+  ├────────┼──────────────────────────────┤
+  │ left   │ thickness, lip_height -      │
+  │ 15     │ thickness                    │
+  ├────────┼──────────────────────────────┤
+  │ up 55  │ thickness, plate_height      │
+  ├────────┼──────────────────────────────┤
+  │ left 5 │ 0, plate_height              │
+  ├────────┼──────────────────────────────┤
+  │ close  │ back to 0, 0                 │
+  └────────┴──────────────────────────────┘
+
+  Extrude: distance width (20 mm), as a new
+  body named "Hook".
+
+  My first attempt put the part at Z −60 to 0
+  because the plain XZ plane maps sketch-up to
+  world −Z. I rebuilt it on the XZ plane
+  flipped about its x axis, which puts it at Z
+  0 to 60. If you'd rather have the extrusion
+  run toward +Y, I can reverse the extrude
+  direction.
+
+  The design isn't saved to disk yet.
+
+✻ Brewed for 26s · done 7:51 PM
+
+──────────────────────────────────────────────
+❯ save it as hook.solidcraft
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

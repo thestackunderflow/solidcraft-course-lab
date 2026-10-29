@@ -1,0 +1,36 @@
+
+  Some of your lengths could be written from
+  more than one parameter, so I chose:
+  - The two 5 mm moves (left 5, down 5): I
+    used thickness. "Down 5" could also be
+    lip_height - thickness.
+  - Left 15: I wrote it as the x-coordinate
+    hook_depth - 2 * thickness, which is 5.
+  - Up 55: I wrote it as the y-coordinate
+    plate_height, which is 60. Because the
+    points are absolute, I didn't give "up 55"
+    a plate_height - thickness expression.
+
+  Changing any parameter updates the geometry.
+
+✻ Sautéed for 41s · done 7:40 PM
+
+❯ Make the hook 40 deep instead of 25.
+
+  Called solidcraft 2 times
+
+● The hook is now 40 mm deep. I changed
+  hook_depth from 25 to 40 and the model
+  rebuilt without errors.
+
+  - Size: the bounding box is 40 × 20 × 60 mm.
+  - Volume: 37,500 mm³, up from 19,500 mm³.
+  - Unchanged: plate_height, thickness,
+    lip_height and width are as before.
+
+✻ Baked for 6s · done 7:47 PM
+
+──────────────────────────────────────────────
+❯ Add a 5 mm fillet to the hook's outer corner
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

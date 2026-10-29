@@ -1,0 +1,36 @@
+
+
+  Called solidcraft 4 times
+
+● Let me verify the orientation (Z 0–60).
+
+  Called solidcraft 6 times
+
+● I sketched the outline on the XZ plane and
+  extruded it 20 mm. The result is a single
+  closed solid, Body1, in a fresh design. The
+  design is unsaved.
+
+  The outline runs (X, Z): (0,0) → (25,0) →
+  (25,10) → (20,10) → (20,5) → (5,5) → (5,60)
+  → (0,60) → back to (0,0).
+
+  The bounding box is X 0–25, Y 0–20 and Z
+  0–60. The volume is 8,500 mm³.
+
+  - Flipped XZ plane: the default XZ sketch
+    plane puts "up" along −Z, which made the
+    part hang from Z 0 to −60. I redid the
+    sketch on the XZ plane flipped about its X
+    axis so up is +Z.
+  - Extrusion direction: the flip reverses the
+    plane's normal, so I extruded in the
+    negative direction, which lands the part
+    on +Y (0 to 20).
+
+✻ Worked for 47s · done 7:49 PM
+
+──────────────────────────────────────────────
+❯ save it as hook.solidcraft
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

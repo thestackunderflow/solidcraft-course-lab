@@ -1,0 +1,36 @@
+● The sketch's vertical axis on XZ points down
+  −Z, so the part came out at Z −60 to 0.
+  I'll rebuild it with the sketch Y values
+  negated.
+
+  Called solidcraft 3 times
+
+● I sketched the outline on the XZ plane and
+  extruded it 20 mm. The body measures 25 × 20
+  × 60 mm (X × Y × Z), so it spans Z 0 to 60.
+
+  - Outline points (X, Z): (0,0) → (25,0) →
+    (25,10) → (20,10) → (20,5) → (5,5) →
+    (5,60) → (0,60) → back to (0,0).
+  - Extrusion: it goes from Y 0 to Y 20.
+  - Check: the solid has a profile area of 425
+    mm² and a volume of 8,500 mm³, which
+    matches 425 × 20.
+
+  SolidCraft's sketch vertical axis on the XZ
+  plane points toward −Z. My first attempt,
+  with the heights entered as positive, came
+  out at Z −60 to 0. I discarded that design
+  and rebuilt it with the sketch Y values
+  negated, which gave the Z 0 to 60 result.
+  The sketch holds those negated values, so
+  its coordinates will read as (25,−10),
+  (5,−60) and so on. The new design is unsaved
+  and still named "Untitled".
+
+✻ Worked for 26s · done 7:38 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

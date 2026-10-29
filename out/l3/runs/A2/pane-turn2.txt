@@ -1,0 +1,36 @@
+  0–60. The volume is 8,500 mm³.
+
+  - Flipped XZ plane: the default XZ sketch
+    plane puts "up" along −Z, which made the
+    part hang from Z 0 to −60. I redid the
+    sketch on the XZ plane flipped about its X
+    axis so up is +Z.
+  - Extrusion direction: the flip reverses the
+    plane's normal, so I extruded in the
+    negative direction, which lands the part
+    on +Y (0 to 20).
+
+✻ Worked for 47s · done 7:49 PM
+
+❯ Make the hook 40 deep instead of 25.
+
+  Called solidcraft 4 times
+
+● I changed the extrusion depth to 40 mm. The
+  hook now spans Y 0–40, with the same X 0–25
+  and Z 0–60 outline, and its volume is 17,000
+  mm³.
+
+  The depth was 20 mm before, not 25. The 25
+  in the outline is the width along X. I took
+  "deep" to mean the extrusion direction, so I
+  left the width at 25. If you wanted the
+  width changed to 40 instead, tell me and
+  I'll change that.
+
+✻ Baked for 30s · done 7:50 PM
+
+──────────────────────────────────────────────
+❯ save it as hook.solidcraft
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

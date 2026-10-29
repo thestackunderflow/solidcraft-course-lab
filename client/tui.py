@@ -5,7 +5,7 @@ import re
 
 BUSY = re.compile(r'esc to interrupt', re.IGNORECASE)
 ASK = re.compile(r'Do you want to (proceed|allow|make this)', re.IGNORECASE)
-DONE = re.compile(r'[A-Z][a-z]+ for [0-9hms ]+· done [0-9]')   # 2.1.311: "Worked for 6s · done 1:10 AM", "Baked for 13s ..."
+DONE = re.compile(r'[A-Z]\w+ for [0-9hms ]+· done [0-9]')   # 2.1.311: "Worked for 6s · done 1:10 AM", "Sautéed for 41s ..." (\w: non-ASCII verbs)
 YES = re.compile(r'^\s*[❯>]?\s*(\d)\.\s+Yes\b', re.MULTILINE)
 
 

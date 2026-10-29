@@ -1,0 +1,38 @@
+{"t": 0.503, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.589, "event": "turn 1: typing"}
+{"t": 12.65, "event": "turn 1: Enter"}
+{"t": 28.245, "event": "tool call: describe_command", "seq": 13}
+{"t": 28.246, "event": "tool call: describe_command", "seq": 14}
+{"t": 28.246, "event": "tool call: describe_command", "seq": 15}
+{"t": 28.247, "event": "tool reply: describe_command", "seq": 16, "isError": false}
+{"t": 28.262, "event": "tool reply: describe_command", "seq": 17, "isError": false}
+{"t": 28.28, "event": "tool reply: describe_command", "seq": 18, "isError": false}
+{"t": 33.189, "event": "tool call: batch", "seq": 19}
+{"t": 33.201, "event": "tool reply: batch", "seq": 20, "isError": false}
+{"t": 35.182, "event": "tool call: inspect_design", "seq": 21}
+{"t": 35.211, "event": "tool reply: inspect_design", "seq": 22, "isError": false}
+{"t": 39.987, "event": "tool call: undo", "seq": 23}
+{"t": 39.988, "event": "tool reply: undo", "seq": 24, "isError": false}
+{"t": 42.607, "event": "tool call: undo", "seq": 25}
+{"t": 42.609, "event": "tool reply: undo", "seq": 26, "isError": false}
+{"t": 52.203, "event": "tool call: new_design", "seq": 27}
+{"t": 52.205, "event": "tool reply: new_design", "seq": 28, "isError": false}
+{"t": 56.684, "event": "tool call: batch", "seq": 29}
+{"t": 56.691, "event": "tool reply: batch", "seq": 30, "isError": false}
+{"t": 56.708, "event": "tool call: inspect_design", "seq": 31}
+{"t": 56.745, "event": "tool reply: inspect_design", "seq": 32, "isError": false}
+{"t": 60.588, "event": "turn 1: end-of-turn line seen"}
+{"t": 62.618, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 65.624, "event": "turn 2: typing"}
+{"t": 68.112, "event": "turn 2: Enter"}
+{"t": 72.061, "event": "tool call: undo", "seq": 33}
+{"t": 72.066, "event": "tool reply: undo", "seq": 34, "isError": false}
+{"t": 90.599, "event": "tool call: execute", "seq": 35}
+{"t": 90.6, "event": "tool reply: execute", "seq": 36, "isError": true}
+{"t": 92.923, "event": "tool call: batch", "seq": 37}
+{"t": 92.933, "event": "tool reply: batch", "seq": 38, "isError": false}
+{"t": 92.944, "event": "tool call: measure", "seq": 39}
+{"t": 93.0, "event": "tool reply: measure", "seq": 40, "isError": false}
+{"t": 98.958, "event": "turn 2: end-of-turn line seen"}
+{"t": 100.96, "event": "turn 2: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 106.487, "event": "recording stopped"}

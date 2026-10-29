@@ -1,0 +1,23 @@
+{
+ "volume_mm3": 17000.0,
+ "bbox_mm": [
+  25.0,
+  40.0,
+  60.0
+ ],
+ "bbox_min": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "bbox_max": [
+  25.0,
+  40.0,
+  60.0
+ ],
+ "user_parameter_names": [],
+ "model_parameters_from_names": 0,
+ "sketch_dof": 14,
+ "errors": 0
+}
+app still running after Ctrl+Q: TERM
