@@ -1,20 +1,27 @@
 {
- "written": "2026-10-30 (UTC), before any lesson 7 Claude run",
+ "written": "2026-10-30 (UTC), amended after the plan gate and before any lesson 7 Claude run (the first version is commit e3714f7; reasons in PLAN-L7 rev 2 §0 / DECISIONS-L7: the producer asked for Claude's own reply where viewers meet the failure; the accuracy reviewer asked for missing branches)",
  "lesson": "SolidCraft + Claude Course lesson 7 (fixes), L7-Q11",
  "run": "R1 (one run; no re-runs unless the run breaks before turn 1 ends, which is then logged as such)",
- "client": "Claude Code 2.1.311, claude --model claude-sonnet-5-5 --permission-mode manual (asks before tools, as Claude Desktop does; Claude Code's own default is auto mode, which the video says)",
- "setup": "fresh container and home; SolidCraft 0.27.0 open (window filmed) with lesson 3's hook built by a no-AI batch before the recording (8,500 mm3, 25 x 20 x 60); the plug added by solidcraft-cli mcp setup (what ? > Connect AI assistants runs), wrapped in the logging proxy; no CLAUDE.md, auto memory off; ~/Documents exists; the plug has no --allow-path",
- "messages": ["What's in my SolidCraft design?", "What's in my SolidCraft design?", "Save it as hook.sc in my Documents folder."],
- "approval_policy": "turn 1: the first approval prompt is answered No (Esc). Every later prompt naming a SolidCraft tool: the prompt's own Yes. Any other prompt (shell, file write, web): No (Esc).",
+ "client": "Claude Code 2.1.311, claude --model claude-sonnet-5-5 --permission-mode manual (asks before each tool; Claude Code's own default is auto mode, which the video says)",
+ "setup": "fresh container and home; the plug added by solidcraft-cli mcp setup (what ? > Connect AI assistants runs), wrapped in the logging proxy; no CLAUDE.md, auto memory off; ~/Documents exists; the plug has no --allow-path. SolidCraft is NOT running when Claude Code starts (the common case: the Claude app first).",
+ "messages": ["What's in my SolidCraft design?", "I've opened SolidCraft with my hook in it. Save it as hook.sc in my Documents folder."],
+ "between_turns": "after turn 1 ends: SolidCraft 0.27.0 opens (filmed), New design, and lesson 3's hook is built in the window by a no-AI batch (lab/l7hook.py, its own plug session); then message 2 is typed",
+ "approval_policy": "every prompt that names a SolidCraft tool (mcp__solidcraft__...) gets the prompt's first option, the one-time 'Yes' (never 'Yes, and don't ask again'); any other prompt (shell, file write, web, search) gets No (Esc). No deliberate denial.",
  "record": {
-  "q1_deny": "did turn 1 show an approval prompt, for which tool; tools/call lines in the proxy log during turn 1 (expected 0 after a deny); Claude Code's words on screen after the deny",
-  "q2_allow": "turn 2: the tool calls and Claude's reply (expected inspect_design; reply names the hook's parameters/body)",
-  "q3_save": "turn 3: was save called; its reply verbatim (expected: outside the folders this agent may use ... --allow-path DIR); does Claude's reply name --allow-path or the client configuration; did Claude ask for any other tool (denied by policy) or save elsewhere; the file ~/Documents/hook.sc exists after the run (expected no)"
+  "q1_headless": "turn 1: the tool calls; whether the reply carries the headless Note; whether Claude's own text tells the user SolidCraft is not open / asks them to start it (quote it)",
+  "q2_bridge": "turn 2: whether the plug's next call reaches the open window (no Note) or stays headless (the Note); quote",
+  "q3_save": "turn 2: was save called, with which path (absolute, ~ or relative); its reply verbatim; does Claude's reply name --allow-path or the client configuration (quote); did Claude ask for any other tool (denied by policy) or save elsewhere; does ~/Documents/hook.sc exist after the run",
+  "cost": "the /cost line after the run"
  },
  "branches": {
-  "no prompt in turn 1": "the video says Claude Code did not ask for that call in manual mode, and the deny beat uses only what the run shows; no denial is staged",
-  "save not attempted in turn 3": "say what Claude did instead; the refused-save beat uses the no-AI take (out/l7/errors)",
-  "save succeeds": "report it; the lesson's save-folder beat is re-checked against the no-AI take"
+  "turn 1 has no Note (bridged)": "impossible by setup unless SolidCraft started; report as a lab fault",
+  "Claude does not relay the Note": "say so: the Note is in the reply Claude got (show the proxy log line), Claude's words did not pass it on",
+  "the first prompt is not a SolidCraft tool": "it is answered No by policy; say which tool and what Claude did next",
+  "turn 2 still headless": "quote the Note; the video's rule becomes: open SolidCraft first, then start the Claude app",
+  "save not attempted": "say what Claude did instead; the refused-save beat uses the no-AI take",
+  "save refused with different words (a relative or ~ path)": "quote what the run shows; never call it 'the same refusal' unless the words match",
+  "save succeeds (scratch / recovery folder or another allowed folder)": "say where it went; the lesson's save-folder beat stays on the no-AI take",
+  "Claude retries with another tool after a No": "record it; if the policy answers No again, say so"
  },
  "cap": "per run $0.25 (ledger mark '# --- GO 29 Oct 2026 L7'); episode stop $0.90"
 }
