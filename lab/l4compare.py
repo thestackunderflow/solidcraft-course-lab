@@ -84,13 +84,21 @@ def verdict(follow1, turn2, centred_after):
 
 
 def logged_holes(calls):
+    """How each hole was asked for, from the logged calls: solid.hole (position / references) or a sketch circle."""
     out = []
     for cmd, p in _steps(calls):
-        if cmd != 'solid.hole':
-            continue
-        txt = json.dumps({k: p.get(k) for k in ('position', 'references', 'points')})
-        out.append({'diameter': p.get('diameter', p.get('clearance')), 'position': p.get('position'),
-                    'references': p.get('references'), 'uses_width': 'width' in txt})
+        if cmd == 'solid.hole':
+            txt = json.dumps({k: p.get(k) for k in ('position', 'references', 'points')})
+            out.append({'how': 'solid.hole', 'diameter': p.get('diameter', p.get('clearance')), 'position': p.get('position'),
+                        'references': p.get('references'), 'uses_width': 'width' in txt})
+        elif str(cmd).startswith('sketch.circle'):
+            dia = p.get('diameter', None)
+            if dia is None and p.get('radius') is not None:
+                dia = p['radius'] if isinstance(p['radius'], (int, float)) and not isinstance(p['radius'], bool) else f"{p['radius']} (radius)"
+                if isinstance(dia, (int, float)):
+                    dia = f'{dia} (radius)'
+            out.append({'how': 'sketch circle', 'diameter': dia, 'position': p.get('center'), 'references': None,
+                        'uses_width': 'width' in json.dumps(p.get('center'))})
     return out
 
 

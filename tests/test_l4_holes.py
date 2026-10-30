@@ -147,3 +147,14 @@ def test_verdict_a_formula_that_follows_but_message_2_also_moved_holes_is_not_ke
 
 def test_verdict_off_centre():
     assert c.verdict(follow1=False, turn2=[call('set_parameter', name='width', value=30)], centred_after=False) == 'off-centre'
+
+
+def test_holes_cut_from_sketch_circles_are_quoted_too():
+    calls = [call('batch', commands=[{'command': 'sketch.create', 'params': {'plane': 'YZ'}},
+                                     {'command': 'sketch.circle.center', 'params': {'center': [-10, 45], 'radius': 2.25}},
+                                     {'command': 'sketch.circle.center', 'params': {'center': ['-width / 2', 15], 'radius': 'hole_d / 2'}},
+                                     {'command': 'solid.extrude', 'params': {'operation': 'cut', 'through_all': True}}])]
+    h = c.logged_holes(calls)
+    assert [x['how'] for x in h] == ['sketch circle', 'sketch circle']
+    assert [x['uses_width'] for x in h] == [False, True]
+    assert h[1]['diameter'] == 'hole_d / 2 (radius)'

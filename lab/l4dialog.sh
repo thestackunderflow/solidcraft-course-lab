@@ -51,7 +51,7 @@ okstate() {   # okstate PNG -> "ok_enabled red_line": OK's blue at y 742 or 758 
   python3 - /tmp/s.png <<'PY'
 import subprocess, sys
 def px(x, y):
-    o = subprocess.run(['convert', sys.argv[1], '-format', '%[pixel:p{%d,%d}]' % (x, y), 'info:'], capture_output=True, text=True).stdout
+    o = subprocess.run(['convert', sys.argv[1], '-format', f'%[pixel:p{{{x},{y}}}]', 'info:'], capture_output=True, text=True).stdout
     v = [float(t) for t in o[o.find('(') + 1:o.find(')')].replace('%', '').split(',')[:3]]
     return [t * 2.55 if '%' in o else t for t in v]
 blue = any((lambda p: p[2] > 150 and p[0] < 90)(px(1395, y)) for y in (742, 758))

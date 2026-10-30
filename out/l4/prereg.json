@@ -38,6 +38,13 @@
    "before_run": "B1",
    "what": "question trigger changed from 'no solid.hole call' to 'no execute or batch call' (nothing built)",
    "why": "A1 built both holes with sketch.circle.center on YZ and a through-all extrude cut (no solid.hole), so the first trigger sent 'Your choice.' after A1 had finished turn 1. A1's reply to it is quoted in the results and it made no tool call in that turn; scoring is unchanged (turn 1b's calls, if any, count with turn 1)."
+  },
+  {
+   "at_utc": "2026-10-30T23:28:35+00:00",
+   "after_run": "A1",
+   "during_run": "B1 setup (before its first message)",
+   "what": "budget only (scoring unchanged): B1 runs under a live cost guard that stops it if its estimated cost passes $0.30 (Claude Code's own session token counts x a price factor calibrated on A1, whose /cost was $0.4070); B2 and A2 are not started (the sum since the mark is over $0.48)",
+   "why": "A1 cost $0.4070, almost twice the $0.22 per-run cap the order rule assumed; without a guard B1 could take the episode past the $0.90 stop before any voice"
   }
  ]
 }

@@ -190,9 +190,92 @@ def short_why():
         save(im, f'sc4s-why-{k + 1}.png')
 
 
+def plate_box(im):
+    """The plate in a straight-on (Right view) still: the largest run of plate-grey columns/rows (the view's grey
+    is darker than the light background). Returns (x0, y0, x1, y1) in the still's pixels."""
+    g = im.convert('L')
+    w, h = g.size
+    px = g.load()
+    def dark(x, y):
+        return px[x, y] < 200
+    cols = [sum(dark(x, y) for y in range(300, h - 300, 6)) for x in range(w)]
+    xs = [x for x, c in enumerate(cols) if c > 60]
+    x0, x1 = min(xs), max(xs)
+    rows = [sum(dark(x, y) for x in range(x0, x1, 4)) for y in range(h)]
+    ys = [y for y, c in enumerate(rows) if c > (x1 - x0) / 4 * 0.6]
+    return x0, min(ys), x1, max(ys)
+
+
+def straight(name, width_mm, holes_from_left, col, tag):
+    """A real straight-on still with the dashed middle and the two side distances drawn on it."""
+    im = Image.open(os.path.join(ST, name)).convert('RGB')
+    x0, y0, x1, y1 = plate_box(im)
+    pad = 120
+    crop = im.crop((x0 - pad, y0 - 260, x1 + pad, y1 + 40))
+    d = ImageDraw.Draw(crop)
+    s = (x1 - x0) / width_mm
+    ox, oy = pad, 260
+    cx = ox + (x1 - x0) / 2
+    dashed(d, (cx, oy - 40), (cx, oy + (y1 - y0)), INK, width=6)
+    hx = ox + holes_from_left * s
+    yy = oy - 120
+    dim(d, ox, hx, yy, f'{holes_from_left:g}', col, size=72)
+    dim(d, hx, ox + (x1 - x0), yy, f'{width_mm - holes_from_left:g}', col, size=72)
+    return crop
+
+
+def hooks():
+    t = straight('hand-right-30.png', 30, 10, RED, 'typed')
+    f = straight('hand-right-fixed.png', 30, 15, GREEN, 'formula')
+    for name, (w, h), vertical in (('hook-landscape.png', (2560, 1440), False), ('hook-vertical.png', (1080, 1920), True)):
+        im = Image.new('RGB', (w, h), BG)
+        d = ImageDraw.Draw(im)
+        if not vertical:
+            a, b = fit(f, w // 2 - 80, h - 300), fit(t, w // 2 - 80, h - 300)
+            paste_c(im, a, w // 4, h / 2 + 40)
+            paste_c(im, b, 3 * w // 4, h / 2 + 40)
+            chip(d, (w // 4, 30), 'WIDTH / 2 · centred', 66, anchor='m', bg=GREEN)
+            chip(d, (3 * w // 4, 30), 'TYPED 10 · off the middle', 66, anchor='m', bg=RED)
+            chip(d, (w // 2, h - 120), '20 → 30 wide', 76, anchor='m', bg=INK)
+        else:
+            text(d, (w // 2, 50), 'Same change: 20 → 30 wide', 64, anchor='ma')
+            a, b = fit(t, w - 160, 800), fit(f, w - 160, 800)
+            paste_c(im, a, w // 2, 160 + a.height // 2)
+            paste_c(im, b, w // 2, 1060 + b.height // 2)
+            chip(d, (w // 2, 160 + a.height + 10), 'TYPED 10', 60, anchor='m', bg=RED)
+            chip(d, (w // 2, 1060 + b.height + 10), 'WIDTH / 2', 60, anchor='m', bg=GREEN)
+        save(im, name)
+    # the Short's opening pair and the thumbnails
+    im = Image.new('RGB', (1000, 1000), BG)
+    d = ImageDraw.Draw(im)
+    paste_c(im, fit(t, 480, 900), 255, 520); paste_c(im, fit(f, 480, 900), 745, 520)
+    chip(d, (255, 20), 'TYPED 10', 50, anchor='m', bg=RED); chip(d, (745, 20), 'WIDTH / 2', 50, anchor='m', bg=GREEN)
+    save(im, 'sc4s-pair.png')
+    for name, words in (('thumbnail-primary.jpg', ('10 | 20', '15 | 15')), ('thumbnail-altA.jpg', ('5 MM OFF', None))):
+        th = Image.new('RGB', (1280, 720), (24, 30, 40))
+        d = ImageDraw.Draw(th)
+        if words[1]:
+            th.paste(fit(t, 600, 700), (20, 10)); th.paste(fit(f, 600, 700), (660, 10))
+            for x, wd, colr in ((320, words[0], RED), (960, words[1], GREEN)):
+                fo = font(B, 104)
+                ww = fo.getlength(wd)
+                d.rounded_rectangle((x - ww / 2 - 26, 540, x + ww / 2 + 26, 690), radius=22, fill=colr)
+                d.text((x, 615), wd, font=fo, fill=PAPER, anchor='mm')
+        else:
+            th.paste(fit(t, 760, 700), (260, 10))
+            fo = font(B, 120)
+            ww = fo.getlength(words[0])
+            d.rounded_rectangle((640 - ww / 2 - 30, 530, 640 + ww / 2 + 30, 690), radius=24, fill=RED)
+            d.text((640, 610), words[0], font=fo, fill=PAPER, anchor='mm')
+        th.save(os.path.join(F, name), quality=92)
+        print(name)
+
+
 HOOK3D = (900, 250, 2300, 1650)      # the hook after the house, 2880x1800 stills (checked on the stills)
 
 if __name__ == '__main__':
     what = sys.argv[1] if len(sys.argv) > 1 else 'all'
     if what in ('cards', 'all'):
         card_formula(); card_clearance(); card_table(); card_expected(); card_recap(); short_why()
+    if what in ('hooks', 'all'):
+        hooks()
