@@ -181,6 +181,33 @@ scripts stop it with TERM; before the 0.26.1 window opens the take deletes the c
 tmux `send-keys` treats a lone ";" as its own separator: type two commands, not one with ";". The 2880x1800 masters stay
 in `out/scratch/l7-masters` (not committed); each take folder has a 1440x900 copy.
 
+## Lesson 4: what the lab must show (written before the recorded runs)
+"SolidCraft Holes and Fillets by Hand vs Claude: Centered Screw Holes | SolidCraft + Claude Course 4". **Pin:
+SolidCraft 0.27.1** (stable on GitHub 2026-10-30 04:24 UTC; the download page in a real browser serves it; it writes
+design format 44 like 0.27.0). Images `sc4-app:0.27.1` (`docker/app.Dockerfile`, `SC_VER=0.27.1 SC_OLD=0.27.0`) and
+`sc4-l4:0.27.1` (`docker/l4.Dockerfile`). Claude Code 2.1.311 with Claude Sonnet 5.5.
+
+The part: lesson 3's hook (five names; built by script from them before each recording, `lab/l4hook.py`, 8,500 mm³)
+with a new name `hole_d` = 4.5, two through holes 15 and 45 below the top on the plate's inside face (x = 5), each placed
+by two edge distances (the top edge, and the left edge 10 = the middle of 20), and the plate's two long top edges
+filleted 2 mm. Worked out: 8,500 − 2 x 79.52 − 2 x 17.17 = 8,306.62 mm³; at width 30, 12,539.45. The change: `width`
+20 to 30 (typed 10: the holes stay 10 from the left edge); the fix: each hole's 10 rewritten as `width / 2` in
+Parameters. The reader `lab/l4read.py` finds bores (round faces along X: diameter, height, distance to each side,
+centred or not) and fillet faces (round faces along Y) in SolidCraft's own `body_topology`. The Claude requests and the
+scoring rules were written to `out/l4/prereg.json` (committed) before the first run.
+
+| # | Question | How it is measured | Answer file |
+|---|---|---|---|
+| L4-Q1 | Which version does the download page offer? | `sitecheck/check.sh` with `LESSON=l4` | `out/l4/sitecheck.json` |
+| L4-Q2 | Does the by-hand path work as filmed? | `lab/l4hand.sh`: the real window, filmed, xdotool only (read-only plug reads at four points) | `out/l4/hand/` |
+| L4-Q3 | The numbers at each step | `lab/l4read.py` after the fillet, after width 30, after the fix, after width 20 again; Properties filmed | `out/l4/hand/read-*.json` |
+| L4-Q4 | Does the Hole window take `width / 2` in a distance box? | `lab/l4dialog.sh`: 3 + 3 tries on the lesson's path (Reference 2 = the left edge), controls, a retype check | `out/l4/dialog/tries.jsonl` |
+| L4-Q5 | SolidCraft's M4 clearance sizes | `lab/l4clearance.py` (headless plug: `solid.hole clearance M4`, three fits) | `out/l4/clearance.json` |
+| L4-Q6 | Claude not asked (A) / asked in one sentence (B) | `claude-run/l4run.sh` + `lab/l4claude.sh` + `lab/l4drive.py` | `out/l4/runs/*/` |
+| L4-Q7 | Scored against the pre-registered rules | `lab/l4compare.py` | `out/l4/compare.json` |
+| L4-Q8 | Is it real, and do the holes follow the width? | `lab/l4replay.sh RUN`: the hook, the logged calls, width 26 and 40 after each message, no AI; STL checker | `out/l4/replay-*.json` |
+| (plug) | Does the plug accept `width / 2` against the edge that moves with the width? | `out/scratch/l4p/call.py` before the runs | `out/l4/plug-checks.txt` |
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker

@@ -9,7 +9,7 @@
  },
  "order_and_budget": "A1, B1, B2, A2; a run starts only if the ledger since '# --- GO 30 Oct 2026 L4' is $0.48 or less (per run cap $0.22, $0.20 kept for the voice, stop $0.90)",
  "messages": "claude-run/l4messages.sh (message 2 for all runs: 'Make the hook 30 wide instead of 20.')",
- "question_rule": "if message 1's turn ends with no solid.hole call logged, the driver sends 'Your choice.' once (lab/l4drive.py), then message 2",
+ "question_rule": "if message 1's turn changed nothing (no execute or batch call logged), the driver sends 'Your choice.' once (lab/l4drive.py), then message 2",
  "setup_per_run": "fresh container (fresh home), SolidCraft 0.27.1 window with a new design and lesson 3's hook built by script before the recording (lab/l4hook.py, lab/l7story.py HOOK: five names, 8,500 mm3), fresh Claude Code 2.1.311 session (claude --model claude-sonnet-5-5, default mode), the plug added with solidcraft-cli mcp setup and wrapped in the logging proxy, no CLAUDE.md, auto memory off",
  "definitions": {
   "bore": "cylinder faces with their axis along X, grouped by axis (two half-faces each), radius 2.25 +-0.01 (diameter 4.5 +-0.02), through x 0..5; a countersink, counterbore or clearance hole is scored as it comes out and quoted",
@@ -30,5 +30,14 @@
   "reply": "what Claude's reply says about the holes after message 2 is quoted"
  },
  "narration_branches": "PLAN-L4.md \u00a73.1",
- "proof": "both narrated runs replayed (lab/l4replay.sh); STL checker on the export: closed, one body (its faceted volume is not narrated)"
+ "proof": "both narrated runs replayed (lab/l4replay.sh); STL checker on the export: closed, one body (its faceted volume is not narrated)",
+ "amendments": [
+  {
+   "at_utc": "2026-10-30T23:20:31+00:00",
+   "after_run": "A1",
+   "before_run": "B1",
+   "what": "question trigger changed from 'no solid.hole call' to 'no execute or batch call' (nothing built)",
+   "why": "A1 built both holes with sketch.circle.center on YZ and a through-all extrude cut (no solid.hole), so the first trigger sent 'Your choice.' after A1 had finished turn 1. A1's reply to it is quoted in the results and it made no tool call in that turn; scoring is unchanged (turn 1b's calls, if any, count with turn 1)."
+  }
+ ]
 }
