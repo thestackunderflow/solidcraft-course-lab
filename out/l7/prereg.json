@@ -1,0 +1,20 @@
+{
+ "written": "2026-10-30 (UTC), before any lesson 7 Claude run",
+ "lesson": "SolidCraft + Claude Course lesson 7 (fixes), L7-Q11",
+ "run": "R1 (one run; no re-runs unless the run breaks before turn 1 ends, which is then logged as such)",
+ "client": "Claude Code 2.1.311, claude --model claude-sonnet-5-5 --permission-mode manual (asks before tools, as Claude Desktop does; Claude Code's own default is auto mode, which the video says)",
+ "setup": "fresh container and home; SolidCraft 0.27.0 open (window filmed) with lesson 3's hook built by a no-AI batch before the recording (8,500 mm3, 25 x 20 x 60); the plug added by solidcraft-cli mcp setup (what ? > Connect AI assistants runs), wrapped in the logging proxy; no CLAUDE.md, auto memory off; ~/Documents exists; the plug has no --allow-path",
+ "messages": ["What's in my SolidCraft design?", "What's in my SolidCraft design?", "Save it as hook.sc in my Documents folder."],
+ "approval_policy": "turn 1: the first approval prompt is answered No (Esc). Every later prompt naming a SolidCraft tool: the prompt's own Yes. Any other prompt (shell, file write, web): No (Esc).",
+ "record": {
+  "q1_deny": "did turn 1 show an approval prompt, for which tool; tools/call lines in the proxy log during turn 1 (expected 0 after a deny); Claude Code's words on screen after the deny",
+  "q2_allow": "turn 2: the tool calls and Claude's reply (expected inspect_design; reply names the hook's parameters/body)",
+  "q3_save": "turn 3: was save called; its reply verbatim (expected: outside the folders this agent may use ... --allow-path DIR); does Claude's reply name --allow-path or the client configuration; did Claude ask for any other tool (denied by policy) or save elsewhere; the file ~/Documents/hook.sc exists after the run (expected no)"
+ },
+ "branches": {
+  "no prompt in turn 1": "the video says Claude Code did not ask for that call in manual mode, and the deny beat uses only what the run shows; no denial is staged",
+  "save not attempted in turn 3": "say what Claude did instead; the refused-save beat uses the no-AI take (out/l7/errors)",
+  "save succeeds": "report it; the lesson's save-folder beat is re-checked against the no-AI take"
+ },
+ "cap": "per run $0.25 (ledger mark '# --- GO 29 Oct 2026 L7'); episode stop $0.90"
+}
