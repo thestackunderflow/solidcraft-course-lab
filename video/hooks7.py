@@ -103,7 +103,12 @@ def short_why():
     x0, y0, x1, y1 = boxes[2]
     d.rectangle((x0 - 6, y0 - 6, x1 + 6, y1 + 6), outline=GREEN, width=6)                                  # the full path
     im.save(os.path.join(LAB, '..', 'Refream-Canvas', 'mcp-canvas', 'primers', 'shorts-assets', 'sc7s-why.png'))
-    blank = Image.new('RGB', (948, 948), (236, 239, 244))
+    blank = Image.new('RGB', (948, 948), PAPER)          # the fix slide's picture under the footage: the Connected line
+    bd = ImageDraw.Draw(blank)
+    bd.text((474, 300), 'CONNECTED', font=font(B, 64), fill=GREEN, anchor='ma')
+    p = pieces[5][2]
+    p = p.resize((int(p.width * 2.2), int(p.height * 2.2)), Image.LANCZOS)
+    blank.paste(p, ((948 - p.width) // 2, 420))
     blank.save(os.path.join(LAB, '..', 'Refream-Canvas', 'mcp-canvas', 'primers', 'shorts-assets', 'sc7s-fix.png'))
     print('sc7s-why.png, sc7s-fix.png')
 
