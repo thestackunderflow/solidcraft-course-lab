@@ -1,0 +1,40 @@
+
+ ▐▛███▛█   Claude Code v2.1.311
+▝▜██████▀  Sonnet 5.5 · Claude API
+ ▝▝   ▝▝   ~/hook
+
+  Get to finished work sooner with Opus 5.5. Switch anytime with
+  /model.
+
+❯ What's in my SolidCraft design?
+
+  Called solidcraft
+
+● Your SolidCraft design is empty. The session I can reach is a
+  new, untitled headless one, not your app. It has:
+
+  - No bodies, sketches, features or parameters
+  - No saved file path and no undo history
+  - Units set to mm
+
+  The SolidCraft app wasn't running when the connection was
+  made, so I can't see a design you have open. Start SolidCraft
+  with your design open and ask me again. The session has no
+  features yet, so my next call should connect to the app. If
+  your design is a saved file, give me its path and I can open
+  it instead.
+
+✻ Worked for 4s · done 3:24 AM
+
+
+
+
+
+
+
+
+                                            ◐ medium · /effort
+────────────────────────────────────────────────────────────────
+❯ I started SolidCraft, check again
+────────────────────────────────────────────────────────────────
+  ⏸ manual mode on · ? for shortcuts

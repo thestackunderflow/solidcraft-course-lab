@@ -1,0 +1,1 @@
+{"run": "R2", "wall_s": 84, "model": "claude-sonnet-5-5", "claude_version": "2.1.311", "solidcraft": "0.27.0", "launch": "claude --model claude-sonnet-5-5 --permission-mode manual"}

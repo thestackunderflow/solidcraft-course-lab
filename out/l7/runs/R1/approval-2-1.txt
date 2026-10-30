@@ -1,0 +1,40 @@
+
+ ▐▛███▛█   Claude Code v2.1.311
+▝▜██████▀  Sonnet 5.5 · Claude API
+ ▝▝   ▝▝   ~/hook
+
+  Get to finished work sooner with Opus 5.5. Switch anytime with
+  /model.
+
+❯ What's in my SolidCraft design?
+
+  Called solidcraft
+  ⎿  Interrupted · What should Claude do instead?
+
+✻ Worked for 2s · done 3:23 AM
+
+❯ I've opened SolidCraft with my hook in it. Save it as hook.sc
+  in my Documents folder.
+
+  Listing 1 directory, running 1 shell command…
+  ⎿  $ ls -d ~/Documents /mnt/c/Users/*/Documents 2>/dev/null;
+     echo $HOME
+
+────────────────────────────────────────────────────────────────
+ Bash command
+ Tip: auto mode handles these prompts for you — choose "switch
+ to auto mode" below
+ Locate Documents folder
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ ls -d ~/Documents /mnt/c/Users/*/Documents 2>/dev/null; echo
+ $HOME
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Do you want to proceed?
+ ❯ 1. Yes
+   2. Yes, allow reading from /root/Documents from this project
+   3. Yes, and switch to auto mode · auto mode handles these
+      prompts for you
+   4. No
+
+ Esc to cancel · Tab to amend
+

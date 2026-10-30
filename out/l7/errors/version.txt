@@ -1,0 +1,2 @@
+solidcraft 0.27.0
+2.1.311 (Claude Code)

@@ -1,0 +1,37 @@
+{
+ "read_at": "2026-10-30T02:48:07Z",
+ "github_latest": "0.27.0",
+ "github_published_at": "2026-10-30T00:54:39Z",
+ "curl_no_js": {
+  "versions_on_page": [
+   "0.22.0",
+   "0.22.0",
+   "0.22.0",
+   "0.22.0",
+   "0.22.0",
+   "0.22.0",
+   "0.22.0",
+   "0.22.0",
+   "0.22.0",
+   "0.22.0"
+  ],
+  "offered": "0.22.0",
+  "verdict": "lags the pinned version"
+ },
+ "browser_js": {
+  "versions_on_page": [
+   "0.27.0",
+   "0.27.0",
+   "0.27.0",
+   "0.27.0",
+   "0.27.0",
+   "0.27.0",
+   "0.27.0",
+   "0.27.0",
+   "0.27.0",
+   "0.27.0"
+  ],
+  "offered": "0.27.0",
+  "verdict": "serves the pinned version"
+ }
+}

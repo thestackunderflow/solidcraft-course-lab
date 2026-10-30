@@ -1,0 +1,14 @@
+{"t": 1793330375.97052, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so."}
+{"t": 1793330377.4716735, "event": "reply: e-build", "tool": "batch", "isError": false}
+{"t": 1793330381.3636978, "event": "reply: e-measure-0", "tool": "measure", "isError": false}
+{"t": 1793330385.7557614, "event": "reply: e-typo", "tool": "batch", "isError": true}
+{"t": 1793330390.740125, "event": "reply: e-measure-after-typo", "tool": "measure", "isError": false}
+{"t": 1793330395.0943978, "event": "reply: e-fixed", "tool": "batch", "isError": false}
+{"t": 1793330398.9839706, "event": "reply: e-measure-fixed", "tool": "measure", "isError": false}
+{"t": 1793330403.3385682, "event": "reply: e-save-refused", "tool": "save", "isError": true}
+{"t": 1793330408.2366493, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp", "--allow-path", "/root/Documents"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so."}
+{"t": 1793330409.9371445, "event": "reply: e-save-allowed", "tool": "save", "isError": false}
+{"t": 1793330413.121477, "event": "wait 3: the same file, opened with the older SolidCraft 0.26.1"}
+{"t": 1793330440.8356729, "event": "go 3"}
+{"t": 1793330442.6328847, "event": "plug started", "cmd": ["/opt/solidcraft-0.26.1/bin/solidcraft-cli", "mcp", "--allow-path", "/root/Documents"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so."}
+{"t": 1793330444.1388652, "event": "reply: e-old-open", "tool": "open", "isError": true}

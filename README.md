@@ -140,6 +140,47 @@ not count point expressions in `sketch.line` as uses (B1/B2 show `used_by: []`),
 the logged `sketch.line` points. The 2880x1800 masters stay in `out/scratch/l3-masters` (not committed); each run
 folder has a 1440x900 copy.
 
+## Lesson 7: what the lab must show (written before the recorded runs)
+Lesson 7 (fixes) reproduces each failure on purpose, films the exact words and the fix, and keeps every case
+replayable with no AI. **Pin: SolidCraft 0.27.0** (stable on GitHub 2026-10-30 00:54 UTC; the download page serves it
+in a real browser, `out/l7/sitecheck.json`); 0.26.1 kept in the image for the wrong-version case. 0.27.0 writes design
+format 44 ("don't open in 0.26.x or older"). Images `sc7-app:0.27.0`, `sc7-l7:0.27.0` (`docker/l7.Dockerfile`).
+
+| # | Question | How | Answer file |
+|---|---|---|---|
+| L7-Q1 | Which version does the download page offer? | sitecheck | `out/l7/sitecheck.json` |
+| L7-Q2 | With both Claude apps' settings folders in place, does 0.27.0 add itself in 30 s? What does `claude mcp list` say then? | `lab/l7take.sh setup` (filmed) | `out/l7/setup/` |
+| L7-Q3 | Does "?" > Connect AI assistants fix it? | the same take | `setup/c1-*` |
+| L7-Q4 | The hand line `claude mcp add --scope user solidcraft -- solidcraft-cli mcp` when solidcraft-cli is not on PATH | the same take (the terminal's PATH = /usr/local/bin:/usr/bin:/bin) | `setup/c2-*` |
+| L7-Q5 | Does Connect AI assistants repair that entry, and leave an edited one (`--allow-path`) alone? | the same take | `setup/c2-connect*`, `c5-*` |
+| L7-Q6 | The plug started before SolidCraft opens: what do replies say; does opening SolidCraft later help? | `lab/l7take.sh headless` (`lab/l7story.py`, no AI) | `out/l7/headless/` |
+| L7-Q7 | SolidCraft closed mid-session | the same take | `headless/story.json` |
+| L7-Q8 | A batch with a misspelt name | `lab/l7take.sh errors` | `out/l7/errors/` |
+| L7-Q9 | A save to ~/Documents; then with `--allow-path` | the same take | `errors/story.json` |
+| L7-Q10 | The saved file opened by SolidCraft 0.26.1 (its window and its plug) | the same take | `errors/story.json`, `errors/end.png` |
+| L7-Q11 | Claude Code (manual mode), started before SolidCraft: what it says; then a save to Documents | `claude-run/l7run.sh` (paid, pre-registered in `out/l7/prereg.json`) | `out/l7/runs/R2/` |
+
+## Lesson 7: what it found (30 Oct 2026, SolidCraft 0.27.0, Claude Code 2.1.311, Linux x86_64 in Docker)
+| # | Answer | File |
+|---|---|---|
+| L7-Q1 | Browser: **0.27.0** = GitHub latest; curl: the 0.22.0 fallback. | `sitecheck.json` |
+| L7-Q2 | **No entry after 30 s** with SolidCraft open and the mouse moving (the same as 0.24.1 in lesson 1; a $0 probe at 40 s the same). `claude mcp list`: "No MCP servers configured. Use `claude mcp add` to add a server." | `setup/claude.json-after-30s.json`, `c1-list-pane.txt` |
+| L7-Q3 | The dialog: "claude-desktop: added solidcraft (...)", "claude-code: added solidcraft (/root/.claude.json)", "Restart each assistant to load the SolidCraft server. Each file was backed up as .bak before it changed."; then "solidcraft: /opt/solidcraft-0.27.0/bin/solidcraft-cli mcp - ✔ Connected". | `setup/c1-connect-dialog.png`, `c1-list-after-pane.txt` |
+| L7-Q4 | "✘ Failed to connect — ENOENT: Executable not found in $PATH: "solidcraft-cli"" (`claude mcp get`: "Status: ✘ Failed to connect"). On PATH the same line connects (probe). | `setup/c2-list-pane.txt`, `c2-get-pane.txt` |
+| L7-Q5 | Repaired: "claude-code: updated the path of solidcraft (/root/.claude.json)", then ✔ Connected. Edited entry: "claude-code: solidcraft left as you have it (it is not a plain SolidCraft entry)"; an edited entry naming 0.26.1's program kept that path (probe). | `setup/c2-connect-dialog.png`, `c5-connect-dialog.png` |
+| L7-Q6 | Every reply: "Note: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here." Opening SolidCraft after the build: still headless, the window empty, the hidden hook 10,000 at hook_depth 40. A new plug: an empty design (`"timeline": [], "bodies": []`), the hook rebuilt in the window, 8,500. | `headless/story.json`, `before-close.png` |
+| L7-Q7 | First call after the quit: "the SolidCraft app at 127.0.0.1:27878 did not answer (connection closed): it may have quit or crashed during this call, after running it or not. ..."; the next: "no SolidCraft app is listening at 127.0.0.1:27878 (Connection refused (os error 111)): it is not running, or it quit. ..." | `headless/story.json` |
+| L7-Q8 | `"failed": {"index": 1, "error": "expression: unknown parameter `hook_dept`"}`, `"rolled_back": true`, `"undone": 1`, `"applied": []`; measure after: 8,500, 25 x 20 x 60 (hook_depth back to 25); the corrected batch: 10,000, 40 x 20 x 60. | `errors/story.json` |
+| L7-Q9 | "/root/Documents/hook.sc: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-...); allow another folder with `--allow-path DIR`"; with `mcp --allow-path /root/Documents`: saved (`"bytes"` about 9,180). | `errors/story.json` |
+| L7-Q10 | "this design was saved by a newer SolidCraft (file format 44; this version reads formats up to 43): update SolidCraft to open it" | `errors/story.json`, `end.png` |
+| L7-Q11 | **R2** (R1 stopped: our driver's fault, `runs/R1/LAB-FAULT.md`). Turn 1, SolidCraft closed: one `inspect_design` (the headless Note in the reply); Claude: "Your SolidCraft design is empty. The session I can reach is a new, untitled headless one, not your app. ... The SolidCraft app wasn't running when the connection was made, so I can't see a design you have open. Start SolidCraft with your design open and ask me again." Turn 2, SolidCraft open with the hook: `inspect_design` (no Note: bridged; 8,500, 25 x 20 x 60, the five names), `save /root/Documents/hook.sc`: the same refusal words as L7-Q9; Claude: "To save it to Documents, add --allow-path ... to this server's arguments in your MCP client configuration. Then restart the server and ask me again." It saved nothing elsewhere (~/Documents empty) and offered the scratch folder. Approvals: 3 prompts, all SolidCraft tools, all Yes. $0.0758. | `runs/R2/` |
+
+Lab notes: the filmed terminal runs `lab/l7story.py`, a scripted MCP client that starts the plug with the same command a
+Claude app uses and prints each reply's own JSON fields (no AI). Ctrl+Q does not close SolidCraft under Xvfb, so the
+scripts stop it with TERM; before the 0.26.1 window opens the take deletes the crash report that causes (lab only).
+tmux `send-keys` treats a lone ";" as its own separator: type two commands, not one with ";". The 2880x1800 masters stay
+in `out/scratch/l7-masters` (not committed); each take folder has a 1440x900 copy.
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker
@@ -170,6 +211,13 @@ python3 lab/l3compare.py
 for r in A1 B1; do docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc3-l3:0.26.1 bash /work/lab/l3replay.sh $r; done
 docker run --rm --network none -v "$PWD:/work" -w /work sc3-app:0.26.1 python3 video/stills3.py
 docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw3.py
+# lesson 7
+docker build -t sc7-app:0.27.0 --build-arg SC_VER=0.27.0 --build-arg SC_OLD=0.26.1 -f docker/app.Dockerfile docker
+docker build -t sc7-l7:0.27.0 -f docker/l7.Dockerfile docker
+docker run --rm --memory 2g --shm-size 1g -e LESSON=l7 -v "$PWD:/work" sc1-browser:1 bash /work/sitecheck/check.sh
+for t in setup headless errors; do docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc7-l7:0.27.0 bash /work/lab/l7take.sh $t; done
+bash claude-run/l7run.sh R2                                                  # paid: uses this PC's Claude sign-in
+docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw7.py
 ```
 
 ## Licence

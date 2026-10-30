@@ -1,0 +1,58 @@
+{"t": 0.502, "event": "recording started: terminal (left); both Claude apps' settings folders exist; SolidCraft not started yet"}
+{"t": 1.508, "event": "c0-folders: typing"}
+{"t": 4.802, "event": "c0-folders: Enter"}
+{"t": 4.808, "event": "c0-folders: done"}
+{"t": 6.315, "event": "SolidCraft starts (no flags)"}
+{"t": 14.436, "event": "SolidCraft open (start page)"}
+{"t": 44.540, "event": "30 s with SolidCraft open"}
+{"t": 44.553, "event": "c0-grep: typing"}
+{"t": 47.556, "event": "c0-grep: Enter"}
+{"t": 47.562, "event": "c0-grep: done"}
+{"t": 49.072, "event": "c0-ls: typing"}
+{"t": 51.274, "event": "c0-ls: Enter"}
+{"t": 51.280, "event": "c0-ls: done"}
+{"t": 52.790, "event": "c1-list: typing"}
+{"t": 54.488, "event": "c1-list: Enter"}
+{"t": 54.745, "event": "c1-list: done"}
+{"t": 58.256, "event": "c1-connect: hover ?"}
+{"t": 61.426, "event": "c1-connect: menu open"}
+{"t": 65.329, "event": "c1-connect: dialog"}
+{"t": 73.249, "event": "c1-connect: dialog closed"}
+{"t": 73.255, "event": "c1-list-after: typing"}
+{"t": 74.953, "event": "c1-list-after: Enter"}
+{"t": 75.212, "event": "c1-list-after: done"}
+{"t": 78.722, "event": "case 2: the plug removed, then added by hand by its short name"}
+{"t": 78.725, "event": "c2-remove: typing"}
+{"t": 81.954, "event": "c2-remove: Enter"}
+{"t": 82.214, "event": "c2-remove: done"}
+{"t": 83.724, "event": "c2-add: typing"}
+{"t": 88.713, "event": "c2-add: Enter"}
+{"t": 88.971, "event": "c2-add: done"}
+{"t": 90.479, "event": "c2-list: typing"}
+{"t": 92.173, "event": "c2-list: Enter"}
+{"t": 92.434, "event": "c2-list: done"}
+{"t": 95.952, "event": "c2-get: typing"}
+{"t": 98.430, "event": "c2-get: Enter"}
+{"t": 98.689, "event": "c2-get: done"}
+{"t": 102.201, "event": "c2-connect: hover ?"}
+{"t": 105.378, "event": "c2-connect: menu open"}
+{"t": 109.641, "event": "c2-connect: dialog"}
+{"t": 117.807, "event": "c2-connect: dialog closed"}
+{"t": 117.815, "event": "c2-list-after: typing"}
+{"t": 119.526, "event": "c2-list-after: Enter"}
+{"t": 120.042, "event": "c2-list-after: done"}
+{"t": 123.555, "event": "case 5b: an entry edited by hand (--allow-path added), then Connect AI assistants"}
+{"t": 123.558, "event": "c5-remove: typing"}
+{"t": 126.824, "event": "c5-remove: Enter"}
+{"t": 127.083, "event": "c5-remove: done"}
+{"t": 128.647, "event": "c5-add: typing"}
+{"t": 137.692, "event": "c5-add: Enter"}
+{"t": 137.950, "event": "c5-add: done"}
+{"t": 139.531, "event": "c5-connect: hover ?"}
+{"t": 142.705, "event": "c5-connect: menu open"}
+{"t": 146.921, "event": "c5-connect: dialog"}
+{"t": 155.059, "event": "c5-connect: dialog closed"}
+{"t": 155.113, "event": "c5-list: typing"}
+{"t": 156.811, "event": "c5-list: Enter"}
+{"t": 157.068, "event": "c5-list: done"}
+{"t": 161.635, "event": "recording stopped"}

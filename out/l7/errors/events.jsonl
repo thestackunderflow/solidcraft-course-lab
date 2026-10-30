@@ -1,0 +1,21 @@
+{"t": 0.502, "event": "recording started (errors)"}
+{"t": 2.507, "event": "typing"}
+{"t": 6.248, "event": "story started"}
+{"t": 47.234, "event": "SolidCraft 0.27.0 closes"}
+{"t": 60.314, "event": "SolidCraft 0.26.1 opens"}
+{"t": 70.647, "event": "SolidCraft 0.26.1 open, new design"}
+{"t": 83.437, "event": "recording stopped"}
+{"t": 7.975, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so.", "from": "story"}
+{"t": 9.476, "event": "reply: e-build", "tool": "batch", "isError": false, "from": "story"}
+{"t": 13.368, "event": "reply: e-measure-0", "tool": "measure", "isError": false, "from": "story"}
+{"t": 17.76, "event": "reply: e-typo", "tool": "batch", "isError": true, "from": "story"}
+{"t": 22.745, "event": "reply: e-measure-after-typo", "tool": "measure", "isError": false, "from": "story"}
+{"t": 27.099, "event": "reply: e-fixed", "tool": "batch", "isError": false, "from": "story"}
+{"t": 30.989, "event": "reply: e-measure-fixed", "tool": "measure", "isError": false, "from": "story"}
+{"t": 35.343, "event": "reply: e-save-refused", "tool": "save", "isError": true, "from": "story"}
+{"t": 40.241, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp", "--allow-path", "/root/Documents"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so.", "from": "story"}
+{"t": 41.942, "event": "reply: e-save-allowed", "tool": "save", "isError": false, "from": "story"}
+{"t": 45.126, "event": "wait 3: the same file, opened with the older SolidCraft 0.26.1", "from": "story"}
+{"t": 72.84, "event": "go 3", "from": "story"}
+{"t": 74.638, "event": "plug started", "cmd": ["/opt/solidcraft-0.26.1/bin/solidcraft-cli", "mcp", "--allow-path", "/root/Documents"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so.", "from": "story"}
+{"t": 76.144, "event": "reply: e-old-open", "tool": "open", "isError": true, "from": "story"}

@@ -1,0 +1,3 @@
+total 12
+drwxr-xr-x 2 root root 4096 Oct 30 03:24 .
+drwx------ 1 root root 4096 Oct 30 03:25 ..

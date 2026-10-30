@@ -1,0 +1,30 @@
+{
+  "theme": "light",
+  "hasCompletedOnboarding": true,
+  "projects": {
+    "/root/hook": {
+      "hasTrustDialogAccepted": true
+    }
+  },
+  "firstStartTime": "2026-10-30T03:22:06.301Z",
+  "firstStartVersion": "2.1.311",
+  "machineID": "c9e7a9c03ef6c8daf815a3783c4fe2f695e3d64f7feab8c7559f89a84210092d",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "userID": "415e3a8089d7b188fa77044532e2aa35a1d1f5bcbb38dd88b719433eee188b1a",
+  "seenNotifications": {},
+  "hasResetAutoModeOptInForDefaultOffer": true,
+  "migrationVersion": 14,
+  "mcpServers": {
+    "solidcraft": {
+      "type": "stdio",
+      "command": "/opt/solidcraft-0.27.0/bin/solidcraft-cli",
+      "args": [
+        "mcp",
+        "--allow-path",
+        "/root/Documents"
+      ],
+      "env": {}
+    }
+  }
+}

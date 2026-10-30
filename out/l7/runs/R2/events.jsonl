@@ -1,0 +1,25 @@
+{"t": 0.502, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.545, "event": "turn 1: typing"}
+{"t": 4.804, "event": "turn 1: Enter"}
+{"t": 5.224, "event": "turn 1: Claude working"}
+{"t": 7.655, "event": "turn 1: approval asked", "answer": "yes"}
+{"t": 10.157, "event": "turn 1: approval answered yes"}
+{"t": 10.165, "event": "tool call: inspect_design", "seq": 12}
+{"t": 10.202, "event": "tool reply: inspect_design", "seq": 13, "isError": false}
+{"t": 12.594, "event": "turn 1: end-of-turn line seen"}
+{"t": 14.596, "event": "turn 1: reply done", "answers": ["yes"], "timed_out": false}
+{"t": 17.599, "event": "between: SolidCraft opens"}
+{"t": 31.071, "event": "between: SolidCraft open, the hook built (no AI)"}
+{"t": 33.072, "event": "turn 2: typing"}
+{"t": 37.864, "event": "turn 2: Enter"}
+{"t": 38.27, "event": "turn 2: Claude working"}
+{"t": 40.367, "event": "turn 2: approval asked", "answer": "yes"}
+{"t": 42.869, "event": "turn 2: approval answered yes"}
+{"t": 42.873, "event": "tool call: inspect_design", "seq": 14}
+{"t": 42.887, "event": "tool reply: inspect_design", "seq": 16, "isError": false}
+{"t": 45.31, "event": "turn 2: approval asked", "answer": "yes"}
+{"t": 47.812, "event": "turn 2: approval answered yes"}
+{"t": 47.815, "event": "tool call: save", "seq": 17}
+{"t": 47.816, "event": "tool reply: save", "seq": 18, "isError": true}
+{"t": 55.915, "event": "turn 2: reply done", "answers": ["yes", "yes"], "timed_out": false}
+{"t": 61.489, "event": "recording stopped"}

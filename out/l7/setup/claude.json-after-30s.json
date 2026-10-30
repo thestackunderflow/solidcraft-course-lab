@@ -1,0 +1,10 @@
+{
+ "hasCompletedOnboarding": true,
+ "theme": "light",
+ "projects": {
+  "/root/hook": {
+   "hasTrustDialogAccepted": true,
+   "hasCompletedProjectOnboarding": true
+  }
+ }
+}

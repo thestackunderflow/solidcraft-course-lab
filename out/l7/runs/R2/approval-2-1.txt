@@ -1,0 +1,40 @@
+
+  Called solidcraft
+
+● Your SolidCraft design is empty. The session I can reach is a
+  new, untitled headless one, not your app. It has:
+
+  - No bodies, sketches, features or parameters
+  - No saved file path and no undo history
+  - Units set to mm
+
+  The SolidCraft app wasn't running when the connection was
+  made, so I can't see a design you have open. Start SolidCraft
+  with your design open and ask me again. The session has no
+  features yet, so my next call should connect to the app. If
+  your design is a saved file, give me its path and I can open
+  it instead.
+
+✻ Worked for 4s · done 3:24 AM
+
+❯ I've opened SolidCraft with my hook in it. Save it as hook.sc
+  in my Documents folder.
+
+● Calling solidcraft…
+
+────────────────────────────────────────────────────────────────
+ Tool use
+ solidcraft — Inspect the design Tool: (MCP)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ sketches: false
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ About the solidcraft — Inspect the design Tool:
+ │ The whole design: user parameters (expression, value,
+ │ errors), the timeline (features with type, suppressed,…
+ (ctrl+o to expand description)
+
+ Do you want to proceed?
+ ❯ 1. Yes
+   2. No
+
+ Esc to cancel · Tab to amend

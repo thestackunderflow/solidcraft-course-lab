@@ -1,0 +1,40 @@
+❯ I've opened SolidCraft with my hook in it. Save it as hook.sc
+  in my Documents folder.
+
+  Called solidcraft 2 times
+
+● I couldn't save the hook to your Documents folder. The save
+  tool only allows two folders, and /root/Documents isn't one of
+  them:
+
+  - /root/.local/share/solidcraft/recovery
+  - /tmp/solidcraft-mcp-80-1d0220cb
+
+  I didn't save it anywhere else, so the file doesn't exist yet.
+  The design is loaded and unsaved.
+
+  The hook is there. It's a single body, Body1, with these
+  features:
+
+  - Timeline: Sketch1 and a Hook extrude.
+  - Size: 25 × 20 × 60 mm, volume 8,500 mm³.
+  - Parameters: plate_height 60, width 20, thickness 5,
+    hook_depth 25, lip_height 10.
+
+  To save it to Documents, add --allow-path <your Documents
+  folder> to this server's arguments in your MCP client
+  configuration. Then restart the server and ask me again. I'd
+  also need the full path, since I'm on WSL and don't know
+  whether you mean /root/Documents or a Windows folder like
+  /mnt/c/Users/<you>/Documents.
+
+  Or I can save it to the /tmp/solidcraft-mcp-80-1d0220cb folder
+  now. You can copy it from there, but a temp folder may be
+  cleared.
+
+✻ Sautéed for 8s · done 3:25 AM
+                                            ◐ medium · /effort
+────────────────────────────────────────────────────────────────
+❯ Save it to the tmp folder for now
+────────────────────────────────────────────────────────────────
+  ⏸ manual mode on · ? for shortcuts

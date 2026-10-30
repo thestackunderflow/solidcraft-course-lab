@@ -1,0 +1,62 @@
+$ python3 lab/l7story.py errors out/l7/errors
+# SolidCraft is open.
+# (our test script starts the plug, as a Claude app does)
+plug: /opt/solidcraft-0.27.0/bin/solidcraft-cli mcp
+
+-> batch (lesson 3's hook)
+<- reply
+   "ok": true, "completed": 9
+
+-> measure
+<- reply
+   "volume_mm3": 8500.0
+   "bbox": min [0.0, -20.0, 0.0] max [25.0, 0.0, 60.0]
+
+-> batch [0] hook_depth = 40 [1] lip_height = hook_dept / 4
+<- reply isError: true
+   "failed": {"index": 1, "error": "expression: unknown parameter
+   `hook_dept`"}
+   "rolled_back": true, "undone": 1, "applied": []
+
+-> measure
+<- reply
+   "volume_mm3": 8500.0
+   "bbox": min [0.0, -20.0, 0.0] max [25.0, 0.0, 60.0]
+
+-> batch [0] hook_depth = 40 [1] lip_height = hook_depth / 4
+<- reply
+   "ok": true, "completed": 2
+
+-> measure
+<- reply
+   "volume_mm3": 10000.0
+   "bbox": min [0.0, -20.0, 0.0] max [40.0, 0.0, 60.0]
+
+-> save ~/Documents/hook.sc
+<- reply isError: true
+   /root/Documents/hook.sc: outside the folders this agent may use
+   (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-
+   mcp-687-39b4993a); allow another folder with `--allow-path DIR`
+
+# The plug started with two more arguments:
+# (our test script starts the plug, as a Claude app does)
+plug: /opt/solidcraft-0.27.0/bin/solidcraft-cli mcp --allow-path
+/root/Documents
+
+-> save ~/Documents/hook.sc
+<- reply
+   "path": "/root/Documents/hook.sc", "bytes": 9183
+
+# (the same file, opened with the older SolidCraft 0.26.1)
+# SolidCraft 0.26.1 open, with its own plug:
+# (our test script starts the plug, as a Claude app does)
+plug: /opt/solidcraft-0.26.1/bin/solidcraft-cli mcp --allow-path
+/root/Documents
+
+-> open ~/Documents/hook.sc
+<- reply isError: true
+   /root/Documents/hook.sc: this design was saved by a newer SolidCraft
+   (file format 44; this version reads formats up to 43): update SolidCraft
+   to open it
+# end
+$ 

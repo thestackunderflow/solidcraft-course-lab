@@ -1,0 +1,40 @@
+
+ ▐▛███▛█   Claude Code v2.1.311
+▝▜██████▀  Sonnet 5.5 · Claude API
+ ▝▝   ▝▝   ~/hook
+
+  Get to finished work sooner with Opus 5.5. Switch anytime with
+  /model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  tmux focus-events off · add 'set -g focus-events on' to ~/.…
+────────────────────────────────────────────────────────────────
+❯ Try "how do I log an error?"
+────────────────────────────────────────────────────────────────
+  ⏸ manual mode on · ? for shortcuts

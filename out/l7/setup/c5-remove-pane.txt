@@ -1,0 +1,47 @@
+$ ls -a ~/.config/Claude ~/.claude.json
+/root/.claude.json
+
+/root/.config/Claude:
+.  ..
+$ grep -c mcpServers ~/.claude.json
+0
+$ ls -a ~/.config/Claude
+.  ..
+$ claude mcp list
+No MCP servers configured. Use `claude mcp add` to add a server.
+$ claude mcp list
+solidcraft: /opt/solidcraft-0.27.0/bin/solidcraft-cli mcp - ✔ Connected
+$ claude mcp remove solidcraft -s user
+Removed MCP server solidcraft from user config
+File modified: /root/.claude.json
+$ claude mcp add --scope user solidcraft -- solidcraft-cli mcp
+Added stdio MCP server solidcraft with command: solidcraft-cli mcp to user config
+File modified: /root/.claude.json
+$ claude mcp list
+solidcraft: solidcraft-cli mcp - ✘ Failed to connect — ENOENT: Executable not
+found in $PATH: "solidcraft-cli"
+$ claude mcp get solidcraft
+solidcraft:
+  Scope: User config (available in all your projects)
+  Status: ✘ Failed to connect
+  Issue: ENOENT: Executable not found in $PATH: "solidcraft-cli"
+  Type: stdio
+  Command: solidcraft-cli
+  Args: mcp
+  Environment:
+
+To remove this server, run: claude mcp remove solidcraft -s user
+$ claude mcp list
+solidcraft: /opt/solidcraft-0.27.0/bin/solidcraft-cli mcp - ✔ Connected
+$ claude mcp remove solidcraft -s user
+Removed MCP server solidcraft from user config
+File modified: /root/.claude.json
+$ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+{"t": 0.503, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.628, "event": "turn 1: typing"}
+{"t": 4.891, "event": "turn 1: Enter"}
+{"t": 5.372, "event": "turn 1: Claude working"}
+{"t": 7.805, "event": "turn 1: approval asked", "answer": "no"}
+{"t": 10.308, "event": "turn 1: approval answered no"}
+{"t": 10.715, "event": "turn 1: end-of-turn line seen"}
+{"t": 12.716, "event": "turn 1: reply done", "answers": ["no"], "timed_out": false}
+{"t": 15.72, "event": "between: SolidCraft opens"}
+{"t": 29.112, "event": "between: SolidCraft open, the hook built (no AI)"}
+{"t": 31.166, "event": "turn 2: typing"}
+{"t": 35.957, "event": "turn 2: Enter"}
+{"t": 36.364, "event": "turn 2: Claude working"}
+{"t": 40.416, "event": "turn 2: approval asked", "answer": "no"}

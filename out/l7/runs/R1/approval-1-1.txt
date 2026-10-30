@@ -1,0 +1,40 @@
+
+ ▐▛███▛█   Claude Code v2.1.311
+▝▜██████▀  Sonnet 5.5 · Claude API
+ ▝▝   ▝▝   ~/hook
+
+  Get to finished work sooner with Opus 5.5. Switch anytime with
+  /model.
+
+❯ What's in my SolidCraft design?
+
+● Calling solidcraft…
+
+────────────────────────────────────────────────────────────────
+ Tool use
+ solidcraft — Inspect the design Tool: (MCP)
+
+ About the solidcraft — Inspect the design Tool:
+ │ The whole design: user parameters (expression, value,
+ │ errors), the timeline (features with type, suppressed,…
+ (ctrl+o to expand description)
+
+ Do you want to proceed?
+ ❯ 1. Yes
+   2. No
+
+ Esc to cancel · Tab to amend
+
+
+
+
+
+
+
+
+
+
+
+
+
+

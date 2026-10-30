@@ -1,0 +1,63 @@
+$ python3 lab/l7story.py headless out/l7/headless
+# SolidCraft is NOT open.
+# (our test script starts the plug, as a Claude app does)
+plug: /opt/solidcraft-0.27.0/bin/solidcraft-cli mcp
+
+-> batch (lesson 3's hook: 5 names, the J, extrude)
+<- reply
+   "ok": true, "completed": 9
+   Note: this is a headless session because the SolidCraft app was not
+   found; the user cannot see this work. Ask them to start SolidCraft. While
+   this session has no features, the next call connects to the app; once it
+   has work, it stays here.
+# (now SolidCraft opens)
+
+-> set_parameter hook_depth = 40
+<- reply
+   "name": "hook_depth", "value": 40.0
+   Note: this is a headless session because the SolidCraft app was not
+   found; the user cannot see this work. Ask them to start SolidCraft. While
+   this session has no features, the next call connects to the app; once it
+   has work, it stays here.
+
+-> measure
+<- reply
+   "volume_mm3": 10000.0
+   "bbox": min [0.0, -20.0, 0.0] max [40.0, 0.0, 60.0]
+   Note: this is a headless session because the SolidCraft app was not
+   found; the user cannot see this work. Ask them to start SolidCraft. While
+   this session has no features, the next call connects to the app; once it
+   has work, it stays here.
+
+# A new plug, SolidCraft already open:
+# (our test script starts the plug, as a Claude app does)
+plug: /opt/solidcraft-0.27.0/bin/solidcraft-cli mcp
+
+-> inspect_design
+<- reply
+   "timeline": [], "bodies": []
+
+-> batch (lesson 3's hook again)
+<- reply
+   "ok": true, "completed": 9
+
+-> measure
+<- reply
+   "volume_mm3": 8500.0
+   "bbox": min [0.0, -20.0, 0.0] max [25.0, 0.0, 60.0]
+# (now SolidCraft is closed)
+
+-> measure
+<- reply isError: true
+   the SolidCraft app at 127.0.0.1:27878 did not answer (connection closed):
+   it may have quit or crashed during this call, after running it or not.
+   Inspect the design before sending a change again; if the app quit, start
+   it with `solidcraft --control 27878`
+
+-> measure (again)
+<- reply isError: true
+   no SolidCraft app is listening at 127.0.0.1:27878 (Connection refused (os
+   error 111)): it is not running, or it quit. Start it with `solidcraft
+   --control 27878` (or ask the user to); the next call connects to it
+# end
+$ 

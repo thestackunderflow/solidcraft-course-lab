@@ -1,0 +1,22 @@
+{"t": 0.504, "event": "recording started (headless)"}
+{"t": 2.509, "event": "typing"}
+{"t": 6.579, "event": "story started"}
+{"t": 15.523, "event": "SolidCraft opens"}
+{"t": 26.901, "event": "SolidCraft open, new design"}
+{"t": 57.295, "event": "SolidCraft closes"}
+{"t": 69.370, "event": "SolidCraft closed"}
+{"t": 84.184, "event": "recording stopped"}
+{"t": 8.289, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp"], "backend": "headless in-process SolidCraft session, because the SolidCraft app was not running when this server started; if it starts before any design work is done here, the next call is bridged to it.", "from": "story"}
+{"t": 9.792, "event": "reply: h-build", "tool": "batch", "isError": false, "from": "story"}
+{"t": 13.336, "event": "wait 1: now SolidCraft opens", "from": "story"}
+{"t": 28.971, "event": "go 1", "from": "story"}
+{"t": 30.469, "event": "reply: h-after-open", "tool": "set_parameter", "isError": false, "from": "story"}
+{"t": 35.251, "event": "reply: h-measure", "tool": "measure", "isError": false, "from": "story"}
+{"t": 41.092, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so.", "from": "story"}
+{"t": 42.6, "event": "reply: b-inspect", "tool": "inspect_design", "isError": false, "from": "story"}
+{"t": 46.492, "event": "reply: b-build", "tool": "batch", "isError": false, "from": "story"}
+{"t": 50.39, "event": "reply: b-measure", "tool": "measure", "isError": false, "from": "story"}
+{"t": 53.574, "event": "wait 2: now SolidCraft is closed", "from": "story"}
+{"t": 71.452, "event": "go 2", "from": "story"}
+{"t": 72.944, "event": "reply: b-after-close", "tool": "measure", "isError": true, "from": "story"}
+{"t": 77.187, "event": "reply: b-after-close-2", "tool": "measure", "isError": true, "from": "story"}

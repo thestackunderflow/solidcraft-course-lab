@@ -1,0 +1,14 @@
+{"t": 1793330273.1782374, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp"], "backend": "headless in-process SolidCraft session, because the SolidCraft app was not running when this server started; if it starts before any design work is done here, the next call is bridged to it."}
+{"t": 1793330274.6804068, "event": "reply: h-build", "tool": "batch", "isError": false}
+{"t": 1793330278.224702, "event": "wait 1: now SolidCraft opens"}
+{"t": 1793330293.8600318, "event": "go 1"}
+{"t": 1793330295.3582373, "event": "reply: h-after-open", "tool": "set_parameter", "isError": false}
+{"t": 1793330300.1399682, "event": "reply: h-measure", "tool": "measure", "isError": false}
+{"t": 1793330305.9806194, "event": "plug started", "cmd": ["/opt/solidcraft-0.27.0/bin/solidcraft-cli", "mcp"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so."}
+{"t": 1793330307.488706, "event": "reply: b-inspect", "tool": "inspect_design", "isError": false}
+{"t": 1793330311.3813722, "event": "reply: b-build", "tool": "batch", "isError": false}
+{"t": 1793330315.2793179, "event": "reply: b-measure", "tool": "measure", "isError": false}
+{"t": 1793330318.4626203, "event": "wait 2: now SolidCraft is closed"}
+{"t": 1793330336.3409011, "event": "go 2"}
+{"t": 1793330337.8330421, "event": "reply: b-after-close", "tool": "measure", "isError": true}
+{"t": 1793330342.0759878, "event": "reply: b-after-close-2", "tool": "measure", "isError": true}
