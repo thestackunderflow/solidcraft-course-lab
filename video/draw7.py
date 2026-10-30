@@ -1,5 +1,5 @@
 """Lesson 7's diagram cards. Every error line on a card is copied from a lab file (out/l7/*/story.json, *-pane.txt);
-diagrams are visibly diagrams. Cards 1632 x 1200, text >= 52 px.
+diagrams are visibly diagrams. Cards 1632 x 1200, text >= 48 px.
     docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw7.py
 """
 import json
@@ -38,6 +38,14 @@ def lamp(d, x, y, lit):
             d.line((x + 165 + dx * 0.6, y + 145 + dy * 0.6, x + 165 + dx * 1.2, y + 145 + dy * 1.2), fill=AMBER, width=10)
 
 
+def socket_plug(d, x, y, s=1.0, col=INK):
+    """A wall socket (x, y = top left, 160 x 260 at s=1) with the lamp's plug pushed in from the right."""
+    q = lambda a, b: (x + a * s, y + b * s)
+    d.rectangle((*q(0, 0), *q(160, 260)), fill=PAPER, outline=col, width=max(3, int(8 * s)))
+    d.rounded_rectangle((*q(150, 115), *q(240, 205)), radius=int(14 * s), fill=col)          # the plug head
+    d.line((*q(240, 160), *q(270, 160)), fill=col, width=max(3, int(14 * s)))
+
+
 def card_lamp():
     """F2: a lamp that won't light, checked from the wall outward: socket, cord, switch, bulb (4 reveal steps)."""
     stops = [('1 plugged in?', (240, 640)), ('2 cord OK?', (440, 1010)), ('3 switched on?', (760, 640)), ('4 the bulb', (1330, 290))]
@@ -45,15 +53,14 @@ def card_lamp():
         im, d = canvas()
         text(d, (W / 2, 50), "A lamp that won't light", 66, anchor='ma')
         text(d, (W / 2, 140), 'check from the wall outward', 52, GREY, path=R, anchor='ma')
-        d.rectangle((90, 740, 250, 1000), fill=PAPER, outline=INK, width=8)       # wall socket
-        d.ellipse((140, 830, 165, 855), fill=INK); d.ellipse((175, 830, 200, 855), fill=INK)
-        d.line((250, 900, 450, 950, 680, 900), fill=INK, width=14, joint='curve')  # cord
+        socket_plug(d, 90, 740)
+        d.line((330, 900, 450, 950, 680, 900), fill=INK, width=14, joint='curve')  # cord
         d.rounded_rectangle((680, 850, 840, 950), radius=18, fill=PAPER, outline=INK, width=8)  # switch
         d.rectangle((735, 875, 785, 925), fill=INK)
         d.line((840, 900, 1000, 960, 1150, 950), fill=INK, width=14, joint='curve')
         lamp(d, 1180, 420, lit=(k == 4))
         for i, (lab, (x, y)) in enumerate(stops[:k]):
-            chip(d, (x, y), lab, 46, anchor='m', bg=BLUE)
+            chip(d, (x, y), lab, 48, anchor='m', bg=BLUE)
         if k == 4:
             chip(d, (W / 2, 1090), 'one check at a time, in order', 50, anchor='m', bg=GREEN)
         save(im, f'card-lamp-{k}.png' if k < 4 else 'card-lamp.png')
@@ -126,29 +133,45 @@ def card_recap():
         save(im, f'card-recap-{k}.png' if k < 4 else 'card-recap.png')
 
 
-ROWS = [('socket + plug', 'plugged in?', 'listed in your Claude app?', 'No MCP servers configured'),
-        ('cord', 'power through?', "is the plug's program found?", 'Executable not found'),
-        ('switch', 'switched on?', "is SolidCraft's window open?", 'Note: a headless session'),
-        ('bulb', 'what you see', 'what does the reply say?', 'rolled_back: true · format 44')]
+ROWS = [('socket + plug', 'listed in your Claude app?', 'No MCP servers'),
+        ('cord', "the plug's program found?", 'Executable not found'),
+        ('switch', "SolidCraft's window open?", 'headless session'),
+        ('bulb', 'what does the reply say?', 'rolled_back · format 44')]
 
 
-def table(title, shown=4, ticks=0, lit=None, words=False, name='x'):
-    """The lamp's parts beside the course's checks, one row per check (lesson 1's map words)."""
+def icon(d, i, x, y, col):
+    """A small picture of lamp part i (0 socket + plug, 1 cord, 2 switch, 3 bulb) in a 130 x 130 box at x, y."""
+    if i == 0:
+        socket_plug(d, x + 5, y + 5, 0.45, col)
+    elif i == 1:
+        d.line((x + 5, y + 90, x + 45, y + 40, x + 85, y + 95, x + 125, y + 45), fill=col, width=12, joint='curve')
+    elif i == 2:
+        d.rounded_rectangle((x + 15, y + 35, x + 115, y + 100), radius=14, fill=PAPER, outline=col, width=7)
+        d.rectangle((x + 48, y + 50, x + 82, y + 85), fill=col)
+    else:
+        d.ellipse((x + 30, y + 10, x + 100, y + 80), fill=LIGHT if col == GREEN else PAPER, outline=col, width=7)
+        d.rectangle((x + 48, y + 80, x + 82, y + 115), fill=col)
+
+
+def table(title, shown=4, ticks=0, lit=None, words=False, name='x', sub=True):
+    """The lamp's parts (a picture each) beside the course's checks, one row per check."""
     im, d = canvas()
-    text(d, (W / 2, 45), title, 60, anchor='ma')
-    text(d, (W / 2, 128), "socket = your Claude app · the lamp's plug = our plug", 44, GREY, path=R, anchor='ma')
-    rh = 245 if words else 225
-    for i, (part, q, check, err) in enumerate(ROWS[:shown]):
-        y = 215 + i * rh
+    text(d, (W / 2, 40), title, 60, anchor='ma')
+    top = 120
+    if sub:
+        text(d, (W / 2, 120), "socket = your Claude app · the lamp's plug = our plug", 48, INK, path=R, anchor='ma')
+        top = 200
+    rh = (H - top - 30) // 4
+    for i, (part, check, err) in enumerate(ROWS[:shown]):
+        y = top + i * rh
         ok, on = i < ticks, (lit == i)
         col = GREEN if ok else (BLUE if on or lit is None else GREY)
-        d.rounded_rectangle((60, y, 1572, y + rh - 30), radius=22, fill=PAPER, outline=col, width=8 if (ok or on) else 4)
-        text(d, (100, y + 28), f'{i + 1}', 76, col)
-        text(d, (190, y + 30), part, 50, INK)
-        text(d, (190, y + 95), q, 42, GREY, path=R)
-        text(d, (640, y + 30), ('✓ ' if ok else '') + check, 46, col)
+        d.rounded_rectangle((40, y, 1592, y + rh - 22), radius=22, fill=PAPER, outline=col, width=8 if (ok or on) else 4)
+        icon(d, i, 70, y + (rh - 22 - 130) // 2, col)
+        text(d, (230, y + 22), f'{i + 1}  {part}', 50, INK)
+        text(d, (230, y + 88), ('✓ ' if ok else '') + check, 52, col)
         if words:
-            text(d, (640, y + 110), err, 40, RED, path=M)
+            text(d, (230, y + 158), err, 48, RED, path=M)
     save(im, name)
 
 
@@ -156,8 +179,8 @@ if __name__ == '__main__':
     card_lamp()
     for k in range(1, 5):
         table("Our lamp is lesson 1's picture", shown=k, name=f'card-mapped-{k}.png' if k < 4 else 'card-mapped.png')
-    table('So far: two checks passed', ticks=2, lit=2, name='card-sofar-2.png')
-    table('So far: three checks passed', ticks=3, lit=3, name='card-sofar-3.png')
+    table('So far: two checks passed', ticks=2, lit=2, name='card-sofar-2.png', sub=False)
+    table('So far: three checks passed', ticks=3, lit=3, name='card-sofar-3.png', sub=False)
     card_path()
     for k in range(1, 5):
-        table('Remember the lamp: from the wall outward', shown=k, words=True, name=f'card-recap-{k}.png' if k < 4 else 'card-recap.png')
+        table('Remember the lamp: from the wall outward', shown=k, words=True, sub=False, name=f'card-recap-{k}.png' if k < 4 else 'card-recap.png')
