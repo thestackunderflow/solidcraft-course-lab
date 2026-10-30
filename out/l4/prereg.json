@@ -1,0 +1,34 @@
+{
+ "written_at_utc": "2026-10-30T23:14:49+00:00",
+ "plan": "Refream-Canvas/inputs/video-plans/2026-10-27-solidcraft-course/PLAN-L4.md rev 2 \u00a73 (plan gate DECISIONS-L4 D2)",
+ "runs": {
+  "A1": "not asked",
+  "B1": "asked in one sentence",
+  "B2": "asked (repeat)",
+  "A2": "not asked (repeat)"
+ },
+ "order_and_budget": "A1, B1, B2, A2; a run starts only if the ledger since '# --- GO 30 Oct 2026 L4' is $0.48 or less (per run cap $0.22, $0.20 kept for the voice, stop $0.90)",
+ "messages": "claude-run/l4messages.sh (message 2 for all runs: 'Make the hook 30 wide instead of 20.')",
+ "question_rule": "if message 1's turn ends with no solid.hole call logged, the driver sends 'Your choice.' once (lab/l4drive.py), then message 2",
+ "setup_per_run": "fresh container (fresh home), SolidCraft 0.27.1 window with a new design and lesson 3's hook built by script before the recording (lab/l4hook.py, lab/l7story.py HOOK: five names, 8,500 mm3), fresh Claude Code 2.1.311 session (claude --model claude-sonnet-5-5, default mode), the plug added with solidcraft-cli mcp setup and wrapped in the logging proxy, no CLAUDE.md, auto memory off",
+ "definitions": {
+  "bore": "cylinder faces with their axis along X, grouped by axis (two half-faces each), radius 2.25 +-0.01 (diameter 4.5 +-0.02), through x 0..5; a countersink, counterbore or clearance hole is scored as it comes out and quoted",
+  "fillet": "a cylinder face of radius 2.00 +-0.01 with its axis along Y at z 58 +-0.01 (x 2 and x 3 for the back and front long top edges); the edge choice is reported apart from the volume",
+  "centred": "a bore's axis at the body's middle y (bbox) +-0.01"
+ },
+ "scoring": {
+  "a_names": "hole_d is a user parameter; each hole's diameter expression uses it (parameters.list); how each position was written is quoted from the logged solid.hole calls",
+  "b_build_right_after_message_1": "from the no-AI replay of the setup + turn-1 calls: two bores at z 45 and 15 +-0.01 above the base, both centred, the two long top edges filleted, volume 8306.6 +-0.5",
+  "c_after_message_2": "the live run's read after message 2: box 25 x 30 x 60, both bores centred, both fillets present, volume 12539.4 +-0.5",
+  "d_change_by_parameter": "message 2's calls set width (set_parameter or parameters.change) and contain no new_design, sketch.*, solid.extrude, delete, solid.hole or solid.fillet; a parameters.change of a hole distance is allowed but recorded",
+  "e_follow_test": "deciding test for 'written from the width' (no AI): the replay, after the turn-1 calls, sets width to 26 and to 40: pass = every bore centred at both; again after the turn-2 calls (width set back to 20 first)",
+  "verdicts": {
+   "kept centred by formula": "e passes after turn 1, message 2 made no hole edits, and c shows centred bores",
+   "re-centred by hand": "c shows centred bores but e failed after turn 1 or message 2 edited a hole",
+   "off-centre": "c shows a bore off the middle"
+  },
+  "reply": "what Claude's reply says about the holes after message 2 is quoted"
+ },
+ "narration_branches": "PLAN-L4.md \u00a73.1",
+ "proof": "both narrated runs replayed (lab/l4replay.sh); STL checker on the export: closed, one body (its faceted volume is not narrated)"
+}

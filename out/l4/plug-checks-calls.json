@@ -1,0 +1,11 @@
+[["new_design",{}],["HOOK",{}],["set_parameter",{"name":"hole_d","value":4.5}],
+ ["execute",{"command":"solid.hole","params":{"position":[5,-10,45],"diameter":"hole_d","references":[{"edge":[5,-10,60],"distance":"15"},{"edge":[5,-20,30],"distance":"width / 2"}]}}],
+ ["execute",{"command":"solid.hole","params":{"position":[5,-10,15],"diameter":"hole_d","references":[{"edge":[5,-20,30],"distance":"width / 2"},{"edge":[5,-10,60],"distance":"45"}]}}],
+ ["measure",{}],["body_topology",{"body":"Body1"}],
+ ["set_parameter",{"name":"width","value":30}],["measure",{}],["body_topology",{"body":"Body1"}],
+ ["set_parameter",{"name":"width","value":26}],["body_topology",{"body":"Body1"}],
+ ["new_design",{}],["HOOK",{}],
+ ["execute",{"command":"solid.hole","params":{"position":["thickness","-width / 2","45"],"diameter":4.5}}],
+ ["execute",{"command":"solid.hole","params":{"position":[5,"-width / 2",15],"diameter":4.5}}],
+ ["body_topology",{"body":"Body1"}],["set_parameter",{"name":"width","value":30}],["body_topology",{"body":"Body1"}],
+ ["execute",{"command":"parameters.list","params":{}}]]
