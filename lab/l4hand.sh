@@ -123,10 +123,9 @@ props() {   # props TAG
 }
 props before
 # the plate straight on (Right view), fitted
-rightview() {   # rightview TAG HOLD
+rightview() {   # rightview TAG HOLD: the plate straight on, by the red X of the axes at the top right (the view is framed)
   mark "$E" "view $1: Right view"
-  g 300 700 16; nap 0.4; click; nap 0.4; xdotool key ctrl+4; nap 1.4
-  g 809 827 18; nap 0.6; click; nap 1.6                          # fit
+  g 1408 208 20; nap 0.8; click; nap 1.8
   cp_shot "right-$1"
   mark "$E" "view $1: held"
   g 1100 300 12; nap "$2"

@@ -1,0 +1,36 @@
+  Named sizes. I added these parameters:
+  - hole_d = 4.5
+  - hole1_drop = 15
+  - hole2_drop = 45
+  - top_fillet = 2
+
+  Holes. The sketch on the back plate's face
+  is fully constrained, and every dimension is
+  written from the named sizes:
+  - Diameter: hole_d.
+  - Height: the centres sit at plate_height -
+    hole1_drop and plate_height - hole2_drop,
+    so 45 mm and 15 mm up from the bottom.
+    That is 15 mm and 45 mm below the top
+    edge.
+  - Across the width: width / 2, which puts
+    both centres 10 mm in from each side.
+
+  The cut goes through the plate's thickness.
+  Its volume change matches two 4.5 mm × 5 mm
+  holes: about 159 mm³ removed.
+
+  Fillet. I rounded the front and back top
+  edges of the back plate (the two 20 mm edges
+  at the top) with top_fillet. The volume
+  removed matches the geometry, about 34 mm³.
+
+  If you change plate_height, width, hole_d or
+  the drop values, the holes will follow.
+
+✻ Churned for 40s · done 11:29 PM
+
+──────────────────────────────────────────────
+❯ save the design
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

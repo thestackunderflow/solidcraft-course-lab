@@ -1,0 +1,95 @@
+{"t": 0.503, "event": "recording started"}
+{"t": 3.088, "event": "try 1: Hole button"}
+{"t": 5.976, "event": "try 1: the face"}
+{"t": 11.998, "event": "try 1: Reference 1, top edge"}
+{"t": 17.643, "event": "try 1: Reference 2, left edge"}
+{"t": 23.363, "event": "try 1: Distance 2 = width / 2"}
+{"t": 30.196, "event": "try 1: result ok=0 red=1"}
+{"t": 30.201, "event": "try 1: retype 10"}
+{"t": 36.503, "event": "try 1: after retype ok=0 red=1"}
+{"t": 36.507, "event": "try 1: Cancel"}
+{"t": 40.067, "event": "recording stopped"}
+{"t": 41.821, "event": "try 2: Hole button"}
+{"t": 44.707, "event": "try 2: the face"}
+{"t": 50.719, "event": "try 2: Reference 1, top edge"}
+{"t": 56.333, "event": "try 2: Reference 2, left edge"}
+{"t": 61.950, "event": "try 2: Distance 2 = width / 2"}
+{"t": 68.688, "event": "try 2: result ok=0 red=1"}
+{"t": 68.692, "event": "try 2: retype 10"}
+{"t": 74.852, "event": "try 2: after retype ok=0 red=1"}
+{"t": 74.863, "event": "try 2: Cancel"}
+{"t": 80.291, "event": "try 3: Hole button"}
+{"t": 83.132, "event": "try 3: the face"}
+{"t": 89.122, "event": "try 3: Reference 1, top edge"}
+{"t": 94.829, "event": "try 3: Reference 2, left edge"}
+{"t": 100.528, "event": "try 3: Distance 2 = width / 2"}
+{"t": 107.280, "event": "try 3: result ok=0 red=1"}
+{"t": 107.283, "event": "try 3: retype 10"}
+{"t": 113.426, "event": "try 3: after retype ok=0 red=1"}
+{"t": 113.431, "event": "try 3: Cancel"}
+{"t": 118.886, "event": "try 4: Hole button"}
+{"t": 121.821, "event": "try 4: the face"}
+{"t": 127.814, "event": "try 4: Reference 1, top edge"}
+{"t": 133.622, "event": "try 4: Reference 2, left edge"}
+{"t": 139.390, "event": "try 4: Distance 2 = width / 2"}
+{"t": 146.283, "event": "try 4: result ok=0 red=1"}
+{"t": 146.285, "event": "try 4: retype 10"}
+{"t": 152.665, "event": "try 4: after retype ok=0 red=1"}
+{"t": 152.669, "event": "try 4: Cancel"}
+{"t": 158.274, "event": "try 5: Hole button"}
+{"t": 161.178, "event": "try 5: the face"}
+{"t": 167.138, "event": "try 5: Reference 1, top edge"}
+{"t": 172.807, "event": "try 5: Reference 2, left edge"}
+{"t": 178.410, "event": "try 5: Distance 2 = width / 2"}
+{"t": 185.290, "event": "try 5: result ok=0 red=1"}
+{"t": 185.297, "event": "try 5: retype 10"}
+{"t": 191.830, "event": "try 5: after retype ok=0 red=1"}
+{"t": 191.837, "event": "try 5: Cancel"}
+{"t": 197.247, "event": "try 6: Hole button"}
+{"t": 200.127, "event": "try 6: the face"}
+{"t": 206.092, "event": "try 6: Reference 1, top edge"}
+{"t": 211.766, "event": "try 6: Reference 2, left edge"}
+{"t": 217.397, "event": "try 6: Distance 2 = width / 2"}
+{"t": 223.954, "event": "try 6: result ok=0 red=1"}
+{"t": 223.957, "event": "try 6: retype 10"}
+{"t": 229.850, "event": "try 6: after retype ok=0 red=1"}
+{"t": 229.854, "event": "try 6: Cancel"}
+{"t": 234.960, "event": "try 7: Hole button"}
+{"t": 237.790, "event": "try 7: the face"}
+{"t": 243.632, "event": "try 7: Reference 1, top edge"}
+{"t": 249.181, "event": "try 7: Reference 2, left edge"}
+{"t": 254.698, "event": "try 7: Distance 2 = 10"}
+{"t": 260.685, "event": "try 7: result ok=1 red=0"}
+{"t": 260.689, "event": "try 7: Cancel"}
+{"t": 265.840, "event": "try 8: Hole button"}
+{"t": 268.663, "event": "try 8: the face"}
+{"t": 274.510, "event": "try 8: Reference 1, top edge"}
+{"t": 280.080, "event": "try 8: Reference 2, left edge"}
+{"t": 285.607, "event": "try 8: Distance 2 = 20 / 2"}
+{"t": 291.830, "event": "try 8: result ok=0 red=1"}
+{"t": 291.833, "event": "try 8: retype 10"}
+{"t": 297.897, "event": "try 8: after retype ok=0 red=1"}
+{"t": 297.901, "event": "try 8: Cancel"}
+{"t": 303.067, "event": "try 9: Hole button"}
+{"t": 305.908, "event": "try 9: the face"}
+{"t": 311.830, "event": "try 9: Reference 1, top edge"}
+{"t": 317.361, "event": "try 9: Reference 2, left edge"}
+{"t": 322.917, "event": "try 9: Distance 2 = hole_d * 2"}
+{"t": 329.556, "event": "try 9: result ok=1 red=0"}
+{"t": 329.561, "event": "try 9: Cancel"}
+{"t": 334.717, "event": "try 10: Hole button"}
+{"t": 337.559, "event": "try 10: the face"}
+{"t": 343.408, "event": "try 10: Reference 1, top edge"}
+{"t": 348.929, "event": "try 10: Reference 2, right edge"}
+{"t": 354.582, "event": "try 10: Distance 2 = width / 2"}
+{"t": 361.124, "event": "try 10: result ok=1 red=0"}
+{"t": 361.128, "event": "try 10: Cancel"}
+{"t": 366.380, "event": "try 11: Hole button"}
+{"t": 369.223, "event": "try 11: the face"}
+{"t": 375.167, "event": "try 11: Reference 1, top edge"}
+{"t": 380.859, "event": "try 11: Reference 2, right edge"}
+{"t": 386.438, "event": "try 11: Distance 2 = width / 2"}
+{"t": 393.114, "event": "try 11: result ok=0 red=1"}
+{"t": 393.117, "event": "try 11: retype 10"}
+{"t": 399.177, "event": "try 11: after retype ok=0 red=1"}
+{"t": 399.181, "event": "try 11: Cancel"}

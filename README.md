@@ -208,6 +208,23 @@ scoring rules were written to `out/l4/prereg.json` (committed) before the first 
 | L4-Q8 | Is it real, and do the holes follow the width? | `lab/l4replay.sh RUN`: the hook, the logged calls, width 26 and 40 after each message, no AI; STL checker | `out/l4/replay-*.json` |
 | (plug) | Does the plug accept `width / 2` against the edge that moves with the width? | `out/scratch/l4p/call.py` before the runs | `out/l4/plug-checks.txt` |
 
+## Lesson 4: what it found (30-31 Oct 2026, SolidCraft 0.27.1, Claude Code 2.1.311, Linux x86_64 in Docker)
+| # | Answer | File |
+|---|---|---|
+| L4-Q1 | Browser: **0.27.1** = GitHub latest (04:24 UTC 30 Oct); curl: the 0.22.0 fallback. | `sitecheck.json` |
+| L4-Q2 | Works as filmed (take 3): Parameters `hole_d` 4.5; Hole (Model tab), the plate's inside face, Extents **All**, Reference 1 the top edge 15, Reference 2 the left edge **10**, Diameter `hole_d`; the second hole 45 / 10; Fillet on the two long top edges, Radius 2; straight-on views by the solid red X of the axes (Ctrl+4 did not reach the view reliably under Xvfb in takes 1-2). Takes 1-2 are in `out/scratch` (take 1 ran off its script after an edit while running; take 2 had no straight-on view). | `out/l4/hand/` |
+| L4-Q3 | **8,306.62 mm³** (worked out 8,306.62), bores at 15 and 45 below the top, **10 / 10** from the sides, 2 fillet faces r 2; width 30: **12,539.44**, bores **10 / 20** (10 from the left edge, no warning), fillets kept; Filter "Hole1" (size `hole_d`, tip angle, 15, 10), each 10 rewritten `width / 2`: **15 / 15**; width 20 again: 10 / 10. | `out/l4/hand/read-*.json` |
+| L4-Q4 | `width / 2` in Distance 2, Reference 2 = the left edge: "reference edge 1 is square to the face", OK greyed, **6 of 6** (3 first hole, 3 second hole); retyping 10 cleared it **0 of 6** (only Cancel). Controls: `10` fine, `hole_d * 2` fine, `20 / 2` the same error; right edge: first hole fine, second hole the same error. | `out/l4/dialog/tries.jsonl` |
+| L4-Q5 | M4: close **4.3**, normal **4.5**, loose **4.8**. | `out/l4/clearance.json` |
+| L4-Q6 | **A1 (not asked):** two circles on a YZ sketch, centres typed (-10, 45) / (-10, 15), a through cut, both long top edges filleted (8,306.62); message 2: width 30, then "the holes stayed at the old 10 mm mark, which is off-centre on a 30 mm plate", rewrote each centre as `width / 2` (8 calls; one refused try with `-width / 2`): 15 / 15. A1 got one stray "Your choice." from the driver (pre-registered trigger "no solid.hole call"; amended before B1): it offered to tie the holes to named sizes and made no call. **B1 (asked):** `hole_d`, `hole1_drop`, `hole2_drop`, `top_fillet`; after two refused batches, circles at typed (-10, ...) dimensioned in the same answer from the names (across the width `width / 2`); message 2: one `set_parameter width 30` (7 s): 15 / 15. Cost $0.4070 + $0.2538 (B1 under a live cost guard; B2, A2 not run by the budget rule). | `out/l4/runs/` |
+| L4-Q7 | A1 **re-centred by hand** (by Claude, after the change); B1 **kept centred by formula**. Both: box 25 x 30 x 60, 12,539.44, fillets kept. | `out/l4/compare.json` |
+| L4-Q8 | Replays (no AI, failed calls too): A1 and B1 15 calls each, first builds 8,306.62, after message 2 12,539.44; follow test (width 26 and 40): A1 after message 1 **fails** (16 / 10 at 26: its holes keep 10 from the right edge), after message 2 passes; B1 passes both times. STL checker: closed. | `out/l4/replay-*.json` |
+
+Lab notes: Claude Code redraws its scrollback, so a count of end-of-turn lines can stay flat (A1's turn 2 waited for the
+7-minute time-out, recording idle); the lesson 4 driver ends a turn when the newest end-of-turn line changes. A bash
+script edited while it runs re-reads at a shifted offset: run a copy. The 2880x1800 masters stay in
+`out/scratch/l4-masters`; each folder has a 1440x900 copy.
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker
@@ -245,6 +262,17 @@ docker run --rm --memory 2g --shm-size 1g -e LESSON=l7 -v "$PWD:/work" sc1-brows
 for t in setup headless errors; do docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc7-l7:0.27.0 bash /work/lab/l7take.sh $t; done
 bash claude-run/l7run.sh R2                                                  # paid: uses this PC's Claude sign-in
 docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw7.py
+# lesson 4
+docker build -t sc4-app:0.27.1 --build-arg SC_VER=0.27.1 --build-arg SC_OLD=0.27.0 -f docker/app.Dockerfile docker
+docker build -t sc4-l4:0.27.1 -f docker/l4.Dockerfile docker
+docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc4-l4:0.27.1 bash /work/lab/l4hand.sh hand
+docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc4-l4:0.27.1 bash /work/lab/l4dialog.sh
+docker run --rm --network none -v "$PWD:/work" -w /work sc4-app:0.27.1 python3 lab/l4clearance.py
+for r in A1 B1; do bash claude-run/l4run.sh $r; done                  # paid: uses this PC's Claude sign-in
+for r in A1 B1; do docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc4-l4:0.27.1 bash /work/lab/l4replay.sh $r; done
+docker run --rm --network none -v "$PWD:/work" -w /work sc4-app:0.27.1 python3 lab/l4compare.py
+docker run --rm --network none -v "$PWD:/work" -w /work sc4-app:0.27.1 python3 video/stills4.py
+docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw4.py all
 ```
 
 ## Licence

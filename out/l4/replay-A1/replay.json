@@ -1,0 +1,6682 @@
+{
+ "replayed_from": "out/l4/runs/A1/transcript.jsonl",
+ "hook_ok": true,
+ "turn1_calls": 7,
+ "turn2_calls": 8,
+ "errors": 2,
+ "after_turn1": {
+  "volume_mm3": 8306.621426645479,
+  "bbox_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "holes": [
+   {
+    "y": -10.0,
+    "z": 45.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     10.0,
+     10.0
+    ],
+    "centred": true
+   },
+   {
+    "y": -10.0,
+    "z": 15.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     10.0,
+     10.0
+    ],
+    "centred": true
+   }
+  ],
+  "top_edges_rounded": 2,
+  "hole_params": {
+   "hole_d_parameter": false,
+   "user_parameters": [
+    "hook_depth",
+    "lip_height",
+    "plate_height",
+    "thickness",
+    "width"
+   ],
+   "diameters": {},
+   "distances_from_width": {
+    "Screw holes": false
+   }
+  }
+ },
+ "build_right": {
+  "two_holes_4_5_at_15_45": true,
+  "holes_centred": true,
+  "two_top_fillets_r2": true,
+  "volume": true,
+  "all": true
+ },
+ "follow_after_turn1": {
+  "26": {
+   "set": {
+    "display_value": 26.0,
+    "errors": [],
+    "expression": "26",
+    "name": "width",
+    "recomputed": 4,
+    "restored": 0,
+    "value": 26.0
+   },
+   "bbox_mm": [
+    25.0,
+    26.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -10.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      16.0,
+      10.0
+     ],
+     "centred": false
+    },
+    {
+     "y": -10.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      16.0,
+      10.0
+     ],
+     "centred": false
+    }
+   ],
+   "all_centred": false,
+   "top_edges_rounded": 2
+  },
+  "40": {
+   "set": {
+    "display_value": 40.0,
+    "errors": [],
+    "expression": "40",
+    "name": "width",
+    "recomputed": 4,
+    "restored": 0,
+    "value": 40.0
+   },
+   "bbox_mm": [
+    25.0,
+    40.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -10.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      30.0,
+      10.0
+     ],
+     "centred": false
+    },
+    {
+     "y": -10.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      30.0,
+      10.0
+     ],
+     "centred": false
+    }
+   ],
+   "all_centred": false,
+   "top_edges_rounded": 2
+  },
+  "pass": false
+ },
+ "width_back_to_20": {
+  "display_value": 20.0,
+  "errors": [],
+  "expression": "20",
+  "name": "width",
+  "recomputed": 4,
+  "restored": 0,
+  "value": 20.0
+ },
+ "after_turn2": {
+  "volume_mm3": 12539.442013889371,
+  "bbox_mm": [
+   25.0,
+   30.0,
+   60.0
+  ],
+  "holes": [
+   {
+    "y": -15.0,
+    "z": 45.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     15.0,
+     15.0
+    ],
+    "centred": true
+   },
+   {
+    "y": -15.0,
+    "z": 15.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     15.0,
+     15.0
+    ],
+    "centred": true
+   }
+  ],
+  "top_edges_rounded": 2,
+  "hole_params": {
+   "hole_d_parameter": false,
+   "user_parameters": [
+    "hook_depth",
+    "lip_height",
+    "plate_height",
+    "thickness",
+    "width"
+   ],
+   "diameters": {},
+   "distances_from_width": {
+    "Screw holes": false
+   }
+  }
+ },
+ "after_change": {
+  "box_25_30_60": true,
+  "two_holes_4_5_at_15_45": true,
+  "holes_centred": true,
+  "fillets_kept": true,
+  "volume": true,
+  "all": true
+ },
+ "follow_after_turn2": {
+  "26": {
+   "set": {
+    "display_value": 26.0,
+    "errors": [],
+    "expression": "26",
+    "name": "width",
+    "recomputed": 3,
+    "restored": 1,
+    "value": 26.0
+   },
+   "bbox_mm": [
+    25.0,
+    26.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -13.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      13.0,
+      13.0
+     ],
+     "centred": true
+    },
+    {
+     "y": -13.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      13.0,
+      13.0
+     ],
+     "centred": true
+    }
+   ],
+   "all_centred": true,
+   "top_edges_rounded": 2
+  },
+  "40": {
+   "set": {
+    "display_value": 40.0,
+    "errors": [],
+    "expression": "40",
+    "name": "width",
+    "recomputed": 3,
+    "restored": 1,
+    "value": 40.0
+   },
+   "bbox_mm": [
+    25.0,
+    40.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -20.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      20.0,
+      20.0
+     ],
+     "centred": true
+    },
+    {
+     "y": -20.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      20.0,
+      20.0
+     ],
+     "centred": true
+    }
+   ],
+   "all_centred": true,
+   "top_edges_rounded": 2
+  },
+  "pass": true
+ },
+ "export": {
+  "isError": false
+ },
+ "our_checker": {
+  "file": "hook.stl",
+  "triangles": 1652,
+  "volume_mm3": 12538.860777,
+  "outward": true,
+  "size_mm": [
+   25.0,
+   30.0,
+   60.0
+  ],
+  "min_mm": [
+   0.0,
+   -30.0,
+   0.0
+  ],
+  "closed": true
+ },
+ "rows1": [
+  {
+   "logged_seq": 13,
+   "name": "inspect_design",
+   "isError": false,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [
+     {
+      "area_mm2": 4450.0,
+      "bbox": {
+       "max": [
+        25.0,
+        0.0,
+        60.0
+       ],
+       "min": [
+        0.0,
+        -20.0,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       6.617647058823529,
+       -10.0,
+       22.205882352941178
+      ],
+      "closed": true,
+      "edges": 24,
+      "face_types": {
+       "plane": 10
+      },
+      "faces": 10,
+      "kernel": {
+       "edges": 24,
+       "faces": 10,
+       "shells": 1,
+       "vertices": 16
+      },
+      "name": "Body1",
+      "vertices": 16,
+      "visible": true,
+      "volume_mm3": 8500.0
+     }
+    ],
+    "dirty": true,
+    "hidden_origin": [],
+    "marker": 2,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [
+     {
+      "comment": "",
+      "error": null,
+      "expression": "60",
+      "model": false,
+      "name": "plate_height",
+      "unit": "mm",
+      "value": 60.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "20",
+      "model": false,
+      "name": "width",
+      "unit": "mm",
+      "value": 20.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "5",
+      "model": false,
+      "name": "thickness",
+      "unit": "mm",
+      "value": 5.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "25",
+      "model": false,
+      "name": "hook_depth",
+      "unit": "mm",
+      "value": 25.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "10",
+      "model": false,
+      "name": "lip_height",
+      "unit": "mm",
+      "value": 10.0
+     }
+    ],
+    "path": null,
+    "redo": 0,
+    "revision": 16,
+    "selection": [],
+    "sketches": [
+     {
+      "constraints": [
+       {
+        "id": "k1",
+        "name": "Coincident",
+        "p": 0,
+        "q": 8,
+        "type": "coincident"
+       }
+      ],
+      "curves": [
+       {
+        "construction": false,
+        "end": "p1",
+        "end_at": [
+         25.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l1",
+        "start": "l1.start",
+        "start_at": [
+         0.0,
+         0.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p2",
+        "end_at": [
+         25.0,
+         10.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l2",
+        "start": "p1",
+        "start_at": [
+         25.0,
+         0.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p3",
+        "end_at": [
+         20.0,
+         10.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l3",
+        "start": "p2",
+        "start_at": [
+         25.0,
+         10.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p4",
+        "end_at": [
+         20.0,
+         5.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l4",
+        "start": "p3",
+        "start_at": [
+         20.0,
+         10.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p5",
+        "end_at": [
+         5.0,
+         5.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l5",
+        "start": "p4",
+        "start_at": [
+         20.0,
+         5.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p6",
+        "end_at": [
+         5.0,
+         60.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l6",
+        "start": "p5",
+        "start_at": [
+         5.0,
+         5.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p7",
+        "end_at": [
+         0.0,
+         60.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l7",
+        "start": "p6",
+        "start_at": [
+         5.0,
+         60.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "l1.start",
+        "end_at": [
+         0.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l8",
+        "start": "p7",
+        "start_at": [
+         0.0,
+         60.0
+        ],
+        "type": "line"
+       }
+      ],
+      "dof": 0,
+      "failing": [],
+      "fully_constrained": true,
+      "id": 1,
+      "links": [],
+      "name": "Sketch1",
+      "plane": {
+       "origin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "x_dir": [
+        1.0,
+        0.0,
+        0.0
+       ],
+       "y_dir": [
+        -0.0,
+        -0.0,
+        1.0
+       ]
+      },
+      "points": [
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "origin",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         25.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p1",
+        "link": null,
+        "world": [
+         25.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         25.0,
+         10.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p2",
+        "link": null,
+        "world": [
+         25.0,
+         0.0,
+         10.0
+        ]
+       },
+       {
+        "at": [
+         20.0,
+         10.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p3",
+        "link": null,
+        "world": [
+         20.0,
+         0.0,
+         10.0
+        ]
+       },
+       {
+        "at": [
+         20.0,
+         5.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p4",
+        "link": null,
+        "world": [
+         20.0,
+         0.0,
+         5.0
+        ]
+       },
+       {
+        "at": [
+         5.0,
+         5.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p5",
+        "link": null,
+        "world": [
+         5.0,
+         0.0,
+         5.0
+        ]
+       },
+       {
+        "at": [
+         5.0,
+         60.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p6",
+        "link": null,
+        "world": [
+         5.0,
+         0.0,
+         60.0
+        ]
+       },
+       {
+        "at": [
+         0.0,
+         60.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p7",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         60.0
+        ]
+       },
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l1.start",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       }
+      ],
+      "profiles": [
+       {
+        "area_mm2": 425.0,
+        "centroid_sketch": [
+         6.617647058823529,
+         22.205882352941178
+        ],
+        "curves": [
+         "l1",
+         "l2",
+         "l3",
+         "l4",
+         "l5",
+         "l6",
+         "l7",
+         "l8"
+        ],
+        "holes": [],
+        "index": 0
+       }
+      ],
+      "status": "solved",
+      "visible": false,
+      "wires": []
+     }
+    ],
+    "timeline": [
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 1,
+      "ms": 0.136175,
+      "name": "Sketch1",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "Sketch",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 2,
+      "ms": 6.931882,
+      "name": "Hook",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "ExtrudeFeature",
+      "warning": null
+     }
+    ],
+    "undo": 0,
+    "units": "mm"
+   }
+  },
+  {
+   "logged_seq": 15,
+   "name": "describe_command",
+   "isError": false,
+   "reply": {
+    "id": "sketch.create",
+    "input": null,
+    "label": "Create Sketch",
+    "output": null,
+    "params": "plane: XY|XZ|YZ | construction plane name or id | {origin?: [x,y,z] numbers in mm, default [0,0,0] (not an expression), x_dir, y_dir} (in world coordinates unless frame says otherwise; a named plane is the active component's own) | {face: [world x,y,z], body?: exact world body, index?: face index, path?: complete occurrence ids, fixed?: bool}; new face attachments require a unique certified source (a flat face of a sheet metal body attaches to its panel instead, in the flat pattern's coordinates), fixed:true explicitly freezes the selected plane; offset?: expr, flip?: bool | \"x\" | \"y\" (not on a face: sketch the plane from its other side, so the normal and the default extrude direction are reversed; a half turn about the plane's own x or y axis, true picks the one keeping the sketch's y axis upward; offset still moves along the unflipped normal), frame?: world (default) | component (which coordinates an explicit plane is in; the reply's `frame` says which, with a `note` when the active component is moved or turned), project_edges?: bool, name?"
+   }
+  },
+  {
+   "logged_seq": 16,
+   "name": "describe_command",
+   "isError": false,
+   "reply": {
+    "id": "solid.extrude",
+    "input": {
+     "$defs": {
+      "AngleExpr": {
+       "anyOf": [
+        {
+         "exclusiveMaximum": 1000000000.0,
+         "exclusiveMinimum": -1000000000.0,
+         "type": "number"
+        },
+        {
+         "maxLength": 4096,
+         "minLength": 1,
+         "pattern": "[^\\u0009-\\u000d\\u0020\\u0085\\u00a0\\u1680\\u2000-\\u200a\\u2028-\\u2029\\u202f\\u205f\\u3000]",
+         "type": "string"
+        }
+       ],
+       "description": "An angle: a number of degrees, or an expression such as \"30 deg\" or \"a / 2\"."
+      },
+      "Direction": {
+       "description": "Which way to extrude: positive (the default), negative, or symmetric (the distance is the total thickness, split evenly around the start plane). one_side is an alias of positive; reverse and flip of negative. Matching ignores case.",
+       "enum": [
+        "positive",
+        "negative",
+        "symmetric",
+        "one_side",
+        "reverse",
+        "flip"
+       ],
+       "type": "string"
+      },
+      "ExtentKeyword": {
+       "description": "\"through_all\" (any case) is the same as through_all: true.",
+       "enum": [
+        "through_all"
+       ],
+       "type": "string"
+      },
+      "ExtrudeConvention": {
+       "description": "total_distance (the default): a symmetric distance is the total thickness. legacy_per_side keeps older designs' per-side meaning.",
+       "enum": [
+        "total_distance",
+        "legacy_per_side"
+       ],
+       "type": "string"
+      },
+      "ExtrudeOperation": {
+       "description": "How the extrusion combines with existing bodies: auto (cut into a body, otherwise join; new in an empty component), new, join, cut or intersect. The others are aliases. Matching ignores case, spaces, '_' and '-' (only case for auto).",
+       "enum": [
+        "auto",
+        "new",
+        "join",
+        "cut",
+        "intersect",
+        "new_body",
+        "newbody",
+        "new_component",
+        "newcomponent",
+        "union",
+        "add",
+        "subtract",
+        "difference",
+        "intersection"
+       ],
+       "type": "string"
+      },
+      "Faces": {
+       "description": "Points in mm, one on each of the coplanar faces of one body to extrude together.",
+       "items": {
+        "$ref": "#/$defs/Point3"
+       },
+       "maxItems": 1024,
+       "minItems": 1,
+       "type": "array"
+      },
+      "IdOrName": {
+       "description": "A feature's id (a number) or its name.",
+       "type": [
+        "number",
+        "string"
+       ]
+      },
+      "LengthExpr": {
+       "anyOf": [
+        {
+         "exclusiveMaximum": 1000000000.0,
+         "exclusiveMinimum": -1000000000.0,
+         "type": "number"
+        },
+        {
+         "maxLength": 4096,
+         "minLength": 1,
+         "pattern": "[^\\u0009-\\u000d\\u0020\\u0085\\u00a0\\u1680\\u2000-\\u200a\\u2028-\\u2029\\u202f\\u205f\\u3000]",
+         "type": "string"
+        }
+       ],
+       "description": "A length: a number in the design's length unit, or an expression such as \"w / 2\" or \"30 mm\"."
+      },
+      "Point2": {
+       "anyOf": [
+        {
+         "items": {
+          "exclusiveMaximum": 1000000000.0,
+          "exclusiveMinimum": -1000000000.0,
+          "type": "number"
+         },
+         "maxItems": 2,
+         "minItems": 2,
+         "type": "array"
+        },
+        {
+         "properties": {
+          "x": {
+           "exclusiveMaximum": 1000000000.0,
+           "exclusiveMinimum": -1000000000.0,
+           "type": "number"
+          },
+          "y": {
+           "exclusiveMaximum": 1000000000.0,
+           "exclusiveMinimum": -1000000000.0,
+           "type": "number"
+          }
+         },
+         "required": [
+          "x",
+          "y"
+         ],
+         "type": "object"
+        }
+       ],
+       "description": "A sketch point in mm: [x, y] or {\"x\", \"y\"}."
+      },
+      "Point3": {
+       "anyOf": [
+        {
+         "items": {
+          "exclusiveMaximum": 1000000000.0,
+          "exclusiveMinimum": -1000000000.0,
+          "type": "number"
+         },
+         "maxItems": 3,
+         "minItems": 3,
+         "type": "array"
+        },
+        {
+         "properties": {
+          "x": {
+           "exclusiveMaximum": 1000000000.0,
+           "exclusiveMinimum": -1000000000.0,
+           "type": "number"
+          },
+          "y": {
+           "exclusiveMaximum": 1000000000.0,
+           "exclusiveMinimum": -1000000000.0,
+           "type": "number"
+          },
+          "z": {
+           "exclusiveMaximum": 1000000000.0,
+           "exclusiveMinimum": -1000000000.0,
+           "type": "number"
+          }
+         },
+         "required": [
+          "x",
+          "y",
+          "z"
+         ],
+         "type": "object"
+        }
+       ],
+       "description": "A point in mm: [x, y, z] or {\"x\", \"y\", \"z\"}."
+      },
+      "Profiles": {
+       "anyOf": [
+        {
+         "pattern": "^[Aa][Ll][Ll]$",
+         "type": "string"
+        },
+        {
+         "maximum": 18446744073709551615,
+         "minimum": 0,
+         "type": "integer"
+        },
+        {
+         "items": {
+          "maximum": 18446744073709551615,
+          "minimum": 0,
+          "type": "integer"
+         },
+         "maxItems": 10000,
+         "minItems": 1,
+         "type": "array"
+        },
+        {
+         "items": {
+          "properties": {
+           "point": {
+            "$ref": "#/$defs/Point2"
+           }
+          },
+          "required": [
+           "point"
+          ],
+          "type": "object"
+         },
+         "maxItems": 10000,
+         "minItems": 1,
+         "type": "array"
+        },
+        {
+         "items": {
+          "anyOf": [
+           {
+            "items": {
+             "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+           },
+           {
+            "properties": {
+             "curves": {
+              "anyOf": [
+               {
+                "type": "string"
+               },
+               {
+                "items": {
+                 "type": "string"
+                },
+                "minItems": 1,
+                "type": "array"
+               }
+              ]
+             }
+            },
+            "required": [
+             "curves"
+            ],
+            "type": "object"
+           },
+           {
+            "not": {
+             "required": [
+              "curves"
+             ]
+            },
+            "properties": {
+             "loops": {
+              "items": {
+               "properties": {
+                "curves": {
+                 "anyOf": [
+                  {
+                   "type": "string"
+                  },
+                  {
+                   "items": {
+                    "type": "string"
+                   },
+                   "minItems": 1,
+                   "type": "array"
+                  }
+                 ]
+                },
+                "outer": {
+                 "type": "boolean"
+                }
+               },
+               "required": [
+                "curves"
+               ],
+               "type": "object"
+              },
+              "minItems": 1,
+              "type": "array"
+             }
+            },
+            "required": [
+             "loops"
+            ],
+            "type": "object"
+           }
+          ]
+         },
+         "maxItems": 10000,
+         "minItems": 1,
+         "not": {
+          "items": {
+           "required": [
+            "point"
+           ],
+           "type": "object"
+          }
+         },
+         "type": "array"
+        },
+        {
+         "anyOf": [
+          {
+           "properties": {
+            "type": {
+             "enum": [
+              "whole_boundaries"
+             ]
+            }
+           },
+           "required": [
+            "type"
+           ],
+           "type": "object"
+          },
+          {
+           "not": {
+            "properties": {
+             "type": {
+              "enum": [
+               "whole_boundaries"
+              ]
+             }
+            },
+            "required": [
+             "type"
+            ]
+           },
+           "properties": {
+            "offset_boundaries": {
+             "items": {
+              "maxLength": 512,
+              "minLength": 1,
+              "type": "string"
+             },
+             "maxItems": 128,
+             "minItems": 1,
+             "type": "array",
+             "uniqueItems": true
+            }
+           },
+           "required": [
+            "offset_boundaries"
+           ],
+           "type": "object"
+          },
+          {
+           "not": {
+            "required": [
+             "offset_boundaries"
+            ]
+           },
+           "properties": {
+            "associations": {
+             "items": {
+              "maxLength": 512,
+              "minLength": 1,
+              "type": "string"
+             },
+             "maxItems": 128,
+             "minItems": 1,
+             "type": "array",
+             "uniqueItems": true
+            },
+            "type": {
+             "enum": [
+              "offset_boundaries"
+             ]
+            }
+           },
+           "required": [
+            "type",
+            "associations"
+           ],
+           "type": "object"
+          }
+         ],
+         "description": "Internal selections written by the app."
+        }
+       ],
+       "description": "Which sketch profiles to use: \"all\" (the default, any case), an index, or a list of indices, of {\"point\": [x, y]} inside a profile, or of curve selections (a list of curve ids, {\"curves\": [ids]} or {\"loops\": [...]}). Picks by index or point are stored by the curves around the profile."
+      },
+      "StringList": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "items": {
+          "type": "string"
+         },
+         "maxItems": 10000,
+         "type": "array"
+        }
+       ],
+       "description": "A name, or a list of names."
+      },
+      "ThinSide": {
+       "description": "Which side of the curves the wall lies on: center (the default), inside, outside or two_sides. The others are aliases. Matching ignores case and surrounding spaces, and reads ' ' and '-' as '_'.",
+       "enum": [
+        "center",
+        "inside",
+        "outside",
+        "two_sides",
+        "centre",
+        "centered",
+        "centred",
+        "symmetric",
+        "side1",
+        "side_1",
+        "side2",
+        "side_2",
+        "both"
+       ],
+       "type": "string"
+      }
+     },
+     "$schema": "https://json-schema.org/draft/2020-12/schema",
+     "additionalProperties": false,
+     "description": "Extrude sketch profiles (or a planar body face) into a solid.",
+     "properties": {
+      "body": {
+       "default": null,
+       "description": "With `face`, among placed instances: the body whose placement `face` is read in (read by\nthe engine's frame mapping, before the command runs). Default: `face_body`, else the\nbody nearest the point.",
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "body_name": {
+       "default": null,
+       "description": "The new body's name.",
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "body_names": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/StringList"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "Names for the new bodies, in order."
+      },
+      "convention": {
+       "$ref": "#/$defs/ExtrudeConvention",
+       "description": "How a symmetric distance is read. Default: total_distance."
+      },
+      "curves": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/StringList"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "With `thin`: the curves the wall follows. Default: every drawn curve of the sketch."
+      },
+      "direction": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/Direction"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "Which way to extrude. Default: positive."
+      },
+      "distance": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/LengthExpr"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "How far: the length one way; with `direction: symmetric`, the total thickness (per side\nwith `convention: legacy_per_side`); with `distance2`, the first side's length. Required\nunless `through_all` or `to` is given."
+      },
+      "distance2": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/LengthExpr"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "Two Sides: a second distance the other way from the first side, which may be\n`through_all` or `to`; with `direction: negative` the first side goes against the normal\nand `distance2` along it."
+      },
+      "exact_regions": {
+       "default": null,
+       "description": "Each index or point pick is exactly the region it names. Without it, a pick on a drawn\nprofile that reference geometry (a face's projected outline) cuts into regions takes the\nwhole drawn profile. The dialogs send `true`: they highlight the regions they pick.",
+       "type": [
+        "boolean",
+        "null"
+       ]
+      },
+      "extent": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/ExtentKeyword"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "`\"through_all\"`, the same as `through_all: true`."
+      },
+      "face": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/Point3"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "A point on a planar body face to extrude instead of a sketch profile."
+      },
+      "face_body": {
+       "default": null,
+       "description": "The body whose face to use, where faces of several bodies meet at `face` (or `faces`).",
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "faces": {
+       "$ref": "#/$defs/Faces",
+       "description": "Several coplanar faces of one body to extrude together, by a point on each. Not with\n`face`, `sketch` or `profiles`."
+      },
+      "from": {
+       "$ref": "#/$defs/Point3",
+       "description": "Start at this face or point (From Object)."
+      },
+      "name": {
+       "default": null,
+       "description": "The feature's name in the timeline.",
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "operation": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/ExtrudeOperation"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "How the extrusion combines with existing bodies. Default: new."
+      },
+      "participants": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/StringList"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "The bodies taking part; overrides the default scope."
+      },
+      "profiles": {
+       "$ref": "#/$defs/Profiles",
+       "description": "Which of the sketch's profiles to extrude. Default: all of them. Ignored when `face` is\ngiven; not allowed with `thin`."
+      },
+      "side": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/ThinSide"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "With `thin`: which side of the curves the wall lies on. Default: center."
+      },
+      "sketch": {
+       "$ref": "#/$defs/IdOrName",
+       "description": "The sketch to extrude, by id or name. Default: the active sketch, else the last one.\nIgnored when `face` is given."
+      },
+      "start_offset": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/LengthExpr"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "Start this far from the sketch plane, along its normal."
+      },
+      "taper": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/AngleExpr"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "Draft angle of the side walls (positive: outward, so the far end is larger along the\nextrusion direction; negative: inward, so the far end is smaller)."
+      },
+      "targets": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/StringList"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "The bodies a join, cut or intersect works on. Default for a join from a body's face:\nthat body."
+      },
+      "thickness": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/LengthExpr"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "With `thin`: the wall's thickness."
+      },
+      "thickness2": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/LengthExpr"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "With `thin` and `side: two_sides`: the thickness outside."
+      },
+      "thin": {
+       "description": "A thin wall along sketch curves instead of solid profiles.",
+       "type": "boolean"
+      },
+      "through_all": {
+       "default": null,
+       "description": "Extrude through everything in the way.",
+       "type": [
+        "boolean",
+        "null"
+       ]
+      },
+      "to": {
+       "$ref": "#/$defs/Point3",
+       "description": "Extrude up to this face, vertex or point (To Object)."
+      },
+      "to_offset": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/LengthExpr"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "How far past `to` to go."
+      }
+     },
+     "title": "ExtrudeParams",
+     "type": "object"
+    },
+    "label": "Extrude",
+    "output": {
+     "$schema": "https://json-schema.org/draft/2020-12/schema",
+     "description": "What a feature command returns.",
+     "properties": {
+      "bodies": {
+       "description": "Every body after the feature.",
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "changed_bodies": {
+       "description": "Bodies that were there before and now have other geometry.",
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "created_bodies": {
+       "description": "The bodies the feature made.",
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "feature": {
+       "description": "The new feature's id.",
+       "format": "uint64",
+       "minimum": 0,
+       "type": "integer"
+      },
+      "ms": {
+       "description": "How long the feature took to evaluate, in milliseconds.",
+       "format": "double",
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "name": {
+       "description": "The new feature's name.",
+       "type": "string"
+      },
+      "param_warnings": {
+       "description": "In the warn parameter-check mode: what the call's parameters got wrong.",
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "removed_bodies": {
+       "description": "Bodies that are gone.",
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "warning": {
+       "description": "A warning from the evaluation (a Boolean that needed a retry, a reference found again\nelsewhere), or `null`.",
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "required": [
+      "feature",
+      "name",
+      "bodies",
+      "created_bodies",
+      "changed_bodies",
+      "removed_bodies",
+      "warning",
+      "ms"
+     ],
+     "title": "FeatureResult",
+     "type": "object"
+    },
+    "params": "distance: expr (or through_all: true); taper?: angle expr (positive: outward, so the far end is larger along the extrusion direction; negative: inward, so the far end is smaller); sketch?: id|name (default: active or last sketch); profiles?: all | [index] | [{curves: [ids]}] (the profile whose outer loop is made of exactly these curves, or pieces of them; found again on every recompute, so it follows parameter changes; islands inside are its holes; an error when no profile or several match) | [{point:[x,y]}] (index and point picks are stored by their curves when that finds the same profile; a pick on a drawn profile that reference geometry, such as the projected outline of the face the sketch is on, cuts into regions takes the whole drawn profile); exact_regions?: bool (each index or point pick is exactly the region it names, as the dialogs send); default: every drawn profile, except that a loop inside another is its hole and a loop inside that hole is material again; face?: [x,y,z] (extrude a planar body face instead of a sketch profile); faces?: [[x,y,z],\u2026] (coplanar faces of one body); face_body?: name (whose face, where faces of several bodies meet at the point); direction?: positive|negative|symmetric (distance is total thickness, split evenly around the start plane); convention?: total_distance|legacy_per_side (default total_distance; legacy preserves older symmetric extents); distance2?: expr (Two Sides: a second distance the other way from the first side, which may be through_all or to; with direction: negative the first side goes against the normal and distance2 along it); start_offset?: expr (along the sketch normal, also with direction: negative); to?: [x,y,z] (To Object: a face, vertex or point; to_offset?: expr past it); from?: [x,y,z] (From Object: start at that face or point); operation?: new|join|cut|intersect|auto (cut into a body, otherwise join existing solids; new in an empty component); targets?: [body] (Join from a face, or from a sketch on a body's face, defaults to that face's body; explicit targets or participants override); name?; body_name?; thin?: true (Thin: a wall along sketch curves instead of the profiles) with curves?: [curve ids] (open chains and closed loops, joined where they meet end to end; default: every drawn curve of the sketch), thickness: expr, side?: center|inside|outside|two_sides (a closed loop's inside is the area it encloses, an open chain's the side it bends toward, a straight line's the left of its first curve as drawn; default center), thickness2?: expr (two_sides: the thickness outside); corners are mitred, crossing walls are one"
+   }
+  },
+  {
+   "logged_seq": 19,
+   "name": "batch",
+   "isError": false,
+   "reply": {
+    "completed": 5,
+    "ok": true,
+    "results": [
+     {
+      "attachment": "fixed",
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [],
+       "points": []
+      },
+      "name": "Sketch2",
+      "projected": null,
+      "sketch": 3
+     },
+     {
+      "constraints": [],
+      "created": {
+       "constraints": [],
+       "curves": [
+        "c1"
+       ],
+       "dimensions": [],
+       "points": [
+        "c1.center"
+       ]
+      },
+      "curves": [
+       "c1"
+      ],
+      "sketch": {
+       "dof": 3,
+       "solved": true
+      }
+     },
+     {
+      "constraints": [],
+      "created": {
+       "constraints": [],
+       "curves": [
+        "c2"
+       ],
+       "dimensions": [],
+       "points": [
+        "c2.center"
+       ]
+      },
+      "curves": [
+       "c2"
+      ],
+      "sketch": {
+       "dof": 6,
+       "solved": true
+      }
+     },
+     {
+      "profiles": 2,
+      "sketch": 3
+     },
+     {
+      "bodies": [
+       "Body1"
+      ],
+      "changed_bodies": [
+       "Body1"
+      ],
+      "created_bodies": [],
+      "feature": 4,
+      "ms": 77.81689999999999,
+      "name": "Screw holes",
+      "removed_bodies": [],
+      "warning": null
+     }
+    ]
+   }
+  },
+  {
+   "logged_seq": 21,
+   "name": "body_topology",
+   "isError": false,
+   "reply": {
+    "body": "Body1",
+    "edges": [
+     {
+      "end": [
+       0.0,
+       -20.0,
+       60.0
+      ],
+      "index": 0,
+      "length": 20.0,
+      "mid": [
+       0.0,
+       -10.0,
+       60.0
+      ],
+      "name": "F2:side:l7|F2:side:l8",
+      "start": [
+       0.0,
+       0.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -20.0,
+       60.0
+      ],
+      "index": 1,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -20.0,
+       60.0
+      ],
+      "name": "F2:side:l7|F2:top",
+      "start": [
+       0.0,
+       -20.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       0.0,
+       60.0
+      ],
+      "index": 2,
+      "length": 20.0,
+      "mid": [
+       5.0,
+       -10.0,
+       60.0
+      ],
+      "name": "F2:side:l6|F2:side:l7",
+      "start": [
+       5.0,
+       -20.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       0.0,
+       60.0
+      ],
+      "index": 3,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       0.0,
+       60.0
+      ],
+      "name": "F2:side:l7|F2:start",
+      "start": [
+       5.0,
+       0.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -20.0,
+       0.0
+      ],
+      "index": 4,
+      "length": 60.0,
+      "mid": [
+       0.0,
+       -20.0,
+       30.0
+      ],
+      "name": "F2:side:l8|F2:top",
+      "start": [
+       0.0,
+       -20.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       -20.0,
+       0.0
+      ],
+      "index": 5,
+      "length": 25.0,
+      "mid": [
+       12.5,
+       -20.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:top",
+      "start": [
+       0.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       -20.0,
+       10.0
+      ],
+      "index": 6,
+      "length": 10.0,
+      "mid": [
+       25.0,
+       -20.0,
+       5.0
+      ],
+      "name": "F2:side:l2|F2:top",
+      "start": [
+       25.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       -20.0,
+       10.0
+      ],
+      "index": 7,
+      "length": 5.0,
+      "mid": [
+       22.5,
+       -20.0,
+       10.0
+      ],
+      "name": "F2:side:l3|F2:top",
+      "start": [
+       25.0,
+       -20.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       -20.0,
+       5.0
+      ],
+      "index": 8,
+      "length": 5.0,
+      "mid": [
+       20.0,
+       -20.0,
+       7.5
+      ],
+      "name": "F2:side:l4|F2:top",
+      "start": [
+       20.0,
+       -20.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -20.0,
+       5.0
+      ],
+      "index": 9,
+      "length": 15.0,
+      "mid": [
+       12.5,
+       -20.0,
+       5.0
+      ],
+      "name": "F2:side:l5|F2:top",
+      "start": [
+       20.0,
+       -20.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -20.0,
+       60.0
+      ],
+      "index": 10,
+      "length": 55.0,
+      "mid": [
+       5.0,
+       -20.0,
+       32.5
+      ],
+      "name": "F2:side:l6|F2:top",
+      "start": [
+       5.0,
+       -20.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "index": 11,
+      "length": 20.0,
+      "mid": [
+       0.0,
+       -10.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:side:l8",
+      "start": [
+       0.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       0.0
+      ],
+      "index": 12,
+      "length": 25.0,
+      "mid": [
+       12.5,
+       0.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:start",
+      "start": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       -20.0,
+       0.0
+      ],
+      "index": 13,
+      "length": 20.0,
+      "mid": [
+       25.0,
+       -10.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:side:l2",
+      "start": [
+       25.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       0.0,
+       60.0
+      ],
+      "index": 14,
+      "length": 60.0,
+      "mid": [
+       0.0,
+       0.0,
+       30.0
+      ],
+      "name": "F2:side:l8|F2:start",
+      "start": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       0.0,
+       5.0
+      ],
+      "index": 15,
+      "length": 55.0,
+      "mid": [
+       5.0,
+       0.0,
+       32.5
+      ],
+      "name": "F2:side:l6|F2:start",
+      "start": [
+       5.0,
+       0.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       0.0,
+       5.0
+      ],
+      "index": 16,
+      "length": 15.0,
+      "mid": [
+       12.5,
+       0.0,
+       5.0
+      ],
+      "name": "F2:side:l5|F2:start",
+      "start": [
+       5.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       0.0,
+       10.0
+      ],
+      "index": 17,
+      "length": 5.0,
+      "mid": [
+       20.0,
+       0.0,
+       7.5
+      ],
+      "name": "F2:side:l4|F2:start",
+      "start": [
+       20.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       10.0
+      ],
+      "index": 18,
+      "length": 5.0,
+      "mid": [
+       22.5,
+       0.0,
+       10.0
+      ],
+      "name": "F2:side:l3|F2:start",
+      "start": [
+       20.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       0.0
+      ],
+      "index": 19,
+      "length": 10.0,
+      "mid": [
+       25.0,
+       0.0,
+       5.0
+      ],
+      "name": "F2:side:l2|F2:start",
+      "start": [
+       25.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -7.75,
+       45.0
+      ],
+      "index": 20,
+      "length": 7.0179558956305375,
+      "mid": [
+       0.0,
+       -10.0,
+       47.25
+      ],
+      "name": "F2:side:l8|F4:side:c1#2",
+      "start": [
+       0.0,
+       -12.25,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       45.0
+      ],
+      "index": 21,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -7.75,
+       45.0
+      ],
+      "name": "F4:side:c1#1|F4:side:c1#2~2",
+      "start": [
+       0.0,
+       -7.75,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -12.25,
+       45.0
+      ],
+      "index": 22,
+      "length": 7.0179558956305375,
+      "mid": [
+       5.0,
+       -10.0,
+       47.25
+      ],
+      "name": "F2:side:l6|F4:side:c1#2",
+      "start": [
+       5.0,
+       -7.75,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       45.0
+      ],
+      "index": 23,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -12.25,
+       45.0
+      ],
+      "name": "F4:side:c1#1|F4:side:c1#2~1",
+      "start": [
+       5.0,
+       -12.25,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       45.0
+      ],
+      "index": 24,
+      "length": 7.0179558956305375,
+      "mid": [
+       0.0,
+       -10.0,
+       42.75
+      ],
+      "name": "F2:side:l8|F4:side:c1#1",
+      "start": [
+       0.0,
+       -7.75,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       45.0
+      ],
+      "index": 25,
+      "length": 7.0179558956305375,
+      "mid": [
+       5.0,
+       -10.0,
+       42.75
+      ],
+      "name": "F2:side:l6|F4:side:c1#1",
+      "start": [
+       5.0,
+       -12.25,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -7.75,
+       15.0
+      ],
+      "index": 26,
+      "length": 7.0179558956305375,
+      "mid": [
+       0.0,
+       -10.0,
+       17.25
+      ],
+      "name": "F2:side:l8|F4:side:c2#2",
+      "start": [
+       0.0,
+       -12.25,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       15.0
+      ],
+      "index": 27,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -7.75,
+       15.0
+      ],
+      "name": "F4:side:c2#1|F4:side:c2#2~2",
+      "start": [
+       0.0,
+       -7.75,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -12.25,
+       15.0
+      ],
+      "index": 28,
+      "length": 7.0179558956305375,
+      "mid": [
+       5.0,
+       -10.0,
+       17.25
+      ],
+      "name": "F2:side:l6|F4:side:c2#2",
+      "start": [
+       5.0,
+       -7.75,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       15.0
+      ],
+      "index": 29,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -12.25,
+       15.0
+      ],
+      "name": "F4:side:c2#1|F4:side:c2#2~1",
+      "start": [
+       5.0,
+       -12.25,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       15.0
+      ],
+      "index": 30,
+      "length": 7.017955895630536,
+      "mid": [
+       0.0,
+       -10.0,
+       12.75
+      ],
+      "name": "F2:side:l8|F4:side:c2#1",
+      "start": [
+       0.0,
+       -7.75,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       15.0
+      ],
+      "index": 31,
+      "length": 7.017955895630536,
+      "mid": [
+       5.0,
+       -10.0,
+       12.75
+      ],
+      "name": "F2:side:l6|F4:side:c2#1",
+      "start": [
+       5.0,
+       -12.25,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -20.0,
+       5.0
+      ],
+      "index": 32,
+      "length": 20.0,
+      "mid": [
+       5.0,
+       -10.0,
+       5.0
+      ],
+      "name": "F2:side:l5|F2:side:l6",
+      "start": [
+       5.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       0.0,
+       5.0
+      ],
+      "index": 33,
+      "length": 20.0,
+      "mid": [
+       20.0,
+       -10.0,
+       5.0
+      ],
+      "name": "F2:side:l4|F2:side:l5",
+      "start": [
+       20.0,
+       -20.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       -20.0,
+       10.0
+      ],
+      "index": 34,
+      "length": 20.0,
+      "mid": [
+       20.0,
+       -10.0,
+       10.0
+      ],
+      "name": "F2:side:l3|F2:side:l4",
+      "start": [
+       20.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       10.0
+      ],
+      "index": 35,
+      "length": 20.0,
+      "mid": [
+       25.0,
+       -10.0,
+       10.0
+      ],
+      "name": "F2:side:l2|F2:side:l3",
+      "start": [
+       25.0,
+       -20.0,
+       10.0
+      ]
+     }
+    ],
+    "faces": [
+     {
+      "area": 100.0,
+      "centroid": [
+       2.5000000000000004,
+       -10.000000000000002,
+       60.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:side:l7",
+      "plane_normal": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "point": [
+       2.1922359359558485,
+       -17.807764064044154,
+       60.0
+      ]
+     },
+     {
+      "area": 425.0,
+      "centroid": [
+       6.617647058823531,
+       -20.0,
+       22.205882352941178
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:top",
+      "plane_normal": [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      "point": [
+       2.453027128694994,
+       -20.0,
+       5.922131362964586
+      ]
+     },
+     {
+      "area": 500.0,
+      "centroid": [
+       12.499999999999998,
+       -10.0,
+       0.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l1",
+      "plane_normal": [
+       -0.0,
+       0.0,
+       -1.0
+      ],
+      "point": [
+       6.492189406417879,
+       -6.492189406417879,
+       0.0
+      ]
+     },
+     {
+      "area": 425.0,
+      "centroid": [
+       6.617647058823531,
+       0.0,
+       22.205882352941178
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:start",
+      "plane_normal": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "point": [
+       2.453027128694994,
+       0.0,
+       5.922131362964586
+      ]
+     },
+     {
+      "area": 35.08977947995685,
+      "centroid": [
+       2.4999999999999996,
+       -10.0,
+       46.406836062818904
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        45.0
+       ],
+       "radius": 2.25
+      },
+      "exact": true,
+      "index": 4,
+      "name": "F4:side:c1#2",
+      "plane_normal": null,
+      "point": [
+       1.433077722224063,
+       -9.675499986800812,
+       47.226476979767305
+      ]
+     },
+     {
+      "area": 35.08977947995691,
+      "centroid": [
+       2.500000000000001,
+       -10.000000000000002,
+       43.59316393718111
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        45.0
+       ],
+       "radius": 2.250000000000001
+      },
+      "exact": true,
+      "index": 5,
+      "name": "F4:side:c1#1",
+      "plane_normal": null,
+      "point": [
+       3.5669222777759377,
+       -9.675499986800812,
+       42.773523020232695
+      ]
+     },
+     {
+      "area": 35.08977947995685,
+      "centroid": [
+       2.5,
+       -9.999999999999998,
+       16.406836062818897
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        15.0
+       ],
+       "radius": 2.25
+      },
+      "exact": true,
+      "index": 6,
+      "name": "F4:side:c2#2",
+      "plane_normal": null,
+      "point": [
+       1.4330777222240632,
+       -9.675499986800814,
+       17.226476979767302
+      ]
+     },
+     {
+      "area": 35.08977947995686,
+      "centroid": [
+       2.5,
+       -9.999999999999998,
+       13.593163937181103
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        -0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        15.0
+       ],
+       "radius": 2.25
+      },
+      "exact": true,
+      "index": 7,
+      "name": "F4:side:c2#1",
+      "plane_normal": null,
+      "point": [
+       1.4330777222240643,
+       -10.324500013199192,
+       12.773523020232698
+      ]
+     },
+     {
+      "area": 300.0,
+      "centroid": [
+       12.5,
+       -10.0,
+       5.0
+      ],
+      "exact": true,
+      "index": 8,
+      "name": "F2:side:l5",
+      "plane_normal": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "point": [
+       10.0,
+       -15.0,
+       5.0
+      ]
+     },
+     {
+      "area": 100.0,
+      "centroid": [
+       22.5,
+       -10.000000000000002,
+       10.000000000000002
+      ],
+      "exact": true,
+      "index": 9,
+      "name": "F2:side:l3",
+      "plane_normal": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "point": [
+       22.19223593595585,
+       -17.807764064044154,
+       10.0
+      ]
+     },
+     {
+      "area": 1169.096117647059,
+      "centroid": [
+       0.0,
+       -9.999999999999996,
+       30.000000000000007
+      ],
+      "exact": true,
+      "index": 10,
+      "name": "F2:side:l8",
+      "plane_normal": [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      "point": [
+       0.0,
+       -10.000000000000002,
+       4.865710135763767
+      ]
+     },
+     {
+      "area": 1069.096117647059,
+      "centroid": [
+       5.0,
+       -10.0,
+       32.57226637961458
+      ],
+      "exact": true,
+      "index": 11,
+      "name": "F2:side:l6",
+      "plane_normal": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "point": [
+       5.0,
+       -10.000000000000002,
+       55.13428986423623
+      ]
+     },
+     {
+      "area": 100.0,
+      "centroid": [
+       20.000000000000004,
+       -10.000000000000002,
+       7.5
+      ],
+      "exact": true,
+      "index": 12,
+      "name": "F2:side:l4",
+      "plane_normal": [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      "point": [
+       20.0,
+       -17.807764064044154,
+       7.192235935955849
+      ]
+     },
+     {
+      "area": 200.0,
+      "centroid": [
+       25.0,
+       -10.000000000000002,
+       5.000000000000001
+      ],
+      "exact": true,
+      "index": 13,
+      "name": "F2:side:l2",
+      "plane_normal": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "point": [
+       25.0,
+       -16.18033988749895,
+       3.8196601125010514
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "logged_seq": 23,
+   "name": "execute",
+   "isError": false,
+   "reply": {
+    "bodies": [
+     "Body1"
+    ],
+    "changed_bodies": [
+     "Body1"
+    ],
+    "created_bodies": [],
+    "feature": 5,
+    "ms": 237.319262,
+    "name": "Top edge fillet",
+    "removed_bodies": [],
+    "warning": null
+   }
+  },
+  {
+   "logged_seq": 25,
+   "name": "screenshot",
+   "isError": false,
+   "reply": {
+    "bytes": 1816493,
+    "height": 1000,
+    "path": null,
+    "source": "window",
+    "width": 1600
+   }
+  }
+ ],
+ "rows2": [
+  {
+   "logged_seq": 27,
+   "name": "set_parameter",
+   "isError": false,
+   "reply": {
+    "display_value": 30.0,
+    "errors": [],
+    "expression": "30",
+    "name": "width",
+    "recomputed": 4,
+    "restored": 0,
+    "value": 30.0
+   }
+  },
+  {
+   "logged_seq": 29,
+   "name": "inspect_design",
+   "isError": false,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [
+     {
+      "area_mm2": 6272.809804509217,
+      "bbox": {
+       "max": [
+        25.0,
+        7.10542735760101e-15,
+        60.00000000000001
+       ],
+       "min": [
+        -8.881784197001264e-16,
+        -30.000000000000014,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       6.686789164538842,
+       -15.063407826796428,
+       21.95354057923127
+      ],
+      "closed": true,
+      "edges": 34,
+      "face_types": {
+       "cylinder": 4,
+       "plane": 10
+      },
+      "faces": 14,
+      "kernel": {
+       "edges": 42,
+       "faces": 16,
+       "shells": 1,
+       "vertices": 28
+      },
+      "name": "Body1",
+      "vertices": 24,
+      "visible": true,
+      "volume_mm3": 12539.442013889378
+     }
+    ],
+    "dirty": true,
+    "hidden_origin": [],
+    "marker": 5,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [
+     {
+      "comment": "",
+      "error": null,
+      "expression": "60",
+      "model": false,
+      "name": "plate_height",
+      "unit": "mm",
+      "value": 60.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "30",
+      "model": false,
+      "name": "width",
+      "unit": "mm",
+      "value": 30.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "5",
+      "model": false,
+      "name": "thickness",
+      "unit": "mm",
+      "value": 5.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "25",
+      "model": false,
+      "name": "hook_depth",
+      "unit": "mm",
+      "value": 25.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "10",
+      "model": false,
+      "name": "lip_height",
+      "unit": "mm",
+      "value": 10.0
+     }
+    ],
+    "path": null,
+    "redo": 0,
+    "revision": 32,
+    "selection": [],
+    "sketches": [
+     {
+      "constraints": [
+       {
+        "id": "k1",
+        "name": "Coincident",
+        "p": 0,
+        "q": 8,
+        "type": "coincident"
+       }
+      ],
+      "curves": [
+       {
+        "construction": false,
+        "end": "p1",
+        "end_at": [
+         25.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l1",
+        "start": "l1.start",
+        "start_at": [
+         0.0,
+         0.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p2",
+        "end_at": [
+         25.0,
+         10.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l2",
+        "start": "p1",
+        "start_at": [
+         25.0,
+         0.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p3",
+        "end_at": [
+         20.0,
+         10.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l3",
+        "start": "p2",
+        "start_at": [
+         25.0,
+         10.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p4",
+        "end_at": [
+         20.0,
+         5.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l4",
+        "start": "p3",
+        "start_at": [
+         20.0,
+         10.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p5",
+        "end_at": [
+         5.0,
+         5.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l5",
+        "start": "p4",
+        "start_at": [
+         20.0,
+         5.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p6",
+        "end_at": [
+         5.0,
+         60.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l6",
+        "start": "p5",
+        "start_at": [
+         5.0,
+         5.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p7",
+        "end_at": [
+         0.0,
+         60.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l7",
+        "start": "p6",
+        "start_at": [
+         5.0,
+         60.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "l1.start",
+        "end_at": [
+         0.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l8",
+        "start": "p7",
+        "start_at": [
+         0.0,
+         60.0
+        ],
+        "type": "line"
+       }
+      ],
+      "dof": 0,
+      "failing": [],
+      "fully_constrained": true,
+      "id": 1,
+      "links": [],
+      "name": "Sketch1",
+      "plane": {
+       "origin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "x_dir": [
+        1.0,
+        0.0,
+        0.0
+       ],
+       "y_dir": [
+        -0.0,
+        -0.0,
+        1.0
+       ]
+      },
+      "points": [
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "origin",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         25.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p1",
+        "link": null,
+        "world": [
+         25.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         25.0,
+         10.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p2",
+        "link": null,
+        "world": [
+         25.0,
+         0.0,
+         10.0
+        ]
+       },
+       {
+        "at": [
+         20.0,
+         10.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p3",
+        "link": null,
+        "world": [
+         20.0,
+         0.0,
+         10.0
+        ]
+       },
+       {
+        "at": [
+         20.0,
+         5.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p4",
+        "link": null,
+        "world": [
+         20.0,
+         0.0,
+         5.0
+        ]
+       },
+       {
+        "at": [
+         5.0,
+         5.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p5",
+        "link": null,
+        "world": [
+         5.0,
+         0.0,
+         5.0
+        ]
+       },
+       {
+        "at": [
+         5.0,
+         60.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p6",
+        "link": null,
+        "world": [
+         5.0,
+         0.0,
+         60.0
+        ]
+       },
+       {
+        "at": [
+         0.0,
+         60.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p7",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         60.0
+        ]
+       },
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l1.start",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       }
+      ],
+      "profiles": [
+       {
+        "area_mm2": 425.0,
+        "centroid_sketch": [
+         6.617647058823529,
+         22.205882352941178
+        ],
+        "curves": [
+         "l1",
+         "l2",
+         "l3",
+         "l4",
+         "l5",
+         "l6",
+         "l7",
+         "l8"
+        ],
+        "holes": [],
+        "index": 0
+       }
+      ],
+      "status": "solved",
+      "visible": false,
+      "wires": []
+     },
+     {
+      "constraints": [],
+      "curves": [
+       {
+        "center": "c1.center",
+        "center_at": [
+         -10.0,
+         45.0
+        ],
+        "construction": false,
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c1",
+        "radius": 2.25,
+        "type": "circle"
+       },
+       {
+        "center": "c2.center",
+        "center_at": [
+         -10.0,
+         15.0
+        ],
+        "construction": false,
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c2",
+        "radius": 2.25,
+        "type": "circle"
+       }
+      ],
+      "dof": 6,
+      "failing": [],
+      "fully_constrained": false,
+      "id": 3,
+      "links": [],
+      "name": "Sketch2",
+      "plane": {
+       "origin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "x_dir": [
+        0.0,
+        1.0,
+        0.0
+       ],
+       "y_dir": [
+        0.0,
+        0.0,
+        1.0
+       ]
+      },
+      "points": [
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "origin",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         -10.0,
+         45.0
+        ],
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c1.center",
+        "link": null,
+        "world": [
+         0.0,
+         -10.0,
+         45.0
+        ]
+       },
+       {
+        "at": [
+         -10.0,
+         15.0
+        ],
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c2.center",
+        "link": null,
+        "world": [
+         0.0,
+         -10.0,
+         15.0
+        ]
+       }
+      ],
+      "profiles": [
+       {
+        "area_mm2": 15.904312808798323,
+        "centroid_sketch": [
+         -10.000000000000036,
+         45.00000000000014
+        ],
+        "curves": [
+         "c1"
+        ],
+        "holes": [],
+        "index": 0
+       },
+       {
+        "area_mm2": 15.904312808798323,
+        "centroid_sketch": [
+         -9.999999999999972,
+         14.99999999999996
+        ],
+        "curves": [
+         "c2"
+        ],
+        "holes": [],
+        "index": 1
+       }
+      ],
+      "status": "solved",
+      "visible": false,
+      "wires": []
+     }
+    ],
+    "timeline": [
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 1,
+      "ms": 0.136175,
+      "name": "Sketch1",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "Sketch",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 2,
+      "ms": 5.451541,
+      "name": "Hook",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "ExtrudeFeature",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 3,
+      "ms": 0.07583400000000001,
+      "name": "Sketch2",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "Sketch",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 4,
+      "ms": 85.51227,
+      "name": "Screw holes",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "ExtrudeFeature",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 5,
+      "ms": 236.608212,
+      "name": "Top edge fillet",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "FilletFeature",
+      "warning": null
+     }
+    ],
+    "undo": 0,
+    "units": "mm"
+   }
+  },
+  {
+   "logged_seq": 31,
+   "name": "list_commands",
+   "isError": false,
+   "reply": [
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "sketch",
+     "id": "sketch.create",
+     "label": "Create Sketch",
+     "panel": "CREATE",
+     "params": "plane: XY|XZ|YZ | construction plane name or id | {origin?: [x,y,z] numbers in mm, default [0,0,0] (not an expression), x_dir, y_dir} (in world coordinates unless frame says otherwise; a named plane is the active component's own) | {face: [world x,y,z], body?: exact world body, index?: face index, path?: complete occurrence ids, fixed?: bool}; new face attachments require a unique certified source (a flat face of a sheet metal body attaches to its panel instead, in the flat pattern's coordinates), fixed:true explicitly freezes the selected plane; offset?: expr, flip?: bool | \"x\" | \"y\" (not on a face: sketch the plane from its other side, so the normal and the default extrude direction are reversed; a half turn about the plane's own x or y axis, true picks the one keeping the sketch's y axis upward; offset still moves along the unflipped normal), frame?: world (default) | component (which coordinates an explicit plane is in; the reply's `frame` says which, with a `note` when the active component is moved or turned), project_edges?: bool, name?",
+     "shortcut": null,
+     "tab": "SOLID"
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "sketch",
+     "id": "sketch.edit",
+     "label": "Edit Sketch",
+     "panel": "",
+     "params": "sketch: id or name",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "finish",
+     "id": "sketch.finish",
+     "label": "Finish Sketch",
+     "panel": "FINISH SKETCH",
+     "params": "",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_cancel",
+     "id": "sketch.cancel",
+     "label": "Cancel Sketch",
+     "panel": "FINISH SKETCH",
+     "params": "Leaves the sketch without keeping what changed since it was created or opened for editing: the design goes back to how it was then (a new sketch is removed), as one step that Undo brings back. Refused when the undo history no longer leads back to that point (use Undo instead)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "line",
+     "id": "sketch.line",
+     "label": "Line",
+     "panel": "CREATE",
+     "params": "points: [[x,y] | \"l1.end\" | {at, ref}\u2026] (x and y each a number or an expression over the design's parameters, \"W / 2\": such a point is fixed where it comes to and follows the parameters; likewise wherever a point argument also takes a point id), closed?: bool, construction?: bool, ids?: [..], infer?: bool (add horizontal/vertical); connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": "L",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "dimension",
+     "id": "sketch.draw.dimensioned",
+     "label": "Draw Dimensioned Sketch Geometry",
+     "panel": "",
+     "params": "command: sketch creation command, params: object, dimensions: object of role to numeric or expression value, or `name = expression` (also `#name = expression`), which defines the user parameter `name` as sketch.dimension does (the reply's `defined` lists the names) (optional with as_drawn or locate), as_drawn?: bool (also dimension every other role of the shape at its size as drawn; a radius or diameter given takes the place of the other, a circle otherwise takes its diameter, and a size the sketch already determines, such as the angle of a line inferred horizontal, is left out), locate?: bool (then place the shape from the sketch origin until nothing of it is left free: horizontal and vertical distances from the origin to its points, centres first, each kept only where it removes freedom, so a shape anchored to the origin or to placed geometry gets none; a point on an axis goes onto that axis instead of a 0 distance; the reply's located lists them); creates geometry and all driving dimensions atomically in one undo step. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "rect",
+     "id": "sketch.rectangle.two_point",
+     "label": "2-Point Rectangle",
+     "panel": "CREATE",
+     "params": "p0, p1: opposite corners [x,y]; construction?. Returns sides {bottom, right, top, left} (line ids) and corners {bottom_left, bottom_right, top_right, top_left} (point ids); connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": "R",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "rect3",
+     "id": "sketch.rectangle.three_point",
+     "label": "3-Point Rectangle",
+     "panel": "CREATE",
+     "params": "p0, p1: first edge; p2: point on the opposite edge; construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "rect_rounded",
+     "id": "sketch.rectangle.rounded",
+     "label": "Rounded Rectangle",
+     "panel": "CREATE",
+     "params": "p0, p1: opposite corners [x,y]; radius: expr (the corner radius, less than half the shorter side); construction?. A 2-point rectangle whose four corners are filleted alike: one radius dimension (`param`), the other arcs equal to it. Returns sides {bottom, right, top, left} (line ids) and arcs (the corner arcs: bottom-left, bottom-right, top-right, top-left); connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "rect_center",
+     "id": "sketch.rectangle.center",
+     "label": "Center Rectangle",
+     "panel": "CREATE",
+     "params": "center, corner; construction?: bool. Returns sides {bottom, right, top, left} (line ids) and corners {bottom_left, bottom_right, top_right, top_left} (point ids); connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "circle",
+     "id": "sketch.circle.center",
+     "label": "Center Diameter Circle",
+     "panel": "CREATE",
+     "params": "center: [x,y] or point ref, radius | diameter: number; through?: point ref (a point the circle passes through, kept on it: where the tool's second click snapped); construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": "C",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "circle2",
+     "id": "sketch.circle.two_point",
+     "label": "2-Point Circle",
+     "panel": "CREATE",
+     "params": "p0, p1: diameter ends; construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "circle3",
+     "id": "sketch.circle.three_point",
+     "label": "3-Point Circle",
+     "panel": "CREATE",
+     "params": "p0, p1, p2; construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "arc3",
+     "id": "sketch.arc.three_point",
+     "label": "3-Point Arc",
+     "panel": "CREATE",
+     "params": "start, end, through: [x,y] or point ref (a referenced through point stays on the arc); construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "arc_center",
+     "id": "sketch.arc.center_point",
+     "label": "Center Point Arc",
+     "panel": "CREATE",
+     "params": "center, start, end (counter-clockwise from start; clockwise?: bool for clockwise) | center, start, sweep: signed degrees; construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "polygon",
+     "id": "sketch.polygon.inscribed",
+     "label": "Inscribed Polygon",
+     "panel": "CREATE",
+     "params": "center, radius (to vertices), sides, angle?: deg; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "polygon_circumscribed",
+     "id": "sketch.polygon.circumscribed",
+     "label": "Circumscribed Polygon",
+     "panel": "CREATE",
+     "params": "center, radius (to edge midpoints), sides, angle?: deg; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "polygon_edge",
+     "id": "sketch.polygon.edge",
+     "label": "Edge Polygon",
+     "panel": "CREATE",
+     "params": "p0, p1: one edge, sides; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "slot",
+     "id": "sketch.slot.center_to_center",
+     "label": "Center to Center Slot",
+     "panel": "CREATE",
+     "params": "p0, p1: arc centres, width; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "slot_overall",
+     "id": "sketch.slot.overall",
+     "label": "Overall Slot",
+     "panel": "CREATE",
+     "params": "p0, p1: overall ends, width; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "point",
+     "id": "sketch.point",
+     "label": "Point",
+     "panel": "CREATE",
+     "params": "point: [x,y] (each a number or an expression over the design's parameters: the point is then fixed where it comes to and follows them) or a snap: \"mid:<line>\" (held at the line's midpoint), \"on:<curve>:x,y\" (on the curve near x,y), {vertex: [x,y,z]} or {on_edge: [x,y,z]} of the model; id?; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "dimension",
+     "id": "sketch.dimension",
+     "label": "Sketch Dimension",
+     "panel": "CREATE",
+     "params": "entities: [refs] (a line midpoint is \"mid:line_id\"; a model edge or vertex, {edge: [x,y,z], body?} or {vertex: [x,y,z], body?}, is projected into the sketch first and measured there: a point against the projected edge measures the distance to it), type?: auto|distance|horizontal|distance_x|vertical|distance_y|length|radius|diameter|angle, value?: number or expression (default: current; a bare number is in the design's units, e.g. 2 means 2 in in an inch design; give a unit such as \"50 mm\" to override), or `name = expression` (e.g. \"width = 40\"; also `#name = expression`), which adds the user parameter `name` with that expression and dimensions with `name` (refused when the name is taken or reserved; the reply's `defined` names it); text_at?: [x, y]. Two points, two midpoints or a line off the axes: with auto, text_at inside the box they span (as opposite corners) or in its outer corners is the distance between them, above or below the box horizontal, beside it vertical. Two lines: the angle between them (acute, or 180\u00b0 \u2212 it when the value is nearer that) unless text_at picks a sector. A line and a circle or arc: the distance from the line to its edge (the gap, or how far the edge reaches past a line that cuts it; 0 is tangent); dimension the centre point for the distance to the centre. A point and a circle or arc: the distance from the point to its edge (or how far within it a point inside lies). Two circles or arcs: the gap between their edges (or how far they overlap when they cross, or the narrowest gap between them when one lies inside the other), or the centre-to-centre distance when they are the two caps of a slot. An arc and one of its end points: the arc's length (type arc_length does it from the arc alone). A dimension the sketch already determines is refused (naming what determines it); if_redundant?: \"driven\" places it as a driven (reference) dimension instead. scale_sketch?: bool (the dimension tool sends true): when this is the sketch's first length dimension and nothing in the sketch fixes a size (no other driving length dimension, nothing fixed or projected), the whole sketch scales about its origin to the value instead of distorting. Returns measured in unit (mm or deg), and scaled: the factor when the sketch was scaled",
+     "shortcut": "D",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_hv",
+     "id": "sketch.constraint.horizontal_vertical",
+     "label": "Horizontal/Vertical",
+     "panel": "CONSTRAINTS",
+     "params": "line: id | points: [a, b] (point ids or {midpoint: line_id}; accepted midpoints reuse or create a point with a Midpoint constraint); mode?: horizontal|vertical",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_coincident",
+     "id": "sketch.constraint.coincident",
+     "label": "Coincident",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: points, a point and a curve or sketch axis (x / y: the sketch's own axes, unless a curve has that id; an axis becomes a linked construction line on it, reported in created), or two distinct lines (joins their closest endpoints), or two circles/arcs (the second lies on the first: concentric and equal, `constraints` lists both); any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_tangent",
+     "id": "sketch.constraint.tangent",
+     "label": "Tangent",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: curves or sketch axes (x / y: the sketch's own axes, unless a curve has that id; an axis becomes a linked construction line on it, reported in created); any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_equal",
+     "id": "sketch.constraint.equal",
+     "label": "Equal",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: lines or circles/arcs; or curves: [2 to 200 lines or circles/arcs], each made equal to the first, in one step; any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_parallel",
+     "id": "sketch.constraint.parallel",
+     "label": "Parallel",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: lines or sketch axes (x / y: the sketch's own axes, unless a curve has that id; an axis becomes a linked construction line on it, reported in created); any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_perpendicular",
+     "id": "sketch.constraint.perpendicular",
+     "label": "Perpendicular",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: lines or sketch axes (x / y: the sketch's own axes, unless a curve has that id; an axis becomes a linked construction line on it, reported in created); any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_fix",
+     "id": "sketch.constraint.fix",
+     "label": "Fix/UnFix",
+     "panel": "CONSTRAINTS",
+     "params": "entity: point or curve | entities: [points and curves]; fixed?: bool (default: fix them all unless all are fixed, then unfix)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_midpoint",
+     "id": "sketch.constraint.midpoint",
+     "label": "MidPoint",
+     "panel": "CONSTRAINTS",
+     "params": "point, line | a, b in pick order: a point and a line (either way round), or two lines whose midpoints meet (the first stays, the second moves); any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_concentric",
+     "id": "sketch.constraint.concentric",
+     "label": "Concentric",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: circles/arcs; any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_collinear",
+     "id": "sketch.constraint.collinear",
+     "label": "Collinear",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: lines or sketch axes (x / y: the sketch's own axes, unless a curve has that id; an axis becomes a linked construction line on it, reported in created); any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_symmetry",
+     "id": "sketch.constraint.symmetry",
+     "label": "Symmetry",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: two points or two curves (lines mirror their ends, circles/arcs their centres); line: symmetry line id, or x / y for the sketch's own axes (a curve with that id wins; an axis becomes a linked construction line on it, reported in created); or point (or a point id as line, \"origin\" too): symmetric about that point, each pair joined by a construction line it is the midpoint of; any of them may be a model edge {edge: [x,y,z], body?} or vertex {vertex: [x,y,z], body?}, projected into the sketch first (reported in created)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "construction",
+     "id": "sketch.construction",
+     "label": "Normal/Construction",
+     "panel": "CREATE",
+     "params": "curves: [ids], value?: bool (default: construction unless all of them already are)",
+     "shortcut": "X",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "delete",
+     "id": "sketch.delete",
+     "label": "Delete Sketch Entities",
+     "panel": "",
+     "params": "entities: [curve, point or constraint ids]",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_move",
+     "id": "sketch.move_point",
+     "label": "Drag Sketch Point",
+     "panel": "",
+     "params": "point: ref, to: [x,y]",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_move",
+     "id": "sketch.drag",
+     "label": "Drag Sketch Geometry",
+     "panel": "",
+     "params": "entity: point or curve, from: [x,y] where it was grabbed, to: [x,y], live?: bool: points and the material point grabbed on a line move toward `to` within the design constraints. When exact placement is impossible, bounded feasible steps minimize cursor distance. Splines slide by to - from; a circle or arc grabbed on its edge takes the radius to `to`. `with?`: [point or curve ids] moves the rest of a selection with the entity as one translation (circles keep their radii). Long moves retain the solution branch; arcs cannot sweep through their starts. Returns `reached`: progress projected onto the requested move (0..1), `at`: the grabbed position for the next frame, and `retry`: budget-limited progress can continue in another frame. `live: true` shares a work budget across held-solve decomposition and cursor correction; ordinary recovery and the final model evaluation retain their existing limits, not a wall-clock deadline. Later features stay stale until `sketch.drag_end`; `dof` stays from before the drag",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_move",
+     "id": "sketch.drag_end",
+     "label": "End Sketch Drag",
+     "panel": "",
+     "params": "constraint?: {command: a sketch.constraint.* id, params}: ends a drag made of `sketch.drag` `live: true` frames: adds the constraint it let go on (not kept if it over-constrains the sketch), then evaluates the whole model once; returns the constraint's result and the sketch's solved state and degrees of freedom",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "edit",
+     "id": "sketch.dimension_text",
+     "label": "Move Dimension Text",
+     "panel": "",
+     "params": "dimension: constraint id or parameter name; at: [x,y] text centre (sketch coordinates) | reset: true (default place)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "sketch",
+     "id": "sketch.options",
+     "label": "Sketch Palette Options",
+     "panel": "",
+     "params": "sketch?: id|name (default active); any of show_profile, show_points, show_dimensions, show_constraints, show_projected, show_construction, grid, snap, slice, sketch_3d: bool. Returns them all",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "chain",
+     "id": "sketch.chain",
+     "label": "Chain",
+     "panel": "",
+     "params": "curve: id: the curves joined to it end to end (what a double-click selects)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "compute",
+     "id": "sketch.solve",
+     "label": "Solve Sketch",
+     "panel": "",
+     "params": "reports the solver status and degrees of freedom",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "line_mid",
+     "id": "sketch.line.midpoint",
+     "label": "Midpoint Line",
+     "panel": "CREATE",
+     "params": "mid: [x,y], point ref or snap (\"mid:<line>\", \"on:<curve>:x,y\", model vertex/edge); end: [x,y]; construction?. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "arc_tangent",
+     "id": "sketch.arc.tangent",
+     "label": "Tangent Arc",
+     "panel": "CREATE",
+     "params": "start: end point of a line or arc (\"l1.end\"), end: [x,y]; curve?: the curve to be tangent to (default: the one ending at start). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "circle_tt",
+     "id": "sketch.circle.two_tangent",
+     "label": "2-Tangent Circle",
+     "panel": "CREATE",
+     "params": "curves: [two lines/circles/arcs], radius | diameter: expr, near: [x,y] (which of the solutions). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "circle_ttt",
+     "id": "sketch.circle.three_tangent",
+     "label": "3-Tangent Circle",
+     "panel": "CREATE",
+     "params": "curves: [three lines/circles/arcs], near: [x,y] (which of the solutions). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "slot_center",
+     "id": "sketch.slot.center_point",
+     "label": "Center Point Slot",
+     "panel": "CREATE",
+     "params": "center: slot centre, end: one arc centre, width. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "arc_slot",
+     "id": "sketch.slot.arc_three_point",
+     "label": "Three Point Arc Slot",
+     "panel": "CREATE",
+     "params": "start, through, end: points on the centre arc, width. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "arc_slot_center",
+     "id": "sketch.slot.arc_center",
+     "label": "Center Point Arc Slot",
+     "panel": "CREATE",
+     "params": "center, start: centre arc start, end: direction of the centre arc end (counter-clockwise) or sweep: degrees (0 < sweep < 360), width; returns centre_arc. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "ellipse",
+     "id": "sketch.ellipse",
+     "label": "Ellipse",
+     "panel": "CREATE",
+     "params": "center, major: end of the major axis [x,y], minor: a point the ellipse passes through on the minor side [x,y] | minor_radius. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "spline",
+     "id": "sketch.spline.fit_point",
+     "label": "Fit Point Spline",
+     "panel": "CREATE",
+     "params": "points: [[x,y] or point refs\u2026] (2\u2026500): the spline passes through them, periodic?: boolean (default false); periodic cubic fit closes smoothly through at least 3 distinct samples. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "spline_cv",
+     "id": "sketch.spline.control_point",
+     "label": "Control Point Spline",
+     "panel": "CREATE",
+     "params": "points: control points (2\u2026500), cubic. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "spline_cv",
+     "id": "sketch.spline.control_point_5",
+     "label": "Control Point Spline (Degree 5)",
+     "panel": "CREATE",
+     "params": "points: control points (2\u2026500), degree 5. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "spline",
+     "id": "sketch.spline.insert_point",
+     "label": "Add Spline Point",
+     "panel": "",
+     "params": "curve: fit point spline id, at: [x,y]: a fit point is inserted where the curve passes nearest to it, between its neighbours (the curve still runs through it and all its old points; constraints on them stay); end?: start|end: `at` becomes the spline's new first or last point instead, and the curve runs on to it (refused when that end is joined to other geometry). Control point splines take no new points yet. Returns point: the new point's id",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "spline",
+     "id": "sketch.spline.reverse",
+     "label": "Reverse Spline Direction",
+     "panel": "",
+     "params": "curve: spline id (fit point, control point or closed): its last point becomes its first and the curve runs the other way along the same path; its points and the constraints on them stay. Refused for a projected spline and for one an offset uses or makes. Returns curve",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "conic",
+     "id": "sketch.conic",
+     "label": "Conic Curve",
+     "panel": "CREATE",
+     "params": "start, end, apex: [x,y] or point refs; rho?: 0\u20261 (default 0.5: parabola). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "blend",
+     "id": "sketch.blend_curve",
+     "label": "Blend Curve",
+     "panel": "MODIFY",
+     "params": "a, b: end points of two curves (\"l1.end\", \"a2.start\"), continuity?: g1|g2|g3|g4 (default g1: a tangent spline; g2\u2026g4 match the reference curves' curvature, curvature rate and 4th derivative as well, as one B\u00e9zier of degree 5, 7 or 9). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "centerline",
+     "id": "sketch.centerline",
+     "label": "Centerline",
+     "panel": "CREATE",
+     "params": "curves: [line ids], value?: bool (default toggles): centerline line type (not in profiles; an axis)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "infinite",
+     "id": "sketch.infinite",
+     "label": "Infinite Line",
+     "panel": "",
+     "params": "curves: [line ids], value?: bool (default toggles): infinite line type (#1359): construction geometry drawn across the whole view through the line's two points; off, a normal line",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_text",
+     "id": "sketch.text",
+     "label": "Text",
+     "panel": "CREATE",
+     "params": "text: string (\\n breaks lines), or text_expression: the words built from text parameters (parameters.add with unit text) and quoted texts joined by + (\"Label + '-L'\"): the text keeps it, its words follow the parameters (a parameter edit or a configuration row relabels it) and `exprs` returns it as `text`; at: baseline start [x,y], height?: capital height mm (default 5), angle?: deg; at's x and y, height and angle each take a number or an expression over the design's parameters as a string (\"plate_width / 2\", \"label_size\"): the text keeps the expression, follows the parameters, and returns it in `exprs`; an expression naming no parameter is the number it comes to, a bare number in one is in the design's units, font?: an installed font's family or full name, or a .ttf/.otf file path (~ and %VAR% expand; default: the built-in Liberation Sans), bold?, italic?: bool (an installed family's bold or italic face; italic without one is slanted), align?: left|center|right (the lines against `at`, or along the path), letter_spacing?: extra mm between letters, line_spacing?: times the font's line distance (default 1), path?: a curve id of the sketch the baseline follows (\"\": none; `at` and `angle` then do not place the text; the curve becomes construction, a guide the letters stand on), reverse?: bool (the other way along the path). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "edit",
+     "id": "sketch.edit_text",
+     "label": "Edit Text",
+     "panel": "",
+     "params": "link: the text's link id (or entity: one of its curves), text? or text_expression? (as in sketch.text; typed words replace the expression), at?, height?, angle?: deg (numbers or expressions as in sketch.text; a number replaces an expression, and so does moving the text), font?: family or file path (empty: the built-in font), bold?, italic?: bool (an installed family's bold or italic face; italic without one is slanted), align?: left|center|right (the lines against `at`, or along the path), letter_spacing?: extra mm between letters, line_spacing?: times the font's line distance (default 1), path?: a curve id of the sketch the baseline follows (\"\": none; `at` and `angle` then do not place the text; the curve becomes construction, a guide the letters stand on), reverse?: bool (the other way along the path) (each kept when left out); or edits: [{link or entity, text?, at?, \u2026}]: several texts changed together, the design rebuilt once (all or nothing; returns edits: each one's result); live?: bool: one frame of an interactive change (the sketch is solved, the features after it stay as they were until `sketch.drag_end`). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "equation_curve",
+     "id": "sketch.equation_curve",
+     "label": "Equation Curve",
+     "panel": "CREATE",
+     "params": "x: x(t), y: y(t): formulas of t in the design's expression language and parameters (\"r * (cos(t) + t * sin(t))\"); or explicit: true and y: f(x) alone (no x); start, end: the range of t (or of x): a number or an expression (\"2 * pi\", \"360 deg\" is 2\u00b7pi, a length is in the design's unit); tolerance?: mm (default 0.01): how far the curve may stray from the formulas (0.0001 to 10); construction?: bool. The variable is a plain number: sin(t) reads it in radians; a result without a unit is in the design's length unit. Makes a fit point spline through fixed points, as many as the tolerance needs (up to 500), closed smoothly when it ends where it starts; the points are placed again from the formulas whenever the parameters change. Returns curve, points (how many), closed, deviation (mm). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "equation_curve",
+     "id": "sketch.equation_curve.edit",
+     "label": "Edit Equation Curve",
+     "panel": "",
+     "params": "curve: an equation curve's id; x?, y?, explicit?, start?, end?, tolerance?: as in sketch.equation_curve, each kept when left out (explicit: true drops x; false needs x). The points are chosen again for the new formulas; the curve's start point (and the end point of an open curve) keeps its id, so geometry joined there stays joined. Returns curve, points, closed, deviation",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_smooth",
+     "id": "sketch.constraint.curvature",
+     "label": "Curvature",
+     "panel": "CONSTRAINTS",
+     "params": "a, b: two curves sharing an end point (curvature continuous, G2)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_polygon",
+     "id": "sketch.constraint.polygon",
+     "label": "Polygon",
+     "panel": "CONSTRAINTS",
+     "params": "lines: [line ids] of a closed chain: equal sides with every corner on one circle (a regular polygon)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "auto_constrain",
+     "id": "sketch.auto_constrain",
+     "label": "AutoConstrain",
+     "panel": "CONSTRAINTS",
+     "params": "tolerance?: mm (default 0.01), angle_tolerance?: deg (default 1), dimensions?: bool (default true): infer constraints, then dimension until fully constrained",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "auto_constrain",
+     "id": "sketch.auto_constrain_from_datum",
+     "label": "AutoConstrain from datum",
+     "panel": "CONSTRAINTS",
+     "params": "datum: point ref (default origin); like AutoConstrain with positions measured from the datum",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "finish",
+     "id": "sketch.finish_auto_constrain",
+     "label": "Finish with AutoConstrain",
+     "panel": "FINISH SKETCH",
+     "params": "like AutoConstrain, then Finish Sketch",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "constrainer",
+     "id": "sketch.constrainer",
+     "label": "Sketch Constrainer",
+     "panel": "CREATE",
+     "params": "entities: [one or two sketch entity ids]: applies the constraint the geometry nearly has (horizontal/vertical, parallel, perpendicular, collinear, coincident, concentric, equal, tangent)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "dimension",
+     "id": "sketch.toggle_driven",
+     "label": "Toggle Driven Dimension",
+     "panel": "",
+     "params": "constraint: dimension id, driven?: bool (default toggles); a driving dimension gets a parameter with its current value",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "dimension",
+     "id": "sketch.toggle_diameter",
+     "label": "Toggle Radius / Diameter",
+     "panel": "",
+     "params": "constraint: a circle's or an arc's radius or diameter dimension id; diameter?: bool (default: the other one); sketch?: id|name (default: the one being edited). The circle stays the same size: its parameter is halved or doubled (a plain value is rewritten, an expression becomes `(e) / 2` or `2 * (e)`); refused when anything else uses that parameter",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "eye",
+     "id": "sketch.glyphs",
+     "label": "Constraint Glyphs",
+     "panel": "",
+     "params": "sketch?: id|name: every constraint with where to draw its glyph (sketch coordinates)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "snap",
+     "id": "sketch.snap",
+     "label": "Snap Inference",
+     "panel": "",
+     "params": "at: [x,y], from?: [x,y] (previous click), radius?: mm (snap distance, default 1): what a click there would snap to and infer",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "sketch_dxf",
+     "id": "sketch.insert_dxf",
+     "label": "Insert DXF",
+     "panel": "INSERT",
+     "params": "path | text: ASCII DXF (blocks expanded); at?: [x,y] offset, scale? | width? | height?: mm, the drawing's size before rotation, aspect kept (win over scale); angle?: degrees, about the drawing's origin (or its centre); align?: \"origin\" (default: `at` is where the file's origin goes) | \"center\" (`at` is where the drawing's middle goes and it turns and scales about it); tolerance?: mm within which ends join (default 0.0001); plane?: (when no sketch is active, a new sketch on it; default XY). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "svg",
+     "id": "sketch.insert_svg",
+     "label": "Insert SVG",
+     "panel": "INSERT",
+     "params": "path | text: SVG; at?: [x,y] offset, scale? | width? | height?: mm, the drawing's size before rotation, aspect kept (win over scale); angle?: degrees, about the drawing's origin (or its centre); align?: \"origin\" (default: `at` is where the file's origin goes) | \"center\" (`at` is where the drawing's middle goes and it turns and scales about it); tolerance?: mm within which ends join (default 0.0001); plane?: (when no sketch is active, a new sketch on it; default XY). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "svg",
+     "id": "sketch.drawing_bounds",
+     "label": "Drawing Size",
+     "panel": "",
+     "params": "path | text: SVG or DXF (by `format`: \"svg\" | \"dxf\", default by the file name, else SVG); returns min, max, width and height in the file's own size",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "sketch_dxf",
+     "id": "sketch.export_dxf",
+     "label": "Save As DXF",
+     "panel": "",
+     "params": "sketch?: id|name (default active); path?: file to write (else the DXF text is returned)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_coincident",
+     "id": "sketch.loose_ends",
+     "label": "Loose Ends",
+     "panel": "",
+     "params": "sketch?: id|name (default active): the ends of profile curves (not construction, projected or text) that can make a profile fail. open: [{point, curve, at}] ends that touch no other profile curve (no profile runs through them); untied: [{point, curve, at, touches: {point}|{curve}}] ends that touch another curve only by position (the profile closes now, but nothing keeps it closed when a dimension changes)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "c_coincident",
+     "id": "sketch.loose_ends.tie",
+     "label": "Tie Loose Ends",
+     "panel": "",
+     "params": "sketch?: id|name (default active); points?: [point ids] (default: every untied end): ties each untied end to what it touches, coincident with another curve's end or on another curve. Returns constraints: [ids added], and the untied ends left",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "line",
+     "id": "sketch.line3d",
+     "label": "3D Line",
+     "panel": "",
+     "params": "points: [[x,y,z]\u2026] world points (2 or more): one 3D line per segment, joined end to end (needs 3D Sketch on). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "spline",
+     "id": "sketch.spline3d",
+     "label": "3D Spline",
+     "panel": "",
+     "params": "points: [[x,y,z]\u2026] world fit points (2 or more): a smooth 3D curve through them (needs 3D Sketch on). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "arc3",
+     "id": "sketch.arc3d",
+     "label": "3D Arc",
+     "panel": "",
+     "params": "start, through, end: [x,y,z] world points: an exact circular arc through them, from start through through to end (needs 3D Sketch on). Stored exactly (centre, radius, angles), so path consumers can treat it as a true arc. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "point",
+     "id": "sketch.point3d",
+     "label": "3D Point",
+     "panel": "",
+     "params": "point: [x,y,z] world point (needs 3D Sketch on). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_move",
+     "id": "sketch.move3d",
+     "label": "Move 3D Point",
+     "panel": "",
+     "params": "wire: drawn 3D curve or point id, index?: fit point (default 0), to: [x,y,z] | by: [dx,dy,dz]; points joined to it move too",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_fillet",
+     "id": "sketch.fillet",
+     "label": "Fillet",
+     "panel": "MODIFY",
+     "params": "point: corner shared by two curves (\"l1.end\") | points: [corners] (all rounded alike: one radius, the rest equal; a corner is a point reference or {a, b}, the two curves meeting there) | a, b: two lines or arcs meeting at a corner; radius: expr. A corner that dimensions or constraints measure to stays as a virtual sharp corner on both curves' extensions (`virtual_corners`; the moved ones in `moved_to_virtual_corner`). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_chamfer",
+     "id": "sketch.chamfer.equal_distance",
+     "label": "Equal Distance Chamfer",
+     "panel": "MODIFY",
+     "params": "point | a, b: a corner of two lines; distance. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_chamfer_angle",
+     "id": "sketch.chamfer.distance_angle",
+     "label": "Distance and Angle Chamfer",
+     "panel": "MODIFY",
+     "params": "point | a, b: a corner of two lines; distance: along a, angle: deg from a. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_chamfer_two_distances",
+     "id": "sketch.chamfer.two_distance",
+     "label": "Two Distance Chamfer",
+     "panel": "MODIFY",
+     "params": "point | a, b: a corner of two lines; distance: along a, distance2: along b. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "offset",
+     "id": "sketch.offset",
+     "label": "Offset",
+     "panel": "MODIFY",
+     "params": "curves: [ids], distance: number in mm or length expression (creates an editable dimension; positive = left of the chain, or toward `side`), side?: [x,y], chain?: bool (default true: the connected chain); direction?: one_side|symmetric (default one_side) or symmetric?: bool (the same distance each way; no `side`, whose job it takes over), distance2?: positive length expression (Two Sides: an independent distance the other way, as for `solid.extrude`). Each side is its own offset association, listed in `sides`; flip?: bool reverses the primary side; `param`/`param2` name the driving dimensions. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": "O",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_break",
+     "id": "sketch.offset.break",
+     "label": "Break Offset Association",
+     "panel": "",
+     "params": "curve: derived offset curve id (retains geometry and makes its points editable)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "trim",
+     "id": "sketch.trim",
+     "label": "Trim",
+     "panel": "MODIFY",
+     "params": "curve: id, at: [x,y] (the piece to remove: between the nearest intersections around it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": "T",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "trim",
+     "id": "sketch.trim.path",
+     "label": "Trim Along Path",
+     "panel": "",
+     "params": "points: [[x,y]\u2026] (2\u20262000 positions: a path drawn across the sketch). Every piece the path crosses is removed as `sketch.trim` removes the piece at that crossing, in the order the path crosses them; a piece crossed again after it is gone is not trimmed twice; projected geometry, infinite lines, offset outputs and pieces trim refuses are passed over (why in `skipped`). dry_run?: bool (report without changing the design). One undo step \u2192 trimmed: [each trim's result], removed: [[[x,y]\u2026]] (each removed piece as a polyline). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "extend",
+     "id": "sketch.extend",
+     "label": "Extend",
+     "panel": "MODIFY",
+     "params": "curve: id, at: [x,y] near the end to extend (a line runs on to the nearest curve, or the previewed reach when nothing is in the way; an arc grows along its circle and closes into a whole circle when nothing stops it) | curves: [id, id] (two lines or arcs of this sketch, grown until they meet and joined there), at?: [[x,y],[x,y]] (one point per curve: the end to grow; default the end nearest the meeting point). `curve` and `curves` exclude each other; the two-curve form returns moved: the meeting point's id",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_break",
+     "id": "sketch.break",
+     "label": "Break",
+     "panel": "MODIFY",
+     "params": "curve: id, at: [x,y] (split at intersections) | points: [[x,y]\u2026] (1\u20261000 positions projected onto the curve; duplicates are merged). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_scale",
+     "id": "sketch.scale",
+     "label": "Sketch Scale",
+     "panel": "MODIFY",
+     "params": "entities: [curve/point ids], base: [x,y] or point ref, factor: number",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_move",
+     "id": "sketch.transform",
+     "label": "Transform",
+     "panel": "MODIFY",
+     "params": "entities: [curve/point ids], factor?: number (scale), angle?: degrees (turn), center?: [x,y] or point ref (what scales and turns stay put; default [0,0]), translate?: [dx,dy] (applied last); scales, turns and moves in one step",
+     "shortcut": "G",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_move",
+     "id": "sketch.move",
+     "label": "Move/Copy Sketch Entities",
+     "panel": "MODIFY",
+     "params": "entities: [ids], translate?: [dx,dy], angle?: deg, center?: [x,y], copy?: bool, rotate_constraints?: bool (default true; false keeps constraints unchanged); a rotation turns the constraints tied to the sketch axes when all their geometry moves (horizontal and vertical relations and dimensions swap at odd quarter turns and stay at half turns, line angles turn with the line) and removes the horizontal and vertical ones that cannot hold at other angles; picking a text outline or linked point transforms its whole text source once, and copies remain editable text. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_mirror",
+     "id": "sketch.mirror",
+     "label": "Mirror",
+     "panel": "PATTERN",
+     "params": "entities: [curve/point ids], line: straight curve id, x / y for a sketch axis, or {axis: X|Y|Z} for an origin axis in the sketch plane (symmetry constraints are added). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_circ_pattern",
+     "id": "sketch.pattern.circular",
+     "label": "Circular Pattern",
+     "panel": "PATTERN",
+     "params": "entities: [ids], center: [x,y] or point ref, count: 2\u2026500 (number or unitless expression, retained through edits), angle?: total deg, number or expression (default 360); alignment?: left|center|right (default right); reversed?: bool (default false). Quantity includes the original. Center balances copies around it; reversed flips the direction and extra side for even totals. Partial arcs span angle with angle/(count-1) spacing; full turns use angle/count. Adds associative pattern constraints; a coordinate center creates a constrainable point. Returns pattern and center ids. pattern?: existing pattern id to edit (omitted values retained; surviving instance ids retained). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_rect_pattern",
+     "id": "sketch.pattern.rectangular",
+     "label": "Rectangular Pattern",
+     "panel": "PATTERN",
+     "params": "entities: [ids], count, spacing; count2?, spacing2?; counts: positive integer numbers or expressions, at most 500 instances total; spacings: length numbers or expressions; direction?, direction2?: sketch line ids (live references); dir?, dir2?: [x,y] vectors (defaults: sketch x, perpendicular to direction 1); alignment?, alignment2?: left|center|right (default right). Signed spacings reverse each direction. reversed?, reversed2?: bool (default false); reverses placement and the extra side of even centered totals. Quantities include the original. Adds associative pattern constraints. Returns pattern id. pattern?: existing pattern id to edit (omitted values retained; surviving instance ids retained). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "project",
+     "id": "sketch.project",
+     "label": "Project",
+     "panel": "CREATE",
+     "params": "refs: [{edge: [x,y,z], body?} | {face: [x,y,z], body?} (its edge loops) | {body: name} (silhouette) | {vertex: [x,y,z], body?} | {sketch, curve} | {sketch, point} | \"origin\" | {axis: X|Y|Z} | {plane: XY|XZ|YZ|name}]; projection_link?: bool (default true). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": "P",
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "intersect",
+     "id": "sketch.intersect",
+     "label": "Intersect",
+     "panel": "CREATE",
+     "params": "refs: [{body}, {face: [x,y,z], body?}, {edge: [x,y,z], body?}, {sketch, curve}]: section curves (or points) with the sketch plane; projection_link?: bool (default true). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "include",
+     "id": "sketch.include_3d",
+     "label": "Include 3D Geometry",
+     "panel": "CREATE",
+     "params": "refs: like Project (edges, vertices, sketch curves and points); curves out of the sketch plane are flattened onto it. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "project_surface",
+     "id": "sketch.project_to_surface",
+     "label": "Project To Surface",
+     "panel": "CREATE",
+     "params": "curves: [{sketch, curve}\u2026] (curves of other sketches), face: [x,y,z] point on the target face, body?: projected along the active sketch's normal onto the face, as linked 3D curves. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "intersection_curve",
+     "id": "sketch.intersection_curve",
+     "label": "Intersection Curve",
+     "panel": "CREATE",
+     "params": "a, b: {body} | {face: [x,y,z], body?}: where they meet, as linked 3D curves. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "spun",
+     "id": "sketch.spun_profile",
+     "label": "Spun Profile",
+     "panel": "CREATE",
+     "params": "body: name, axis: a line of the active sketch (curve id) | X|Y|Z: the body's outline revolved about the axis, in the sketch plane. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "iso_curve",
+     "id": "sketch.isoparametric_curve",
+     "label": "Isoparametric Curve",
+     "panel": "CREATE",
+     "params": "face: [x,y,z] point on the face (the curve passes through it), body?, direction?: u|v|[x,y,z] (default u): linked 3D curve. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "fit_section",
+     "id": "sketch.fit_curves_to_section",
+     "label": "Fit Curves to Mesh Section",
+     "panel": "CREATE",
+     "params": "body: name (a mesh or solid body): its section with the sketch plane, fitted with lines and arcs, as normal (unlinked) geometry. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)",
+     "shortcut": null,
+     "tab": "SKETCH"
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "sketch_break",
+     "id": "sketch.break_link",
+     "label": "Break Link",
+     "panel": "",
+     "params": "link?: link id (j1) | entities?: [curve or point ids]: linked geometry becomes normal sketch geometry",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "project",
+     "id": "sketch.auto_project",
+     "label": "Auto-Project Edges on Reference",
+     "panel": "",
+     "params": "value?: bool (default toggles): project a face's edges when a sketch is created on it",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "plane",
+     "id": "sketch.redefine",
+     "label": "Redefine Sketch Plane",
+     "panel": "",
+     "params": "sketch: id or name; plane: as sketch.create; frame?: as sketch.create; author_path?: exact owner occurrence ids; explicitly rebinds or freezes the plane while preserving geometry and dimension names",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "copy",
+     "id": "sketch.copy",
+     "label": "Copy Sketch Entities",
+     "panel": "",
+     "params": "entities?: [curve or point ids] (default: the selected sketch geometry); the constraints and dimensions among them come along",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "cut",
+     "id": "sketch.cut",
+     "label": "Cut Sketch Entities",
+     "panel": "",
+     "params": "entities?: [curve or point ids] (default: the selected sketch geometry): copies them as sketch.copy does, then deletes them (one undo step)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+     "enabled": false,
+     "icon": "paste",
+     "id": "sketch.paste",
+     "label": "Paste Sketch Entities",
+     "panel": "",
+     "params": "at?: [x, y] (sketch point the copy's centre goes to) | translate?: [x, y]; without either, offset from the original in its own sketch and at the same coordinates in another; sketch?: target (default: the active sketch)",
+     "shortcut": null,
+     "tab": ""
+    },
+    {
+     "disabled_reason": null,
+     "enabled": true,
+     "icon": "inspect",
+     "id": "sketch.inspect",
+     "label": "Inspect Sketch",
+     "panel": "",
+     "params": "sketch?: id|name (default active)",
+     "shortcut": null,
+     "tab": ""
+    }
+   ]
+  },
+  {
+   "logged_seq": 33,
+   "name": "batch",
+   "isError": true,
+   "reply": {
+    "applied": [],
+    "completed": 1,
+    "failed": {
+     "command": "sketch.dimension",
+     "error": "invalid value: dimension value -15",
+     "index": 1
+    },
+    "not_run": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "ok": false,
+    "results": [
+     {
+      "name": "Sketch2",
+      "sketch": 3
+     }
+    ],
+    "rolled_back": true,
+    "undone": 1
+   }
+  },
+  {
+   "logged_seq": 35,
+   "name": "body_topology",
+   "isError": false,
+   "reply": {
+    "body": "Body1",
+    "edges": [
+     {
+      "end": [
+       2.0000000000000004,
+       -30.0,
+       60.0
+      ],
+      "index": 0,
+      "length": 30.0,
+      "mid": [
+       2.0000000000000004,
+       -15.0,
+       60.0
+      ],
+      "name": "F2:side:l7|F5:blend:F2:side:l7|F2:side:l8",
+      "start": [
+       2.0000000000000004,
+       0.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       2.9999999999999996,
+       -30.0,
+       60.0
+      ],
+      "index": 1,
+      "length": 0.9999999999999991,
+      "mid": [
+       2.5,
+       -30.0,
+       60.0
+      ],
+      "name": "F2:side:l7|F2:top",
+      "start": [
+       2.0000000000000004,
+       -30.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       2.9999999999999996,
+       0.0,
+       60.0
+      ],
+      "index": 2,
+      "length": 30.0,
+      "mid": [
+       2.9999999999999996,
+       -15.0,
+       60.0
+      ],
+      "name": "F2:side:l7|F5:blend:F2:side:l6|F2:side:l7",
+      "start": [
+       2.9999999999999996,
+       -30.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       2.0000000000000004,
+       0.0,
+       60.0
+      ],
+      "index": 3,
+      "length": 0.9999999999999991,
+      "mid": [
+       2.5,
+       0.0,
+       60.0
+      ],
+      "name": "F2:side:l7|F2:start",
+      "start": [
+       2.9999999999999996,
+       0.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -30.0,
+       0.0
+      ],
+      "index": 4,
+      "length": 58.0,
+      "mid": [
+       0.0,
+       -30.0,
+       29.0
+      ],
+      "name": "F2:side:l8|F2:top",
+      "start": [
+       0.0,
+       -30.0,
+       58.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       -30.0,
+       0.0
+      ],
+      "index": 5,
+      "length": 25.0,
+      "mid": [
+       12.5,
+       -30.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:top",
+      "start": [
+       0.0,
+       -30.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       -30.0,
+       10.0
+      ],
+      "index": 6,
+      "length": 10.0,
+      "mid": [
+       25.0,
+       -30.0,
+       5.0
+      ],
+      "name": "F2:side:l2|F2:top",
+      "start": [
+       25.0,
+       -30.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       -30.0,
+       10.0
+      ],
+      "index": 7,
+      "length": 5.0,
+      "mid": [
+       22.5,
+       -30.0,
+       10.0
+      ],
+      "name": "F2:side:l3|F2:top",
+      "start": [
+       25.0,
+       -30.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       -30.0,
+       5.0
+      ],
+      "index": 8,
+      "length": 5.0,
+      "mid": [
+       20.0,
+       -30.0,
+       7.5
+      ],
+      "name": "F2:side:l4|F2:top",
+      "start": [
+       20.0,
+       -30.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -30.0,
+       5.0
+      ],
+      "index": 9,
+      "length": 15.0,
+      "mid": [
+       12.5,
+       -30.0,
+       5.0
+      ],
+      "name": "F2:side:l5|F2:top",
+      "start": [
+       20.0,
+       -30.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -30.0,
+       58.0
+      ],
+      "index": 10,
+      "length": 53.0,
+      "mid": [
+       5.0,
+       -30.0,
+       31.5
+      ],
+      "name": "F2:side:l6|F2:top",
+      "start": [
+       5.0,
+       -30.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       2.9999999999999996,
+       -30.0,
+       60.0
+      ],
+      "index": 11,
+      "length": 3.121348485699959,
+      "mid": [
+       4.414213562373099,
+       -30.000000000000004,
+       59.4142135623731
+      ],
+      "name": "F2:top|F5:blend:F2:side:l6|F2:side:l7",
+      "start": [
+       5.0,
+       -30.0,
+       58.0
+      ]
+     },
+     {
+      "end": [
+       -8.881784197001252e-16,
+       -30.0,
+       58.0
+      ],
+      "index": 12,
+      "length": 3.1213484856999596,
+      "mid": [
+       0.5857864376269007,
+       -30.000000000000004,
+       59.4142135623731
+      ],
+      "name": "F2:top|F5:blend:F2:side:l7|F2:side:l8",
+      "start": [
+       2.0000000000000004,
+       -30.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "index": 13,
+      "length": 30.0,
+      "mid": [
+       0.0,
+       -15.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:side:l8",
+      "start": [
+       0.0,
+       -30.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       0.0
+      ],
+      "index": 14,
+      "length": 25.0,
+      "mid": [
+       12.5,
+       0.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:start",
+      "start": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       -30.0,
+       0.0
+      ],
+      "index": 15,
+      "length": 30.0,
+      "mid": [
+       25.0,
+       -15.0,
+       0.0
+      ],
+      "name": "F2:side:l1|F2:side:l2",
+      "start": [
+       25.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       0.0,
+       58.0
+      ],
+      "index": 16,
+      "length": 58.0,
+      "mid": [
+       0.0,
+       0.0,
+       29.0
+      ],
+      "name": "F2:side:l8|F2:start",
+      "start": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "end": [
+       2.0000000000000004,
+       0.0,
+       60.0
+      ],
+      "index": 17,
+      "length": 3.1213484856999596,
+      "mid": [
+       0.5857864376269009,
+       0.0,
+       59.4142135623731
+      ],
+      "name": "F2:start|F5:blend:F2:side:l7|F2:side:l8",
+      "start": [
+       -8.881784197001252e-16,
+       0.0,
+       58.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       0.0,
+       58.0
+      ],
+      "index": 18,
+      "length": 3.1213484856999596,
+      "mid": [
+       4.414213562373099,
+       0.0,
+       59.4142135623731
+      ],
+      "name": "F2:start|F5:blend:F2:side:l6|F2:side:l7",
+      "start": [
+       2.9999999999999996,
+       0.0,
+       60.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       0.0,
+       5.0
+      ],
+      "index": 19,
+      "length": 53.0,
+      "mid": [
+       5.0,
+       0.0,
+       31.5
+      ],
+      "name": "F2:side:l6|F2:start",
+      "start": [
+       5.0,
+       0.0,
+       58.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       0.0,
+       5.0
+      ],
+      "index": 20,
+      "length": 15.0,
+      "mid": [
+       12.5,
+       0.0,
+       5.0
+      ],
+      "name": "F2:side:l5|F2:start",
+      "start": [
+       5.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       0.0,
+       10.0
+      ],
+      "index": 21,
+      "length": 5.0,
+      "mid": [
+       20.0,
+       0.0,
+       7.5
+      ],
+      "name": "F2:side:l4|F2:start",
+      "start": [
+       20.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       10.0
+      ],
+      "index": 22,
+      "length": 5.0,
+      "mid": [
+       22.5,
+       0.0,
+       10.0
+      ],
+      "name": "F2:side:l3|F2:start",
+      "start": [
+       20.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       0.0
+      ],
+      "index": 23,
+      "length": 10.0,
+      "mid": [
+       25.0,
+       0.0,
+       5.0
+      ],
+      "name": "F2:side:l2|F2:start",
+      "start": [
+       25.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -7.75,
+       45.0
+      ],
+      "index": 24,
+      "length": 6.9812446398464445,
+      "mid": [
+       0.0,
+       -10.0,
+       47.25
+      ],
+      "name": "F2:side:l8|F4:side:c1#2",
+      "start": [
+       0.0,
+       -12.25,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       45.0
+      ],
+      "index": 25,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -7.75,
+       45.0
+      ],
+      "name": "F4:side:c1#1|F4:side:c1#2~2",
+      "start": [
+       0.0,
+       -7.75,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -12.25,
+       45.0
+      ],
+      "index": 26,
+      "length": 6.9812446398464445,
+      "mid": [
+       5.0,
+       -10.0,
+       47.25
+      ],
+      "name": "F2:side:l6|F4:side:c1#2",
+      "start": [
+       5.0,
+       -7.75,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       45.0
+      ],
+      "index": 27,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -12.25,
+       45.0
+      ],
+      "name": "F4:side:c1#1|F4:side:c1#2~1",
+      "start": [
+       5.0,
+       -12.25,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       45.0
+      ],
+      "index": 28,
+      "length": 6.9812446398464445,
+      "mid": [
+       0.0,
+       -10.0,
+       42.75
+      ],
+      "name": "F2:side:l8|F4:side:c1#1",
+      "start": [
+       0.0,
+       -7.75,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       45.0
+      ],
+      "index": 29,
+      "length": 6.9812446398464445,
+      "mid": [
+       5.0,
+       -10.0,
+       42.75
+      ],
+      "name": "F2:side:l6|F4:side:c1#1",
+      "start": [
+       5.0,
+       -12.25,
+       45.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -7.75,
+       15.0
+      ],
+      "index": 30,
+      "length": 6.9812446398464445,
+      "mid": [
+       0.0,
+       -10.0,
+       17.25
+      ],
+      "name": "F2:side:l8|F4:side:c2#2",
+      "start": [
+       0.0,
+       -12.25,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       15.0
+      ],
+      "index": 31,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -7.75,
+       15.0
+      ],
+      "name": "F4:side:c2#1|F4:side:c2#2~2",
+      "start": [
+       0.0,
+       -7.75,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -12.25,
+       15.0
+      ],
+      "index": 32,
+      "length": 6.9812446398464445,
+      "mid": [
+       5.0,
+       -10.0,
+       17.25
+      ],
+      "name": "F2:side:l6|F4:side:c2#2",
+      "start": [
+       5.0,
+       -7.75,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       15.0
+      ],
+      "index": 33,
+      "length": 5.0,
+      "mid": [
+       2.5,
+       -12.25,
+       15.0
+      ],
+      "name": "F4:side:c2#1|F4:side:c2#2~1",
+      "start": [
+       5.0,
+       -12.25,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       -12.25,
+       15.0
+      ],
+      "index": 34,
+      "length": 6.9812446398464445,
+      "mid": [
+       0.0,
+       -10.0,
+       12.75
+      ],
+      "name": "F2:side:l8|F4:side:c2#1",
+      "start": [
+       0.0,
+       -7.75,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -7.75,
+       15.0
+      ],
+      "index": 35,
+      "length": 6.9812446398464445,
+      "mid": [
+       5.0,
+       -10.0,
+       12.75
+      ],
+      "name": "F2:side:l6|F4:side:c2#1",
+      "start": [
+       5.0,
+       -12.25,
+       15.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -30.0,
+       5.0
+      ],
+      "index": 36,
+      "length": 30.0,
+      "mid": [
+       5.0,
+       -15.0,
+       5.0
+      ],
+      "name": "F2:side:l5|F2:side:l6",
+      "start": [
+       5.0,
+       0.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       0.0,
+       5.0
+      ],
+      "index": 37,
+      "length": 30.0,
+      "mid": [
+       20.0,
+       -15.0,
+       5.0
+      ],
+      "name": "F2:side:l4|F2:side:l5",
+      "start": [
+       20.0,
+       -30.0,
+       5.0
+      ]
+     },
+     {
+      "end": [
+       20.0,
+       -30.0,
+       10.0
+      ],
+      "index": 38,
+      "length": 30.0,
+      "mid": [
+       20.0,
+       -15.0,
+       10.0
+      ],
+      "name": "F2:side:l3|F2:side:l4",
+      "start": [
+       20.0,
+       0.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       25.0,
+       0.0,
+       10.0
+      ],
+      "index": 39,
+      "length": 30.0,
+      "mid": [
+       25.0,
+       -15.0,
+       10.0
+      ],
+      "name": "F2:side:l2|F2:side:l3",
+      "start": [
+       25.0,
+       -30.0,
+       10.0
+      ]
+     },
+     {
+      "end": [
+       0.0,
+       0.0,
+       58.0
+      ],
+      "index": 40,
+      "length": 30.0,
+      "mid": [
+       0.0,
+       -15.0,
+       58.0
+      ],
+      "name": "F2:side:l8|F5:blend:F2:side:l7|F2:side:l8",
+      "start": [
+       0.0,
+       -30.0,
+       58.0
+      ]
+     },
+     {
+      "end": [
+       5.0,
+       -30.0,
+       58.0
+      ],
+      "index": 41,
+      "length": 30.0,
+      "mid": [
+       5.0,
+       -15.0,
+       58.0
+      ],
+      "name": "F2:side:l6|F5:blend:F2:side:l6|F2:side:l7",
+      "start": [
+       5.0,
+       0.0,
+       58.0
+      ]
+     }
+    ],
+    "faces": [
+     {
+      "area": 29.99999999999997,
+      "centroid": [
+       2.4999999999999996,
+       -14.999999999999998,
+       60.00000000000001
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:side:l7",
+      "plane_normal": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "point": [
+       2.491668980196365,
+       -29.508331019803634,
+       60.0
+      ]
+     },
+     {
+      "area": 423.1221764564876,
+      "centroid": [
+       6.635921247748555,
+       -30.000000000000004,
+       22.040239939637804
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:top",
+      "plane_normal": [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      "point": [
+       19.272230158111416,
+       -30.0,
+       2.3725199506618506
+      ]
+     },
+     {
+      "area": 750.0,
+      "centroid": [
+       12.5,
+       -15.0,
+       0.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l1",
+      "plane_normal": [
+       -0.0,
+       0.0,
+       -1.0
+      ],
+      "point": [
+       7.974375810233365,
+       -7.974375810233365,
+       0.0
+      ]
+     },
+     {
+      "area": 423.1221764564875,
+      "centroid": [
+       6.635921247748554,
+       0.0,
+       22.0402399396378
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:start",
+      "plane_normal": [
+       0.0,
+       1.0,
+       0.0
+      ],
+      "point": [
+       19.272230158111416,
+       0.0,
+       2.3725199506618506
+      ]
+     },
+     {
+      "area": 34.90622304603268,
+      "centroid": [
+       2.5000000000000004,
+       -10.0,
+       46.40367497070111
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        45.0
+       ],
+       "radius": 2.25
+      },
+      "exact": true,
+      "index": 4,
+      "name": "F4:side:c1#2",
+      "plane_normal": null,
+      "point": [
+       1.433077722224063,
+       -9.675499986800812,
+       47.226476979767305
+      ]
+     },
+     {
+      "area": 34.90622304603267,
+      "centroid": [
+       2.499999999999999,
+       -10.000000000000002,
+       43.59632502929887
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        45.0
+       ],
+       "radius": 2.250000000000001
+      },
+      "exact": true,
+      "index": 5,
+      "name": "F4:side:c1#1",
+      "plane_normal": null,
+      "point": [
+       3.5669222777759377,
+       -9.675499986800812,
+       42.773523020232695
+      ]
+     },
+     {
+      "area": 34.90622304603266,
+      "centroid": [
+       2.499999999999999,
+       -9.999999999999996,
+       16.40367497070112
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        15.0
+       ],
+       "radius": 2.25
+      },
+      "exact": true,
+      "index": 6,
+      "name": "F4:side:c2#2",
+      "plane_normal": null,
+      "point": [
+       1.4330777222240632,
+       -9.675499986800814,
+       17.226476979767302
+      ]
+     },
+     {
+      "area": 34.90622304603264,
+      "centroid": [
+       2.500000000000001,
+       -10.000000000000004,
+       13.596325029298884
+      ],
+      "cylinder": {
+       "axis": [
+        -1.0,
+        -0.0,
+        0.0
+       ],
+       "origin": [
+        0.0,
+        -10.0,
+        15.0
+       ],
+       "radius": 2.25
+      },
+      "exact": true,
+      "index": 7,
+      "name": "F4:side:c2#1",
+      "plane_normal": null,
+      "point": [
+       1.4330777222240643,
+       -10.324500013199192,
+       12.773523020232698
+      ]
+     },
+     {
+      "area": 450.0,
+      "centroid": [
+       12.5,
+       -15.0,
+       5.0
+      ],
+      "exact": true,
+      "index": 8,
+      "name": "F2:side:l5",
+      "plane_normal": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "point": [
+       10.729490168751578,
+       -24.270509831248425,
+       5.0
+      ]
+     },
+     {
+      "area": 150.0,
+      "centroid": [
+       22.5,
+       -15.0,
+       10.0
+      ],
+      "exact": true,
+      "index": 9,
+      "name": "F2:side:l3",
+      "plane_normal": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "point": [
+       22.29309367425445,
+       -27.70690632574555,
+       10.0
+      ]
+     },
+     {
+      "area": 1709.7441176470593,
+      "centroid": [
+       0.0,
+       -15.088480732410934,
+       28.982303853517802
+      ],
+      "exact": true,
+      "index": 10,
+      "name": "F2:side:l8",
+      "plane_normal": [
+       -1.0,
+       -0.0,
+       -0.0
+      ],
+      "point": [
+       0.0,
+       -21.838359553108237,
+       18.179179769142863
+      ]
+     },
+     {
+      "area": 1559.7441176470593,
+      "centroid": [
+       4.999999999999998,
+       -15.096989890875761,
+       31.529096967262717
+      ],
+      "exact": true,
+      "index": 11,
+      "name": "F2:side:l6",
+      "plane_normal": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "point": [
+       5.0,
+       -21.97526102698728,
+       41.58982939269171
+      ]
+     },
+     {
+      "area": 150.0,
+      "centroid": [
+       20.0,
+       -15.0,
+       7.5
+      ],
+      "exact": true,
+      "index": 12,
+      "name": "F2:side:l4",
+      "plane_normal": [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      "point": [
+       20.0,
+       -27.70690632574555,
+       7.29309367425445
+      ]
+     },
+     {
+      "area": 300.0,
+      "centroid": [
+       25.0,
+       -15.0,
+       5.0
+      ],
+      "exact": true,
+      "index": 13,
+      "name": "F2:side:l2",
+      "plane_normal": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "point": [
+       25.0,
+       -25.811388300841895,
+       4.188611699158103
+      ]
+     },
+     {
+      "area": 93.64045293941533,
+      "centroid": [
+       0.7434078919850169,
+       -15.000000000000016,
+       59.25659210801499
+      ],
+      "cylinder": {
+       "axis": [
+        0.0,
+        -1.0,
+        0.0
+       ],
+       "origin": [
+        1.9999999999999802,
+        3.3306690738754696e-15,
+        57.99999999999999
+       ],
+       "radius": 2.000000000000007
+      },
+      "exact": true,
+      "index": 14,
+      "name": "F5:blend:F2:side:l7|F2:side:l8",
+      "plane_normal": null,
+      "point": [
+       0.008362314485768074,
+       -14.210761172041382,
+       58.18270010848278
+      ]
+     },
+     {
+      "area": 93.64045293941525,
+      "centroid": [
+       4.256592108014985,
+       -15.000000000000007,
+       59.256592108015
+      ],
+      "cylinder": {
+       "axis": [
+        0.0,
+        1.0,
+        0.0
+       ],
+       "origin": [
+        3.0000000000000195,
+        -30.000000000000004,
+        57.99999999999999
+       ],
+       "radius": 2.000000000000005
+      },
+      "exact": true,
+      "index": 15,
+      "name": "F5:blend:F2:side:l6|F2:side:l7",
+      "plane_normal": null,
+      "point": [
+       4.991637685514229,
+       -15.789238827958627,
+       58.182700108482784
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "logged_seq": 37,
+   "name": "batch",
+   "isError": false,
+   "reply": {
+    "completed": 4,
+    "ok": true,
+    "results": [
+     {
+      "name": "Sketch2",
+      "sketch": 3
+     },
+     {
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [
+        "k1"
+       ],
+       "points": []
+      },
+      "expression": "width / 2",
+      "measured": 15.0,
+      "param": "d4",
+      "sketch": {
+       "dof": 5,
+       "solved": true
+      },
+      "type": "LinearDimension",
+      "unit": "mm"
+     },
+     {
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [
+        "k2"
+       ],
+       "points": []
+      },
+      "expression": "width / 2",
+      "measured": 15.0,
+      "param": "d5",
+      "sketch": {
+       "dof": 4,
+       "solved": true
+      },
+      "type": "LinearDimension",
+      "unit": "mm"
+     },
+     {
+      "profiles": 2,
+      "sketch": 3
+     }
+    ]
+   }
+  },
+  {
+   "logged_seq": 39,
+   "name": "measure",
+   "isError": true,
+   "reply": "invalid parameters for `inspect.measure`: missing field `point`"
+  },
+  {
+   "logged_seq": 41,
+   "name": "inspect_design",
+   "isError": false,
+   "reply": {
+    "active_sketch": null,
+    "bodies": [
+     {
+      "area_mm2": 6272.8098045092165,
+      "bbox": {
+       "max": [
+        25.0,
+        7.105427357601008e-15,
+        60.000000000000014
+       ],
+       "min": [
+        -8.881784197001264e-16,
+        -30.000000000000014,
+        0.0
+       ]
+      },
+      "center_of_mass": [
+       6.686789164538839,
+       -15.0000000022456,
+       21.953540579231273
+      ],
+      "closed": true,
+      "edges": 34,
+      "face_types": {
+       "cylinder": 4,
+       "plane": 10
+      },
+      "faces": 14,
+      "kernel": {
+       "edges": 42,
+       "faces": 16,
+       "shells": 1,
+       "vertices": 28
+      },
+      "name": "Body1",
+      "vertices": 24,
+      "visible": true,
+      "volume_mm3": 12539.442013889371
+     }
+    ],
+    "dirty": true,
+    "hidden_origin": [],
+    "marker": 5,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [
+     {
+      "comment": "",
+      "error": null,
+      "expression": "60",
+      "model": false,
+      "name": "plate_height",
+      "unit": "mm",
+      "value": 60.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "30",
+      "model": false,
+      "name": "width",
+      "unit": "mm",
+      "value": 30.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "5",
+      "model": false,
+      "name": "thickness",
+      "unit": "mm",
+      "value": 5.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "25",
+      "model": false,
+      "name": "hook_depth",
+      "unit": "mm",
+      "value": 25.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "10",
+      "model": false,
+      "name": "lip_height",
+      "unit": "mm",
+      "value": 10.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "width / 2",
+      "model": true,
+      "name": "d4",
+      "unit": "mm",
+      "value": 15.0
+     },
+     {
+      "comment": "",
+      "error": null,
+      "expression": "width / 2",
+      "model": true,
+      "name": "d5",
+      "unit": "mm",
+      "value": 15.0
+     }
+    ],
+    "path": null,
+    "redo": 0,
+    "revision": 38,
+    "selection": [],
+    "sketches": [
+     {
+      "constraints": [
+       {
+        "id": "k1",
+        "name": "Coincident",
+        "p": 0,
+        "q": 8,
+        "type": "coincident"
+       }
+      ],
+      "curves": [
+       {
+        "construction": false,
+        "end": "p1",
+        "end_at": [
+         25.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l1",
+        "start": "l1.start",
+        "start_at": [
+         0.0,
+         0.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p2",
+        "end_at": [
+         25.0,
+         10.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l2",
+        "start": "p1",
+        "start_at": [
+         25.0,
+         0.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p3",
+        "end_at": [
+         20.0,
+         10.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l3",
+        "start": "p2",
+        "start_at": [
+         25.0,
+         10.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p4",
+        "end_at": [
+         20.0,
+         5.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l4",
+        "start": "p3",
+        "start_at": [
+         20.0,
+         10.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p5",
+        "end_at": [
+         5.0,
+         5.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l5",
+        "start": "p4",
+        "start_at": [
+         20.0,
+         5.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p6",
+        "end_at": [
+         5.0,
+         60.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l6",
+        "start": "p5",
+        "start_at": [
+         5.0,
+         5.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "p7",
+        "end_at": [
+         0.0,
+         60.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l7",
+        "start": "p6",
+        "start_at": [
+         5.0,
+         60.0
+        ],
+        "type": "line"
+       },
+       {
+        "construction": false,
+        "end": "l1.start",
+        "end_at": [
+         0.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l8",
+        "start": "p7",
+        "start_at": [
+         0.0,
+         60.0
+        ],
+        "type": "line"
+       }
+      ],
+      "dof": 0,
+      "failing": [],
+      "fully_constrained": true,
+      "id": 1,
+      "links": [],
+      "name": "Sketch1",
+      "plane": {
+       "origin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "x_dir": [
+        1.0,
+        0.0,
+        0.0
+       ],
+       "y_dir": [
+        -0.0,
+        -0.0,
+        1.0
+       ]
+      },
+      "points": [
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "origin",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         25.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p1",
+        "link": null,
+        "world": [
+         25.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         25.0,
+         10.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p2",
+        "link": null,
+        "world": [
+         25.0,
+         0.0,
+         10.0
+        ]
+       },
+       {
+        "at": [
+         20.0,
+         10.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p3",
+        "link": null,
+        "world": [
+         20.0,
+         0.0,
+         10.0
+        ]
+       },
+       {
+        "at": [
+         20.0,
+         5.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p4",
+        "link": null,
+        "world": [
+         20.0,
+         0.0,
+         5.0
+        ]
+       },
+       {
+        "at": [
+         5.0,
+         5.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p5",
+        "link": null,
+        "world": [
+         5.0,
+         0.0,
+         5.0
+        ]
+       },
+       {
+        "at": [
+         5.0,
+         60.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p6",
+        "link": null,
+        "world": [
+         5.0,
+         0.0,
+         60.0
+        ]
+       },
+       {
+        "at": [
+         0.0,
+         60.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "p7",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         60.0
+        ]
+       },
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": false,
+        "fully_constrained": true,
+        "id": "l1.start",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       }
+      ],
+      "profiles": [
+       {
+        "area_mm2": 425.0,
+        "centroid_sketch": [
+         6.617647058823529,
+         22.205882352941178
+        ],
+        "curves": [
+         "l1",
+         "l2",
+         "l3",
+         "l4",
+         "l5",
+         "l6",
+         "l7",
+         "l8"
+        ],
+        "holes": [],
+        "index": 0
+       }
+      ],
+      "status": "solved",
+      "visible": false,
+      "wires": []
+     },
+     {
+      "constraints": [
+       {
+        "expression": "width / 2",
+        "id": "k1",
+        "name": "LinearDimension",
+        "p": 0,
+        "param": "d4",
+        "q": 1,
+        "type": "distance_x",
+        "value": 15.0
+       },
+       {
+        "expression": "width / 2",
+        "id": "k2",
+        "name": "LinearDimension",
+        "p": 0,
+        "param": "d5",
+        "q": 2,
+        "type": "distance_x",
+        "value": 15.0
+       }
+      ],
+      "curves": [
+       {
+        "center": "c1.center",
+        "center_at": [
+         -14.999999999815083,
+         45.0
+        ],
+        "construction": false,
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c1",
+        "radius": 2.25,
+        "type": "circle"
+       },
+       {
+        "center": "c2.center",
+        "center_at": [
+         -14.999999999815083,
+         15.0
+        ],
+        "construction": false,
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c2",
+        "radius": 2.25,
+        "type": "circle"
+       }
+      ],
+      "dof": 4,
+      "failing": [],
+      "fully_constrained": false,
+      "id": 3,
+      "links": [],
+      "name": "Sketch2",
+      "plane": {
+       "origin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "x_dir": [
+        0.0,
+        1.0,
+        0.0
+       ],
+       "y_dir": [
+        0.0,
+        0.0,
+        1.0
+       ]
+      },
+      "points": [
+       {
+        "at": [
+         0.0,
+         0.0
+        ],
+        "fixed": true,
+        "fully_constrained": true,
+        "id": "origin",
+        "link": null,
+        "world": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       {
+        "at": [
+         -14.999999999815083,
+         45.0
+        ],
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c1.center",
+        "link": null,
+        "world": [
+         0.0,
+         -14.999999999815083,
+         45.0
+        ]
+       },
+       {
+        "at": [
+         -14.999999999815083,
+         15.0
+        ],
+        "fixed": false,
+        "fully_constrained": false,
+        "id": "c2.center",
+        "link": null,
+        "world": [
+         0.0,
+         -14.999999999815083,
+         15.0
+        ]
+       }
+      ],
+      "profiles": [
+       {
+        "area_mm2": 15.904312808798323,
+        "centroid_sketch": [
+         -14.99999999981508,
+         44.99999999999995
+        ],
+        "curves": [
+         "c1"
+        ],
+        "holes": [],
+        "index": 0
+       },
+       {
+        "area_mm2": 15.904312808798323,
+        "centroid_sketch": [
+         -14.999999999815108,
+         14.999999999999998
+        ],
+        "curves": [
+         "c2"
+        ],
+        "holes": [],
+        "index": 1
+       }
+      ],
+      "status": "solved",
+      "visible": false,
+      "wires": []
+     }
+    ],
+    "timeline": [
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 1,
+      "ms": 0.136175,
+      "name": "Sketch1",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "Sketch",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 2,
+      "ms": 5.451541,
+      "name": "Hook",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "ExtrudeFeature",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 3,
+      "ms": 0.079859,
+      "name": "Sketch2",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "Sketch",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 4,
+      "ms": 72.654959,
+      "name": "Screw holes",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "ExtrudeFeature",
+      "warning": null
+     },
+     {
+      "boolean_diagnostics": {
+       "events": [],
+       "truncated": false
+      },
+      "error": null,
+      "id": 5,
+      "ms": 316.84425999999996,
+      "name": "Top edge fillet",
+      "rolled_back": false,
+      "suppressed": false,
+      "type": "FilletFeature",
+      "warning": null
+     }
+    ],
+    "undo": 0,
+    "units": "mm"
+   }
+  }
+ ]
+}

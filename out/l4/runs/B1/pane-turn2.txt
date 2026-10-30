@@ -1,0 +1,36 @@
+  Its volume change matches two 4.5 mm × 5 mm
+  holes: about 159 mm³ removed.
+
+  Fillet. I rounded the front and back top
+  edges of the back plate (the two 20 mm edges
+  at the top) with top_fillet. The volume
+  removed matches the geometry, about 34 mm³.
+
+  If you change plate_height, width, hole_d or
+  the drop values, the holes will follow.
+
+✻ Churned for 40s · done 11:29 PM
+
+❯ Make the hook 30 wide instead of 20.
+
+  Called solidcraft 2 times
+
+● The hook is now 30 mm wide: I set width to
+  30 and the model rebuilt with no errors.
+
+  - Size: the body spans 30 mm across, from y
+    = -30 to 0.
+  - Holes: both are still centred across the
+    plate, now 15 mm from each side, at the
+    same heights (15 mm and 45 mm below the
+    top edge).
+  - Fillet: both 2 mm top-edge fillets are
+    still in place, and the face counts are
+    unchanged.
+
+✻ Cooked for 6s · done 11:29 PM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

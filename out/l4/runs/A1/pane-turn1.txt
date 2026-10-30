@@ -1,0 +1,36 @@
+
+
+  Called solidcraft 5 times
+
+● Holes are correct (axis along X, at y=-10,
+  z=15 and 45). Now the fillet on the two 20
+  mm top edges (x=0 and x=5 at z=60).
+
+  Called solidcraft 2 times
+
+● I added the two screw holes and the top
+  fillets to the hook, and the iso screenshot
+  shows both. I haven't saved the design.
+
+  - Screw holes: Two 4.5 mm holes go straight
+    through the 5 mm back plate. They sit at
+    the centre of the 20 mm width, 15 mm and
+    45 mm below the top edge. The plate's top
+    is at Z=60, so their centres are at Z=45
+    and Z=15. The cylinder faces came back at
+    radius 2.25 mm with the axis along X.
+  - Fillet: I rounded the two 20 mm top edges,
+    front and back, with a 2 mm fillet. That
+    leaves a 1 mm flat between them on the 5
+    mm plate. I didn't measure the fillet
+    radius or run a volume check.
+
+  The new features are called "Screw holes"
+  and "Top edge fillet" in the timeline.
+
+✻ Sautéed for 24s · done 11:19 PM
+
+──────────────────────────────────────────────
+❯ save the design
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

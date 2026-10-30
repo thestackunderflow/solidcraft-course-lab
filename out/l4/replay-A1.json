@@ -1,0 +1,319 @@
+{
+ "replayed_from": "out/l4/runs/A1/transcript.jsonl",
+ "hook_ok": true,
+ "turn1_calls": 7,
+ "turn2_calls": 8,
+ "errors": 2,
+ "after_turn1": {
+  "volume_mm3": 8306.621426645479,
+  "bbox_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "holes": [
+   {
+    "y": -10.0,
+    "z": 45.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     10.0,
+     10.0
+    ],
+    "centred": true
+   },
+   {
+    "y": -10.0,
+    "z": 15.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     10.0,
+     10.0
+    ],
+    "centred": true
+   }
+  ],
+  "top_edges_rounded": 2,
+  "hole_params": {
+   "hole_d_parameter": false,
+   "user_parameters": [
+    "hook_depth",
+    "lip_height",
+    "plate_height",
+    "thickness",
+    "width"
+   ],
+   "diameters": {},
+   "distances_from_width": {
+    "Screw holes": false
+   }
+  }
+ },
+ "build_right": {
+  "two_holes_4_5_at_15_45": true,
+  "holes_centred": true,
+  "two_top_fillets_r2": true,
+  "volume": true,
+  "all": true
+ },
+ "follow_after_turn1": {
+  "26": {
+   "set": {
+    "display_value": 26.0,
+    "errors": [],
+    "expression": "26",
+    "name": "width",
+    "recomputed": 4,
+    "restored": 0,
+    "value": 26.0
+   },
+   "bbox_mm": [
+    25.0,
+    26.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -10.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      16.0,
+      10.0
+     ],
+     "centred": false
+    },
+    {
+     "y": -10.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      16.0,
+      10.0
+     ],
+     "centred": false
+    }
+   ],
+   "all_centred": false,
+   "top_edges_rounded": 2
+  },
+  "40": {
+   "set": {
+    "display_value": 40.0,
+    "errors": [],
+    "expression": "40",
+    "name": "width",
+    "recomputed": 4,
+    "restored": 0,
+    "value": 40.0
+   },
+   "bbox_mm": [
+    25.0,
+    40.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -10.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      30.0,
+      10.0
+     ],
+     "centred": false
+    },
+    {
+     "y": -10.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      30.0,
+      10.0
+     ],
+     "centred": false
+    }
+   ],
+   "all_centred": false,
+   "top_edges_rounded": 2
+  },
+  "pass": false
+ },
+ "width_back_to_20": {
+  "display_value": 20.0,
+  "errors": [],
+  "expression": "20",
+  "name": "width",
+  "recomputed": 4,
+  "restored": 0,
+  "value": 20.0
+ },
+ "after_turn2": {
+  "volume_mm3": 12539.442013889371,
+  "bbox_mm": [
+   25.0,
+   30.0,
+   60.0
+  ],
+  "holes": [
+   {
+    "y": -15.0,
+    "z": 45.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     15.0,
+     15.0
+    ],
+    "centred": true
+   },
+   {
+    "y": -15.0,
+    "z": 15.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     15.0,
+     15.0
+    ],
+    "centred": true
+   }
+  ],
+  "top_edges_rounded": 2,
+  "hole_params": {
+   "hole_d_parameter": false,
+   "user_parameters": [
+    "hook_depth",
+    "lip_height",
+    "plate_height",
+    "thickness",
+    "width"
+   ],
+   "diameters": {},
+   "distances_from_width": {
+    "Screw holes": false
+   }
+  }
+ },
+ "after_change": {
+  "box_25_30_60": true,
+  "two_holes_4_5_at_15_45": true,
+  "holes_centred": true,
+  "fillets_kept": true,
+  "volume": true,
+  "all": true
+ },
+ "follow_after_turn2": {
+  "26": {
+   "set": {
+    "display_value": 26.0,
+    "errors": [],
+    "expression": "26",
+    "name": "width",
+    "recomputed": 3,
+    "restored": 1,
+    "value": 26.0
+   },
+   "bbox_mm": [
+    25.0,
+    26.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -13.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      13.0,
+      13.0
+     ],
+     "centred": true
+    },
+    {
+     "y": -13.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      13.0,
+      13.0
+     ],
+     "centred": true
+    }
+   ],
+   "all_centred": true,
+   "top_edges_rounded": 2
+  },
+  "40": {
+   "set": {
+    "display_value": 40.0,
+    "errors": [],
+    "expression": "40",
+    "name": "width",
+    "recomputed": 3,
+    "restored": 1,
+    "value": 40.0
+   },
+   "bbox_mm": [
+    25.0,
+    40.0,
+    60.0
+   ],
+   "holes": [
+    {
+     "y": -20.0,
+     "z": 45.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      20.0,
+      20.0
+     ],
+     "centred": true
+    },
+    {
+     "y": -20.0,
+     "z": 15.0,
+     "diameter": 4.5,
+     "faces": 2,
+     "from_sides": [
+      20.0,
+      20.0
+     ],
+     "centred": true
+    }
+   ],
+   "all_centred": true,
+   "top_edges_rounded": 2
+  },
+  "pass": true
+ },
+ "export": {
+  "isError": false
+ },
+ "our_checker": {
+  "file": "hook.stl",
+  "triangles": 1652,
+  "volume_mm3": 12538.860777,
+  "outward": true,
+  "size_mm": [
+   25.0,
+   30.0,
+   60.0
+  ],
+  "min_mm": [
+   0.0,
+   -30.0,
+   0.0
+  ],
+  "closed": true
+ }
+}

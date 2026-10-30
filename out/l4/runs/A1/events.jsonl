@@ -1,0 +1,44 @@
+{"t": 0.503, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.573, "event": "turn 1: typing"}
+{"t": 16.51, "event": "turn 1: Enter"}
+{"t": 22.401, "event": "tool call: inspect_design", "seq": 13}
+{"t": 22.459, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 26.343, "event": "tool call: describe_command", "seq": 15}
+{"t": 26.343, "event": "tool call: describe_command", "seq": 16}
+{"t": 26.346, "event": "tool reply: describe_command", "seq": 17, "isError": false}
+{"t": 26.38, "event": "tool reply: describe_command", "seq": 18, "isError": false}
+{"t": 31.264, "event": "tool call: batch", "seq": 19}
+{"t": 31.333, "event": "tool reply: batch", "seq": 20, "isError": false}
+{"t": 31.346, "event": "tool call: body_topology", "seq": 21}
+{"t": 31.434, "event": "tool reply: body_topology", "seq": 22, "isError": false}
+{"t": 34.25, "event": "tool call: execute", "seq": 23}
+{"t": 34.511, "event": "tool reply: execute", "seq": 24, "isError": false}
+{"t": 36.261, "event": "tool call: screenshot", "seq": 25}
+{"t": 37.345, "event": "tool reply: screenshot", "seq": 26, "isError": false}
+{"t": 41.709, "event": "turn 1: end-of-turn line seen"}
+{"t": 43.711, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 46.734, "event": "turn 1: no solid.hole call; fixed answer sent"}
+{"t": 46.735, "event": "turn 1b: typing"}
+{"t": 48.178, "event": "turn 1b: Enter"}
+{"t": 52.003, "event": "turn 1b: end-of-turn line seen"}
+{"t": 54.006, "event": "turn 1b: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 57.014, "event": "turn 2: typing"}
+{"t": 59.598, "event": "turn 2: Enter"}
+{"t": 62.2, "event": "tool call: set_parameter", "seq": 27}
+{"t": 62.584, "event": "tool reply: set_parameter", "seq": 28, "isError": false}
+{"t": 63.948, "event": "tool call: inspect_design", "seq": 29}
+{"t": 64.178, "event": "tool reply: inspect_design", "seq": 30, "isError": false}
+{"t": 66.799, "event": "tool call: list_commands", "seq": 31}
+{"t": 66.804, "event": "tool reply: list_commands", "seq": 32, "isError": false}
+{"t": 77.404, "event": "tool call: batch", "seq": 33}
+{"t": 77.407, "event": "tool reply: batch", "seq": 34, "isError": true}
+{"t": 77.44, "event": "tool call: body_topology", "seq": 35}
+{"t": 77.491, "event": "tool reply: body_topology", "seq": 36, "isError": false}
+{"t": 81.443, "event": "tool call: batch", "seq": 37}
+{"t": 82.133, "event": "tool reply: batch", "seq": 38, "isError": false}
+{"t": 83.811, "event": "tool call: measure", "seq": 39}
+{"t": 83.817, "event": "tool reply: measure", "seq": 40, "isError": true}
+{"t": 85.325, "event": "tool call: inspect_design", "seq": 41}
+{"t": 85.453, "event": "tool reply: inspect_design", "seq": 42, "isError": false}
+{"t": 479.975, "event": "turn 2: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": true}
+{"t": 485.499, "event": "recording stopped"}

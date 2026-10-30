@@ -1,0 +1,86 @@
+{"t": 0.509, "event": "recording started: lesson 3's hook"}
+{"t": 3.517, "event": "params: hover Parameters"}
+{"t": 6.069, "event": "params: open"}
+{"t": 8.580, "event": "params: five names held"}
+{"t": 10.593, "event": "params: Add parameter"}
+{"t": 13.965, "event": "params: type hole_d"}
+{"t": 15.322, "event": "params: Tab Tab"}
+{"t": 16.573, "event": "params: hole_d value 4.5"}
+{"t": 17.757, "event": "params: hole_d added"}
+{"t": 21.023, "event": "params: OK"}
+{"t": 24.395, "event": "hole1: Hole button"}
+{"t": 28.154, "event": "hole1: click the face"}
+{"t": 32.803, "event": "hole1: Extents"}
+{"t": 36.029, "event": "hole1: All"}
+{"t": 39.113, "event": "hole1: Reference 1"}
+{"t": 41.893, "event": "hole1: top edge"}
+{"t": 45.830, "event": "hole1: Distance 1 15"}
+{"t": 50.387, "event": "hole1: Reference 2"}
+{"t": 53.133, "event": "hole1: left edge"}
+{"t": 56.972, "event": "hole1: Distance 2 10"}
+{"t": 61.848, "event": "hole1: Diameter hole_d"}
+{"t": 67.255, "event": "hole1: OK"}
+{"t": 71.338, "event": "hole1: done"}
+{"t": 72.938, "event": "hole2: Hole button"}
+{"t": 76.671, "event": "hole2: click the face"}
+{"t": 81.298, "event": "hole2: Extents"}
+{"t": 84.399, "event": "hole2: All"}
+{"t": 87.439, "event": "hole2: Reference 1"}
+{"t": 90.198, "event": "hole2: top edge"}
+{"t": 94.015, "event": "hole2: Distance 1 45"}
+{"t": 98.493, "event": "hole2: Reference 2"}
+{"t": 101.234, "event": "hole2: left edge"}
+{"t": 105.092, "event": "hole2: Distance 2 10"}
+{"t": 110.012, "event": "hole2: Diameter hole_d"}
+{"t": 115.422, "event": "hole2: OK"}
+{"t": 119.537, "event": "hole2: done"}
+{"t": 121.129, "event": "fillet: Fillet button"}
+{"t": 124.857, "event": "fillet: front top edge"}
+{"t": 128.775, "event": "fillet: back top edge"}
+{"t": 132.192, "event": "fillet: Radius 2"}
+{"t": 138.441, "event": "fillet: OK"}
+{"t": 142.525, "event": "fillet: done"}
+{"t": 144.808, "event": "properties before: right-click Body1"}
+{"t": 149.439, "event": "properties before: open"}
+{"t": 151.956, "event": "properties before: rows held"}
+{"t": 157.051, "event": "properties before: close"}
+{"t": 158.275, "event": "view width20: Right view"}
+{"t": 162.151, "event": "view width20: held"}
+{"t": 165.605, "event": "view width20: back to 3D"}
+{"t": 169.463, "event": "view: slide left"}
+{"t": 171.873, "event": "change: open Parameters"}
+{"t": 175.801, "event": "change: click width's 20"}
+{"t": 179.454, "event": "change: type 30"}
+{"t": 180.770, "event": "change: Enter"}
+{"t": 185.744, "event": "change: OK"}
+{"t": 189.468, "event": "view width30: Right view"}
+{"t": 193.539, "event": "view width30: held"}
+{"t": 198.531, "event": "view width30: back to 3D"}
+{"t": 201.563, "event": "properties width30: right-click Body1"}
+{"t": 206.332, "event": "properties width30: open"}
+{"t": 209.184, "event": "properties width30: rows held"}
+{"t": 214.341, "event": "properties width30: close"}
+{"t": 216.467, "event": "view: slide left"}
+{"t": 218.941, "event": "fix: open Parameters"}
+{"t": 222.968, "event": "fix: Filter Hole1"}
+{"t": 228.104, "event": "fix: click Hole1's 10 (d5)"}
+{"t": 231.150, "event": "fix: type width / 2 into Hole1"}
+{"t": 232.745, "event": "fix: Enter Hole1"}
+{"t": 236.853, "event": "fix: Filter Hole2"}
+{"t": 241.926, "event": "fix: click Hole2's 10 (d9)"}
+{"t": 244.934, "event": "fix: type width / 2 into Hole2"}
+{"t": 246.523, "event": "fix: Enter Hole2"}
+{"t": 250.616, "event": "fix: OK"}
+{"t": 254.166, "event": "view fixed: Right view"}
+{"t": 258.027, "event": "view fixed: held"}
+{"t": 262.965, "event": "view fixed: back to 3D"}
+{"t": 266.779, "event": "view: slide left"}
+{"t": 269.182, "event": "back: open Parameters"}
+{"t": 273.098, "event": "back: Filter cleared"}
+{"t": 276.133, "event": "back: click width's 30"}
+{"t": 279.167, "event": "back: type 20"}
+{"t": 283.307, "event": "back: OK"}
+{"t": 286.825, "event": "view width20b: Right view"}
+{"t": 290.684, "event": "view width20b: held"}
+{"t": 295.132, "event": "view width20b: back to 3D"}
+{"t": 298.110, "event": "recording stopped"}

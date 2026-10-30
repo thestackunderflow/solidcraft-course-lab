@@ -31,6 +31,13 @@ STILLS = {
     'hand-right-fixed.png': ('hand', 'view fixed: held', 2.0),
     'hand-right-20b.png': ('hand', 'view width20b: held', 2.0),
     'hand-3d-fixed.png': ('hand', 'view fixed: back to 3D', 1.6),
+    'dialog-error.png': ('dialog', 'try 1: result', -0.3),
+    'A1-typed.png': ('runs-A1', 'turn 1: Enter', -0.6),
+    'A1-built.png': ('runs-A1', 'turn 1: reply done', 0.0),
+    'A1-reply.png': ('runs-A1', 'turn 2: Enter', 36.0),
+    'B1-typed.png': ('runs-B1', 'turn 1: Enter', -0.6),
+    'B1-built.png': ('runs-B1', 'turn 1: reply done', 0.0),
+    'B1-reply.png': ('runs-B1', 'turn 2: reply done', 0.0),
 }
 
 

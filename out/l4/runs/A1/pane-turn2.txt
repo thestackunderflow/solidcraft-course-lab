@@ -1,0 +1,36 @@
+  on the 30 mm plate. I'm tying them to
+  width/2 so they stay centred.
+
+  Called solidcraft 5 times
+
+● The hook is now 30 mm wide, and the screw
+  holes are still centred on it.
+
+  Changing width to 30 widened the plate, but
+  the holes stayed at the old 10 mm mark,
+  which is off-centre on a 30 mm plate. I
+  fixed the hole sketch by dimensioning each
+  hole centre as width / 2 from the plate's
+  edge. The hole positions now follow width if
+  you change it again. The sketch's circle
+  centres now read 15 mm from the edge. The
+  body's centre of mass sits at y=-15.0, so
+  the part is symmetric about the middle of
+  the width.
+
+  - Holes: Still 4.5 mm through the back
+    plate, at 15 mm and 45 mm below the top.
+  - Fillet: The 2 mm fillets rebuilt cleanly
+    along the full 30 mm length of both top
+    edges.
+  - Unchanged: Plate height, thickness, hook
+    depth and lip are the same as before.
+
+  I haven't saved the design.
+
+✻ Cogitated for 30s · done 11:20 PM
+
+──────────────────────────────────────────────
+❯ save it as wall_hook.solidcraft
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

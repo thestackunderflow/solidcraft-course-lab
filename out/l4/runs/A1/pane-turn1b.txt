@@ -1,0 +1,36 @@
+    radius or run a volume check.
+
+  The new features are called "Screw holes"
+  and "Top edge fillet" in the timeline.
+
+✻ Sautéed for 24s · done 11:19 PM
+
+❯ Your choice.
+
+● I didn't ask a question, so I'm not sure
+  what you're choosing between. The model is
+  finished as asked: both holes and the 2 mm
+  top fillets are in, and nothing is saved
+  yet.
+
+  If you meant one of these, tell me which:
+  - Save: I can save it under a name and
+    location you give me, or export it as STEP
+    or STL.
+  - Countersinks: The holes are plain 4.5 mm
+    through-holes. I can countersink them on
+    the front face if the screw heads need to
+    sit flush.
+  - Parameters: I can tie the hole size, hole
+    positions and fillet radius to named
+    parameters, like the existing width and
+    thickness, so you can change them later.
+
+  If you want none of these, you're done.
+
+✻ Baked for 3s · done 11:19 PM
+
+──────────────────────────────────────────────
+❯ Save it as wall_hook.step
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

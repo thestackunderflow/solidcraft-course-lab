@@ -1,0 +1,11 @@
+{"try": 1, "hole": 1, "edge": "left", "expression": "width / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}
+{"try": 2, "hole": 1, "edge": "left", "expression": "width / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}
+{"try": 3, "hole": 1, "edge": "left", "expression": "width / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}
+{"try": 4, "hole": 2, "edge": "left", "expression": "width / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}
+{"try": 5, "hole": 2, "edge": "left", "expression": "width / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}
+{"try": 6, "hole": 2, "edge": "left", "expression": "width / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}
+{"try": 7, "hole": 1, "edge": "left", "expression": "10", "ok_enabled": 1, "red_line": 0, "after_retype_ok": "", "after_retype_red": ""}
+{"try": 8, "hole": 1, "edge": "left", "expression": "20 / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}
+{"try": 9, "hole": 1, "edge": "left", "expression": "hole_d * 2", "ok_enabled": 1, "red_line": 0, "after_retype_ok": "", "after_retype_red": ""}
+{"try": 10, "hole": 1, "edge": "right", "expression": "width / 2", "ok_enabled": 1, "red_line": 0, "after_retype_ok": "", "after_retype_red": ""}
+{"try": 11, "hole": 2, "edge": "right", "expression": "width / 2", "ok_enabled": 0, "red_line": 1, "after_retype_ok": "0", "after_retype_red": "1"}

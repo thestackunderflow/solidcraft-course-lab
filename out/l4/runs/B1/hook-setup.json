@@ -1,0 +1,164 @@
+{
+ "batch": {
+  "completed": 9,
+  "ok": true,
+  "results": [
+   {
+    "display_value": 60.0,
+    "errors": [],
+    "expression": "60",
+    "name": "plate_height",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 60.0
+   },
+   {
+    "display_value": 20.0,
+    "errors": [],
+    "expression": "20",
+    "name": "width",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 20.0
+   },
+   {
+    "display_value": 5.0,
+    "errors": [],
+    "expression": "5",
+    "name": "thickness",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 5.0
+   },
+   {
+    "display_value": 25.0,
+    "errors": [],
+    "expression": "25",
+    "name": "hook_depth",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 25.0
+   },
+   {
+    "display_value": 10.0,
+    "errors": [],
+    "expression": "10",
+    "name": "lip_height",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 10.0
+   },
+   {
+    "attachment": "fixed",
+    "created": {
+     "constraints": [],
+     "curves": [],
+     "dimensions": [],
+     "points": []
+    },
+    "name": "Sketch1",
+    "projected": null,
+    "sketch": 1
+   },
+   {
+    "created": {
+     "constraints": [
+      "k1"
+     ],
+     "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "l7",
+      "l8"
+     ],
+     "dimensions": [],
+     "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "l1.start"
+     ]
+    },
+    "sketch": {
+     "dof": 0,
+     "solved": true
+    }
+   },
+   {
+    "profiles": 1,
+    "sketch": 1
+   },
+   {
+    "changed_bodies": [],
+    "created_bodies": [
+     "Body1"
+    ],
+    "feature": 2,
+    "ms": 7.6797,
+    "name": "Hook",
+    "removed_bodies": [],
+    "warning": null
+   }
+  ]
+ },
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -10.0,
+     22.205882352941178
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 24,
+    "face_types": {
+     "plane": 10
+    },
+    "faces": 10,
+    "kernel": {
+     "edges": 24,
+     "faces": 10,
+     "shells": 1,
+     "vertices": 16
+    },
+    "mass_g": 10.965,
+    "material": "Default",
+    "name": "Body1",
+    "vertices": 16,
+    "volume_mm3": 8500.0
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 4450.0,
+   "edges": 24,
+   "faces": 10,
+   "mass_g": 10.965,
+   "open_bodies_skipped": 0,
+   "vertices": 16,
+   "volume_mm3": 8500.0
+  }
+ }
+}
