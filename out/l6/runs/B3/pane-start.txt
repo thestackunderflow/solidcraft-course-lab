@@ -29,7 +29,7 @@
 
 
 
-  You've used 81% of your weekly limit · re…
+  [account usage notice removed]
 ──────────────────────────────────────────────
 ❯ Try "create a util logging.py that..."
 ──────────────────────────────────────────────

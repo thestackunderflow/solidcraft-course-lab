@@ -29,7 +29,7 @@
 
 
 
-  You've used 77% of your weekly limit · re…
+  [account usage notice removed]
 ──────────────────────────────────────────────
 ❯ Try "fix typecheck errors"
 ──────────────────────────────────────────────

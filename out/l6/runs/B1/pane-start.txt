@@ -29,7 +29,7 @@
 
 
 
-  You've used 81% of your weekly limit · re…
+  [account usage notice removed]
 ──────────────────────────────────────────────
 ❯ Try "edit <filepath> to..."
 ──────────────────────────────────────────────
