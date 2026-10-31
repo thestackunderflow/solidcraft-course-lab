@@ -13,7 +13,8 @@ cd "$(dirname "$0")/.."
 LAB="$(pwd -W 2>/dev/null || pwd)"
 S=out/l6/runs/$RUN
 LEDGER="${LEDGER:-$LAB/../solidcraft-course-BUDGET.tsv}"
-CAP="${CAP:-0.25}"
+CAP="${CAP:-0.24}"          # amended after B1: soft stop (Esc) at $SOFT, kill at $CAP
+SOFT="${SOFT:-0.18}"
 export BUDGET_MARK="# --- GO 31 Oct 2026 L6"
 . claude-run/l6messages.sh "$RUN"
 [ -e "$S/meta.json" ] && { echo "refusing to overwrite $S"; exit 3; }
@@ -26,7 +27,7 @@ d = json.load(open(os.path.expanduser('~/.claude/.credentials.json')))
 open(sys.argv[1], 'w').write('CLAUDE_CODE_OAUTH_TOKEN=' + d['claudeAiOauth']['accessToken'] + '\n')
 PY
 T0=$(date +%s)
-( sleep 20; python claude-run/costguard.py "$CAP" sc6-claude > "$S/costguard.log" 2>&1 ) &
+( sleep 5; python claude-run/costguard6.py "$SOFT" "$CAP" sc6-claude > "$S/costguard.log" 2>&1 ) &
 GUARD=$!
 MSYS_NO_PATHCONV=1 docker run --rm --name sc6-claude -e M1 --memory 5g --shm-size 1g --env-file "$ENVF" -v "$LAB:/work" \
   sc5-l5:0.28.0 bash /work/lab/l6claude.sh "$RUN" > "$S.container.log" 2>&1 || echo "container exit $?"

@@ -17,6 +17,12 @@ mkdir -p "$O"
 . /work/lab/common.sh
 . /work/lab/l2common.sh
 . /work/lab/l5slicerseed.sh
+record30() {      # lesson 6 (amended after B1): as l2common's, but a fragmented MP4, playable even if the run is killed
+  ffmpeg -loglevel error -y -f x11grab -draw_mouse 0 -framerate 30 -video_size ${W}x${H} -i :99     -c:v libx264 -preset ultrafast -crf 14 -pix_fmt yuv420p -movflags +frag_keyframe+empty_moov "$1" &
+  REC=$!; T0=$(date +%s.%N); sleep 0.5
+  python3 /work/lab/cursorlog.py "$2" "$T0" 30 & CUR=$!
+  CURSOR_LOG=$2
+}
 SCALE=1.5           # SolidCraft in the right 1730 px of the 2880x1800 display (a 1153x1200 layout)
 TERM_W=1150
 E=$O/events.jsonl; : > "$E"; : > "$O/cursor.jsonl"

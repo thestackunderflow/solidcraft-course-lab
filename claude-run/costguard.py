@@ -1,4 +1,4 @@
-"""Live cost guard (lesson 4 B1, lesson 5): python costguard.py LIMIT_USD [CONTAINER]: estimates the session cost from the
+"""Live cost guard (lesson 4 B1, lesson 5; lesson 6: costguard6.py adds a soft stop): python costguard.py LIMIT_USD [CONTAINER]: estimates the session cost from the
 container's Claude Code session log (tokens x list prices x 0.683, the ratio fitted on A1) and kills the container
 above LIMIT."""
 import json, subprocess, sys, time

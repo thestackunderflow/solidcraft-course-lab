@@ -89,5 +89,12 @@
  ],
  "coding_claude_words": "from its last reply, verbatim: a line it names with a number = \"said, with a number\"; named without a number = \"said, no number\"; not named = \"not checked\"; set against the script per line",
  "result_wording": "\"N of 3 passed\" for B; A1 \"passed\" or \"broke [line]\", always \"one run, not a rate\"; no cause claimed from A vs B",
- "replay": "lab/l6replay.py RUN: all logged calls repeated with no AI on a fresh lesson 5 hook, then the same read; a replay that differs is reported, the live verdict stays the score and that run's replay line is dropped"
+ "replay": "lab/l6replay.py RUN: all logged calls repeated with no AI on a fresh lesson 5 hook, then the same read; a replay that differs is reported, the live verdict stays the score and that run's replay line is dropped",
+ "amendments": [
+  {
+   "when": "2026-10-31, after run B1, before run B2",
+   "what": "B1 was killed by the live cost guard at its first sample ($0.2676 estimated, over $0.25) while it was checking; the kill took the live design and left its recording without an index (unplayable). Changes: (1) the guard (claude-run/costguard6.py) samples every 4 s from 5 s after start; above $0.18 it presses Esc once in Claude Code (a soft stop: the run goes on, filmed, read and sent by our script; no fixed answer after a soft stop); above $0.24 it kills the container (backstop); (2) the recording is a fragmented MP4 (playable after a kill); (3) budget rule: a run starts only if the ledger since the mark plus $0.24 is $0.73 or less; (4) B1 is scored on a no-AI replay of its logged calls on a fresh lesson 5 hook (lab/l6replay.py), labelled \"stopped by our cost guard; scored on a replay\"; (5) A1 runs only if the rule allows it after B3.",
+   "why": "keep three scored runs with the list inside the $1.00 cap ($0.90 stop) with ~$0.17 kept for the voice"
+  }
+ ]
 }

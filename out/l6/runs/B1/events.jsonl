@@ -1,0 +1,28 @@
+{"t": 0.505, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.633, "event": "turn 1: typing"}
+{"t": 29.241, "event": "turn 1: Enter"}
+{"t": 35.314, "event": "tool call: inspect_design", "seq": 13}
+{"t": 35.352, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 40.65, "event": "tool call: list_commands", "seq": 15}
+{"t": 40.651, "event": "tool call: list_commands", "seq": 16}
+{"t": 40.652, "event": "tool call: body_topology", "seq": 17}
+{"t": 40.658, "event": "tool reply: list_commands", "seq": 18, "isError": false}
+{"t": 40.716, "event": "tool reply: list_commands", "seq": 19, "isError": false}
+{"t": 40.745, "event": "tool reply: body_topology", "seq": 20, "isError": false}
+{"t": 46.622, "event": "tool call: execute", "seq": 21}
+{"t": 46.624, "event": "tool reply: execute", "seq": 22, "isError": false}
+{"t": 46.638, "event": "tool call: execute", "seq": 23}
+{"t": 46.64, "event": "tool reply: execute", "seq": 24, "isError": false}
+{"t": 46.651, "event": "tool call: execute", "seq": 25}
+{"t": 46.654, "event": "tool reply: execute", "seq": 26, "isError": false}
+{"t": 46.662, "event": "tool call: execute", "seq": 27}
+{"t": 46.667, "event": "tool reply: execute", "seq": 28, "isError": false}
+{"t": 56.515, "event": "tool call: batch", "seq": 29}
+{"t": 56.768, "event": "tool reply: batch", "seq": 30, "isError": false}
+{"t": 59.421, "event": "tool call: inspect_design", "seq": 31}
+{"t": 59.495, "event": "tool reply: inspect_design", "seq": 32, "isError": false}
+{"t": 62.798, "event": "tool call: body_topology", "seq": 33}
+{"t": 62.8, "event": "tool call: measure", "seq": 34}
+{"t": 62.828, "event": "tool reply: body_topology", "seq": 35, "isError": false}
+{"t": 62.841, "event": "tool reply: measure", "seq": 36, "isError": true}
+{"t": 71.965, "event": "turn 1: end-of-turn line seen"}

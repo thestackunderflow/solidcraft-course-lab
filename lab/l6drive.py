@@ -49,7 +49,9 @@ def main(out, t0, m1, term_w):
     th.start()
     r.say(1, m1)
     time.sleep(3.0)
-    if design_unchanged(out):
+    if os.path.exists('/tmp/guard-stopped'):
+        r.mark('turn 1: stopped by our cost guard (Esc at the soft limit); no fixed answer')
+    elif design_unchanged(out):
         r.mark('turn 1: the design is unchanged (sizes and volume as at the start); fixed answer sent')
         r.say('1b', l4drive.ANSWER)
         time.sleep(3.0)
