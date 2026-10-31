@@ -1,0 +1,36 @@
+  - One body: Body1 is the only body, and it's
+    a single solid.
+  - Closed: it's a closed solid with one
+    shell, so it should be watertight.
+  - Size: 25 mm deep × 20 mm wide × 60 mm
+    tall. The plate is 5 mm thick, with a 10
+    mm lip and two 4.5 mm screw holes.
+  - Flat face: I chose the L-shaped side face
+    at Y = 0, the 423 mm² face with its normal
+    along +Y. I set it with body.print_face.
+    - It lies on the bed, so the layers run in
+      the plane of the L and the load across
+      the hook runs along the layers. That
+      should make it stronger than printing it
+      upright.
+    - It needs no supports except a short
+      bridge over each 4.5 mm hole.
+    - Printing on the back of the plate would
+      give cleaner holes. However, the lip
+      would then be built up in layers, which
+      is weaker.
+
+  The file is /root/.cache/solidcraft/slicer/U
+  ntitled-0873290254c1fc0d.3mf, in
+  millimetres. Sending again replaces it, so
+  use the slicer's Reload from disk.
+
+  The design is still unsaved ("Untitled"), so
+  you may want to save it.
+
+✻ Cooked for 27s · done 2:58 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

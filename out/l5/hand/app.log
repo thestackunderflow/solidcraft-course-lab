@@ -1,0 +1,4 @@
+SolidCraft graphics: Vulkan, MSAA 4x (requested 4x)
+solidcraft: control server listening on 127.0.0.1:27878 (token in /root/.local/share/solidcraft/control/27878.token)
+solidcraft: control channel on the default port 127.0.0.1:27878 (Preferences > Assistant turns it off)
+SolidCraft graphics: GPU tessellation ready; bodies are evaluated on the GPU from now on

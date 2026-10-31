@@ -1,0 +1,11 @@
+{"t": 0.503, "event": "recording started"}
+{"t": 9.032, "event": "good: window up"}
+{"t": 13.076, "event": "good: name, no sign"}
+{"t": 27.688, "event": "bad: window up"}
+{"t": 29.942, "event": "bad: hover the warning sign"}
+{"t": 35.208, "event": "bad: tooltip held"}
+{"t": 49.321, "event": "place: window up (the saved file, standing)"}
+{"t": 52.689, "event": "place: F (Place on face)"}
+{"t": 55.510, "event": "place: click the J side"}
+{"t": 60.641, "event": "place: done"}
+{"t": 64.409, "event": "recording stopped"}

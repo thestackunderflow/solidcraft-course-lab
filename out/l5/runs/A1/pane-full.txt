@@ -1,0 +1,36 @@
+  hook I want to 3D print. Send it to the
+  slicer.
+
+  Listed 1 directory, called solidcraft 4
+  times, ran 1 shell command
+
+● I sent the hook (Body1) to PrusaSlicer, the
+  only slicer installed here. The export
+  succeeded, but I haven't looked at
+  PrusaSlicer, so I can't confirm the file
+  opened.
+
+  - File: /root/.cache/solidcraft/slicer/Untit
+    led-0873290254c1fc0d.3mf, a 3MF in
+    millimetres.
+  - Part size: the hook is 25 × 20 × 60 mm,
+    with a volume of about 8.3 cm³. It has two
+    holes and a fillet.
+  - Re-sending: the design is still unsaved
+    ("Untitled"). If you change it and send
+    again, the file is replaced. In
+    PrusaSlicer, use Reload from disk to pick
+    up the change.
+  - Print orientation: I haven't checked this.
+    The hook is modelled standing up, with
+    its back plate flat on the XY plane at
+    Z=0. You may want to lay it on its back or
+    side in the slicer to avoid overhangs on
+    the lip.
+
+✻ Churned for 13s · done 2:56 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

@@ -1,0 +1,18 @@
+{"t": 0.505, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.823, "event": "turn 1: typing"}
+{"t": 8.122, "event": "turn 1: Enter"}
+{"t": 13.708, "event": "tool call: inspect_design", "seq": 13}
+{"t": 13.71, "event": "tool call: list_commands", "seq": 14}
+{"t": 13.743, "event": "tool reply: inspect_design", "seq": 15, "isError": false}
+{"t": 13.779, "event": "tool reply: list_commands", "seq": 16, "isError": false}
+{"t": 15.552, "event": "tool call: execute", "seq": 17}
+{"t": 15.556, "event": "tool reply: execute", "seq": 18, "isError": false}
+{"t": 18.029, "event": "tool call: execute", "seq": 19}
+{"t": 18.047, "event": "tool reply: execute", "seq": 20, "isError": false}
+{"t": 18.677, "event": "slicer file written", "file": "sent-1-Untitled-0873290254c1fc0d.3mf", "bytes": 14547}
+{"t": 21.72, "event": "turn 1: end-of-turn line seen"}
+{"t": 23.722, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 25.334, "event": "slicer window up (moved beside the terminal)"}
+{"t": 28.741, "event": "after the turn: Ctrl+R (Slice now) in the slicer, by the driver"}
+{"t": 45.087, "event": "slicer estimate held"}
+{"t": 51.622, "event": "recording stopped"}

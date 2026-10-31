@@ -1,0 +1,3 @@
+Your windowmanager claims not to support _NET_ACTIVE_WINDOW, so the attempt to activate the window was aborted.
+xdo_activate_window on window:10485908 reported an error
+app still running after Ctrl+Q: TERM

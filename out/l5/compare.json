@@ -1,0 +1,306 @@
+{
+ "prereg": "out/l5/prereg.json",
+ "slicer_as_set": {
+  "support_material": "0",
+  "layer_height": "0.2",
+  "fill_density": "15%",
+  "filament_settings_id": "Prusament PLA Blend @MK4S",
+  "print_settings_id": "0.20mm SPEED @MK4S 0.4",
+  "printer_settings_id": "Original Prusa MK4S 0.4 nozzle"
+ },
+ "runs": {
+  "A1": {
+   "calls": [
+    {
+     "seq": 13,
+     "t": "2026-10-31T02:56:16.765+00:00",
+     "name": "inspect_design",
+     "args": {
+      "sketches": false
+     },
+     "isError": false,
+     "reply_head": "{\n  \"active_sketch\": null,\n  \"bodies\": [\n    {\n      \"area_mm2\": 4489.980767522152,\n      \"bbox\": {\n        \"max\": [\n          25.0,\n          2.861555798492764e-15,\n          60.0\n        ],\n        \"min\": [\n          -1.1102230246251565e-15,\n          -20.000000000000014,\n          0.0\n        ]\n "
+    },
+    {
+     "seq": 14,
+     "t": "2026-10-31T02:56:16.767+00:00",
+     "name": "list_commands",
+     "args": {
+      "filter": "slic"
+     },
+     "isError": false,
+     "reply_head": "[\n  {\n    \"disabled_reason\": null,\n    \"enabled\": true,\n    \"icon\": \"mesh_export\",\n    \"id\": \"file.send_to_slicer\",\n    \"label\": \"Send to Slicer\",\n    \"panel\": \"FILES\",\n    \"params\": \"slicer: id or name from file.slicers, or a program the user added under Custom\u2026; bodies?: [names] (default: the sele"
+    },
+    {
+     "seq": 17,
+     "t": "2026-10-31T02:56:18.609+00:00",
+     "name": "execute",
+     "args": {
+      "command": "file.slicers"
+     },
+     "isError": false,
+     "reply_head": "{\n  \"slicers\": [\n    {\n      \"icon\": \"/usr/share/icons/hicolor/128x128/apps/prusa-slicer.png\",\n      \"id\": \"prusa\",\n      \"name\": \"PrusaSlicer\",\n      \"program\": \"/bin/prusa-slicer\"\n    }\n  ]\n}"
+    },
+    {
+     "seq": 19,
+     "t": "2026-10-31T02:56:21.086+00:00",
+     "name": "execute",
+     "args": {
+      "command": "file.send_to_slicer",
+      "params": {
+       "slicer": "prusa",
+       "bodies": [
+        "Body1"
+       ]
+      }
+     },
+     "isError": false,
+     "reply_head": "{\n  \"bytes\": 14547,\n  \"format\": \"3mf\",\n  \"numbered\": false,\n  \"path\": \"/root/.cache/solidcraft/slicer/Untitled-0873290254c1fc0d.3mf\",\n  \"slicer\": \"PrusaSlicer\",\n  \"stl_fallback\": false\n}"
+    }
+   ],
+   "score": {
+    "sent": true,
+    "send_seq": 19,
+    "sends": [
+     19
+    ],
+    "read_before_send": {
+     "one body": true,
+     "closed": true,
+     "size": true
+    },
+    "print_face": null,
+    "saved_mesh": []
+   },
+   "files_sent": [
+    {
+     "file": "sent-1-Untitled-0873290254c1fc0d.3mf",
+     "height_mm": 60.0,
+     "bed_contact_mm2": 500.0,
+     "lie": "standing",
+     "closed": true,
+     "bodies": 1,
+     "size_mm": [
+      25.0,
+      20.0,
+      60.0
+     ],
+     "unit": "millimeter",
+     "as set": {
+      "time": "33m 7s",
+      "minutes": 33.1167,
+      "total_g": 5.37,
+      "support_g": 0.0,
+      "support_lines": 0,
+      "layers": 300,
+      "top_z": 60.0,
+      "warnings": [
+       "Detected print stability issues: sent-1-Untitled-0873290254c1fc0d Low bed adhesion Consider enabling supports. Also consider enabling brim."
+      ]
+     },
+     "supports on": {
+      "time": "33m 7s",
+      "minutes": 33.1167,
+      "total_g": 5.37,
+      "support_g": 0.0,
+      "support_lines": 0,
+      "layers": 300,
+      "top_z": 60.0,
+      "warnings": []
+     }
+    }
+   ],
+   "last_lie": "standing",
+   "live_design_after": {
+    "bodies_bbox": [
+     {
+      "max": [
+       25.0,
+       2.861555798492764e-15,
+       60.0
+      ],
+      "min": [
+       -1.1102230246251565e-15,
+       -20.000000000000014,
+       0.0
+      ]
+     }
+    ],
+    "moved": false
+   },
+   "verdict": "checked, sent standing"
+  },
+  "B1": {
+   "calls": [
+    {
+     "seq": 13,
+     "t": "2026-10-31T02:58:15.926+00:00",
+     "name": "inspect_design",
+     "args": {},
+     "isError": false,
+     "reply_head": "{\n  \"active_sketch\": null,\n  \"bodies\": [\n    {\n      \"area_mm2\": 4489.980767522152,\n      \"bbox\": {\n        \"max\": [\n          25.0,\n          2.861555798492764e-15,\n          60.0\n        ],\n        \"min\": [\n          -1.1102230246251565e-15,\n          -20.000000000000014,\n          0.0\n        ]\n "
+    },
+    {
+     "seq": 15,
+     "t": "2026-10-31T02:58:20.705+00:00",
+     "name": "body_topology",
+     "args": {
+      "body": "Body1"
+     },
+     "isError": false,
+     "reply_head": "{\n  \"body\": \"Body1\",\n  \"edges\": [\n    {\n      \"end\": [\n        25.0,\n        0.0,\n        10.0\n      ],\n      \"index\": 0,\n      \"length\": 20.0,\n      \"mid\": [\n        25.0,\n        -10.0,\n        10.0\n      ],\n      \"name\": \"F2:side:l2|F2:side:l3\",\n      \"start\": [\n        25.0,\n        -20.0,\n     "
+    },
+    {
+     "seq": 17,
+     "t": "2026-10-31T02:58:20.768+00:00",
+     "name": "screenshot",
+     "args": {
+      "view": "iso"
+     },
+     "isError": false,
+     "reply_head": " {\"bytes\":3187461,\"height\":1800,\"path\":null,\"source\":\"window\",\"width\":1730}"
+    },
+    {
+     "seq": 19,
+     "t": "2026-10-31T02:58:30.760+00:00",
+     "name": "list_commands",
+     "args": {
+      "filter": "slic"
+     },
+     "isError": false,
+     "reply_head": "[\n  {\n    \"disabled_reason\": null,\n    \"enabled\": true,\n    \"icon\": \"mesh_export\",\n    \"id\": \"file.send_to_slicer\",\n    \"label\": \"Send to Slicer\",\n    \"panel\": \"FILES\",\n    \"params\": \"slicer: id or name from file.slicers, or a program the user added under Custom\u2026; bodies?: [names] (default: the sele"
+    },
+    {
+     "seq": 20,
+     "t": "2026-10-31T02:58:30.761+00:00",
+     "name": "list_commands",
+     "args": {
+      "filter": "print"
+     },
+     "isError": false,
+     "reply_head": "[\n  {\n    \"disabled_reason\": null,\n    \"enabled\": true,\n    \"icon\": \"mesh_export\",\n    \"id\": \"file.open_in_easyprint\",\n    \"label\": \"Open with EasyPrint\",\n    \"panel\": \"\",\n    \"params\": \"consent: bool (required: true only once the user has agreed to upload the model to Printables' servers; it stays "
+    },
+    {
+     "seq": 23,
+     "t": "2026-10-31T02:58:33.548+00:00",
+     "name": "execute",
+     "args": {
+      "command": "file.slicers"
+     },
+     "isError": false,
+     "reply_head": "{\n  \"slicers\": [\n    {\n      \"icon\": \"/usr/share/icons/hicolor/128x128/apps/prusa-slicer.png\",\n      \"id\": \"prusa\",\n      \"name\": \"PrusaSlicer\",\n      \"program\": \"/bin/prusa-slicer\"\n    }\n  ]\n}"
+    },
+    {
+     "seq": 25,
+     "t": "2026-10-31T02:58:33.571+00:00",
+     "name": "execute",
+     "args": {
+      "command": "body.print_face",
+      "params": {
+       "body": "Body1",
+       "point": [
+        5.727769841888587,
+        0,
+        2.3725199506618506
+       ]
+      }
+     },
+     "isError": false,
+     "reply_head": "{\n  \"body\": \"Body1\",\n  \"face\": \"F2:cap:low:cb08b3de06c6e86a8cf1f9ae705c52c99d60702b4cf0795e3ed4a3f4e12a5483\"\n}"
+    },
+    {
+     "seq": 27,
+     "t": "2026-10-31T02:58:35.199+00:00",
+     "name": "execute",
+     "args": {
+      "command": "file.send_to_slicer",
+      "params": {
+       "slicer": "prusa",
+       "bodies": [
+        "Body1"
+       ]
+      }
+     },
+     "isError": false,
+     "reply_head": "{\n  \"bytes\": 14681,\n  \"format\": \"3mf\",\n  \"numbered\": false,\n  \"path\": \"/root/.cache/solidcraft/slicer/Untitled-0873290254c1fc0d.3mf\",\n  \"print_faces\": [\n    \"Body1\"\n  ],\n  \"slicer\": \"PrusaSlicer\",\n  \"stl_fallback\": false\n}"
+    }
+   ],
+   "score": {
+    "sent": true,
+    "send_seq": 27,
+    "sends": [
+     27
+    ],
+    "read_before_send": {
+     "one body": true,
+     "closed": true,
+     "size": true
+    },
+    "print_face": {
+     "body": "Body1",
+     "point": [
+      5.727769841888587,
+      0,
+      2.3725199506618506
+     ]
+    },
+    "saved_mesh": []
+   },
+   "files_sent": [
+    {
+     "file": "sent-1-Untitled-0873290254c1fc0d.3mf",
+     "height_mm": 20.0,
+     "bed_contact_mm2": 423.2,
+     "lie": "on its side",
+     "closed": true,
+     "bodies": 1,
+     "size_mm": [
+      24.999999,
+      60.0,
+      20.0
+     ],
+     "unit": "millimeter",
+     "as set": {
+      "time": "14m 41s",
+      "minutes": 14.6833,
+      "total_g": 5.37,
+      "support_g": 0.0,
+      "support_lines": 0,
+      "layers": 100,
+      "top_z": 20.0,
+      "warnings": []
+     },
+     "supports on": {
+      "time": "14m 41s",
+      "minutes": 14.6833,
+      "total_g": 5.37,
+      "support_g": 0.0,
+      "support_lines": 0,
+      "layers": 100,
+      "top_z": 20.0,
+      "warnings": []
+     }
+    }
+   ],
+   "last_lie": "on its side",
+   "live_design_after": {
+    "bodies_bbox": [
+     {
+      "max": [
+       25.0,
+       2.861555798492764e-15,
+       60.0
+      ],
+      "min": [
+       -1.1102230246251565e-15,
+       -20.000000000000014,
+       0.0
+      ]
+     }
+    ],
+    "moved": false
+   },
+   "verdict": "checked and laid on its side"
+  }
+ }
+}

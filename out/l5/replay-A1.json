@@ -1,0 +1,76 @@
+{
+ "run": "A1",
+ "hook_ok": true,
+ "calls_replayed": 4,
+ "rows": [
+  {
+   "seq": 13,
+   "name": "inspect_design",
+   "live_error": false,
+   "replay_error": false,
+   "reply_head": "{\n  \"active_sketch\": null,\n  \"bodies\": [\n    {\n      \"area_mm2\": 4489.980767522152,\n      \"bbox\": {\n        \"max\": [\n          25.0,\n          2.861555798492764e-15,\n          60.0\n        ],\n        "
+  },
+  {
+   "seq": 14,
+   "name": "list_commands",
+   "live_error": false,
+   "replay_error": false,
+   "reply_head": "[\n  {\n    \"disabled_reason\": null,\n    \"enabled\": true,\n    \"icon\": \"mesh_export\",\n    \"id\": \"file.send_to_slicer\",\n    \"label\": \"Send to Slicer\",\n    \"panel\": \"FILES\",\n    \"params\": \"slicer: id or na"
+  },
+  {
+   "seq": 17,
+   "name": "execute",
+   "live_error": false,
+   "replay_error": false,
+   "reply_head": "{\n  \"slicers\": [\n    {\n      \"icon\": \"/usr/share/icons/hicolor/128x128/apps/prusa-slicer.png\",\n      \"id\": \"prusa\",\n      \"name\": \"PrusaSlicer\",\n      \"program\": \"/bin/prusa-slicer\"\n    }\n  ]\n}"
+  },
+  {
+   "seq": 19,
+   "name": "execute",
+   "live_error": false,
+   "replay_error": false,
+   "reply_head": "{\n  \"bytes\": 14547,\n  \"format\": \"3mf\",\n  \"numbered\": false,\n  \"path\": \"/root/.cache/solidcraft/slicer/Untitled-e039b61b02d4b2ce.3mf\",\n  \"slicer\": \"PrusaSlicer\",\n  \"stl_fallback\": false\n}",
+   "sent": "sent-1-Untitled-e039b61b02d4b2ce.3mf",
+   "lie": {
+    "height_mm": 60.0,
+    "bed_contact_mm2": 500.0,
+    "lie": "standing",
+    "closed": true,
+    "bodies": 1,
+    "size_mm": [
+     25.0,
+     20.0,
+     60.0
+    ],
+    "unit": "millimeter"
+   }
+  }
+ ],
+ "live_last": {
+  "height_mm": 60.0,
+  "bed_contact_mm2": 500.0,
+  "lie": "standing",
+  "closed": true,
+  "bodies": 1,
+  "size_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "unit": "millimeter"
+ },
+ "replay_last": {
+  "height_mm": 60.0,
+  "bed_contact_mm2": 500.0,
+  "lie": "standing",
+  "closed": true,
+  "bodies": 1,
+  "size_mm": [
+   25.0,
+   20.0,
+   60.0
+  ],
+  "unit": "millimeter"
+ },
+ "same_file": true
+}

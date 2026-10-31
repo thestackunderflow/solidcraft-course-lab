@@ -250,6 +250,18 @@ the bed, and what a Claude run read before it sent. The Claude requests and scor
 | L5-Q7 | Scored against the pre-registered rules | `lab/l5compare.py` | `out/l5/compare.json` |
 | L5-Q8 | Is it real? | `lab/l5replay.sh RUN`: the hook, the logged calls, no AI; the file sent, checked | `out/l5/replay-*.json` |
 
+## Lesson 5: what it found (31 Oct 2026, SolidCraft 0.28.0, PrusaSlicer 2.9.2, Claude Code 2.1.311, Linux x86_64 in Docker)
+| # | Answer | File |
+|---|---|---|
+| L5-Q1 | Browser: **0.28.0** = GitHub latest (01:20 UTC 31 Oct); curl: the 0.22.0 fallback. | `sitecheck.json` |
+| L5-Q2 | Works as filmed: right-click Body1 holds Save As Mesh and Send to Slicer; the Browser says "1 body"; Properties shows Bounding box 25.00 x 20.00 x 60.00 mm (and no "closed" row); Send to Slicer with Print face at "Select" opens PrusaSlicer with the hook standing (Size 25 / 20 / 60 mm); Slice now: **33m, 5.37 g**, "Detected print stability issues: Low bed adhesion. Consider enabling supports. Also consider enabling brim."; Ctrl+Q; Send to Slicer, the Print face box, the solid green Y ball, the J face: the hook arrives on its side (Size 25 / 60 / 20); Slice now: **15m, 5.37 g**, no warning; Save As Mesh's window: Format STL / 3MF / 3MF with face tags (our container has no system file picker, so Save opens nothing here). | `out/l5/hand/` |
+| L5-Q3 | CLI, the window's presets: standing **33m 7s**, 5.37 g, 300 layers, the warning; on its side **14m 41s**, 5.37 g, 100 layers, none; on its back 20m 16s, 5.41 g, 125 layers, "Floating bridge anchors, Long bridging extrusions". Supports on (build plate only): **0 g** of support in all three and no warning. Bed contact: standing 500 mm², side 423, back 1,128. | `out/l5/slices.json` |
+| L5-Q4 | Save As Mesh to a file writes the hook standing with or without a print face (3MF byte-identical; STL standing both times); Send to Slicer's file lies on the J face (20 tall) or on the back (25 tall) as marked, standing with none. PrusaSlicer's Place on face (F) lays the saved STL on its side (Size 25 / 60 / 20), filmed. The hook as a 0.28.0 design: `out/l5/hook-lesson4.sc`. | `out/l5/saveface.json`, `out/l5/closed/` |
+| L5-Q5 | SolidCraft's Properties has no closed row (`measure` and `inspect_design` say closed: true). PrusaSlicer: no sign by the name for the hook; a copy with 6 triangles removed gets a warning sign, tooltip "Auto-repaired 1 error: 1 facet removed. Remaining errors: 7 open edges"; `--info` manifold = no, open_edges = 7. | `out/l5/closed/` |
+| L5-Q6 | **A1 (not asked):** inspect_design (its reply carries the body, closed: true and the bounding box), list_commands "slic", file.slicers, file.send_to_slicer prusa: sent as drawn, standing; it wrote "Print orientation: I haven't checked this" and suggested laying it on its back or side in the slicer. **B1 (asked):** inspect_design, body_topology, a screenshot, list_commands, file.slicers, body.print_face on the side at y = 0 ("the 423 mm² face"), file.send_to_slicer: on its side. No SolidCraft confirmation window appeared for either send. Cost $0.0724 + $0.1676 (live guard $0.30, not reached). | `out/l5/runs/` |
+| L5-Q7 | A1 **checked, sent standing** (33m 7s, the warning); B1 **checked and laid on its side** (14m 41s, none). Both live designs unchanged. | `out/l5/compare.json` |
+| L5-Q8 | Replays (no AI): A1 4 calls, B1 8 calls; the file each sent has the same lie, closed, bodies and size as the live one. | `out/l5/replay-*.json` |
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker
@@ -298,6 +310,17 @@ for r in A1 B1; do docker run --rm --memory 4g --shm-size 1g --network none -v "
 docker run --rm --network none -v "$PWD:/work" -w /work sc4-app:0.27.1 python3 lab/l4compare.py
 docker run --rm --network none -v "$PWD:/work" -w /work sc4-app:0.27.1 python3 video/stills4.py
 docker run --rm --network none -v "$PWD:/work" -w /work cadcmp-openscad:2021.01 python3 video/draw4.py all
+# lesson 5
+docker build -t sc5-app:0.28.0 --build-arg SC_VER=0.28.0 --build-arg SC_OLD=0.27.1 -f docker/app.Dockerfile docker
+docker build -t sc5-l5:0.28.0 -f docker/l5.Dockerfile docker
+docker run --rm --memory 2g --shm-size 1g -e LESSON=l5 -v "$PWD:/work" sc1-browser:1 bash /work/sitecheck/check.sh
+docker run --rm --memory 5g --shm-size 1g --network none -v "$PWD:/work" sc5-l5:0.28.0 bash /work/lab/l5hand.sh hand
+docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 bash -c ". lab/common.sh; . lab/l5slicerseed.sh; seed_slicer; echo '{}' > ~/.claude.json; solidcraft-cli mcp setup; start_display; python3 lab/l5saveface.py"
+docker run --rm --memory 4g --shm-size 1g --network none -v "$PWD:/work" sc5-l5:0.28.0 bash /work/lab/l5closed.sh
+docker run --rm --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 python3 lab/l5slice.py out/l5/slices.json standing=/work/out/l5/hand/sent-standing.3mf side=/work/out/l5/hand/sent-side.3mf back=/work/out/l5/saveface/send-back.3mf saved-after-face=/work/out/l5/saveface/save-after-face.stl
+for r in A1 B1; do bash claude-run/l5run.sh $r; done                  # paid: uses this PC's Claude sign-in
+docker run --rm --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 python3 lab/l5compare.py A1 B1
+for r in A1 B1; do docker run --rm --memory 5g --shm-size 1g --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 bash -c ". lab/common.sh; . lab/l5slicerseed.sh; seed_slicer; echo '{}' > ~/.claude.json; solidcraft-cli mcp setup; start_display; start_app /tmp/app.log; sleep 10; python3 lab/l5replay.py $r"; done
 ```
 
 ## Licence

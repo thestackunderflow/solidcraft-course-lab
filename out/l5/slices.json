@@ -1,0 +1,161 @@
+{
+ "slicer": "PrusaSlicer-2.9.2+UNKNOWN based on Slic3r (with GUI support)",
+ "presets": [
+  "0.20mm SPEED @MK4S 0.4",
+  "Prusament PLA Blend @MK4S",
+  "Original Prusa MK4S 0.4 nozzle"
+ ],
+ "bundle_config_version": "2.2.7",
+ "as_set": {
+  "support_material": "0",
+  "layer_height": "0.2",
+  "fill_density": "15%",
+  "filament_settings_id": "Prusament PLA Blend @MK4S",
+  "print_settings_id": "0.20mm SPEED @MK4S 0.4",
+  "printer_settings_id": "Original Prusa MK4S 0.4 nozzle"
+ },
+ "files": {
+  "standing": {
+   "file": "out/l5/hand/sent-standing.3mf",
+   "height_mm": 60.0,
+   "bed_contact_mm2": 500.0,
+   "lie": "standing",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "unit": "millimeter",
+   "as set": {
+    "time": "33m 7s",
+    "minutes": 33.1167,
+    "total_g": 5.37,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 300,
+    "top_z": 60.0,
+    "warnings": [
+     "Detected print stability issues: sent-standing Low bed adhesion Consider enabling supports. Also consider enabling brim."
+    ]
+   },
+   "supports on": {
+    "time": "33m 7s",
+    "minutes": 33.1167,
+    "total_g": 5.37,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 300,
+    "top_z": 60.0,
+    "warnings": []
+   }
+  },
+  "side": {
+   "file": "out/l5/hand/sent-side.3mf",
+   "height_mm": 20.0,
+   "bed_contact_mm2": 423.2,
+   "lie": "on its side",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    24.999999,
+    60.0,
+    20.0
+   ],
+   "unit": "millimeter",
+   "as set": {
+    "time": "14m 41s",
+    "minutes": 14.6833,
+    "total_g": 5.37,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 100,
+    "top_z": 20.0,
+    "warnings": []
+   },
+   "supports on": {
+    "time": "14m 41s",
+    "minutes": 14.6833,
+    "total_g": 5.37,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 100,
+    "top_z": 20.0,
+    "warnings": []
+   }
+  },
+  "back": {
+   "file": "out/l5/saveface/send-back.3mf",
+   "height_mm": 25.0,
+   "bed_contact_mm2": 1128.3,
+   "lie": "on its back",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    60.0,
+    20.0,
+    25.0
+   ],
+   "unit": "millimeter",
+   "as set": {
+    "time": "20m 16s",
+    "minutes": 20.2667,
+    "total_g": 5.41,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 125,
+    "top_z": 25.0,
+    "warnings": [
+     "Detected print stability issues: send-back Floating bridge anchors, Long bridging extrusions Consider enabling supports."
+    ]
+   },
+   "supports on": {
+    "time": "20m 16s",
+    "minutes": 20.2667,
+    "total_g": 5.41,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 125,
+    "top_z": 25.0,
+    "warnings": []
+   }
+  },
+  "saved-after-face": {
+   "file": "out/l5/saveface/save-after-face.stl",
+   "height_mm": 60.0,
+   "bed_contact_mm2": 500.0,
+   "lie": "standing",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "unit": null,
+   "as set": {
+    "time": "33m 7s",
+    "minutes": 33.1167,
+    "total_g": 5.37,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 300,
+    "top_z": 60.0,
+    "warnings": [
+     "Detected print stability issues: Low bed adhesion Consider enabling supports. Also consider enabling brim."
+    ]
+   },
+   "supports on": {
+    "time": "33m 7s",
+    "minutes": 33.1167,
+    "total_g": 5.37,
+    "support_g": 0.0,
+    "support_lines": 0,
+    "layers": 300,
+    "top_z": 60.0,
+    "warnings": []
+   }
+  }
+ }
+}

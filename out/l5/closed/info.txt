@@ -1,0 +1,23 @@
+== /work/out/l5/saveface/save-before-face.stl
+size_x = 25.000000
+size_y = 20.000000
+size_z = 60.000000
+number_of_facets = 1484
+manifold = yes
+{"file":"save-before-face.stl","triangles":1484,"volume_mm3":8306.434315,"outward":true,"size_mm":[25.0,20.0,60.0],"min_mm":[0.0,-20.0,0.0],"closed":true,"bodies":1}
+== /work/out/l5/closed/hook-broken.stl
+size_x = 25.000000
+size_y = 20.000000
+size_z = 60.000000
+number_of_facets = 1477
+manifold = no
+open_edges = 7
+facets_removed = 1
+{"file":"hook-broken.stl","triangles":1478,"volume_mm3":8297.31737,"outward":true,"size_mm":[25.0,20.0,60.0],"min_mm":[0.0,-20.0,0.0],"closed":false,"bodies":1}
+== /work/out/l5/saveface/save-after-face.stl
+size_x = 25.000000
+size_y = 20.000000
+size_z = 60.000000
+number_of_facets = 1484
+manifold = yes
+{"file":"save-after-face.stl","triangles":1484,"volume_mm3":8306.434315,"outward":true,"size_mm":[25.0,20.0,60.0],"min_mm":[0.0,-20.0,0.0],"closed":true,"bodies":1}

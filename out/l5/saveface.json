@@ -1,0 +1,153 @@
+{
+ "steps": [
+  {
+   "tag": "save-before-face.stl",
+   "reply": "{\n  \"bytes\": 74284,\n  \"format\": \"StlBinary\",\n  \"path\": \"/work/out/l5/saveface/save-before-face.stl\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "save-before-face.3mf",
+   "reply": "{\n  \"bytes\": 14547,\n  \"format\": \"ThreeMf\",\n  \"path\": \"/work/out/l5/saveface/save-before-face.3mf\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "print face: J",
+   "reply": "{\n  \"body\": \"Body1\",\n  \"face\": \"F2:cap:low:cb08b3de06c6e86a8cf1f9ae705c52c99d60702b4cf0795e3ed4a3f4e12a5483\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "save-after-face.stl",
+   "reply": "{\n  \"bytes\": 74284,\n  \"format\": \"StlBinary\",\n  \"path\": \"/work/out/l5/saveface/save-after-face.stl\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "save-after-face.3mf",
+   "reply": "{\n  \"bytes\": 14547,\n  \"format\": \"ThreeMf\",\n  \"path\": \"/work/out/l5/saveface/save-after-face.3mf\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "send-j-face.3mf",
+   "reply": "{\n  \"bytes\": 14681,\n  \"format\": \"3mf\",\n  \"numbered\": false,\n  \"path\": \"/root/.cache/solidcraft/slicer/hook-lesson4-e671c02e3857c954.3mf\",\n  \"print_faces\": [\n    \"Body1\"\n  ],\n  \"slicer\": \"PrusaSlicer\",\n  \"stl_fallback\": false\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "print face: back",
+   "reply": "{\n  \"body\": \"Body1\",\n  \"face\": \"F2:side:l8\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "send-back.3mf",
+   "reply": "{\n  \"bytes\": 14431,\n  \"format\": \"3mf\",\n  \"numbered\": false,\n  \"path\": \"/root/.cache/solidcraft/slicer/hook-lesson4-e671c02e3857c954.3mf\",\n  \"print_faces\": [\n    \"Body1\"\n  ],\n  \"slicer\": \"PrusaSlicer\",\n  \"stl_fallback\": false\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "print face: cleared",
+   "reply": "{\n  \"body\": \"Body1\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  },
+  {
+   "tag": "send-no-face.3mf",
+   "reply": "{\n  \"bytes\": 14547,\n  \"format\": \"3mf\",\n  \"numbered\": false,\n  \"path\": \"/root/.cache/solidcraft/slicer/hook-lesson4-e671c02e3857c954.3mf\",\n  \"slicer\": \"PrusaSlicer\",\n  \"stl_fallback\": false\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here."
+  }
+ ],
+ "part_ok": true,
+ "save_design": "{\n  \"bytes\": 16637,\n  \"name\": \"hook-lesson4\",\n  \"path\": \"/work/out/l5/hook-lesson4.sc\"\n}\nNote: this is a headless session because the SolidCraft app was not found; the user cannot see this work. Ask them to start SolidCraft. While this session has no features, the next call connects to the app; once it has work, it stays here.",
+ "files": {
+  "save-after-face.3mf": {
+   "sha256": "72d8775f9f563fad",
+   "bytes": 14547,
+   "height_mm": 60.0,
+   "bed_contact_mm2": 500.0,
+   "lie": "standing",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "unit": "millimeter"
+  },
+  "save-after-face.stl": {
+   "sha256": "4f45e7b1dd831b0a",
+   "bytes": 74284,
+   "height_mm": 60.0,
+   "bed_contact_mm2": 500.0,
+   "lie": "standing",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "unit": null
+  },
+  "save-before-face.3mf": {
+   "sha256": "72d8775f9f563fad",
+   "bytes": 14547,
+   "height_mm": 60.0,
+   "bed_contact_mm2": 500.0,
+   "lie": "standing",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "unit": "millimeter"
+  },
+  "save-before-face.stl": {
+   "sha256": "e9212001198807f8",
+   "bytes": 74284,
+   "height_mm": 60.0,
+   "bed_contact_mm2": 500.0,
+   "lie": "standing",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "unit": null
+  },
+  "send-back.3mf": {
+   "sha256": "d4e15dba9706bf60",
+   "bytes": 14431,
+   "height_mm": 25.0,
+   "bed_contact_mm2": 1128.3,
+   "lie": "on its back",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    60.0,
+    20.0,
+    25.0
+   ],
+   "unit": "millimeter"
+  },
+  "send-j-face.3mf": {
+   "sha256": "bde717a2ce1503b1",
+   "bytes": 14681,
+   "height_mm": 20.0,
+   "bed_contact_mm2": 423.2,
+   "lie": "on its side",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    24.999999,
+    60.0,
+    20.0
+   ],
+   "unit": "millimeter"
+  },
+  "send-no-face.3mf": {
+   "sha256": "72d8775f9f563fad",
+   "bytes": 14547,
+   "height_mm": 60.0,
+   "bed_contact_mm2": 500.0,
+   "lie": "standing",
+   "closed": true,
+   "bodies": 1,
+   "size_mm": [
+    25.0,
+    20.0,
+    60.0
+   ],
+   "unit": "millimeter"
+  }
+ }
+}

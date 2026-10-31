@@ -1,0 +1,47 @@
+{"t": 0.503, "event": "recording started: lesson 4's hook"}
+{"t": 4.512, "event": "ways out: right-click Body1"}
+{"t": 7.983, "event": "ways out: hover Save As Mesh"}
+{"t": 10.734, "event": "ways out: hover Send to Slicer"}
+{"t": 16.759, "event": "check1: hover 1 body"}
+{"t": 20.785, "event": "check1: hover Body1"}
+{"t": 23.481, "event": "props: right-click Body1"}
+{"t": 28.101, "event": "props: open"}
+{"t": 30.664, "event": "props: hover Volume"}
+{"t": 34.369, "event": "props: hover Bounding box"}
+{"t": 38.378, "event": "props: close"}
+{"t": 40.880, "event": "send1: right-click Body1"}
+{"t": 45.437, "event": "send1: open Send to Slicer"}
+{"t": 48.368, "event": "send1: hover Print face (empty)"}
+{"t": 51.111, "event": "send1: hover Slicer PrusaSlicer"}
+{"t": 53.687, "event": "send1: Send"}
+{"t": 62.536, "event": "slicer standing: window up"}
+{"t": 62.996, "event": "slicer standing: hover size boxes"}
+{"t": 66.280, "event": "slicer standing: Slice now"}
+{"t": 82.061, "event": "slicer standing: estimate shown"}
+{"t": 85.994, "event": "slicer standing: layer slider top"}
+{"t": 89.763, "event": "slicer standing: open the warning (More)"}
+{"t": 96.273, "event": "slicer: Ctrl+Q"}
+{"t": 107.466, "event": "slicer: closed"}
+{"t": 107.470, "event": "send2: right-click Body1"}
+{"t": 112.017, "event": "send2: open Send to Slicer"}
+{"t": 114.125, "event": "send2: click Print face box"}
+{"t": 117.367, "event": "send2: the green Y ball"}
+{"t": 121.757, "event": "send2: click the J face"}
+{"t": 126.781, "event": "send2: face 1 held"}
+{"t": 129.365, "event": "send2: Send"}
+{"t": 138.207, "event": "slicer side: window up"}
+{"t": 138.507, "event": "slicer side: hover size boxes"}
+{"t": 141.660, "event": "slicer side: Slice now"}
+{"t": 157.318, "event": "slicer side: estimate shown"}
+{"t": 161.245, "event": "slicer side: layer slider top"}
+{"t": 165.011, "event": "slicer: Ctrl+Q"}
+{"t": 176.204, "event": "slicer: closed"}
+{"t": 176.208, "event": "home: the house"}
+{"t": 179.552, "event": "save: right-click Body1"}
+{"t": 184.112, "event": "save: open Save As Mesh"}
+{"t": 186.224, "event": "save: open Format"}
+{"t": 190.999, "event": "save: hover 3MF"}
+{"t": 192.965, "event": "save: pick STL"}
+{"t": 195.637, "event": "save: hover Save"}
+{"t": 198.618, "event": "save: Cancel"}
+{"t": 201.356, "event": "recording stopped"}

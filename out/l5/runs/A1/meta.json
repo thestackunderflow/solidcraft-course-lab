@@ -1,0 +1,1 @@
+{"run": "A1", "wall_s": 103, "model": "claude-sonnet-5-5", "claude_version": "2.1.311", "solidcraft": "0.28.0", "slicer": "PrusaSlicer 2.9.2", "launch": "claude --model claude-sonnet-5-5 (no permission flags: Claude Code's own default mode)"}

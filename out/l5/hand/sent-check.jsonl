@@ -1,0 +1,2 @@
+{"file": "sent-side.3mf", "unit": "millimeter", "objects": 1, "triangles": 1484, "volume_mm3": 8306.434094, "outward": true, "size_mm": [24.999999, 60.0, 20.0], "min_mm": [-6.713506, -21.902195, 0.0], "closed": true, "bodies": 1}
+{"file": "sent-standing.3mf", "unit": "millimeter", "objects": 1, "triangles": 1484, "volume_mm3": 8306.434289, "outward": true, "size_mm": [25.0, 20.0, 60.0], "min_mm": [0.0, -20.0, 0.0], "closed": true, "bodies": 1}

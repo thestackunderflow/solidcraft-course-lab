@@ -1,0 +1,12 @@
+[2026-10-31 02:54:07.046389] [0x00007b46d622b4c0] [error]   UserAccount: Failed to read token - no datafile found.
+[2026-10-31 02:54:07.142350] [0x00007b46057fa6c0] [error]   DBus Connection Error: /usr/bin/dbus-launch terminated abnormally without any error message
+[2026-10-31 02:54:07.142808] [0x00007b46057fa6c0] [error]   Dbus Messages listening terminating.
+[2026-10-31 02:54:07.151994] [0x00007b4604ff96c0] [error]   listen_multicast: DBus Connection Error: /usr/bin/dbus-launch terminated abnormally without any error message
+[2026-10-31 02:54:07.152434] [0x00007b4604ff96c0] [error]   listen_multicast: Dbus Messages listening terminating.
+
+(prusa-slicer:850): Gtk-WARNING **: 02:54:07.202: Could not load a pixbuf from /org/gtk/libgtk/theme/Adwaita/assets/bullet-symbolic.svg.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+(prusa-slicer:850): Gtk-CRITICAL **: 02:54:07.228: gtk_distribute_natural_allocation: assertion 'extra_space >= 0' failed
+02:54:07 AM: Debug: window wxTreeCtrl@0x59092d759d70 ("treeCtrl") lost focus even though it didn't have it
+02:54:07 AM: Debug: window wxTreeCtrl@0x59092d759d70 ("treeCtrl") lost focus even though it didn't have it

@@ -1,0 +1,26 @@
+{"t": 0.506, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.558, "event": "turn 1: typing"}
+{"t": 14.272, "event": "turn 1: Enter"}
+{"t": 18.301, "event": "tool call: inspect_design", "seq": 13}
+{"t": 18.331, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 23.08, "event": "tool call: body_topology", "seq": 15}
+{"t": 23.125, "event": "tool reply: body_topology", "seq": 16, "isError": false}
+{"t": 23.143, "event": "tool call: screenshot", "seq": 17}
+{"t": 23.535, "event": "tool reply: screenshot", "seq": 18, "isError": false}
+{"t": 33.135, "event": "tool call: list_commands", "seq": 19}
+{"t": 33.136, "event": "tool call: list_commands", "seq": 20}
+{"t": 33.141, "event": "tool reply: list_commands", "seq": 21, "isError": false}
+{"t": 33.157, "event": "tool reply: list_commands", "seq": 22, "isError": false}
+{"t": 35.923, "event": "tool call: execute", "seq": 23}
+{"t": 35.933, "event": "tool reply: execute", "seq": 24, "isError": false}
+{"t": 35.946, "event": "tool call: execute", "seq": 25}
+{"t": 35.953, "event": "tool reply: execute", "seq": 26, "isError": false}
+{"t": 37.574, "event": "tool call: execute", "seq": 27}
+{"t": 37.654, "event": "tool reply: execute", "seq": 28, "isError": false}
+{"t": 38.194, "event": "slicer file written", "file": "sent-1-Untitled-0873290254c1fc0d.3mf", "bytes": 14681}
+{"t": 41.85, "event": "turn 1: end-of-turn line seen"}
+{"t": 43.79, "event": "slicer window up (moved beside the terminal)"}
+{"t": 43.855, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 48.879, "event": "after the turn: Ctrl+R (Slice now) in the slicer, by the driver"}
+{"t": 65.312, "event": "slicer estimate held"}
+{"t": 71.830, "event": "recording stopped"}
