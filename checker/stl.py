@@ -3,7 +3,8 @@
     python3 -m checker.stl FILE.stl     prints the JSON
 
 Volume: the divergence theorem (sum of signed tetrahedra from the origin); positive when the triangles face outward.
-Closed: every edge is used by exactly two triangles, once in each direction (vertices matched to 1e-6 mm)."""
+Closed: every edge is used by exactly two triangles, once in each direction (vertices matched to 1e-6 mm).
+Bodies: groups of triangles joined through shared vertices (lesson 5: two separate parts in one file count 2)."""
 import json
 import struct
 import sys
@@ -25,23 +26,45 @@ def read(path):
     return np.array(vs, dtype=np.float64).reshape(-1, 3, 3)
 
 
-def check(path):
-    t = read(path)
+def components(idx, n_vertices):
+    """Number of groups of triangles that share vertices (union-find over each triangle's three vertex ids)."""
+    parent = list(range(n_vertices))
+
+    def find(a):
+        while parent[a] != a:
+            parent[a] = parent[parent[a]]
+            a = parent[a]
+        return a
+    for i, j, k in idx:
+        for a, b in ((i, j), (j, k)):
+            ra, rb = find(int(a)), find(int(b))
+            if ra != rb:
+                parent[ra] = rb
+    used = {int(v) for tri in idx for v in tri}
+    return len({find(v) for v in used})
+
+
+def mesh_check(t):
+    """The checks on an array of triangles (N, 3, 3) in mm."""
     a, b, c = t[:, 0], t[:, 1], t[:, 2]
     signed = float(np.einsum('ij,ij->i', a, np.cross(b, c)).sum() / 6.0)
     lo, hi = t.reshape(-1, 3).min(0), t.reshape(-1, 3).max(0)
     key = np.round(t.reshape(-1, 3) / 1e-6).astype(np.int64)
-    _, idx = np.unique(key, axis=0, return_inverse=True)
+    uniq, idx = np.unique(key, axis=0, return_inverse=True)
     idx = idx.reshape(-1, 3)
     directed = Counter()
     for i, j, k in idx:
         for e in ((i, j), (j, k), (k, i)):
             directed[e] += 1
     closed = all(n == 1 and directed.get((e[1], e[0]), 0) == 1 for e, n in directed.items())
-    return {'file': path.replace('\\', '/').split('/')[-1], 'triangles': int(len(t)),
+    return {'triangles': int(len(t)),
             'volume_mm3': round(abs(signed), 6), 'outward': signed > 0,
             'size_mm': [round(float(x), 6) for x in (hi - lo)], 'min_mm': [round(float(x), 6) for x in lo],
-            'closed': bool(closed)}
+            'closed': bool(closed), 'bodies': components(idx, len(uniq))}
+
+
+def check(path):
+    return dict({'file': path.replace('\\', '/').split('/')[-1]}, **mesh_check(read(path)))
 
 
 if __name__ == '__main__':

@@ -225,6 +225,31 @@ Lab notes: Claude Code redraws its scrollback, so a count of end-of-turn lines c
 script edited while it runs re-reads at a shifted offset: run a copy. The 2880x1800 masters stay in
 `out/scratch/l4-masters`; each folder has a 1440x900 copy.
 
+## Lesson 5: what the lab must show (written before the recorded runs)
+"SolidCraft to 3D Printer: Export STL/3MF and Check It in the Slicer | SolidCraft + Claude Course 5". **Pin: SolidCraft
+0.28.0** (stable on GitHub 2026-10-31 01:20 UTC; the download page in a real browser serves it; it writes design format
+45 and added the print face). **Slicer: PrusaSlicer 2.9.2** (Debian 13 package `2.9.2+dfsg-1`), set up once with its own
+Configuration Wizard (Original Prusa MK4S, 0.4 mm nozzle; `slicer/gui/PrusaSlicer.ini`, one line changed by hand: the
+filament). Images `sc5-app:0.28.0` (`docker/app.Dockerfile`, `SC_VER=0.28.0 SC_OLD=0.27.1`) and `sc5-l5:0.28.0`
+(`docker/l5.Dockerfile`: Debian 13, PrusaSlicer, SolidCraft copied from sc5-app, Claude Code 2.1.311).
+
+The part: lesson 4's finished hook (`lab/l5part.py`, 8,306.62 mm³, 25 x 20 x 60). Our checker now counts bodies in an
+STL and reads 3MF files (`checker/m3mf.py`: unit, size in mm, closed, bodies); `slicer/` holds the preset resolver and the
+G-code reader (from the overhang lab); `lab/l5score.py` names how a sent part lies from its height and the area touching
+the bed, and what a Claude run read before it sent. The Claude requests and scoring rules are in `out/l5/prereg.json`
+(committed) before the first run.
+
+| # | Question | How it is measured | Answer file |
+|---|---|---|---|
+| L5-Q1 | Which version does the download page offer? | `sitecheck/check.sh` with `LESSON=l5` | `out/l5/sitecheck.json` |
+| L5-Q2 | Does the by-hand path work as filmed? | `lab/l5hand.sh`: the real windows, xdotool only; files sent copied after each send | `out/l5/hand/` |
+| L5-Q3 | The slicer's numbers for each file | `lab/l5slice.py`: the PrusaSlicer CLI, the same presets resolved from its bundle, supports off and on | `out/l5/slices.json` |
+| L5-Q4 | Does Save As Mesh to a file keep the print face? Place on face | `lab/l5saveface.py` (plug, no AI); a short filmed take | `out/l5/saveface.json` |
+| L5-Q5 | How does "closed" show? | PrusaSlicer on the hook and on a copy with 6 triangles removed (filmed); `--info`; our checker | `out/l5/closed/` |
+| L5-Q6 | Claude not asked (A1) / asked in one sentence (B1) | `claude-run/l5run.sh` + `lab/l5claude.sh` + `lab/l5drive.py` | `out/l5/runs/*/` |
+| L5-Q7 | Scored against the pre-registered rules | `lab/l5compare.py` | `out/l5/compare.json` |
+| L5-Q8 | Is it real? | `lab/l5replay.sh RUN`: the hook, the logged calls, no AI; the file sent, checked | `out/l5/replay-*.json` |
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker

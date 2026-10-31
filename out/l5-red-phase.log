@@ -1,0 +1,8 @@
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_l5_export.py:12: in <module>
+    from checker import stl, m3mf  # noqa: E402
+E   ImportError: cannot import name 'm3mf' from 'checker' (/work/tests/../checker/__init__.py)
+=========================== short test summary info ============================
+ERROR tests/test_l5_export.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.37s

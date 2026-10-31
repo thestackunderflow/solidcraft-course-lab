@@ -1,0 +1,56 @@
+{
+ "lesson": 5,
+ "written": "2026-10-31, before any Claude run (PLAN-L5 rev 2 §3, DECISIONS-L5)",
+ "setup": {
+  "claude_code": "2.1.311",
+  "model": "claude-sonnet-5-5",
+  "launch": "claude --model claude-sonnet-5-5 (Claude Code's own default mode)",
+  "solidcraft": "0.28.0",
+  "slicer": "PrusaSlicer 2.9.2 (Debian 2.9.2+dfsg-1), settings from its wizard: Original Prusa MK4S 0.4 nozzle, 0.20mm SPEED, Prusament PLA Blend, Supports None (slicer/gui/PrusaSlicer.ini)",
+  "design": "lesson 4's finished hook built by script before the recording (lab/l5part.py, 8,306.62 mm3, 25 x 20 x 60)",
+  "fresh": "container, home, Claude session and SolidCraft window per run; no CLAUDE.md; auto memory off; the plug added the documented way (solidcraft-cli mcp setup) and wrapped in the logging proxy"
+ },
+ "runs": {
+  "order": [
+   "A1",
+   "B1"
+  ],
+  "max_runs": 2,
+  "A1": {
+   "message": "In SolidCraft, the open design is a wall hook I want to 3D print. Send it to the slicer."
+  },
+  "B1": {
+   "message": "Before you send it, check that it's ready to print: one body, closed, the size in millimetres, and pick the flat face it should lie on. In SolidCraft, the open design is a wall hook I want to 3D print. Send it to the slicer.",
+   "added_sentence": "Before you send it, check that it's ready to print: one body, closed, the size in millimetres, and pick the flat face it should lie on."
+  }
+ },
+ "budget": {
+  "ledger_mark": "# --- GO 31 Oct 2026 L5",
+  "start_only_if_spent_at_most": 0.3,
+  "live_guard_kill_at": 0.3,
+  "episode_stop": 0.9
+ },
+ "driver": {
+  "question": "if the turn made no execute or batch call, send 'Your choice.' once",
+  "approvals": "Claude Code permission prompts get the prompt's own Yes; a SolidCraft confirmation window, if one appears, is allowed with Enter (screenshot kept)",
+  "files": "every new version of the file in SolidCraft's slicer folder is copied as it appears (sent-N-*)",
+  "after_turn": "the driver presses Ctrl+R (Slice now) in the slicer window, no AI, screenshot kept"
+ },
+ "scoring": {
+  "a_checks_read_before_first_send": "from tool results only (not Claude's prose): one body = a result containing \"body_count\" or a \"bodies\" list; closed = a result containing \"closed\"; size = a result containing \"bbox\" or a size field. Claude's own words about each are quoted apart.",
+  "b_lie_of_last_file_sent": "l5score.lie(height, bed contact area): standing 60 mm / 500 mm2; on its side 20 / 423; on its back 25 / 1128 (height within 0.05 mm, area within 6%); else 'other'. The body.print_face point is quoted.",
+  "c_sent": "file.send_to_slicer, or file.save_mesh with a slicer; which slicer; every send listed; the last one is scored",
+  "d_slicer_estimate": "each file sent sliced by the PrusaSlicer 2.9.2 CLI with the same presets resolved from its bundle (supports off as the GUI default, and on): time, grams, support, warning text; plus the filmed window after Slice now",
+  "e_replay": "the run's logged tools/call requests repeated with no AI in a fresh SolidCraft (the hook first); the file sent must have the same lie, closed and bodies as the live one",
+  "verdicts": [
+   "checked and laid on its side = (a) all three + (b) on its side",
+   "checked, on its back (the slicer warns) = (a) all three + (b) on its back",
+   "laid on its side, not checked = (b) on its side, (a) not all three",
+   "checked, sent standing = (a) all three + (b) standing",
+   "sent as drawn = (b) standing, (a) not all three",
+   "moved or rotated the design = the live design's bounding box after the turn differs from 25 x 20 x 60 at the origin (read.json)",
+   "not sent = no send call"
+  ]
+ },
+ "branches": "PLAN-L5 rev 2 §3.1"
+}
