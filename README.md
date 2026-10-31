@@ -262,6 +262,29 @@ the bed, and what a Claude run read before it sent. The Claude requests and scor
 | L5-Q7 | A1 **checked, sent standing** (33m 7s, the warning); B1 **checked and laid on its side** (14m 41s, none). Both live designs unchanged. | `out/l5/compare.json` |
 | L5-Q8 | Replays (no AI): A1 4 calls, B1 8 calls; the file each sent has the same lie, closed, bodies and size as the live one. | `out/l5/replay-*.json` |
 
+## Lesson 6: what the lab must show (written before the recorded runs)
+"Edit a 3D Model with Claude AI Without Breaking It (SolidCraft) | SolidCraft + Claude Course 6". **Pin: SolidCraft
+0.28.0** (still GitHub's latest stable and the download page's offer at 04:51 UTC 31 Oct, `out/l6/sitecheck.json`),
+**PrusaSlicer 2.9.2** (lesson 5's set-up), Claude Code 2.1.311; the lesson 5 images `sc5-app:0.28.0`, `sc5-l5:0.28.0`.
+
+The part: lesson 5's finished hook (`lab/l6part.py`: lesson 4's hook + the print face on the J side; 8,306.62 mm³,
+25 x 20 x 60). The change: the opening (the gap between the back plate and the front lip) from 15 to 30 mm. The
+must-stay-true list and the pass rule (`lab/l6score.py`, tests first in `tests/test_l6_edit.py`): the opening 30.00 and
+M1 one closed body, M2 the plate 60 tall and 20 wide, M3 every wall 5, M4 the lip 10 tall, M5 both holes 4.5 centred
+15 and 45 below the top, M6 the two round top edges R 2, M7 sent to the slicer it lies on its side (20 tall). Our
+no-AI reader `lab/l6read.py` reads each line: lesson 4's reader (measure, body_topology, parameters.list), a mesh copy
+measured with rays (`checker/l6geom.py`), and a Send to Slicer by script. Requests, order, budget rule and scoring:
+`out/l6/prereg.json` (committed before the first run).
+
+| # | Question | How it is measured | Answer file |
+|---|---|---|---|
+| L6-Q1 | Which version does the download page offer? | `sitecheck/check.sh` with `LESSON=l6` | `out/l6/sitecheck.json` |
+| L6-Q2 | Does the by-hand path work as filmed, and what does hook_depth 30 give? | `lab/l6hand.sh`: the real windows, xdotool only (Measure, Parameters 25 → 30 → 40, the list by Measure and Properties, Send to Slicer, Slice now); then our read, and hook_depth 30 and 40 again over the plug, read each time | `out/l6/hand/` |
+| L6-Q3 | The slicer's estimate for the changed hook on its side | `lab/l5slice.py` on the file our script sent (the window's presets) + the filmed Slice now | `out/l6/slices.json` |
+| L6-Q4 | Claude with the list (B1-B3) and without it (A1) | `claude-run/l6run.sh` + `lab/l6claude.sh` + `lab/l6drive.py` | `out/l6/runs/*/` |
+| L6-Q5 | Scored against the pre-registered rules | `lab/l6compare.py` | `out/l6/compare.json` |
+| L6-Q6 | Is it real? | `lab/l6replay.py RUN`: lesson 5's hook, the logged calls, no AI; the same read | `out/l6/replay-*.json` |
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker
