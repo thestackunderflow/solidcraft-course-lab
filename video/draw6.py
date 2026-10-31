@@ -118,15 +118,9 @@ def card_table():
     cols = [('run 2', 'B2', 'B2-after.png'), ('run 3', 'B3', 'B3-after.png'), ('run 1 (replay)', 'B1', 'B2-after.png')]
     rows = ['opening 30'] + [x[3:].split(',')[0] for x in LIST]
     for k in range(3):
-        base = st(cols[k][2]).resize((W, int(W * 1800 / 2880)))
-        im = Image.new('RGB', (W, H), BG)
-        im.paste(base.filter(ImageFilter.GaussianBlur(2)), (0, (H - base.height) // 2))
-        ov = Image.new('RGBA', (W, H), (255, 255, 255, 0))
-        od = ImageDraw.Draw(ov)
-        od.rounded_rectangle((40, 60, W - 40, H - 60), radius=30, fill=(255, 255, 255, 228))
-        im.paste(ov, (0, 0), ov)
+        im, d = canvas()
         d = ImageDraw.Draw(im)
-        text(d, (90, 90), 'the pass rule', 52, GREY)
+        text(d, (90, 90), 'the pass rule, run by run', 52, GREY)
         for c in range(3):
             colr = INK if c <= k else (200, 205, 215)
             text(d, (980 + c * 200, 90), cols[c][0].replace(' (replay)', ''), 46, colr, anchor='ma')
@@ -143,21 +137,26 @@ def card_table():
         save(im, f'card-table-{k + 1}.png')
 
 
+def card_run1():
+    """Run 1 in plain words (its recording was lost): what it did, why it stopped, how it was scored."""
+    im, d = canvas()
+    text(d, (W / 2, 60), 'Run 1 (its recording was lost)', 64, anchor='ma')
+    rows = [('it moved the sketch\'s 4 corner points,', INK), ('then set hook depth to 40', INK),
+            ('our cost guard (a spending limit per run)', GREY), ('stopped it as its turn ended', GREY),
+            ('scored on a replay: a rule written', GREEN), ('before run 2', GREEN)]
+    for i, (t, c) in enumerate(rows):
+        text(d, (110, 250 + i * 130 + (i // 2) * 40), t, 58, c)
+    save(im, 'card-run1.png')
+
+
 def card_replay():
     """The replay table (out/l6/replay-*.json) over run 3's real slicer frame, labelled as run 3, live."""
     reps = {r: json.load(open(os.path.join(L6, f'replay-{r}.json'))) for r in ('B1', 'B2', 'B3')}
-    base = st('B3-after.png').resize((W, int(W * 1800 / 2880)))
-    im = Image.new('RGB', (W, H), BG)
-    im.paste(base, (0, (H - base.height) // 2))
-    d = ImageDraw.Draw(im)
-    chip(d, (40, (H - base.height) // 2 + 20), 'run 3, live', 44, bg=GREY)
-    ov = Image.new('RGBA', (W, H), (255, 255, 255, 0))
-    ImageDraw.Draw(ov).rounded_rectangle((60, 300, W - 60, 1020), radius=30, fill=(255, 255, 255, 250))
-    im.paste(ov, (0, 0), ov)
-    d = ImageDraw.Draw(im)
-    text(d, (100, 330), 'replay: no AI, a fresh hook', 54, INK)
-    hdr = ('run', 'steps', 'opening', 'result')
-    xs = (100, 420, 720, 1060)
+    im, d = canvas()
+    text(d, (100, 200), 'The replay: a script, no AI,', 60, INK)
+    text(d, (100, 290), "repeats each run's steps on a fresh hook", 54, INK)
+    hdr = ('run', 'steps repeated', 'opening', 'result')
+    xs = (100, 330, 780, 1100)
     for x, hh in zip(xs, hdr):
         text(d, (x, 440), hh, 46, GREY)
     for i, (r, name) in enumerate((('B2', 'run 2'), ('B3', 'run 3'), ('B1', 'run 1'))):
@@ -230,6 +229,6 @@ def hooks():
 if __name__ == '__main__':
     what = sys.argv[1] if len(sys.argv) > 1 else 'all'
     if what in ('cards', 'all'):
-        card_hair(); card_list(); card_depth(); card_key(); card_table(); card_replay()
+        card_hair(); card_list(); card_depth(); card_key(); card_table(); card_run1(); card_replay()
     if what in ('hooks', 'all'):
         hooks()
