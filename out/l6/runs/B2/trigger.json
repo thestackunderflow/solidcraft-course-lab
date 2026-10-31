@@ -1,0 +1,12 @@
+{
+ "sizes": {
+  "plate_height": "60",
+  "width": "20",
+  "thickness": "5",
+  "hook_depth": "40",
+  "lip_height": "10",
+  "hole_d": "4.5"
+ },
+ "volume_mm3": 9806.621426645475,
+ "unchanged": false
+}

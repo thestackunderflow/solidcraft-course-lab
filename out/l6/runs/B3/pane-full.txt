@@ -1,0 +1,36 @@
+  Requirement: Lip 10 mm tall
+  Result: 10.0 (measured).
+  ────────────────────────────────────────
+  Requirement: Screw holes
+  Result: Both are 4.5 mm in diameter, with
+  centres at y = −10 (centred across the
+  width) and z = 15 and z = 45. That is 45
+  and 15 mm below the top.
+  ────────────────────────────────────────
+  Requirement: Two rounded top edges
+  Result: Both are still radius 2 mm, 90°
+  arcs,
+  along the full 20 mm width.
+  ────────────────────────────────────────
+  Requirement: Print face on the J side
+  Result: The profile is still sketched on the
+
+  XZ plane and extruded along the width. The
+  J-shaped side face is flat on y = 0, so it
+  still goes to the slicer lying on its side.
+
+  The screenshot shows the part as an L shape
+  in this view, with the lip at the right-hand
+  end.
+
+  The design is still unsaved ("Untitled",
+  with unsaved changes). Tell me where to save
+  it, or if you want an export for the
+  slicer.
+
+✻ Baked for 29s · done 5:29 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

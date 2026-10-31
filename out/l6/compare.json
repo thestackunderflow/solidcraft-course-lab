@@ -1,0 +1,739 @@
+{
+ "runs": [
+  {
+   "run": "B1",
+   "passed": true,
+   "broken": [],
+   "lines": [
+    {
+     "id": "C",
+     "line": "the opening is 30 mm",
+     "rule": "30.00 \u00b1 0.05 mm, a level ray across the gap (lab/l6geom)",
+     "ok": true,
+     "measured": {
+      "opening_mm": 30.0
+     }
+    },
+    {
+     "id": "M1",
+     "line": "one closed body",
+     "rule": "measure: body_count 1 and closed; the exported mesh closed, 1 body",
+     "ok": true,
+     "measured": {
+      "body_count": 1,
+      "closed": true,
+      "mesh": {
+       "closed": true,
+       "bodies": 1,
+       "size_mm": [
+        40.0,
+        20.0,
+        60.0
+       ]
+      }
+     }
+    },
+    {
+     "id": "M2",
+     "line": "the plate 60 mm tall, 20 mm wide",
+     "rule": "bounding box Z 60.00, Y 20.00 (\u00b1 0.05)",
+     "ok": true,
+     "measured": {
+      "bbox_mm": [
+       40.0,
+       20.0,
+       60.0
+      ]
+     }
+    },
+    {
+     "id": "M3",
+     "line": "every wall 5 mm thick",
+     "rule": "plate, lip and base each 5.00 \u00b1 0.05 (rays)",
+     "ok": true,
+     "measured": {
+      "plate_mm": 5.0,
+      "lip_mm": 5.0,
+      "base_mm": 5.0
+     }
+    },
+    {
+     "id": "M4",
+     "line": "the lip 10 mm tall",
+     "rule": "a ray down through the lip: top 10.00 \u00b1 0.05 above the bottom",
+     "ok": true,
+     "measured": {
+      "lip_height_mm": 10.0
+     }
+    },
+    {
+     "id": "M5",
+     "line": "both screw holes 4.5 mm, centred, 15 and 45 mm below the top",
+     "rule": "exactly 2 bores, \u00d8 4.50 \u00b1 0.01, centred (\u00b1 0.01), 15 and 45 \u00b1 0.05 below the top",
+     "ok": true,
+     "measured": {
+      "holes": [
+       {
+        "diameter": 4.5,
+        "centred": true,
+        "from_sides": [
+         10.0,
+         10.0
+        ]
+       },
+       {
+        "diameter": 4.5,
+        "centred": true,
+        "from_sides": [
+         10.0,
+         10.0
+        ]
+       }
+      ],
+      "below_top_mm": [
+       15.0,
+       45.0
+      ]
+     }
+    },
+    {
+     "id": "M6",
+     "line": "the two rounded top edges",
+     "rule": "2 round faces at the top, R 2.00 \u00b1 0.01",
+     "ok": true,
+     "measured": {
+      "top_edges_rounded": 2,
+      "radii": [
+       2.0,
+       2.0
+      ]
+     }
+    },
+    {
+     "id": "M7",
+     "line": "it still goes to the slicer lying on its side",
+     "rule": "a send by our script: the file 20.00 \u00b1 0.05 mm tall",
+     "ok": true,
+     "measured": {
+      "sent_height_mm": 20.0,
+      "sent_size_mm": [
+       40.0,
+       60.0,
+       20.0
+      ]
+     }
+    }
+   ],
+   "also": {
+    "volume_mm3": 9806.621426645475,
+    "hole_params": {
+     "hole_d_parameter": true,
+     "user_parameters": [
+      "hole_d",
+      "hook_depth",
+      "lip_height",
+      "plate_height",
+      "thickness",
+      "width"
+     ],
+     "diameters": {
+      "Hole1": "hole_d",
+      "Hole2": "hole_d"
+     },
+     "distances_from_width": {
+      "Hole1": true,
+      "Hole2": true
+     }
+    }
+   },
+   "turned": false,
+   "sizes_after": {
+    "plate_height": "60",
+    "width": "20",
+    "thickness": "5",
+    "hook_depth": "40",
+    "lip_height": "10",
+    "hole_d": "4.5"
+   },
+   "calls": 12,
+   "tools": [
+    "inspect_design",
+    "list_commands",
+    "list_commands",
+    "body_topology",
+    "execute timeline.inspect",
+    "execute timeline.inspect",
+    "execute timeline.inspect",
+    "execute timeline.inspect",
+    "batch",
+    "inspect_design",
+    "body_topology",
+    "measure"
+   ],
+   "changes": [
+    {
+     "seq": 21,
+     "call": "execute timeline.inspect",
+     "args": {
+      "feature": "Sketch1"
+     },
+     "error": false
+    },
+    {
+     "seq": 23,
+     "call": "execute timeline.inspect",
+     "args": {
+      "feature": "Hook"
+     },
+     "error": false
+    },
+    {
+     "seq": 25,
+     "call": "execute timeline.inspect",
+     "args": {
+      "feature": "Hole1"
+     },
+     "error": false
+    },
+    {
+     "seq": 27,
+     "call": "execute timeline.inspect",
+     "args": {
+      "feature": "Fillet1"
+     },
+     "error": false
+    },
+    {
+     "seq": 29,
+     "call": "batch",
+     "args": {
+      "commands": [
+       {
+        "command": "sketch.edit",
+        "params": {
+         "sketch": "Sketch1"
+        }
+       },
+       {
+        "command": "sketch.constraint.fix",
+        "params": {
+         "entities": [
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+         ],
+         "fixed": false
+        }
+       },
+       {
+        "command": "sketch.move_point",
+        "params": {
+         "point": "p1",
+         "to": [
+          40,
+          0
+         ]
+        }
+       },
+       {
+        "command": "sketch.move_point",
+        "params": {
+         "point": "p2",
+         "to": [
+          40,
+          10
+         ]
+        }
+       },
+       {
+        "command": "sketch.move_point",
+        "params": {
+         "point": "p3",
+         "to": [
+          35,
+          10
+         ]
+        }
+       },
+       {
+        "command": "sketch.move_point",
+        "params": {
+         "point": "p4",
+         "to": [
+          35,
+          5
+         ]
+        }
+       },
+       {
+        "command": "sketch.constraint.fix",
+        "params": {
+         "entities": [
+          "p1",
+          "p2",
+          "p3",
+          "p4"
+         ],
+         "fixed": true
+        }
+       },
+       {
+        "command": "sketch.finish",
+        "params": {}
+       },
+       {
+        "command": "set_parameter",
+        "params": {
+         "name": "hook_depth",
+         "value": 40
+        }
+       }
+      ]
+     },
+     "error": false
+    }
+   ],
+   "last_reply": null,
+   "trigger": null,
+   "sent_by_script": {
+    "height_mm": 20.0,
+    "bed_contact_mm2": 498.2,
+    "lie": "other: 20.0 mm tall, 498 mm\u00b2 on the bed",
+    "closed": true,
+    "bodies": 1,
+    "size_mm": [
+     40.0,
+     60.0,
+     20.0
+    ],
+    "unit": "millimeter"
+   },
+   "cost": {
+    "usd": 0.25,
+    "kind": "killed-floor"
+   },
+   "replay_passed": true,
+   "replay_same": null
+  },
+  {
+   "run": "B2",
+   "passed": true,
+   "broken": [],
+   "lines": [
+    {
+     "id": "C",
+     "line": "the opening is 30 mm",
+     "rule": "30.00 \u00b1 0.05 mm, a level ray across the gap (lab/l6geom)",
+     "ok": true,
+     "measured": {
+      "opening_mm": 30.0
+     }
+    },
+    {
+     "id": "M1",
+     "line": "one closed body",
+     "rule": "measure: body_count 1 and closed; the exported mesh closed, 1 body",
+     "ok": true,
+     "measured": {
+      "body_count": 1,
+      "closed": true,
+      "mesh": {
+       "closed": true,
+       "bodies": 1,
+       "size_mm": [
+        40.0,
+        20.0,
+        60.0
+       ]
+      }
+     }
+    },
+    {
+     "id": "M2",
+     "line": "the plate 60 mm tall, 20 mm wide",
+     "rule": "bounding box Z 60.00, Y 20.00 (\u00b1 0.05)",
+     "ok": true,
+     "measured": {
+      "bbox_mm": [
+       40.0,
+       20.0,
+       60.0
+      ]
+     }
+    },
+    {
+     "id": "M3",
+     "line": "every wall 5 mm thick",
+     "rule": "plate, lip and base each 5.00 \u00b1 0.05 (rays)",
+     "ok": true,
+     "measured": {
+      "plate_mm": 5.0,
+      "lip_mm": 5.0,
+      "base_mm": 5.0
+     }
+    },
+    {
+     "id": "M4",
+     "line": "the lip 10 mm tall",
+     "rule": "a ray down through the lip: top 10.00 \u00b1 0.05 above the bottom",
+     "ok": true,
+     "measured": {
+      "lip_height_mm": 10.0
+     }
+    },
+    {
+     "id": "M5",
+     "line": "both screw holes 4.5 mm, centred, 15 and 45 mm below the top",
+     "rule": "exactly 2 bores, \u00d8 4.50 \u00b1 0.01, centred (\u00b1 0.01), 15 and 45 \u00b1 0.05 below the top",
+     "ok": true,
+     "measured": {
+      "holes": [
+       {
+        "diameter": 4.5,
+        "centred": true,
+        "from_sides": [
+         10.0,
+         10.0
+        ]
+       },
+       {
+        "diameter": 4.5,
+        "centred": true,
+        "from_sides": [
+         10.0,
+         10.0
+        ]
+       }
+      ],
+      "below_top_mm": [
+       15.0,
+       45.0
+      ]
+     }
+    },
+    {
+     "id": "M6",
+     "line": "the two rounded top edges",
+     "rule": "2 round faces at the top, R 2.00 \u00b1 0.01",
+     "ok": true,
+     "measured": {
+      "top_edges_rounded": 2,
+      "radii": [
+       2.0,
+       2.0
+      ]
+     }
+    },
+    {
+     "id": "M7",
+     "line": "it still goes to the slicer lying on its side",
+     "rule": "a send by our script: the file 20.00 \u00b1 0.05 mm tall",
+     "ok": true,
+     "measured": {
+      "sent_height_mm": 20.0,
+      "sent_size_mm": [
+       40.0,
+       60.0,
+       20.0
+      ]
+     }
+    }
+   ],
+   "also": {
+    "volume_mm3": 9806.621426645475,
+    "hole_params": {
+     "hole_d_parameter": true,
+     "user_parameters": [
+      "hole_d",
+      "hook_depth",
+      "lip_height",
+      "plate_height",
+      "thickness",
+      "width"
+     ],
+     "diameters": {
+      "Hole1": "hole_d",
+      "Hole2": "hole_d"
+     },
+     "distances_from_width": {
+      "Hole1": true,
+      "Hole2": true
+     }
+    }
+   },
+   "turned": false,
+   "sizes_after": {
+    "plate_height": "60",
+    "width": "20",
+    "thickness": "5",
+    "hook_depth": "40",
+    "lip_height": "10",
+    "hole_d": "4.5"
+   },
+   "calls": 4,
+   "tools": [
+    "inspect_design",
+    "set_parameter",
+    "inspect_design",
+    "body_topology"
+   ],
+   "changes": [
+    {
+     "seq": 15,
+     "call": "set_parameter",
+     "args": {
+      "name": "hook_depth",
+      "value": 40
+     },
+     "error": false
+    }
+   ],
+   "last_reply": "The opening is now 30 mm wide. I changed one parameter, `hook_depth`, from 25 to 40 mm. The sketch, holes and fillet all followed it, with no feature errors.\n\nI measured everything on the rebuilt `Body1`:\n\n| Requirement | Measured | Result |\n|---|---|---|\n| Opening (plate inner face to lip inner face) | x = 5 \u2192 x = 35, so **30.0 mm** (was 15) | \u2705 |\n| One closed body | 1 body, 1 shell, `closed: true` | \u2705 |\n| Plate height | z = 0 \u2192 60, so **60 mm** | \u2705 |\n| Width | y = \u221220 \u2192 0, so **20 mm** | \u2705 |\n| Wall thickness | Plate x 0\u21925, base z 0\u21925, lip x 35\u219240, each **5 mm** | \u2705 |\n| Lip height | Lip top at z = 10, so **10 mm** | \u2705 |\n| Hole diameter | Both bores r = 2.25, so **\u00d84.5 mm** | \u2705 |\n| Hole position across the width | Axis at y = \u221210, the centre of 0 to \u221220 | \u2705 |\n| Hole depth | Axes at z = 45 and z = 15, so **15 and 45 mm** below the top | \u2705 |\n| Rounded top edges | Two r = 2 mm cylindrical blends along the top of the plate (z = 58 to 60). They are unchanged. | \u2705 |\n| Print face | The J profile is still in the XZ plane. The two big flat J faces (normals +Y and \u2212Y, about 498 mm\u00b2 each) are still the sides. Laying either one on the bed is the same as before. | \u2705 |\n\nThe volume matches a hand calculation: the J profile with the fillets, extruded 20 mm and minus the two bores, gives 9,806.6 mm\u00b3. The bounding box is now 40 \u00d7 20 \u00d7 60 mm. The base grew from 25 to 40 mm deep, which is what the wider gap requires.\n\nThe design is still unsaved (\"Untitled\", no file path). I haven't saved it. Tell me where to put it and I'll save it.",
+   "trigger": {
+    "sizes": {
+     "plate_height": "60",
+     "width": "20",
+     "thickness": "5",
+     "hook_depth": "40",
+     "lip_height": "10",
+     "hole_d": "4.5"
+    },
+    "volume_mm3": 9806.621426645475,
+    "unchanged": false
+   },
+   "sent_by_script": {
+    "height_mm": 20.0,
+    "bed_contact_mm2": 498.2,
+    "lie": "other: 20.0 mm tall, 498 mm\u00b2 on the bed",
+    "closed": true,
+    "bodies": 1,
+    "size_mm": [
+     40.0,
+     60.0,
+     20.0
+    ],
+    "unit": "millimeter"
+   },
+   "cost": {
+    "usd": 0.1422,
+    "kind": "logged"
+   },
+   "replay_passed": true,
+   "replay_same": true
+  },
+  {
+   "run": "B3",
+   "passed": true,
+   "broken": [],
+   "lines": [
+    {
+     "id": "C",
+     "line": "the opening is 30 mm",
+     "rule": "30.00 \u00b1 0.05 mm, a level ray across the gap (lab/l6geom)",
+     "ok": true,
+     "measured": {
+      "opening_mm": 30.0
+     }
+    },
+    {
+     "id": "M1",
+     "line": "one closed body",
+     "rule": "measure: body_count 1 and closed; the exported mesh closed, 1 body",
+     "ok": true,
+     "measured": {
+      "body_count": 1,
+      "closed": true,
+      "mesh": {
+       "closed": true,
+       "bodies": 1,
+       "size_mm": [
+        40.0,
+        20.0,
+        60.0
+       ]
+      }
+     }
+    },
+    {
+     "id": "M2",
+     "line": "the plate 60 mm tall, 20 mm wide",
+     "rule": "bounding box Z 60.00, Y 20.00 (\u00b1 0.05)",
+     "ok": true,
+     "measured": {
+      "bbox_mm": [
+       40.0,
+       20.0,
+       60.0
+      ]
+     }
+    },
+    {
+     "id": "M3",
+     "line": "every wall 5 mm thick",
+     "rule": "plate, lip and base each 5.00 \u00b1 0.05 (rays)",
+     "ok": true,
+     "measured": {
+      "plate_mm": 5.0,
+      "lip_mm": 5.0,
+      "base_mm": 5.0
+     }
+    },
+    {
+     "id": "M4",
+     "line": "the lip 10 mm tall",
+     "rule": "a ray down through the lip: top 10.00 \u00b1 0.05 above the bottom",
+     "ok": true,
+     "measured": {
+      "lip_height_mm": 10.0
+     }
+    },
+    {
+     "id": "M5",
+     "line": "both screw holes 4.5 mm, centred, 15 and 45 mm below the top",
+     "rule": "exactly 2 bores, \u00d8 4.50 \u00b1 0.01, centred (\u00b1 0.01), 15 and 45 \u00b1 0.05 below the top",
+     "ok": true,
+     "measured": {
+      "holes": [
+       {
+        "diameter": 4.5,
+        "centred": true,
+        "from_sides": [
+         10.0,
+         10.0
+        ]
+       },
+       {
+        "diameter": 4.5,
+        "centred": true,
+        "from_sides": [
+         10.0,
+         10.0
+        ]
+       }
+      ],
+      "below_top_mm": [
+       15.0,
+       45.0
+      ]
+     }
+    },
+    {
+     "id": "M6",
+     "line": "the two rounded top edges",
+     "rule": "2 round faces at the top, R 2.00 \u00b1 0.01",
+     "ok": true,
+     "measured": {
+      "top_edges_rounded": 2,
+      "radii": [
+       2.0,
+       2.0
+      ]
+     }
+    },
+    {
+     "id": "M7",
+     "line": "it still goes to the slicer lying on its side",
+     "rule": "a send by our script: the file 20.00 \u00b1 0.05 mm tall",
+     "ok": true,
+     "measured": {
+      "sent_height_mm": 20.0,
+      "sent_size_mm": [
+       40.0,
+       60.0,
+       20.0
+      ]
+     }
+    }
+   ],
+   "also": {
+    "volume_mm3": 9806.621426645475,
+    "hole_params": {
+     "hole_d_parameter": true,
+     "user_parameters": [
+      "hole_d",
+      "hook_depth",
+      "lip_height",
+      "plate_height",
+      "thickness",
+      "width"
+     ],
+     "diameters": {
+      "Hole1": "hole_d",
+      "Hole2": "hole_d"
+     },
+     "distances_from_width": {
+      "Hole1": true,
+      "Hole2": true
+     }
+    }
+   },
+   "turned": false,
+   "sizes_after": {
+    "plate_height": "60",
+    "width": "20",
+    "thickness": "5",
+    "hook_depth": "40",
+    "lip_height": "10",
+    "hole_d": "4.5"
+   },
+   "calls": 14,
+   "tools": [
+    "inspect_design",
+    "set_parameter",
+    "inspect_design",
+    "body_topology",
+    "measure",
+    "measure",
+    "measure",
+    "screenshot",
+    "measure",
+    "measure",
+    "measure",
+    "measure",
+    "measure",
+    "measure"
+   ],
+   "changes": [
+    {
+     "seq": 15,
+     "call": "set_parameter",
+     "args": {
+      "name": "hook_depth",
+      "value": 40
+     },
+     "error": false
+    }
+   ],
+   "last_reply": "The 30 mm opening is in, and every constraint you listed still checks out. I only changed `hook_depth` from 25 to 40 mm, which moves the front lip out 15 mm. The sketch, holes and fillets all rebuilt without errors.\n\n**The change**\n\n| | Before | After |\n|---|---|---|\n| Opening (back plate inner face to lip inner face) | 15 mm | **30.0 mm** (measured between the two faces) |\n\n**The checks, after the change**\n\n| Requirement | Result |\n|---|---|\n| One closed body | 1 body, closed, 1 shell. Volume is 9806.6 mm\u00b3, which matches a hand calculation from the profile, holes and fillets. |\n| Plate 60 mm tall | Z runs from 0 to 60. |\n| Plate 20 mm wide | Y runs from \u221220 to 0, so 20 mm. |\n| Walls 5 mm thick | Back plate 5.0 (measured). The base is 5 and the lip wall 5 in the sketch (z 0\u20135, x 35\u201340). |\n| Lip 10 mm tall | 10.0 (measured). |\n| Screw holes | Both are 4.5 mm in diameter, with centres at y = \u221210 (centred across the width) and z = 15 and z = 45. That is 45 and 15 mm below the top. |\n| Two rounded top edges | Both are still radius 2 mm, 90\u00b0 arcs, along the full 20 mm width. |\n| Print face on the J side | The profile is still sketched on the XZ plane and extruded along the width. The J-shaped side face is flat on y = 0, so it still goes to the slicer lying on its side. |\n\nThe screenshot shows the part as an L shape in this view, with the lip at the right-hand end.\n\nThe design is still unsaved (\"Untitled\", with unsaved changes). Tell me where to save it, or if you want an export for the slicer.",
+   "trigger": null,
+   "sent_by_script": {
+    "height_mm": 20.0,
+    "bed_contact_mm2": 498.2,
+    "lie": "other: 20.0 mm tall, 498 mm\u00b2 on the bed",
+    "closed": true,
+    "bodies": 1,
+    "size_mm": [
+     40.0,
+     60.0,
+     20.0
+    ],
+    "unit": "millimeter"
+   },
+   "cost": {
+    "usd": 0.2046,
+    "kind": "logged"
+   },
+   "replay_passed": true,
+   "replay_same": true
+  }
+ ],
+ "with_list": {
+  "runs": 3,
+  "passed": 3
+ },
+ "without_list": {
+  "runs": 0,
+  "passed": 0
+ }
+}

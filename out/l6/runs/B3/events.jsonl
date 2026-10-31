@@ -1,0 +1,41 @@
+{"t": 0.503, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.552, "event": "turn 1: typing"}
+{"t": 28.666, "event": "turn 1: Enter"}
+{"t": 33.823, "event": "tool call: inspect_design", "seq": 13}
+{"t": 33.854, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 38.792, "event": "tool call: set_parameter", "seq": 15}
+{"t": 39.018, "event": "tool reply: set_parameter", "seq": 16, "isError": false}
+{"t": 41.035, "event": "tool call: inspect_design", "seq": 17}
+{"t": 41.037, "event": "tool call: body_topology", "seq": 18}
+{"t": 41.112, "event": "tool reply: inspect_design", "seq": 19, "isError": false}
+{"t": 41.154, "event": "tool reply: body_topology", "seq": 20, "isError": false}
+{"t": 47.123, "event": "tool call: measure", "seq": 21}
+{"t": 47.123, "event": "tool call: measure", "seq": 22}
+{"t": 47.124, "event": "tool call: measure", "seq": 23}
+{"t": 47.124, "event": "tool reply: measure", "seq": 24, "isError": true}
+{"t": 47.138, "event": "tool reply: measure", "seq": 25, "isError": true}
+{"t": 47.153, "event": "tool reply: measure", "seq": 26, "isError": true}
+{"t": 47.162, "event": "tool call: screenshot", "seq": 27}
+{"t": 47.526, "event": "tool reply: screenshot", "seq": 28, "isError": false}
+{"t": 52.245, "event": "tool call: measure", "seq": 29}
+{"t": 52.245, "event": "tool call: measure", "seq": 30}
+{"t": 52.246, "event": "tool call: measure", "seq": 31}
+{"t": 52.246, "event": "tool call: measure", "seq": 32}
+{"t": 52.247, "event": "tool call: measure", "seq": 33}
+{"t": 52.247, "event": "tool call: measure", "seq": 34}
+{"t": 52.249, "event": "tool reply: measure", "seq": 35, "isError": false}
+{"t": 52.266, "event": "tool reply: measure", "seq": 36, "isError": false}
+{"t": 52.283, "event": "tool reply: measure", "seq": 37, "isError": false}
+{"t": 52.299, "event": "tool reply: measure", "seq": 38, "isError": false}
+{"t": 52.317, "event": "tool reply: measure", "seq": 39, "isError": false}
+{"t": 52.335, "event": "tool reply: measure", "seq": 40, "isError": false}
+{"t": 58.789, "event": "turn 1: end-of-turn line seen"}
+{"t": 60.791, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 63.8, "event": "turn 1: stopped by our cost guard (Esc at the soft limit); no fixed answer"}
+{"t": 66.805, "event": "after the turn: our read (no AI) starts: measure, a mesh copy, then a send to PrusaSlicer by the script"}
+{"t": 68.955, "event": "slicer file written", "file": "sent-1-Untitled-0873290254c1fc0d.3mf", "bytes": 14672}
+{"t": 71.235, "event": "our read done", "result": "passed True C=ok M1=ok M2=ok M3=ok M4=ok M5=ok M6=ok M7=ok opening 30.0 sent 20.0"}
+{"t": 73.478, "event": "slicer window up (moved beside the terminal)"}
+{"t": 76.778, "event": "our send: the slicer window up; Ctrl+R (Slice now), by the driver"}
+{"t": 93.079, "event": "slicer estimate held"}
+{"t": 99.600, "event": "recording stopped"}

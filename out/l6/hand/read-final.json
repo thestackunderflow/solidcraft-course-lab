@@ -1,0 +1,310 @@
+{
+ "summary": {
+  "volume_mm3": 9806.621426645475,
+  "bbox_min": [
+   -0.0,
+   -20.0,
+   0.0
+  ],
+  "bbox_max": [
+   40.0,
+   0.0,
+   60.0
+  ],
+  "bbox_mm": [
+   40.0,
+   20.0,
+   60.0
+  ],
+  "holes": [
+   {
+    "y": -10.0,
+    "z": 45.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     10.0,
+     10.0
+    ],
+    "centred": true
+   },
+   {
+    "y": -10.0,
+    "z": 15.0,
+    "diameter": 4.5,
+    "faces": 2,
+    "from_sides": [
+     10.0,
+     10.0
+    ],
+    "centred": true
+   }
+  ],
+  "fillets": [
+   {
+    "radius": 2.0,
+    "x": 2.0,
+    "z": 58.0,
+    "name": "F5:blend:F2:side:l7|F2:side:l8"
+   },
+   {
+    "radius": 2.0,
+    "x": 3.0,
+    "z": 58.0,
+    "name": "F5:blend:F2:side:l6|F2:side:l7"
+   }
+  ],
+  "top_edges_rounded": 2,
+  "hole_params": {
+   "hole_d_parameter": true,
+   "user_parameters": [
+    "hole_d",
+    "hook_depth",
+    "lip_height",
+    "plate_height",
+    "thickness",
+    "width"
+   ],
+   "diameters": {
+    "Hole1": "hole_d",
+    "Hole2": "hole_d"
+   },
+   "distances_from_width": {
+    "Hole1": true,
+    "Hole2": true
+   }
+  }
+ },
+ "body_count": 1,
+ "closed": true,
+ "parameters": [
+  {
+   "name": "plate_height",
+   "expression": "60",
+   "value": 60.0
+  },
+  {
+   "name": "width",
+   "expression": "20",
+   "value": 20.0
+  },
+  {
+   "name": "thickness",
+   "expression": "5",
+   "value": 5.0
+  },
+  {
+   "name": "hook_depth",
+   "expression": "40",
+   "value": 40.0
+  },
+  {
+   "name": "lip_height",
+   "expression": "10",
+   "value": 10.0
+  },
+  {
+   "name": "hole_d",
+   "expression": "4.5",
+   "value": 4.5
+  }
+ ],
+ "headless": false,
+ "save_mesh": "{\n  \"bytes\": 74284,\n  \"format\": \"StlBinary\",\n  \"path\": \"/tmp/solidcraft-mcp-12118-2ed3ef9b/l6read-body.stl\"\n}",
+ "mesh": {
+  "closed": true,
+  "bodies": 1,
+  "size_mm": [
+   40.0,
+   20.0,
+   60.0
+  ]
+ },
+ "geom": {
+  "bbox_min": [
+   0.0,
+   -20.0,
+   0.0
+  ],
+  "bbox_max": [
+   40.0,
+   0.0,
+   60.0
+  ],
+  "opening_mm": 30.0,
+  "plate_mm": 5.0,
+  "lip_mm": 5.0,
+  "base_mm": 5.0,
+  "lip_height_mm": 10.0,
+  "ray_z_mm": 7.3887,
+  "across": [
+   [
+    0.0,
+    5.0
+   ],
+   [
+    35.0,
+    40.0
+   ]
+  ]
+ },
+ "sent": {
+  "height_mm": 20.0,
+  "bed_contact_mm2": 498.2,
+  "lie": "other: 20.0 mm tall, 498 mm\u00b2 on the bed",
+  "closed": true,
+  "bodies": 1,
+  "size_mm": [
+   40.0,
+   60.0,
+   20.0
+  ],
+  "unit": "millimeter"
+ },
+ "send_reply": "{\n  \"bytes\": 14672,\n  \"format\": \"3mf\",\n  \"numbered\": false,\n  \"path\": \"/root/.cache/solidcraft/slicer/Untitled-fe3e24f4503d4a9b.3mf\",\n  \"print_faces\": [\n    \"Body1\"\n  ],\n  \"slicer\": \"PrusaSlicer\",\n  \"stl_fallback\": false\n}",
+ "score": {
+  "passed": true,
+  "lines": [
+   {
+    "id": "C",
+    "line": "the opening is 30 mm",
+    "rule": "30.00 \u00b1 0.05 mm, a level ray across the gap (lab/l6geom)",
+    "ok": true,
+    "measured": {
+     "opening_mm": 30.0
+    }
+   },
+   {
+    "id": "M1",
+    "line": "one closed body",
+    "rule": "measure: body_count 1 and closed; the exported mesh closed, 1 body",
+    "ok": true,
+    "measured": {
+     "body_count": 1,
+     "closed": true,
+     "mesh": {
+      "closed": true,
+      "bodies": 1,
+      "size_mm": [
+       40.0,
+       20.0,
+       60.0
+      ]
+     }
+    }
+   },
+   {
+    "id": "M2",
+    "line": "the plate 60 mm tall, 20 mm wide",
+    "rule": "bounding box Z 60.00, Y 20.00 (\u00b1 0.05)",
+    "ok": true,
+    "measured": {
+     "bbox_mm": [
+      40.0,
+      20.0,
+      60.0
+     ]
+    }
+   },
+   {
+    "id": "M3",
+    "line": "every wall 5 mm thick",
+    "rule": "plate, lip and base each 5.00 \u00b1 0.05 (rays)",
+    "ok": true,
+    "measured": {
+     "plate_mm": 5.0,
+     "lip_mm": 5.0,
+     "base_mm": 5.0
+    }
+   },
+   {
+    "id": "M4",
+    "line": "the lip 10 mm tall",
+    "rule": "a ray down through the lip: top 10.00 \u00b1 0.05 above the bottom",
+    "ok": true,
+    "measured": {
+     "lip_height_mm": 10.0
+    }
+   },
+   {
+    "id": "M5",
+    "line": "both screw holes 4.5 mm, centred, 15 and 45 mm below the top",
+    "rule": "exactly 2 bores, \u00d8 4.50 \u00b1 0.01, centred (\u00b1 0.01), 15 and 45 \u00b1 0.05 below the top",
+    "ok": true,
+    "measured": {
+     "holes": [
+      {
+       "diameter": 4.5,
+       "centred": true,
+       "from_sides": [
+        10.0,
+        10.0
+       ]
+      },
+      {
+       "diameter": 4.5,
+       "centred": true,
+       "from_sides": [
+        10.0,
+        10.0
+       ]
+      }
+     ],
+     "below_top_mm": [
+      15.0,
+      45.0
+     ]
+    }
+   },
+   {
+    "id": "M6",
+    "line": "the two rounded top edges",
+    "rule": "2 round faces at the top, R 2.00 \u00b1 0.01",
+    "ok": true,
+    "measured": {
+     "top_edges_rounded": 2,
+     "radii": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   {
+    "id": "M7",
+    "line": "it still goes to the slicer lying on its side",
+    "rule": "a send by our script: the file 20.00 \u00b1 0.05 mm tall",
+    "ok": true,
+    "measured": {
+     "sent_height_mm": 20.0,
+     "sent_size_mm": [
+      40.0,
+      60.0,
+      20.0
+     ]
+    }
+   }
+  ],
+  "also": {
+   "volume_mm3": 9806.621426645475,
+   "hole_params": {
+    "hole_d_parameter": true,
+    "user_parameters": [
+     "hole_d",
+     "hook_depth",
+     "lip_height",
+     "plate_height",
+     "thickness",
+     "width"
+    ],
+    "diameters": {
+     "Hole1": "hole_d",
+     "Hole2": "hole_d"
+    },
+    "distances_from_width": {
+     "Hole1": true,
+     "Hole2": true
+    }
+   }
+  }
+ }
+}

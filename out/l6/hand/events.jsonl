@@ -1,0 +1,59 @@
+{"t": 0.502, "event": "recording started: lesson 5's hook"}
+{"t": 5.360, "event": "side: the green Y ball"}
+{"t": 9.660, "event": "side: hover the opening"}
+{"t": 14.580, "event": "side: back to 3D (the house)"}
+{"t": 20.218, "event": "measure: open"}
+{"t": 22.606, "event": "measure 25: the plate's front face"}
+{"t": 25.455, "event": "measure 25: the lip's top face"}
+{"t": 29.141, "event": "measure 25: Distance held"}
+{"t": 33.333, "event": "measure: close"}
+{"t": 38.745, "event": "view: slide left"}
+{"t": 41.142, "event": "params 30: open Parameters"}
+{"t": 44.869, "event": "params 30: click hook_depth's value"}
+{"t": 47.953, "event": "params 30: type 30"}
+{"t": 49.073, "event": "params 30: Enter"}
+{"t": 52.956, "event": "params 30: OK"}
+{"t": 56.141, "event": "view: Fit"}
+{"t": 62.499, "event": "measure: open"}
+{"t": 64.969, "event": "measure 30: the plate's front face"}
+{"t": 67.881, "event": "measure 30: the lip's top face"}
+{"t": 72.022, "event": "measure 30: Distance held"}
+{"t": 76.748, "event": "measure: close"}
+{"t": 82.325, "event": "view: slide left"}
+{"t": 84.792, "event": "params 40: open Parameters"}
+{"t": 88.656, "event": "params 40: click hook_depth's value"}
+{"t": 91.770, "event": "params 40: type 40"}
+{"t": 92.894, "event": "params 40: Enter"}
+{"t": 96.624, "event": "params 40: OK"}
+{"t": 99.607, "event": "view: Fit"}
+{"t": 104.761, "event": "measure: open"}
+{"t": 107.174, "event": "measure 40: the plate's front face"}
+{"t": 110.045, "event": "measure 40: the lip's top face"}
+{"t": 113.871, "event": "measure 40: Distance held"}
+{"t": 119.861, "event": "list: the hole"}
+{"t": 123.609, "event": "list: hole size held"}
+{"t": 127.274, "event": "list: the side edge"}
+{"t": 131.007, "event": "list: centre to the side held"}
+{"t": 136.930, "event": "list: the round top edge"}
+{"t": 140.641, "event": "list: radius held"}
+{"t": 146.095, "event": "list: the lip's front edge (its height)"}
+{"t": 149.808, "event": "list: lip height held"}
+{"t": 155.268, "event": "list: the lip's top edge (its thickness)"}
+{"t": 158.991, "event": "list: lip wall held"}
+{"t": 162.606, "event": "measure: close"}
+{"t": 167.132, "event": "list: hover 1 body"}
+{"t": 170.951, "event": "props: right-click Body1"}
+{"t": 175.576, "event": "props: open"}
+{"t": 178.112, "event": "props: hover Bounding box"}
+{"t": 182.225, "event": "props: close"}
+{"t": 184.864, "event": "send: right-click Body1"}
+{"t": 189.568, "event": "send: open Send to Slicer"}
+{"t": 192.781, "event": "send: hover Print face (filled)"}
+{"t": 196.611, "event": "send: Send"}
+{"t": 206.086, "event": "slicer: window up"}
+{"t": 206.480, "event": "slicer: hover size boxes"}
+{"t": 210.299, "event": "slicer: hover the name (no sign)"}
+{"t": 213.401, "event": "slicer: Slice now"}
+{"t": 229.137, "event": "slicer: estimate shown"}
+{"t": 233.059, "event": "slicer: layer slider top"}
+{"t": 236.852, "event": "recording stopped"}

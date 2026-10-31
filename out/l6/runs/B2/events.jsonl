@@ -1,0 +1,20 @@
+{"t": 0.502, "event": "recording started: Claude Code (left), SolidCraft with a new design (right)"}
+{"t": 2.553, "event": "turn 1: typing"}
+{"t": 28.672, "event": "turn 1: Enter"}
+{"t": 34.82, "event": "tool call: inspect_design", "seq": 13}
+{"t": 34.853, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 39.931, "event": "tool call: set_parameter", "seq": 15}
+{"t": 40.167, "event": "tool reply: set_parameter", "seq": 16, "isError": false}
+{"t": 42.915, "event": "tool call: inspect_design", "seq": 17}
+{"t": 42.916, "event": "tool call: body_topology", "seq": 18}
+{"t": 42.977, "event": "tool reply: inspect_design", "seq": 19, "isError": false}
+{"t": 43.019, "event": "tool reply: body_topology", "seq": 20, "isError": false}
+{"t": 54.281, "event": "turn 1: end-of-turn line seen"}
+{"t": 56.282, "event": "turn 1: reply done", "approvals": 0, "mouse_nudges": 0, "timed_out": false}
+{"t": 62.333, "event": "after the turn: our read (no AI) starts: measure, a mesh copy, then a send to PrusaSlicer by the script"}
+{"t": 64.281, "event": "slicer file written", "file": "sent-1-Untitled-0873290254c1fc0d.3mf", "bytes": 14672}
+{"t": 66.764, "event": "our read done", "result": "passed True C=ok M1=ok M2=ok M3=ok M4=ok M5=ok M6=ok M7=ok opening 30.0 sent 20.0"}
+{"t": 69.324, "event": "slicer window up (moved beside the terminal)"}
+{"t": 72.824, "event": "our send: the slicer window up; Ctrl+R (Slice now), by the driver"}
+{"t": 89.143, "event": "slicer estimate held"}
+{"t": 95.657, "event": "recording stopped"}

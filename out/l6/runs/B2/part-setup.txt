@@ -1,0 +1,1 @@
+part 8306.621426645483 slicers {'slicers': [{'icon': '/usr/share/icons/hicolor/128x128/apps/prusa-slicer.png', 'id': 'prusa', 'name': 'PrusaSlicer', 'program': '/bin/prusa-slicer'}]}

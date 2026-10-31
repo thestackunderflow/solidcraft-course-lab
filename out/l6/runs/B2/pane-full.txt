@@ -1,0 +1,36 @@
+  Requirement: Hole depth
+  Measured: Axes at z = 45 and z = 15, so 15
+  and 45 mm below the top
+  Result: ✅
+  ────────────────────────────────────────
+  Requirement: Rounded top edges
+  Measured: Two r = 2 mm cylindrical blends
+  along the top of the plate (z = 58 to 60).
+  They are unchanged.
+  Result: ✅
+  ────────────────────────────────────────
+  Requirement: Print face
+  Measured: The J profile is still in the XZ
+  plane. The two big flat J faces (normals +Y
+   and −Y, about 498 mm² each) are still the
+  sides. Laying either one on the bed is the
+  same as before.
+  Result: ✅
+
+  The volume matches a hand calculation: the J
+  profile with the fillets, extruded 20 mm
+  and minus the two bores, gives 9,806.6 mm³.
+  The bounding box is now 40 × 20 × 60 mm. The
+  base grew from 25 to 40 mm deep, which is
+  what the wider gap requires.
+
+  The design is still unsaved ("Untitled", no
+  file path). I haven't saved it. Tell me
+  where to put it and I'll save it.
+
+✻ Baked for 25s · done 5:27 AM
+
+──────────────────────────────────────────────
+❯ 
+──────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

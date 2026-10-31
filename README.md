@@ -285,6 +285,16 @@ measured with rays (`checker/l6geom.py`), and a Send to Slicer by script. Reques
 | L6-Q5 | Scored against the pre-registered rules | `lab/l6compare.py` | `out/l6/compare.json` |
 | L6-Q6 | Is it real? | `lab/l6replay.py RUN`: lesson 5's hook, the logged calls, no AI; the same read | `out/l6/replay-*.json` |
 
+## Lesson 6: what it found (31 Oct 2026, SolidCraft 0.28.0, PrusaSlicer 2.9.2, Claude Code 2.1.311, Linux x86_64 in Docker)
+| # | Answer | File |
+|---|---|---|
+| L6-Q1 | Browser: **0.28.0** = GitHub latest (01:20 UTC 31 Oct); curl: the 0.22.0 fallback. | `sitecheck.json` |
+| L6-Q2 | Works as filmed: Measure (plate's front face to the lip's top face) **15.00 mm**; Parameters hook_depth 25 → **30**: Measure **20.00 mm** (only the opening line fails); 30 → **40**: **30.00 mm**; hole Ø 4.50, centre to the plate's side edge 10.00; top round edge R 2.00; the lip's front edge 10.00, its top edge 5.00; the Browser "1 body"; Properties 40.00 × 20.00 × 60.00 mm, volume 9806.62 mm³; Send to Slicer's Print face row still "Body1 · face 1"; PrusaSlicer opens it on its side, Size 40 / 60 / 20. Our read after the take: every line holds. | `out/l6/hand/` |
+| L6-Q3 | CLI, the window's presets, on its side: **16m 33s**, **6.34 g**, 100 layers, no warning; supports on: 0 g. (The window's Slice now shows 17m.) | `out/l6/slices.json` |
+| L6-Q4 | **B1** (with the list): read the timeline, then a batch that edited the sketch's points and set hook_depth 40; killed by the cost guard mid-check (estimate $0.2676, over $0.25; recording lost). **B2**: inspect_design, set_parameter hook_depth 40 (its words: "To get 30 mm, hook_depth has to go from 25 to 40"), inspect_design, body_topology; its reply: a table with a number for every line ("Print face": the J faces still the sides, no check of the print face itself), $0.1422. **B3**: the same change, then measure calls (3 refused for a missing point, then 6 with points); a number for every line, the print face reasoned from the sketch plane; our guard pressed Esc as its reply finished, $0.2046. A1 not run: the budget rule (ledger $0.5968 after B3). | `out/l6/runs/` |
+| L6-Q5 | With the list: **3 of 3 passed** (opening 30.0, every must-stay-true line held; B1 scored on its replay, per the amendment). No run fell for hook_depth 30. | `out/l6/compare.json` |
+| L6-Q6 | Replays (no AI): B1 12 calls → passes (opening 30.0, volume 9,806.62); B2 4 calls and B3 14 calls → the same verdict as live. | `out/l6/replay-*.json` |
+
 ## Run it
 ```bash
 docker build -t sc1-app:0.24.1 -f docker/app.Dockerfile docker
@@ -344,6 +354,12 @@ docker run --rm --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 python3 la
 for r in A1 B1; do bash claude-run/l5run.sh $r; done                  # paid: uses this PC's Claude sign-in
 docker run --rm --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 python3 lab/l5compare.py A1 B1
 for r in A1 B1; do docker run --rm --memory 5g --shm-size 1g --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 bash -c ". lab/common.sh; . lab/l5slicerseed.sh; seed_slicer; echo '{}' > ~/.claude.json; solidcraft-cli mcp setup; start_display; start_app /tmp/app.log; sleep 10; python3 lab/l5replay.py $r"; done
+# lesson 6 (same images as lesson 5)
+docker run --rm --memory 2g --shm-size 1g -e LESSON=l6 -v "$PWD:/work" sc1-browser:1 bash /work/sitecheck/check.sh
+docker run --rm --memory 5g --shm-size 1g --network none -v "$PWD:/work" sc5-l5:0.28.0 bash /work/lab/l6hand.sh hand
+for r in B1 B2 B3; do bash claude-run/l6run.sh $r; done             # paid: uses this PC's Claude sign-in
+for r in B1 B2 B3; do docker run --rm --memory 5g --shm-size 1g --network none -v "$PWD:/work" -w /work sc5-l5:0.28.0 bash -c ". lab/common.sh; . lab/l5slicerseed.sh; seed_slicer; echo '{}' > ~/.claude.json; solidcraft-cli mcp setup; start_display; start_app /tmp/app.log; sleep 10; python3 lab/l6replay.py $r"; done
+docker run --rm --network none -v "$PWD:/work" -v "$PWD/..:/ledger:ro" -w /work sc5-l5:0.28.0 python3 lab/l6compare.py B1 B2 B3
 ```
 
 ## Licence

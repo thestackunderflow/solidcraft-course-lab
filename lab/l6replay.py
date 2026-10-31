@@ -38,9 +38,15 @@ def main(run):
     time.sleep(1.0)
     rd = l6read.read(c, os.path.join(o, 'read'), send=True)
     c.close()
-    live = json.load(open(os.path.join(d, 'read.json')))
-    lv, rp = live['score'], rd['score']
-    same = lv.get('passed') == rp.get('passed') and [x['ok'] for x in lv['lines']] == [x['ok'] for x in rp['lines']]
+    rp = rd['score']
+    live_p = os.path.join(d, 'read.json')
+    if os.path.exists(live_p):
+        lv = json.load(open(live_p))['score']
+        same = lv.get('passed') == rp.get('passed') and [x['ok'] for x in lv['lines']] == [x['ok'] for x in rp['lines']]
+    else:      # prereg amendment: a run killed by the guard is scored on this replay; its read.json is written from it
+        lv, same = {'passed': None}, None
+        rd['scored_on'] = 'replay: the run was killed by our cost guard; its live design was lost'
+        json.dump(rd, open(live_p, 'w'), indent=1)
     res = {'run': run, 'hook_ok': b.get('ok'), 'calls_replayed': len(rows), 'rows': rows, 'read': rd,
            'passed': rp.get('passed'), 'live_passed': lv.get('passed'), 'same_verdict': same,
            'opening_mm': (rd.get('geom') or {}).get('opening_mm'), 'volume_mm3': rd['summary'].get('volume_mm3')}
