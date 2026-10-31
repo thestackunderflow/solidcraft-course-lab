@@ -75,7 +75,7 @@ def plate_front(d, cx, top, width_mm, holes_y, s=14, col=None, label_sides=True,
 def card_formula():
     for k in range(3):
         im, d = canvas()
-        text(d, (W / 2, 50), 'The hole, 10 from the left edge', 60, anchor='ma')
+        text(d, (W / 2, 50), ('The hole, 10 from the left edge', 'Make it 30 wide', 'Write it as width / 2')[k], 60, anchor='ma')
         if k == 0:
             plate_front(d, W / 2, 290, 20, 10, col=GREEN)
             chip(d, (W / 2, 1110), 'width 20: the middle is 10', 52, anchor='m', bg=GREEN)
@@ -84,9 +84,9 @@ def card_formula():
             chip(d, (W / 2, 1110), 'width 30: still 10 · off the middle', 52, anchor='m', bg=RED)
         else:
             text(d, (W / 2, 50), '', 10)
-            plate_front(d, W / 2, 290, 30, 15, col=GREEN)
-            chip(d, (W / 2, 1040), 'width / 2 = 15', 64, anchor='m', bg=GREEN)
-            text(d, (W / 2, 1120), '/ = divide: half the width', 50, GREY, anchor='ma')
+            plate_front(d, W / 2, 230, 30, 15, s=12, col=GREEN)
+            chip(d, (W / 2, 1030), 'width / 2 = 15', 60, anchor='m', bg=GREEN)
+            text(d, (W / 2, 1140), '/ = divide: half the width', 44, GREY, anchor='ma')
         save(im, f'card-formula-{k + 1}.png')
 
 
@@ -109,19 +109,19 @@ def card_clearance():
         else:
             d.rectangle((cx - pw / 2, top, cx + pw / 2, top + 900), fill=(214, 222, 236), outline=INK, width=5)
         sc = 4 * s
-        d.rectangle((cx - 420, top + 450 - sc / 2, cx + 380, top + 450 + sc / 2), fill=(150, 156, 168), outline=INK, width=5)
+        d.rectangle((cx - 420, top + 450 - sc / 2, cx + 260, top + 450 + sc / 2), fill=(150, 156, 168), outline=INK, width=5)
         d.rectangle((cx - 470, top + 450 - 4 * s, cx - 420, top + 450 + 4 * s), fill=(150, 156, 168), outline=INK, width=5)
-        chip(d, (1090, 300), 'M4 screw: 4 mm', 54, anchor='l', bg=INK)
+        chip(d, (900, 300), 'M4 screw: 4 mm', 50, anchor='l', bg=INK)
         if k >= 1:
-            chip(d, (1090, 420), 'hole: 4.5 mm', 54, anchor='l', bg=BLUE)
+            chip(d, (900, 420), 'hole: 4.5 mm', 50, anchor='l', bg=BLUE)
             for yy in (top + 450 - 4.5 * s / 2 + 6, top + 450 + sc / 2 + 6):
                 d.rectangle((cx - pw / 2 + 6, yy, cx + pw / 2 - 6, yy + 0.25 * s - 12), fill=AMBER)
-            chip(d, (1090, 540), 'the gap: clearance', 54, anchor='l', bg=AMBER)
+            chip(d, (900, 540), 'gap: clearance', 50, anchor='l', bg=AMBER)
         if k == 2:
-            text(d, (1000, 700), "SolidCraft's M4 setting", 52, INK)
+            text(d, (900, 700), "SolidCraft's M4 setting", 46, INK)
             for i, (fit_, lab) in enumerate((('close', 'close'), ('normal', 'normal'), ('loose', 'loose'))):
                 col = GREEN if fit_ == 'normal' else GREY
-                chip(d, (1000, 790 + i * 110), f'{lab}  {sizes[fit_]:g} mm', 56, anchor='l', bg=col)
+                chip(d, (900, 790 + i * 110), f'{lab}  {sizes[fit_]:g} mm', 50, anchor='l', bg=col)
         save(im, f'card-clearance-{k + 1}.png')
 
 
@@ -158,16 +158,22 @@ def card_expected():
     hole = math.pi * 2.25 ** 2 * 5
     fil = 2 ** 2 * (1 - math.pi / 4) * 20
     lines = [('The hook: 8,500 mm³', INK),
-             (f'a hole = a cylinder 4.5 wide, 5 deep: {hole:.1f} · two: {2 * round(hole, 1):.1f}', BLUE),
-             (f'a rounded edge = a corner sliver, 20 long: {fil:.1f} · two: {2 * round(fil, 1):.1f}', AMBER),
+             (f'a hole: 4.5 wide, 5 deep = {hole:.1f} · x2 = {2 * round(hole, 1):.1f}', BLUE),
+             (f'a rounded edge: sliver 20 long = {fil:.1f} · x2 = {2 * round(fil, 1):.1f}', AMBER),
              (f'8,500 − {2 * round(hole, 1):.1f} − {2 * round(fil, 1):.1f} = {8500 - 2 * round(hole, 1) - 2 * round(fil, 1):,.1f} mm³', GREEN)]
     assert abs((8500 - 2 * round(hole, 1) - 2 * round(fil, 1)) - round(h['volume_mm3'], 1)) < 0.06, h['volume_mm3']
     for k in range(4):
         im, d = canvas()
-        text(d, (W / 2, 50), 'Worked out before we look', 60, anchor='ma')
+        text(d, (W / 2, 50), 'The volume, worked out before we look', 58, anchor='ma')
         for i, (s, col) in enumerate(lines[:k + 1]):
-            size = 48 if i in (1, 2) else 60
-            text(d, (110, 220 + i * 210), s, size, col)
+            size = 46 if i in (1, 2) else 58
+            text(d, (110, 200 + i * 230), s, size, col)
+        if k >= 1:      # the hole: a small cylinder 4.5 wide, 5 deep
+            d.ellipse((1450, 380, 1570, 420), outline=BLUE, width=6); d.ellipse((1450, 480, 1570, 520), outline=BLUE, width=6)
+            d.line((1450, 400, 1450, 500), fill=BLUE, width=6); d.line((1570, 400, 1570, 500), fill=BLUE, width=6)
+        if k >= 2:      # the corner sliver a 2 mm fillet removes: a square corner minus a quarter circle
+            d.rectangle((1450, 610, 1570, 730), fill=AMBER)
+            d.pieslice((1450, 610, 1690, 850), 180, 270, fill=BG)
         save(im, f'card-expected-{k + 1}.png')
 
 
@@ -309,15 +315,15 @@ def overlays():
         dashed(d, (cx, y0 - 60), (cx, y1 + 20), INK, width=8, dash=34, gap=20)
         s = (x1 - x0) / width_mm
         hx = x0 + left * s
-        yy = y0 - 90
+        yy = y0 + 200                   # inside the plate, under its top edge (the ribbon is above it), above the top hole
         for a, b, lab in ((x0, hx, f'{left:g}'), (hx, x1, f'{width_mm - left:g}')):
             d.line((a, yy, b, yy), fill=col, width=12)
             for x in (a, b):
                 d.line((x, yy - 34, x, yy + 34), fill=col, width=12)
-            f = font(B, 110)
+            f = font(B, 100)
             tw = f.getlength(lab)
-            d.rounded_rectangle(((a + b) / 2 - tw / 2 - 24, yy - 190, (a + b) / 2 + tw / 2 + 24, yy - 50), radius=20, fill=col)
-            d.text(((a + b) / 2, yy - 120), lab, font=f, fill=PAPER, anchor='mm')
+            d.rounded_rectangle(((a + b) / 2 - tw / 2 - 22, yy - 170, (a + b) / 2 + tw / 2 + 22, yy - 40), radius=20, fill=col)
+            d.text(((a + b) / 2, yy - 105), lab, font=f, fill=PAPER, anchor='mm')
         name = 'ov-' + still.replace('hand-', '')
         ov.save(os.path.join(F, name))
         out[name] = [x0, y0, x1, y1]
@@ -326,22 +332,31 @@ def overlays():
 
 
 def card_origin():
-    """F28: A1's circles, centre typed as -10: 10 to the left of the origin, which sits on the plate's right edge."""
+    """F28: A1's circles, centre typed as -10: 10 to the left of the origin, which sits on the plate's right edge. 3 steps."""
+    for k in range(3):
+        im, d = canvas()
+        text(d, (W / 2, 40), "Claude's -10: from the right edge", 60, anchor='ma')
+        SC = 12
+        x0, y0, w, h = plate_front(d, W / 2, 220, 20, 10, s=SC, label_sides=False, mid=False)
+        ox, oy = x0 + w, y0 + h
+        d.ellipse((ox - 18, oy - 18, ox + 18, oy + 18), fill=RED)
+        chip(d, (ox + 40, oy - 40), 'origin (lesson 2)', 48, anchor='l', bg=RED)
+        if k >= 1:
+            hy = y0 + 15 * SC
+            d.line((x0 + 10 * SC, hy, ox, hy), fill=RED, width=10)
+            for xx in (x0 + 10 * SC, ox):
+                d.line((xx, hy - 24, xx, hy + 24), fill=RED, width=10)
+            text(d, (x0 + 15 * SC, hy - 80), '10', 64, RED, anchor='ma')
+            chip(d, (ox + 40, hy - 30), 'centre (-10, 45)', 46, anchor='l', bg=INK)
+        if k >= 2:
+            chip(d, (W / 2, 1110), 'ours: 10 from the left edge · same mistake, other side', 44, anchor='m', bg=AMBER)
+        save(im, f'card-a1-origin-{k + 1}.png')
     im, d = canvas()
-    text(d, (W / 2, 40), "Claude's -10: from the right edge", 60, anchor='ma')
-    SC = 12
-    x0, y0, w, h = plate_front(d, W / 2, 220, 20, 10, s=SC, label_sides=False, mid=False)
-    ox, oy = x0 + w, y0 + h
-    d.ellipse((ox - 18, oy - 18, ox + 18, oy + 18), fill=RED)
-    chip(d, (ox + 40, oy - 40), 'origin (lesson 2)', 48, anchor='l', bg=RED)
-    hy = y0 + 15 * SC
-    d.line((x0 + 10 * SC, hy, ox, hy), fill=RED, width=10)
-    for xx in (x0 + 10 * SC, ox):
-        d.line((xx, hy - 24, xx, hy + 24), fill=RED, width=10)
-    text(d, (x0 + 15 * SC, hy - 80), '10', 64, RED, anchor='ma')
-    chip(d, (ox + 40, hy - 30), 'centre (-10, 45)', 46, anchor='l', bg=INK)
-    text(d, (W / 2, 1120), 'ours: 10 from the left edge · same mistake, other side', 46, GREY, anchor='ma')
-    save(im, 'card-a1-origin.png')
+    text(d, (W / 2, 40), "Claude's holes at 30 wide, before its fix", 56, anchor='ma')
+    x0, y0, w, h = plate_front(d, W / 2, 260, 30, 20, s=12, col=RED)
+    d.ellipse((x0 + w - 18, y0 + h - 18, x0 + w + 18, y0 + h + 18), fill=RED)
+    chip(d, (W / 2, 1110), 'still 10 from the right edge: 20 · 10, off the middle', 44, anchor='m', bg=RED)
+    save(im, 'card-a1-origin-4.png')
 
 
 def hooks():
