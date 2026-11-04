@@ -1,0 +1,21 @@
+0.5	recording started: the washer in SolidCraft
+0.5	washer: shown in SolidCraft
+5.5	menu: right-click Body1
+11.6	menu: open Save As Mesh
+13.7	save: open Format
+19.5	Save As Mesh STL: clicked
+24.6	PrusaSlicer: started by hand
+47.7	dialog: shown
+63.7	size boxes: shown
+73.5	slicer: Ctrl+Q
+111.2	slicer: closed
+111.2	send: right-click Body1
+115.8	send: open Send to Slicer
+118.5	send: hover Slicer PrusaSlicer
+121.1	Send to Slicer: clicked (3MF)
+129.9	slicer send: window up
+129.9	PrusaSlicer: opened, no dialog
+137.6	size boxes: shown (send)
+145.9	slicer: Ctrl+Q
+147.5	slicer: closed
+147.5	recording stopped

@@ -1,0 +1,1 @@
+menu: Save As Mesh / Send to Slicer (right-click Body1); window Save As Mesh: Format STL, Quality Standard

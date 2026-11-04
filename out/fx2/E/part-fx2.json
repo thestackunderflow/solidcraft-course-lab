@@ -1,0 +1,139 @@
+{
+ "batch": {
+  "completed": 5,
+  "ok": true,
+  "results": [
+   {
+    "attachment": "fixed",
+    "created": {
+     "constraints": [],
+     "curves": [],
+     "dimensions": [],
+     "points": []
+    },
+    "name": "Sketch1",
+    "projected": null,
+    "sketch": 1
+   },
+   {
+    "constraints": [
+     "k1"
+    ],
+    "created": {
+     "constraints": [
+      "k1"
+     ],
+     "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "dimensions": [],
+     "points": [
+      "l1.start",
+      "l1.end",
+      "l2.end",
+      "l3.end"
+     ]
+    },
+    "curves": [
+     "l1",
+     "l2",
+     "l3",
+     "l4"
+    ],
+    "sketch": {
+     "dof": 6,
+     "solved": true
+    }
+   },
+   {
+    "profiles": 1,
+    "sketch": 1
+   },
+   {
+    "bodies": [
+     "Body1"
+    ],
+    "changed_bodies": [],
+    "created_bodies": [
+     "Body1"
+    ],
+    "feature": 2,
+    "ms": 22.680691,
+    "name": "Washer",
+    "removed_bodies": [],
+    "warning": null
+   },
+   {
+    "bodies": [
+     "Body1"
+    ],
+    "changed_bodies": [
+     "Body1"
+    ],
+    "created_bodies": [],
+    "feature": 3,
+    "ms": 27.446015,
+    "name": "Hole1",
+    "removed_bodies": [],
+    "warning": null
+   }
+  ]
+ },
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 50.47197357183165,
+    "bbox": {
+     "max": [
+      5.0,
+      5.0,
+      0.30000000000000016
+     ],
+     "min": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     2.5,
+     2.5,
+     0.15000000000000002
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 14,
+    "face_types": {
+     "cylinder": 1,
+     "plane": 6
+    },
+    "faces": 7,
+    "kernel": {
+     "edges": 18,
+     "faces": 8,
+     "shells": 1,
+     "vertices": 12
+    },
+    "mass_g": 0.008204130803625889,
+    "material": "Default",
+    "name": "Body1",
+    "vertices": 10,
+    "volume_mm3": 6.359791320640223
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 50.47197357183165,
+   "edges": 14,
+   "faces": 7,
+   "mass_g": 0.008204130803625889,
+   "open_bodies_skipped": 0,
+   "vertices": 10,
+   "volume_mm3": 6.359791320640223
+  }
+ },
+ "save_mesh": "{\n  \"bytes\": 30684,\n  \"format\": \"StlBinary\",\n  \"path\": \"/root/fx2/washer-sc.stl\"\n}"
+}

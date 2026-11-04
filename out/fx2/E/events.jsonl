@@ -1,0 +1,21 @@
+{"t": 0.509, "event": "recording started: the washer in SolidCraft"}
+{"t": 0.512, "event": "washer: shown in SolidCraft"}
+{"t": 5.520, "event": "menu: right-click Body1"}
+{"t": 11.570, "event": "menu: open Save As Mesh"}
+{"t": 13.681, "event": "save: open Format"}
+{"t": 19.464, "event": "Save As Mesh STL: clicked"}
+{"t": 24.553, "event": "PrusaSlicer: started by hand"}
+{"t": 47.696, "event": "dialog: shown"}
+{"t": 63.744, "event": "size boxes: shown"}
+{"t": 73.539, "event": "slicer: Ctrl+Q"}
+{"t": 111.178, "event": "slicer: closed"}
+{"t": 111.182, "event": "send: right-click Body1"}
+{"t": 115.764, "event": "send: open Send to Slicer"}
+{"t": 118.477, "event": "send: hover Slicer PrusaSlicer"}
+{"t": 121.088, "event": "Send to Slicer: clicked (3MF)"}
+{"t": 129.930, "event": "slicer send: window up"}
+{"t": 129.940, "event": "PrusaSlicer: opened, no dialog"}
+{"t": 137.624, "event": "size boxes: shown (send)"}
+{"t": 145.920, "event": "slicer: Ctrl+Q"}
+{"t": 147.543, "event": "slicer: closed"}
+{"t": 147.546, "event": "recording stopped"}

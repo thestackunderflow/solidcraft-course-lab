@@ -1,0 +1,4 @@
+total 16
+drwx------ 2 root root 4096 Nov  4 04:36 .
+drwxr-xr-x 3 root root 4096 Nov  4 04:36 ..
+-rw-r--r-- 1 root root 7153 Nov  4 04:36 Untitled-fe3e24f4503d4a9b.3mf

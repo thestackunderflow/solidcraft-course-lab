@@ -1,0 +1,1 @@
+Size [World]: 5 x 5 x 0.3 mm via Send to Slicer 3MF, no dialog

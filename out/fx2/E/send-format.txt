@@ -1,0 +1,1 @@
+no format row in the Send to Slicer window (0.28.0); hand-over file is .3mf

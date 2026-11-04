@@ -1,0 +1,3 @@
+[Content_Types].xml
+_rels/.rels
+3D/3dmodel.model

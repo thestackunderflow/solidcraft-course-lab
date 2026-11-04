@@ -1,0 +1,1 @@
+inches dialog shown for washer-sc.stl (slicer-dialog.png); size after No not read (click missed)
