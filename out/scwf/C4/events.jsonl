@@ -1,0 +1,17 @@
+{"t": 0.510, "event": "recording started: the finished bracket, full window"}
+{"t": 3.519, "event": "parameters: Model tab"}
+{"t": 6.396, "event": "parameters: Parameters"}
+{"t": 10.126, "event": "parameters: width = 35"}
+{"t": 14.005, "event": "parameters: held 4 s"}
+{"t": 19.632, "event": "parameters: OK"}
+{"t": 27.139, "event": "measure: Inspect, Measure"}
+{"t": 33.284, "event": "measure: the first hole's rim"}
+{"t": 36.589, "event": "measure: the L-shaped side face"}
+{"t": 40.311, "event": "measure: centre to centre held 7 s"}
+{"t": 49.317, "event": "measure: Close"}
+{"t": 50.351, "event": "parameters: width back to 25"}
+{"t": 50.374, "event": "parameters: Model tab"}
+{"t": 53.273, "event": "parameters: Parameters"}
+{"t": 57.047, "event": "parameters: width = 25"}
+{"t": 60.934, "event": "parameters: held 2 s"}
+{"t": 72.213, "event": "recording stopped"}

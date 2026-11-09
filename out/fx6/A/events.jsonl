@@ -1,0 +1,23 @@
+{"t": 0.516, "event": "recording started: lesson 3's hook in SolidCraft 0.28.0, full window"}
+{"t": 3.535, "event": "params: hover Parameters"}
+{"t": 7.217, "event": "params: thickness 5 held"}
+{"t": 12.999, "event": "params: close (Cancel)"}
+{"t": 18.005, "event": "fillet: Fillet button"}
+{"t": 21.783, "event": "fillet: lip outer top edge"}
+{"t": 26.036, "event": "fillet: radius 6 typed"}
+{"t": 34.376, "event": "fillet: OK"}
+{"t": 37.690, "event": "fillet 6: after OK (screenshot refusal.png)"}
+{"t": 43.844, "event": "fillet 6: +5 s (screenshot refusal-5s.png)"}
+{"t": 57.701, "event": "line 1: \"not supported yet: the blend is larger than the neighbouring faces; the largest radius that fits is 5 mm\""}
+{"t": 57.717, "event": "reason: \"the blend is larger than the neighbouring faces\""}
+{"t": 57.744, "event": "shown in: dialog (red text in the Fillet panel, under Advanced, while Preview is on; OK greyed out, so the click on OK did nothing)"}
+{"t": 57.760, "event": "fillet 6: refused"}
+{"t": 59.780, "event": "report: hover Create Issue..."}
+{"t": 62.241, "event": "report: Create Issue... clicked"}
+{"t": 67.352, "event": "report: draft shown (report.png)"}
+{"t": 82.895, "event": "report title: \"FILLET: operation failed\""}
+{"t": 82.910, "event": "report: Close draft"}
+{"t": 86.549, "event": "mark: none (no feature was added: History and Browser unchanged)"}
+{"t": 87.800, "event": "fillet: Cancel"}
+{"t": 91.494, "event": "hook unchanged: hold 5 s"}
+{"t": 97.891, "event": "recording stopped"}

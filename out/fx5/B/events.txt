@@ -1,0 +1,12 @@
+03:51:15.6  recording started: SolidCraft with the saved hook, a terminal bottom right
+03:51:22.0  ls 0: listed (no folder yet)
+03:51:24.4  send 1: right-click Body1
+03:51:32.8  send 1: Send clicked
+03:51:43.0  send 1: slicer window up
+03:51:51.4  ls 1: listed
+03:51:58.1  hook_depth: 40 open Parameters
+03:52:15.0  hook_depth: 40 typed
+03:52:15.0  save: click the Save icon
+03:52:36.8  send 2: right-click Body1
+03:52:45.0  send 2: Send clicked
+03:52:57.9  ls 2: listed

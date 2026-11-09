@@ -1,0 +1,39 @@
+{"t": 0.511, "event": "recording started: SolidCraft with the saved hook"}
+{"t": 3.525, "event": "orca: started by hand"}
+{"t": 30.819, "event": "orca: SSL dialog (as in take G): Remember my choice ticked, Yes"}
+{"t": 56.885, "event": "orca: window up"}
+{"t": 69.515, "event": "orca prefs label: \"Allow only one OrcaSlicer instance\" default: off (unticked; Preferences > General > Settings)"}
+{"t": 90.612, "event": "orca prefs tooltip: \"If this is enabled, when starting OrcaSlicer and another instance of the same OrcaSlicer is already running, that instance will be reactivated instead.\""}
+{"t": 92.642, "event": "orca: close (window close button)"}
+{"t": 110.932, "event": "orca send 1: right-click Body1"}
+{"t": 118.941, "event": "send dialog: open Slicer"}
+{"t": 142.627, "event": "send dialog: choose OrcaSlicer"}
+{"t": 146.678, "event": "orca send 1: Send clicked"}
+{"t": 187.851, "event": "orca send 1: window up (Size: 25 x 60 x 20 mm)"}
+{"t": 193.293, "event": "hook_depth: 40 open Parameters"}
+{"t": 210.77, "event": "hook_depth: 40 typed"}
+{"t": 210.79, "event": "save: click the Save icon"}
+{"t": 214.989, "event": "orca send 2: right-click Body1"}
+{"t": 224.201, "event": "orca send 2: Send clicked"}
+{"t": 254.02, "event": "orca send 2: second window (two OrcaSlicer windows, two processes; the new one opened exactly over the first, showing Size 40 x 60 x 20)"}
+{"t": 256.028, "event": "orca: move the second window aside (both in frame)"}
+{"t": 281.14, "event": "orca: both windows in frame"}
+{"t": 286.456, "event": "orca: close second (the newer window 12583129, pid 11709)"}
+{"t": 298.701, "event": "orca: first window shows the old shape (Size: 25 x 60 x 20 mm)"}
+{"t": 306.059, "event": "orca: right-click menu open"}
+{"t": 314.781, "event": "orca menu items: Add instance, Remove instance, Set number of instances..., Fill bed with instances..., Set as Individual Objects, Clone, Fix Model, Simplify Model, Subdivision mesh(Lost color), Mesh boolean, Center, Drop, Split, Mirror, Delete, Add Part, Add Negative Part, Add Modifier, Add Support Blocker, Add Support Enforcer, Height Range Modifier, Printable, Auto Drop, Edit Process Settings, Copy Process Settings, Paste Process Settings, Edit in Parameter Table, Reload from disk, Replace 3D file..., Replace all with 3D files..., Export as one STL..., (more)"}
+{"t": 318.281, "event": "orca reload: \"Reload from disk\""}
+{"t": 332.524, "event": "orca reload: done (Size: 40 x 60 x 20 mm, Volume 9806.47 mm3)"}
+{"t": 336.535, "event": "orca prefs: open (Ctrl+P)"}
+{"t": 352.684, "event": "orca prefs: on (Allow only one OrcaSlicer instance ticked)"}
+{"t": 369.523, "event": "hook_depth: 30 open Parameters"}
+{"t": 387.428, "event": "hook_depth: 30 typed"}
+{"t": 387.455, "event": "save: click the Save icon"}
+{"t": 391.585, "event": "orca send 3: right-click Body1"}
+{"t": 400.162, "event": "orca send 3: Send clicked"}
+{"t": 431.583, "event": "orca send 3: lands in open window (one window, one process; Orca prompt \"Drop project file\": \"Please select an action\" / hook-lesson4-0ec2ab17f9b8b1e4.3mf / ( ) Open as project / (x) Import geometry only (default) / OK / Cancel)"}
+{"t": 434.595, "event": "orca send 3: OK (default: Import geometry only)"}
+{"t": 454.001, "event": "orca send 3: added as a second object (Size: 30 x 60 x 20 mm) over the 40 one; notice \"WARNING: Body1 is too close to others, and collisions may be caused. Jump to [Body1]\""}
+{"t": 460.017, "event": "orca: close"}
+{"t": 473.269, "event": "orca close dialog \"Orca Slicer - Save\": \"The current project has unsaved changes. Would you like to save before continuing?\" [Remember my choice.] Yes (default) / No / Cancel: No (deviation: Yes would start a project save)"}
+{"t": 478.424, "event": "orca: closed"}

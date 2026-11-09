@@ -1,0 +1,27 @@
+{"t": 0.508, "event": "recording started: full SolidCraft window, ~/nut.sc (8 mm hole): hold 3 s"}
+{"t": 3.518, "event": "double-click Hole1 in the timeline"}
+{"t": 7.543, "event": "diameter: 6.75"}
+{"t": 12.589, "event": "diameter 6.75 in the box: hold 4 s"}
+{"t": 17.252, "event": "OK"}
+{"t": 22.656, "event": "Hole1 now 6.75: volume 774.0567337369301; timeline ['Sketch1', 'Extrude1', 'Hole1']"}
+{"t": 23.348, "event": "Thread: Model tab > Create menu > Thread"}
+{"t": 29.743, "event": "pick the hole's wall"}
+{"t": 34.145, "event": "dialog after the pick: hold 4 s"}
+{"t": 38.773, "event": "untick Automatic size"}
+{"t": 41.474, "event": "Size: 8 mm"}
+{"t": 47.536, "event": "Size 8 mm set (Designation shown): hold 2 s"}
+{"t": 50.169, "event": "tick Modeled"}
+{"t": 56.782, "event": "M8 in 6.75: OK enabled (no live error): OK"}
+{"t": 62.957, "event": "M8 in 6.75: built"}
+{"t": 63.904, "event": "after: volume 733.5428274391605; timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']"}
+{"t": 63.911, "event": "the threaded nut: hold 4 s"}
+{"t": 68.581, "event": "section: Inspect > Section, plane XZ (Browser > Origin > XZ), OK"}
+{"t": 85.945, "event": "section view: hold 4 s"}
+{"t": 90.587, "event": "close-up of the teeth: zoom at the cut wall"}
+{"t": 97.174, "event": "teeth close-up: hold 4 s"}
+{"t": 101.686, "event": "low angle: a slow middle-button tilt"}
+{"t": 105.857, "event": "teeth, low angle: hold 4 s"}
+{"t": 110.378, "event": "home view"}
+{"t": 114.569, "event": "Properties (Inspect > Properties)"}
+{"t": 119.268, "event": "Properties: hold 4 s"}
+{"t": 123.868, "event": "recording stopped"}

@@ -1,0 +1,53 @@
+{"t": 0.503, "event": "recording started: Claude Code (left), SolidCraft 0.30.1 on an empty design (right)"}
+{"t": 3.588, "event": "turn 1: typing"}
+{"t": 20.58, "event": "turn 1: Enter"}
+{"t": 21.005, "event": "turn 1: Claude working"}
+{"t": 23.14, "event": "tool call: skill_reference", "seq": 13}
+{"t": 23.141, "event": "tool reply: skill_reference", "seq": 14, "isError": false}
+{"t": 27.708, "event": "tool call: list_commands", "seq": 15}
+{"t": 27.709, "event": "tool call: list_commands", "seq": 16}
+{"t": 27.715, "event": "tool reply: list_commands", "seq": 17, "isError": false}
+{"t": 27.74, "event": "tool reply: list_commands", "seq": 18, "isError": false}
+{"t": 27.752, "event": "tool call: new_design", "seq": 19}
+{"t": 27.761, "event": "tool reply: new_design", "seq": 20, "isError": false}
+{"t": 31.576, "event": "tool call: batch", "seq": 21}
+{"t": 34.101, "event": "tool reply: batch", "seq": 22, "isError": false}
+{"t": 37.45, "event": "turn 1: end-of-turn line seen"}
+{"t": 39.451, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 42.458, "event": "turn 2: typing"}
+{"t": 46.685, "event": "turn 2: Enter"}
+{"t": 47.096, "event": "turn 2: Claude working"}
+{"t": 49.061, "event": "tool call: batch", "seq": 23}
+{"t": 49.158, "event": "tool reply: batch", "seq": 24, "isError": false}
+{"t": 50.794, "event": "turn 2: end-of-turn line seen"}
+{"t": 52.797, "event": "turn 2: reply done", "answers": [], "timed_out": false}
+{"t": 55.808, "event": "turn 3: typing"}
+{"t": 65.134, "event": "turn 3: Enter"}
+{"t": 65.548, "event": "turn 3: Claude working"}
+{"t": 71.345, "event": "tool call: batch", "seq": 25}
+{"t": 71.35, "event": "tool reply: batch", "seq": 26, "isError": true}
+{"t": 81.765, "event": "tool call: new_design", "seq": 27}
+{"t": 81.767, "event": "tool reply: new_design", "seq": 28, "isError": false}
+{"t": 81.787, "event": "tool call: batch", "seq": 29}
+{"t": 82.202, "event": "tool reply: batch", "seq": 30, "isError": false}
+{"t": 84.643, "event": "tool call: check_parameters", "seq": 31}
+{"t": 84.796, "event": "tool reply: check_parameters", "seq": 32, "isError": false}
+{"t": 93.429, "event": "turn 3: reply done", "answers": [], "timed_out": false}
+{"t": 96.437, "event": "turn 4: typing"}
+{"t": 101.018, "event": "turn 4: Enter"}
+{"t": 101.429, "event": "turn 4: Claude working"}
+{"t": 104.815, "event": "tool call: batch", "seq": 33}
+{"t": 105.19, "event": "tool reply: batch", "seq": 34, "isError": false}
+{"t": 108.806, "event": "turn 4: end-of-turn line seen"}
+{"t": 110.807, "event": "turn 4: reply done", "answers": [], "timed_out": false}
+{"t": 113.814, "event": "turn 5: typing"}
+{"t": 117.703, "event": "turn 5: Enter"}
+{"t": 118.116, "event": "turn 5: Claude working"}
+{"t": 119.336, "event": "tool call: describe_command", "seq": 35}
+{"t": 119.338, "event": "tool call: list_commands", "seq": 36}
+{"t": 119.341, "event": "tool reply: describe_command", "seq": 37, "isError": false}
+{"t": 119.378, "event": "tool reply: list_commands", "seq": 38, "isError": false}
+{"t": 123.837, "event": "tool call: batch", "seq": 39}
+{"t": 124.164, "event": "tool reply: batch", "seq": 40, "isError": false}
+{"t": 130.866, "event": "turn 5: reply done", "answers": [], "timed_out": false}
+{"t": 136.888, "event": "recording stopped"}

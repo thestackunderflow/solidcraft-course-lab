@@ -1,0 +1,23 @@
+04:16:13.3  recording started: lesson 3's hook in SolidCraft 0.28.0, full window
+04:16:16.3  params: hover Parameters
+04:16:20.0  params: thickness 5 held
+04:16:25.8  params: close (Cancel)
+04:16:30.8  fillet: Fillet button
+04:16:34.6  fillet: lip outer top edge
+04:16:38.8  fillet: radius 6 typed
+04:16:47.2  fillet: OK
+04:16:50.5  fillet 6: after OK (screenshot refusal.png)
+04:16:56.6  fillet 6: +5 s (screenshot refusal-5s.png)
+04:17:10.5  line 1: "not supported yet: the blend is larger than the neighbouring faces; the largest radius that fits is 5 mm"
+04:17:10.5  reason: "the blend is larger than the neighbouring faces"
+04:17:10.5  shown in: dialog (red text in the Fillet panel, under Advanced, while Preview is on; OK greyed out, so the click on OK did nothing)
+04:17:10.6  fillet 6: refused
+04:17:12.6  report: hover Create Issue...
+04:17:15.0  report: Create Issue... clicked
+04:17:20.2  report: draft shown (report.png)
+04:17:35.7  report title: "FILLET: operation failed"
+04:17:35.7  report: Close draft
+04:17:39.3  mark: none (no feature was added: History and Browser unchanged)
+04:17:40.6  fillet: Cancel
+04:17:44.3  hook unchanged: hold 5 s
+04:17:50.7  recording stopped

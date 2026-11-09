@@ -1,0 +1,17 @@
+● I haven't applied the fillet. A 6 mm radius doesn't fit on that
+  edge.
+  The lip's top face is only 5 mm wide, running from x=20 to x=25
+  at z=10. A 6 mm fillet would need 6 mm of that face, and
+  SolidCraft reports 5 mm as the largest radius that fits. The
+  design is unchanged.
+  Pick one of these:
+  - 5 mm fillet: this is the largest that fits. It consumes the
+    whole top face, so the lip ends in a quarter-round with no
+    flat left.
+  - Thicker lip: widen the lip to at least 6 mm, which in
+    practice means more than 6 mm if you want some flat left. The
+    lip is currently 5 mm thick, set by the sketch at x=20 to
+    25, and it isn't driven by a parameter. Then fillet at 6 mm.
+  - Smaller fillet: something under 5 mm, such as 4 mm, which
+    leaves a small flat on top.
+  Which one do you want?

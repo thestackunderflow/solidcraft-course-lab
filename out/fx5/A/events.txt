@@ -1,0 +1,32 @@
+03:43:32.1  recording started: the saved hook in SolidCraft (full window)
+03:43:37.1  send 1: right-click Body1
+03:43:47.0  send 1: Send clicked
+03:43:57.5  send 1: slicer window up
+03:44:11.0  send 1: slicer opened (25)
+03:44:11.0  size boxes: 25 (Size [World] 25 x 60 x 20 mm, as shown)
+03:44:17.9  hook_depth: 40 open Parameters
+03:44:34.8  hook_depth: 40 typed
+03:44:47.6  save: click the Save icon
+03:45:05.0  send 2: right-click Body1
+03:45:13.2  send 2: Send clicked
+03:45:38.1  send 2: second copy (one window; a second object, Size 40 x 60 x 20, selected and drawn over the first at the same position; the first shows in orange where it sticks out)
+03:45:47.8  send 2: select the orange copy
+03:46:21.1  send 2: first copy selected: Size 25 x 60 x 20
+03:46:53.8  extra copy: selected (40 x 60 x 20)
+03:46:58.8  extra copy: deleted
+03:47:04.5  right-click: menu open
+03:47:15.2  right-click: menu open (on the hook)
+03:47:22.2  menu text: "Reload from disk"
+03:47:25.1  reload: click Reload from disk
+03:47:38.3  reload: done (40)
+03:47:38.3  size boxes: 40 (Size [World] 40 x 60 x 20 mm; Position 127.79, 107.97, 10)
+03:47:38.3  print face: kept (lying on the J side as after send 1: Z 20, Rotate 0 0 0)
+03:47:54.2  slicer idle 15 s: end
+03:47:57.1  palette: open
+03:48:46.7  agent send: no-AI script started
+03:49:09.0  agent send: no prompt (no window in SolidCraft; PrusaSlicer raised with a further copy 40 x 60 x 20 at Position 125, 105, 10 over the reloaded one)
+03:49:12.2  slicer: Ctrl+Q
+03:49:27.4  slicer close dialog: "Closing PrusaSlicer. Current project is modified. Do you want to save the changes to "/root/.cache/solidcraft/slicer/hook-lesson4-0ec2ab17f9b8b1e4.3mf"?" [Remember my choice] Discard / Cancel / Save (default, focused): Save
+03:49:32.5  slicer: closed
+03:49:36.3  SolidCraft: Ctrl+Q
+03:49:47.5  SolidCraft: closed

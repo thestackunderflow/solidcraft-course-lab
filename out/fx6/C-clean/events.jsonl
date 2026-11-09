@@ -1,0 +1,18 @@
+{"t": 0.509, "event": "recording started: take C pass clean, full window"}
+{"t": 3.517, "event": "params: open (thickness to 8)"}
+{"t": 7.058, "event": "params: thickness box"}
+{"t": 11.878, "event": "params: thickness 8 held 4 s"}
+{"t": 16.536, "event": "params: OK"}
+{"t": 22.017, "event": "thickness 8: rebuilt"}
+{"t": 22.030, "event": "thick-8: hold 3 s on the hook"}
+{"t": 25.037, "event": "fillet 6 (thickness 8): Fillet button"}
+{"t": 28.393, "event": "fillet 6 (thickness 8): lip outer top edge"}
+{"t": 32.249, "event": "fillet 6 (thickness 8): radius typed"}
+{"t": 39.875, "event": "fillet 6 (thickness 8): OK"}
+{"t": 45.330, "event": "thick-8 fillet 6: built (curved faces 1), hold 5 s"}
+{"t": 51.169, "event": "toolbar Undo"}
+{"t": 55.624, "event": "params: open (thickness to 5)"}
+{"t": 59.148, "event": "params: thickness box"}
+{"t": 63.961, "event": "params: thickness 5 held 4 s"}
+{"t": 68.604, "event": "params: OK"}
+{"t": 74.109, "event": "recording stopped"}

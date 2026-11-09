@@ -1,0 +1,471 @@
+{
+ "new": {
+  "name": "Untitled"
+ },
+ "shape": {
+  "completed": 5,
+  "ok": true,
+  "results": [
+   {
+    "display_value": 25.0,
+    "errors": [],
+    "expression": "25",
+    "name": "width",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 25.0
+   },
+   {
+    "attachment": "fixed",
+    "created": {
+     "constraints": [],
+     "curves": [],
+     "dimensions": [],
+     "points": []
+    },
+    "name": "Sketch1",
+    "projected": null,
+    "sketch": 1
+   },
+   {
+    "created": {
+     "constraints": [
+      "k1"
+     ],
+     "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6"
+     ],
+     "dimensions": [],
+     "points": [
+      "l1.start",
+      "l1.end",
+      "l2.end",
+      "l3.end",
+      "l4.end",
+      "l5.end"
+     ]
+    },
+    "sketch": {
+     "dof": 10,
+     "solved": true
+    }
+   },
+   {
+    "profiles": 1,
+    "sketch": 1
+   },
+   {
+    "changed_bodies": [],
+    "created_bodies": [
+     "Body1"
+    ],
+    "feature": 2,
+    "ms": 2.080287,
+    "name": "Bracket",
+    "removed_bodies": [],
+    "warning": null
+   }
+  ]
+ },
+ "m_shape": {
+  "volume_mm3": 7600.0,
+  "bbox": {
+   "max": [
+    50.0,
+    0.0,
+    30.0
+   ],
+   "min": [
+    0.0,
+    -25.0,
+    0.0
+   ]
+  },
+  "faces": 8,
+  "face_types": {
+   "plane": 8
+  }
+ },
+ "holes": {
+  "completed": 3,
+  "ok": true,
+  "results": [
+   {
+    "display_value": 4.0,
+    "errors": [],
+    "expression": "4",
+    "name": "hole_d",
+    "recomputed": 0,
+    "restored": 0,
+    "value": 4.0
+   },
+   {
+    "changed_bodies": [
+     "Body1"
+    ],
+    "created_bodies": [],
+    "feature": 3,
+    "ms": 36.909130999999995,
+    "name": "Hole1",
+    "removed_bodies": [],
+    "warning": null
+   },
+   {
+    "changed_bodies": [
+     "Body1"
+    ],
+    "created_bodies": [],
+    "feature": 4,
+    "ms": 30.628954999999998,
+    "name": "Hole2",
+    "removed_bodies": [],
+    "warning": null
+   }
+  ]
+ },
+ "m_holes": {
+  "volume_mm3": 7499.49,
+  "bbox": {
+   "max": [
+    50.0,
+    5.836308521187134e-28,
+    29.999999999999996
+   ],
+   "min": [
+    -8.739675649849189e-14,
+    -25.0,
+    0.0
+   ]
+  },
+  "faces": 10,
+  "face_types": {
+   "cylinder": 2,
+   "plane": 8
+  }
+ },
+ "holes_25": [
+  {
+   "centroid": [
+    11.288597931477698,
+    -11.473215001570042,
+    28.000279971100245
+   ]
+  },
+  {
+   "centroid": [
+    12.711402068522284,
+    -13.526784998429964,
+    28.000279971100237
+   ]
+  },
+  {
+   "centroid": [
+    37.28859793147771,
+    -11.473215001570038,
+    28.000279971100326
+   ]
+  },
+  {
+   "centroid": [
+    38.711402068522304,
+    -13.526784998429962,
+    28.000279971100326
+   ]
+  }
+ ],
+ "plist": {
+  "count": 9,
+  "cycles": [],
+  "parameters": [
+   {
+    "comment": "",
+    "display_value": 25.0,
+    "error": null,
+    "expression": "25",
+    "favorite": false,
+    "name": "width",
+    "source": "user",
+    "unit": "mm",
+    "used_by": [
+     "d1",
+     "d4",
+     "d7"
+    ],
+    "uses": [],
+    "value": 25.0
+   },
+   {
+    "comment": "",
+    "display_value": 4.0,
+    "error": null,
+    "expression": "4",
+    "favorite": false,
+    "name": "hole_d",
+    "source": "user",
+    "unit": "mm",
+    "used_by": [
+     "d2",
+     "d5"
+    ],
+    "uses": [],
+    "value": 4.0
+   },
+   {
+    "comment": "",
+    "display_value": 25.0,
+    "error": null,
+    "expression": "width",
+    "favorite": false,
+    "feature": "Bracket",
+    "input": "Distance",
+    "name": "d1",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [
+     "width"
+    ],
+    "value": 25.0
+   },
+   {
+    "comment": "",
+    "display_value": 4.0,
+    "error": null,
+    "expression": "hole_d",
+    "favorite": false,
+    "feature": "Hole1",
+    "input": "Diameter",
+    "name": "d2",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [
+     "hole_d"
+    ],
+    "value": 4.0
+   },
+   {
+    "comment": "",
+    "display_value": 12.0,
+    "error": null,
+    "expression": "12",
+    "favorite": false,
+    "feature": "Hole1",
+    "input": "Reference distance",
+    "name": "d3",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 12.0
+   },
+   {
+    "comment": "",
+    "display_value": 12.5,
+    "error": null,
+    "expression": "width / 2",
+    "favorite": false,
+    "feature": "Hole1",
+    "input": "Reference distance",
+    "name": "d4",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [
+     "width"
+    ],
+    "value": 12.5
+   },
+   {
+    "comment": "",
+    "display_value": 4.0,
+    "error": null,
+    "expression": "hole_d",
+    "favorite": false,
+    "feature": "Hole2",
+    "input": "Diameter",
+    "name": "d5",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [
+     "hole_d"
+    ],
+    "value": 4.0
+   },
+   {
+    "comment": "",
+    "display_value": 38.0,
+    "error": null,
+    "expression": "38",
+    "favorite": false,
+    "feature": "Hole2",
+    "input": "Reference distance",
+    "name": "d6",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [],
+    "value": 38.0
+   },
+   {
+    "comment": "",
+    "display_value": 12.5,
+    "error": null,
+    "expression": "width / 2",
+    "favorite": false,
+    "feature": "Hole2",
+    "input": "Reference distance",
+    "name": "d7",
+    "source": "feature",
+    "unit": "mm",
+    "used_by": [],
+    "uses": [
+     "width"
+    ],
+    "value": 12.5
+   }
+  ]
+ },
+ "w35": {
+  "display_value": 35.0,
+  "errors": [],
+  "expression": "35",
+  "name": "width",
+  "recomputed": 3,
+  "restored": 0,
+  "value": 35.0
+ },
+ "m_35": {
+  "volume_mm3": 10539.49,
+  "bbox": {
+   "max": [
+    50.0,
+    0.0,
+    30.000000000000014
+   ],
+   "min": [
+    0.0,
+    -35.0,
+    0.0
+   ]
+  },
+  "faces": 10,
+  "face_types": {
+   "cylinder": 2,
+   "plane": 8
+  }
+ },
+ "holes_35": [
+  {
+   "centroid": [
+    11.282162089083442,
+    -16.47946500037888,
+    28.00000000000001
+   ]
+  },
+  {
+   "centroid": [
+    12.71783791091656,
+    -18.520534999621113,
+    28.0
+   ]
+  },
+  {
+   "centroid": [
+    37.28216208908344,
+    -16.47946500037888,
+    28.0
+   ]
+  },
+  {
+   "centroid": [
+    38.71783791091655,
+    -18.520534999621113,
+    27.999999999999993
+   ]
+  }
+ ],
+ "w25": {
+  "display_value": 25.0,
+  "errors": [],
+  "expression": "25",
+  "name": "width",
+  "recomputed": 3,
+  "restored": 0,
+  "value": 25.0
+ },
+ "m_25b": {
+  "volume_mm3": 7499.49,
+  "bbox": {
+   "max": [
+    50.0,
+    5.836308521187134e-28,
+    29.999999999999996
+   ],
+   "min": [
+    -8.739675649849189e-14,
+    -25.0,
+    0.0
+   ]
+  },
+  "faces": 10,
+  "face_types": {
+   "cylinder": 2,
+   "plane": 8
+  }
+ },
+ "fillet": {
+  "completed": 1,
+  "ok": true,
+  "results": [
+   {
+    "changed_bodies": [
+     "Body1"
+    ],
+    "created_bodies": [],
+    "feature": 5,
+    "ms": 104.909745,
+    "name": "Fillet1",
+    "removed_bodies": [],
+    "warning": null
+   }
+  ]
+ },
+ "m_fillet": {
+  "volume_mm3": 7547.79,
+  "bbox": {
+   "max": [
+    50.0,
+    3.2495900563117625e-15,
+    29.999999999999996
+   ],
+   "min": [
+    -8.739675649849189e-14,
+    -25.00000000000001,
+    0.0
+   ]
+  },
+  "faces": 11,
+  "face_types": {
+   "cylinder": 3,
+   "plane": 8
+  }
+ },
+ "save": {
+  "bytes": 20940,
+  "name": "bracket",
+  "path": "/root/bracket.sc"
+ },
+ "mesh": {
+  "bytes": 86084,
+  "format": "StlBinary",
+  "path": "/root/bracket.stl"
+ },
+ "view": {}
+}

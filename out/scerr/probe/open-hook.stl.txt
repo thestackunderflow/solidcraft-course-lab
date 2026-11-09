@@ -1,0 +1,2 @@
+open {"bodies": ["hook"], "component": 1, "component_name": "hook", "errors": 0, "features": 1, "occurrence": 2, "path": "/root/hook.stl", "warnings": []}
+open-hook.stl {"bodies": [["hook", 8306.43, {"mesh": 1484}]], "timeline": [["hook", "MeshFeature"]]}

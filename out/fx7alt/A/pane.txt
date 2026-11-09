@@ -1,0 +1,13 @@
+$ python3 -I noai.py fillet 20 20 20
+# volume before: 8000.0 mm3
+-> execute {"command": "solid.fillet", "params": {"edges": [[20, 20, 20]], "radius": 3}, "verbose": false}
+<- isError: true
+   invalid parameters for `solid.fillet`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint
+# volume after: 8000.0 mm3
+$ 
+
+
+
+
+
+

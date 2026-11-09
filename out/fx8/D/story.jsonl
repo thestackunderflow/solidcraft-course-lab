@@ -1,0 +1,4 @@
+{"t": 1793932741.73305, "event": "plug started", "cmd": ["/opt/solidcraft-0.28.0/bin/solidcraft-cli", "mcp", "--allow-path", "/root"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so."}
+{"t": 1793932743.2595313, "event": "reply: open", "tool": "open", "isError": false}
+{"t": 1793932747.3896523, "event": "reply: measure", "tool": "measure", "isError": false}
+{"t": 1793932752.687152, "event": "reply: convert", "tool": "execute", "isError": true}

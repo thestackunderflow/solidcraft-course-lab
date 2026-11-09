@@ -1,0 +1,34 @@
+{"t": 0.511, "event": "recording started: hook.stl opened by the lab script (stop rule A3), full window"}
+{"t": 3.520, "event": "browser: the mesh body row held 4 s"}
+{"t": 10.536, "event": "cut: Extrude button"}
+{"t": 14.068, "event": "cut: pick the circle"}
+{"t": 17.369, "event": "cut: Operation menu"}
+{"t": 20.334, "event": "cut: Cut"}
+{"t": 23.282, "event": "cut: Reverse (into the plate)"}
+{"t": 26.400, "event": "cut: refusal shown, hold 4 s"}
+{"t": 31.627, "event": "cut: OK"}
+{"t": 37.365, "event": "cut: Cancel"}
+{"t": 41.915, "event": "hole on mesh: Hole button"}
+{"t": 45.426, "event": "hole on mesh: click the plate face"}
+{"t": 48.951, "event": "hole on mesh: refusal shown, hold 4 s"}
+{"t": 54.227, "event": "hole on mesh: Cancel"}
+{"t": 58.819, "event": "fillet on mesh: Fillet button"}
+{"t": 62.353, "event": "fillet on mesh: click the plate's top edge"}
+{"t": 65.883, "event": "fillet on mesh: refusal shown, hold 4 s"}
+{"t": 71.172, "event": "fillet on mesh: Cancel"}
+{"t": 75.765, "event": "measure: select the mesh body"}
+{"t": 78.556, "event": "measure: Inspect tab"}
+{"t": 81.349, "event": "measure: Properties"}
+{"t": 84.667, "event": "measure: volume and bounding box held 4 s"}
+{"t": 89.993, "event": "measure: Close"}
+{"t": 93.190, "event": "convert: select the mesh body"}
+{"t": 95.986, "event": "convert: Surface tab"}
+{"t": 98.990, "event": "convert: Convert Mesh button"}
+{"t": 102.566, "event": "convert: dialog held 4 s"}
+{"t": 107.825, "event": "convert hook.stl: OK"}
+{"t": 111.180, "event": "convert hook.stl: refusal shown, hold 4 s"}
+{"t": 116.016, "event": "report: Create Issue..."}
+{"t": 119.733, "event": "report: draft title held 4 s"}
+{"t": 124.876, "event": "report: Close draft"}
+{"t": 128.056, "event": "convert: Cancel"}
+{"t": 133.714, "event": "recording stopped"}

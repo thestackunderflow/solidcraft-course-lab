@@ -1,0 +1,52 @@
+02:32:41.8  try 6.3: full window, hold 3 s
+02:32:44.8  double-click Hole1 in the timeline
+02:32:48.8  diameter: 6.3
+02:32:53.8  diameter 6.3 in the box: hold 4 s
+02:32:58.5  OK
+02:33:03.6  Thread: Model tab > Create menu > Thread
+02:33:10.0  pick the hole's wall
+02:33:14.4  dialog after the pick: hold 4 s
+02:33:18.4  untick Automatic size
+02:33:21.1  Size: 8 mm
+02:33:27.2  Size 8 mm set (Designation shown): hold 2 s
+02:33:29.9  tick Modeled
+02:33:36.4  M8 in 2430: live error under the fields, OK greyed: hold 4 s
+02:33:40.6  M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 806.3371259558843
+02:33:40.6  close the dialog (title-bar X)
+02:33:44.8  fresh copy of ~/nut.sc for 6.5 (opened off camera, new tab)
+02:33:49.4  try 2499: full window, hold 3 s
+02:33:52.4  double-click Hole1 in the timeline
+02:33:56.5  diameter: 2499
+02:34:01.5  diameter 2499 in the box: hold 4 s
+02:34:06.4  OK
+02:34:11.6  Thread: Model tab > Create menu > Thread
+02:34:18.0  pick the hole's wall
+02:34:22.4  dialog after the pick: hold 4 s
+02:34:26.4  untick Automatic size
+02:34:29.1  Size: 8 mm
+02:34:35.2  Size 8 mm set (Designation shown): hold 2 s
+02:34:37.8  tick Modeled
+02:34:44.3  M8 in 2430: live error under the fields, OK greyed: hold 4 s
+02:34:48.4  M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume -0.0
+02:34:48.4  close the dialog (title-bar X)
+02:34:52.6  fresh copy of ~/nut.sc for 7.6 (opened off camera, new tab)
+02:34:57.2  try 2499: full window, hold 3 s
+02:35:00.2  double-click Hole1 in the timeline
+02:35:04.2  diameter: 2499
+02:35:09.3  diameter 2499 in the box: hold 4 s
+02:35:14.1  OK
+02:35:19.3  Thread: Model tab > Create menu > Thread
+02:35:25.7  pick the hole's wall
+02:35:30.1  dialog after the pick: hold 4 s
+02:35:34.1  untick Automatic size
+02:35:36.9  Size: 8 mm
+02:35:43.0  Size 8 mm set (Designation shown): hold 2 s
+02:35:45.6  tick Modeled
+02:35:52.0  M8 in 2430: live error under the fields, OK greyed: hold 4 s
+02:35:56.2  M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume -0.0
+02:35:56.2  close the dialog (title-bar X)
+02:36:00.4  fresh copy of ~/nut.sc for 7.7 (opened off camera, new tab)
+02:36:05.0  try 2499: full window, hold 3 s
+02:36:08.0  double-click Hole1 in the timeline
+02:36:12.0  diameter: 2499
+02:36:17.1  diameter 2499 in the box: hold 4 s

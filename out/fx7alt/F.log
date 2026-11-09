@@ -1,0 +1,6 @@
+ev: recording started (record only)
+q6-before-1 volume 7214.746273543282 bodies 1 timeline ['Box1', 'Cylinder1']
+ev: q6 try 1: Fillet, click the cut's edge at (807, 386) in 1440 units, radius 3, OK
+q6-after-1 volume 7180.299486360885 bodies 1 timeline ['Box1', 'Cylinder1', 'Fillet1']
+ev: recording stopped
+F done

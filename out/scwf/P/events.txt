@@ -1,0 +1,6 @@
+05:22:55.0  recording started: the finished bracket, full window
+05:22:58.0  inspect: Inspect tab
+05:23:01.2  inspect: Properties
+05:23:04.6  inspect: Properties held 7.0 s
+05:23:13.3  inspect: Close
+05:23:18.9  recording stopped

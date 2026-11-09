@@ -1,0 +1,13 @@
+{
+ "mcpServers": {
+  "solidcraft": {
+   "args": [
+    "mcp",
+    "--allow-path",
+    "/root"
+   ],
+   "command": "/opt/solidcraft-0.28.0/bin/solidcraft-cli",
+   "type": "stdio"
+  }
+ }
+}

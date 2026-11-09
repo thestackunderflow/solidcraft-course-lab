@@ -1,0 +1,10 @@
+04:26:55.6  recording started: take C2, full window (thickness 5)
+04:26:58.7  view: back (gizmo -X)
+04:27:05.2  fillet 6 (bottom-back): Fillet button
+04:27:08.5  fillet 6 (bottom-back): bottom edge of the back face
+04:27:12.8  fillet 6 (bottom-back): radius typed
+04:27:19.6  fillet 6 (bottom-back): OK
+04:27:25.0  bottom-back 6: built (curved faces 1), hold 5 s
+04:27:30.4  toolbar Undo
+04:27:34.9  view: home
+04:27:41.3  recording stopped

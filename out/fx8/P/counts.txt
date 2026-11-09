@@ -1,0 +1,3 @@
+hook-plain.stl  triangles 28  bytes 1484
+hook.stl  triangles 1484  bytes 74284
+box-round.stl  triangles 1364  bytes 68284

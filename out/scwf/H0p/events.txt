@@ -1,0 +1,8 @@
+05:15:45.5  recording started: the bracket with one hole typed at 12 and 12.5, full window
+05:15:49.5  parameters: Parameters button
+05:15:53.7  parameters: scroll to Model parameters
+05:15:58.8  parameters: Hole1 d6 = 12.5 held 3 s
+05:16:02.6  parameters: d6 = width / 2
+05:16:08.1  parameters: held 5 s
+05:16:13.1  parameters: OK
+05:16:20.2  recording stopped

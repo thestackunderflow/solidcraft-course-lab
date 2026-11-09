@@ -1,0 +1,21 @@
+
+(orca-slicer:944): dbind-WARNING **: 03:55:47.336: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(orca-slicer:944): Gtk-CRITICAL **: 03:56:16.616: gtk_window_resize: assertion 'height > 0' failed
+
+(orca-slicer:944): Gtk-CRITICAL **: 03:56:16.908: gtk_window_resize: assertion 'height > 0' failed
+
+(orca-slicer:944): Gtk-WARNING **: 03:56:17.295: Could not load a pixbuf from /org/gtk/libgtk/theme/Adwaita/assets/bullet-symbolic.svg.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+(process:2433): libsoup-WARNING **: 03:56:17.823: Failed to execute query: database is locked
+
+(process:2463): libsoup-WARNING **: 03:56:17.823: Failed to execute query: database is locked
+
+(process:2433): libsoup-WARNING **: 03:56:17.824: Failed to execute query: no such table: soup_hsts_policies
+
+(orca-slicer:944): Gdk-WARNING **: 03:57:16.076: GdkWindow 0xa00113 unexpectedly destroyed
+
+(orca-slicer:944): Gdk-WARNING **: 03:57:16.077: GdkWindow 0xa00104 unexpectedly destroyed
+
+(orca-slicer:944): Gtk-CRITICAL **: 03:57:16.200: gtk_tree_view_get_column: assertion 'GTK_IS_TREE_VIEW (tree_view)' failed

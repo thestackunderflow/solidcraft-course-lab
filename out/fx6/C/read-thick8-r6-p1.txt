@@ -1,0 +1,1 @@
+thick8-r6-p1 volume 11405.385358321915 lip {"faces": 11, "curved_faces": 1, "lip_top_face_mm": 2.0, "lip_top_centroid": [18.0, -10.0, 10.0], "lip_front_face_mm": 4.0, "lip_front_centroid": [25.0, -10.0, 2.0]}

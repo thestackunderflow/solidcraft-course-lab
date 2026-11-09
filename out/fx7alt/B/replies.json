@@ -1,0 +1,1 @@
+[{"tool": "execute", "arguments": {"command": "solid.fillet", "params": {"edges": [[10, 20, 20]], "radius": 3}}, "isError": false, "texts": ["{\n  \"changed_bodies\": [\n    \"Body1\"\n  ],\n  \"created_bodies\": [],\n  \"feature\": 2,\n  \"ms\": 47.019878,\n  \"name\": \"Fillet1\",\n  \"removed_bodies\": [],\n  \"warning\": null\n}"]}]

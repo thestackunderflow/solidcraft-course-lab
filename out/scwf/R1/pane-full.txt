@@ -1,0 +1,37 @@
+    still runs from 0 up.
+  - Width check: at width = 35 the volume was 10,607.1 mm³, and I
+    set it back to 25 mm afterwards. The final check confirms
+    7,547.8 mm³ at 25 mm.
+
+  I did not save the design to a file.
+
+✻ Baked for 7s · done 5:05 AM
+
+❯ Save the design as ~/bracket.sc and export it as
+  ~/bracket.stl.
+
+  Listed 2 directories, called solidcraft 3 times, ran 1 shell
+  command
+
+● I saved the design and exported the mesh. Both files are in
+  /root, since ~ is /root here.
+
+  - Design: /root/bracket.sc is 20,718 bytes. It holds the full
+    parametric history, including the parameters, the L profile,
+    the extrude, both holes and InnerFillet.
+  - Mesh: /root/bracket.stl is 86,084 bytes, a binary STL at
+    standard quality.
+
+  Neither file existed beforehand, so nothing was overwritten. I
+  confirmed both are on disk with ls, but I haven't opened the
+  STL in another program.
+
+  The design was at width = 25 mm when I saved and exported, so
+  the STL is the 7,547.8 mm³ bracket.
+
+✻ Worked for 8s · done 5:05 AM
+
+─────────────────────────────────────────────────────────────────
+❯ Add a 3 mm fillet to the outer corner too
+─────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

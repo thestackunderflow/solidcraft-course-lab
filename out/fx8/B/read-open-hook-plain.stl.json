@@ -1,0 +1,124 @@
+{
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -10.0,
+     22.205882352941178
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 42,
+    "face_types": {
+     "mesh": 28
+    },
+    "faces": 28,
+    "kernel": {
+     "edges": 42,
+     "faces": 28,
+     "shells": 1,
+     "vertices": 16
+    },
+    "mass_g": 10.965,
+    "material": "Default",
+    "name": "hook-plain",
+    "vertices": 16,
+    "volume_mm3": 8500.0
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 4450.0,
+   "edges": 42,
+   "faces": 28,
+   "mass_g": 10.965,
+   "open_bodies_skipped": 0,
+   "vertices": 16,
+   "volume_mm3": 8500.0
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -10.0,
+     22.205882352941178
+    ],
+    "closed": true,
+    "edges": 42,
+    "face_types": {
+     "mesh": 28
+    },
+    "faces": 28,
+    "kernel": {
+     "edges": 42,
+     "faces": 28,
+     "shells": 1,
+     "vertices": 16
+    },
+    "name": "hook-plain",
+    "vertices": 16,
+    "visible": true,
+    "volume_mm3": 8500.0
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 1,
+  "metadata": {},
+  "name": "hook-plain",
+  "params": [],
+  "path": null,
+  "redo": 0,
+  "revision": 13,
+  "selection": [],
+  "sketches": [],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 3,
+    "ms": 0.022904,
+    "name": "hook-plain",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshFeature",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

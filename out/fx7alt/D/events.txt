@@ -1,0 +1,12 @@
+12:37:03.0  volume before: 8000.0
+12:37:07.0  recording started: full window held 3 s, a fresh 20 mm box (no script from here)
+12:37:10.0  Fillet button
+12:37:13.6  click the top edge (y 20, z 20)
+12:37:16.5  Edges row: hold 4 s
+12:37:21.7  radius 3
+12:37:27.4  OK
+12:37:31.1  the round: hold 4 s
+12:37:39.6  the journal: typed into the terminal
+12:37:42.4  journal shown: hold 4 s
+12:37:47.0  recording stopped
+12:37:48.5  window sent: [10.0, 20.0, 20.0] (session journal, recovery document.json)

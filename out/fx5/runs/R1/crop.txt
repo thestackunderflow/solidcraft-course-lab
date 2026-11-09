@@ -1,0 +1,6 @@
+reply.png was taken at "turn 1: reply done" but shows PrusaSlicer on top: Claude's send raised the slicer window over
+the terminal (as take A step 13). The reply as it stood on the terminal is pane-turn1.txt (tmux capture); the greyed
+suggested next prompt is its line 38, "❯ save it over hook-lesson4.sc": it is NOT in reply.txt, so a type-on from
+reply.txt has it cropped by construction. Filmed terminal (screen.mp4 54-95 s): the xterm is x 0-1416, y 0-1800;
+crop box for the prompt + working lines: x 0, y 300, w 1416, h 900 (clip R1-reply-zoom). The screen also shows the
+plan name in the Claude Code banner (top left, y 60-100): crop it or keep it out of the cut.

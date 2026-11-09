@@ -1,0 +1,89 @@
+bore c-675-unthreaded {"export": "{\n  \"bytes\": 660827,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/bore-c-675-unthreaded.stl\"\n}", "inner_vertices": 5716, "smallest_diameter_mm": 6.75, "largest_inner_diameter_mm": 6.75, "method": "export stla, vertices with sqrt(x^2+y^2) under 5.5 mm (the hole axis is the Z axis), 2 x min / max"}
+ev: try 6.3: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 6.3
+ev: diameter 6.3 in the box: hold 4 s
+ev: OK
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 6.3: live error under the fields, OK greyed: hold 4 s
+c-6.3 volume 806.3371259558843 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: M8 in 6.3: refused (see 6.3.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 806.3371259558843
+ev: close the dialog (title-bar X)
+ev: fresh copy of ~/nut.sc for 6.5 (opened off camera, new tab)
+ev: try 6.5: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 6.5
+ev: diameter 6.5 in the box: hold 4 s
+ev: OK
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 6.5: OK enabled (no live error): OK
+c-6.5 volume 737.9411105316955 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']
+ev: M8 in 6.5: built (see 6.5.png); timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']; volume 737.9411105316955
+ev: fresh copy of ~/nut.sc for 7.6 (opened off camera, new tab)
+ev: try 7.6: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 7.6
+ev: diameter 7.6 in the box: hold 4 s
+ev: OK
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 7.6: OK enabled (no live error): OK
+c-7.6 volume 700.026860914625 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']
+ev: M8 in 7.6: built (see 7.6.png); timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']; volume 700.026860914625
+ev: fresh copy of ~/nut.sc for 7.7 (opened off camera, new tab)
+ev: try 7.7: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 7.7
+ev: diameter 7.7 in the box: hold 4 s
+ev: OK
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 7.7: live error under the fields, OK greyed: hold 4 s
+c-7.7 volume 698.5940688806016 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: M8 in 7.7: refused (see 7.7.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 698.5940688806016
+ev: close the dialog (title-bar X)
+ev: Q6: fresh copy of ~/nut.sc (opened off camera, new tab)
+ev: Q6: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: Hole Tap Type: Tapped
+ev: Size: M8
+ev: Tap drill diameter shown: hold 4 s
+ev: OK
+c-tapped-hole volume 774.0567337369301 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: tapped hole: timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 774.0567337369301
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in the tapped hole: OK enabled (no live error): OK
+c-tapped volume 733.5428274391605 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']
+ev: M8 in the tapped hole: built; timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']; volume 733.5428274391605
+ev: hold 3 s
+ev: recording stopped
+bore c-tapped {"export": "{\n  \"bytes\": 7317353,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/bore-c-tapped.stl\"\n}", "inner_vertices": 62247, "smallest_diameter_mm": 6.738, "largest_inner_diameter_mm": 8.0, "method": "export stla, vertices with sqrt(x^2+y^2) under 5.5 mm (the hole axis is the Z axis), 2 x min / max"}
+C done

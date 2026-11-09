@@ -1,0 +1,8 @@
+05:20:56.4  recording started: the bracket at the extrude step, full window
+05:20:59.4  parameters: Model tab
+05:21:02.3  parameters: Parameters
+05:21:06.0  parameters: width = 35
+05:21:09.9  parameters: held 6 s
+05:21:17.5  parameters: width back to 25
+05:21:23.4  parameters: OK
+05:21:29.4  recording stopped

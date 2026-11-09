@@ -1,0 +1,13 @@
+tools: ['list_commands', 'describe_command', 'execute', 'batch', 'inspect_design', 'measure', 'body_topology', 'set_parameter', 'screenshot', 'export', 'crash_reports', 'running', 'pending', 'undo', 'redo', 'new_design', 'open', 'save', 'skill_reference']
+execute description (first 400 chars): Run one command with JSON parameters, exactly as the toolbar, palette and scripts do. Never opens a dialog. Examples: sketch.create {plane: "XY"}; sketch.rectangle.two_point {p0: [0,0], p1: [40,30]}; sketch.circle.center {center: [20,15], radius: 5}; sketch.dimension {entities: [curve id], value: "width"}; sketch.finish {}; solid.extrude {distance: 20, operation: "cut"}; solid.fillet {edges: [[0,0
+send reply: {
+  "bytes": 14672,
+  "format": "3mf",
+  "numbered": false,
+  "path": "/root/.cache/solidcraft/slicer/hook-lesson4-0ec2ab17f9b8b1e4.3mf",
+  "print_faces": [
+    "Body1"
+  ],
+  "slicer": "PrusaSlicer",
+  "stl_fallback": false
+}

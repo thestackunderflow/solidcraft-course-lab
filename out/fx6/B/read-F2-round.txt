@@ -1,0 +1,1 @@
+F2-round volume 8392.628725751296 lip {"faces": 10, "curved_faces": 1, "lip_top_face_mm": 15.0, "lip_top_centroid": [12.5, -10.0, 5.0], "lip_front_face_mm": 5.0, "lip_front_centroid": [25.0, -10.0, 2.5]}

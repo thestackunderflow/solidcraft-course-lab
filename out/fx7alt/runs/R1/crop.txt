@@ -1,0 +1,1 @@
+crop for the video: the question panel only (from the line 'Three edges of the box meet...' to option 4); the greyed suggestion/footer lines (5, 6, 'Enter to select') cropped later

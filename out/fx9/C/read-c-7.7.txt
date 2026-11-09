@@ -1,0 +1,1 @@
+c-7.7 volume 698.5940688806016 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']

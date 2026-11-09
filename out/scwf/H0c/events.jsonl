@@ -1,0 +1,12 @@
+{"t": 0.518, "event": "recording started: the bracket, no holes yet, SolidCraft 0.30.1, full window"}
+{"t": 4.536, "event": "hole: Hole button"}
+{"t": 8.314, "event": "hole: the top face"}
+{"t": 12.048, "event": "hole: Reference 1 field"}
+{"t": 15.052, "event": "hole: the end edge"}
+{"t": 18.801, "event": "hole: Distance 1 = 12"}
+{"t": 23.856, "event": "hole: Reference 2 field"}
+{"t": 26.652, "event": "hole: the front edge"}
+{"t": 30.405, "event": "hole: Distance 2 = 12.5"}
+{"t": 36.717, "event": "hole: window held 6 s"}
+{"t": 43.260, "event": "hole: OK"}
+{"t": 52.413, "event": "recording stopped"}

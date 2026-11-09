@@ -1,0 +1,22 @@
+{"t": 0.526, "event": "recording started: SolidCraft with the saved hook (hook_depth 25), no slicer open (R1)"}
+{"t": 2.548, "event": "send 1 (by hand): right-click Body1"}
+{"t": 9.339, "event": "send 1 (by hand): Send window"}
+{"t": 10.695, "event": "send 1 (by hand): Send clicked"}
+{"t": 13.820, "event": "send 1 (by hand): slicer window up"}
+{"t": 26.099, "event": "send 1 (by hand): slicer shows the hook (25)"}
+{"t": 66.169, "event": "claude: started (no flags)"}
+{"t": 66.179, "event": "claude: typed"}
+{"t": 66.22, "event": "turn 1: typing"}
+{"t": 69.687, "event": "turn 1: Enter"}
+{"t": 70.098, "event": "turn 1: Claude working"}
+{"t": 98.064, "event": "turn 1: end-of-turn line seen"}
+{"t": 100.064, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 103.086, "event": "turn 1: reply done"}
+{"t": 115.701, "event": "slicer: 10 s after the reply"}
+{"t": 144.868, "event": "reload (by hand): extra copy selected"}
+{"t": 146.890, "event": "reload (by hand): extra copy deleted"}
+{"t": 150.905, "event": "reload (by hand): right-click menu open"}
+{"t": 156.569, "event": "menu text: \"Reload from disk\""}
+{"t": 157.680, "event": "reload (by hand): click Reload from disk"}
+{"t": 167.979, "event": "reload (by hand): done"}
+{"t": 178.923, "event": "recording stopped"}

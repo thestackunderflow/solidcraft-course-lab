@@ -1,0 +1,7 @@
+{
+ "export": "{\n  \"bytes\": 7317353,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/bore-c-tapped.stl\"\n}",
+ "inner_vertices": 62247,
+ "smallest_diameter_mm": 6.738,
+ "largest_inner_diameter_mm": 8.0,
+ "method": "export stla, vertices with sqrt(x^2+y^2) under 5.5 mm (the hole axis is the Z axis), 2 x min / max"
+}

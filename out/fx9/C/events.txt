@@ -1,0 +1,80 @@
+02:36:55.7  try 6.3: full window, hold 3 s
+02:36:58.7  double-click Hole1 in the timeline
+02:37:02.7  diameter: 6.3
+02:37:07.7  diameter 6.3 in the box: hold 4 s
+02:37:12.4  OK
+02:37:17.6  Thread: Model tab > Create menu > Thread
+02:37:24.0  pick the hole's wall
+02:37:28.4  dialog after the pick: hold 4 s
+02:37:32.4  untick Automatic size
+02:37:35.1  Size: 8 mm
+02:37:41.2  Size 8 mm set (Designation shown): hold 2 s
+02:37:43.8  tick Modeled
+02:37:50.4  M8 in 6.3: live error under the fields, OK greyed: hold 4 s
+02:37:54.6  M8 in 6.3: refused (see 6.3.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 806.3371259558843
+02:37:54.6  close the dialog (title-bar X)
+02:37:58.8  fresh copy of ~/nut.sc for 6.5 (opened off camera, new tab)
+02:38:03.4  try 6.5: full window, hold 3 s
+02:38:06.4  double-click Hole1 in the timeline
+02:38:10.4  diameter: 6.5
+02:38:15.4  diameter 6.5 in the box: hold 4 s
+02:38:20.0  OK
+02:38:25.2  Thread: Model tab > Create menu > Thread
+02:38:31.7  pick the hole's wall
+02:38:36.1  dialog after the pick: hold 4 s
+02:38:40.1  untick Automatic size
+02:38:42.8  Size: 8 mm
+02:38:48.9  Size 8 mm set (Designation shown): hold 2 s
+02:38:51.5  tick Modeled
+02:38:58.2  M8 in 6.5: OK enabled (no live error): OK
+02:39:05.3  M8 in 6.5: built (see 6.5.png); timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']; volume 737.9411105316955
+02:39:05.3  fresh copy of ~/nut.sc for 7.6 (opened off camera, new tab)
+02:39:09.9  try 7.6: full window, hold 3 s
+02:39:12.9  double-click Hole1 in the timeline
+02:39:17.0  diameter: 7.6
+02:39:21.9  diameter 7.6 in the box: hold 4 s
+02:39:26.6  OK
+02:39:31.8  Thread: Model tab > Create menu > Thread
+02:39:38.1  pick the hole's wall
+02:39:42.5  dialog after the pick: hold 4 s
+02:39:46.5  untick Automatic size
+02:39:49.2  Size: 8 mm
+02:39:55.3  Size 8 mm set (Designation shown): hold 2 s
+02:39:58.0  tick Modeled
+02:40:04.6  M8 in 7.6: OK enabled (no live error): OK
+02:40:11.7  M8 in 7.6: built (see 7.6.png); timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']; volume 700.026860914625
+02:40:11.7  fresh copy of ~/nut.sc for 7.7 (opened off camera, new tab)
+02:40:16.4  try 7.7: full window, hold 3 s
+02:40:19.4  double-click Hole1 in the timeline
+02:40:23.4  diameter: 7.7
+02:40:28.4  diameter 7.7 in the box: hold 4 s
+02:40:33.0  OK
+02:40:38.2  Thread: Model tab > Create menu > Thread
+02:40:44.6  pick the hole's wall
+02:40:49.0  dialog after the pick: hold 4 s
+02:40:53.1  untick Automatic size
+02:40:55.8  Size: 8 mm
+02:41:01.9  Size 8 mm set (Designation shown): hold 2 s
+02:41:04.5  tick Modeled
+02:41:11.1  M8 in 7.7: live error under the fields, OK greyed: hold 4 s
+02:41:15.3  M8 in 7.7: refused (see 7.7.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 698.5940688806016
+02:41:15.3  close the dialog (title-bar X)
+02:41:19.5  Q6: fresh copy of ~/nut.sc (opened off camera, new tab)
+02:41:24.1  Q6: full window, hold 3 s
+02:41:27.1  double-click Hole1 in the timeline
+02:41:31.2  Hole Tap Type: Tapped
+02:41:37.4  Size: M8
+02:41:44.0  Tap drill diameter shown: hold 4 s
+02:41:48.7  OK
+02:41:54.0  tapped hole: timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 774.0567337369301
+02:41:54.0  Thread: Model tab > Create menu > Thread
+02:42:00.4  pick the hole's wall
+02:42:04.8  dialog after the pick: hold 4 s
+02:42:09.5  untick Automatic size
+02:42:12.2  Size: 8 mm
+02:42:18.3  Size 8 mm set (Designation shown): hold 2 s
+02:42:20.9  tick Modeled
+02:42:27.5  M8 in the tapped hole: OK enabled (no live error): OK
+02:42:34.7  M8 in the tapped hole: built; timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']; volume 733.5428274391605
+02:42:34.7  hold 3 s
+02:42:37.7  recording stopped

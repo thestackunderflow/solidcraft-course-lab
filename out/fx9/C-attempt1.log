@@ -1,0 +1,56 @@
+bore c-675-unthreaded {"export": "{\n  \"bytes\": 660827,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/bore-c-675-unthreaded.stl\"\n}", "inner_vertices": 5716, "smallest_diameter_mm": 6.75, "largest_inner_diameter_mm": 6.75, "method": "export stla, vertices with sqrt(x^2+y^2) under 5.5 mm (the hole axis is the Z axis), 2 x min / max"}
+ev: try 6.3: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 6.3
+ev: diameter 6.3 in the box: hold 4 s
+ev: OK
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 2430: live error under the fields, OK greyed: hold 4 s
+c-2430 volume 806.3371259558843 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 806.3371259558843
+ev: close the dialog (title-bar X)
+ev: fresh copy of ~/nut.sc for 6.5 (opened off camera, new tab)
+ev: try 2499: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 2499
+ev: diameter 2499 in the box: hold 4 s
+ev: OK
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 2430: live error under the fields, OK greyed: hold 4 s
+c-2430 volume -0.0 bodies 0 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume -0.0
+ev: close the dialog (title-bar X)
+ev: fresh copy of ~/nut.sc for 7.6 (opened off camera, new tab)
+ev: try 2499: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 2499
+ev: diameter 2499 in the box: hold 4 s
+ev: OK
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 2430: live error under the fields, OK greyed: hold 4 s
+c-2430 volume -0.0 bodies 0 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume -0.0
+ev: close the dialog (title-bar X)
+ev: fresh copy of ~/nut.sc for 7.7 (opened off camera, new tab)
+ev: try 2499: full window, hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 2499
+ev: diameter 2499 in the box: hold 4 s

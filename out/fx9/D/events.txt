@@ -1,0 +1,7 @@
+02:43:23.1  recording started: SolidCraft window (top) + terminal strip: hold 3 s
+02:43:26.1  typed: python3 -I D/noai.py |& tee D/reply.txt
+02:43:33.9  solid.thread M8 modeled at [4, 0, 3.5]: refused
+02:43:33.9  reply: "this 8 mm hole is too wide for a modelled M8 thread: it would cut 0.00 mm of the thread's 0.68 mm depth; drill 6.75 mm for M8, or thread this hole M10", isError: true
+02:43:34.9  reply + window shown: hold 5 s
+02:43:40.6  after: timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 672.7014006603717
+02:43:42.6  recording stopped

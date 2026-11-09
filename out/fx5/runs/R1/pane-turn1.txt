@@ -1,0 +1,40 @@
+
+
+● hook_depth is now 40 mm and the updated hook has been sent to
+  PrusaSlicer, but I can't see the slicer window, so check
+  what's on the plate. The existing PrusaSlicer window (PID
+  1464) should have received the file, since no second one
+  opened.
+
+  The 3MF was overwritten under the same name, so the window may
+  still show the old 25 mm hook, possibly with the new one
+  beside it. If so, delete the old one or use Reload from disk,
+  and make sure the part measures 40 mm in X before slicing.
+
+  ┌──────────────────┬─────────────────┬─────────────────┐
+  │                  │     Before      │      After      │
+  ├──────────────────┼─────────────────┼─────────────────┤
+  │ Size (X × Y × Z) │ 25 × 20 × 60 mm │ 40 × 20 × 60 mm │
+  ├──────────────────┼─────────────────┼─────────────────┤
+  │ Volume           │ 8,307 mm³       │ 9,807 mm³       │
+  └──────────────────┴─────────────────┴─────────────────┘
+
+  All features rebuilt without errors, including the holes and
+  the fillet. The exported file also measures 40 × 60 × 20 mm;
+  its axes are ordered differently because the part is oriented
+  differently in the export.
+
+  Not saved yet: the change is only in the open SolidCraft
+  session, and /root/hook-lesson4.sc probably still has the 25
+  mm value. The session also isn't linked to a file path, so
+  tell me if you want me to save it over that file.
+
+  The sent file is /root/.cache/solidcraft/slicer/hook-lesson4-0
+  ec2ab17f9b8b1e4.3mf.
+
+✻ Worked for 28s · done 4:13 AM
+
+────────────────────────────────────────────────────────────────
+❯ save it over hook-lesson4.sc
+────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

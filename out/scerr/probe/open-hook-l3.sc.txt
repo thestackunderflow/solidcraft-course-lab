@@ -1,0 +1,2 @@
+open {"errors": 0, "features": 2, "name": "hook-l3", "path": "/root/hook-l3.sc"}
+open-hook-l3.sc {"bodies": [["Body1", 8500.0, {"plane": 10}]], "timeline": [["Sketch1", "Sketch"], ["Hook", "ExtrudeFeature"]]}

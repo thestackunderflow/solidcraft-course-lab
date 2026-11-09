@@ -1,0 +1,37 @@
+  supported constant-section prism. I'll do the cut on the STL
+  directly with a mesh boolean in Python instead.
+
+  Ran 1 shell command
+
+● Trimesh and manifold3d aren't installed. I'll install them into
+  a throwaway virtual environment in the scratchpad, so nothing
+  system-wide changes.
+
+  Ran 1 shell command
+
+● The venv fails because python3-venv isn't installed, and I'd
+  rather not apt-install system packages, so I'm installing the
+  libraries into a scratchpad folder with pip --target. · summary
+
+  Ran 1 shell command
+─────────────────────────────────────────────────────────────────
+←  ☐ Method  ☐ Position  ✔ Submit  →
+
+│ hook.stl is a mesh, and SolidCraft can't cut meshes. How should
+│ I make the 5 mm hole?
+
+❯ 1. Rebuild as solid (Recommended)
+     Remodel the hook as a native solid from its measured profile
+     (L-shape, 25×20×60 mm, rounded top, existing two holes),
+     add the 5 mm hole, and export a new STL. It will be a close
+     copy, not the original triangles, and I'd save it under a
+     new name so hook.stl stays untouched.
+  2. Install mesh tools
+     Install pip and trimesh/manifold3d on this machine (needs
+     network and system changes), then cut the hole directly in
+     the original mesh.
+  3. Type something.
+─────────────────────────────────────────────────────────────────
+  4. Chat about this
+
+Enter to select · Tab/Arrow keys to navigate · Esc to cancel

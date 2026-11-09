@@ -1,0 +1,18 @@
+05:21:31.1  setup: history to the end
+05:21:37.9  recording started: the finished bracket, full window
+05:21:40.9  parameters: Model tab
+05:21:43.8  parameters: Parameters
+05:21:47.5  parameters: width = 35
+05:21:51.4  parameters: held 4 s
+05:21:57.0  parameters: OK
+05:22:04.5  measure: Inspect, Measure
+05:22:10.7  measure: the first hole's rim
+05:22:14.0  measure: the L-shaped side face
+05:22:17.7  measure: centre to centre held 7 s
+05:22:26.7  measure: Close
+05:22:27.7  parameters: width back to 25
+05:22:27.7  parameters: Model tab
+05:22:30.6  parameters: Parameters
+05:22:34.4  parameters: width = 25
+05:22:38.3  parameters: held 2 s
+05:22:49.6  recording stopped

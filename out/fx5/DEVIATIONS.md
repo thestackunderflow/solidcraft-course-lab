@@ -1,0 +1,25 @@
+# fx5 lab deviations (4-5 Nov 2026, UTC times)
+
+- 03:31 take G try 1 (orca): AppRun exited at once, `boost::filesystem::create_directory: No such file or directory "/root/.config/OrcaSlicer"`: a fresh home has no ~/.config. Fix: `mkdir -p ~/.config` (G/image-fixes.txt); try 2 passed. No library added.
+- G, both slicers: an SSL dialog came before the wizard ("use system SSL certificate: /etc/ssl/certs/ca-certificates.crt ..."); Yes. In take C "Remember my choice" was ticked so it did not return.
+- G step 10: Ctrl+Q did not close Orca; the script ended it (pkill), as stop rule allows.
+- Image: PrusaSlicer 2.9.2 is lesson 5's Debian package (sc5-l5), not an AppImage; home is /root, not "maker" (as lesson 5). Display 2880x1800, UI scale 1.8, GDK scale 2 (as lesson 6).
+- Takes A, B, C: the hook was not copied from out/l5/hook-lesson4.sc; it was rebuilt with no AI (lab/l6part.py: lesson 4's hook + lesson 5's J-side print face, 8,306.62 mm3) and SAVED as ~/hook-lesson4.sc over the plug before the recording. The tab shows hook-lesson4 with no unsaved mark.
+- A step 4: `Ctrl+S` sent by xdotool opened the command palette instead of saving; Escape, then the toolbar Save icon (toast "Saved /root/hook-lesson4.sc"). All later saves use the Save icon.
+- A step 6 (B2): the second copy sits at the same position, drawn over the first (not beside it). The first copy was found by clicking its lip (send2-first-selected.png: 25 x 60 x 20).
+- A step 8: the first right-click missed the object ("Add Shape" menu); Escape, second right-click on the hook.
+- A step 12: the palette has no help for file.send_to_slicer (A/palette-help.txt); the help text was read from the MCP server's describe_command instead (B/describe-send.txt).
+- A step 13: the no-AI send added a THIRD copy in PrusaSlicer (40, at 125/105) over the reloaded one; no consent prompt.
+- A step 14: PrusaSlicer's close dialog ("Closing PrusaSlicer. Current project is modified. Do you want to save the changes to .../hook-lesson4-0ec2ab17f9b8b1e4.3mf?") default Save was taken: PrusaSlicer wrote its project over the hand-over file (A/ls-after.txt 57,263 bytes).
+- B step 8: first solid.box call had wrong parameters (fixed on try 2: length/width/height, body "Tag"). B step 9: SolidCraft ended with pkill (the unsaved Tag box discarded), restarted, the saved file opened over the plug with --allow-path /root.
+- B: the xterm line wraps (46 columns): the file name breaks after "hook".
+- C: the Orca window opened by Send to Slicer was not maximised; the second window opened exactly over the first and was moved aside with xdotool (a drag) so both are in frame.
+- C step 8: Orca's "Drop project file" prompt (C2): default OK (Import geometry only) taken after 20 s.
+- C step 10: Orca's close dialog default Yes NOT taken: No (Yes starts a project save with a file picker). Recorded here.
+- C-bambu (Bambu Studio take C): NOT run (optional in the handover; skipped for the token budget). C-bambu/NOT-RUN.txt.
+- R1 (5 Nov, 04:10-04:15 UTC): the container had the network (Claude's servers) and the subscription login mounted read-only at /creds.json, copied to ~/.claude/.credentials.json and deleted before the container ended (checked); ANTHROPIC_API_KEY unset. lab/fx5R1.sh part1/part2.
+- R1: `claude mcp list` first listed the account's claude.ai connectors too; they were switched off for the run (ENABLE_CLAUDEAI_MCP_SERVERS=false) so only solidcraft was connected (mcp-list.txt).
+- R1: model was claude-opus-5-5 (the build's default for this login), not the expected claude-sonnet-5-5; launch had no flags as lesson 7 (auto mode).
+- R1: reply.png shows PrusaSlicer, not the reply: SolidCraft's send raised the slicer over the terminal at about 95 s. The reply text is pane-turn1.txt / reply.txt.
+- R1: the by-hand reload deleted the extra 40 copy first (as take A), then right-click > "Reload from disk" on the 25 one.
+- events.jsonl in A and C had unescaped quotes; repaired (same times and texts), fx5lib.sh now escapes them.

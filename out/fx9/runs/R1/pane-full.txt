@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+❯ Put a modelled M8 thread in the hole of this nut.
+
+  Called solidcraft 6 times
+
+● The hole is 8 mm, which is too wide for a modelled M8 thread. An M8 needs a 6.75 mm drill. I'm resizing Hole1 to 6.75 mm and then adding the thread.
+
+  Called solidcraft 5 times
+
+● The nut now has a modelled M8 right-hand thread cut through its full 7 mm height. It shows as a helical groove in the viewport, and the body is still a
+  single closed solid.
+
+  The hole was 8 mm, which is already the M8 major diameter, so the thread cutter had nothing to remove. It refused with "too wide for a modelled M8 thread". I
+  changed Hole1's diameter to 6.75 mm, the standard M8 drill size, and then ran solid.thread with modeled: true. The new feature is Thread1.
+
+  The modelled thread makes the body heavy: about 1,860 faces, against 9 before. Rebuilds and exports may be slower.
+
+  I haven't saved the design. Tell me if you'd rather keep the 8 mm hole as it was and have it threaded as M10 instead.
+
+✻ Baked for 26s · done 2:47 AM
+
+
+
+
+
+
+
+
+
+
+❯ save the design
+
+

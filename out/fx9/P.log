@@ -1,0 +1,9 @@
+build hole 8: isError None; {"completed": 5, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8", "k9", "k10", "k11", "k12", "
+hole 8: body Nut volume_mm3 672.7014006603717 bbox {"max": [7.505553499465134, 6.500000000000001, 7.000000000000004], "min": [-7.505553499465134, -6.500000000000006, 0.0]}
+hole 8: timeline ["Sketch1", "Extrude1", "Hole1"]
+save nut.sc: isError None; {"bytes": 13819, "name": "nut", "path": "/root/nut.sc"}
+build hole 6.75: isError None; {"completed": 5, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8", "k9", "k10", "k11", "k12", "
+hole 6.75: body Nut volume_mm3 774.0567337369301 bbox {"max": [7.505553499465134, 6.500000000000001, 7.0000000000000036], "min": [-7.505553499465134, -6.500000000000006, 0.0]}
+hole 6.75: timeline ["Sketch1", "Extrude1", "Hole1"]
+save nut-675.sc: isError None; {"bytes": 13629, "name": "nut-675", "path": "/root/nut-675.sc"}
+P done

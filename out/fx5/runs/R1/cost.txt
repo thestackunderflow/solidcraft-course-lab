@@ -1,0 +1,4 @@
+   Total cost:            $0.3012
+   Total duration (API):  28s
+   Total duration (wall): 1m 2s
+        claude-opus-5-5:  520 input, 2.8k output, 296.4k

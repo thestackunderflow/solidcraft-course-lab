@@ -1,0 +1,10 @@
+02:34:25.6  recording started: take A's design (hook.stl mesh + Sketch1), full window
+02:34:28.6  cut: Extrude button
+02:34:32.2  cut: pick the circle
+02:34:35.5  cut: Operation menu
+02:34:38.4  cut: Cut
+02:34:41.4  cut: Reverse (into the plate)
+02:34:45.3  cut: OK
+02:34:47.9  cut: result held 4 s
+02:34:58.7  cut: Cancel
+02:35:04.3  recording stopped

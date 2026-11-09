@@ -1,0 +1,13 @@
+$ python3 -I journal.py
+# SolidCraft session journal: ~/.local/share/solidcraft/recovery/1793968648-23-1.sc (document.json)
+{"name": "Fillet1", "type": "fillet", "edges": [[10.0, 20.0, 20.0]], "edge_names": ["F1:+y|F1:+z"], "radius": "3"}
+$ 
+
+
+
+
+
+
+
+
+

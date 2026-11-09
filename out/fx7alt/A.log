@@ -1,0 +1,7 @@
+ev: recording started: SolidCraft window (top) + terminal strip, a fresh 20 mm box, typing at once
+ev: reply + window toast shown: hold 5 s
+ev: orbit: slow swing, 8 s (F1 source)
+ev: home view: hold 3 s
+ev: recording stopped
+a-after volume 8000.0 bodies 1 timeline ['Box1']
+A done

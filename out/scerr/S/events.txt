@@ -1,0 +1,9 @@
+04:24:19.8  recording started: lesson 4's hook in SolidCraft 0.30.1, full window
+04:24:23.8  send: right-click Body1
+04:24:27.3  send: Send to Slicer
+04:24:31.1  send: dialog held 3 s (Slicer: PrusaSlicer)
+04:24:34.8  send: Send
+04:24:38.1  slicer: window up
+04:24:59.5  slicer: OK on the offline preset-download error (container has no network)
+04:25:03.3  slicer: Size row 25 x 20 x 60 mm held 7 s
+04:25:11.3  recording stopped

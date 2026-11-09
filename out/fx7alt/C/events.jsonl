@@ -1,0 +1,8 @@
+{"t": 0.507, "event": "recording started: full window held 3 s, a fresh 20 mm box"}
+{"t": 7.609, "event": "volume before: 8000.0"}
+{"t": 9.471, "event": "solid.fillet [20, 20, 5]: built"}
+{"t": 9.477, "event": "reply: \"{\\n  \\\"changed_bodies\\\": [\\n    \\\"Body1\\\"\\n  ],\\n  \\\"created_bodies\\\": [],\\n  \\\"feature\\\": 2,\\n  \\\"ms\\\": 44.531014,\\n  \\\"name\\\": \\\"Fillet1\\\",\\n  \\\"removed_bodies\\\": [],\\n  \\\"warning\\\": null\\n}\", isError: false"}
+{"t": 11.0, "event": "volume after: 7961.35"}
+{"t": 11.142, "event": "reply shown, the round: hold 5 s"}
+{"t": 16.727, "event": "second angle: turn the view (middle drag), hold 4 s"}
+{"t": 29.494, "event": "recording stopped"}

@@ -1,0 +1,43 @@
+$ python3 -I D/noai.py |& tee D/reply.txt
+# SolidCraft 0.28.0, the hook open: the same Fillet, sent by a script
+# (our test script starts the plug, as a Claude app does)
+plug: /opt/solidcraft-0.28.0/bin/solidcraft-cli mcp
+
+-> measure
+<- reply
+   "volume_mm3": 8500.0
+   "bbox": min [0.0, -20.0, 0.0] max [25.0, 0.0, 60.0]
+
+# the lip's outer top edge, read from the body: F2:side:l2|F2:side:l3
+# midpoint [25.0, -10.0, 10.0] corner [25.0, 0.0, 10.0] length 20.0
+
+-> execute solid.fillet edges [[25.0, -10.0, 10.0]] radius 6 (the edge by
+its midpoint)
+<- reply isError: true
+   not supported yet: the blend is larger than the neighbouring faces; the
+   largest radius that fits is 5 mm
+
+-> execute solid.fillet edges [[25.0, 0.0, 10.0]] radius 6 (the edge by a
+corner point)
+<- reply isError: true
+   invalid parameters for `solid.fillet`: [25, 0, 10] is where 3 edges meet:
+   give a point along one edge, such as its midpoint
+
+-> measure
+<- reply
+   "volume_mm3": 8500.0
+   "bbox": min [0.0, -20.0, 0.0] max [25.0, 0.0, 60.0]
+$ 
+
+
+
+
+
+
+
+
+
+
+
+
+

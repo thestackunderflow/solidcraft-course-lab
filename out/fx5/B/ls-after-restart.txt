@@ -1,0 +1,4 @@
+total 36
+-rw-r--r-- 1 root root 14672 2026-11-05 03:54:37.496705317 +0000 hook-lesson4-0ec2ab17f9b8b1e4.3mf
+-rw-r--r-- 1 root root 14838 2026-11-05 03:54:02.183329286 +0000 hook-lesson4-d04c5167da897604.3mf
+-rw-r--r-- 1 root root  1114 2026-11-05 03:53:59.107528265 +0000 hook-lesson4-e48c9266edd68d09.3mf

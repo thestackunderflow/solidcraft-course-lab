@@ -1,0 +1,33 @@
+b-before volume 672.7014006603717 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: recording started: full SolidCraft window, ~/nut.sc (8 mm hole): hold 3 s
+ev: double-click Hole1 in the timeline
+ev: diameter: 6.75
+ev: diameter 6.75 in the box: hold 4 s
+ev: OK
+b-hole675 volume 774.0567337369301 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: Hole1 now 6.75: volume 774.0567337369301; timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 6.75: OK enabled (no live error): OK
+ev: M8 in 6.75: built
+b-after volume 733.5428274391605 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']
+ev: after: volume 733.5428274391605; timeline ['Sketch1', 'Extrude1', 'Hole1', 'Thread1']
+ev: the threaded nut: hold 4 s
+ev: section: Inspect > Section, plane XZ (Browser > Origin > XZ), OK
+ev: section view: hold 4 s
+ev: close-up of the teeth: zoom at the cut wall
+ev: teeth close-up: hold 4 s
+ev: low angle: a slow middle-button tilt
+ev: teeth, low angle: hold 4 s
+ev: home view
+ev: Properties (Inspect > Properties)
+ev: Properties: hold 4 s
+ev: recording stopped
+bore b-after {"export": "{\n  \"bytes\": 7317351,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/bore-b-after.stl\"\n}", "inner_vertices": 62247, "smallest_diameter_mm": 6.738, "largest_inner_diameter_mm": 8.0, "method": "export stla, vertices with sqrt(x^2+y^2) under 5.5 mm (the hole axis is the Z axis), 2 x min / max"}
+ev: bore (off camera, STL vertices): bore b-after {"export": "{\n  \"bytes\": 7317351,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/bore-b-after.stl\"\n}", "inner_vertices": 62247, "smallest_diameter_mm": 6.738, "largest_inner_diameter_mm": 8.0, "method": "export stla, vertices with sqrt(x^2+y^2) under 5.5 mm (the hole axis is the Z axis), 2 x min / max"}
+B done

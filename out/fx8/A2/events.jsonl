@@ -1,0 +1,10 @@
+{"t": 0.507, "event": "recording started: take A's design (hook.stl mesh + Sketch1), full window"}
+{"t": 3.516, "event": "cut: Extrude button"}
+{"t": 7.049, "event": "cut: pick the circle"}
+{"t": 10.351, "event": "cut: Operation menu"}
+{"t": 13.309, "event": "cut: Cut"}
+{"t": 16.255, "event": "cut: Reverse (into the plate)"}
+{"t": 20.178, "event": "cut: OK"}
+{"t": 22.798, "event": "cut: result held 4 s"}
+{"t": 33.592, "event": "cut: Cancel"}
+{"t": 39.179, "event": "recording stopped"}

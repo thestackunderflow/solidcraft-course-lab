@@ -1,0 +1,11 @@
+{"t": 0.509, "event": "recording started: Claude Code (left), SolidCraft with lesson 3's hook (right)"}
+{"t": 3.587, "event": "turn 1: typing"}
+{"t": 7.433, "event": "turn 1: Enter"}
+{"t": 7.86, "event": "turn 1: Claude working"}
+{"t": 14.121, "event": "tool call: inspect_design", "seq": 13}
+{"t": 14.178, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 18.154, "event": "tool call: execute", "seq": 15}
+{"t": 18.27, "event": "tool reply: execute", "seq": 16, "isError": true}
+{"t": 22.618, "event": "turn 1: end-of-turn line seen"}
+{"t": 24.619, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 30.637, "event": "recording stopped"}

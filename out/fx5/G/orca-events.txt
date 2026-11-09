@@ -1,0 +1,7 @@
+03:32:29.5  orca: started
+03:32:50.8  orca: window up
+03:32:50.8  orca: hold for the next step (wizard / import is done by fx5G-drive.sh in the same container)
+03:33:18.7  orca: first dialog "use system SSL certificate: /etc/ssl/certs/ca-certificates.crt ... Do you want to continue?" (Yes / No, Remember my choice): clicked Yes (the default)
+03:36:26.3  orca: model rendered (File import Ctrl+I of out/l5/hand/sent-side.3mf; Object name: Body1, Size: 25 x 60 x 20 mm, Volume 8306.44 mm3)
+03:37:03.8  orca: single-instance flag
+03:37:34.4  orca: closed

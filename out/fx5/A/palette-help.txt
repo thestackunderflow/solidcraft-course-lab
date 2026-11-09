@@ -1,0 +1,5 @@
+Typed by hand from the screen (palette-help-1.png, -2.png, -3.png), SolidCraft 0.28.0 command palette (the "Search commands" box, top right):
+- typing file.send_to_slicer lists one row: "Send to Slicer" / "INSERT > FILES"; footer "↑ ↓ choose  Enter run  Tab fill name  Esc close".
+- Tab: no help text appears (palette-help-2.png).
+- typing " {" after the id: "Run command" / "file.send_to_slicer", badge "Not valid", red line "parameters must be JSON: EOF while parsing an object at line 1 column 1"; footer "Enter run  Shift+Enter run and keep open  Esc close".
+- The palette shows NO parameter help for file.send_to_slicer (no single_instance, no "load the file in the window that is open", no "sending again replaces it", no format line). The help text an agent gets is the MCP server's describe_command (take B, B/describe-send.txt).

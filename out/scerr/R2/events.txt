@@ -1,0 +1,19 @@
+04:26:34.1  volume before: 8000.0
+04:26:37.1  recording started: SolidCraft 0.30.1 window (top) + terminal strip, a fresh 20 mm box
+04:26:43.5  volume before: 8000.0
+04:26:45.2  solid.fillet [20, 20, 20]: refused
+04:26:45.2  reply: "invalid parameters for `solid.fillet`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint", isError: true
+04:26:46.7  volume after: 8000.0
+04:26:46.8  corner fillet: reply + toast held 5 s
+04:26:56.3  volume before: 8000.0
+04:26:58.0  solid.chamfer [20, 20, 20]: refused
+04:26:58.0  reply: "invalid parameters for `solid.chamfer`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint", isError: true
+04:26:59.5  volume after: 8000.0
+04:26:59.5  corner chamfer: reply held 4 s
+04:27:08.7  volume before: 8000.0
+04:27:10.5  solid.fillet [20, 20, 5]: built
+04:27:10.6  reply: "{\n  \"changed_bodies\": [\n    \"Body1\"\n  ],\n  \"created_bodies\": [],\n  \"feature\": 2,\n  \"ms\": 24.193222,\n  \"name\": \"Fillet1\",\n  \"removed_bodies\": [],\n  \"warning\": null\n}", isError: false
+04:27:12.1  volume after: 7961.35
+04:27:12.2  edge point fillet: built, held 5 s
+04:27:17.2  orbit: slow swing, 8 s
+04:27:31.2  recording stopped

@@ -1,0 +1,25 @@
+restart: SolidCraft ended with pkill (the unsaved Tag box discarded), started again, the saved file opened over the plug (open tool)
+open: /root/hook-lesson4.sc: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-6378-2851084); allow another folder with `--allow-path DIR`
+send: nothing to export: the design has no bodies
+open: {
+  "errors": 0,
+  "features": 5,
+  "name": "hook-lesson4",
+  "open_elsewhere": {
+    "app": "0.28.0",
+    "host": "51e5f3bd37c8",
+    "opened": 1793850632,
+    "user": ""
+  },
+  "path": "/root/hook-l
+send: {
+  "bytes": 14672,
+  "format": "3mf",
+  "numbered": false,
+  "path": "/root/.cache/solidcraft/slicer/hook-lesson4-0ec2ab17f9b8b1e4.3mf",
+  "print_faces": [
+    "Body1"
+  ],
+  "slicer": "PrusaSlicer",
+  "stl_fallback": false
+}

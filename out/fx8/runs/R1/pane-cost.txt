@@ -1,0 +1,37 @@
+  supported constant-section prism. I'll do the cut on the STL
+  directly with a mesh boolean in Python instead.
+
+  Ran 1 shell command
+
+● Trimesh and manifold3d aren't installed. I'll install them into
+  a throwaway virtual environment in the scratchpad, so nothing
+  system-wide changes.
+
+  Ran 1 shell command
+
+● The venv fails because python3-venv isn't installed, and I'd
+  rather not apt-install system packages, so I'm installing the
+  libraries into a scratchpad folder with pip --target. · summary
+
+  Ran 1 shell command
+─────────────────────────────────────────────────────────────────
+←  ☒ Method  ☐ Position  ✔ Submit  →
+
+│ Where should the 5 mm hole go? The plate (x 0–5, y −20–0, z
+│ 0–0) already has two holes at about z=15 and z=45, both centred
+│ at y=−10.
+
+❯ 1. Centre, z=30 (Recommended)
+     Centred at y=−10, z=30, midway between the two existing
+     holes, drilled along X through the 5 mm plate.
+  2. Other position
+     Tell me the y/z coordinates (or the distance from an edge)
+     in the Other field.
+  3. Type something.
+─────────────────────────────────────────────────────────────────
+  4. Chat about this
+
+Enter to select · Tab/Arrow keys to navigate · Esc to cancel
+
+
+

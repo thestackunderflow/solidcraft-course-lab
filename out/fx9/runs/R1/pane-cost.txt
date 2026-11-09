@@ -1,0 +1,43 @@
+
+✻ Baked for 26s · done 2:47 AM
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+   Settings  Status   Config   Usage   Stats
+
+   Sessi n
+
+   Total co t:            $0.2472
+   Total duration (API):  26s
+   Total duration (wall): 1m 10s
+   Total code changes:    0 lines added, 0 lines removed
+   Usage by model:
+       claude-haiku-5-5:  1.2k input, 21 output, 0 cache read, 0 cache write ($0.0001)
+      claude-sonnet-5-5:  528 input, 1.8k output, 589.4k cache read, 42.4k cache write ($0.2471)
+   Prompt cache (main):   10 requests · 93% of input tokens from cache · no misses · warm (1h TTL, last activity 20s ago)
+
+   Current week (all models)
+   ██████████████████████▌                            45% used
+   Resets Nov 10, 2am (UTC)
+
+   Current week (Fable)
+   █████                                              10% used
+   Resets Nov 10, 2am (UTC)
+
+   What's contributing to your limits usage?
+   Approximate · sessions on this machine only
+
+   Last 24h · shares overlap
+
+   74%  Turn off solidcraft when you don't need it
+
+   MCP servers             % of usage
+   solidcraft                     74%
+
+   f to fix this · d to day · w to week
+
+   Usage credits
+   Usage credits are off · /usage-credits to turn them on
+
+   Esc to cancel
+
+
+

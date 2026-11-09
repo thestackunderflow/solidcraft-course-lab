@@ -1,0 +1,17 @@
+12:39:08.4  recording started (record only)
+12:39:15.9  volume before: 8000.0
+12:39:20.1  volume before: 8000.0
+12:39:22.0  solid.fillet [20, 20, 19]: built
+12:39:22.0  reply: "{\n  \"changed_bodies\": [\n    \"Body1\"\n  ],\n  \"created_bodies\": [],\n  \"feature\": 2,\n  \"ms\": 50.776067,\n  \"name\": \"Fillet1\",\n  \"removed_bodies\": [],\n  \"warning\": null\n}", isError: false
+12:39:23.5  volume after: 7961.35
+12:39:34.1  volume before: 8000.0
+12:39:38.5  volume before: 8000.0
+12:39:40.2  solid.chamfer [20, 20, 20]: refused
+12:39:40.2  reply: "invalid parameters for `solid.chamfer`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint", isError: true
+12:39:41.7  volume after: 8000.0
+12:39:52.2  volume before: 8000.0
+12:39:54.4  q6 try 1: Fillet, click the cut's edge at (807, 386) in 1440 units, radius 3, OK
+12:40:13.6  recording stopped
+12:41:03.0  upright 19: built (QA5; volume 8000 -> 7961.35; F/q5.png) [summary line written after the take from the events above]
+12:41:03.0  chamfer corner: refused "invalid parameters for `solid.chamfer`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint" (QA7; volume 8000 -> 8000)
+12:41:03.0  window case: not reproduced (QA6 try 1: the half-round cut edge clicked in the Fillet dialog, radius 3, OK: built, Fillet1 in the timeline, volume 7214.75 -> 7180.30, no error line; F/q6-1.png). One try only (see DEVIATIONS)

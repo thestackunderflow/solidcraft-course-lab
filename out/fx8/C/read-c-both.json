@@ -1,0 +1,240 @@
+{
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      3.552713678800501e-15,
+      60.00000000000001
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -9.999999999999998,
+     22.20588235294117
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 24,
+    "face_types": {
+     "plane": 10
+    },
+    "faces": 10,
+    "kernel": {
+     "edges": 24,
+     "faces": 10,
+     "shells": 1,
+     "vertices": 16
+    },
+    "mass_g": 10.965,
+    "material": "Default",
+    "name": "hook-plain",
+    "vertices": 16,
+    "volume_mm3": 8500.0
+   },
+   {
+    "area_mm2": 4489.811314859694,
+    "bbox": {
+     "max": [
+      25.0,
+      40.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.713601008766337,
+     30.00000000156588,
+     21.899232840738968
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 2226,
+    "face_types": {
+     "mesh": 1484
+    },
+    "faces": 1484,
+    "kernel": {
+     "edges": 2226,
+     "faces": 1484,
+     "shells": 1,
+     "vertices": 740
+    },
+    "mass_g": 10.715300266415317,
+    "material": "Default",
+    "name": "hook",
+    "vertices": 740,
+    "volume_mm3": 8306.434315050634
+   }
+  ],
+  "body_count": 2,
+  "total": {
+   "area_mm2": 8939.811314859693,
+   "edges": 2250,
+   "faces": 1494,
+   "mass_g": 21.680300266415315,
+   "open_bodies_skipped": 0,
+   "vertices": 756,
+   "volume_mm3": 16806.434315050632
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      3.552713678800501e-15,
+      60.00000000000001
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -9.999999999999998,
+     22.20588235294117
+    ],
+    "closed": true,
+    "edges": 24,
+    "face_types": {
+     "plane": 10
+    },
+    "faces": 10,
+    "kernel": {
+     "edges": 24,
+     "faces": 10,
+     "shells": 1,
+     "vertices": 16
+    },
+    "name": "hook-plain",
+    "vertices": 16,
+    "visible": true,
+    "volume_mm3": 8500.0
+   },
+   {
+    "area_mm2": 4489.811314859694,
+    "bbox": {
+     "max": [
+      25.0,
+      40.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.713601008766337,
+     30.00000000156588,
+     21.899232840738968
+    ],
+    "closed": true,
+    "edges": 2226,
+    "face_types": {
+     "mesh": 1484
+    },
+    "faces": 1484,
+    "kernel": {
+     "edges": 2226,
+     "faces": 1484,
+     "shells": 1,
+     "vertices": 740
+    },
+    "name": "hook",
+    "vertices": 740,
+    "visible": true,
+    "volume_mm3": 8306.434315050634
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 4,
+  "metadata": {},
+  "name": "Untitled",
+  "params": [],
+  "path": null,
+  "redo": 0,
+  "revision": 18,
+  "selection": [],
+  "sketches": [],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 3,
+    "ms": 0.01685,
+    "name": "hook-plain",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 6,
+    "ms": 0.563345,
+    "name": "hook",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 7,
+    "ms": 0.052286,
+    "name": "Move1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MoveFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 8,
+    "ms": 23.338274,
+    "name": "ConvertMesh1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshConvertFeature",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

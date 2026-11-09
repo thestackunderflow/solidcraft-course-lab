@@ -1,0 +1,37 @@
+  moved to Y = 17.5 and the volume was 10,539.5 mm³, which is
+  10,640 minus the same 100.5 mm³. width is back at 25 mm.
+
+  I did not save the design to a file.
+
+✻ Churned for 23s · done 5:04 AM
+
+❯ Round the inside corner of the L with a 3 mm fillet, then tell
+  me the volume.
+
+  Called solidcraft
+
+● The inside corner of the L now has a 3 mm fillet, and the
+  volume is 7,547.8 mm³.
+
+  - Fillet: the feature is named InnerFillet. It rounds the
+    concave edge where the underside of the top leg meets the
+    inner face of the drop leg, at X = 4, Z = 26. The face count
+    went from 10 to 11, so it hit the edge.
+  - Volume: the fillet adds material at an inside corner. It adds
+    (1 − π/4) × 3² = 1.93 mm² across the 25 mm width, which is
+    48.3 mm³. That gives 7,499.5 + 48.3 = 7,547.8 mm³, which
+    matches the measured 7,547.79.
+  - Bounding box: still X 0–50, Y 0–25, Z 0–30, so the height
+    still runs from 0 up.
+  - Width check: at width = 35 the volume was 10,607.1 mm³, and I
+    set it back to 25 mm afterwards. The final check confirms
+    7,547.8 mm³ at 25 mm.
+
+  I did not save the design to a file.
+
+✻ Baked for 7s · done 5:05 AM
+
+─────────────────────────────────────────────────────────────────
+❯ save the design as under_desk_bracket
+─────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

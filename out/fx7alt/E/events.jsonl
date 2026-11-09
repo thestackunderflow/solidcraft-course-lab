@@ -1,0 +1,6 @@
+{"t": 0.508, "event": "recording started: full window held 3 s"}
+{"t": 8.168, "event": "tools/list: 19 tools; a solid.fillet tool: False; \"point on edge\" in tools/list: none"}
+{"t": 10.377, "event": "fillet edges line: \"edges: [[x,y,z] point on edge | {body, index}]\" (list_commands solid.fillet, params field, first clause)"}
+{"t": 13.509, "event": "index route: body_topology lists 12 edges with index + midpoint; the edge with midpoint [10, 20, 20] is {\"body\": \"Body1\", \"index\": 10}"}
+{"t": 13.686, "event": "tool list + fillet entry + edge indexes shown: hold 4 s"}
+{"t": 18.248, "event": "recording stopped"}

@@ -1,0 +1,15 @@
+12:33:31.4  volume before: 8000.0
+12:33:35.1  recording started: SolidCraft window (top) + terminal strip, a fresh 20 mm box, typing at once
+12:33:39.3  volume before: 8000.0
+12:33:41.0  solid.fillet [20, 20, 20]: refused
+12:33:41.0  reply: "invalid parameters for `solid.fillet`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint", isError: true
+12:33:42.5  volume after: 8000.0
+12:33:44.0  reply + window toast shown: hold 5 s
+12:33:49.0  orbit: slow swing, 8 s (F1 source)
+12:34:00.1  home view: hold 3 s
+12:34:03.6  recording stopped
+12:34:19.0  window line: "Fillet: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint" (toast, bottom right of the viewport, red dot; typed after the take from A/window.png)
+12:34:19.0  axes (off-camera, from A/box.png + the view cube, home view): up axis: Z (view cube Z up; X red toward the lower right, Y green toward the upper right)
+12:34:19.0  axes: corner 0,0,0 at: the left bottom corner of the box (origin marker, screen about 1402,778 of 2880x1620)
+12:34:19.0  axes: corner 20,20,20 at: the right top corner (screen about 1946,466)
+12:34:19.0  axes: edge [10,20,20]: top, at the back right (from the 20,20,20 corner up-left to the back top corner; probe: the window click there stored edge F1:+y|F1:+z, edges [[10.0, 20.0, 20.0]])

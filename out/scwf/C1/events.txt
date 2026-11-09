@@ -1,0 +1,13 @@
+05:19:55.9  recording started: Claude's bracket, all five steps, full window
+05:19:58.9  history: step back 3 (fillet, hole B, hole A off)
+05:20:07.1  inspect: Inspect tab
+05:20:10.3  inspect: Properties
+05:20:13.6  inspect: Properties held 7.0 s
+05:20:22.2  inspect: Close
+05:20:25.2  measure: Measure
+05:20:30.8  measure: top corner
+05:20:33.9  measure: hover, X Y Z held 4 s
+05:20:39.6  measure: the corner at the origin
+05:20:43.3  measure: dZ held 6 s
+05:20:51.0  measure: Close
+05:20:52.0  recording stopped

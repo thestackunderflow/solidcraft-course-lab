@@ -1,0 +1,2 @@
+open {"bodies": ["box-round"], "component": 1, "component_name": "box-round", "errors": 0, "features": 1, "occurrence": 2, "path": "/root/box-round.stl", "warnings": []}
+open-box-round.stl {"bodies": [["box-round", 31568.26, {"mesh": 1364}]], "timeline": [["box-round", "MeshFeature"]]}

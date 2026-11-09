@@ -1,0 +1,1 @@
+bore c-675-unthreaded {"export": "{\n  \"bytes\": 660827,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/bore-c-675-unthreaded.stl\"\n}", "inner_vertices": 5716, "smallest_diameter_mm": 6.75, "largest_inner_diameter_mm": 6.75, "method": "export stla, vertices with sqrt(x^2+y^2) under 5.5 mm (the hole axis is the Z axis), 2 x min / max"}

@@ -1,0 +1,8 @@
+R1 outcome A (scored on reply.txt and tools.txt only, LAB-fx5 section 4): the tool calls include set_parameter
+hook_depth 40 (call 6) and execute file.send_to_slicer (call 9); the reply says "the window may still show the old
+25 mm hook, possibly with the new one beside it. If so, delete the old one or use Reload from disk".
+Evidence frame F8 size boxes 40 (take A size-boxes-40.png): matches. In this run too: slicer-after.png = a second copy
+40 x 60 x 20 over the 25 (B2, one window); after a by-hand delete + Reload from disk: 40 x 60 x 20 (slicer-after-reload.png).
+Model: claude-opus-5-5 (the build's default for this login; LAB EXPECTED claude-sonnet-5-5). Claude Code 2.1.311, auto mode.
+No approval prompt; no consent prompt from SolidCraft. Claude also ran 3 shell commands (ls/find in ~/fx5-run, ps + find /,
+a python check of the 3MF) and said the design is "Not saved yet" and asked before saving.

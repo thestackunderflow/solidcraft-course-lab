@@ -1,0 +1,9 @@
+{"t": 0.513, "event": "recording started: the finished bracket, as drawn, full window"}
+{"t": 3.525, "event": "send: right-click Body1"}
+{"t": 7.093, "event": "send: Send to Slicer"}
+{"t": 10.889, "event": "send: dialog held 3 s"}
+{"t": 14.519, "event": "send: Send"}
+{"t": 26.762, "event": "slicer: OK on the offline preset-download error (container has no network)"}
+{"t": 30.511, "event": "slicer: Ctrl+R slice"}
+{"t": 38.560, "event": "slicer: sliced, held 8 s"}
+{"t": 47.798, "event": "recording stopped"}

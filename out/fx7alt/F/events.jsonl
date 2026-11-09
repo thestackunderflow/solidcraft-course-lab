@@ -1,0 +1,14 @@
+{"t": 0.508, "event": "recording started (record only)"}
+{"t": 7.972, "event": "volume before: 8000.0"}
+{"t": 12.167, "event": "volume before: 8000.0"}
+{"t": 14.042, "event": "solid.fillet [20, 20, 19]: built"}
+{"t": 14.049, "event": "reply: \"{\\n  \\\"changed_bodies\\\": [\\n    \\\"Body1\\\"\\n  ],\\n  \\\"created_bodies\\\": [],\\n  \\\"feature\\\": 2,\\n  \\\"ms\\\": 50.776067,\\n  \\\"name\\\": \\\"Fillet1\\\",\\n  \\\"removed_bodies\\\": [],\\n  \\\"warning\\\": null\\n}\", isError: false"}
+{"t": 15.568, "event": "volume after: 7961.35"}
+{"t": 26.113, "event": "volume before: 8000.0"}
+{"t": 30.494, "event": "volume before: 8000.0"}
+{"t": 32.201, "event": "solid.chamfer [20, 20, 20]: refused"}
+{"t": 32.208, "event": "reply: \"invalid parameters for `solid.chamfer`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint\", isError: true"}
+{"t": 33.716, "event": "volume after: 8000.0"}
+{"t": 44.202, "event": "volume before: 8000.0"}
+{"t": 46.516, "event": "q6 try 1: Fillet, click the cut's edge at (807, 386) in 1440 units, radius 3, OK"}
+{"t": 65.711, "event": "recording stopped"}

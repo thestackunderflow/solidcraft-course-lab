@@ -1,0 +1,21 @@
+# SolidCraft 0.28.0: open an STL, then Convert Mesh, sent by a script
+# (our test script starts the plug, as a Claude app does)
+plug: /opt/solidcraft-0.28.0/bin/solidcraft-cli mcp --allow-path /root
+
+-> open ~/hook.stl
+<- reply
+   {"bodies": ["hook"], "component": 1, "component_name": "hook", "errors":
+   0, "features": 1, "occurrence": 2, "path": "/root/hook.stl", "warnings":
+   []}
+
+-> measure
+<- reply
+   "volume_mm3": 8306.434315050628
+   "bbox": min [0.0, -20.0, 0.0] max [25.0, 0.0, 60.0]
+
+# the body: hook faces {'mesh': 1484} volume 8306.43 mm3
+
+-> execute mesh.convert body hook
+<- reply isError: true
+   invalid input: mesh conversion: this mesh is not a supported constant-
+   section prism; no geometry was converted

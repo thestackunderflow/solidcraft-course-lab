@@ -1,0 +1,6 @@
+Invalid option --single-instance
+BambuStudio-02.09.01.70:
+Usage: bambu-studio [ OPTIONS ] [ file.3mf/file.stl ... ]
+OPTIONS:
+ --allow-mix-temp option
+exit=254

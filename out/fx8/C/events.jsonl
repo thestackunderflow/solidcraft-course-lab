@@ -1,0 +1,21 @@
+{"t": 0.509, "event": "recording started: both hook STLs side by side (plain left, drilled right), full window"}
+{"t": 3.515, "event": "convert hook-plain: select the row"}
+{"t": 6.305, "event": "convert hook-plain: Surface tab"}
+{"t": 9.303, "event": "convert hook-plain: Convert Mesh button"}
+{"t": 12.884, "event": "convert hook-plain: OK"}
+{"t": 16.252, "event": "convert hook-plain: result held 4 s"}
+{"t": 20.942, "event": "browser + timeline held 4 s (hook-plain converted)"}
+{"t": 25.474, "event": "convert hook: select the row"}
+{"t": 28.296, "event": "convert hook: Surface tab"}
+{"t": 31.312, "event": "convert hook: Convert Mesh button"}
+{"t": 34.894, "event": "convert hook: OK"}
+{"t": 38.267, "event": "convert hook: result held 4 s"}
+{"t": 43.667, "event": "convert hook: Cancel"}
+{"t": 50.437, "event": "box: opened by the lab script"}
+{"t": 54.110, "event": "box: S2 end frame, 5 s hold, no Convert"}
+{"t": 59.765, "event": "convert box-round: select the row"}
+{"t": 62.576, "event": "convert box-round: Surface tab"}
+{"t": 65.583, "event": "convert box-round: Convert Mesh button"}
+{"t": 69.189, "event": "convert box-round: OK"}
+{"t": 72.570, "event": "convert box-round: result held 4 s"}
+{"t": 82.586, "event": "recording stopped"}

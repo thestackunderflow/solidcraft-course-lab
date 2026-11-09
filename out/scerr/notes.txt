@@ -1,0 +1,18 @@
+scerr lab, 9 Nov 2026 (overnight, owner asleep, pre-approved). SolidCraft 0.30.1 (sc-wf-app/sc-wf-l5:0.30.1, built from
+docker/app.Dockerfile SC_VER=0.30.1 SC_OLD=0.28.0 and docker/l5.Dockerfile APP/SC_VER args; tarball checked against
+SHA256SUMS.txt). Display 2880x1620, UI scale 1.8, no network. Plug calls are no-AI (lab/fx8part.py, out/fx7alt/noai.py).
+Takes:
+- F (attempt 1): OK clicked at 659, but the OK row sits at 581 while the size fits (659 only under the red line): not built.
+- F2 (attempt 2): the Cancel click at 581 panned the view; the lip click missed. Fixed: Escape + home view before the take.
+- F3: fillet 5.1 refused, same line word for word as 0.28.0; 5.0 built (8,392.63 mm3). USED.
+- Y: Measure, lip outer + inner top edges: Distance 5.00 mm. USED.
+- M: Convert Mesh refuses hook.stl ("invalid input: mesh conversion: this mesh is not a supported constant-section prism;
+  no geometry was converted"); hook-plain.stl converts (8,500.0, 10 planes). USED.
+- R5 (not filmed): box-round.stl converts to 70 flat faces, 31,568.26 mm3.
+- S: Send to Slicer, unseeded PrusaSlicer: offline preset-download error + first-run wizard (not usable); 3MF unit line
+  model unit="millimeter"; size 25 x 20 x 60. NOT USED.
+- S2: session2 with PrusaSlicer seeded (lab/l5slicerseed.sh): no wizard, size 25 x 20 x 60 mm, no inches dialog. USED.
+- O: lesson 4's hook, slow orbit. USED.
+- R2 (own container): noai fillet + chamfer at [20,20,20] refused (same line naming the command), fillet [20,20,5] built
+  7,961.35. USED.
+Not re-run on 0.30.1: OrcaSlicer second window (fx5 C), PrusaSlicer inches dialog (fx2 E) - slicer behaviour.

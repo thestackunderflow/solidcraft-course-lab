@@ -1,0 +1,9 @@
+04:19:14.4  recording started: lesson 3's hook in SolidCraft 0.30.1, full window
+04:19:18.4  fillet: Fillet button
+04:19:22.0  fillet: lip outer top edge
+04:19:26.2  fillet: radius 5.1 typed
+04:19:34.1  fillet 5.1: red line held 7 s
+04:19:41.6  fillet: radius 5.0 typed
+04:19:49.6  fillet 5.0: preview held 3 s
+04:19:52.6  fillet 5.0: OK
+04:20:03.0  recording stopped

@@ -1,0 +1,5 @@
+02:38:52.9  recording started: terminal (left) over SolidCraft, an empty design (right), full display
+02:38:55.9  typed: python3 -I D/noai.py |& tee D/reply.txt
+02:39:00.0  Enter
+02:39:15.2  replies shown: hold 6 s
+02:39:21.8  recording stopped

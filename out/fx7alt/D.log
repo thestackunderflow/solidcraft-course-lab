@@ -1,0 +1,13 @@
+ev: recording started: full window held 3 s, a fresh 20 mm box (no script from here)
+ev: Fillet button
+ev: click the top edge (y 20, z 20)
+ev: Edges row: hold 4 s
+ev: radius 3
+ev: OK
+ev: the round: hold 4 s
+ev: the journal: typed into the terminal
+ev: journal shown: hold 4 s
+ev: recording stopped
+ev: window sent: [10.0, 20.0, 20.0] (session journal, recovery document.json)
+d-after volume 7961.34633583104 bodies 1 timeline ['Box1', 'Fillet1']
+D done

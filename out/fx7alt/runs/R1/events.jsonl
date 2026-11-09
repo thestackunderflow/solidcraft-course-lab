@@ -1,0 +1,8 @@
+{"t": 0.503, "event": "recording started: Claude Code full screen; SolidCraft behind it on the fresh 20 mm box (volume 8000)"}
+{"t": 3.558, "event": "turn 1: typing"}
+{"t": 8.169, "event": "turn 1: Enter"}
+{"t": 8.589, "event": "turn 1: Claude working"}
+{"t": 21.663, "event": "tool call: inspect_design", "seq": 13}
+{"t": 21.687, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 28.889, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 36.109, "event": "recording stopped"}

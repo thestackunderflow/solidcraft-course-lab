@@ -1,0 +1,8 @@
+{"t": 0.511, "event": "recording started: the bracket with one hole typed at 12 and 12.5, full window"}
+{"t": 4.527, "event": "parameters: Parameters button"}
+{"t": 8.741, "event": "parameters: scroll to Model parameters"}
+{"t": 13.846, "event": "parameters: Hole1 d6 = 12.5 held 3 s"}
+{"t": 17.607, "event": "parameters: d6 = width / 2"}
+{"t": 23.151, "event": "parameters: held 5 s"}
+{"t": 28.162, "event": "parameters: OK"}
+{"t": 35.193, "event": "recording stopped"}

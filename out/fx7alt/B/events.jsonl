@@ -1,0 +1,8 @@
+{"t": 0.507, "event": "recording started: SolidCraft window (top) + terminal strip, a fresh 20 mm box, typing at once"}
+{"t": 4.693, "event": "volume before: 8000.0"}
+{"t": 6.557, "event": "solid.fillet [10, 20, 20]: built"}
+{"t": 6.562, "event": "reply: \"{\\n  \\\"changed_bodies\\\": [\\n    \\\"Body1\\\"\\n  ],\\n  \\\"created_bodies\\\": [],\\n  \\\"feature\\\": 2,\\n  \\\"ms\\\": 47.019878,\\n  \\\"name\\\": \\\"Fillet1\\\",\\n  \\\"removed_bodies\\\": [],\\n  \\\"warning\\\": null\\n}\", isError: false"}
+{"t": 8.083, "event": "volume after: 7961.35"}
+{"t": 8.215, "event": "reply shown, the round: hold 5 s"}
+{"t": 13.792, "event": "orbit: slow swing, 6 s"}
+{"t": 25.199, "event": "recording stopped"}

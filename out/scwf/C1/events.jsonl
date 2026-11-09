@@ -1,0 +1,13 @@
+{"t": 0.511, "event": "recording started: Claude's bracket, all five steps, full window"}
+{"t": 3.522, "event": "history: step back 3 (fillet, hole B, hole A off)"}
+{"t": 11.798, "event": "inspect: Inspect tab"}
+{"t": 14.925, "event": "inspect: Properties"}
+{"t": 18.279, "event": "inspect: Properties held 7.0 s"}
+{"t": 26.865, "event": "inspect: Close"}
+{"t": 29.893, "event": "measure: Measure"}
+{"t": 35.453, "event": "measure: top corner"}
+{"t": 38.548, "event": "measure: hover, X Y Z held 4 s"}
+{"t": 44.288, "event": "measure: the corner at the origin"}
+{"t": 47.922, "event": "measure: dZ held 6 s"}
+{"t": 55.635, "event": "measure: Close"}
+{"t": 56.661, "event": "recording stopped"}

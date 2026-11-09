@@ -1,0 +1,8 @@
+04:20:50.9  recording started: lesson 3's hook (no fillet) in SolidCraft 0.30.1, full window
+04:20:54.9  measure: Inspect tab
+04:20:58.1  measure: Measure
+04:21:01.4  measure: lip outer top edge
+04:21:04.9  measure: lip inner top edge
+04:21:08.1  measure: Distance 5.00 mm held 7 s
+04:21:17.3  measure: Close
+04:21:23.1  recording stopped

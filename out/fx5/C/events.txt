@@ -1,0 +1,39 @@
+03:55:43.8  recording started: SolidCraft with the saved hook
+03:55:46.9  orca: started by hand
+03:56:14.1  orca: SSL dialog (as in take G): Remember my choice ticked, Yes
+03:56:40.2  orca: window up
+03:56:52.8  orca prefs label: "Allow only one OrcaSlicer instance" default: off (unticked; Preferences > General > Settings)
+03:57:13.9  orca prefs tooltip: "If this is enabled, when starting OrcaSlicer and another instance of the same OrcaSlicer is already running, that instance will be reactivated instead."
+03:57:16.0  orca: close (window close button)
+03:57:34.3  orca send 1: right-click Body1
+03:57:42.3  send dialog: open Slicer
+03:58:06.0  send dialog: choose OrcaSlicer
+03:58:10.0  orca send 1: Send clicked
+03:58:51.2  orca send 1: window up (Size: 25 x 60 x 20 mm)
+03:58:56.6  hook_depth: 40 open Parameters
+03:59:14.1  hook_depth: 40 typed
+03:59:14.1  save: click the Save icon
+03:59:18.3  orca send 2: right-click Body1
+03:59:27.5  orca send 2: Send clicked
+03:59:57.4  orca send 2: second window (two OrcaSlicer windows, two processes; the new one opened exactly over the first, showing Size 40 x 60 x 20)
+03:59:59.4  orca: move the second window aside (both in frame)
+04:00:24.5  orca: both windows in frame
+04:00:29.8  orca: close second (the newer window 12583129, pid 11709)
+04:00:42.0  orca: first window shows the old shape (Size: 25 x 60 x 20 mm)
+04:00:49.4  orca: right-click menu open
+04:00:58.1  orca menu items: Add instance, Remove instance, Set number of instances..., Fill bed with instances..., Set as Individual Objects, Clone, Fix Model, Simplify Model, Subdivision mesh(Lost color), Mesh boolean, Center, Drop, Split, Mirror, Delete, Add Part, Add Negative Part, Add Modifier, Add Support Blocker, Add Support Enforcer, Height Range Modifier, Printable, Auto Drop, Edit Process Settings, Copy Process Settings, Paste Process Settings, Edit in Parameter Table, Reload from disk, Replace 3D file..., Replace all with 3D files..., Export as one STL..., (more)
+04:01:01.6  orca reload: "Reload from disk"
+04:01:15.9  orca reload: done (Size: 40 x 60 x 20 mm, Volume 9806.47 mm3)
+04:01:19.9  orca prefs: open (Ctrl+P)
+04:01:36.0  orca prefs: on (Allow only one OrcaSlicer instance ticked)
+04:01:52.9  hook_depth: 30 open Parameters
+04:02:10.8  hook_depth: 30 typed
+04:02:10.8  save: click the Save icon
+04:02:14.9  orca send 3: right-click Body1
+04:02:23.5  orca send 3: Send clicked
+04:02:54.9  orca send 3: lands in open window (one window, one process; Orca prompt "Drop project file": "Please select an action" / hook-lesson4-0ec2ab17f9b8b1e4.3mf / ( ) Open as project / (x) Import geometry only (default) / OK / Cancel)
+04:02:57.9  orca send 3: OK (default: Import geometry only)
+04:03:17.3  orca send 3: added as a second object (Size: 30 x 60 x 20 mm) over the 40 one; notice "WARNING: Body1 is too close to others, and collisions may be caused. Jump to [Body1]"
+04:03:23.3  orca: close
+04:03:36.6  orca close dialog "Orca Slicer - Save": "The current project has unsaved changes. Would you like to save before continuing?" [Remember my choice.] Yes (default) / No / Cancel: No (deviation: Yes would start a project save)
+04:03:41.8  orca: closed

@@ -1,0 +1,10 @@
+{"t": 0.507, "event": "recording started: take C2, full window (thickness 5)"}
+{"t": 3.638, "event": "view: back (gizmo -X)"}
+{"t": 10.122, "event": "fillet 6 (bottom-back): Fillet button"}
+{"t": 13.481, "event": "fillet 6 (bottom-back): bottom edge of the back face"}
+{"t": 17.704, "event": "fillet 6 (bottom-back): radius typed"}
+{"t": 24.544, "event": "fillet 6 (bottom-back): OK"}
+{"t": 29.996, "event": "bottom-back 6: built (curved faces 1), hold 5 s"}
+{"t": 35.391, "event": "toolbar Undo"}
+{"t": 39.854, "event": "view: home"}
+{"t": 46.270, "event": "recording stopped"}

@@ -1,0 +1,25 @@
+scwf PREREG (9 Nov 2026, written BEFORE run R1; plan Refream-Canvas/plans/2026-11-overnight-3/scwf/PLAN.md rev 2 section 6)
+SolidCraft 0.30.1 (sc-wf-l5:0.30.1), Claude Code 2.1.311, claude --model claude-sonnet-5-5, default permission mode;
+approvals: SolidCraft tool prompts = "Yes", anything else = No (lab/l7drive.py policy). One session, one try (R1).
+
+Geometry (worked out by hand before any build):
+  L profile on XZ: top leg 50 x 4, drop leg 4 thick, 30 overall (26 below the top leg); width = 25.
+  50 x 4 = 200; 4 x 26 = 104; 304 mm2 x 25 = 7,600 mm3. Box 50 x 25 x 30, Z 0..30 when upright.
+  Holes 4 mm through the 4 mm top leg: 2 x pi x 2^2 x 4 = 100.53 -> 7,499.47.
+  Width 35: holes at 35 / 2 = 17.5 from the side.
+  Fillet 3 at the inner corner adds (1 - pi/4) x 9 x 25 = 48.29 -> 7,547.76.
+Deviation (logged): Gate 0 (no AI, lab/scwfg0.py) ran before this file was written and measured 7,600.0 / 7,499.49 /
+  10,539.49 at 35 / 7,547.79; holes 12 and 38 along, -12.5 -> -17.5 across. Gate 0 = the H1 reference build (plug, no AI);
+  the plan's by-hand GUI checks are the filmed C takes. Plug's own sketch.create text: "XZ: +X, -Z"; flip: true keeps
+  the sketch's y upward. Without flip the bracket measured 7,600.0 at Z -30..0 (G0/read-shape-noflip.json).
+
+Prompts (typed in order, each after the previous turn ends):
+M1: In SolidCraft, start a new design and build an under-desk bracket with named sizes. Draw an L profile on the XZ plane: a top leg 50 mm long and 4 mm thick, and a drop leg 4 mm thick, 30 mm tall overall. Extrude it by a parameter named width = 25 mm. After extruding, check the part's height runs from 0 up, and tell me the volume.
+M2: Change width to 35 and tell me the new volume. Then set it back to 25.
+M3: Add two 4 mm holes through the top leg, 12 mm and 38 mm from the end, centred across the width. Use width / 2 for the centre so the holes stay centred when the width changes.
+M4: Round the inside corner of the L with a 3 mm fillet, then tell me the volume.
+M5: Save the design as ~/bracket.sc and export it as ~/bracket.stl.
+
+Scored after the run (no-AI reads of the saved design): volume at each stage vs above; Z 0..30 after M1; holes at
+width / 2 (re-read at width 35 by the check take); fillet present at the inner corner; files written.
+Cost guard: kill at an estimated $0.70 (claude-run/costguard.py); ledger solidcraft-course-BUDGET.tsv mark "# --- GO 8 Nov 2026 scwf", cap 1.40.

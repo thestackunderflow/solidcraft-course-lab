@@ -1,0 +1,24 @@
+02:35:14.7  recording started: hook-plain.stl opened by the lab script (stop rule A3), full window
+02:35:17.7  browser: the mesh body row held 4 s
+02:35:22.4  convert: select the mesh body
+02:35:24.5  convert: Surface tab
+02:35:27.5  convert: Convert Mesh button
+02:35:31.1  convert: dialog held 4 s
+02:35:35.5  convert hook-plain: OK
+02:35:41.0  convert hook-plain: timeline held 4 s
+02:35:46.6  measure: Inspect tab
+02:35:52.0  measure: Properties
+02:35:55.3  measure: volume held 4 s
+02:36:00.7  measure: Close
+02:36:03.8  hole: Model tab
+02:36:06.6  hole: Hole button
+02:36:10.2  hole: click the back plate's face
+02:36:13.7  hole: Extents menu
+02:36:16.7  hole: All (through)
+02:36:19.7  hole: diameter 5 mm held 4 s
+02:36:25.1  hole on converted: OK
+02:36:30.6  hole on converted: timeline held 4 s
+02:36:36.2  measure: Properties after the hole
+02:36:44.9  measure: volume after held 4 s
+02:36:50.2  measure: Close
+02:36:57.7  recording stopped

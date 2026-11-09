@@ -1,0 +1,1 @@
+NOT RUN: Bambu Studio passed take G, but its take C was optional in HANDOVER-fx5-lab.md and was skipped (agent token budget, 5 Nov). Bambu's preference label and default are from its source only (Preferences.cpp 1404, AppConfig.cpp 133-134), not seen on screen.

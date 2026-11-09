@@ -1,0 +1,38 @@
+{
+  "completed": 3,
+  "ok": true,
+  "results": [
+    {
+      "attachment": "fixed",
+      "created": {
+        "constraints": [],
+        "curves": [],
+        "dimensions": [],
+        "points": []
+      },
+      "name": "Sketch1",
+      "projected": null,
+      "sketch": 4
+    },
+    {
+      "created": {
+        "constraints": [],
+        "curves": [
+          "c1"
+        ],
+        "dimensions": [],
+        "points": [
+          "c1.center"
+        ]
+      },
+      "sketch": {
+        "dof": 3,
+        "solved": true
+      }
+    },
+    {
+      "profiles": 1,
+      "sketch": 4
+    }
+  ]
+}

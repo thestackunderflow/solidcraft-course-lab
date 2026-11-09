@@ -1,0 +1,116 @@
+{
+ "count": 7,
+ "cycles": [],
+ "parameters": [
+  {
+   "comment": "",
+   "display_value": 25.0,
+   "error": null,
+   "expression": "25",
+   "favorite": false,
+   "name": "width",
+   "source": "user",
+   "unit": "mm",
+   "used_by": [
+    "d1",
+    "d6"
+   ],
+   "uses": [],
+   "value": 25.0
+  },
+  {
+   "comment": "",
+   "display_value": 25.0,
+   "error": null,
+   "expression": "width",
+   "favorite": false,
+   "feature": "Bracket",
+   "input": "Distance",
+   "name": "d1",
+   "source": "feature",
+   "unit": "mm",
+   "used_by": [],
+   "uses": [
+    "width"
+   ],
+   "value": 25.0
+  },
+  {
+   "comment": "",
+   "display_value": 5.0,
+   "error": null,
+   "expression": "5 mm",
+   "favorite": false,
+   "feature": "Hole1",
+   "input": "Diameter",
+   "name": "d2",
+   "source": "feature",
+   "unit": "mm",
+   "used_by": [],
+   "uses": [],
+   "value": 5.0
+  },
+  {
+   "comment": "",
+   "display_value": 10.0,
+   "error": null,
+   "expression": "10 mm",
+   "favorite": false,
+   "feature": "Hole1",
+   "input": "Depth",
+   "name": "d3",
+   "source": "feature",
+   "unit": "mm",
+   "used_by": [],
+   "uses": [],
+   "value": 10.0
+  },
+  {
+   "comment": "",
+   "display_value": 118.0,
+   "error": null,
+   "expression": "118 deg",
+   "favorite": false,
+   "feature": "Hole1",
+   "input": "Tip angle",
+   "name": "d4",
+   "source": "feature",
+   "unit": "deg",
+   "used_by": [],
+   "uses": [],
+   "value": 118.0
+  },
+  {
+   "comment": "",
+   "display_value": 12.0,
+   "error": null,
+   "expression": "12",
+   "favorite": false,
+   "feature": "Hole1",
+   "input": "Reference distance",
+   "name": "d5",
+   "source": "feature",
+   "unit": "mm",
+   "used_by": [],
+   "uses": [],
+   "value": 12.0
+  },
+  {
+   "comment": "",
+   "display_value": 12.5,
+   "error": null,
+   "expression": "width / 2",
+   "favorite": false,
+   "feature": "Hole1",
+   "input": "Reference distance",
+   "name": "d6",
+   "source": "feature",
+   "unit": "mm",
+   "used_by": [],
+   "uses": [
+    "width"
+   ],
+   "value": 12.5
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+05:24:48.2  recording started: the finished bracket, print face = the L-shaped side, full window
+05:24:52.2  send: right-click Body1
+05:24:55.8  send: Send to Slicer
+05:24:59.6  send: dialog held 3 s
+05:25:03.2  send: Send
+05:25:15.5  slicer: OK on the offline preset-download error (container has no network)
+05:25:19.2  slicer: Ctrl+R slice
+05:25:27.3  slicer: sliced, held 8 s
+05:25:36.4  recording stopped

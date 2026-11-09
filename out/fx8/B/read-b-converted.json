@@ -1,0 +1,138 @@
+{
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      3.552713678800501e-15,
+      60.00000000000001
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -9.999999999999998,
+     22.20588235294117
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 24,
+    "face_types": {
+     "plane": 10
+    },
+    "faces": 10,
+    "kernel": {
+     "edges": 24,
+     "faces": 10,
+     "shells": 1,
+     "vertices": 16
+    },
+    "mass_g": 10.965,
+    "material": "Default",
+    "name": "hook-plain",
+    "vertices": 16,
+    "volume_mm3": 8500.0
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 4450.0,
+   "edges": 24,
+   "faces": 10,
+   "mass_g": 10.965,
+   "open_bodies_skipped": 0,
+   "vertices": 16,
+   "volume_mm3": 8500.0
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      3.552713678800501e-15,
+      60.00000000000001
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -9.999999999999998,
+     22.20588235294117
+    ],
+    "closed": true,
+    "edges": 24,
+    "face_types": {
+     "plane": 10
+    },
+    "faces": 10,
+    "kernel": {
+     "edges": 24,
+     "faces": 10,
+     "shells": 1,
+     "vertices": 16
+    },
+    "name": "hook-plain",
+    "vertices": 16,
+    "visible": true,
+    "volume_mm3": 8500.0
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 2,
+  "metadata": {},
+  "name": "hook-plain",
+  "params": [],
+  "path": null,
+  "redo": 0,
+  "revision": 17,
+  "selection": [],
+  "sketches": [],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 3,
+    "ms": 0.022904,
+    "name": "hook-plain",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 4,
+    "ms": 23.851389,
+    "name": "ConvertMesh1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshConvertFeature",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

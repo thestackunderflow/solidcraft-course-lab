@@ -1,0 +1,1 @@
+box {"bodies": ["Body1"], "changed_bodies": [], "created_bodies": ["Body1"], "feature": 1, "ms": 3.2028339999999997, "name": "Box1", "removed_bodies": [], "warning": null} volume 8000.0

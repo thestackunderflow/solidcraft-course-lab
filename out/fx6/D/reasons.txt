@@ -1,0 +1,4 @@
+2026-11-05T04:53:13Z (take day, host; script gate, accuracy MUST-FIX 3)
+gh api -X GET search/issues -f q='repo:tangency-labs/solidcraft is:issue "FILLET: operation failed" in:title' -f sort=created -f order=desc -f per_page=100 --jq '[.total_count, (.items|length), ([.items[]|select((.body//"")|contains("the blend is larger than the neighbouring faces"))]|length), ([.items[]|select((.body//"")|contains("the largest radius that fits"))]|length)]|@tsv'
+total	newest_n	with_reason	with_whole_line
+325	100	13	3

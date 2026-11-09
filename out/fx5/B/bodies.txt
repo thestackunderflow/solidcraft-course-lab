@@ -1,0 +1,68 @@
+describe solid.box: {
+  "id": "solid.box",
+  "input": {
+    "$defs": {
+      "LengthExpr": {
+        "anyOf": [
+          {
+            "exclusiveMaximum": 1000000000.0,
+            "exclusiveMinimum": -1000000000.0,
+            "type": "number"
+          },
+          {
+            "maxLength": 4096,
+            "minLength": 1,
+            "pattern": "[^\\u0009-\\u000d\\u0020\\u0085\\u00a0\\u1680\\u2000-\\u200a\\u2028-\\u2029\\u202f\\u205f\\u3000]",
+            "type": "string"
+          }
+        ],
+        "description": "A length: a number in the design's length unit, or an expression such as \"w / 2\" or \"30
+solid.box: {
+  "bodies": [
+    "Body1",
+    "Tag"
+  ],
+  "changed_bodies": [],
+  "created_bodies": [
+    "Tag"
+  ],
+  "feature": 6,
+  "ms": 4.186761,
+  "name": "Box1",
+  "removed_bodies": [],
+  "warning": null
+}
+bodies: ['Body1', 'Tag']
+send body1 {
+  "bytes": 14672,
+  "format": "3mf",
+  "numbered": false,
+  "path": "/root/.cache/solidcraft/slicer/hook-lesson4-0ec2ab17f9b8b1e4.3mf",
+  "print_faces": [
+    "Body1"
+  ],
+  "slicer": "PrusaSlicer",
+  "stl_fallback": false
+}
+body1 ['hook-lesson4-0ec2ab17f9b8b1e4.3mf']
+send other {
+  "bytes": 1114,
+  "format": "3mf",
+  "numbered": false,
+  "path": "/root/.cache/solidcraft/slicer/hook-lesson4-e48c9266edd68d09.3mf",
+  "slicer": "PrusaSlicer",
+  "stl_fallback": false
+}
+other ['hook-lesson4-0ec2ab17f9b8b1e4.3mf', 'hook-lesson4-e48c9266edd68d09.3mf']
+send both {
+  "bytes": 14838,
+  "format": "3mf",
+  "numbered": false,
+  "path": "/root/.cache/solidcraft/slicer/hook-lesson4-d04c5167da897604.3mf",
+  "print_faces": [
+    "Body1"
+  ],
+  "slicer": "PrusaSlicer",
+  "stl_fallback": false
+}
+both ['hook-lesson4-0ec2ab17f9b8b1e4.3mf', 'hook-lesson4-d04c5167da897604.3mf', 'hook-lesson4-e48c9266edd68d09.3mf']

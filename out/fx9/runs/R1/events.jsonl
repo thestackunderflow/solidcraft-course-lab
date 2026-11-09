@@ -1,0 +1,29 @@
+{"t": 0.503, "event": "recording started: Claude Code full screen; SolidCraft behind it on ~/nut.sc (8 mm hole)"}
+{"t": 3.568, "event": "turn 1: typing"}
+{"t": 6.72, "event": "turn 1: Enter"}
+{"t": 7.15, "event": "turn 1: Claude working"}
+{"t": 11.698, "event": "tool call: inspect_design", "seq": 13}
+{"t": 11.738, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 14.379, "event": "tool call: body_topology", "seq": 15}
+{"t": 14.38, "event": "tool call: list_commands", "seq": 16}
+{"t": 14.406, "event": "tool reply: body_topology", "seq": 17, "isError": false}
+{"t": 14.425, "event": "tool reply: list_commands", "seq": 18, "isError": false}
+{"t": 17.294, "event": "tool call: execute", "seq": 19}
+{"t": 17.305, "event": "tool reply: execute", "seq": 20, "isError": true}
+{"t": 20.347, "event": "tool call: list_commands", "seq": 21}
+{"t": 20.348, "event": "tool call: list_commands", "seq": 22}
+{"t": 20.351, "event": "tool reply: list_commands", "seq": 23, "isError": false}
+{"t": 20.367, "event": "tool reply: list_commands", "seq": 24, "isError": false}
+{"t": 23.011, "event": "tool call: execute", "seq": 25}
+{"t": 23.044, "event": "tool reply: execute", "seq": 26, "isError": false}
+{"t": 25.165, "event": "tool call: body_topology", "seq": 27}
+{"t": 25.192, "event": "tool reply: body_topology", "seq": 28, "isError": false}
+{"t": 27.294, "event": "tool call: execute", "seq": 29}
+{"t": 27.738, "event": "tool reply: execute", "seq": 30, "isError": false}
+{"t": 29.717, "event": "tool call: measure", "seq": 31}
+{"t": 29.842, "event": "tool reply: measure", "seq": 32, "isError": false}
+{"t": 29.854, "event": "tool call: screenshot", "seq": 33}
+{"t": 30.219, "event": "tool reply: screenshot", "seq": 34, "isError": false}
+{"t": 33.716, "event": "turn 1: end-of-turn line seen"}
+{"t": 35.72, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 42.950, "event": "recording stopped"}

@@ -5,6 +5,8 @@
 # SHA256SUMS.txt there). Claude Code is pinned as in lessons 3, 4 and 7.
 #   docker build -t sc5-app:0.28.0 --build-arg SC_VER=0.28.0 --build-arg SC_OLD=0.27.1 -f docker/app.Dockerfile docker
 #   docker build -t sc5-l5:0.28.0 -f docker/l5.Dockerfile docker
+# 8 Nov 2026 (scerr/scwf): the same file builds 0.30.1 with --build-arg APP=sc-wf-app:0.30.1 --build-arg SC_VER=0.30.1
+# (app image: app.Dockerfile with SC_VER=0.30.1 SC_OLD=0.28.0). The defaults keep the sc5 build unchanged.
 ARG APP=sc5-app:0.28.0
 FROM ${APP} AS app
 FROM debian:trixie
@@ -25,8 +27,9 @@ RUN apt-get update \
 RUN apt-get update && apt-get install -y --no-install-recommends locales \
  && sed -i 's/^# *en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen && locale-gen && rm -rf /var/lib/apt/lists/*
 ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
-COPY --from=app /opt/solidcraft-0.28.0 /opt/solidcraft-0.28.0
-RUN ln -s /opt/solidcraft-0.28.0 /opt/solidcraft
+ARG SC_VER=0.28.0
+COPY --from=app /opt/solidcraft-${SC_VER} /opt/solidcraft-${SC_VER}
+RUN ln -s /opt/solidcraft-${SC_VER} /opt/solidcraft
 ENV PATH=/opt/solidcraft/bin:$PATH
 RUN curl -fsSL https://claude.ai/install.sh | bash -s $CLAUDE_VER \
  && ln -sf /root/.local/bin/claude /usr/local/bin/claude && claude --version

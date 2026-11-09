@@ -1,0 +1,8 @@
+orca: file OrcaSlicer_Linux_AppImage_Ubuntu2404_V2.4.2.AppImage sha256 d12fb8c8eac1aecd2dfb6377acd48f994f8fa439ed5292fa532dd82880f029fd
+orca: extracted to ~/apps/orca-root (AppRun)
+orca: About Orca Slicer: 2.4.2, Build 8500fcdc (orca-about.png)
+bambu: file BambuStudio_ubu24-v02.09.01.70-20261103183404.AppImage sha256 668dabb1be53c758189ed6bc89935285dea5e0af46216546b1bafd6882e9aff0
+bambu: extracted to ~/apps/bambu-root (AppRun)
+bambu: About Bambu Studio: Version 2.9.1.70 (bambu-about.png); --help first line: BambuStudio-02.09.01.70
+image: sc5-fx5:0.28.0 (docker/fx5.Dockerfile: sc5-l5:0.28.0 + GTK3/WebKitGTK 4.1/GStreamer, dbus-x11), Debian 13, Xvfb 2880x1800x24, GDK_SCALE=2, LIBGL_ALWAYS_SOFTWARE=1 (Mesa llvmpipe), --network none, home /root (fresh container per slicer)
+downloads: official GitHub releases, latest on 4 Nov 2026 (OrcaSlicer/OrcaSlicer v2.4.2; bambulab/BambuStudio v02.09.01.70), the Ubuntu 24.04 AppImages

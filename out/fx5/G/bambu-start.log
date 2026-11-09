@@ -1,0 +1,9 @@
+
+(bambu-studio:46): dbind-WARNING **: 03:37:44.635: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(bambu-studio:46): Gtk-CRITICAL **: 03:38:21.611: gtk_window_resize: assertion 'height > 0' failed
+
+(bambu-studio:46): Gtk-CRITICAL **: 03:38:21.973: gtk_window_resize: assertion 'height > 0' failed
+
+(bambu-studio:46): Gtk-WARNING **: 03:38:22.174: Could not load a pixbuf from /org/gtk/libgtk/theme/Adwaita/assets/bullet-symbolic.svg.
+This may indicate that pixbuf loaders or the mime database could not be found.

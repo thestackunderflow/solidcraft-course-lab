@@ -1,0 +1,36 @@
+[
+ {
+  "key": "open",
+  "tool": "open",
+  "arguments": {
+   "path": "/root/hook.stl"
+  },
+  "isError": false,
+  "texts": [
+   "{\n  \"bodies\": [\n    \"hook\"\n  ],\n  \"component\": 1,\n  \"component_name\": \"hook\",\n  \"errors\": 0,\n  \"features\": 1,\n  \"occurrence\": 2,\n  \"path\": \"/root/hook.stl\",\n  \"warnings\": []\n}"
+  ]
+ },
+ {
+  "key": "measure",
+  "tool": "measure",
+  "arguments": {},
+  "isError": false,
+  "texts": [
+   "{\n  \"bodies\": [\n    {\n      \"area_mm2\": 4489.811314859694,\n      \"bbox\": {\n        \"max\": [\n          25.0,\n          0.0,\n          60.0\n        ],\n        \"min\": [\n          0.0,\n          -20.0,\n          0.0\n        ]\n      },\n      \"center_of_mass\": [\n        6.713601008766341,\n        -9.999999998434177,\n        21.899232840739003\n      ],\n      \"closed\": true,\n      \"density_g_cm3\": 1.29,\n      \"edges\": 2226,\n      \"face_types\": {\n        \"mesh\": 1484\n      },\n      \"faces\": 1484,\n      \"kernel\": {\n        \"edges\": 2226,\n        \"faces\": 1484,\n        \"shells\": 1,\n        \"vertices\": 740\n      },\n      \"mass_g\": 10.71530026641531,\n      \"material\": \"Default\",\n      \"name\": \"hook\",\n      \"vertices\": 740,\n      \"volume_mm3\": 8306.434315050628\n    }\n  ],\n  \"body_count\": 1,\n  \"total\": {\n    \"area_mm2\": 4489.811314859694,\n    \"edges\": 2226,\n    \"faces\": 1484,\n    \"mass_g\": 10.71530026641531,\n    \"open_bodies_skipped\": 0,\n    \"vertices\": 740,\n    \"volume_mm3\": 8306.434315050628\n  }\n}"
+  ]
+ },
+ {
+  "key": "convert",
+  "tool": "execute",
+  "arguments": {
+   "command": "mesh.convert",
+   "params": {
+    "body": "hook"
+   }
+  },
+  "isError": true,
+  "texts": [
+   "invalid input: mesh conversion: this mesh is not a supported constant-section prism; no geometry was converted"
+  ]
+ }
+]

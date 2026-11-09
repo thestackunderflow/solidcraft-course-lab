@@ -1,0 +1,4 @@
+05:19:29.2  recording started: Claude's bracket in SolidCraft 0.30.1, full window
+05:19:32.2  orbit: slow swing right and back, 10 s
+05:19:44.2  home view: held 3 s
+05:19:50.4  recording stopped

@@ -1,0 +1,3 @@
+ERROR: failed to solve: image "docker.io/library/sc-wf-app:0.30.1": already exists
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/oowlm3tc8kbkuhi40ee0iuwn7

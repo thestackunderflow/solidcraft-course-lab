@@ -1,0 +1,276 @@
+{
+ "setup": {
+  "new": {
+   "name": "Untitled"
+  },
+  "hook-plain": {
+   "bodies": [
+    "hook-plain"
+   ],
+   "component": 1,
+   "component_name": "hook-plain",
+   "created_bodies": [
+    "hook-plain"
+   ],
+   "feature": 3,
+   "name": "hook-plain",
+   "occurrence": 2,
+   "path": "/root/hook-plain.stl",
+   "warnings": []
+  },
+  "hook": {
+   "bodies": [
+    "hook"
+   ],
+   "component": 4,
+   "component_name": "hook",
+   "created_bodies": [
+    "hook"
+   ],
+   "feature": 6,
+   "name": "hook",
+   "occurrence": 5,
+   "path": "/root/hook.stl",
+   "warnings": []
+  },
+  "move": {
+   "bodies": [
+    "hook-plain",
+    "hook"
+   ],
+   "changed_bodies": [
+    "hook"
+   ],
+   "created_bodies": [],
+   "feature": 7,
+   "ms": 0.052286,
+   "name": "Move1",
+   "removed_bodies": [],
+   "warning": null
+  }
+ },
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -10.0,
+     22.205882352941178
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 42,
+    "face_types": {
+     "mesh": 28
+    },
+    "faces": 28,
+    "kernel": {
+     "edges": 42,
+     "faces": 28,
+     "shells": 1,
+     "vertices": 16
+    },
+    "mass_g": 10.965,
+    "material": "Default",
+    "name": "hook-plain",
+    "vertices": 16,
+    "volume_mm3": 8500.0
+   },
+   {
+    "area_mm2": 4489.811314859694,
+    "bbox": {
+     "max": [
+      25.0,
+      40.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.713601008766337,
+     30.00000000156588,
+     21.899232840738968
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 2226,
+    "face_types": {
+     "mesh": 1484
+    },
+    "faces": 1484,
+    "kernel": {
+     "edges": 2226,
+     "faces": 1484,
+     "shells": 1,
+     "vertices": 740
+    },
+    "mass_g": 10.715300266415317,
+    "material": "Default",
+    "name": "hook",
+    "vertices": 740,
+    "volume_mm3": 8306.434315050634
+   }
+  ],
+  "body_count": 2,
+  "total": {
+   "area_mm2": 8939.811314859693,
+   "edges": 2268,
+   "faces": 1512,
+   "mass_g": 21.680300266415315,
+   "open_bodies_skipped": 0,
+   "vertices": 756,
+   "volume_mm3": 16806.434315050632
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 4450.0,
+    "bbox": {
+     "max": [
+      25.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.617647058823529,
+     -10.0,
+     22.205882352941178
+    ],
+    "closed": true,
+    "edges": 42,
+    "face_types": {
+     "mesh": 28
+    },
+    "faces": 28,
+    "kernel": {
+     "edges": 42,
+     "faces": 28,
+     "shells": 1,
+     "vertices": 16
+    },
+    "name": "hook-plain",
+    "vertices": 16,
+    "visible": true,
+    "volume_mm3": 8500.0
+   },
+   {
+    "area_mm2": 4489.811314859694,
+    "bbox": {
+     "max": [
+      25.0,
+      40.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.713601008766337,
+     30.00000000156588,
+     21.899232840738968
+    ],
+    "closed": true,
+    "edges": 2226,
+    "face_types": {
+     "mesh": 1484
+    },
+    "faces": 1484,
+    "kernel": {
+     "edges": 2226,
+     "faces": 1484,
+     "shells": 1,
+     "vertices": 740
+    },
+    "name": "hook",
+    "vertices": 740,
+    "visible": true,
+    "volume_mm3": 8306.434315050634
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 3,
+  "metadata": {},
+  "name": "Untitled",
+  "params": [],
+  "path": null,
+  "redo": 0,
+  "revision": 10,
+  "selection": [],
+  "sketches": [],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 3,
+    "ms": 0.01685,
+    "name": "hook-plain",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 6,
+    "ms": 0.563345,
+    "name": "hook",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 7,
+    "ms": 0.052286,
+    "name": "Move1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MoveFeature",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

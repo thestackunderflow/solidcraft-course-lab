@@ -1,0 +1,1 @@
+b-hole {"bodies": [["hook-plain", 8401.84, {"cylinder": 1, "plane": 10}]], "timeline": [["hook-plain", "MeshFeature"], ["ConvertMesh1", "MeshConvertFeature"], ["Hole1", "HoleFeature"]]}

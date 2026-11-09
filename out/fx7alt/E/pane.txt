@@ -1,0 +1,23 @@
+$ python3 -I noai.py tools
+-> tools/list
+<- 19 tools: list_commands, describe_command, execute, batch, inspect_design, measure, body_topology, set_parameter, screenshot, export,
+crash_reports, running, pending, undo, redo, new_design, open, save, skill_reference
+-> list_commands {"filter": "solid.fillet"}
+<- ok
+   "id": "solid.fillet",  "label": "Fillet"
+   "params": "edges: [[x,y,z] point on edge | {body, index}]; radius: expr; ..."
+-> body_topology {"body": "Body1"}
+<- ok
+   {"index": 0, "mid": [0.0, 10.0, 0.0], "length": 20.0}
+   {"index": 1, "mid": [10.0, 20.0, 0.0], "length": 20.0}
+   {"index": 2, "mid": [20.0, 10.0, 0.0], "length": 20.0}
+   {"index": 3, "mid": [10.0, 0.0, 0.0], "length": 20.0}
+   {"index": 4, "mid": [20.0, 0.0, 10.0], "length": 20.0}
+   {"index": 5, "mid": [10.0, 0.0, 20.0], "length": 20.0}
+   {"index": 6, "mid": [0.0, 0.0, 10.0], "length": 20.0}
+   {"index": 7, "mid": [20.0, 20.0, 10.0], "length": 20.0}
+   {"index": 8, "mid": [20.0, 10.0, 20.0], "length": 20.0}
+   {"index": 9, "mid": [0.0, 20.0, 10.0], "length": 20.0}
+   {"index": 10, "mid": [10.0, 20.0, 20.0], "length": 20.0}
+   {"index": 11, "mid": [0.0, 10.0, 20.0], "length": 20.0}
+$ 

@@ -1,0 +1,1 @@
+thick8-undone-p1 volume 11560.0 lip {"faces": 10, "curved_faces": 0, "lip_top_face_mm": 8.0, "lip_top_centroid": [21.0, -10.0, 10.0], "lip_front_face_mm": 10.0, "lip_front_centroid": [25.0, -10.0, 5.0]}

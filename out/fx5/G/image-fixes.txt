@@ -1,0 +1,1 @@
+try 1 orca (03:32): AppRun exits at once: boost::filesystem::create_directory: No such file or directory "/root/.config/OrcaSlicer" (a fresh home has no ~/.config). Fix: mkdir -p ~/.config before the start (in lab/fx5G.sh); no library added.

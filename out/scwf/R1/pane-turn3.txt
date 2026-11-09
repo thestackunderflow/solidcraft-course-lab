@@ -1,0 +1,37 @@
+  The mistake: on the XZ plane, sketch y maps to −Z. My first
+  profile put the 50 mm leg at Z 0–4 and the 4 mm leg rising to Z
+  30. The bounding box looked right either way, so my earlier
+  check didn't catch it. That is also why the first hole attempt
+  failed. My earlier statement that the top leg was at Z 26–30
+  was wrong for that version.
+
+  The rebuild: the top leg is now at Z 26–30 and the drop leg
+  hangs down to Z 0, so the height runs from 0 up. The parameters
+  are the same: width 25, leg_length 50, thickness 4 and height
+  30. The extrude is unchanged, and the sketch is fully
+  constrained.
+
+  The holes: HoleA and HoleB are 4 mm diameter and go through the
+  top leg.
+  - Their centres are at X = 12 and X = 38, and Y = width / 2
+    (12.5 mm now). The 12 and 38 mm positions are the same
+    whether you measure from the free end or from the drop leg,
+    because the leg is 50 mm long.
+  - X is written as 12 and leg_length - 12, so the 38 follows
+    leg_length.
+  - The bore axes are vertical, and the holes stay clear of the
+    drop leg.
+
+  Volume: it is now 7,499.5 mm³, which is the bracket's 7,600 mm³
+  minus 2 × π × 2² × 4 = 100.5 mm³. At width = 35 the holes
+  moved to Y = 17.5 and the volume was 10,539.5 mm³, which is
+  10,640 minus the same 100.5 mm³. width is back at 25 mm.
+
+  I did not save the design to a file.
+
+✻ Churned for 23s · done 5:04 AM
+
+─────────────────────────────────────────────────────────────────
+❯ save the design
+─────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

@@ -1,0 +1,3 @@
+05:18:57.2  recording started: an empty design, SolidCraft 0.30.1, full window
+05:19:00.2  cursor along the Model tab
+05:19:16.5  recording stopped

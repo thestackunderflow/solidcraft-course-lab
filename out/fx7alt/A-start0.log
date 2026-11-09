@@ -1,0 +1,30 @@
+/work/lab/fx7altlib.sh: line 6: /work/lab/common.sh: No such file or directory
+/work/lab/fx7altlib.sh: line 7: /work/lab/l2common.sh: No such file or directory
+/work/lab/fx7altlib.sh: line 31: syntax error near unexpected token `$'{\r''
+/work/lab/fx7altlib.sh: line 31: `rec_stop() {'
+/work/lab/fx7altA.sh: line 8: take: command not found
+/work/lab/fx7altA.sh: line 14: setup: command not found
+/work/lab/fx7altA.sh: line 16: tt: command not found
+/work/lab/fx7altA.sh: line 17: nap: command not found
+error connecting to /tmp/tmux-0/default (No such file or directory)
+/work/lab/fx7altA.sh: line 17: nap: command not found
+/work/lab/fx7altA.sh: line 17: still: command not found
+/work/lab/fx7altA.sh: line 18: cp_shot: command not found
+/work/lab/fx7altA.sh: line 19: rec_start: command not found
+/work/lab/fx7altA.sh: line 20: ev: command not found
+/work/lab/fx7altA.sh: line 21: tt: command not found
+/work/lab/fx7altA.sh: line 22: nap: command not found
+/work/lab/fx7altA.sh: line 22: cp_shot: command not found
+/work/lab/fx7altA.sh: line 22: cp_shot: command not found
+/work/lab/fx7altA.sh: line 23: ev: command not found
+/work/lab/fx7altA.sh: line 24: nap: command not found
+/work/lab/fx7altA.sh: line 25: ev: command not found
+/work/lab/fx7altA.sh: line 26: orbit: command not found
+/work/lab/fx7altA.sh: line 27: ev: command not found
+/work/lab/fx7altA.sh: line 28: nap: command not found
+/work/lab/fx7altA.sh: line 29: cp_shot: command not found
+/work/lab/fx7altA.sh: line 30: ev: command not found
+/work/lab/fx7altA.sh: line 31: rec_stop: command not found
+/work/lab/fx7altA.sh: line 32: pane: command not found
+/work/lab/fx7altA.sh: line 33: vol: command not found
+A done

@@ -1,0 +1,13 @@
+$ python3 -I noai.py fillet 10 20 20
+# volume before: 8000.0 mm3
+-> execute {"command": "solid.fillet", "params": {"edges": [[10, 20, 20]], "radius": 3}, "verbose": false}
+<- ok
+   {   "changed_bodies": [     "Body1"   ],   "created_bodies": [],   "feature": 2,   "ms": 47.019878,   "name": "Fillet1",   "removed_bodies": [],
+   "warning": null }
+# volume after: 7961.35 mm3
+$ 
+
+
+
+
+

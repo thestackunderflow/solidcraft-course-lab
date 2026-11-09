@@ -1,0 +1,6 @@
+{"t": 1793852954.501481, "event": "plug started", "cmd": ["/opt/solidcraft-0.28.0/bin/solidcraft-cli", "mcp"], "backend": "connected to the SolidCraft app at 127.0.0.1:27878 once it runs (the user watches the viewport). It was not running when this server started; until it is (`solidcraft --control 27878`), tool calls say so."}
+{"t": 1793852955.9949107, "event": "reply: measure", "tool": "measure", "isError": false}
+{"t": 1793852960.299874, "event": "edge read", "edge": {"end": [25.0, -20.0, 10.0], "index": 11, "length": 20.0, "mid": [25.0, -10.0, 10.0], "name": "F2:side:l2|F2:side:l3", "start": [25.0, 0.0, 10.0]}}
+{"t": 1793852961.991523, "event": "reply: fillet midpoint 6", "tool": "execute", "isError": true}
+{"t": 1793852966.1170776, "event": "reply: fillet corner 6", "tool": "execute", "isError": true}
+{"t": 1793852970.1214495, "event": "reply: measure after", "tool": "measure", "isError": false}

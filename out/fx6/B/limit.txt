@@ -1,0 +1,2 @@
+largest built: 5.0; smallest refused: 5.1; lip top face: 5.0 mm
+4.0 built (r 4.000, 1.0 mm of top face left); 4.9 built (r 4.900, 0.1 mm left; part 2); 5.0 built (r 5.000: the round takes the whole top face, a half-round lip, 10 faces); 5.1 refused (part 2): "not supported yet: the blend is larger than the neighbouring faces; the largest radius that fits is 5 mm"

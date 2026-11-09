@@ -1,0 +1,8 @@
+04:34:14.9  recording started: lesson 4's hook in SolidCraft 0.30.1, full window
+04:34:18.9  send: right-click Body1
+04:34:22.4  send: Send to Slicer
+04:34:26.2  send: dialog held 3 s (Slicer: PrusaSlicer)
+04:34:29.8  send: Send
+04:34:33.6  slicer: window up
+04:34:48.0  slicer: window held (size row)
+04:34:50.1  recording stopped

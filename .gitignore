@@ -2,3 +2,15 @@ __pycache__/
 .pytest_cache/
 out/scratch/
 *.pyc
+
+# Raw takes over 50 MB stay local (GitHub limits); the cut clips are committed.
+out/fx5/A/screen.mp4
+out/fx5/B/screen.mp4
+out/fx5/C/screen.mp4
+out/fx6/B/screen.mp4
+out/fx8/A/screen.mp4
+out/fx9/B/screen.mp4
+out/fx9/C-attempt1/screen.mp4
+out/fx9/C/screen.mp4
+out/scerr/O/screen.mp4
+out/scwf/O/screen.mp4

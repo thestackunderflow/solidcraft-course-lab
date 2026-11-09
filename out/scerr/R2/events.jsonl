@@ -1,0 +1,18 @@
+{"t": 0.515, "event": "recording started: SolidCraft 0.30.1 window (top) + terminal strip, a fresh 20 mm box"}
+{"t": 6.85, "event": "volume before: 8000.0"}
+{"t": 8.561, "event": "solid.fillet [20, 20, 20]: refused"}
+{"t": 8.573, "event": "reply: \"invalid parameters for `solid.fillet`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint\", isError: true"}
+{"t": 10.082, "event": "volume after: 8000.0"}
+{"t": 10.173, "event": "corner fillet: reply + toast held 5 s"}
+{"t": 19.642, "event": "volume before: 8000.0"}
+{"t": 21.351, "event": "solid.chamfer [20, 20, 20]: refused"}
+{"t": 21.368, "event": "reply: \"invalid parameters for `solid.chamfer`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint\", isError: true"}
+{"t": 22.88, "event": "volume after: 8000.0"}
+{"t": 22.929, "event": "corner chamfer: reply held 4 s"}
+{"t": 32.026, "event": "volume before: 8000.0"}
+{"t": 33.872, "event": "solid.fillet [20, 20, 5]: built"}
+{"t": 33.883, "event": "reply: \"{\\n  \\\"changed_bodies\\\": [\\n    \\\"Body1\\\"\\n  ],\\n  \\\"created_bodies\\\": [],\\n  \\\"feature\\\": 2,\\n  \\\"ms\\\": 24.193222,\\n  \\\"name\\\": \\\"Fillet1\\\",\\n  \\\"removed_bodies\\\": [],\\n  \\\"warning\\\": null\\n}\", isError: false"}
+{"t": 35.413, "event": "volume after: 7961.35"}
+{"t": 35.543, "event": "edge point fillet: built, held 5 s"}
+{"t": 40.564, "event": "orbit: slow swing, 8 s"}
+{"t": 54.581, "event": "recording stopped"}

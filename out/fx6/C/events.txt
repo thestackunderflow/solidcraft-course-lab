@@ -1,0 +1,20 @@
+04:23:25.3  recording started: take C pass 1, full window
+04:23:28.3  params: open (thickness to 8)
+04:23:31.8  params: thickness box
+04:23:36.7  params: thickness 8 held 4 s
+04:23:41.3  params: OK
+04:23:46.8  thickness 8: rebuilt
+04:23:46.8  thick-8: hold 3 s on the hook
+04:23:49.8  fillet 6 (thickness 8): Fillet button
+04:23:53.1  fillet 6 (thickness 8): lip outer top edge
+04:23:57.0  fillet 6 (thickness 8): radius typed
+04:24:04.6  fillet 6 (thickness 8): OK
+04:24:10.1  thick-8 fillet 6: built (curved faces 1), hold 5 s
+04:24:15.9  toolbar Undo
+04:24:20.4  params: open (thickness to 5)
+04:24:23.9  params: thickness box
+04:24:28.8  params: thickness 5 held 4 s
+04:24:33.4  params: OK
+04:24:38.9  recording stopped
+04:27:53.9  Q4: Fillet, outer + inner lip top edges, radius 2.5
+04:28:16.9  both 2.5: built (curved faces 2)

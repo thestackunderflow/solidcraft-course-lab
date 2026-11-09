@@ -1,0 +1,171 @@
+==> /root/.config/OrcaSlicer/log/debug_Thu_Nov_05_03_32_29_76.log.0 <==
+[info]	2026-11-05 03:35:54.944545[Thread 0x00007cb3994a4400]:get_current_slice_result:m_current_plate 0, current_plate 0x5acfedcbf250
+[info]	2026-11-05 03:35:54.946763[Thread 0x00007cb3994a4400]:apply, Line 1120: enter
+[info]	2026-11-05 03:35:54.946803[Thread 0x00007cb3994a4400]:apply, has_scarf_joint_seam:false
+[info]	2026-11-05 03:35:54.947659[Thread 0x00007cb3994a4400]:apply, got print_diff 77, object_diff 14, region_diff 21, set status to APPLY_STATUS_CHANGED
+[info]	2026-11-05 03:35:54.947727[Thread 0x00007cb3994a4400]:apply 1260: found full_config_diff changed.
+[info]	2026-11-05 03:35:54.948116[Thread 0x00007cb3994a4400]:apply 1590: found print object changed.
+[info]	2026-11-05 03:35:54.948179[Thread 0x00007cb3994a4400]:apply, got new_changed_keys, size=1
+[info]	2026-11-05 03:35:54.948186[Thread 0x00007cb3994a4400]:apply, i=0, key=enable_prime_tower
+[info]	2026-11-05 03:35:54.948290[Thread 0x00007cb3994a4400]:apply 1787: finished,  this 0x5acfe41d8cf0, m_modified_count 1, apply_status 1, m_support_used 0
+[info]	2026-11-05 03:35:54.948432[Thread 0x00007cb3994a4400]:update_background_process: background process apply result=1
+[info]	2026-11-05 03:35:54.948631[Thread 0x00007cb3994a4400]:update_background_process: validate err=, warning=
+[info]	2026-11-05 03:35:54.948643[Thread 0x00007cb3994a4400]:update_background_process, Line 8094: was_running = 0, running 0, invalidated=1, return_state=0, internal_cancel=0
+[info]	2026-11-05 03:35:54.948649[Thread 0x00007cb3994a4400]:update_background_process, Line 8124: background data valid, return_state=0
+[info]	2026-11-05 03:35:54.948653[Thread 0x00007cb3994a4400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 03:35:54.948656[Thread 0x00007cb3994a4400]:get_enable_slice_status: m_slice_select 1, enable= 1 
+[info]	2026-11-05 03:35:54.948661[Thread 0x00007cb3994a4400]:update_slice_print_status m_slice_select 1: can_slice= 1, can_print 1, enable_slice 1, enable_print 0 
+[info]	2026-11-05 03:35:54.948697[Thread 0x00007cb3994a4400]:update_background_process, Line 8167: exit, return_state=0
+[info]	2026-11-05 03:35:54.948701[Thread 0x00007cb3994a4400]:restart_background_process, Line 8205: not started
+[info]	2026-11-05 03:35:57.289916[Thread 0x00007cb14e7fc6c0]:process_task{ type:AddObject, id:1, path:/tmp/orcaslicer_model/Thu_Nov_05/03_35_54#76#42, object:65, extra:1} and interval = 10
+[info]	2026-11-05 03:35:57.290196[Thread 0x00007cb14e7fc6c0]:_add_model_file_to_archive:6742, filename 3D/Objects/Body1_1.model, m_split_model 0,  sub_model 1
+[info]	2026-11-05 03:35:57.290370[Thread 0x00007cb14e7fc6c0]:bbs_3mf: save key= BambuStudio:3mfVersion, value = 1
+[info]	2026-11-05 03:35:57.295779[Thread 0x00007cb3994a4400]:process_ui_task{ type:AddObject, id:1, path:/tmp/orcaslicer_model/Thu_Nov_05/03_35_54#76#42, object:65, extra:1} and interval = 10
+[info]	2026-11-05 03:36:00.912739[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:19} and interval = 10
+[info]	2026-11-05 03:36:00.912949[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:19} and interval = 10
+[info]	2026-11-05 03:36:10.920159[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:20} and interval = 10
+[info]	2026-11-05 03:36:10.920337[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:20} and interval = 10
+[info]	2026-11-05 03:36:20.912734[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:21} and interval = 10
+[info]	2026-11-05 03:36:20.912971[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:21} and interval = 10
+[info]	2026-11-05 03:36:30.912731[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:22} and interval = 10
+[info]	2026-11-05 03:36:30.912991[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:22} and interval = 10
+[info]	2026-11-05 03:36:40.920429[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:23} and interval = 10
+[info]	2026-11-05 03:36:40.920626[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:23} and interval = 10
+[info]	2026-11-05 03:36:50.912690[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:24} and interval = 10
+[info]	2026-11-05 03:36:50.912860[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:24} and interval = 10
+[info]	2026-11-05 03:37:00.912709[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:25} and interval = 10
+[info]	2026-11-05 03:37:00.912921[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:25} and interval = 10
+[info]	2026-11-05 03:37:10.918524[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:26} and interval = 10
+[info]	2026-11-05 03:37:10.918822[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:26} and interval = 10
+[info]	2026-11-05 03:37:20.912708[Thread 0x00007cb14e7fc6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:27} and interval = 10
+[info]	2026-11-05 03:37:20.912960[Thread 0x00007cb3994a4400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:27} and interval = 10
+
+==> /root/.config/OrcaSlicer/log/debug_Thu_Nov_05_03_55_47_944.log.0 <==
+[error]	2026-11-05 03:56:20.466762[Thread 0x000073db108a96c0]:Error getting: `check_new_version_sf`: HTTP 0, curl:Couldn't resolve host name:
+Could not resolve host: check-version.orcaslicer.com
+[Error 6]
+[error]	2026-11-05 03:56:20.467191[Thread 0x000073db209ff6c0]:[Orca Updater]: status=0, error=curl:Couldn't resolve host name:
+Could not resolve host: api.bambulab.com
+[Error 6], body=
+[info]	2026-11-05 03:56:20.467211[Thread 0x000073db209ff6c0]:[Orca Updater]Vendor slicer/printer/bbl can not get setting versions online
+[info]	2026-11-05 03:56:20.467292[Thread 0x000073dda8d15400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 03:56:20.467316[Thread 0x000073dda8d15400]:update_slice_print_status m_slice_select 1: can_slice= 0, can_print 1, enable_slice 0, enable_print 0 
+[info]	2026-11-05 03:56:20.467347[Thread 0x000073dda8d15400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 03:56:20.467350[Thread 0x000073dda8d15400]:update_slice_print_status m_slice_select 1: can_slice= 0, can_print 1, enable_slice 0, enable_print 0 
+[info]	2026-11-05 03:56:20.467355[Thread 0x000073dda8d15400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 03:56:20.467357[Thread 0x000073dda8d15400]:update_slice_print_status m_slice_select 1: can_slice= 0, can_print 1, enable_slice 0, enable_print 0 
+[info]	2026-11-05 03:56:20.467361[Thread 0x000073dda8d15400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 03:56:20.467363[Thread 0x000073dda8d15400]:update_slice_print_status m_slice_select 1: can_slice= 0, can_print 1, enable_slice 0, enable_print 0 
+[info]	2026-11-05 03:56:20.467383[Thread 0x000073dda8d15400]:process_ui_task{ type:RemoveBackup, id:7, path:/tmp/orcaslicer_model/Thu_Nov_05/03_56_17#944#7, object:0, extra:1} and interval = 10
+[info]	2026-11-05 03:56:20.467567[Thread 0x000073dda8d15400]:process_ui_task: remove all of backup path /tmp/orcaslicer_model/Thu_Nov_05/03_56_17#944#7
+[info]	2026-11-05 03:56:20.951493[Thread 0x000073dda8d15400]:update_print_volume_state, print_volume {0, 0, 0} to {250, 250, 250}, got 0 printable istances
+[info]	2026-11-05 03:56:20.951602[Thread 0x000073dda8d15400]:update_background_process: enter, force_validation=0 postpone_error_messages=0, switch_print=1, was_running=0
+[info]	2026-11-05 03:56:20.951615[Thread 0x000073dda8d15400]:get_current_slice_result:m_current_plate 0, current_plate 0x5ce504cca910
+[info]	2026-11-05 03:56:20.953380[Thread 0x000073dda8d15400]:apply, Line 1120: enter
+[info]	2026-11-05 03:56:20.953442[Thread 0x000073dda8d15400]:apply, has_scarf_joint_seam:false
+[info]	2026-11-05 03:56:20.954038[Thread 0x000073dda8d15400]:apply, got print_diff 77, object_diff 14, region_diff 21, set status to APPLY_STATUS_CHANGED
+[info]	2026-11-05 03:56:20.954074[Thread 0x000073dda8d15400]:apply 1260: found full_config_diff changed.
+[info]	2026-11-05 03:56:20.954344[Thread 0x000073dda8d15400]:apply 1787: finished,  this 0x5ce5049b4f10, m_modified_count 1, apply_status 1, m_support_used 0
+[info]	2026-11-05 03:56:20.954536[Thread 0x000073dda8d15400]:update_background_process: background process apply result=1
+[info]	2026-11-05 03:56:20.954546[Thread 0x000073dda8d15400]:update_background_process, Line 8094: was_running = 0, running 0, invalidated=1, return_state=0, internal_cancel=0
+[info]	2026-11-05 03:56:20.954552[Thread 0x000073dda8d15400]:update_background_process, Line 8124: background data valid, return_state=0
+[info]	2026-11-05 03:56:20.954555[Thread 0x000073dda8d15400]:update_background_process, Line 8167: exit, return_state=0
+[info]	2026-11-05 03:56:20.954559[Thread 0x000073dda8d15400]:restart_background_process, Line 8205: not started
+[info]	2026-11-05 03:56:27.763997[Thread 0x000073db52ffd6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:2} and interval = 10
+[info]	2026-11-05 03:56:27.764564[Thread 0x000073dda8d15400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:2} and interval = 10
+[info]	2026-11-05 03:56:37.773580[Thread 0x000073db52ffd6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:3} and interval = 10
+[info]	2026-11-05 03:56:37.774206[Thread 0x000073dda8d15400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:3} and interval = 10
+[info]	2026-11-05 03:56:47.763932[Thread 0x000073db52ffd6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:4} and interval = 10
+[info]	2026-11-05 03:56:47.764632[Thread 0x000073dda8d15400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:4} and interval = 10
+[info]	2026-11-05 03:56:57.763941[Thread 0x000073db52ffd6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:5} and interval = 10
+[info]	2026-11-05 03:56:57.764371[Thread 0x000073dda8d15400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:5} and interval = 10
+[info]	2026-11-05 03:57:07.770036[Thread 0x000073db52ffd6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:6} and interval = 10
+[info]	2026-11-05 03:57:07.770460[Thread 0x000073dda8d15400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:6} and interval = 10
+
+==> /root/.config/OrcaSlicer/log/debug_Thu_Nov_05_03_58_11_7816.log.0 <==
+[info]	2026-11-05 04:03:03.259985[Thread 0x00007c003d7fa6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:35} and interval = 10
+[info]	2026-11-05 04:03:03.260169[Thread 0x00007c0289c50400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:35} and interval = 10
+[info]	2026-11-05 04:03:03.261731[Thread 0x00007c0289c50400]:export_3mf: path=, backup=1, export_plate_idx=-1, SaveStrategy=69748
+[info]	2026-11-05 04:03:03.261799[Thread 0x00007c0289c50400]:store_to_3mf_structure: plate 1 before load, width 0, height 0, size 0!
+[info]	2026-11-05 04:03:03.261815[Thread 0x00007c0289c50400]:store_to_3mf_structure: plate 1 after load, width 0, height 0, size 0!
+[info]	2026-11-05 04:03:03.261826[Thread 0x00007c0289c50400]:store_to_3mf_structure: plate 0, gcode_filename=, with_slice_info=1, slice_valid 0, object item count 2.
+[info]	2026-11-05 04:03:03.261830[Thread 0x00007c0289c50400]:store_to_3mf_structure:stored 1 plates!
+[info]	2026-11-05 04:03:03.261969[Thread 0x00007c0289c50400]:_save_model_to_file:6050,before open zip writer, m_skip_static 1, m_save_gcode 1, m_use_loaded_id 0
+[info]	2026-11-05 04:03:03.262036[Thread 0x00007c0289c50400]:_save_model_to_file:6078, before add _add_content_types_file_to_archive
+[info]	2026-11-05 04:03:03.262132[Thread 0x00007c0289c50400]:_save_model_to_file:6092,before add thumbnails, count 0
+[info]	2026-11-05 04:03:03.262136[Thread 0x00007c0289c50400]:_save_model_to_file:6093,top&&pick thumbnails, count 0
+[info]	2026-11-05 04:03:03.262145[Thread 0x00007c0289c50400]:_save_model_to_file:6231,before add calibration thumbnails, count 0
+[info]	2026-11-05 04:03:03.262148[Thread 0x00007c0289c50400]:_save_model_to_file:6253,before add calibration boundingbox, count 0
+[info]	2026-11-05 04:03:03.262150[Thread 0x00007c0289c50400]:_save_model_to_file:6269, before add models
+[info]	2026-11-05 04:03:03.262152[Thread 0x00007c0289c50400]:_add_model_file_to_archive:6742, filename /tmp/orcaslicer_model/Thu_Nov_05/03_58_16#7816#36/.3mf.tmp, m_split_model 1,  sub_model 0
+[info]	2026-11-05 04:03:03.262168[Thread 0x00007c0289c50400]:bbs_3mf: save key= Application, value = BambuStudio-02.06.00.51
+[info]	2026-11-05 04:03:03.262171[Thread 0x00007c0289c50400]:bbs_3mf: save key= BambuStudio:3mfVersion, value = 1
+[info]	2026-11-05 04:03:03.262173[Thread 0x00007c0289c50400]:bbs_3mf: save key= Copyright, value = 
+[info]	2026-11-05 04:03:03.262174[Thread 0x00007c0289c50400]:bbs_3mf: save key= CreationDate, value = 
+[info]	2026-11-05 04:03:03.262176[Thread 0x00007c0289c50400]:bbs_3mf: save key= Description, value = 
+[info]	2026-11-05 04:03:03.262177[Thread 0x00007c0289c50400]:bbs_3mf: save key= Designer, value = 
+[info]	2026-11-05 04:03:03.262178[Thread 0x00007c0289c50400]:bbs_3mf: save key= DesignerCover, value = 
+[info]	2026-11-05 04:03:03.262180[Thread 0x00007c0289c50400]:bbs_3mf: save key= DesignerUserId, value = 
+[info]	2026-11-05 04:03:03.262181[Thread 0x00007c0289c50400]:bbs_3mf: save key= License, value = 
+[info]	2026-11-05 04:03:03.262182[Thread 0x00007c0289c50400]:bbs_3mf: save key= ModificationDate, value = 
+[info]	2026-11-05 04:03:03.262184[Thread 0x00007c0289c50400]:bbs_3mf: save key= Origin, value = 
+[info]	2026-11-05 04:03:03.262185[Thread 0x00007c0289c50400]:bbs_3mf: save key= Title, value = 
+[info]	2026-11-05 04:03:03.262242[Thread 0x00007c0289c50400]:_save_model_to_file:6332, before add custom gcodes
+[info]	2026-11-05 04:03:03.262246[Thread 0x00007c0289c50400]:_save_model_to_file:6343, before add project_settings
+[info]	2026-11-05 04:03:03.262862[Thread 0x00007c0289c50400]:save_to_json:1504, saved config to /tmp/orcaslicer_model/Thu_Nov_05/03_58_16#7816#36/_temp_1.config
+[info]	2026-11-05 04:03:03.263403[Thread 0x00007c0289c50400]:_add_file_to_archive:6517, add file /tmp/orcaslicer_model/Thu_Nov_05/03_58_16#7816#36/_temp_1.config to archive Metadata/project_settings.c
+[info]	2026-11-05 04:03:03.263412[Thread 0x00007c0289c50400]:_save_model_to_file:6358, before add project embedded settings
+[info]	2026-11-05 04:03:03.263476[Thread 0x00007c0289c50400]:_save_model_to_file:6433, before add sliced info to 3mf
+[info]	2026-11-05 04:03:03.263506[Thread 0x00007c0289c50400]:_save_model_to_file:6453, before add auxiliary dir to 3mf
+[info]	2026-11-05 04:03:03.263509[Thread 0x00007c0289c50400]:_save_model_to_file:6466, before add relation file to 3mf
+[info]	2026-11-05 04:03:03.263527[Thread 0x00007c0289c50400]:_save_model_to_file:6488, finished exporting 3mf
+[info]	2026-11-05 04:03:13.252386[Thread 0x00007c003d7fa6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:36} and interval = 10
+[info]	2026-11-05 04:03:13.252583[Thread 0x00007c0289c50400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:36} and interval = 10
+[info]	2026-11-05 04:03:23.252347[Thread 0x00007c003d7fa6c0]:process_task{ type:Backup, id:0, path:, object:0, extra:37} and interval = 10
+[info]	2026-11-05 04:03:23.252541[Thread 0x00007c0289c50400]:process_ui_task{ type:Backup, id:0, path:, object:0, extra:37} and interval = 10
+
+==> /root/.config/OrcaSlicer/log/debug_Thu_Nov_05_03_59_28_11709.log.0 <==
+[info]	2026-11-05 04:00:29.868710[Thread 0x0000798bda2bb400]:load_current_preset: exit
+[info]	2026-11-05 04:00:29.868724[Thread 0x0000798bda2bb400]:load_current_preset: enter, m_type machine
+[info]	2026-11-05 04:00:29.868840[Thread 0x0000798bda2bb400]:reset: current result id 4294967295 
+[info]	2026-11-05 04:00:29.868936[Thread 0x0000798bda2bb400]:update_extruder_variants-1
+[info]	2026-11-05 04:00:29.871867[Thread 0x0000798bda2bb400]:export_selections: printer MyKlipper 0.4 nozzle, print 0.20mm Standard @MyKlipper, filaments[0] Generic PLA @System 
+[info]	2026-11-05 04:00:29.871913[Thread 0x0000798bda2bb400]:put_other_changes
+[info]	2026-11-05 04:00:29.871926[Thread 0x0000798bda2bb400]:update_from_presetsproject file name is empty
+[info]	2026-11-05 04:00:29.872478[Thread 0x0000798bda2bb400]:load_current_preset: exit
+[info]	2026-11-05 04:00:29.872543[Thread 0x0000798bda2bb400]:shutdownMainFrame::shutdown enter
+[info]	2026-11-05 04:00:29.873069[Thread 0x0000798bda2bb400]:GUI_App::shutdown enter
+[info]	2026-11-05 04:00:29.873226[Thread 0x0000798bda2bb400]:GUI_App::shutdown exit
+[info]	2026-11-05 04:00:29.873250[Thread 0x0000798bda2bb400]:shutdownMainFrame::shutdown exit
+[info]	2026-11-05 04:00:29.873256[Thread 0x0000798bda2bb400]:operator(): mainframe finished process close_widow event
+[info]	2026-11-05 04:00:29.878131[Thread 0x0000798bda2bb400]:process_ui_task{ type:RemoveBackup, id:7, path:/tmp/orcaslicer_model/Thu_Nov_05/03_59_32#11709#36, object:0, extra:1} and interval = 10
+[info]	2026-11-05 04:00:29.878580[Thread 0x0000798bda2bb400]:process_ui_task: remove all of backup path /tmp/orcaslicer_model/Thu_Nov_05/03_59_32#11709#36
+[info]	2026-11-05 04:00:29.881388[Thread 0x0000798bda2bb400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 04:00:29.881433[Thread 0x0000798bda2bb400]:update_slice_print_status m_slice_select 1: can_slice= 0, can_print 1, enable_slice 0, enable_print 0 
+[info]	2026-11-05 04:00:29.881440[Thread 0x0000798bda2bb400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 04:00:29.881442[Thread 0x0000798bda2bb400]:update_slice_print_status m_slice_select 1: can_slice= 0, can_print 1, enable_slice 0, enable_print 0 
+[info]	2026-11-05 04:00:29.881446[Thread 0x0000798bda2bb400]:get_enable_print_status: m_print_select 3, enable= 0 
+[info]	2026-11-05 04:00:29.881447[Thread 0x0000798bda2bb400]:update_slice_print_status m_slice_select 1: can_slice= 0, can_print 1, enable_slice 0, enable_print 0 
+[info]	2026-11-05 04:00:29.923836[Thread 0x0000798bda2bb400]:~MediaPlayCtrl: 0x638bdaff4500
+[info]	2026-11-05 04:00:29.937768[Thread 0x0000798bda2bb400]:ImageGrid::SetStatus: Please confirm if the printer is connected.
+[info]	2026-11-05 04:00:29.939153[Thread 0x0000798bda2bb400]:~PrinterWebView Start
+[info]	2026-11-05 04:00:29.939853[Thread 0x0000798bda2bb400]:~PrinterWebView End
+[info]	2026-11-05 04:00:29.994857[Thread 0x0000798bda2bb400]:stop, enter
+[info]	2026-11-05 04:00:29.994988[Thread 0x0000798bda2bb400]:update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[info]	2026-11-05 04:00:29.995036[Thread 0x0000798bda2bb400]:update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[info]	2026-11-05 04:00:29.995163[Thread 0x0000798bda2bb400]:update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[info]	2026-11-05 04:00:29.995281[Thread 0x0000798bda2bb400]:update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[info]	2026-11-05 04:00:30.037995[Thread 0x0000798bda2bb400]:reset: current result id 0 
+[info]	2026-11-05 04:00:30.038394[Thread 0x0000798bda2bb400]:reset: current result id 4294967295 
+[info]	2026-11-05 04:00:30.038440[Thread 0x0000798bda2bb400]:reset: current result id 0 
+[info]	2026-11-05 04:00:30.059233[Thread 0x0000798bda2bb400]:Printer agent cache cleared
+[info]	2026-11-05 04:00:30.059426[Thread 0x0000798bda2bb400]:~GUI_App: enter
+[info]	2026-11-05 04:00:30.059439[Thread 0x0000798bda2bb400]:~GUI_App: destroy app_config
+[info]	2026-11-05 04:00:30.059472[Thread 0x0000798bda2bb400]:~GUI_App: destroy preset_bundle
+[info]	2026-11-05 04:00:30.076693[Thread 0x0000798bda2bb400]:~GUI_App: destroy preset updater
+[info]	2026-11-05 04:00:30.076776[Thread 0x0000798bda2bb400]:get, can not Load Library
+[info]	2026-11-05 04:00:30.076782[Thread 0x0000798bda2bb400]:~GUI_App: exit
+
+==> /root/.config/OrcaSlicer/log/debug_Thu_Nov_05_04_02_25_19175.log.0 <==
+[info]	2026-11-05 04:02:25.320493[Thread 0x000071227449f400]:gui mode, Current OrcaSlicer Version 2.4.2 build 8500fcdc
+[error]	2026-11-05 04:02:25.321575[Thread 0x000071227449f400]:Instance check: Another instance found. This instance will terminate. Lock file of current running instance is located at /root/.config/Or

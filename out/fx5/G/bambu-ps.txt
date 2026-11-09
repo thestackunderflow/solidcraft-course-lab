@@ -1,0 +1,1 @@
+46 /root/apps/bambu-root/bin/bambu-studio

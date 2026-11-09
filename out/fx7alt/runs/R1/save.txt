@@ -1,0 +1,1 @@
+{"content": [{"text": "{\n  \"bytes\": 7689,\n  \"name\": \"box20\",\n  \"path\": \"/root/box20.sc\"\n}", "type": "text"}]}

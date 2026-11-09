@@ -1,0 +1,1 @@
+{"content": [{"text": "{\n  \"bodies\": [\n    \"Body1\"\n  ],\n  \"changed_bodies\": [\n    \"Body1\"\n  ],\n  \"created_bodies\": [],\n  \"feature\": 2,\n  \"ms\": 18.742504,\n  \"name\": \"Cylinder1\",\n  \"removed_bodies\": [],\n  \"warning\": null\n}", "type": "text"}]}

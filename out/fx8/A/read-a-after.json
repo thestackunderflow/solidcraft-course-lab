@@ -1,0 +1,229 @@
+{
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 4489.811314859694,
+    "bbox": {
+     "max": [
+      25.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.713601008766341,
+     -9.999999998434177,
+     21.899232840739003
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 2226,
+    "face_types": {
+     "mesh": 1484
+    },
+    "faces": 1484,
+    "kernel": {
+     "edges": 2226,
+     "faces": 1484,
+     "shells": 1,
+     "vertices": 740
+    },
+    "mass_g": 10.71530026641531,
+    "material": "Default",
+    "name": "hook",
+    "vertices": 740,
+    "volume_mm3": 8306.434315050628
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 4489.811314859694,
+   "edges": 2226,
+   "faces": 1484,
+   "mass_g": 10.71530026641531,
+   "open_bodies_skipped": 0,
+   "vertices": 740,
+   "volume_mm3": 8306.434315050628
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 4489.811314859694,
+    "bbox": {
+     "max": [
+      25.0,
+      0.0,
+      60.0
+     ],
+     "min": [
+      0.0,
+      -20.0,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     6.713601008766341,
+     -9.999999998434177,
+     21.899232840739003
+    ],
+    "closed": true,
+    "edges": 2226,
+    "face_types": {
+     "mesh": 1484
+    },
+    "faces": 1484,
+    "kernel": {
+     "edges": 2226,
+     "faces": 1484,
+     "shells": 1,
+     "vertices": 740
+    },
+    "name": "hook",
+    "vertices": 740,
+    "visible": true,
+    "volume_mm3": 8306.434315050628
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 2,
+  "metadata": {},
+  "name": "hook",
+  "params": [],
+  "path": null,
+  "redo": 0,
+  "revision": 12,
+  "selection": [],
+  "sketches": [
+   {
+    "constraints": [],
+    "curves": [
+     {
+      "center": "c1.center",
+      "center_at": [
+       -10.0,
+       30.0
+      ],
+      "construction": false,
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "c1",
+      "radius": 2.5,
+      "type": "circle"
+     }
+    ],
+    "dof": 3,
+    "failing": [],
+    "fully_constrained": false,
+    "id": 4,
+    "links": [],
+    "name": "Sketch1",
+    "plane": {
+     "origin": [
+      5.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "points": [
+     {
+      "at": [
+       0.0,
+       0.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "origin",
+      "link": null,
+      "world": [
+       5.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -10.0,
+       30.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "c1.center",
+      "link": null,
+      "world": [
+       5.0,
+       -10.0,
+       30.0
+      ]
+     }
+    ],
+    "profiles": [
+     {
+      "area_mm2": 19.634954084936197,
+      "centroid_sketch": [
+       -9.999999999999956,
+       29.999999999999957
+      ],
+      "curves": [
+       "c1"
+      ],
+      "holes": [],
+      "index": 0
+     }
+    ],
+    "status": "solved",
+    "visible": true,
+    "wires": []
+   }
+  ],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 3,
+    "ms": 0.467522,
+    "name": "hook",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "MeshFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 4,
+    "ms": 0.102475,
+    "name": "Sketch1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "Sketch",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

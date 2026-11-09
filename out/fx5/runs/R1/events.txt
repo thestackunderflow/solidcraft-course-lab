@@ -1,0 +1,17 @@
+04:11:31.8  recording started: SolidCraft with the saved hook (hook_depth 25), no slicer open (R1)
+04:11:33.8  send 1 (by hand): right-click Body1
+04:11:40.6  send 1 (by hand): Send window
+04:11:42.0  send 1 (by hand): Send clicked
+04:11:45.1  send 1 (by hand): slicer window up
+04:11:57.4  send 1 (by hand): slicer shows the hook (25)
+04:12:37.5  claude: started (no flags)
+04:12:37.5  claude: typed
+04:13:14.4  turn 1: reply done
+04:13:27.0  slicer: 10 s after the reply
+04:13:56.2  reload (by hand): extra copy selected
+04:13:58.2  reload (by hand): extra copy deleted
+04:14:02.2  reload (by hand): right-click menu open
+04:14:07.9  menu text: "Reload from disk"
+04:14:09.0  reload (by hand): click Reload from disk
+04:14:19.3  reload (by hand): done
+04:14:30.2  recording stopped

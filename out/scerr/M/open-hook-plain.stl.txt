@@ -1,0 +1,2 @@
+open {"bodies": ["hook-plain"], "component": 1, "component_name": "hook-plain", "errors": 0, "features": 1, "occurrence": 2, "path": "/root/hook-plain.stl", "warnings": []}
+open-hook-plain.stl {"bodies": [["hook-plain", 8500.0, {"mesh": 28}]], "timeline": [["hook-plain", "MeshFeature"]]}

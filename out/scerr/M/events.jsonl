@@ -1,0 +1,15 @@
+{"t": 0.512, "event": "recording started: hook.stl (a mesh) open in SolidCraft 0.30.1, full window"}
+{"t": 4.525, "event": "convert: select the mesh body"}
+{"t": 7.386, "event": "convert: Surface tab"}
+{"t": 10.473, "event": "convert: Convert Mesh button"}
+{"t": 14.173, "event": "convert: dialog held 3 s"}
+{"t": 17.721, "event": "convert hook.stl: OK"}
+{"t": 21.212, "event": "convert hook.stl: refusal held 7 s"}
+{"t": 29.651, "event": "convert: Cancel"}
+{"t": 33.032, "event": "plain hook: hook-plain.stl opened by the lab script"}
+{"t": 37.997, "event": "convert plain: select the mesh body"}
+{"t": 40.867, "event": "convert plain: Surface tab"}
+{"t": 44.007, "event": "convert plain: Convert Mesh button"}
+{"t": 47.706, "event": "convert plain: OK"}
+{"t": 52.536, "event": "convert plain: converted, timeline held 5 s"}
+{"t": 59.798, "event": "recording stopped"}

@@ -1,0 +1,2 @@
+total 56
+-rw-r--r-- 1 root root 57263 2026-11-05 03:49:27.728051775 +0000 hook-lesson4-0ec2ab17f9b8b1e4.3mf

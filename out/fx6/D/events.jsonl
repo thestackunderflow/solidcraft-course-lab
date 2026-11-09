@@ -1,0 +1,5 @@
+{"t": 0.507, "event": "recording started: terminal (left) over SolidCraft with the hook (right), full display"}
+{"t": 3.517, "event": "typed: python3 -I D/noai.py |& tee D/reply.txt"}
+{"t": 7.590, "event": "Enter"}
+{"t": 27.960, "event": "replies shown: hold 6 s"}
+{"t": 34.594, "event": "recording stopped"}

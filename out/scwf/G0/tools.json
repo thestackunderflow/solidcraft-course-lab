@@ -1,0 +1,46 @@
+{
+ "tools": [
+  "list_commands",
+  "describe_command",
+  "execute",
+  "batch",
+  "inspect_design",
+  "measure",
+  "body_topology",
+  "set_parameter",
+  "check_parameters",
+  "screenshot",
+  "compare_picture",
+  "export",
+  "crash_reports",
+  "running",
+  "pending",
+  "undo",
+  "redo",
+  "new_design",
+  "open",
+  "save",
+  "skill_reference"
+ ],
+ "entry": {
+  "path": "/root/.claude.json",
+  "exists": true,
+  "found": true,
+  "command": "/opt/solidcraft-0.30.1/bin/solidcraft-cli",
+  "args": [
+   "mcp"
+  ],
+  "other_servers": [],
+  "problems": [],
+  "entry": {
+   "args": [
+    "mcp"
+   ],
+   "command": "/opt/solidcraft-0.30.1/bin/solidcraft-cli",
+   "type": "stdio"
+  }
+ },
+ "registered_as": [
+  "solidcraft"
+ ]
+}

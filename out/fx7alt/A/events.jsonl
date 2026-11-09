@@ -1,0 +1,9 @@
+{"t": 0.512, "event": "recording started: SolidCraft window (top) + terminal strip, a fresh 20 mm box, typing at once"}
+{"t": 4.709, "event": "volume before: 8000.0"}
+{"t": 6.414, "event": "solid.fillet [20, 20, 20]: refused"}
+{"t": 6.421, "event": "reply: \"invalid parameters for `solid.fillet`: [20, 20, 20] is where 3 edges meet: give a point along one edge, such as its midpoint\", isError: true"}
+{"t": 7.94, "event": "volume after: 8000.0"}
+{"t": 9.431, "event": "reply + window toast shown: hold 5 s"}
+{"t": 14.442, "event": "orbit: slow swing, 8 s (F1 source)"}
+{"t": 25.530, "event": "home view: hold 3 s"}
+{"t": 29.091, "event": "recording stopped"}

@@ -1,0 +1,84 @@
+{
+ "completed": 5,
+ "ok": true,
+ "results": [
+  {
+   "display_value": 25.0,
+   "errors": [],
+   "expression": "25",
+   "name": "width",
+   "recomputed": 0,
+   "restored": 0,
+   "value": 25.0
+  },
+  {
+   "attachment": "fixed",
+   "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [],
+    "points": []
+   },
+   "name": "Sketch1",
+   "projected": null,
+   "sketch": 1
+  },
+  {
+   "constraints": [
+    "k1"
+   ],
+   "created": {
+    "constraints": [
+     "k1"
+    ],
+    "curves": [
+     "l1",
+     "l2",
+     "l3",
+     "l4",
+     "l5",
+     "l6"
+    ],
+    "dimensions": [],
+    "points": [
+     "l1.start",
+     "l1.end",
+     "l2.end",
+     "l3.end",
+     "l4.end",
+     "l5.end"
+    ]
+   },
+   "curves": [
+    "l1",
+    "l2",
+    "l3",
+    "l4",
+    "l5",
+    "l6"
+   ],
+   "sketch": {
+    "dof": 10,
+    "solved": true
+   }
+  },
+  {
+   "profiles": 1,
+   "sketch": 1
+  },
+  {
+   "bodies": [
+    "Body1"
+   ],
+   "changed_bodies": [],
+   "created_bodies": [
+    "Body1"
+   ],
+   "feature": 2,
+   "ms": 4.697979,
+   "name": "Bracket",
+   "removed_bodies": [],
+   "warning": null
+  }
+ ]
+}

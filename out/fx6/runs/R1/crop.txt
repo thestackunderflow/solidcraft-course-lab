@@ -1,0 +1,1 @@
+greyed suggested prompt under the reply: "Use a 5 mm fillet" (Claude Code suggestion, never sent); crop it out of reply.png / the R1 clip (the input row below the reply)

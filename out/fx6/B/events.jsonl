@@ -1,0 +1,49 @@
+{"t": 0.509, "event": "recording started: take B, the limit search, full window"}
+{"t": 3.526, "event": "fillet 4.0: Fillet button"}
+{"t": 6.992, "event": "fillet 4.0: lip outer top edge"}
+{"t": 11.000, "event": "fillet 4.0: radius typed"}
+{"t": 19.437, "event": "fillet 4.0: OK"}
+{"t": 24.168, "event": "fillet 4.0: built (curved faces 1)"}
+{"t": 29.100, "event": "fillet 4.0: Ctrl+Z"}
+{"t": 33.228, "event": "fillet 4.9: Fillet button"}
+{"t": 36.777, "event": "fillet 4.9: lip outer top edge"}
+{"t": 40.739, "event": "fillet 4.9: radius typed"}
+{"t": 48.682, "event": "fillet 4.9: OK"}
+{"t": 53.066, "event": "fillet 4.9: built (curved faces 1)"}
+{"t": 57.572, "event": "fillet 4.9: Ctrl+Z"}
+{"t": 61.601, "event": "fillet 5.0: Fillet button"}
+{"t": 64.924, "event": "fillet 5.0: lip outer top edge"}
+{"t": 68.732, "event": "fillet 5.0: radius typed"}
+{"t": 76.520, "event": "fillet 5.0: OK"}
+{"t": 80.942, "event": "fillet 5.0: built (curved faces 1)"}
+{"t": 85.282, "event": "fillet 5.0: Ctrl+Z"}
+{"t": 89.309, "event": "fillet 5.1: Fillet button"}
+{"t": 92.641, "event": "fillet 5.1: lip outer top edge"}
+{"t": 96.451, "event": "fillet 5.1: radius typed"}
+{"t": 104.621, "event": "fillet 5.1: OK"}
+{"t": 109.078, "event": "fillet 5.1: built (curved faces 1)"}
+{"t": 113.411, "event": "fillet 5.1: Ctrl+Z"}
+{"t": 117.556, "event": "search done"}
+{"t": 170.991, "event": "part 2: hook clean (8500.0), 4.9 and 5.1 again"}
+{"t": 171.000, "event": "fillet 4.9: Fillet button (part 2)"}
+{"t": 174.337, "event": "fillet 4.9: lip outer top edge (part 2)"}
+{"t": 178.162, "event": "fillet 4.9: radius typed (part 2)"}
+{"t": 185.939, "event": "fillet 4.9: OK (part 2)"}
+{"t": 190.860, "event": "fillet 4.9: built (part 2, curved faces 1)"}
+{"t": 195.227, "event": "undo: toolbar Undo"}
+{"t": 199.700, "event": "undo: volume 8500.0"}
+{"t": 201.694, "event": "fillet 5.1: Fillet button (part 2)"}
+{"t": 205.030, "event": "fillet 5.1: lip outer top edge (part 2)"}
+{"t": 208.835, "event": "fillet 5.1: radius typed (part 2)"}
+{"t": 216.610, "event": "fillet 5.1: OK (part 2)"}
+{"t": 222.272, "event": "fillet 5.1: refused (part 2)"}
+{"t": 227.587, "event": "part 2 done"}
+{"t": 247.745, "event": "fillet 5.1: refused \"not supported yet: the blend is larger than the neighbouring faces; the largest radius that fits is 5 mm\""}
+{"t": 248.225, "event": "F2 clean: full window 3 s"}
+{"t": 251.233, "event": "F2 clean: Fillet button"}
+{"t": 254.569, "event": "F2 clean: lip outer top edge"}
+{"t": 258.387, "event": "F2 clean: radius 5 typed"}
+{"t": 265.990, "event": "F2 clean: OK"}
+{"t": 270.295, "event": "F2 clean: the round held 5 s"}
+{"t": 276.246, "event": "F2 clean: toolbar Undo"}
+{"t": 282.713, "event": "recording stopped"}

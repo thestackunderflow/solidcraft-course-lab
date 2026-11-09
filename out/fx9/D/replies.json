@@ -1,0 +1,1 @@
+[{"tool": "execute", "arguments": {"command": "solid.thread", "params": {"face": [4, 0, 3.5], "designation": "M8", "modeled": true}}, "isError": true, "texts": ["this 8 mm hole is too wide for a modelled M8 thread: it would cut 0.00 mm of the thread's 0.68 mm depth; drill 6.75 mm for M8, or thread this hole M10"]}]

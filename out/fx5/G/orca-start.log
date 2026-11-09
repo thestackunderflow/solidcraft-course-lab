@@ -1,0 +1,21 @@
+
+(orca-slicer:76): dbind-WARNING **: 03:32:29.713: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(orca-slicer:76): Gtk-CRITICAL **: 03:33:19.822: gtk_window_resize: assertion 'height > 0' failed
+
+(orca-slicer:76): Gtk-CRITICAL **: 03:33:20.374: gtk_window_resize: assertion 'height > 0' failed
+
+(orca-slicer:76): Gtk-WARNING **: 03:33:20.697: Could not load a pixbuf from /org/gtk/libgtk/theme/Adwaita/assets/bullet-symbolic.svg.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+(process:334): libsoup-WARNING **: 03:33:20.957: Failed to execute query: database is locked
+
+(process:370): libsoup-WARNING **: 03:33:20.957: Failed to execute query: database is locked
+
+(process:370): libsoup-WARNING **: 03:33:20.957: Failed to execute query: no such table: soup_hsts_policies
+
+(process:334): libsoup-WARNING **: 03:33:20.957: Failed to execute query: no such table: soup_hsts_policies
+
+(process:366): libsoup-WARNING **: 03:33:20.958: Failed to execute query: database is locked
+
+(process:366): libsoup-WARNING **: 03:33:20.958: Failed to execute query: no such table: soup_hsts_policies

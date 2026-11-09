@@ -1,0 +1,10 @@
+R1 tool calls (from session.jsonl + the proxy's transcript.jsonl), in order:
+1. ToolSearch (Claude Code's own deferred-tool loader; no SolidCraft call)
+2. mcp__solidcraft__inspect_design {"sketches": false}  -> ok (one body, bbox 0..20 on every axis)
+3. AskUserQuestion (the question in reply.txt; pending when the run stopped)
+Points sent to SolidCraft: none. solid.fillet / solid.chamfer calls: none. "is where N edges meet" replies: none.
+(The proxy log's later measure / inspect_design / body_topology calls at 12:41:56 are the lab's own read-after
+over the same entry, not Claude's.)
+Box after: volume 8000.0, timeline [Box1] (read-after.txt; after.png, after-2.png).
+Model: claude-sonnet-5-5 on every assistant message (the session's "advisorModel" setting field names another model;
+no message came from it).

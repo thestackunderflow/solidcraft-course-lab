@@ -1,0 +1,52 @@
+{"t": 0.510, "event": "try 6.3: full window, hold 3 s"}
+{"t": 3.518, "event": "double-click Hole1 in the timeline"}
+{"t": 7.561, "event": "diameter: 6.3"}
+{"t": 12.522, "event": "diameter 6.3 in the box: hold 4 s"}
+{"t": 17.186, "event": "OK"}
+{"t": 22.356, "event": "Thread: Model tab > Create menu > Thread"}
+{"t": 28.758, "event": "pick the hole's wall"}
+{"t": 33.142, "event": "dialog after the pick: hold 4 s"}
+{"t": 37.152, "event": "untick Automatic size"}
+{"t": 39.871, "event": "Size: 8 mm"}
+{"t": 45.953, "event": "Size 8 mm set (Designation shown): hold 2 s"}
+{"t": 48.601, "event": "tick Modeled"}
+{"t": 55.163, "event": "M8 in 2430: live error under the fields, OK greyed: hold 4 s"}
+{"t": 59.360, "event": "M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 806.3371259558843"}
+{"t": 59.368, "event": "close the dialog (title-bar X)"}
+{"t": 63.540, "event": "fresh copy of ~/nut.sc for 6.5 (opened off camera, new tab)"}
+{"t": 68.144, "event": "try 2499: full window, hold 3 s"}
+{"t": 71.152, "event": "double-click Hole1 in the timeline"}
+{"t": 75.218, "event": "diameter: 2499"}
+{"t": 80.269, "event": "diameter 2499 in the box: hold 4 s"}
+{"t": 85.118, "event": "OK"}
+{"t": 90.313, "event": "Thread: Model tab > Create menu > Thread"}
+{"t": 96.710, "event": "pick the hole's wall"}
+{"t": 101.116, "event": "dialog after the pick: hold 4 s"}
+{"t": 105.129, "event": "untick Automatic size"}
+{"t": 107.849, "event": "Size: 8 mm"}
+{"t": 113.944, "event": "Size 8 mm set (Designation shown): hold 2 s"}
+{"t": 116.544, "event": "tick Modeled"}
+{"t": 122.997, "event": "M8 in 2430: live error under the fields, OK greyed: hold 4 s"}
+{"t": 127.124, "event": "M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume -0.0"}
+{"t": 127.134, "event": "close the dialog (title-bar X)"}
+{"t": 131.329, "event": "fresh copy of ~/nut.sc for 7.6 (opened off camera, new tab)"}
+{"t": 135.934, "event": "try 2499: full window, hold 3 s"}
+{"t": 138.950, "event": "double-click Hole1 in the timeline"}
+{"t": 142.967, "event": "diameter: 2499"}
+{"t": 147.998, "event": "diameter 2499 in the box: hold 4 s"}
+{"t": 152.857, "event": "OK"}
+{"t": 158.034, "event": "Thread: Model tab > Create menu > Thread"}
+{"t": 164.461, "event": "pick the hole's wall"}
+{"t": 168.852, "event": "dialog after the pick: hold 4 s"}
+{"t": 172.861, "event": "untick Automatic size"}
+{"t": 175.590, "event": "Size: 8 mm"}
+{"t": 181.689, "event": "Size 8 mm set (Designation shown): hold 2 s"}
+{"t": 184.282, "event": "tick Modeled"}
+{"t": 190.743, "event": "M8 in 2430: live error under the fields, OK greyed: hold 4 s"}
+{"t": 194.893, "event": "M8 in 2430: refused (see 2430.png); timeline ['Sketch1', 'Extrude1', 'Hole1']; volume -0.0"}
+{"t": 194.900, "event": "close the dialog (title-bar X)"}
+{"t": 199.107, "event": "fresh copy of ~/nut.sc for 7.7 (opened off camera, new tab)"}
+{"t": 203.704, "event": "try 2499: full window, hold 3 s"}
+{"t": 206.713, "event": "double-click Hole1 in the timeline"}
+{"t": 210.747, "event": "diameter: 2499"}
+{"t": 215.817, "event": "diameter 2499 in the box: hold 4 s"}

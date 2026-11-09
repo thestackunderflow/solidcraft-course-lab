@@ -1,0 +1,32 @@
+{"t": 0.517, "event": "recording started: the saved hook in SolidCraft (full window)"}
+{"t": 5.527, "event": "send 1: right-click Body1"}
+{"t": 15.368, "event": "send 1: Send clicked"}
+{"t": 25.911, "event": "send 1: slicer window up"}
+{"t": 39.41, "event": "send 1: slicer opened (25)"}
+{"t": 39.417, "event": "size boxes: 25 (Size [World] 25 x 60 x 20 mm, as shown)"}
+{"t": 46.31, "event": "hook_depth: 40 open Parameters"}
+{"t": 63.218, "event": "hook_depth: 40 typed"}
+{"t": 76.037, "event": "save: click the Save icon"}
+{"t": 93.372, "event": "send 2: right-click Body1"}
+{"t": 101.573, "event": "send 2: Send clicked"}
+{"t": 126.474, "event": "send 2: second copy (one window; a second object, Size 40 x 60 x 20, selected and drawn over the first at the same position; the first shows in orange where it sticks out)"}
+{"t": 136.149, "event": "send 2: select the orange copy"}
+{"t": 169.446, "event": "send 2: first copy selected: Size 25 x 60 x 20"}
+{"t": 202.176, "event": "extra copy: selected (40 x 60 x 20)"}
+{"t": 207.202, "event": "extra copy: deleted"}
+{"t": 212.876, "event": "right-click: menu open"}
+{"t": 223.612, "event": "right-click: menu open (on the hook)"}
+{"t": 230.592, "event": "menu text: \"Reload from disk\""}
+{"t": 233.484, "event": "reload: click Reload from disk"}
+{"t": 246.666, "event": "reload: done (40)"}
+{"t": 246.674, "event": "size boxes: 40 (Size [World] 40 x 60 x 20 mm; Position 127.79, 107.97, 10)"}
+{"t": 246.679, "event": "print face: kept (lying on the J side as after send 1: Z 20, Rotate 0 0 0)"}
+{"t": 262.642, "event": "slicer idle 15 s: end"}
+{"t": 265.533, "event": "palette: open"}
+{"t": 315.135, "event": "agent send: no-AI script started"}
+{"t": 337.419, "event": "agent send: no prompt (no window in SolidCraft; PrusaSlicer raised with a further copy 40 x 60 x 20 at Position 125, 105, 10 over the reloaded one)"}
+{"t": 340.569, "event": "slicer: Ctrl+Q"}
+{"t": 355.77, "event": "slicer close dialog: \"Closing PrusaSlicer. Current project is modified. Do you want to save the changes to \"/root/.cache/solidcraft/slicer/hook-lesson4-0ec2ab17f9b8b1e4.3mf\"?\" [Remember my choice] Discard / Cancel / Save (default, focused): Save"}
+{"t": 360.865, "event": "slicer: closed"}
+{"t": 364.735, "event": "SolidCraft: Ctrl+Q"}
+{"t": 375.934, "event": "SolidCraft: closed"}

@@ -1,0 +1,2 @@
+open {"errors": 0, "features": 5, "name": "hook-l4", "path": "/root/hook-l4.sc"}
+open-hook-l4.sc {"bodies": [["Body1", 8306.62, {"cylinder": 4, "plane": 10}]], "timeline": [["Sketch1", "Sketch"], ["Hook", "ExtrudeFeature"], ["Hole1", "HoleFeature"], ["Hole2", "HoleFeature"], ["Fillet1", "FilletFeature"]]}

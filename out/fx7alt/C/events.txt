@@ -1,0 +1,10 @@
+12:35:58.0  volume before: 8000.0
+12:36:01.1  recording started: full window held 3 s, a fresh 20 mm box
+12:36:08.3  volume before: 8000.0
+12:36:10.1  solid.fillet [20, 20, 5]: built
+12:36:10.1  reply: "{\n  \"changed_bodies\": [\n    \"Body1\"\n  ],\n  \"created_bodies\": [],\n  \"feature\": 2,\n  \"ms\": 44.531014,\n  \"name\": \"Fillet1\",\n  \"removed_bodies\": [],\n  \"warning\": null\n}", isError: false
+12:36:11.7  volume after: 7961.35
+12:36:11.8  reply shown, the round: hold 5 s
+12:36:17.3  second angle: turn the view (middle drag), hold 4 s
+12:36:30.1  recording stopped
+12:41:03.0  upright 5: built; C/after.png (home view) and C/after-2.png (turned): the WHOLE upright edge at the right (x 20, y 20) is rounded, top to bottom, both ends; volume after 7961.35 (= the 20 mm top edge's round in take B)

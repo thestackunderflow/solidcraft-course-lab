@@ -1,0 +1,12 @@
+05:14:10.6  recording started: the bracket, no holes yet, SolidCraft 0.30.1, full window
+05:14:14.6  hole: Hole button
+05:14:18.4  hole: the top face
+05:14:22.1  hole: Reference 1 field
+05:14:25.1  hole: the end edge
+05:14:28.9  hole: Distance 1 = 12
+05:14:33.9  hole: Reference 2 field
+05:14:36.7  hole: the front edge
+05:14:40.5  hole: Distance 2 = 12.5
+05:14:46.8  hole: window held 6 s
+05:14:53.3  hole: OK
+05:15:02.5  recording stopped

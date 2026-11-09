@@ -1,0 +1,3 @@
+Exporter: Save As Mesh (file.save_mesh, the toolbar command), format from the .stl extension = binary STL.
+file.save_mesh in 0.28.0 has no quality/tolerance option (params: path, format, bodies, ascii, slicer...),
+so every file is the default ("standard") tessellation.

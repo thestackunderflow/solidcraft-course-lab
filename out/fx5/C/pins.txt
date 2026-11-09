@@ -1,0 +1,3 @@
+OrcaSlicer: OrcaSlicer_Linux_AppImage_Ubuntu2404_V2.4.2.AppImage, extracted to ~/apps/orca-root
+launcher: /usr/local/bin/orca-slicer (exec ~/apps/orca-root/AppRun "$@")
+Orca settings copied from take G's home (wizard done): ~/.config/OrcaSlicer

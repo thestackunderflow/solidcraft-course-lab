@@ -1,0 +1,24 @@
+{"t": 0.508, "event": "recording started: full SolidCraft window, ~/nut.sc (8 mm hole): hold 3 s"}
+{"t": 3.518, "event": "the Hole in the timeline: double-click to show its diameter"}
+{"t": 8.063, "event": "Hole diameter 8: hold 4 s"}
+{"t": 16.444, "event": "Thread: Model tab > Create menu > Thread"}
+{"t": 22.827, "event": "pick the hole's wall"}
+{"t": 27.206, "event": "dialog after the pick: hold 4 s"}
+{"t": 31.845, "event": "Q2 Automatic size suggestion: hold 2 s"}
+{"t": 34.480, "event": "untick Automatic size"}
+{"t": 37.175, "event": "Size: 8 mm"}
+{"t": 43.251, "event": "Size 8 mm set (Designation shown): hold 2 s"}
+{"t": 45.883, "event": "tick Modeled"}
+{"t": 52.434, "event": "M8 in 8: live error under the fields, OK greyed: hold 4 s"}
+{"t": 56.448, "event": "M8 in 8: refused (line as shown in refusal.png)"}
+{"t": 57.096, "event": "Create Issue... (draft only, not submitted)"}
+{"t": 61.740, "event": "report draft: hold 4 s"}
+{"t": 69.963, "event": "click the greyed OK"}
+{"t": 75.910, "event": "after OK: timeline ['Sketch1', 'Extrude1', 'Hole1']"}
+{"t": 75.923, "event": "Q3: Size 10 mm (M10), Modeled still ticked, same hole"}
+{"t": 84.810, "event": "M10 in 8: live error under the fields, OK greyed: hold 4 s"}
+{"t": 88.820, "event": "M10 in 8: refused"}
+{"t": 89.476, "event": "Cancel"}
+{"t": 94.428, "event": "volume after: 672.7014006603717; timeline ['Sketch1', 'Extrude1', 'Hole1']"}
+{"t": 94.436, "event": "hold 3 s"}
+{"t": 97.446, "event": "recording stopped"}

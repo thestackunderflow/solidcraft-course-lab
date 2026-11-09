@@ -1,0 +1,37 @@
+  0–25 and Z 0–30 mm. The model has one body, and the sketch is
+  fully constrained.
+
+  - Named sizes: width = 25 mm, leg_length = 50 mm, thickness = 4
+    mm and height = 30 mm. I added leg_length, thickness and
+    height so the profile follows named sizes too, not just the
+    extrusion.
+  - Profile: the sketch LProfile is on the XZ plane. Its top leg
+    is 50 mm long and 4 mm thick, at Z = 26–30. Its drop leg is 4
+    mm thick and runs the full 30 mm, Z = 0–30. The corner
+    points are written as expressions of the parameters.
+  - Extrude: Bracket extrudes the profile by width in +Y.
+  - Volume check: (50×4 + 4×26) mm² × 25 mm = 7,600 mm³, which
+    matches the measured value.
+
+  I did not save the design to a file.
+
+✻ Baked for 16s · done 5:03 AM
+
+❯ Change width to 35 and tell me the new volume. Then set it
+  back to 25.
+
+  Called solidcraft
+
+● With width at 35 mm the volume is 10,640 mm³. That matches
+  (50×4 + 4×26) × 35. The Y extent grew to 0–35, and X and Z
+  stayed at 0–50 and 0–30.
+
+  I set width back to 25 mm. The final check shows 7,600 mm³ with
+  a bounding box of X 0–50, Y 0–25, Z 0–30, the same as before.
+
+✻ Crunched for 3s · done 5:04 AM
+
+─────────────────────────────────────────────────────────────────
+❯ save the design
+─────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle)

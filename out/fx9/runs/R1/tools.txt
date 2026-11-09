@@ -1,0 +1,16 @@
+R1 tool calls (from session.jsonl + the proxy's transcript.jsonl / events.jsonl), in order:
+1. inspect_design {}  -> ok
+2. body_topology {"body": "Nut"}  -> ok
+3. list_commands {"filter": "thread"}  -> ok
+4. execute solid.thread {"face": [1.664, 3.638, 1.449], "designation": "M8", "modeled": true}  -> isError true:
+   "this 8 mm hole is too wide for a modelled M8 thread: it would cut 0.00 mm of the thread's 0.68 mm depth; drill 6.75 mm for M8, or thread this hole M10"
+5. list_commands {"filter": "hole"}  -> ok
+6. list_commands {"filter": "edit"}  -> ok
+7. execute timeline.edit {"feature": "Hole1", "set": {"diameter": "6.75"}}  -> ok
+8. body_topology {"body": "Nut"}  -> ok
+9. execute solid.thread {"face": [0.784, 3.283, 1.131], "designation": "M8", "modeled": true}  -> ok (Thread1)
+10. measure {"body": "Nut"}  -> ok
+11. screenshot {"view": "iso"}  -> ok
+After the run (lab/fx9.py, off camera): timeline Sketch1, Extrude1, Hole1, Thread1; volume 733.54 mm3 (= take B);
+bore smallest diameter 6.738 mm (= take B, same method). Not saved (Claude said so). Greyed suggested prompt in the
+input box after the reply: "save the design" (not sent).

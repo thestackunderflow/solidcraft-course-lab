@@ -1,0 +1,21 @@
+02:37:14.5  recording started: both hook STLs side by side (plain left, drilled right), full window
+02:37:17.5  convert hook-plain: select the row
+02:37:20.3  convert hook-plain: Surface tab
+02:37:23.3  convert hook-plain: Convert Mesh button
+02:37:26.9  convert hook-plain: OK
+02:37:30.2  convert hook-plain: result held 4 s
+02:37:34.9  browser + timeline held 4 s (hook-plain converted)
+02:37:39.4  convert hook: select the row
+02:37:42.3  convert hook: Surface tab
+02:37:45.3  convert hook: Convert Mesh button
+02:37:48.9  convert hook: OK
+02:37:52.2  convert hook: result held 4 s
+02:37:57.6  convert hook: Cancel
+02:38:04.4  box: opened by the lab script
+02:38:08.1  box: S2 end frame, 5 s hold, no Convert
+02:38:13.7  convert box-round: select the row
+02:38:16.5  convert box-round: Surface tab
+02:38:19.6  convert box-round: Convert Mesh button
+02:38:23.2  convert box-round: OK
+02:38:26.5  convert box-round: result held 4 s
+02:38:36.6  recording stopped

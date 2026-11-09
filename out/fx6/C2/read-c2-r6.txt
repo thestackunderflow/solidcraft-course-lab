@@ -1,0 +1,1 @@
+c2-r6 volume 8345.385358321913 lip {"faces": 11, "curved_faces": 1, "lip_top_face_mm": 5.0, "lip_top_centroid": [22.5, -10.0, 10.0], "lip_front_face_mm": 10.0, "lip_front_centroid": [25.0, -10.0, 5.0]}

@@ -1,0 +1,15 @@
+take-day count 2026-11-06: GitHub search repo:tangency-labs/solidcraft "FILLET: operation failed" in:title, sort created desc, newest 100 (total 342); bodies with "is where N edges meet": 13
+N: {2: 9, 4: 3, 3: 1}
+#12453  N=2  version ?
+#12414  N=2  version ?
+#12370  N=4  version ?
+#12348  N=2  version ?
+#11516  N=2  version ?
+#11278  N=2  version ?
+#11140  N=2  version ?
+#11127  N=4  version ?
+#10715  N=2  version ?
+#10268  N=2  version ?
+#10143  N=4  version ?
+#10006  N=3  version ?
+#9600  N=2  version ?

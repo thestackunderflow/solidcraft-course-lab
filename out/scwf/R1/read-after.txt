@@ -1,0 +1,1 @@
+after {"bodies": [["Body1", 7547.79, {"cylinder": 3, "plane": 8}]], "timeline": [["LProfile", "Sketch"], ["Bracket", "ExtrudeFeature"], ["HoleA", "HoleFeature"], ["HoleB", "HoleFeature"], ["InnerFillet", "FilletFeature"]]}

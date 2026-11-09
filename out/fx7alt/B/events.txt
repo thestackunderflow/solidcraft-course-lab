@@ -1,0 +1,10 @@
+12:34:55.8  volume before: 8000.0
+12:34:59.4  recording started: SolidCraft window (top) + terminal strip, a fresh 20 mm box, typing at once
+12:35:03.6  volume before: 8000.0
+12:35:05.5  solid.fillet [10, 20, 20]: built
+12:35:05.5  reply: "{\n  \"changed_bodies\": [\n    \"Body1\"\n  ],\n  \"created_bodies\": [],\n  \"feature\": 2,\n  \"ms\": 47.019878,\n  \"name\": \"Fillet1\",\n  \"removed_bodies\": [],\n  \"warning\": null\n}", isError: false
+12:35:07.0  volume after: 7961.35
+12:35:07.1  reply shown, the round: hold 5 s
+12:35:12.7  orbit: slow swing, 6 s
+12:35:24.1  recording stopped
+12:41:03.0  midpoint: built; the edge that rounded (B/after.png, typed after the take): the top edge at the back right, from the 20,20,20 corner to the back top corner, = the axes event's [10,20,20] edge; volume after 7961.35

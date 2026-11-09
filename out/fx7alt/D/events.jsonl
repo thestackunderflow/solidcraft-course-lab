@@ -1,0 +1,11 @@
+{"t": 0.507, "event": "recording started: full window held 3 s, a fresh 20 mm box (no script from here)"}
+{"t": 3.515, "event": "Fillet button"}
+{"t": 7.059, "event": "click the top edge (y 20, z 20)"}
+{"t": 10.010, "event": "Edges row: hold 4 s"}
+{"t": 15.151, "event": "radius 3"}
+{"t": 20.853, "event": "OK"}
+{"t": 24.546, "event": "the round: hold 4 s"}
+{"t": 33.104, "event": "the journal: typed into the terminal"}
+{"t": 35.929, "event": "journal shown: hold 4 s"}
+{"t": 40.498, "event": "recording stopped"}
+{"t": 42.042, "event": "window sent: [10.0, 20.0, 20.0] (session journal, recovery document.json)"}

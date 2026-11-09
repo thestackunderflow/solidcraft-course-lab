@@ -1,0 +1,7 @@
+{"t": 0.507, "event": "recording started: SolidCraft window (top) + terminal strip: hold 3 s"}
+{"t": 3.518, "event": "typed: python3 -I D/noai.py |& tee D/reply.txt"}
+{"t": 11.28, "event": "solid.thread M8 modeled at [4, 0, 3.5]: refused"}
+{"t": 11.288, "event": "reply: \"this 8 mm hole is too wide for a modelled M8 thread: it would cut 0.00 mm of the thread's 0.68 mm depth; drill 6.75 mm for M8, or thread this hole M10\", isError: true"}
+{"t": 12.323, "event": "reply + window shown: hold 5 s"}
+{"t": 18.064, "event": "after: timeline ['Sketch1', 'Extrude1', 'Hole1']; volume 672.7014006603717"}
+{"t": 20.076, "event": "recording stopped"}

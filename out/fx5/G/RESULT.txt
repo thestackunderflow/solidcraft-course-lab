@@ -1,0 +1,2 @@
+orca: PASS (main window up in 21 s after a first SSL dialog and the setup wizard; the imported hook drawn in the 3D view with Mesa software GL, orca-model.png; Ctrl+Q did not close it, the script ended it with pkill)
+bambu: PASS (Bambu Studio 2.9.1.70: main window up after the SSL dialog and the setup wizard; the imported hook drawn in the 3D view with Mesa software GL, bambu-model.png)

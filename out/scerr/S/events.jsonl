@@ -1,0 +1,9 @@
+{"t": 0.544, "event": "recording started: lesson 4's hook in SolidCraft 0.30.1, full window"}
+{"t": 4.555, "event": "send: right-click Body1"}
+{"t": 8.093, "event": "send: Send to Slicer"}
+{"t": 11.888, "event": "send: dialog held 3 s (Slicer: PrusaSlicer)"}
+{"t": 15.502, "event": "send: Send"}
+{"t": 18.804, "event": "slicer: window up"}
+{"t": 40.285, "event": "slicer: OK on the offline preset-download error (container has no network)"}
+{"t": 44.006, "event": "slicer: Size row 25 x 20 x 60 mm held 7 s"}
+{"t": 52.036, "event": "recording stopped"}

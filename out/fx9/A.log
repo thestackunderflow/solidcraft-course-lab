@@ -1,0 +1,28 @@
+a-before volume 672.7014006603717 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: recording started: full SolidCraft window, ~/nut.sc (8 mm hole): hold 3 s
+ev: the Hole in the timeline: double-click to show its diameter
+ev: Hole diameter 8: hold 4 s
+ev: Thread: Model tab > Create menu > Thread
+ev: pick the hole's wall
+ev: dialog after the pick: hold 4 s
+ev: Q2 Automatic size suggestion: hold 2 s
+ev: untick Automatic size
+ev: Size: 8 mm
+ev: Size 8 mm set (Designation shown): hold 2 s
+ev: tick Modeled
+ev: M8 in 8: live error under the fields, OK greyed: hold 4 s
+ev: M8 in 8: refused (line as shown in refusal.png)
+ev: Create Issue... (draft only, not submitted)
+ev: report draft: hold 4 s
+ev: click the greyed OK
+a-after-ok volume 672.7014006603717 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: after OK: timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: Q3: Size 10 mm (M10), Modeled still ticked, same hole
+ev: M10 in 8: live error under the fields, OK greyed: hold 4 s
+ev: M10 in 8: refused
+ev: Cancel
+a-after volume 672.7014006603717 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: volume after: 672.7014006603717; timeline ['Sketch1', 'Extrude1', 'Hole1']
+ev: hold 3 s
+ev: recording stopped
+A done

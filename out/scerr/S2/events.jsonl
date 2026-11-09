@@ -1,0 +1,8 @@
+{"t": 0.513, "event": "recording started: lesson 4's hook in SolidCraft 0.30.1, full window"}
+{"t": 4.529, "event": "send: right-click Body1"}
+{"t": 8.079, "event": "send: Send to Slicer"}
+{"t": 11.861, "event": "send: dialog held 3 s (Slicer: PrusaSlicer)"}
+{"t": 15.452, "event": "send: Send"}
+{"t": 19.284, "event": "slicer: window up"}
+{"t": 33.689, "event": "slicer: window held (size row)"}
+{"t": 35.701, "event": "recording stopped"}

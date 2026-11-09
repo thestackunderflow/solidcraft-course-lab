@@ -1,0 +1,7 @@
+03:37:44.5  bambu: started
+03:38:05.9  bambu: window up
+03:38:05.9  bambu: hold for the next step (wizard / import is done by fx5G-drive.sh in the same container)
+03:38:20.1  bambu: first dialog "use system SSL certificate ..." (Yes / No): clicked Yes
+03:41:31.2  bambu: model rendered (Ctrl+I import of out/l5/hand/sent-side.3mf; notice "The 3mf is not from Bambu Lab, load geometry data and color data only."; Object name: Body1, Size: 25 x 60 x 20 mm)
+03:42:10.7  bambu: single-instance flag
+03:42:42.5  bambu: closed

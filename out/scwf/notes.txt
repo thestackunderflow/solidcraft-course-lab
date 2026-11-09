@@ -1,0 +1,30 @@
+scwf lab, 8-9 Nov 2026 (overnight, owner asleep, pre-approved). SolidCraft 0.30.1 (sc-wf-l5:0.30.1, built for scerr/scfc
+from docker/app.Dockerfile + docker/l5.Dockerfile, tarball checked against SHA256SUMS.txt). Display 2880x1620, UI 1.8.
+G0 (no AI, lab/scwfg0.py): 21 plug tools, registered as "solidcraft" (solidcraft-cli mcp setup). Full command set ok:
+  sketch.create XZ (its own text: "+X, -Z on XZ"; flip: true keeps the sketch's y up), extrude by `width`, set_parameter
+  + parameters.list/change (value 25.0, display_value, unit "mm"), solid.hole with references `width / 2`, solid.fillet,
+  file.save (format 48 design), file.save_mesh. Old readers' keys present (measure.total.volume_mm3, bodies[].bbox).
+  Numbers: 7,600.0 (Z 0..30 with flip; Z -30..0 without) / holes 7,499.49 / width 35 10,539.49, holes 12 & 38 along,
+  across -12.5 -> -17.5 / fillet 3: 7,547.79 (worked out 7,547.76). = the H1 reference (plug, no AI).
+R1 (Claude Code 2.1.311, Sonnet 5.5, 5 prompts from PREREG.txt, $0.3669): 137 s recording.
+  M1: parameters width/leg_length/thickness/height, sketch on XZ with NEGATIVE y values (it read the plug's "+X, -Z"),
+      reported 7,600 mm3 and box X 0-50, Y 0-25, Z 0-30 and "top leg at Z 26-30" - but the L was upside down: the 50 mm
+      leg on the floor (Z 0-4), the 4 mm leg rising to 30. Volume and box both matched. Visible in screen.mp4 0:36-1:20.
+  M2: width 35 -> 10,640 (= 304 x 35), back to 25.
+  M3: first hole batch failed; Claude said: "on the XZ plane, sketch y maps to -Z ... The bounding box looked right
+      either way, so my earlier check didn't catch it. That is also why the first hole attempt failed." New design,
+      rebuilt (top leg Z 26-30), holes at position ["12", "width/2", "height"] and leg_length - 12: 7,499.5; at 35 the
+      holes moved to Y 17.5 (10,539.5).
+  M4: fillet 3 on the inner edge: 7,547.79; M5: bracket.sc + bracket.stl (86,084 B) saved. No approvals asked.
+Filmed takes (all 0.30.1, Claude's R1/bracket.sc unless noted): E empty design 21 s; O orbit 23 s; C1 History back 3
+  steps -> Properties 7,600.00 mm3, box 50.00 x 25.00 x 30.00; Measure top corner "At 50.00, 25.00, 30.00 mm" (hover),
+  + origin corner: dZ 30.00; C3 Parameters width 35 then 25; C4 width 35, Measure hole rim + L side face:
+  "Center to center 17.50 mm", width back to 25; P Properties 7,547.79, box 50 x 25 x 30;
+  S1 Send to Slicer as drawn (PrusaSlicer 2.9.2, 0.20mm SPEED, MK4S): 22 m normal, 5.48 g, "Detected print stability
+  issues"; S2 print face = the L side (body.print_face, no AI): size 50 x 30 x 25, 16 m, 5.50 g, no warning.
+  (No offline preset-download dialog this time; the scripted OK click landed on the plate, harmless.)
+H0 (no-AI bracket, no holes): Hole window 0.30.1 (redesigned: Placement, Face, Reference 1/2, Distance 1/2):
+  Distance 1 = 12, Distance 2 = width / 2 -> no preview, OK stays grey (1/1). Control H0c: 12.5 -> built (7,521.47,
+  default 5 mm hole). H0p: Parameters > Model parameters > Hole1 d6 12.5 -> width / 2 accepted; at width 35 the hole
+  centre moved to -17.5 (no AI read). Branch: the Hole window still refuses width / 2; the Parameters route stays.
+Not run: R2 (R1 usable); the old lesson-2 insert is replaced by R1's own upside-down moment (0.30.1, this part).

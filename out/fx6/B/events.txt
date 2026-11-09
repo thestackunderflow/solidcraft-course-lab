@@ -1,0 +1,49 @@
+04:18:19.3  recording started: take B, the limit search, full window
+04:18:22.3  fillet 4.0: Fillet button
+04:18:25.8  fillet 4.0: lip outer top edge
+04:18:29.8  fillet 4.0: radius typed
+04:18:38.2  fillet 4.0: OK
+04:18:42.9  fillet 4.0: built (curved faces 1)
+04:18:47.9  fillet 4.0: Ctrl+Z
+04:18:52.0  fillet 4.9: Fillet button
+04:18:55.5  fillet 4.9: lip outer top edge
+04:18:59.5  fillet 4.9: radius typed
+04:19:07.4  fillet 4.9: OK
+04:19:11.8  fillet 4.9: built (curved faces 1)
+04:19:16.3  fillet 4.9: Ctrl+Z
+04:19:20.4  fillet 5.0: Fillet button
+04:19:23.7  fillet 5.0: lip outer top edge
+04:19:27.5  fillet 5.0: radius typed
+04:19:35.3  fillet 5.0: OK
+04:19:39.7  fillet 5.0: built (curved faces 1)
+04:19:44.0  fillet 5.0: Ctrl+Z
+04:19:48.1  fillet 5.1: Fillet button
+04:19:51.4  fillet 5.1: lip outer top edge
+04:19:55.2  fillet 5.1: radius typed
+04:20:03.4  fillet 5.1: OK
+04:20:07.8  fillet 5.1: built (curved faces 1)
+04:20:12.2  fillet 5.1: Ctrl+Z
+04:20:16.3  search done
+04:21:09.8  part 2: hook clean (8500.0), 4.9 and 5.1 again
+04:21:09.8  fillet 4.9: Fillet button (part 2)
+04:21:13.1  fillet 4.9: lip outer top edge (part 2)
+04:21:16.9  fillet 4.9: radius typed (part 2)
+04:21:24.7  fillet 4.9: OK (part 2)
+04:21:29.6  fillet 4.9: built (part 2, curved faces 1)
+04:21:34.0  undo: toolbar Undo
+04:21:38.5  undo: volume 8500.0
+04:21:40.5  fillet 5.1: Fillet button (part 2)
+04:21:43.8  fillet 5.1: lip outer top edge (part 2)
+04:21:47.6  fillet 5.1: radius typed (part 2)
+04:21:55.4  fillet 5.1: OK (part 2)
+04:22:01.0  fillet 5.1: refused (part 2)
+04:22:06.3  part 2 done
+04:22:26.5  fillet 5.1: refused "not supported yet: the blend is larger than the neighbouring faces; the largest radius that fits is 5 mm"
+04:22:27.0  F2 clean: full window 3 s
+04:22:30.0  F2 clean: Fillet button
+04:22:33.3  F2 clean: lip outer top edge
+04:22:37.1  F2 clean: radius 5 typed
+04:22:44.8  F2 clean: OK
+04:22:49.1  F2 clean: the round held 5 s
+04:22:55.0  F2 clean: toolbar Undo
+04:23:01.5  recording stopped

@@ -1,0 +1,12 @@
+{"t": 0.509, "event": "recording started: SolidCraft with the saved hook, a terminal bottom right"}
+{"t": 6.863, "event": "ls 0: listed (no folder yet)"}
+{"t": 9.263, "event": "send 1: right-click Body1"}
+{"t": 17.668, "event": "send 1: Send clicked"}
+{"t": 27.887, "event": "send 1: slicer window up"}
+{"t": 36.311, "event": "ls 1: listed"}
+{"t": 42.991, "event": "hook_depth: 40 open Parameters"}
+{"t": 59.885, "event": "hook_depth: 40 typed"}
+{"t": 59.892, "event": "save: click the Save icon"}
+{"t": 81.658, "event": "send 2: right-click Body1"}
+{"t": 89.92, "event": "send 2: Send clicked"}
+{"t": 102.767, "event": "ls 2: listed"}

@@ -1,0 +1,1 @@
+open {"content": [{"text": "{\n  \"errors\": 0,\n  \"features\": 3,\n  \"name\": \"nut\",\n  \"path\": \"/root/nut-6.3.sc\"\n}", "type": "text"}]}

@@ -1,0 +1,3 @@
+    PID COMMAND
+   1431 /bin/prusa-slicer --single-instance /root/.cache/solidcraft/slicer/hook-lesson4-0ec2ab17f9b8b1e4.3mf
+   5446 [slic3r_main] <defunct>

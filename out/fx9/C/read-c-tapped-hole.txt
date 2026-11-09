@@ -1,0 +1,1 @@
+c-tapped-hole volume 774.0567337369301 bodies 1 timeline ['Sketch1', 'Extrude1', 'Hole1']
