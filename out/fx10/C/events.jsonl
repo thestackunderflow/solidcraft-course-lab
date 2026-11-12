@@ -1,0 +1,34 @@
+{"t": 0.522, "event": "recording started: full SolidCraft window, ~/c12.sc: a short construction line (dashed, from the origin up 10 mm), rectangle 1 beside it, rectangle 2 above its drawn end: hold 3 s"}
+{"t": 3.536, "event": "the line and the two rectangles: hold 4 s"}
+{"t": 8.977, "event": "Revolve (Model tab, Create group)"}
+{"t": 13.869, "event": "Revolve dialog with its defaults: hold 2 s"}
+{"t": 17.283, "event": "C1: Profile = rectangle 1 (beside the line)"}
+{"t": 20.922, "event": "Axis: the construction line (a sketch line)"}
+{"t": 31.118, "event": "C1: OK enabled, preview shown (no live error)"}
+{"t": 31.125, "event": "C1: built"}
+{"t": 32.581, "event": "C2: Profile cleared, rectangle 2 (past the line's drawn end, straddling its extension)"}
+{"t": 45.264, "event": "C2: live error under the fields, OK greyed: hold 4 s"}
+{"t": 49.279, "event": "C2: refused (line as shown in c2.png)"}
+{"t": 50.783, "event": "back to rectangle 1, OK"}
+{"t": 63.859, "event": "C1 again: OK enabled, preview shown (no live error)"}
+{"t": 65.479, "event": "OK"}
+{"t": 71.380, "event": "Home view"}
+{"t": 78.207, "event": "C1 body: volume 1130.9342530799688; timeline ['Sketch1', 'Revolve1']"}
+{"t": 78.223, "event": "Q12: ~/ring.sc opened (plug open, off screen): the square 5 mm off the axis"}
+{"t": 81.449, "event": "Home view"}
+{"t": 86.117, "event": "S2 end frame: the square off the axis, no Revolve: hold 5 s"}
+{"t": 92.576, "event": "Revolve (Model tab, Create group)"}
+{"t": 97.671, "event": "Revolve dialog with its defaults: hold 2 s"}
+{"t": 101.036, "event": "Browser: expand Origin"}
+{"t": 104.242, "event": "Axis: Z in Browser > Origin"}
+{"t": 110.811, "event": "Q12 ring 360: OK enabled, preview shown (no live error)"}
+{"t": 110.819, "event": "Q12: built"}
+{"t": 111.794, "event": "OK"}
+{"t": 118.091, "event": "Home view"}
+{"t": 122.935, "event": "the ring: hold 4 s"}
+{"t": 128.616, "event": "ring: volume 6283.0169193237025; timeline ['Sketch1', 'Revolve1']"}
+{"t": 131.771, "event": "Inspect > Measure: the edge at 838 509: hold 4 s"}
+{"t": 152.492, "event": "Inspect > Measure: the edge at 838 411: hold 4 s"}
+{"t": 172.617, "event": "Inspect > Properties: hold 4 s"}
+{"t": 189.834, "event": "hold 3 s"}
+{"t": 192.846, "event": "recording stopped"}

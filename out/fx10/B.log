@@ -1,0 +1,28 @@
+ev: recording started: full SolidCraft window, ~/knob-full.sc (the whole T): hold 3 s
+ev: Browser: expand Origin
+ev: double-click Sketch1 (edit the sketch)
+ev: the whole T in the sketch view, the axis through the middle: hold 3 s
+ev: select the cap's left side, Delete
+ev: select the cap's left underside, Delete
+ev: select the stem's left side, Delete
+ev: select the cap's end across the axis, Delete
+ev: select the stem's end across the axis, Delete
+ev: the right half left, open along the axis: hold 3 s
+ev: Line tool: from the stem's corner to the origin, down the axis, to the cap's corner
+ev: the half outline, closed on the axis (constraint icons as shown): hold 4 s
+ev: Finish Sketch
+ev: Revolve (Model tab, Create group)
+ev: Revolve dialog with its defaults: hold 2 s
+ev: Axis: Z in Browser > Origin
+ev: revolve half 360: OK enabled, preview shown (no live error)
+ev: revolve half: built
+ev: OK
+ev: Home view
+ev: the knob: hold 4 s
+b-after volume 7350.775708796922 bodies 1 timeline ['Sketch1', 'Revolve1']
+ev: after: volume 7350.775708796922; timeline ['Sketch1', 'Revolve1']
+ev: Inspect > Measure: the edge at 838 421: hold 4 s
+ev: Inspect > Properties: hold 4 s
+ev: hold 3 s
+ev: recording stopped
+B done

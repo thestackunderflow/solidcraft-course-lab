@@ -1,0 +1,29 @@
+{"t": 0.521, "event": "recording started: full SolidCraft window, ~/knob-full.sc (the T sketch): hold 3 s"}
+{"t": 3.536, "event": "Browser: expand Origin"}
+{"t": 6.890, "event": "the T sketch, the vertical axis Z through its middle: hold 4 s"}
+{"t": 13.847, "event": "Revolve (Model tab, Create group)"}
+{"t": 18.890, "event": "Revolve dialog with its defaults: hold 2 s"}
+{"t": 22.043, "event": "Axis: Z in Browser > Origin"}
+{"t": 28.572, "event": "revolve full 360: live error under the fields, OK greyed: hold 4 s"}
+{"t": 32.584, "event": "revolve full: refused (line as shown in refusal.png)"}
+{"t": 33.776, "event": "Create Issue... (draft only, not submitted)"}
+{"t": 39.125, "event": "report draft: hold 4 s"}
+{"t": 48.422, "event": "B.14: Angle 180 deg"}
+{"t": 55.948, "event": "revolve full 180: live error under the fields, OK greyed: hold 4 s"}
+{"t": 59.963, "event": "revolve full 180: refused"}
+{"t": 61.123, "event": "Cancel"}
+{"t": 66.326, "event": "after Cancel: timeline ['Sketch1']"}
+{"t": 66.347, "event": "Q11: double-click Sketch1 (edit the sketch)"}
+{"t": 72.013, "event": "Line tool: a normal line on the axis, from the stem's end to the cap's end"}
+{"t": 84.541, "event": "the T split by the line: hold 2 s"}
+{"t": 87.768, "event": "Finish Sketch"}
+{"t": 93.250, "event": "Revolve (Model tab, Create group)"}
+{"t": 98.472, "event": "Revolve dialog with its defaults: hold 2 s"}
+{"t": 101.411, "event": "Profile: the left region, then the right region"}
+{"t": 107.906, "event": "Axis: the drawn line"}
+{"t": 117.350, "event": "split T: live error under the fields, OK greyed: hold 4 s"}
+{"t": 121.380, "event": "split T: refused (line as shown in split.png)"}
+{"t": 122.342, "event": "Cancel"}
+{"t": 127.350, "event": "after: timeline ['Sketch1']"}
+{"t": 127.370, "event": "hold 3 s"}
+{"t": 130.386, "event": "recording stopped"}

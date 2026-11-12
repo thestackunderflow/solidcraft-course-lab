@@ -1,0 +1,29 @@
+04:00:21.5  recording started: full SolidCraft window, ~/knob-full.sc (the T sketch): hold 3 s
+04:00:24.5  Browser: expand Origin
+04:00:27.8  the T sketch, the vertical axis Z through its middle: hold 4 s
+04:00:34.8  Revolve (Model tab, Create group)
+04:00:39.8  Revolve dialog with its defaults: hold 2 s
+04:00:43.0  Axis: Z in Browser > Origin
+04:00:49.5  revolve full 360: live error under the fields, OK greyed: hold 4 s
+04:00:53.5  revolve full: refused (line as shown in refusal.png)
+04:00:54.7  Create Issue... (draft only, not submitted)
+04:01:00.1  report draft: hold 4 s
+04:01:09.4  B.14: Angle 180 deg
+04:01:16.9  revolve full 180: live error under the fields, OK greyed: hold 4 s
+04:01:20.9  revolve full 180: refused
+04:01:22.1  Cancel
+04:01:27.3  after Cancel: timeline ['Sketch1']
+04:01:27.3  Q11: double-click Sketch1 (edit the sketch)
+04:01:33.0  Line tool: a normal line on the axis, from the stem's end to the cap's end
+04:01:45.5  the T split by the line: hold 2 s
+04:01:48.7  Finish Sketch
+04:01:54.2  Revolve (Model tab, Create group)
+04:01:59.4  Revolve dialog with its defaults: hold 2 s
+04:02:02.4  Profile: the left region, then the right region
+04:02:08.8  Axis: the drawn line
+04:02:18.3  split T: live error under the fields, OK greyed: hold 4 s
+04:02:22.3  split T: refused (line as shown in split.png)
+04:02:23.3  Cancel
+04:02:28.3  after: timeline ['Sketch1']
+04:02:28.3  hold 3 s
+04:02:31.3  recording stopped

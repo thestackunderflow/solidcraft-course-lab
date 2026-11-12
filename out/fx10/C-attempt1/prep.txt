@@ -1,0 +1,12 @@
+{"content": [{"text": "{\n  \"name\": \"Untitled\"\n}", "type": "text"}]}
+
+{"content": [{"text": "{\n  \"completed\": 3,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"attachment\": \"fixed\",\n      \"created\": {\n        \"constraints\": [],\n        \"curves\": [],\n        \"dimensions\": [],\n        \"points\": []\n      },\n      \"name\": \"Sketch1\",\n      \"projected\": null,\n      \"sketch\": 1\n    },\n    {\n      \"constraints\": [],\n      \"created
+
+{"content": [{"text": "{\n  \"bytes\": 651,\n  \"name\": \"ring\",\n  \"path\": \"/root/ring.sc\"\n}", "type": "text"}]}
+
+{"content": [{"text": "{\n  \"name\": \"Untitled\"\n}", "type": "text"}]}
+
+{"content": [{"text": "{\n  \"completed\": 5,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"attachment\": \"fixed\",\n      \"created\": {\n        \"constraints\": [],\n        \"curves\": [],\n        \"dimensions\": [],\n        \"points\": []\n      },\n      \"name\": \"Sketch1\",\n      \"projected\": null,\n      \"sketch\": 1\n    },\n    {\n      \"constraints\": [\n        \"k1\"\n 
+
+{"content": [{"text": "{\n  \"bytes\": 774,\n  \"name\": \"c12\",\n  \"path\": \"/root/c12.sc\"\n}", "type": "text"}]}
+

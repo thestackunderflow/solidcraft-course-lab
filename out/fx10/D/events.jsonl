@@ -1,0 +1,7 @@
+{"t": 0.515, "event": "recording started: SolidCraft window (top) + terminal strip: hold 3 s"}
+{"t": 3.524, "event": "typed: python3 -I D/noai.py |& tee D/reply.txt"}
+{"t": 11.219, "event": "solid.revolve axis Z 360 deg: refused"}
+{"t": 11.219, "event": "reply: \"invalid input: the profile crosses the revolve axis\", isError: true"}
+{"t": 12.996, "event": "reply + window shown: hold 5 s"}
+{"t": 19.419, "event": "after: timeline ['Sketch1']; volume -0.0"}
+{"t": 21.437, "event": "recording stopped"}

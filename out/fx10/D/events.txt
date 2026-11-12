@@ -1,0 +1,7 @@
+04:14:59.0  recording started: SolidCraft window (top) + terminal strip: hold 3 s
+04:15:02.0  typed: python3 -I D/noai.py |& tee D/reply.txt
+04:15:09.7  solid.revolve axis Z 360 deg: refused
+04:15:09.7  reply: "invalid input: the profile crosses the revolve axis", isError: true
+04:15:11.4  reply + window shown: hold 5 s
+04:15:17.9  after: timeline ['Sketch1']; volume -0.0
+04:15:19.9  recording stopped

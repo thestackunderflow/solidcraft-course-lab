@@ -1,0 +1,26 @@
+{"t": 0.515, "event": "recording started: full SolidCraft window, ~/knob-full.sc (the whole T): hold 3 s"}
+{"t": 3.530, "event": "Browser: expand Origin"}
+{"t": 6.783, "event": "double-click Sketch1 (edit the sketch)"}
+{"t": 12.252, "event": "the whole T in the sketch view, the axis through the middle: hold 3 s"}
+{"t": 16.479, "event": "select the cap's left side, Delete"}
+{"t": 21.378, "event": "select the cap's left underside, Delete"}
+{"t": 26.339, "event": "select the stem's left side, Delete"}
+{"t": 31.335, "event": "select the cap's end across the axis, Delete"}
+{"t": 36.603, "event": "select the stem's end across the axis, Delete"}
+{"t": 41.337, "event": "the right half left, open along the axis: hold 3 s"}
+{"t": 45.514, "event": "Line tool: from the stem's corner to the origin, down the axis, to the cap's corner"}
+{"t": 65.140, "event": "the half outline, closed on the axis (constraint icons as shown): hold 4 s"}
+{"t": 70.339, "event": "Finish Sketch"}
+{"t": 75.988, "event": "Revolve (Model tab, Create group)"}
+{"t": 81.304, "event": "Revolve dialog with its defaults: hold 2 s"}
+{"t": 83.312, "event": "Axis: Z in Browser > Origin"}
+{"t": 90.008, "event": "revolve half 360: OK enabled, preview shown (no live error)"}
+{"t": 90.015, "event": "revolve half: built"}
+{"t": 92.092, "event": "OK"}
+{"t": 98.281, "event": "Home view"}
+{"t": 103.253, "event": "the knob: hold 4 s"}
+{"t": 109.189, "event": "after: volume 7350.775708796922; timeline ['Sketch1', 'Revolve1']"}
+{"t": 112.274, "event": "Inspect > Measure: the edge at 838 421: hold 4 s"}
+{"t": 133.262, "event": "Inspect > Properties: hold 4 s"}
+{"t": 151.292, "event": "hold 3 s"}
+{"t": 154.311, "event": "recording stopped"}

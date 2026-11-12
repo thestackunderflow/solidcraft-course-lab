@@ -1,0 +1,13 @@
+$ python3 -I D/noai.py |& tee D/reply.txt
+-> open {"path": "/root/knob-full.sc"}
+<- ok
+   {   "errors": 0,   "features": 1,   "name": "knob-full",   "path": "/root/knob-full.sc" }
+-> execute {"command": "solid.revolve", "params": {"axis": "Z", "angle": "360 deg"}, "verbose": false}
+<- isError: true
+   invalid input: the profile crosses the revolve axis
+$ 
+
+
+
+
+

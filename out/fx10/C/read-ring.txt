@@ -1,0 +1,1 @@
+ring volume 6283.0169193237025 bodies 1 timeline ['Sketch1', 'Revolve1']

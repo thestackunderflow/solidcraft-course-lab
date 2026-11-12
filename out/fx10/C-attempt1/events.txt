@@ -1,0 +1,33 @@
+04:06:39.7  recording started: full SolidCraft window, ~/c12.sc: a short construction line (dashed, from the origin up 10 mm), rectangle 1 beside it, rectangle 2 above its drawn end: hold 3 s
+04:06:42.7  the line and the two rectangles: hold 4 s
+04:06:48.1  Revolve (Model tab, Create group)
+04:06:53.4  Revolve dialog with its defaults: hold 2 s
+04:06:56.8  C1: Profile = rectangle 1 (beside the line)
+04:07:00.5  Axis: the construction line (a sketch line)
+04:07:10.6  C1: OK enabled, preview shown (no live error)
+04:07:10.6  C1: built
+04:07:12.1  C2: Profile cleared, rectangle 2 (past the line's drawn end, straddling its extension)
+04:07:25.1  C2: live error under the fields, OK greyed: hold 4 s
+04:07:29.1  C2: refused (line as shown in c2.png)
+04:07:30.8  back to rectangle 1, OK
+04:07:43.4  C1 again: OK enabled, preview shown (no live error)
+04:07:45.0  OK
+04:07:51.1  Home view
+04:07:57.6  C1 body: volume 1130.9342530799688; timeline ['Sketch1', 'Revolve1']
+04:07:57.6  Q12: ~/ring.sc opened (plug open, off screen): the square 5 mm off the axis
+04:08:00.8  Home view
+04:08:05.7  S2 end frame: the square off the axis, no Revolve: hold 5 s
+04:08:12.2  Revolve (Model tab, Create group)
+04:08:17.2  Revolve dialog with its defaults: hold 2 s
+04:08:20.6  Browser: Origin already expanded
+04:08:20.6  Axis: Z in Browser > Origin
+04:08:27.4  Q12 ring 360: live error under the fields, OK greyed: hold 4 s
+04:08:31.4  Q12: refused
+04:08:31.4  Home view
+04:08:36.6  the ring: hold 4 s
+04:08:42.4  ring: volume -0.0; timeline ['Sketch1']
+04:08:45.5  Inspect > Measure: the edge at 838 509: hold 4 s
+04:09:06.4  Inspect > Measure: the edge at 838 411: hold 4 s
+04:09:26.9  Inspect > Properties: hold 4 s
+04:09:44.7  hold 3 s
+04:09:47.7  recording stopped

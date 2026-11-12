@@ -1,0 +1,7 @@
+ev: recording started: SolidCraft window (top) + terminal strip: hold 3 s
+ev: typed: python3 -I D/noai.py |& tee D/reply.txt
+ev: reply + window shown: hold 5 s
+d-after volume -0.0 bodies 0 timeline ['Sketch1']
+ev: after: timeline ['Sketch1']; volume -0.0
+ev: recording stopped
+D done

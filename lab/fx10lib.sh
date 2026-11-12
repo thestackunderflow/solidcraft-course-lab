@@ -118,6 +118,8 @@ measure_edge() { # measure_edge X Y SHOT: Inspect > Measure, the edge, held 4 s,
 }
 origin_open() {  # expand Browser > Origin only if its Z row is not showing (the tree state carries across tabs)
   shot /tmp/fx10/tree.png
-  local m; m=$(convert /tmp/fx10/tree.png -crop 40x24+112+704 -colorspace gray -format "%[fx:mean]" info:)
-  if awk -v m="$m" 'BEGIN{exit !(m > 0.97)}'; then expand_origin; else ev "Browser: Origin already expanded"; fi
+  # the Z row's icon/letter is dark; with Origin collapsed the spot is panel white or the light grey view (C attempt 1:
+  # the grey view under a short Browser read as "expanded" by a mean test, so the darkest pixel is tested)
+  local m; m=$(convert /tmp/fx10/tree.png -crop 60x24+112+704 -colorspace gray -format "%[fx:minima]" info:)
+  if awk -v m="$m" 'BEGIN{exit !(m > 0.6)}'; then expand_origin; else ev "Browser: Origin already expanded"; fi
 }
