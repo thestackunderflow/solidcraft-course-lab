@@ -25,10 +25,11 @@ def test_names_unique_and_cover_every_take():
     S = fx10clips.segs()
     names = [s[0] for s in S]
     assert len(names) == len(set(names))
-    assert {s[1] for s in S} == {'A', 'B', 'C', 'D'}
+    assert {s[1] for s in S} == {'A', 'B', 'C', 'D', 'runs/R1'}
 
 
 def test_refusal_lines_filmed():
     names = {s[0] for s in fx10clips.segs()}
-    for n in ('A-refusal-line', 'A-180-refusal-line', 'A-split-refusal-line', 'C-c2-refusal-line', 'D-mcp-reply'):
+    for n in ('A-refusal-line', 'A-180-refusal-line', 'A-split-refusal-line', 'C-c2-refusal-line', 'D-mcp-reply',
+              'R1-prompt', 'R1-working', 'R1-reply'):
         assert n in names

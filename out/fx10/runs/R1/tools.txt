@@ -1,0 +1,14 @@
+R1 tool calls (from session.jsonl + the proxy's transcript.jsonl / events.jsonl), in order:
+1. inspect_design {}  -> ok (Sketch1 only, no body)
+2. describe_command {"id": "solid.revolve"}  -> ok
+3. execute solid.revolve {"axis": "y", "angle": "180 deg", "name": "Knob"}  -> isError true:
+   "invalid input: the profile crosses the revolve axis"
+4. batch [sketch.create {"plane": "XZ"}; sketch.line {"points": [[0,23],[15,23],[15,15],[6,15],[6,0],[0,0]],
+   "closed": true}; sketch.finish; solid.revolve {"axis": "y", "angle": "360 deg", "name": "Knob"}]  -> ok (4 of 4)
+5. inspect_design {"sketches": false}  -> ok
+6. screenshot {"view": "iso", "source": "model"}  -> ok
+After the run (lab/fx9.py read, off camera; its measure + inspect_design are the last two calls in transcript.jsonl):
+timeline Sketch1, Sketch2, Knob (RevolveFeature); one body Body1, closed, bbox x -15..15, y -15..15, z -23..0
+(30 across, 23 tall), volume 7,350.78 mm3 (= take B). Sketch1 left as it was (the whole T); the half is a new sketch.
+Not saved. Greyed suggested prompt in the input box after the reply: "Flip it so the stem points up from z = 0" (not sent).
+Model: claude-sonnet-5-5 (session.jsonl requestedModel; /cost: Sonnet 5.5 $0.1410 + Haiku 5.5 $0.0001).

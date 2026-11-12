@@ -38,5 +38,11 @@ C/ring-outer.png, C/ring-inner.png, C/ring-props.png). The S2 end frame (the squ
 text word for word `invalid input: the profile crosses the revolve axis` (no prefix), timeline unchanged (D/reply.txt).
 Parameter names from list_commands (D/revolve-cmd.txt): `axis` (sketch line id | x | y | X|Y|Z | ...), `angle?`.
 
-**Q13, the Claude run R1: not run (deferred).** It needs the owner's Claude login, which stays on the PC; it runs on
-the PC after the Gemma lab, as LAB-fx10 section 4 (one message, one try).
+**Q13, the Claude run R1: class A** (run on the PC 12 Nov, same image tag sc5-l5:0.28.0, Claude Code 2.1.311,
+claude-sonnet-5-5; one message, one try; runs/R1/tools.txt). Claude tried solid.revolve about the sketch's y axis at
+180 deg (its own choice), got "invalid input: the profile crosses the revolve axis", said so in the reply, redrew the
+right half (x >= 0) as a new closed sketch Sketch2 on XZ, revolved it 360 deg: timeline Sketch1, Sketch2, Knob (one
+Revolve); Body1 30 across (x/y -15..15), 23 tall, 7,350.78 mm3 = take B. Sketch1 untouched (said). Its words: "The
+knob is built, but not by revolving your sketch directly" ... "Instead I redrew one half of the profile". Statements
+checked: stem radius 6 x 15, flange radius 15 x 8, "z = 0 to -23", "about 7351 mm3": all hold. Greyed suggested
+prompt: "Flip it so the stem points up from z = 0" (crop it). Cost $0.1411 (ledger fixit-fx10-BUDGET.tsv, cap $0.50).

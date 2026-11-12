@@ -47,3 +47,8 @@ Nothing was re-scored. Every clip is kept (including the failed attempts in P-at
 11. **R1 deferred to the PC after the Gemma lab (owner's login stays on the PC).** Not run on the box. runs/R1/ is
     empty; Q13 for fx10 is open.
 12. **Clips not cut** (lab/fx10clips.py not written); left for the next stage.
+13. **R1 run on the PC, takes P-D on the Ubuntu box, same image sc5-l5:0.28.0** (12 Nov 2026, after the Gemma lab).
+    Tag and versions match (SolidCraft 0.28.0, Claude Code 2.1.311); the PC's local image ID is 2992c9ec (fx9's pin),
+    the box's store lists 38a6f678. Start file = take P's out/fx10/P/knob-full.sc, opened by lab/fx9.py as in the takes.
+    lab/fx10R1.sh + claude-run/fx10run.sh are copies of the fx9 pair (no other change; one run, no retry, no harness
+    failure). The owner's claude.ai connectors also showed as connected in `claude mcp list` (as fx9); none was called.

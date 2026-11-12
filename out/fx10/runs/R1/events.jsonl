@@ -1,0 +1,19 @@
+{"t": 0.503, "event": "recording started: Claude Code full screen; SolidCraft behind it on ~/knob-full.sc (the whole T, no body)"}
+{"t": 3.557, "event": "turn 1: typing"}
+{"t": 7.304, "event": "turn 1: Enter"}
+{"t": 7.719, "event": "turn 1: Claude working"}
+{"t": 10.767, "event": "tool call: inspect_design", "seq": 13}
+{"t": 10.769, "event": "tool call: describe_command", "seq": 14}
+{"t": 10.805, "event": "tool reply: inspect_design", "seq": 15, "isError": false}
+{"t": 10.82, "event": "tool reply: describe_command", "seq": 16, "isError": false}
+{"t": 15.297, "event": "tool call: execute", "seq": 17}
+{"t": 15.299, "event": "tool reply: execute", "seq": 18, "isError": true}
+{"t": 18.806, "event": "tool call: batch", "seq": 19}
+{"t": 18.822, "event": "tool reply: batch", "seq": 20, "isError": false}
+{"t": 20.447, "event": "tool call: inspect_design", "seq": 21}
+{"t": 20.509, "event": "tool reply: inspect_design", "seq": 22, "isError": false}
+{"t": 20.518, "event": "tool call: screenshot", "seq": 23}
+{"t": 20.729, "event": "tool reply: screenshot", "seq": 24, "isError": false}
+{"t": 26.848, "event": "turn 1: end-of-turn line seen"}
+{"t": 28.851, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 36.080, "event": "recording stopped"}

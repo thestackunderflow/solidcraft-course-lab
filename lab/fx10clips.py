@@ -1,4 +1,5 @@
-"""fx10 clips (SolidCraft Revolve refusal), cut by event time (the fx8clips.py pattern). Every clip comes twice:
+"""fx10 clips (SolidCraft Revolve refusal), cut by event time (the fx8clips.py pattern); takes A-D and
+the Claude run runs/R1. Every clip comes twice:
 NAME-full.mp4 (the whole 2880x1620 display = the full SolidCraft window, zoom 1) and NAME-zoom.mp4 (the same span, a
 fixed close-up), so the edit shows the full window first, then the zoom (owner rule 4 Nov). Silent, 1920x1080, 30 fps.
     docker run --rm --network none -v "$PWD:/work" -v VIDEOQA:/footage:ro -w /work sc5-l5:0.28.0 \
@@ -22,6 +23,11 @@ REPORT = (1440, 900)          # the Create Issue draft (Close at 734,670)
 MEASURE = (2700, 800)         # the Measure panel (Close at 1396,456)
 PROPS = (1440, 900)           # Properties (Close at 860,649)
 TERM = (720, 1377)            # take D's terminal strip (y 1134..1620)
+R1_PROMPT = (720, 1215)       # R1 (Claude Code full screen): the message typed in the input line (y ~1520, left)
+R1_WORK = (720, 700)          # R1: the sent message (y ~523) and "Calling solidcraft N times" (y ~600); the login
+                              # notice at the bottom right (x > 2150, y ~1450) stays out of both zooms: mask it in full
+R1_REPLY = (1200, 800)        # R1: the reply (y ~670..1080, lines run to x ~2840: zoom 1.2 from the left edge, the
+                              # words go in caption cards); the greyed suggested prompt (y ~1522) stays out
 
 
 def ev(take):
@@ -70,6 +76,10 @@ def segs():
     S.append(('C-ring-props', c, at(c, 'Inspect > Properties'), at(c, 'recording stopped'), 2.0, PROPS))
     d = 'D'
     S.append(('D-mcp-reply', d, 0.0, at(d, 'recording stopped'), 2.0, TERM))
+    r = 'runs/R1'     # run on the PC (DEVIATIONS 13); the full clips show the greyed suggested prompt at the end: crop it
+    S.append(('R1-prompt', r, 0.0, at(r, 'turn 1: Enter') + 0.3, 2.0, R1_PROMPT))
+    S.append(('R1-working', r, at(r, 'turn 1: Claude working'), at(r, 'turn 1: end-of-turn line seen'), 2.0, R1_WORK))
+    S.append(('R1-reply', r, at(r, 'turn 1: end-of-turn line seen') - 0.5, at(r, 'recording stopped'), 1.2, R1_REPLY))
     return S
 
 

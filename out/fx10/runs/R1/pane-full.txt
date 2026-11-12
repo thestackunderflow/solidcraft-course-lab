@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+❯ Revolve this sketch around the vertical axis to make the knob.
+
+  Called solidcraft 6 times
+
+● The knob is built, but not by revolving your sketch directly. Sketch1's profile is the full symmetric cross-section, and it crosses the vertical axis, so
+  SolidCraft rejected the revolve with "the profile crosses the revolve axis".
+
+  Instead I redrew one half of the profile (x ≥ 0) in a new sketch, Sketch2. It has the same points as Sketch1 and sits on the same plane, so it lines up with
+  it. I revolved that 360° about the vertical axis to make Body1 (feature "Knob"). Sketch1 is untouched.
+
+  - Shape: a stem of radius 6 mm and 15 mm height, on a flange disc of radius 15 mm and 8 mm thickness.
+  - Position: the body spans z = 0 to −23, because Sketch1's plane has its vertical direction pointing down. The stem is at the top, at z = 0, and the flange
+    is at the bottom.
+  - Checks: the body is closed, with a volume of about 7351 mm³, and a render shows the expected stem-on-flange shape.
+
+  If you'd rather have the knob sitting on z = 0 and rising upward, I can flip or move it.
+
+✻ Churned for 19s · done 12:08 PM
+
+
+
+
+
+
+
+
+
+❯ Flip it so the stem points up from z = 0
+
+
