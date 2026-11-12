@@ -1,0 +1,11 @@
+full sketch: isError None; {"completed": 3, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": [], "curves": ["l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8"], "dimensions":
+full-sketch: volume_mm3 -0.0 bbox null timeline ["Sketch1"]
+save knob-full.sc: isError None; {"bytes": 731, "name": "knob-full", "path": "/root/knob-full.sc"}
+half sketch: isError None; {"completed": 3, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["l1", "l2", "l3", "l4", "l5", "l6"], "dimensions": [], "po
+save knob-half.sc: isError None; {"bytes": 721, "name": "knob-half", "path": "/root/knob-half.sc"}
+check-half sketch: isError None; {"completed": 3, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["l1", "l2", "l3", "l4", "l5", "l6"], "dimensions": [], "po
+check-half revolve axis y 360: isError None; {"bodies": ["Body1"], "changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 14.400928, "name": "Revolve1", "removed_bodies": [], "warning": null}
+check-half: volume_mm3 7350.775708796904 bbox {"max": [15.000000000000004, 14.999999999999998, 0.0], "min": [-15.0, -15.0, -23.0]} timeline ["Sketch1", "Revolve1"]
+check-full sketch: isError None; {"completed": 3, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": [], "curves": ["l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8"], "dimensions":
+check-full revolve axis y 360: isError True; {"text": "invalid input: the profile crosses the revolve axis"}
+check-full: volume_mm3 -0.0 bbox null timeline ["Sketch1"]
