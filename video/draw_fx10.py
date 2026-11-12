@@ -240,17 +240,21 @@ def card_sides(step):
     text(d, (cx - 60, top + 330), 'left half', 48, (BLUE if on else DONE) + (255,), anchor='rm')
     text(d, (cx + 60, top + 330), 'right half', 48, (ORANGE if on else DONE) + (255,), anchor='lm')
     if step >= 2:
-        text(d, (1920, 900), 'seen from above, at 360 degrees', 56, INK + (255,), anchor='mm', maxw=1200)
-        c1, cy, r = (1640, 1080, 110)
+        # cut 2 (watch-through c1 must-fix 3): the sweep first, then each circle labelled with its own angle
+        text(d, (1920, 850), 'each point sweeps a ring round the axis', 52, INK + (255,), anchor='mm', maxw=1200)
+        text(d, (1920, 935), 'seen from above:', 48, INK + (255,), anchor='mm', maxw=1200)
+        c1, cy, r = (1600, 1070, 100)
         d.ellipse((c1 - r, cy - r, c1 + r, cy + r), outline=ORANGE + (255,), width=12)
         dashed_arc(d, (c1 - r, cy - r, c1 + r, cy + r), 0, 360, BLUE + (255,), width=6, step=8)
         d.ellipse((c1 + r - 14, cy - 14, c1 + r + 14, cy + 14), fill=ORANGE + (255,))
         d.ellipse((c1 - r - 14, cy - 14, c1 - r + 14, cy + 14), fill=BLUE + (255,))
-        text(d, (c1 + 170, cy), 'every ring twice', 48, INK + (255,), anchor='lm')
-        c2 = 2330
+        text(d, (c1, 1210), 'at 360 degrees', 48, INK + (255,), anchor='mm')
+        text(d, (c1, 1272), 'every ring twice', 48, INK + (255,), anchor='mm')
+        c2 = 2220
         d.arc((c2 - r, cy - r, c2 + r, cy + r), 180, 360, fill=ORANGE + (255,), width=12)
         d.arc((c2 - r, cy - r, c2 + r, cy + r), 0, 180, fill=BLUE + (255,), width=12)
-        text(d, (1920, 1265), 'at 180 degrees: no overlap, still refused', 48, INK + (255,), anchor='mm', maxw=1200)
+        text(d, (c2, 1210), 'at 180 degrees', 48, INK + (255,), anchor='mm')
+        text(d, (c2, 1272), 'no overlap: refused', 48, INK + (255,), anchor='mm')
     save(im, f'card-sides-{step}.png')
 
 

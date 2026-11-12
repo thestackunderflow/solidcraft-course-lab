@@ -101,8 +101,12 @@ def test_labels_from_the_script(drawn):
     t = lambda n: ' '.join(s for s, _ in drawn.LOG[n])  # noqa: E731
     assert 'card edge = profile' in t('card-wheel-3.png') and 'spindle = axis' in t('card-wheel-3.png')
     assert 'one outline, one side of the axis' in t('card-sides-1.png')
-    assert 'seen from above, at 360 degrees' in t('card-sides-2.png')
-    assert 'at 180 degrees: no overlap, still refused' in t('card-sides-2.png')
+    # cut 2 (watch-through c1 must-fix 3): the sweep before "every ring twice"; each circle labelled with its angle
+    s2 = drawn.LOG['card-sides-2.png']
+    said = [s for s, _ in s2]
+    assert said.index('each point sweeps a ring round the axis') < said.index('every ring twice')
+    assert 'seen from above:' in said and 'at 360 degrees' in said and 'at 180 degrees' in said
+    assert 'no overlap: refused' in said
     assert 'half-width 15 mm' in t('card-radius-1.png') and '15 x 2 = 30 mm across' in t('card-radius-2.png')
     assert 'one side of an endless line' in t('card-sofar-2.png')
     assert 'Square 5 mm off the axis.' in t('card-question-1.png')
