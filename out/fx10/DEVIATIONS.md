@@ -52,3 +52,10 @@ Nothing was re-scored. Every clip is kept (including the failed attempts in P-at
     the box's store lists 38a6f678. Start file = take P's out/fx10/P/knob-full.sc, opened by lab/fx9.py as in the takes.
     lab/fx10R1.sh + claude-run/fx10run.sh are copies of the fx9 pair (no other change; one run, no retry, no harness
     failure). The owner's claude.ai connectors also showed as connected in `claude mcp list` (as fx9); none was called.
+14. **Observation, R1 orientation (12 Nov, video cut 3; NOT a re-score).** R1's knob (after.png; reply "Position")
+    spans world z = 0 to -23 with the stem at the top (z = 0) and the cap/flange at the bottom: upside down and below
+    the ground plane, the mirror of take B's knob (z 0..23, cap on top; P attempt 2 negated the sketch y for this
+    reason, deviation 2). Claude said so in its reply and offered to flip or move it. LAB-fx10 section 4's class A
+    checks size (30 across) and volume (within 1% of take B), not orientation, so R1 stays class A as pre-registered.
+    The greyed "Flip it so the stem points up from z = 0" in R1's prompt box is Claude Code's suggested next prompt,
+    not Claude's words; it stays masked. The video (fx10 cut 3) now shows after.png and says the orientation plainly.
