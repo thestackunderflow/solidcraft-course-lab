@@ -395,10 +395,18 @@ def card_short_wall(step):
                                                           'nothing left to cut', RED, False)
     text(d, (SCX, 928), "red dashes: the bolt's outside, 8", 44, RED, anchor='mm', box=(0, 0, SW, SHH))
     if step >= 2:
-        p = pal(2, step, GREEN)
+        p = pal(2, min(step, 2), GREEN)              # cut 3: step 3 adds to the same row, which stays lit
         d.line((60, 478, SW - 60, 478), fill=DONE, width=3)
         SHORT_GEOM['wall675'], _ = wall_panel(d, 495, HOLE_M8, p, 'hole 6.75: grooves cut out to 8',
                                               'room to cut: real teeth', GREEN, True)
+    if step >= 3:                                    # cut 3: the sum in the hole, the 1.25 tied to the dialog's Pitch
+        li, ri = SHORT_GEOM['wall675']
+        text(d, (SCX, 770), f'{M8[0]} - {M8[1]:g} = {HOLE_M8:g}', 46, BLUE, anchor='mm', box=(li, 585, ri, 825))
+        f = font(B, 44)
+        s = f'Pitch (tooth spacing): {M8[1]:g}'
+        bb = d.textbbox((SCX, 466), s, font=f, anchor='mm')
+        d.rectangle((bb[0] - 16, bb[1] - 8, bb[2] + 16, bb[3] + 8), fill=WHITE)
+        text(d, (SCX, 466), s, 44, BLUE, anchor='mm', box=(0, 430, SW, 505))
     save(im, f'card-short-wall-{step}.png')
 
 
@@ -441,7 +449,7 @@ def main():
         card_sofar(s)
     for s in (1, 2):
         card_question(s)
-    for s in (1, 2):
+    for s in (1, 2, 3):
         card_short_wall(s)
     check_alpha()
     print('PROBLEMS:', PROBLEMS or 'none')

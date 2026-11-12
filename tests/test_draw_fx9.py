@@ -179,3 +179,17 @@ def test_short_wall_card_cut2(drawn):
     assert g['wall8'] == g['line8']                          # step 1: the wall sits ON the 8 line
     assert g['wall675'] > g['line8']                         # step 2: the wall inside the 8 line
     assert abs((g['wall675'][1] - g['wall675'][0]) / (g['line8'][1] - g['line8'][0]) - 6.75 / 8) < 0.01
+
+
+def test_short_wall_card_cut3(drawn):
+    """Short c3 (watch-through c2 MUST-FIX 1): a third step keeps step 2 (the 6.75 row stays lit) and draws the sum
+    "8 - 1.25 = 6.75" in the hole with the 1.25 tied to the dialog's Pitch (the tooth spacing). Text 44 px+."""
+    im = Image.open(os.path.join(drawn, 'card-short-wall-3.png'))
+    assert im.size == (1080, 960)
+    t2 = [t for t, _ in d.LOG['card-short-wall-2.png']]
+    t3 = [t for t, _ in d.LOG['card-short-wall-3.png']]
+    assert set(t2) <= set(t3)
+    assert '8 - 1.25 = 6.75' in t3 and not any('1.25' in t for t in t2)
+    assert any('Pitch' in t and 'tooth spacing' in t and '1.25' in t for t in t3)
+    assert all(px >= 44 for _, px in d.LOG['card-short-wall-3.png'])
+    assert not d.PROBLEMS
