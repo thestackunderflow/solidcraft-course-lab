@@ -121,7 +121,7 @@ def test_card_labels_from_the_script(drawn):
         assert s in {t for t, _ in d.LOG[n]}, (n, s)
     p1 = {t for t, _ in d.LOG['card-pitch-1.png']}
     assert 'about half a pitch: 0.68' in p1
-    assert 'M5: 5 - 0.8 = 4.2' in {t for t, _ in d.LOG['card-pitch-3.png']}
+    assert not any('M5' in t for t, _ in d.LOG['card-pitch-3.png'])     # cut 2: M5 dropped (never spoken)
     assert 'M10 wants 8.5. Builds?' in {t for t, _ in d.LOG['card-question-2.png']}
 
 
@@ -143,3 +143,39 @@ def test_question_shows_no_answer(drawn):
         assert set(texts) <= allowed, set(texts) - allowed
         assert texts.count('refused') == 2 and texts.count('built') == 2      # only the four filmed rows
         assert all(f in texts for f in d.FIFTH)
+
+
+def test_pitch_bar_cut2_8mm_spans_the_whole_bar_and_no_sum(drawn):
+    """Watch-through c1 MUST-FIX 2: "8 mm" spans the whole bar, the hole (6.75) is the middle only, and the bar
+    carries no tooth numbers that would add up (0.68 + 6.75 + 0.68 = 8.11)."""
+    g = d.PITCH_GEOM
+    assert g['8 mm'] == (d.BAR[0], d.BAR[1])
+    a, b = g['hole']
+    assert d.BAR[0] < a < b < d.BAR[1]
+    assert abs((b - a) / (d.BAR[1] - d.BAR[0]) - d.HOLE_M8 / d.M8[0]) < 0.01
+    for i in (2, 3):
+        texts = [t for t, _ in d.LOG[f'card-pitch-{i}.png']]
+        assert texts.count('0.68') == 0, i
+        assert texts.count('about half a pitch: 0.68') == 1, i           # step 1's tooth label only
+        assert '8 mm' in texts and 'each end: about half a pitch tall' in texts, i
+    assert 'hole: 6.75 mm' in {t for t, _ in d.LOG['card-pitch-3.png']}
+
+
+def test_short_wall_card_cut2(drawn):
+    """Short c2 (watch-through MUST-FIX 4): a cross-section card in the 1080 x 960 Short view that builds in two steps,
+    the cause before the fix: 1 the wall already at 8 (nothing to cut), 2 the wall at 6.75 with grooves cut out to 8.
+    Step 2 keeps step 1 on screen; text 44 px+ and inside the view."""
+    for i in (1, 2):
+        im = Image.open(os.path.join(drawn, f'card-short-wall-{i}.png'))
+        assert im.size == (1080, 960)
+    t1 = [t for t, _ in d.LOG['card-short-wall-1.png']]
+    t2 = [t for t, _ in d.LOG['card-short-wall-2.png']]
+    assert set(t1) <= set(t2)
+    assert 'hole 8: wall already at 8' in t1 and 'nothing left to cut' in t1
+    assert 'hole 6.75: grooves cut out to 8' in t2
+    assert not any('6.75' in t for t in t1)                  # the fix number only in step 2
+    assert all(px >= 44 for _, px in d.LOG['card-short-wall-2.png'])
+    g = d.SHORT_GEOM
+    assert g['wall8'] == g['line8']                          # step 1: the wall sits ON the 8 line
+    assert g['wall675'] > g['line8']                         # step 2: the wall inside the 8 line
+    assert abs((g['wall675'][1] - g['wall675'][0]) / (g['line8'][1] - g['line8'][0]) - 6.75 / 8) < 0.01

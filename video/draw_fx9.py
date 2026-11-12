@@ -3,7 +3,8 @@ draw_fx7alt.py pattern: light, 2560 x 1440, one picture that builds; each step a
 Text 44 px+, 44 columns at most per line.
   full frame (RGB):  card-lid-1..3 (F3), card-pitch-1..3 (F5), card-sofar-1..2 (F8, the same lid picture: the peg twice)
   overlay (RGBA, transparent left of x 1300): card-cut-1..2 (F4), card-question-1..2 (F10; no answer on screen)
-Facts (SCRIPT-fx9.md): M8 pitch 1.25, tooth height 0.68 (about half a pitch), hole 8 - 1.25 = 6.75; M5 5 - 0.8 = 4.2;
+Facts (SCRIPT-fx9.md): M8 pitch 1.25, tooth height 0.68 (about half a pitch), hole 8 - 1.25 = 6.75; M5 5 - 0.8 = 4.2
+(cut 2: M5 no longer drawn; the bar shows 8 mm across the whole bar, the hole 6.75 in the middle, no tooth numbers);
 the filmed window: 6.3 refused (too narrow), 6.5 built, 7.6 built, 7.7 refused (cuts too little). The M10 question is
 asked, never answered.
 Run in the QA image:  docker run --rm -v "<lab>:/lab" -w /lab cad3way-draw:1 python3 video/draw_fx9.py [sheet OUTDIR]"""
@@ -245,6 +246,7 @@ TEETH = (420, 420 + PITCH_PX)                    # tooth centres (x)
 HALF_BASE, HALF_CREST = round(0.425 * PPM), round(0.08 * PPM)
 BAR = (200, 2360, 960, 1050)                     # the hole across: x0, x1 (8 mm), y0, y1
 BPPM = (BAR[1] - BAR[0]) / M8[0]
+PITCH_GEOM = {}                                  # x spans drawn on the bar (tested)
 
 
 def card_pitch(step):
@@ -264,21 +266,28 @@ def card_pitch(step):
     dashed(d, (TEETH[1] + HALF_CREST + 10, crest), (hx + 20, crest), p['ink'], 4)
     dimline(d, (hx, crest), (hx, BASE), p['ink'])
     text(d, (hx + 50, (crest + BASE) / 2), 'about half a pitch: 0.68', 56, p['ink'], anchor='lm')
-    if step >= 2:                                # 2: the hole loses one tooth height on each side
+    if step >= 2:                                # 2: the hole loses about half a pitch on EACH side (cut 2: no sum)
         p = pal(2, step, RED)
         x0, x1, y0, y1 = BAR
-        t = round(TOOTH * BPPM)
+        t = round(M8[1] / 2 * BPPM)              # each end drawn half a pitch wide: the middle is 6.75 to scale
         d.rectangle((x0, y0, x1, y1), fill=tint(LIGHT, p), outline=p['ink'], width=5)
         for a, b in ((x0, x0 + t), (x1 - t, x1)):
             d.rectangle((a, y0, b, y1), fill=tint(REDFILL, p), outline=p['acc'], width=5)
-            text(d, ((a + b) / 2, y0 - 15), '0.68', 52, p['acc'], anchor='mb')
-        text(d, ((x0 + x1) / 2, y0 - 15), '8 mm', 52, p['ink'], anchor='mb')
-        text(d, (W / 2, 1115), 'one tooth height off EACH side', 52, p['ink'], anchor='mt')
-        text(d, (W / 2, 1190), 'about one pitch across', 56, p['acc'], anchor='mt')
-    if step >= 3:                                # 3: the sum
+        for x in (x0, x1):                       # "8 mm" across the WHOLE bar, outside the hole
+            d.line((x, y0 - 90, x, y0), fill=p['ink'], width=4)
+        dimline(d, (x0, y0 - 60), (x1, y0 - 60), p['ink'])
+        text(d, ((x0 + x1) / 2, y0 - 75), '8 mm', 52, p['ink'], anchor='mb')
+        PITCH_GEOM['8 mm'] = (x0, x1)
+        PITCH_GEOM['hole'] = (x0 + t, x1 - t)
+        text(d, (W / 2, 1115), 'each end: about half a pitch tall', 52, p['ink'], anchor='mt')
+        text(d, (W / 2, 1190), 'both ends: about one pitch across', 56, p['acc'], anchor='mt')
+    if step >= 3:                                # 3: the hole, SolidCraft's rule
         p = pal(3, step, GREEN)
-        text(d, ((BAR[0] + BAR[1]) / 2, (BAR[2] + BAR[3]) / 2), '6.75', 56, GREEN, anchor='mm')
-        callout(d, (1400, 170, 2480, 420), ['8 minus 1.25 = 6.75', 'M5: 5 - 0.8 = 4.2'], p, 64, accents=(0,))
+        a, b = PITCH_GEOM['hole']
+        d.rectangle((a, BAR[2], b, BAR[3]), fill=GREENFILL, outline=GREEN, width=5)
+        text(d, ((a + b) / 2, (BAR[2] + BAR[3]) / 2), 'hole: 6.75 mm', 56, GREEN, anchor='mm')
+        callout(d, (1400, 170, 2480, 420), ['8 minus 1.25 = 6.75', 'SolidCraft: exactly one pitch'], p, 64,
+                accents=(0,))
     save(im, f'card-pitch-{step}.png')
 
 
@@ -344,6 +353,55 @@ def card_question(step):
     save(im, 'card-question-2.png')
 
 
+# --- Short card (cut 2, MUST-FIX 4): the hole wall in cross-section, 1080 x 960 (the Short's view) ---------------------
+SW, SHH = 1080, 960
+SPPM = 80                                        # px per mm: 8 mm = 640 px
+SCX = SW // 2
+SHORT_GEOM = {}
+HATCH = (190, 198, 210)
+
+
+def wall_panel(d, y0, hole, p, title, foot, foot_col, grooves):
+    """One cross-section panel: the nut wall on both sides of the hole, the 8 mm line dashed red."""
+    l8, r8 = SCX - 4 * SPPM, SCX + 4 * SPPM
+    li, ri = SCX - round(hole / 2 * SPPM), SCX + round(hole / 2 * SPPM)
+    top, bot = y0 + 90, y0 + 330
+    text(d, (SCX, y0 + 40), title, 50, p['ink'], anchor='mm', box=(0, 0, SW, SHH))
+    for a, b in ((90, li), (ri, 990)):
+        d.rectangle((a, top, b, bot), fill=tint(HATCH, p), outline=p['ink'], width=4)
+    if grooves:                                  # V grooves cut from the hole wall out to the 8 line
+        pitch = round(M8[1] * SPPM)
+        yc = top + pitch // 2
+        while yc + pitch // 2 <= bot:
+            for edge, tip in ((li, l8), (ri, r8)):
+                d.polygon([(edge, yc - pitch * 0.45), (tip, yc), (edge, yc + pitch * 0.45)], fill=WHITE,
+                          outline=p['ink'])
+            yc += pitch
+    for x in (l8, r8):
+        dashed(d, (x, top - 20), (x, bot + 20), RED if p['on'] else DONE, 5)
+    my = (top + bot) // 2
+    dimline(d, (li + 6, my), (ri - 6, my), p['acc'], 5)
+    text(d, (SCX, my - 12), f'hole {hole:g} mm', 46, p['acc'], anchor='mb', box=(0, 0, SW, SHH))
+    text(d, (SCX, bot + 50), foot, 48, foot_col if p['on'] else DONE, anchor='mm', box=(0, 0, SW, SHH))
+    return (li, ri), (l8, r8)
+
+
+def card_short_wall(step):
+    CUR.clear()
+    im = Image.new('RGB', (SW, SHH), WHITE)
+    d = ImageDraw.Draw(im)
+    p = pal(1, step, RED)
+    SHORT_GEOM['wall8'], SHORT_GEOM['line8'] = wall_panel(d, 20, M8[0], p, 'hole 8: wall already at 8',
+                                                          'nothing left to cut', RED, False)
+    text(d, (SCX, 928), "red dashes: the bolt's outside, 8", 44, RED, anchor='mm', box=(0, 0, SW, SHH))
+    if step >= 2:
+        p = pal(2, step, GREEN)
+        d.line((60, 478, SW - 60, 478), fill=DONE, width=3)
+        SHORT_GEOM['wall675'], _ = wall_panel(d, 495, HOLE_M8, p, 'hole 6.75: grooves cut out to 8',
+                                              'room to cut: real teeth', GREEN, True)
+    save(im, f'card-short-wall-{step}.png')
+
+
 def sheet(outdir):
     names = sorted(n for n in os.listdir(OUT) if n.endswith('.png'))
     tw, th, cols = 640, 360, 3
@@ -383,6 +441,8 @@ def main():
         card_sofar(s)
     for s in (1, 2):
         card_question(s)
+    for s in (1, 2):
+        card_short_wall(s)
     check_alpha()
     print('PROBLEMS:', PROBLEMS or 'none')
 
