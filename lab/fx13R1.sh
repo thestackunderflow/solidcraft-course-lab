@@ -53,12 +53,13 @@ json.dump({'mcpServers': {'solidcraft': d['mcpServers']['solidcraft']}}, open(os
 PY
 printf 'set -g status off\nset -g mouse on\n' > "$HOME/.tmux.conf"
 export CLAUDE_CODE_DISABLE_AUTO_MEMORY=1 DISABLE_AUTOUPDATER=1
-(cd /root && claude mcp list) > "$O/mcp-list.txt" 2>&1
+# 13 Nov: never record the owner's claude.ai account connectors (names/URLs are personal account details)
+(cd /root && claude mcp list) 2>&1 | grep -v '^claude\.ai ' > "$O/mcp-list.txt"
 cat "$O/mcp-list.txt"
 grep -qi 'solidcraft.*connected' "$O/mcp-list.txt" || echo "R1-1: the server is not listed as connected (see mcp-list.txt)"
 claude --version > "$O/claude-version.txt" 2>&1
 xterm -u8 -geometry 120x40+0+0 -fa "DejaVu Sans Mono" -fs 22 -bg white -fg black -T "Claude Code" \
-  -e tmux -u new-session -s cc -c /root "claude --model claude-sonnet-5-5" > /dev/null 2>&1 &
+  -e tmux -u new-session -s cc -c /root "claude --model claude-sonnet-5-5 --strict-mcp-config --mcp-config $O/entry-as-run.json" > /dev/null 2>&1 &
 sleep 12
 w=$(xdotool search --name "^Claude Code$" | head -1); [ -n "$w" ] && { xdotool windowsize --sync "$w" $W $H; xdotool windowmove "$w" 0 0; xdotool windowactivate --sync "$w"; }
 sleep 2
