@@ -1,0 +1,43 @@
+== conv: 40 x 30 x 20, Save As Mesh -> Insert Mesh -> Convert Mesh (G0d recipe)
+  sketch.create {"plane": "XY"}: isError False; {"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}
+  sketch.rectangle.two_point {"p0": [0, 0], "p1": [40, 30]}: isError False; {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4", "k5"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "points": ["p1", "p2", "p3", "p4"]}, "sides": {"bottom": "l1", "left": "l4", "right": "l2", "top": "l3"}, "sketch": {"dof": 2, "solved": true}}
+  sketch.finish {}: isError False; {"profiles": 1, "sketch": 1}
+  solid.extrude {"distance": 20, "operation": "new"}: isError False; {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 0.751584, "name": "Extrude1", "removed_bodies": [], "warning": null}
+  file.save_mesh {"path": "/root/conv.stl"}: isError False; {"bytes": 684, "format": "StlBinary", "path": "/root/conv.stl"}
+  file.insert_mesh {"path": "/root/conv.stl"}: isError False; {"component": 1, "component_name": "conv", "created_bodies": ["conv"], "feature": 3, "name": "conv", "occurrence": 2, "path": "/root/conv.stl", "warnings": []}
+  mesh.convert {"body": "conv"}: isError False; {"changed_bodies": [], "created_bodies": ["conv"], "feature": 4, "ms": 2.0937609999999998, "name": "ConvertMesh1", "removed_bodies": [], "warning": null}
+save conv.sc: isError False; {"bytes": 10823, "name": "conv", "path": "/root/conv.sc"}
+conv2.sc, conv3.sc: file copies of conv.sc
+== block: 40 x 30 x 20, plain Extrude (control)
+  sketch.create {"plane": "XY"}: isError False; {"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}
+  sketch.rectangle.two_point {"p0": [0, 0], "p1": [40, 30]}: isError False; {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4", "k5"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "points": ["p1", "p2", "p3", "p4"]}, "sides": {"bottom": "l1", "left": "l4", "right": "l2", "top": "l3"}, "sketch": {"dof": 2, "solved": true}}
+  sketch.finish {}: isError False; {"profiles": 1, "sketch": 1}
+  solid.extrude {"distance": 20, "operation": "new"}: isError False; {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 0.450772, "name": "Extrude1", "removed_bodies": [], "warning": null}
+save block.sc: isError False; {"bytes": 9916, "name": "block", "path": "/root/block.sc"}
+== conv30: 30 x 30 x 10, converted (your turn)
+  sketch.create {"plane": "XY"}: isError False; {"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}
+  sketch.rectangle.two_point {"p0": [0, 0], "p1": [30, 30]}: isError False; {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4", "k5"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "points": ["p1", "p2", "p3", "p4"]}, "sides": {"bottom": "l1", "left": "l4", "right": "l2", "top": "l3"}, "sketch": {"dof": 2, "solved": true}}
+  sketch.finish {}: isError False; {"profiles": 1, "sketch": 1}
+  solid.extrude {"distance": 10, "operation": "new"}: isError False; {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 0.374782, "name": "Extrude1", "removed_bodies": [], "warning": null}
+  file.save_mesh {"path": "/root/conv30.stl"}: isError False; {"bytes": 684, "format": "StlBinary", "path": "/root/conv30.stl"}
+  file.insert_mesh {"path": "/root/conv30.stl"}: isError False; {"component": 1, "component_name": "conv30", "created_bodies": ["conv30"], "feature": 3, "name": "conv30", "occurrence": 2, "path": "/root/conv30.stl", "warnings": []}
+  mesh.convert {"body": "conv30"}: isError False; {"changed_bodies": [], "created_bodies": ["conv30"], "feature": 4, "ms": 2.013797, "name": "ConvertMesh1", "removed_bodies": [], "warning": null}
+save conv30.sc: isError False; {"bytes": 10849, "name": "conv30", "path": "/root/conv30.sc"}
+== offset: 40 x 30 on XY, Extrude 20 with start_offset 5
+  sketch.create {"plane": "XY"}: isError False; {"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}
+  sketch.rectangle.two_point {"p0": [0, 0], "p1": [40, 30]}: isError False; {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4", "k5"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "points": ["p1", "p2", "p3", "p4"]}, "sides": {"bottom": "l1", "left": "l4", "right": "l2", "top": "l3"}, "sketch": {"dof": 2, "solved": true}}
+  sketch.finish {}: isError False; {"profiles": 1, "sketch": 1}
+  solid.extrude {"distance": 20, "operation": "new", "start_offset": 5}: isError False; {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 0.313835, "name": "Extrude1", "removed_bodies": [], "warning": null}
+save offset.sc: isError False; {"bytes": 9923, "name": "offset", "path": "/root/offset.sc"}
+reopen conv.sc: isError False
+CHECK conv: volume 24000.0 expected 24000.0 (1 bodies, conv, top z 20.0); top face [('F4:face:5', False)] -> OK
+reopen conv2.sc: isError False
+CHECK conv2: volume 24000.0 expected 24000.0 (1 bodies, conv, top z 20.0); top face [('F4:face:5', False)] -> OK
+reopen conv3.sc: isError False
+CHECK conv3: volume 24000.0 expected 24000.0 (1 bodies, conv, top z 20.0); top face [('F4:face:5', False)] -> OK
+reopen block.sc: isError False
+CHECK block: volume 24000.0 expected 24000.0 (1 bodies, Body1, top z 20.0); top face [('F2:top', True)] -> OK
+reopen conv30.sc: isError False
+CHECK conv30: volume 9000.0 expected 9000.0 (1 bodies, conv30, top z 10.0); top face [('F4:face:5', False)] -> OK
+reopen offset.sc: isError False
+CHECK offset: volume 24000.0 expected 24000.0 (1 bodies, Body1, top z 25.0); top face [('F2:top#2', True)] -> OK

@@ -1,0 +1,120 @@
+== list_commands sketch.create
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "sketch",
+    "id": "sketch.create",
+    "label": "Create Sketch",
+    "panel": "CREATE",
+    "params": "plane: XY|XZ|YZ | construction plane name or id | {origin?: [x,y,z] numbers in mm, default [0,0,0] (not an expression), x_dir, y_dir} (in world coordinates unless frame says otherwise; a named plane is the active component's own) | {face: [world x,y,z], body?: exact world body, index?: face index, path?: complete occurrence ids, fixed?: bool}; new face attachments require a unique certified source (a flat face of a sheet metal body attaches to its panel instead, in the flat pattern's coordinates), fixed:true explicitly freezes the selected plane; offset?: expr, flip?: bool | \"x\" | \"y\" (not on a face: sketch the plane from its other side, so the normal and the default extrude direction are reversed; a half turn about the plane's own x or y axis, true picks the one keeping the sketch's y axis upward; offset still moves along the unflipped normal), frame?: world (default) | component (which coordinates an explicit plane is in; the reply's `frame` says which, with a `note` when the active component is moved or turned), project_edges?: bool, name?",
+    "shortcut": null,
+    "tab": "SOLID"
+  }
+]
+
+== list_commands solid.extrude
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "extrude",
+    "id": "solid.extrude",
+    "label": "Extrude",
+    "panel": "CREATE",
+    "params": "distance: expr (or through_all: true); taper?: angle expr (positive: outward, so the far end is larger along the extrusion direction; negative: inward, so the far end is smaller); sketch?: id|name (default: active or last sketch); profiles?: all | [index] | [{curves: [ids]}] (the profile whose outer loop is made of exactly these curves, or pieces of them; found again on every recompute, so it follows parameter changes; islands inside are its holes; an error when no profile or several match) | [{point:[x,y]}] (index and point picks are stored by their curves when that finds the same profile; a pick on a drawn profile that reference geometry, such as the projected outline of the face the sketch is on, cuts into regions takes the whole drawn profile); exact_regions?: bool (each index or point pick is exactly the region it names, as the dialogs send); default: every drawn profile, except that a loop inside another is its hole and a loop inside that hole is material again; face?: [x,y,z] (extrude a planar body face instead of a sketch profile); faces?: [[x,y,z],…] (coplanar faces of one body); face_body?: name (whose face, where faces of several bodies meet at the point); direction?: positive|negative|symmetric (distance is total thickness, split evenly around the start plane); convention?: total_distance|legacy_per_side (default total_distance; legacy preserves older symmetric extents); distance2?: expr (Two Sides: a second distance the other way from the first side, which may be through_all or to; with direction: negative the first side goes against the normal and distance2 along it); start_offset?: expr (along the sketch normal, also with direction: negative); to?: [x,y,z] (To Object: a face, vertex or point; to_offset?: expr past it); from?: [x,y,z] (From Object: start at that face or point); operation?: new|join|cut|intersect|auto (cut into a body, otherwise join existing solids; new in an empty component); targets?: [body] (Join from a face, or from a sketch on a body's face, defaults to that face's body; explicit targets or participants override); name?; body_name?; thin?: true (Thin: a wall along sketch curves instead of the profiles) with curves?: [curve ids] (open chains and closed loops, joined where they meet end to end; default: every drawn curve of the sketch), thickness: expr, side?: center|inside|outside|two_sides (a closed loop's inside is the area it encloses, an open chain's the side it bends toward, a straight line's the left of its first curve as drawn; default center), thickness2?: expr (two_sides: the thickness outside); corners are mitred, crossing walls are one",
+    "shortcut": "E",
+    "tab": "SOLID"
+  }
+]
+
+== list_commands file.save_mesh
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "mesh_export",
+    "id": "file.save_mesh",
+    "label": "Save As Mesh",
+    "panel": "FILES",
+    "params": "path; format?: stl|3mf|3mf-tagged (default from the extension, else stl; 3mf-tagged: docs/formats/3mf-face-tags.md); bodies?: [names] (default: all); ascii?: bool (STL); slicer?: id or name from file.slicers, the program path it lists, or a program the user added under Custom… (send the saved file there, through the same steps as file.send_to_slicer: a slicer that has to be started first is waited for; may be deprecated later in favour of file.send_to_slicer or a Send to App workflow, kept for scripts); single_instance?: bool (default true; see file.send_to_slicer); quality?: standard|fine|finest (STL, OBJ and 3MF: how closely the mesh follows curved faces, a chord tolerance of 2e-4, 5e-5 or 1e-5 of each body's size; default standard); objects?: body|component (3MF only: one object per body, the default, or one object for each placed component with two or more bodies, with those bodies as its parts, so a slicer loads them as one object with parts)",
+    "shortcut": null,
+    "tab": "INSERT"
+  }
+]
+
+== list_commands file.insert_mesh
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "import",
+    "id": "file.insert_mesh",
+    "label": "Insert Mesh",
+    "panel": "INSERT",
+    "params": "path: .3mf, .stl, .obj, .ply (with faces), .glb or .gltf file (its meshes join the design as mesh bodies in a new component named after the file → component, component_name, occurrence; a glTF file's node tree becomes nested components held as one rigid group until component.unlock, a mesh placed again another occurrence, its materials the bodies' appearances, and its metres millimetres); name?; up?: z|y for a glTF file (default y: glTF has Y up, so the import's component is turned a quarter turn about X, Y becoming Z → stand_up: its occurrence; z: the file's axes are kept)",
+    "shortcut": null,
+    "tab": "SOLID"
+  }
+]
+
+== list_commands mesh.convert
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "import",
+    "id": "mesh.convert",
+    "label": "Convert Mesh",
+    "panel": "",
+    "params": "body?: mesh body name (default: the selected mesh body); tolerance?: length expression (default 0.05 mm): reconstruct a closed constant-section mechanical mesh as editable planar and cylindrical faces, with a parametric timeline feature in the mesh body's owning component (the active component must be that component or an ancestor; otherwise activate the named component first); the active component is unchanged; name?",
+    "shortcut": null,
+    "tab": ""
+  }
+]
+
+== list_commands model.faces
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "inspect",
+    "id": "model.faces",
+    "label": "List Faces",
+    "panel": "",
+    "params": "body: name → per face: index, name (what face.delete, sheet.convert `face`, solid.shell … take in place of a point), exact, area, centroid (not always on the face), plane_normal, point (a point on the face that picks it), cylinder? ({origin, axis, radius} of a cylindrical face), sheet_face? (a folded sheet's face: `sheet:<body>:<panel>:<side>`, panel base or a flange's tag F<feature>.<k>, side top | bottom | rim.<edge> | bend.inner | bend.outer; taken wherever a face name is, and it holds while sizes change and flanges come and go)",
+    "shortcut": null,
+    "tab": ""
+  }
+]
+
+== list_commands solid.hole
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "hole",
+    "id": "solid.hole",
+    "label": "Hole",
+    "panel": "CREATE",
+    "params": "position: [x,y,z] on a face (numbers, or length expressions the hole follows) | sketch + points: [sketch point ids] (one hole each, perpendicular to the sketch, into the material on whichever side of the sketch plane it is) | sketch alone (every sketch point: standalone points and circle centres); flip?: bool (sketch points: drill to the other side); single?: bool (with one sketch point: a Single hole that follows the point, drilled into the face there); direction?: [x,y,z] (default: into the face, against its outward normal; one that leaves the face is mirrored into it; ignored with sketch points unless single); diameter | thread (a tapped hole: metric major minus pitch or tabulated UNC/UNF, G or Rp cut-tap drill) | clearance: \"M6\" with fit?: close|normal|loose (ISO 273); depth? (default through all) | to?: [x,y,z] (To Object: drill to that face or point); references?: [{edge: [x,y,z] on a straight edge of the face, distance: expr}] (at most two; the centre goes that far from each edge's line, in the face's plane, and follows the edges; with a numeric position only); type?: simple|drilled|counterbore|countersink; tip_angle?; cb_diameter?, cb_depth?; cs_diameter?, cs_angle?; thread?: \"M6\" or \"1/4-20 UNC\" (cosmetic); handedness?: right|left (default right, needs thread for left); thread_depth?: positive length independent of drill depth (default: full useful cylindrical wall; must fit that wall); targets?: [body] (the bodies to drill; holes at the points of a sketch on a body's face default to that body, found along the holes' direction on it alone; explicit targets or participants override, [\"*\"] every body)",
+    "shortcut": "H",
+    "tab": "SOLID"
+  }
+]
+
+== list_commands sketch.circle.center
+[
+  {
+    "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+    "enabled": false,
+    "icon": "circle",
+    "id": "sketch.circle.center",
+    "label": "Center Diameter Circle",
+    "panel": "CREATE",
+    "params": "center: [x,y] or point ref, radius | diameter: number; through?: point ref (a point the circle passes through, kept on it: where the tool's second click snapped); construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete…)",
+    "shortcut": "C",
+    "tab": "SKETCH"
+  }
+]
+
