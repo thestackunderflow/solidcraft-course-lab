@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+❯ Put a 10 mm hole, 5 mm deep, in the middle of the top face of this block.
+
+  Called solidcraft 3 times
+
+● Simpler: use an XY plane offset to z=20.
+
+  Called solidcraft 2 times
+
+● I cut a 10 mm diameter hole, 5 mm deep, in the middle of the top face. The block is 40 × 30 × 20 mm. The hole is centred at x=20, y=15, and its bottom sits
+  at z=15.
+
+  I checked the result by measuring the body. Its volume dropped from 24,000 mm³ to 23,607 mm³, a loss of 393 mm³. A 10 mm × 5 mm cylinder works out to about
+  393 mm³, so the size and depth are right.
+
+  I didn't take a screenshot, so I haven't looked at the hole in the viewport.
+
+✻ Sautéed for 9s · done 5:56 PM
+
+
+
+
+
+
+
+
+
+
+
+
+❯ take a screenshot
+
+

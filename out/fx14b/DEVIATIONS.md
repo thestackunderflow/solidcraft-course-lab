@@ -33,3 +33,10 @@ attempt as take C2 (item 6).
 9. **Numbers.** Properties/measure give 23,607.37 (not 23,607.30) and 8,607.37 (not 8,607.30); top face 1,122.03 mm2
    (not 1,121.46): all within 0.1% (0.0003%, 0.0008%, 0.05%), recorded as shown.
 10. **Raw video.** A, B, C, E screen.mp4 are over 50 MB and gitignored (as fx13); C2 and D are committed.
+11. **R1 path.** Predicted: the face pick gets the lineage line, then fixed:true or solid.hole. Filmed: Claude's
+   `sketch.create {plane: {face: [20, 15, 20], body: "conv"}}` (in a batch) was refused earlier, isError "invalid
+   parameters for `sketch.create`: an exact face pick requires both body and index"; it then gave the plane itself
+   (origin [0, 0, 20], x/y directions) and cut -5. The lineage line never appeared; no Hole, no fixed:true. Class A as
+   pre-registered. Checker lab/fx14bhole.py is new (tests/test_fx14bhole.py, 4 pass). session.jsonl: 5 lines of
+   built-in skill/tool description text redacted to stubs (connector grep then zero). Footage: mask only Claude Code's
+   greyed suggested prompt "take a screenshot".

@@ -1,6 +1,6 @@
 # fx14b lab answers (LAB-fx14b v1.1, prereg 516404a), 13 Nov 2026, Ubuntu box, SolidCraft 0.28.0, no AI, $0
 
-Strings are copied from the screenshots and the plug's reply text. R1 (Q29) not run: PC only, owner's Claude login.
+Strings are copied from the screenshots and the plug's reply text. R1 (Q29) run on the PC 13 Nov (runs/R1, $0.1024): class A.
 
 | Q | Pre-registered | Filmed | Where |
 |---|---|---|---|
@@ -18,4 +18,4 @@ Strings are copied from the screenshots and the plug's reply text. R1 (Q29) not 
 | Q21 plain extruded top | attaches, "SketchN — fully constrained" | **attaches**, "Sketch2 — fully constrained" (40 x 30 outline projected) | E/control.png |
 | Q23 Extrude on the converted face | "... `face profile`: ..." or a window label; fixed-plane control? | preview built, no line before OK; **after OK** the dialog stays open with red, NO prefix: **"this face has no supported stable semantic lineage; choose a supported exact face or explicitly use fixed:true"** + Create Issue...; **no fixed-plane control** in the Extrude dialog; nothing built (24,000.0) | E/extrude-dialog.png, E/extrude-face.png |
 | Q28 offset-start top | attaches | **attaches**, "Sketch2 — fully constrained" | E/offset.png |
-| Q29 R1 | class A | not run (PC only) | |
+| Q29 R1 | class A | **class A**: face pick refused ("an exact face pick requires both body and index", not the lineage line), then its own fixed plane at z 20, Ø10 x 5 cut, 23,607.37; hole (20.00, 15.00), Ø10.00, 5.00 deep, flat (lab/fx14bhole.py); line never seen; $0.1024 | runs/R1 |

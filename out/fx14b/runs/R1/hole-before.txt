@@ -1,0 +1,1 @@
+hole before {"hole": false, "centre_xy": null, "diameter_mm": null, "depth_mm": null, "flat_floor": null, "box": [0.0, 0.0, 0.0, 40.0, 30.0, 20.0]}

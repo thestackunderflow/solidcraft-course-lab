@@ -1,0 +1,19 @@
+{
+ "hole": false,
+ "box": [
+  0.0,
+  0.0,
+  0.0,
+  40.0,
+  30.0,
+  20.0
+ ],
+ "inside_vertices": 0,
+ "export": "{\n  \"bytes\": 1731,\n  \"format\": \"StlAscii\",\n  \"path\": \"/root/hole-before.stl\"\n}",
+ "facets": 12,
+ "method": [
+  "Hole vertices = mesh corners strictly inside the box's x/y bounds (a plain or converted box has corners only on its",
+  "bounds). Centre = mid of their x/y range, diameter = x range; wall = vertices at the hole radius (top z, wall bottom z,",
+  "depth = top - wall bottom); flat floor = 3+ vertices at the lowest z (a pointed tip has one). Rounded to 0.01 mm."
+ ]
+}

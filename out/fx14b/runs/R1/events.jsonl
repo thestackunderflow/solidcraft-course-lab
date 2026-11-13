@@ -1,0 +1,17 @@
+{"t": 0.503, "event": "recording started: Claude Code full screen; SolidCraft behind it on ~/conv.sc (the converted 40 x 30 x 20 block, top at z 20)"}
+{"t": 3.549, "event": "turn 1: typing"}
+{"t": 7.847, "event": "turn 1: Enter"}
+{"t": 8.277, "event": "turn 1: Claude working"}
+{"t": 10.072, "event": "tool call: inspect_design", "seq": 13}
+{"t": 10.098, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 11.632, "event": "tool call: describe_command", "seq": 15}
+{"t": 11.634, "event": "tool reply: describe_command", "seq": 16, "isError": false}
+{"t": 13.037, "event": "tool call: batch", "seq": 17}
+{"t": 13.04, "event": "tool reply: batch", "seq": 18, "isError": true}
+{"t": 14.71, "event": "tool call: batch", "seq": 19}
+{"t": 14.75, "event": "tool reply: batch", "seq": 20, "isError": false}
+{"t": 15.804, "event": "tool call: measure", "seq": 21}
+{"t": 15.823, "event": "tool reply: measure", "seq": 22, "isError": false}
+{"t": 17.685, "event": "turn 1: end-of-turn line seen"}
+{"t": 19.687, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 26.928, "event": "recording stopped"}
