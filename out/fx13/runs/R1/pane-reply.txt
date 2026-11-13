@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+❯ Hollow out this cup with 2 mm walls and leave the top open.                                                                                                  
+
+● I'll start by loading the SolidCraft tools and inspecting the open cup.
+
+  Called solidcraft 6 times  
+
+● I hollowed the cup with a 2 mm shell, working inward from the outside surface, and removed the top face so the top is open. The outer 60 mm diameter and 80
+  mm height are unchanged. The shell is added as a new "Shell1" step in the feature history.
+
+  - Volume: the body went from about 226,013 mm³ to 33,900 mm³ (about 43.7 g at the default material density).
+  - Check: the body is still a single closed solid, and the screenshot shows an open top with the inner wall visible.
+  - Rim and base: the small fillet on the top edge stays as a rounded rim. The base is closed, with a 2 mm floor.
+
+  I haven't saved the design.
+
+✻ Baked for 12s · done 5:16 PM
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                             
+
+❯ save the design                                            
+
+                                                         

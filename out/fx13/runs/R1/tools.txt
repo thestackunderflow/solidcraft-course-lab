@@ -1,0 +1,10 @@
+R1 tool calls (from the proxy's transcript.jsonl + session.jsonl), in order:
+1. ToolSearch (load 7 solidcraft tools; logged twice in session.jsonl, one call)  -> ok
+2. inspect_design {}  -> ok (Body1, 226,012.52 mm3, timeline Sketch1, Extrude1, Fillet1)
+3. list_commands {"filter": "shell"}  -> ok; its params line names `tangent_chain?: bool (also open faces joined smoothly to the picked ones)`
+4. body_topology {"body": "Body1"}  -> ok
+5. execute solid.shell {"faces": [[-8.66, -4.11, 80]], "thickness": 2, "direction": "inside"}  -> ok, Shell1 built (no tangent_chain sent: the plug's default, off)
+6. measure {"body": "Body1"}  -> ok, 33,899.754 mm3, closed, 43.73 g at 1.29 g/cm3
+7. screenshot {"view": "iso"}  -> ok (claude-shot-01.png)
+SolidCraft calls: 6. The Tangent Chain line never appeared (no isError reply in the run).
+After the run (no AI): read-after 33,899.75 mm3, timeline + Shell1; lab/fx13wall.py wall 2.00, floor 2.00, lid 0.00 (open top), outer r 30.00, cavity r 28.00.

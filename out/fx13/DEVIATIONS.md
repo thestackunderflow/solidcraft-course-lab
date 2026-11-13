@@ -25,3 +25,11 @@ Nothing was re-scored or re-rolled. Every take ran once and is kept.
 10. **Second cause (#8536).** Not a take in LAB v1: not run.
 11. **Clips.** lab/fx13clips.py, tests/test_fx13clips.py (red: no takes/module; then 3 pass). Cut on the box with
     -v ~/jobs/box-test/video-qa:/footage:ro. Raw A, B, C screen.mp4 over 50 MB are gitignored.
+12. **R1 run on the PC (13 Nov 2026), takes on the Ubuntu box, same image sc5-l5:0.28.0.** lab/fx13R1.sh +
+    claude-run/fx13run.sh are copies of the fx12 pair (start out/fx13/P/cup.sc, prompt and cap $0.25 from LAB-fx13
+    section 4) without fx12's sketch.inspect, plus a new no-AI wall checker lab/fx13wall.py (export ASCII STL, side
+    surfaces = tall one-radius triangles; tests/test_fx13wall.py red then 3 pass; checked off the record on the real
+    cup: solid = not hollow, hand fix = 2.00 / 2.00 / open). One run, no retry, no harness failure; class A, $0.1449.
+    The account's own claude.ai connectors also loaded in the container (names removed 13 Nov); Claude loaded and
+    called none of them. Since 13 Nov the runner starts Claude with --strict-mcp-config (only the SolidCraft server). Footage: mask only Claude
+    Code's greyed suggested prompt "save the design" (not Claude's words).

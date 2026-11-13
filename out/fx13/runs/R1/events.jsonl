@@ -1,0 +1,19 @@
+{"t": 0.503, "event": "recording started: Claude Code full screen; SolidCraft behind it on ~/cup.sc (one body, the cup: D60 x 80, edges rounded 1.5)"}
+{"t": 3.54, "event": "turn 1: typing"}
+{"t": 7.148, "event": "turn 1: Enter"}
+{"t": 7.57, "event": "turn 1: Claude working"}
+{"t": 10.615, "event": "tool call: inspect_design", "seq": 13}
+{"t": 10.615, "event": "tool call: list_commands", "seq": 14}
+{"t": 10.654, "event": "tool reply: inspect_design", "seq": 15, "isError": false}
+{"t": 10.674, "event": "tool reply: list_commands", "seq": 16, "isError": false}
+{"t": 12.206, "event": "tool call: body_topology", "seq": 17}
+{"t": 12.25, "event": "tool reply: body_topology", "seq": 18, "isError": false}
+{"t": 14.341, "event": "tool call: execute", "seq": 19}
+{"t": 14.537, "event": "tool reply: execute", "seq": 20, "isError": false}
+{"t": 15.844, "event": "tool call: measure", "seq": 21}
+{"t": 16.288, "event": "tool reply: measure", "seq": 22, "isError": false}
+{"t": 16.3, "event": "tool call: screenshot", "seq": 23}
+{"t": 16.691, "event": "tool reply: screenshot", "seq": 24, "isError": false}
+{"t": 19.416, "event": "turn 1: end-of-turn line seen"}
+{"t": 21.417, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 28.624, "event": "recording stopped"}

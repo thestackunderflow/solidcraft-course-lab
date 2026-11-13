@@ -17,6 +17,6 @@ Strings are copied from the screenshots (the app log does not carry them) and th
 | Q5 your-turn cup | 11,532.86 | chain off, top, 2 mm: built; Properties **11532.79 mm3**, 7/6/6, box 40 x 40 x 40 | C/props-40.png |
 | Q4 rounds 3, chain off | refused, rim line (maybe "Shell:") | NOT live: OK enabled before OK; **after OK** the dialog stays open with: **"not supported yet: the rim would have no thickness: an open face meets a round of radius 3.0000 mm tangentially, and the shell is 2.0000 mm thick (make the round smaller than the thickness)"** + Create Issue...; no Shell1, volume unchanged 225,477.37 | C/r3.png, C/after-ok-r3.png, C/read-c-r3.txt |
 | Q6 MCP chain true / unset | B.1 text / built 33,900.00 | call 1 `isError: true`, reply text = the B.1 line, bare (no prefix); call 2 (no `tangent_chain`) built Shell1, measure 33,899.754: the plug defaults the chain OFF. No window notice seen in D/reply.png | D/reply.txt, D/events.txt, D/read-d-after.txt |
-| Q15 R1 | class A or B | not run (PC only; this stage is no-AI) | - |
+| Q15 R1 | class A or B | **Class A**, run on the PC 13 Nov (DEVIATIONS 12), $0.1449: one solid.shell call, top face only, 2 mm inside, `tangent_chain` NOT sent (plug default off): built first time, **the line never seen**. 33,899.75 mm3 (= the hand fix), wall 2.00, floor 2.00, top open (lab/fx13wall.py). Said: "removed the top face so the top is open" | runs/R1/tools.txt, wall-after.json |
 
 Second cause (#8536, every face of a plain cylinder picked, no rounds): not a take in LAB-fx13 v1, so not run.
