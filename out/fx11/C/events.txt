@@ -1,0 +1,66 @@
+04:36:16.9  recording started: full SolidCraft window, ~/tower-sym.sc (pulled both ways from XY, -100 to 100): hold 3 s
+04:36:21.4  Browser: expand Origin
+04:36:27.4  Split Body (Model tab > Modify > Bodies > Split Body)
+04:36:36.1  Split Body dialog with its defaults: hold 2 s
+04:36:38.1  Body to split: the tower
+04:36:41.8  Splitting tool: XY in Browser > Origin
+04:36:48.8  sym split XY: OK enabled, preview shown (no live error): hold 3 s
+04:36:53.3  OK
+04:37:00.0  sym split XY: 2 bodies; Tower: 54972.98 mm3, z -0.00..100.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z -100.00..0.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;
+04:37:01.5  right-click the body row > Properties: hold 4 s
+04:37:18.6  right-click the body row > Properties: hold 4 s
+04:37:35.7  Q4: ~/tower.sc opened (a new tab)
+04:37:42.5  Browser: Origin already expanded
+04:37:45.6  Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s
+04:37:53.9  Plane: XY in Browser > Origin
+04:37:57.4  Distance: 210 mm (typed), Tab
+04:38:03.4  the plane preview at 210: hold 3 s
+04:38:07.8  OK
+04:38:16.2  Split Body (Model tab > Modify > Bodies > Split Body)
+04:38:25.0  Split Body dialog with its defaults: hold 2 s
+04:38:27.0  Body to split: the tower
+04:38:30.6  Splitting tool: Plane1 (210)
+04:38:37.8  split 210: live error under the fields, OK greyed: hold 4 s
+04:38:41.8  split 210: refused (line as shown in above.png)
+04:38:43.2  Cancel
+04:38:48.2  after Cancel: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']
+04:38:51.2  Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s
+04:38:59.6  Plane: XY in Browser > Origin
+04:39:03.1  Distance: 200 mm (typed), Tab
+04:39:09.5  the plane preview at 200: hold 3 s
+04:39:14.0  OK
+04:39:19.4  S2 end frame: the tower with the plane at its top face (200), no Split: hold 5 s
+04:39:29.6  Split Body (Model tab > Modify > Bodies > Split Body)
+04:39:38.0  Split Body dialog with its defaults: hold 2 s
+04:39:40.1  Body to split: the tower
+04:39:43.7  Splitting tool: Plane2 (200)
+04:39:51.1  split 200: live error under the fields, OK greyed: hold 4 s
+04:39:55.1  split 200: refused
+04:39:56.5  Cancel
+04:40:01.2  the planes hidden (eye on Plane1 and Plane2) so the top face can be clicked
+04:40:12.1  Split Body (Model tab > Modify > Bodies > Split Body)
+04:40:20.5  Split Body dialog with its defaults: hold 2 s
+04:40:22.6  Body to split: the tower
+04:40:26.3  Splitting tool: the tower's top face (clicked in the view)
+04:40:34.1  split top face: live error under the fields, OK greyed: hold 4 s
+04:40:38.1  split top face: refused
+04:40:39.5  Cancel
+04:40:44.9  after Q6: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Plane2']
+04:40:44.9  Q5b: ~/block.sc opened (a new tab): block 20 x 20, 80 tall, on XY: hold 3 s
+04:40:53.5  Browser: Origin already expanded
+04:40:56.6  Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s
+04:41:04.8  Plane: XY in Browser > Origin
+04:41:08.4  Distance: 40 mm (typed), Tab
+04:41:14.7  the plane preview at 40: hold 3 s
+04:41:19.0  OK
+04:41:27.2  Split Body (Model tab > Modify > Bodies > Split Body)
+04:41:35.9  Split Body dialog with its defaults: hold 2 s
+04:41:37.9  Body to split: the block
+04:41:41.6  Splitting tool: Plane1 (40)
+04:41:48.7  block split 40: OK enabled, preview shown (no live error): hold 3 s
+04:41:53.0  OK
+04:41:59.2  block split 40: 2 bodies; Block: 16000.00 mm3, z 40.00..80.00, 20.00 x 20.00 x 40.00;Block (1): 16000.00 mm3, z 0.00..40.00, 20.00 x 20.00 x 40.00;total 32000.00 mm3, 2 bodies;
+04:41:59.2  right-click the body row > Properties: hold 4 s
+04:42:16.2  right-click the body row > Properties: hold 4 s
+04:42:33.4  hold 3 s
+04:42:36.4  recording stopped

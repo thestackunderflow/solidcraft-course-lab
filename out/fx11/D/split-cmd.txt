@@ -1,0 +1,13 @@
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "split_body",
+    "id": "solid.split_body",
+    "label": "Split Body",
+    "panel": "MODIFY",
+    "params": "body: name; plane: XY|XZ|YZ|plane name|{origin, normal} — or tool: {body, point} (a face of a body, its surface extended) — or sketch: id, line: curve id (a straight sketch line, along the sketch's normal)",
+    "shortcut": null,
+    "tab": "SOLID"
+  }
+]

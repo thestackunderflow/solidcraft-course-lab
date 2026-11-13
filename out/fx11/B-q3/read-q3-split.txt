@@ -1,0 +1,1 @@
+q3-split volume 113479.66244540073 bodies 2 timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Split1']

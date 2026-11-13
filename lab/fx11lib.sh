@@ -96,10 +96,12 @@ EYE_X=209
 row_y() { echo "${1#* }"; }
 okpos() { shot /tmp/fx11/ok.png; python3 /work/lab/fx11findok.py /tmp/fx11/ok.png; }    # "blue Y" or "none"
 expand_origin() { ev "Browser: expand Origin"; g $ORIGIN_ROW 16; click; nap 1.2; }
-origin_open() {  # expand Browser > Origin only if its Z row is not showing (fx10 lib: the darkest pixel on the Z row)
+origin_open() {  # expand Browser > Origin only if it is collapsed: with it expanded the Bodies folder icon sits at
+  # (54, 451) halved; collapsed, that spot is the light grey view under a short Browser (A attempt 1: the fx10 Z-row test
+  # read Sketch1's text on that row as "expanded")
   shot /tmp/fx11/tree.png
-  local m; m=$(convert /tmp/fx11/tree.png -crop 60x24+112+704 -colorspace gray -format "%[fx:minima]" info:)
-  if awk -v m="$m" 'BEGIN{exit !(m > 0.6)}'; then expand_origin; else ev "Browser: Origin already expanded"; fi
+  local m; m=$(convert /tmp/fx11/tree.png -crop 40x30+88+888 -colorspace gray -format "%[fx:minima]" info:)
+  if awk -v m="$m" 'BEGIN{exit !(m > 0.5)}'; then expand_origin; else ev "Browser: Origin already expanded"; fi
 }
 model_tab() { g $MODEL_TAB 16; click; nap 1.0; }
 split_open() {   # Model > Modify > Split Body; the dialog with its defaults held 2 s
@@ -109,10 +111,11 @@ split_open() {   # Model > Modify > Split Body; the dialog with its defaults hel
   ev "Split Body dialog with its defaults: hold 2 s"; nap 2.0
 }
 pick_row() { ev "$1"; g $2 $3 16; click; nap 1.5; }   # pick_row LABEL X Y: a Browser row
-split_state() {  # split_state LABEL: built (OK enabled) | refused (live line, OK greyed) -> /tmp/fx11/last
-  nap 1.0; local p; p=$(okpos)
+split_state() {  # split_state LABEL: built (OK enabled) | refused (the red line shows, OK greyed) | nothing (neither)
+  nap 1.0; local p l; p=$(okpos); l=$(python3 /work/lab/fx11findline.py /tmp/fx11/ok.png)
   if [ "${p%% *}" = blue ]; then ev "$1: OK enabled, preview shown (no live error): hold 3 s"; nap 3.0; echo built > /tmp/fx11/last
-  else ev "$1: live error under the fields, OK greyed: hold 4 s"; nap 4.0; echo refused > /tmp/fx11/last; fi
+  elif [ "$l" != none ]; then ev "$1: live error under the fields, OK greyed: hold 4 s"; nap 4.0; echo refused > /tmp/fx11/last
+  else ev "$1: OK greyed and no error line (a pick missing?)"; echo nothing > /tmp/fx11/last; fi
 }
 split_ok() { ev "OK"; g $S_OK 14; click; nap 3.5; still; }
 split_cancel() {   # Cancel (its place moves down when the error line shows)

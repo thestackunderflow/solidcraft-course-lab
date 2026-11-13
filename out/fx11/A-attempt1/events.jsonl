@@ -1,0 +1,21 @@
+{"t": 0.521, "event": "recording started: full SolidCraft window, ~/tower.sc (the tower on XY, 0 to 200): hold 3 s"}
+{"t": 3.538, "event": "slow orbit (Orbit button, drag)"}
+{"t": 19.998, "event": "Home view"}
+{"t": 26.646, "event": "Browser: Origin already expanded"}
+{"t": 26.652, "event": "XY lit: the Browser row clicked (the plane under the tower's base): hold 3 s"}
+{"t": 38.938, "event": "Split Body (Model tab > Modify > Bodies > Split Body)"}
+{"t": 47.687, "event": "Split Body dialog with its defaults: hold 2 s"}
+{"t": 51.097, "event": "Body to split: the tower (Browser > Bodies > Tower)"}
+{"t": 54.622, "event": "Splitting tool: XY in Browser > Origin"}
+{"t": 61.651, "event": "split XY: live error under the fields, OK greyed: hold 4 s"}
+{"t": 65.663, "event": "split XY: refused (line as shown in refusal.png)"}
+{"t": 67.056, "event": "Create Issue... (draft only, not submitted)"}
+{"t": 72.224, "event": "report draft: hold 4 s"}
+{"t": 77.637, "event": "Close draft"}
+{"t": 81.726, "event": "Cancel"}
+{"t": 86.843, "event": "after Cancel: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2']"}
+{"t": 90.086, "event": "F1: Inspect > Section, Plane = XZ: hold 3 s"}
+{"t": 103.608, "event": "Cancel (section)"}
+{"t": 111.360, "event": "after: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2']"}
+{"t": 111.382, "event": "hold 3 s"}
+{"t": 114.406, "event": "recording stopped"}

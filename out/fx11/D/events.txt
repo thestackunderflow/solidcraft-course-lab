@@ -1,0 +1,7 @@
+04:43:25.7  recording started: SolidCraft window (top) + terminal strip: hold 3 s
+04:43:28.7  typed: python3 -I D/noai.py |& tee D/reply.txt
+04:43:39.3  solid.split_body body Tower plane XY: refused
+04:43:39.3  reply: "the tool does not split the body", isError: true
+04:43:41.4  reply + window shown: hold 5 s
+04:43:48.0  after: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2']; volume 113479.66244567354
+04:43:50.0  recording stopped

@@ -1,0 +1,16 @@
+{"t": 0.511, "event": "recording started: full SolidCraft window, ~/tower.sc: hold 3 s"}
+{"t": 5.007, "event": "Browser: expand Origin"}
+{"t": 11.233, "event": "Midplane (Model > Construct > Midplane): hold 2 s"}
+{"t": 23.002, "event": "First plane: XY (Browser > Origin; the base face's plane)"}
+{"t": 26.595, "event": "Second plane: the tower's top face (clicked in the view)"}
+{"t": 36.369, "event": "Midplane: OK enabled"}
+{"t": 42.134, "event": "midplane: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']"}
+{"t": 46.803, "event": "Split Body (Model tab > Modify > Bodies > Split Body)"}
+{"t": 55.454, "event": "Split Body dialog with its defaults: hold 2 s"}
+{"t": 57.465, "event": "Body to split: the tower"}
+{"t": 61.251, "event": "Splitting tool: Plane1 (the midplane)"}
+{"t": 68.236, "event": "split midplane: OK enabled, preview shown (no live error): hold 3 s"}
+{"t": 72.649, "event": "OK"}
+{"t": 79.762, "event": "midplane split: Tower: 54972.98 mm3, z 100.00..200.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z 0.00..100.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;"}
+{"t": 79.780, "event": "hold 3 s"}
+{"t": 82.794, "event": "recording stopped"}

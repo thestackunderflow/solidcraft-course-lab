@@ -1,0 +1,43 @@
+ev: recording started: full SolidCraft window, ~/tower.sc: hold 3 s
+ev: Browser: expand Origin
+ev: Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s
+ev: Plane: XY in Browser > Origin
+ev: Distance: 100 mm (typed), Tab
+ev: the plane preview at 100: hold 3 s
+ev: OK
+b-plane volume 113479.66244567354 bodies 1 timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']
+ev: offset plane 100: made; timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']
+ev: Split Body (Model tab > Modify > Bodies > Split Body)
+ev: Split Body dialog with its defaults: hold 2 s
+ev: Body to split: the tower (Browser > Bodies > Tower)
+ev: Splitting tool: Plane1 (Browser > Construction)
+ev: split 100: OK enabled, preview shown (no live error): hold 3 s
+ev: OK
+b-split volume 113479.66244540074 bodies 2 timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Split1']
+ev: split 100: 2 bodies; Tower: 54972.98 mm3, z 100.00..200.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z 0.00..100.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;
+ev: the Browser: two body rows: hold 4 s
+ev: right-click the body row > Properties: hold 4 s
+ev: right-click the body row > Properties: hold 4 s
+ev: F11: hide the first body (eye): hold 3 s
+ev: show it again
+ev: F11: hide the second body (eye): hold 3 s
+ev: show it again
+ev: Q3: ~/tower.sc opened again (a new tab, unsplit)
+ev: Browser: Origin already expanded
+ev: Midplane (Model > Construct > Midplane): hold 2 s
+ev: First plane: XY (Browser > Origin; the base face's plane)
+ev: Second plane: the tower's top face (clicked in the view)
+ev: Midplane: OK enabled
+b-mid volume 113479.66244540074 bodies 2 timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Split1', 'Plane2']
+ev: midplane: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Split1', 'Plane2']
+ev: Split Body (Model tab > Modify > Bodies > Split Body)
+ev: Split Body dialog with its defaults: hold 2 s
+ev: Body to split: the tower
+ev: Splitting tool: Plane1 (the midplane)
+ev: split midplane: OK greyed and no error line (a pick missing?)
+ev: Cancel
+b-mid-split volume 113479.66244540074 bodies 2 timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Split1', 'Plane2']
+ev: midplane split: Tower: 54972.98 mm3, z 100.00..200.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z 0.00..100.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;
+ev: hold 3 s
+ev: recording stopped
+B done

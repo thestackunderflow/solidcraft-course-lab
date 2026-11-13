@@ -1,0 +1,19 @@
+ev: recording started: full SolidCraft window, ~/tower.sc: hold 3 s
+ev: Browser: expand Origin
+ev: Midplane (Model > Construct > Midplane): hold 2 s
+ev: First plane: XY (Browser > Origin; the base face's plane)
+ev: Second plane: the tower's top face (clicked in the view)
+ev: Midplane: OK enabled
+q3-mid volume 113479.66244567354 bodies 1 timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']
+ev: midplane: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']
+ev: Split Body (Model tab > Modify > Bodies > Split Body)
+ev: Split Body dialog with its defaults: hold 2 s
+ev: Body to split: the tower
+ev: Splitting tool: Plane1 (the midplane)
+ev: split midplane: OK enabled, preview shown (no live error): hold 3 s
+ev: OK
+q3-split volume 113479.66244540073 bodies 2 timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Split1']
+ev: midplane split: Tower: 54972.98 mm3, z 100.00..200.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z 0.00..100.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;
+ev: hold 3 s
+ev: recording stopped
+B-q3 done

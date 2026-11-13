@@ -1,0 +1,1 @@
+[{"tool": "execute", "arguments": {"command": "solid.split_body", "params": {"body": "Tower", "plane": "XY"}}, "isError": true, "texts": ["the tool does not split the body"]}]

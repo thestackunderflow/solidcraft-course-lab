@@ -1,0 +1,6 @@
+-> open {"path": "/root/tower.sc"}
+<- ok
+   {   "errors": 0,   "features": 4,   "name": "tower",   "path": "/root/tower.sc" }
+-> execute {"command": "solid.split_body", "params": {"body": "Tower", "plane": "XY"}, "verbose": false}
+<- isError: true
+   the tool does not split the body

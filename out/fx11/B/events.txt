@@ -1,0 +1,38 @@
+04:29:42.8  recording started: full SolidCraft window, ~/tower.sc: hold 3 s
+04:29:47.3  Browser: expand Origin
+04:29:53.6  Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s
+04:30:02.0  Plane: XY in Browser > Origin
+04:30:05.5  Distance: 100 mm (typed), Tab
+04:30:11.8  the plane preview at 100: hold 3 s
+04:30:16.3  OK
+04:30:22.0  offset plane 100: made; timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']
+04:30:25.1  Split Body (Model tab > Modify > Bodies > Split Body)
+04:30:33.7  Split Body dialog with its defaults: hold 2 s
+04:30:35.7  Body to split: the tower (Browser > Bodies > Tower)
+04:30:39.4  Splitting tool: Plane1 (Browser > Construction)
+04:30:46.3  split 100: OK enabled, preview shown (no live error): hold 3 s
+04:30:50.7  OK
+04:30:57.8  split 100: 2 bodies; Tower: 54972.98 mm3, z 100.00..200.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z 0.00..100.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;
+04:30:57.8  the Browser: two body rows: hold 4 s
+04:31:05.1  right-click the body row > Properties: hold 4 s
+04:31:22.4  right-click the body row > Properties: hold 4 s
+04:31:39.8  F11: hide the first body (eye): hold 3 s
+04:31:47.8  show it again
+04:31:52.3  F11: hide the second body (eye): hold 3 s
+04:32:00.3  show it again
+04:32:05.8  Q3: ~/tower.sc opened again (a new tab, unsplit)
+04:32:11.9  Browser: Origin already expanded
+04:32:14.8  Midplane (Model > Construct > Midplane): hold 2 s
+04:32:26.9  First plane: XY (Browser > Origin; the base face's plane)
+04:32:30.4  Second plane: the tower's top face (clicked in the view)
+04:32:40.3  Midplane: OK enabled
+04:32:46.0  midplane: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Split1', 'Plane2']
+04:32:49.1  Split Body (Model tab > Modify > Bodies > Split Body)
+04:32:57.8  Split Body dialog with its defaults: hold 2 s
+04:32:59.9  Body to split: the tower
+04:33:03.6  Splitting tool: Plane1 (the midplane)
+04:33:10.9  split midplane: OK greyed and no error line (a pick missing?)
+04:33:12.3  Cancel
+04:33:17.5  midplane split: Tower: 54972.98 mm3, z 100.00..200.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z 0.00..100.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;
+04:33:17.5  hold 3 s
+04:33:20.6  recording stopped

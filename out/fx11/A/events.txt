@@ -1,0 +1,21 @@
+04:27:00.8  recording started: full SolidCraft window, ~/tower.sc (the tower on XY, 0 to 200): hold 3 s
+04:27:03.8  slow orbit (Orbit button, drag)
+04:27:19.8  Home view
+04:27:26.3  Browser: expand Origin
+04:27:29.7  XY lit: the Browser row clicked (the plane under the tower's base): hold 3 s
+04:27:41.8  Split Body (Model tab > Modify > Bodies > Split Body)
+04:27:50.2  Split Body dialog with its defaults: hold 2 s
+04:27:53.6  Body to split: the tower (Browser > Bodies > Tower)
+04:27:57.2  Splitting tool: XY in Browser > Origin
+04:28:04.5  split XY: live error under the fields, OK greyed: hold 4 s
+04:28:08.5  split XY: refused (line as shown in refusal.png)
+04:28:09.9  Create Issue... (draft only, not submitted)
+04:28:15.0  report draft: hold 4 s
+04:28:20.3  Close draft
+04:28:24.4  Cancel
+04:28:29.4  after Cancel: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2']
+04:28:32.6  F1: Inspect > Section, Plane = XZ: hold 3 s
+04:28:45.9  Cancel (section)
+04:28:53.6  after: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2']
+04:28:53.6  hold 3 s
+04:28:56.6  recording stopped

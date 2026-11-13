@@ -1,0 +1,66 @@
+{"t": 0.515, "event": "recording started: full SolidCraft window, ~/tower-sym.sc (pulled both ways from XY, -100 to 100): hold 3 s"}
+{"t": 5.017, "event": "Browser: expand Origin"}
+{"t": 11.006, "event": "Split Body (Model tab > Modify > Bodies > Split Body)"}
+{"t": 19.676, "event": "Split Body dialog with its defaults: hold 2 s"}
+{"t": 21.695, "event": "Body to split: the tower"}
+{"t": 25.399, "event": "Splitting tool: XY in Browser > Origin"}
+{"t": 32.466, "event": "sym split XY: OK enabled, preview shown (no live error): hold 3 s"}
+{"t": 36.875, "event": "OK"}
+{"t": 43.609, "event": "sym split XY: 2 bodies; Tower: 54972.98 mm3, z -0.00..100.00, 40.00 x 40.00 x 100.00;Tower (1): 58506.68 mm3, z -100.00..0.00, 40.00 x 40.00 x 100.00;total 113479.66 mm3, 2 bodies;"}
+{"t": 45.102, "event": "right-click the body row > Properties: hold 4 s"}
+{"t": 62.200, "event": "right-click the body row > Properties: hold 4 s"}
+{"t": 79.369, "event": "Q4: ~/tower.sc opened (a new tab)"}
+{"t": 86.146, "event": "Browser: Origin already expanded"}
+{"t": 89.192, "event": "Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s"}
+{"t": 97.521, "event": "Plane: XY in Browser > Origin"}
+{"t": 101.018, "event": "Distance: 210 mm (typed), Tab"}
+{"t": 107.013, "event": "the plane preview at 210: hold 3 s"}
+{"t": 111.441, "event": "OK"}
+{"t": 119.774, "event": "Split Body (Model tab > Modify > Bodies > Split Body)"}
+{"t": 128.588, "event": "Split Body dialog with its defaults: hold 2 s"}
+{"t": 130.604, "event": "Body to split: the tower"}
+{"t": 134.194, "event": "Splitting tool: Plane1 (210)"}
+{"t": 141.374, "event": "split 210: live error under the fields, OK greyed: hold 4 s"}
+{"t": 145.384, "event": "split 210: refused (line as shown in above.png)"}
+{"t": 146.797, "event": "Cancel"}
+{"t": 151.858, "event": "after Cancel: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1']"}
+{"t": 154.861, "event": "Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s"}
+{"t": 163.199, "event": "Plane: XY in Browser > Origin"}
+{"t": 166.759, "event": "Distance: 200 mm (typed), Tab"}
+{"t": 173.171, "event": "the plane preview at 200: hold 3 s"}
+{"t": 177.593, "event": "OK"}
+{"t": 183.075, "event": "S2 end frame: the tower with the plane at its top face (200), no Split: hold 5 s"}
+{"t": 193.208, "event": "Split Body (Model tab > Modify > Bodies > Split Body)"}
+{"t": 201.665, "event": "Split Body dialog with its defaults: hold 2 s"}
+{"t": 203.677, "event": "Body to split: the tower"}
+{"t": 207.278, "event": "Splitting tool: Plane2 (200)"}
+{"t": 214.712, "event": "split 200: live error under the fields, OK greyed: hold 4 s"}
+{"t": 218.725, "event": "split 200: refused"}
+{"t": 220.138, "event": "Cancel"}
+{"t": 224.832, "event": "the planes hidden (eye on Plane1 and Plane2) so the top face can be clicked"}
+{"t": 235.763, "event": "Split Body (Model tab > Modify > Bodies > Split Body)"}
+{"t": 244.170, "event": "Split Body dialog with its defaults: hold 2 s"}
+{"t": 246.185, "event": "Body to split: the tower"}
+{"t": 249.869, "event": "Splitting tool: the tower's top face (clicked in the view)"}
+{"t": 257.732, "event": "split top face: live error under the fields, OK greyed: hold 4 s"}
+{"t": 261.742, "event": "split top face: refused"}
+{"t": 263.136, "event": "Cancel"}
+{"t": 268.487, "event": "after Q6: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2', 'Plane1', 'Plane2']"}
+{"t": 268.503, "event": "Q5b: ~/block.sc opened (a new tab): block 20 x 20, 80 tall, on XY: hold 3 s"}
+{"t": 277.116, "event": "Browser: Origin already expanded"}
+{"t": 280.268, "event": "Offset Plane (Model tab > Construct): the dialog with its defaults: hold 2 s"}
+{"t": 288.455, "event": "Plane: XY in Browser > Origin"}
+{"t": 292.047, "event": "Distance: 40 mm (typed), Tab"}
+{"t": 298.277, "event": "the plane preview at 40: hold 3 s"}
+{"t": 302.572, "event": "OK"}
+{"t": 310.807, "event": "Split Body (Model tab > Modify > Bodies > Split Body)"}
+{"t": 319.547, "event": "Split Body dialog with its defaults: hold 2 s"}
+{"t": 321.562, "event": "Body to split: the block"}
+{"t": 325.192, "event": "Splitting tool: Plane1 (40)"}
+{"t": 332.337, "event": "block split 40: OK enabled, preview shown (no live error): hold 3 s"}
+{"t": 336.611, "event": "OK"}
+{"t": 342.855, "event": "block split 40: 2 bodies; Block: 16000.00 mm3, z 40.00..80.00, 20.00 x 20.00 x 40.00;Block (1): 16000.00 mm3, z 0.00..40.00, 20.00 x 20.00 x 40.00;total 32000.00 mm3, 2 bodies;"}
+{"t": 342.877, "event": "right-click the body row > Properties: hold 4 s"}
+{"t": 359.781, "event": "right-click the body row > Properties: hold 4 s"}
+{"t": 377.052, "event": "hold 3 s"}
+{"t": 380.067, "event": "recording stopped"}

@@ -1,0 +1,7 @@
+{"t": 0.513, "event": "recording started: SolidCraft window (top) + terminal strip: hold 3 s"}
+{"t": 3.522, "event": "typed: python3 -I D/noai.py |& tee D/reply.txt"}
+{"t": 14.111, "event": "solid.split_body body Tower plane XY: refused"}
+{"t": 14.111, "event": "reply: \"the tool does not split the body\", isError: true"}
+{"t": 16.196, "event": "reply + window shown: hold 5 s"}
+{"t": 22.871, "event": "after: timeline ['Sketch1', 'Extrude1', 'Sketch2', 'Extrude2']; volume 113479.66244567354"}
+{"t": 24.881, "event": "recording stopped"}
