@@ -1,0 +1,17 @@
+17:26:00.3  recording started: full SolidCraft window, ~/conv.sc (converted block): hold 3 s
+17:26:03.3  slow orbit (Orbit button, drag)
+17:26:16.3  Home view
+17:26:21.1  History bar: the first icon hovered (tooltip): hold 3 s
+17:26:26.3  History bar: the second icon hovered (tooltip): hold 3 s
+17:26:31.5  Browser: open conv:1 > Features: hold 3 s
+17:26:43.1  Create Sketch (Model > New Sketch)
+17:26:47.1  click the top at (20, 15, 20)
+17:26:52.7  sketch on converted top: full line as shown in refusal.png: hold 4 s
+17:26:59.2  the line held 8 s (F4 slow zoom)
+17:27:08.4  Create Issue... (draft only, not submitted)
+17:27:13.7  report draft as shown in report.png: hold 4 s
+17:27:18.9  Close draft
+17:27:24.5  Cancel
+17:27:30.9  after Cancel: a-after volume 24000.0 bodies 1 timeline ['conv', 'ConvertMesh1']
+17:27:30.9  hold 3 s
+17:27:33.9  recording stopped

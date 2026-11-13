@@ -1,0 +1,36 @@
+{"t": 0.512, "event": "recording started: full SolidCraft window, ~/conv.sc (converted block): hold 3 s"}
+{"t": 3.520, "event": "Browser: the body row right-click > Properties"}
+{"t": 11.747, "event": "Properties as shown in props-before.png: hold 4 s"}
+{"t": 17.075, "event": "Close"}
+{"t": 24.415, "event": "Create Sketch (Model > New Sketch)"}
+{"t": 28.477, "event": "click the top at (20, 15, 20)"}
+{"t": 33.951, "event": "the line again, hint and Use fixed plane as shown in line.png: hold 4 s"}
+{"t": 39.182, "event": "zoom target: Use fixed plane: hold 2 s"}
+{"t": 42.057, "event": "click Use fixed plane"}
+{"t": 46.387, "event": "fixed plane: sketch opened as shown in fixed.png: hold 3 s"}
+{"t": 50.703, "event": "Sketch > Circle"}
+{"t": 54.377, "event": "circle centre click"}
+{"t": 59.221, "event": "diameter 10 typed, Enter"}
+{"t": 62.841, "event": "circle 10 mm drawn as shown in circle.png: hold 2 s"}
+{"t": 66.197, "event": "Finish Sketch"}
+{"t": 70.725, "event": "Home view"}
+{"t": 78.853, "event": "Model > Extrude"}
+{"t": 82.954, "event": "Operation: Cut"}
+{"t": 89.326, "event": "Distance: 5 mm (typed), Tab"}
+{"t": 93.442, "event": "Reverse (into the block)"}
+{"t": 98.251, "event": "cut preview: hold 2 s"}
+{"t": 101.474, "event": "OK"}
+{"t": 107.519, "event": "fixed-plane cut: b-after-cut volume 23607.366147065983 bodies 1 timeline ['conv', 'ConvertMesh1', 'Sketch1', 'Extrude1']"}
+{"t": 107.538, "event": "the cut as shown in cut.png: hold 3 s"}
+{"t": 111.789, "event": "Browser: the body row right-click > Properties"}
+{"t": 119.823, "event": "Properties as shown in props.png: hold 4 s"}
+{"t": 125.142, "event": "Close"}
+{"t": 132.730, "event": "Inspect > Measure"}
+{"t": 136.906, "event": "Measure: click the top face"}
+{"t": 141.992, "event": "Measure: top face area as shown in area.png: hold 4 s"}
+{"t": 147.212, "event": "Measure: close"}
+{"t": 154.736, "event": "Home view"}
+{"t": 159.550, "event": "F11: the block with its hole turning (5 s)"}
+{"t": 173.820, "event": "Home view"}
+{"t": 180.539, "event": "hold 3 s"}
+{"t": 183.554, "event": "recording stopped"}

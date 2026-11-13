@@ -1,0 +1,36 @@
+17:28:45.9  recording started: full SolidCraft window, ~/conv.sc (converted block): hold 3 s
+17:28:48.9  Browser: the body row right-click > Properties
+17:28:57.1  Properties as shown in props-before.png: hold 4 s
+17:29:02.4  Close
+17:29:09.8  Create Sketch (Model > New Sketch)
+17:29:13.8  click the top at (20, 15, 20)
+17:29:19.3  the line again, hint and Use fixed plane as shown in line.png: hold 4 s
+17:29:24.5  zoom target: Use fixed plane: hold 2 s
+17:29:27.4  click Use fixed plane
+17:29:31.7  fixed plane: sketch opened as shown in fixed.png: hold 3 s
+17:29:36.1  Sketch > Circle
+17:29:39.7  circle centre click
+17:29:44.6  diameter 10 typed, Enter
+17:29:48.2  circle 10 mm drawn as shown in circle.png: hold 2 s
+17:29:51.5  Finish Sketch
+17:29:56.1  Home view
+17:30:04.2  Model > Extrude
+17:30:08.3  Operation: Cut
+17:30:14.7  Distance: 5 mm (typed), Tab
+17:30:18.8  Reverse (into the block)
+17:30:23.6  cut preview: hold 2 s
+17:30:26.8  OK
+17:30:32.9  fixed-plane cut: b-after-cut volume 23607.366147065983 bodies 1 timeline ['conv', 'ConvertMesh1', 'Sketch1', 'Extrude1']
+17:30:32.9  the cut as shown in cut.png: hold 3 s
+17:30:37.1  Browser: the body row right-click > Properties
+17:30:45.2  Properties as shown in props.png: hold 4 s
+17:30:50.5  Close
+17:30:58.1  Inspect > Measure
+17:31:02.3  Measure: click the top face
+17:31:07.3  Measure: top face area as shown in area.png: hold 4 s
+17:31:12.6  Measure: close
+17:31:20.1  Home view
+17:31:24.9  F11: the block with its hole turning (5 s)
+17:31:39.2  Home view
+17:31:45.9  hold 3 s
+17:31:48.9  recording stopped

@@ -1,0 +1,13 @@
+$ python3 -I D/noai.py |& tee D/reply.txt
+-> open {"path": "/root/conv.sc"}
+<- ok
+   {   "errors": 0,   "features": 2,   "name": "conv",   "path": "/root/conv.sc" }
+-> execute {"command": "sketch.create", "params": {"plane": {"face": [20, 15, 20]}}, "verbose": false}
+<- isError: true
+   invalid parameters for `sketch.create`: this face has no supported stable semantic lineage; choose a supported exact face or explicitly use
+   fixed:true
+-> execute {"command": "sketch.create", "params": {"plane": {"face": [20, 15, 20], "fixed": true}}, "verbose": false}
+<- ok
+   {   "attachment": "fixed",   "created": {     "constraints": [],     "curves": [],     "dimensions": [],     "points": []   },   "name": "Sketch1",
+   "projected": null,   "sketch": 5 }
+$ 

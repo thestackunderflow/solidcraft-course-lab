@@ -1,0 +1,19 @@
+17:37:42.1  recording started: full SolidCraft window, ~/conv2.sc (a fresh copy of the converted block): hold 3 s
+17:37:48.2  zoom target: Model tab > Create > Hole: hold 2 s
+17:37:52.5  Model > Hole
+17:37:56.3  Hole dialog with its defaults as shown in hole-dialog.png: hold 2 s
+17:37:59.6  click the top at (20, 15, 20)
+17:38:04.6  Depth: 5 mm (typed), Tab
+17:38:08.1  Diameter: 10 mm (typed), Tab
+17:38:13.3  hole preview, Drill Point Angle (default) as shown in hole-angle.png: hold 3 s
+17:38:17.8  Drill Point: Flat
+17:38:25.7  hole preview, Drill Point Flat as shown in hole-flat.png: hold 3 s
+17:38:29.9  OK
+17:38:35.7  hole on converted top: c-after-hole volume 23607.366147065983 bodies 1 timeline ['conv', 'ConvertMesh1', 'Hole1']
+17:38:35.7  the hole as shown in hole.png: hold 3 s
+17:38:40.0  Browser: the body row right-click > Properties
+17:38:48.0  Properties as shown in props.png: hold 4 s
+17:38:53.4  Close
+17:38:57.6  History bar: the new icon hovered (tooltip): hold 3 s
+17:39:03.4  hold 3 s
+17:39:06.4  recording stopped

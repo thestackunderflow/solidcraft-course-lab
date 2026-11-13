@@ -1,0 +1,36 @@
+17:40:58.1  recording started: full SolidCraft window, ~/conv.sc: hold 3 s
+17:41:01.1  Q25: History bar: ConvertMesh1 icon hovered: hold 2 s
+17:41:05.5  Q25: double-click ConvertMesh1
+17:41:10.6  Q25: after the double-click as shown in convert-edit.png: hold 3 s
+17:41:15.9  Q25: right-click ConvertMesh1
+17:41:20.8  Q25: Edit Feature
+17:41:26.5  Q25: after Edit Feature (ConvertMesh1) as shown in convert-edit2.png: hold 3 s
+17:41:31.8  Q25: History bar: the first icon (conv, Insert Mesh) hovered: hold 2 s
+17:41:36.1  Q25: right-click the first icon
+17:41:39.1  Q25: Edit Feature
+17:41:44.9  Q25: after Edit Feature (Insert Mesh) as shown in insert-edit.png: hold 3 s
+17:41:50.2  Q25: Search commands: mesh (menu names) as shown in search.png: hold 4 s
+17:42:02.9  Q21: open ~/block.sc (a plain Extrude, not converted)
+17:42:06.0  Home view
+17:42:11.0  Q21: the plain block: hold 5 s
+17:42:20.3  Create Sketch (Model > New Sketch)
+17:42:24.4  Q21: click the top at (20, 15, 20)
+17:42:29.8  sketch on extruded top: as shown in control.png: hold 4 s
+17:42:35.1  Cancel (Sketch tab > Cancel)
+17:42:41.4  Q23: open ~/conv3.sc (a fresh copy of the converted block)
+17:42:44.5  Home view
+17:42:52.5  Q23: Model > Extrude
+17:42:57.6  Q23: click the top FACE (no sketch)
+17:43:02.7  Q23: Distance 5 mm (typed), Tab
+17:43:08.0  Q23: the Extrude dialog as shown in extrude-dialog.png: hold 4 s
+17:43:13.2  Q23: OK
+17:43:18.8  extrude face: as shown in extrude-face.png: hold 4 s
+17:43:24.2  Q23 after OK: e-after-extrude volume 24000.0 bodies 1 timeline ['conv', 'ConvertMesh1']
+17:43:25.8  Q28: open ~/offset.sc (Extrude with a start offset 5, top at z 25)
+17:43:29.0  Home view
+17:43:37.1  Create Sketch (Model > New Sketch)
+17:43:41.1  Q28: click the top at (20, 15, 25)
+17:43:46.4  sketch on offset-start top: as shown in offset.png: hold 4 s
+17:43:51.8  Cancel (Sketch tab > Cancel)
+17:43:58.5  hold 3 s
+17:44:01.5  recording stopped

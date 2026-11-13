@@ -1,0 +1,8 @@
+{"t": 0.521, "event": "recording started: SolidCraft window (top) + terminal strip: hold 3 s"}
+{"t": 3.530, "event": "typed: python3 -I D/noai.py |& tee D/reply.txt"}
+{"t": 14.157, "event": "call 1 (the face): sketch.create {\"plane\": {\"face\": [20, 15, 20]}}: refused"}
+{"t": 14.157, "event": "call 1 (the face) reply: \"invalid parameters for `sketch.create`: this face has no supported stable semantic lineage; choose a supported exact face or explicitly use fixed:true\", isError: true"}
+{"t": 18.964, "event": "call 2 (fixed: true): sketch.create {\"plane\": {\"face\": [20, 15, 20], \"fixed\": true}}: created"}
+{"t": 18.964, "event": "call 2 (fixed: true) reply: \"{\\n  \\\"attachment\\\": \\\"fixed\\\",\\n  \\\"created\\\": {\\n    \\\"constraints\\\": [],\\n    \\\"curves\\\": [],\\n    \\\"dimensions\\\": [],\\n    \\\"points\\\": []\\n  },\\n  \\\"name\\\": \\\"Sketch1\\\",\\n  \\\"projected\\\": null,\\n  \\\"sketch\\\": 5\\n}\", isError: false"}
+{"t": 23.585, "event": "reply + window shown: hold 5 s"}
+{"t": 31.966, "event": "recording stopped"}

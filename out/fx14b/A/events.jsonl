@@ -1,0 +1,17 @@
+{"t": 0.512, "event": "recording started: full SolidCraft window, ~/conv.sc (converted block): hold 3 s"}
+{"t": 3.521, "event": "slow orbit (Orbit button, drag)"}
+{"t": 16.587, "event": "Home view"}
+{"t": 21.392, "event": "History bar: the first icon hovered (tooltip): hold 3 s"}
+{"t": 26.500, "event": "History bar: the second icon hovered (tooltip): hold 3 s"}
+{"t": 31.708, "event": "Browser: open conv:1 > Features: hold 3 s"}
+{"t": 43.305, "event": "Create Sketch (Model > New Sketch)"}
+{"t": 47.368, "event": "click the top at (20, 15, 20)"}
+{"t": 52.952, "event": "sketch on converted top: full line as shown in refusal.png: hold 4 s"}
+{"t": 59.420, "event": "the line held 8 s (F4 slow zoom)"}
+{"t": 68.650, "event": "Create Issue... (draft only, not submitted)"}
+{"t": 73.945, "event": "report draft as shown in report.png: hold 4 s"}
+{"t": 79.186, "event": "Close draft"}
+{"t": 84.763, "event": "Cancel"}
+{"t": 91.125, "event": "after Cancel: a-after volume 24000.0 bodies 1 timeline ['conv', 'ConvertMesh1']"}
+{"t": 91.140, "event": "hold 3 s"}
+{"t": 94.157, "event": "recording stopped"}

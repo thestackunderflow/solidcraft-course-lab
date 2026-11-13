@@ -1,0 +1,42 @@
+{"t": 0.511, "event": "recording started: full SolidCraft window, ~/conv2.sc (a fresh copy of the converted block): hold 3 s"}
+{"t": 6.458, "event": "zoom target: Model tab > Create > Hole: hold 2 s"}
+{"t": 10.525, "event": "Model > Hole"}
+{"t": 14.572, "event": "Hole dialog with its defaults as shown in hole-dialog.png: hold 2 s"}
+{"t": 17.818, "event": "click the top at (20, 15, 20)"}
+{"t": 22.838, "event": "Depth: 5 mm (typed), Tab"}
+{"t": 26.354, "event": "Diameter: 10 mm (typed), Tab"}
+{"t": 31.822, "event": "hole preview, Drill Point Angle (default) as shown in hole-angle.png: hold 3 s"}
+{"t": 36.220, "event": "Drill Point: Flat"}
+{"t": 44.358, "event": "hole preview, Drill Point Flat as shown in hole-flat.png: hold 3 s"}
+{"t": 48.606, "event": "OK"}
+{"t": 54.796, "event": "hole on converted top: c-after-hole volume 24000.0 bodies 1 timeline ['conv', 'ConvertMesh1']"}
+{"t": 54.820, "event": "the hole as shown in hole.png: hold 3 s"}
+{"t": 59.101, "event": "Browser: the body row right-click > Properties"}
+{"t": 67.636, "event": "Properties as shown in props.png: hold 4 s"}
+{"t": 73.148, "event": "Close"}
+{"t": 77.627, "event": "History bar: the new icon hovered (tooltip): hold 3 s"}
+{"t": 83.927, "event": "Q26: open ~/conv30.sc (30 x 30 x 10, converted)"}
+{"t": 87.128, "event": "Home view"}
+{"t": 92.185, "event": "the your-turn block: hold 3 s"}
+{"t": 98.366, "event": "Create Sketch (Model > New Sketch)"}
+{"t": 102.527, "event": "click the top of the 30 x 30 x 10 block"}
+{"t": 108.027, "event": "your-turn: the line as shown in yt-line.png: hold 3 s"}
+{"t": 112.162, "event": "click Use fixed plane"}
+{"t": 117.599, "event": "your-turn: sketch opened as shown in yt-fixed.png: hold 2 s"}
+{"t": 120.814, "event": "Sketch > Circle"}
+{"t": 124.410, "event": "circle centre click"}
+{"t": 129.572, "event": "diameter 10 typed, Enter"}
+{"t": 133.097, "event": "Finish Sketch"}
+{"t": 137.671, "event": "Home view"}
+{"t": 145.821, "event": "Model > Extrude"}
+{"t": 149.988, "event": "Operation: Cut"}
+{"t": 156.178, "event": "Distance: 5 mm (typed), Tab"}
+{"t": 160.135, "event": "Reverse (into the block)"}
+{"t": 164.923, "event": "cut preview: hold 2 s"}
+{"t": 168.040, "event": "OK"}
+{"t": 174.164, "event": "your-turn cut: c-after-yt volume 8607.36614706598 bodies 1 timeline ['conv30', 'ConvertMesh1', 'Sketch1', 'Extrude1']"}
+{"t": 174.175, "event": "Browser: the body row right-click > Properties"}
+{"t": 182.510, "event": "Properties as shown in yt-props.png: hold 4 s"}
+{"t": 187.750, "event": "Close"}
+{"t": 192.075, "event": "hold 3 s"}
+{"t": 195.087, "event": "recording stopped"}

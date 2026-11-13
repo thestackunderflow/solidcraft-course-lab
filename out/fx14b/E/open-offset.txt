@@ -1,0 +1,1 @@
+open {"content": [{"text": "{\n  \"errors\": 0,\n  \"features\": 2,\n  \"name\": \"offset\",\n  \"path\": \"/root/offset.sc\"\n}", "type": "text"}]}

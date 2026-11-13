@@ -1,0 +1,42 @@
+17:33:18.1  recording started: full SolidCraft window, ~/conv2.sc (a fresh copy of the converted block): hold 3 s
+17:33:24.1  zoom target: Model tab > Create > Hole: hold 2 s
+17:33:28.2  Model > Hole
+17:33:32.2  Hole dialog with its defaults as shown in hole-dialog.png: hold 2 s
+17:33:35.4  click the top at (20, 15, 20)
+17:33:40.5  Depth: 5 mm (typed), Tab
+17:33:44.0  Diameter: 10 mm (typed), Tab
+17:33:49.4  hole preview, Drill Point Angle (default) as shown in hole-angle.png: hold 3 s
+17:33:53.8  Drill Point: Flat
+17:34:02.0  hole preview, Drill Point Flat as shown in hole-flat.png: hold 3 s
+17:34:06.2  OK
+17:34:12.4  hole on converted top: c-after-hole volume 24000.0 bodies 1 timeline ['conv', 'ConvertMesh1']
+17:34:12.4  the hole as shown in hole.png: hold 3 s
+17:34:16.7  Browser: the body row right-click > Properties
+17:34:25.3  Properties as shown in props.png: hold 4 s
+17:34:30.8  Close
+17:34:35.2  History bar: the new icon hovered (tooltip): hold 3 s
+17:34:41.5  Q26: open ~/conv30.sc (30 x 30 x 10, converted)
+17:34:44.8  Home view
+17:34:49.8  the your-turn block: hold 3 s
+17:34:56.0  Create Sketch (Model > New Sketch)
+17:35:00.2  click the top of the 30 x 30 x 10 block
+17:35:05.6  your-turn: the line as shown in yt-line.png: hold 3 s
+17:35:09.8  click Use fixed plane
+17:35:15.2  your-turn: sketch opened as shown in yt-fixed.png: hold 2 s
+17:35:18.4  Sketch > Circle
+17:35:22.0  circle centre click
+17:35:27.2  diameter 10 typed, Enter
+17:35:30.7  Finish Sketch
+17:35:35.3  Home view
+17:35:43.4  Model > Extrude
+17:35:47.6  Operation: Cut
+17:35:53.8  Distance: 5 mm (typed), Tab
+17:35:57.8  Reverse (into the block)
+17:36:02.5  cut preview: hold 2 s
+17:36:05.7  OK
+17:36:11.8  your-turn cut: c-after-yt volume 8607.36614706598 bodies 1 timeline ['conv30', 'ConvertMesh1', 'Sketch1', 'Extrude1']
+17:36:11.8  Browser: the body row right-click > Properties
+17:36:20.1  Properties as shown in yt-props.png: hold 4 s
+17:36:25.4  Close
+17:36:29.7  hold 3 s
+17:36:32.7  recording stopped

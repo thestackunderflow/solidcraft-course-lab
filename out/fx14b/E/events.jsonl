@@ -1,0 +1,36 @@
+{"t": 0.515, "event": "recording started: full SolidCraft window, ~/conv.sc: hold 3 s"}
+{"t": 3.526, "event": "Q25: History bar: ConvertMesh1 icon hovered: hold 2 s"}
+{"t": 7.853, "event": "Q25: double-click ConvertMesh1"}
+{"t": 12.997, "event": "Q25: after the double-click as shown in convert-edit.png: hold 3 s"}
+{"t": 18.285, "event": "Q25: right-click ConvertMesh1"}
+{"t": 23.233, "event": "Q25: Edit Feature"}
+{"t": 28.936, "event": "Q25: after Edit Feature (ConvertMesh1) as shown in convert-edit2.png: hold 3 s"}
+{"t": 34.234, "event": "Q25: History bar: the first icon (conv, Insert Mesh) hovered: hold 2 s"}
+{"t": 38.523, "event": "Q25: right-click the first icon"}
+{"t": 41.482, "event": "Q25: Edit Feature"}
+{"t": 47.281, "event": "Q25: after Edit Feature (Insert Mesh) as shown in insert-edit.png: hold 3 s"}
+{"t": 52.568, "event": "Q25: Search commands: mesh (menu names) as shown in search.png: hold 4 s"}
+{"t": 65.263, "event": "Q21: open ~/block.sc (a plain Extrude, not converted)"}
+{"t": 68.441, "event": "Home view"}
+{"t": 73.367, "event": "Q21: the plain block: hold 5 s"}
+{"t": 82.666, "event": "Create Sketch (Model > New Sketch)"}
+{"t": 86.744, "event": "Q21: click the top at (20, 15, 20)"}
+{"t": 92.147, "event": "sketch on extruded top: as shown in control.png: hold 4 s"}
+{"t": 97.534, "event": "Cancel (Sketch tab > Cancel)"}
+{"t": 103.747, "event": "Q23: open ~/conv3.sc (a fresh copy of the converted block)"}
+{"t": 106.919, "event": "Home view"}
+{"t": 114.878, "event": "Q23: Model > Extrude"}
+{"t": 119.973, "event": "Q23: click the top FACE (no sketch)"}
+{"t": 125.107, "event": "Q23: Distance 5 mm (typed), Tab"}
+{"t": 130.408, "event": "Q23: the Extrude dialog as shown in extrude-dialog.png: hold 4 s"}
+{"t": 135.608, "event": "Q23: OK"}
+{"t": 141.177, "event": "extrude face: as shown in extrude-face.png: hold 4 s"}
+{"t": 146.650, "event": "Q23 after OK: e-after-extrude volume 24000.0 bodies 1 timeline ['conv', 'ConvertMesh1']"}
+{"t": 148.229, "event": "Q28: open ~/offset.sc (Extrude with a start offset 5, top at z 25)"}
+{"t": 151.406, "event": "Home view"}
+{"t": 159.476, "event": "Create Sketch (Model > New Sketch)"}
+{"t": 163.491, "event": "Q28: click the top at (20, 15, 25)"}
+{"t": 168.827, "event": "sketch on offset-start top: as shown in offset.png: hold 4 s"}
+{"t": 174.237, "event": "Cancel (Sketch tab > Cancel)"}
+{"t": 180.892, "event": "hold 3 s"}
+{"t": 183.910, "event": "recording stopped"}

@@ -1,0 +1,19 @@
+{"t": 0.512, "event": "recording started: full SolidCraft window, ~/conv2.sc (a fresh copy of the converted block): hold 3 s"}
+{"t": 6.597, "event": "zoom target: Model tab > Create > Hole: hold 2 s"}
+{"t": 10.936, "event": "Model > Hole"}
+{"t": 14.778, "event": "Hole dialog with its defaults as shown in hole-dialog.png: hold 2 s"}
+{"t": 18.026, "event": "click the top at (20, 15, 20)"}
+{"t": 23.047, "event": "Depth: 5 mm (typed), Tab"}
+{"t": 26.551, "event": "Diameter: 10 mm (typed), Tab"}
+{"t": 31.790, "event": "hole preview, Drill Point Angle (default) as shown in hole-angle.png: hold 3 s"}
+{"t": 36.214, "event": "Drill Point: Flat"}
+{"t": 44.107, "event": "hole preview, Drill Point Flat as shown in hole-flat.png: hold 3 s"}
+{"t": 48.364, "event": "OK"}
+{"t": 54.160, "event": "hole on converted top: c-after-hole volume 23607.366147065983 bodies 1 timeline ['conv', 'ConvertMesh1', 'Hole1']"}
+{"t": 54.186, "event": "the hole as shown in hole.png: hold 3 s"}
+{"t": 58.456, "event": "Browser: the body row right-click > Properties"}
+{"t": 66.482, "event": "Properties as shown in props.png: hold 4 s"}
+{"t": 71.811, "event": "Close"}
+{"t": 76.022, "event": "History bar: the new icon hovered (tooltip): hold 3 s"}
+{"t": 81.840, "event": "hold 3 s"}
+{"t": 84.856, "event": "recording stopped"}
