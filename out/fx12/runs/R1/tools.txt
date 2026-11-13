@@ -1,0 +1,23 @@
+R1 tool calls (from the proxy's transcript.jsonl + session.jsonl), in order:
+1. ToolSearch (load the solidcraft tools)  -> ok
+2. inspect_design {}  -> ok (Sketch1 only, params d1 60, d2 40, d3 2 mm)
+3. list_commands {"filter": "fillet"}  -> ok
+4. list_commands {"filter": "sketch.edit"}  -> ok
+5. batch [sketch.edit Sketch1, sketch.fillet points l5.end l6.end l7.end l8.end radius 3 mm]  -> isError true, rolled back:
+   "invalid parameters for `sketch.fillet`: `l5` is an offset, and its corners follow its source curves: round or cut
+   the source corners before offsetting, or break the offset association first"  (= Q13 text; curve named l5 here)
+6. list_commands {"filter": "offset"}  -> ok
+7. batch [sketch.edit Sketch1, sketch.offset.break l5 (freed l5-l8), sketch.fillet the four corners 3 mm (a1-a4, param d3),
+   sketch.finish]  -> ok
+8. inspect_design {measure: false}  -> ok (its check)
+The refusal was in a tool reply only (collapsed as "Called solidcraft 6 times"); the window showed no refusal.
+After the run (read-after.json, off camera): outline 60 x 40 unchanged; four arcs R 3.00 centred (+-25, +-15); no offset
+constraint, links [], DOF 6; regions 391.73 + 2,008.27 mm2 = take B-wall (Fix 1) exactly; ring x 20 = 7,834.51 mm3
+(analytic; not extruded; the window's Fix 1 extrude measured 7,834.61); corner wall 5 x sqrt(2) - 3 = 4.07 at all four.
+Timeline Sketch1 only, not saved (dirty). Param d3 (the old 2 mm offset) now 3 mm = the radius: take B-wall by hand
+shows the same reuse (d3 3 mm), so this is SolidCraft's naming, and Claude's reply says it correctly.
+Unchecked claim in the reply: "Undo restores the link" (not tested).
+lab sketch.inspect before/after refused "no sketch is being edited" (my script, not Claude): geometry from inspect_design.
+Greyed suggested prompt after the reply (Claude Code's, not sent): "extrude the tray with a 15 mm height" - mask it.
+Model: claude-sonnet-5-5 (/cost: Sonnet 5.5 $0.1759 + Haiku 5.5 $0.0001 = $0.1761). Wall 112 s.
+cost 0.1761

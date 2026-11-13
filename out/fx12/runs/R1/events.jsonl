@@ -1,0 +1,21 @@
+{"t": 0.503, "event": "recording started: Claude Code full screen; SolidCraft behind it on ~/tray.sc (Sketch1: outline + linked 2 mm offset)"}
+{"t": 3.562, "event": "turn 1: typing"}
+{"t": 7.134, "event": "turn 1: Enter"}
+{"t": 7.544, "event": "turn 1: Claude working"}
+{"t": 11.288, "event": "tool call: inspect_design", "seq": 13}
+{"t": 11.329, "event": "tool reply: inspect_design", "seq": 14, "isError": false}
+{"t": 13.645, "event": "tool call: list_commands", "seq": 15}
+{"t": 13.645, "event": "tool call: list_commands", "seq": 16}
+{"t": 13.653, "event": "tool reply: list_commands", "seq": 17, "isError": false}
+{"t": 13.678, "event": "tool reply: list_commands", "seq": 18, "isError": false}
+{"t": 16.475, "event": "tool call: batch", "seq": 19}
+{"t": 16.478, "event": "tool reply: batch", "seq": 20, "isError": true}
+{"t": 21.806, "event": "tool call: list_commands", "seq": 21}
+{"t": 21.813, "event": "tool reply: list_commands", "seq": 22, "isError": false}
+{"t": 23.953, "event": "tool call: batch", "seq": 23}
+{"t": 23.957, "event": "tool reply: batch", "seq": 24, "isError": false}
+{"t": 26.385, "event": "tool call: inspect_design", "seq": 25}
+{"t": 26.401, "event": "tool reply: inspect_design", "seq": 26, "isError": false}
+{"t": 32.005, "event": "turn 1: end-of-turn line seen"}
+{"t": 34.005, "event": "turn 1: reply done", "answers": [], "timed_out": false}
+{"t": 41.283, "event": "recording stopped"}

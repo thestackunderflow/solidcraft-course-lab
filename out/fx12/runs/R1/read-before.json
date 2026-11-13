@@ -1,0 +1,501 @@
+{
+ "measure": {
+  "bodies": [],
+  "body_count": 0,
+  "total": {
+   "area_mm2": -0.0,
+   "edges": 0,
+   "faces": 0,
+   "mass_g": -0.0,
+   "open_bodies_skipped": 0,
+   "vertices": 0,
+   "volume_mm3": -0.0
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [],
+  "dirty": false,
+  "hidden_origin": [],
+  "marker": 1,
+  "metadata": {},
+  "name": "tray",
+  "params": [
+   {
+    "comment": "",
+    "error": null,
+    "expression": "60 mm",
+    "model": true,
+    "name": "d1",
+    "unit": "mm",
+    "value": 60.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "40 mm",
+    "model": true,
+    "name": "d2",
+    "unit": "mm",
+    "value": 40.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "2 mm",
+    "model": true,
+    "name": "d3",
+    "unit": "mm",
+    "value": 2.0
+   }
+  ],
+  "path": null,
+  "redo": 0,
+  "revision": 3,
+  "selection": [],
+  "sketches": [
+   {
+    "constraints": [
+     {
+      "id": "k1",
+      "l": 0,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "id": "k2",
+      "l": 2,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "id": "k3",
+      "l": 1,
+      "name": "Vertical",
+      "type": "vertical"
+     },
+     {
+      "id": "k4",
+      "l": 3,
+      "name": "Vertical",
+      "type": "vertical"
+     },
+     {
+      "expression": "60 mm",
+      "id": "k5",
+      "l": 0,
+      "name": "LinearDimension",
+      "param": "d1",
+      "type": "length",
+      "value": 60.0
+     },
+     {
+      "expression": "40 mm",
+      "id": "k6",
+      "l": 1,
+      "name": "LinearDimension",
+      "param": "d2",
+      "type": "length",
+      "value": 40.0
+     },
+     {
+      "a": 0,
+      "b": 4,
+      "id": "k7",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "a": 1,
+      "b": 5,
+      "id": "k8",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "a": 2,
+      "b": 6,
+      "id": "k9",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "a": 3,
+      "b": 7,
+      "id": "k10",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "expression": "2 mm",
+      "id": "k11",
+      "name": "OffsetDimension",
+      "output": "l5",
+      "param": "d3",
+      "reverse": false,
+      "type": "offset_distance",
+      "value": 2.0
+     }
+    ],
+    "curves": [
+     {
+      "construction": false,
+      "end": "p2",
+      "end_at": [
+       30.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l1",
+      "start": "p1",
+      "start_at": [
+       -30.0,
+       -20.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p3",
+      "end_at": [
+       30.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l2",
+      "start": "p2",
+      "start_at": [
+       30.0,
+       -20.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p4",
+      "end_at": [
+       -30.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l3",
+      "start": "p3",
+      "start_at": [
+       30.0,
+       20.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p1",
+      "end_at": [
+       -30.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l4",
+      "start": "p4",
+      "start_at": [
+       -30.0,
+       20.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p6",
+      "end_at": [
+       28.0,
+       -18.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l5",
+      "start": "p5",
+      "start_at": [
+       -28.0,
+       -18.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p7",
+      "end_at": [
+       28.0,
+       18.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l6",
+      "start": "p6",
+      "start_at": [
+       28.0,
+       -18.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p8",
+      "end_at": [
+       -28.0,
+       18.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l7",
+      "start": "p7",
+      "start_at": [
+       28.0,
+       18.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p5",
+      "end_at": [
+       -28.0,
+       -18.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l8",
+      "start": "p8",
+      "start_at": [
+       -28.0,
+       18.0
+      ],
+      "type": "line"
+     }
+    ],
+    "dof": 2,
+    "failing": [],
+    "fully_constrained": false,
+    "id": 1,
+    "links": [],
+    "name": "Sketch1",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "points": [
+     {
+      "at": [
+       0.0,
+       0.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "origin",
+      "link": null,
+      "world": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -30.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p1",
+      "link": null,
+      "world": [
+       -30.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       30.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p2",
+      "link": null,
+      "world": [
+       30.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       30.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p3",
+      "link": null,
+      "world": [
+       30.0,
+       20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -30.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p4",
+      "link": null,
+      "world": [
+       -30.0,
+       20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -28.0,
+       -18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p5",
+      "link": null,
+      "world": [
+       -28.0,
+       -18.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       28.0,
+       -18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p6",
+      "link": null,
+      "world": [
+       28.0,
+       -18.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       28.0,
+       18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p7",
+      "link": null,
+      "world": [
+       28.0,
+       18.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -28.0,
+       18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p8",
+      "link": null,
+      "world": [
+       -28.0,
+       18.0,
+       0.0
+      ]
+     }
+    ],
+    "profiles": [
+     {
+      "area_mm2": 384.0,
+      "centroid_sketch": [
+       0.0,
+       0.0
+      ],
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4"
+      ],
+      "holes": [
+       [
+        "l5",
+        "l6",
+        "l7",
+        "l8"
+       ]
+      ],
+      "index": 0
+     },
+     {
+      "area_mm2": 2016.0,
+      "centroid_sketch": [
+       0.0,
+       0.0
+      ],
+      "curves": [
+       "l5",
+       "l6",
+       "l7",
+       "l8"
+      ],
+      "holes": [],
+      "index": 1
+     }
+    ],
+    "status": "solved",
+    "visible": true,
+    "wires": []
+   }
+  ],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 1,
+    "ms": 5.732916,
+    "name": "Sketch1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "Sketch",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

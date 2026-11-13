@@ -23,3 +23,10 @@ Nothing was re-scored or re-rolled. Every take is kept.
 7. **Take C step 7 (F10, box.sc)** not filmed (LAB: "logged only if time allows").
 8. **Clips.** lab/fx12clips.py, tests/test_fx12clips.py (red: no module; then 3 pass). Run on the box with
    -v ~/jobs/box-test/video-qa:/footage:ro.
+9. **R1 run on the PC (13 Nov 2026), takes on the Ubuntu box, same image sc5-l5:0.28.0.** lab/fx12R1.sh +
+   claude-run/fx12run.sh are copies of the fx11 pair (start out/fx12/P/tray.sc, prompt and cap $0.25 from LAB-fx12
+   section 4), plus a sketch.inspect read before/after, which was refused ("no sketch is being edited": the sketch was
+   not in edit mode); the scoring geometry comes from inspect_design's sketches in read-after.json instead. Not
+   extruded after the run: the volume is ring area x 20 (analytic 7,834.51; the window's Fix 1 extrude gave 7,834.61).
+   One run, no retry, no harness failure; class A, $0.1761. Footage: mask Claude Code's greyed suggested prompt
+   "extrude the tray with a 15 mm height" (not Claude's words).

@@ -50,4 +50,8 @@ l4: refused "that would over-constrain the sketch (conflicts with k1, ...)". Att
 d1 = 70 mm (set_parameter): **the copy follows**: the same ids l5..a8, arcs still R 3, linked (k29); regions 410.27 +
 2,368.27 (= 66 x 36 - 9(4 - pi)).
 
-**Q15 (R1).** Not run (PC only, owner's Claude login).
+**Q15 (R1).** Run on the PC 13 Nov (DEVIATIONS 9). **Class A**, $0.1761 (claude-sonnet-5-5, Claude Code 2.1.311).
+Claude's first fillet on the copy got the line (MCP, curve `l5`), it then broke the association and filleted 3 mm, and
+said so ("SolidCraft won't let you fillet an offset curve. I broke that link"), plus that the inner edges no longer
+follow the outline. Result = Fix 1 exactly: four R 3.00, outline 60 x 40, regions 391.73 + 2,008.27, corner wall 4.07,
+ring x 20 = 7,834.51 mm3 analytic. Not saved. runs/R1/tools.txt.
