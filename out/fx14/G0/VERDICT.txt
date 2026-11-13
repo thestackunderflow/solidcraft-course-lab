@@ -1,0 +1,21 @@
+fx14 gate G0 verdict (LAB-fx14 section 3 step 3), 13 Nov 2026, SolidCraft 0.28.0 on the Ubuntu box, no AI
+
+PASSING RUNG: none
+STOP RULE S1 applies: fx14 is dropped. No take filmed, no R1 run.
+
+Window line per rung (verbatim):
+- G0a Align:          attached (Sketch2 opened on the top, no error line)
+- G0b Combine:        attached (Sketch3 opened on the merged 40 x 30 top, no error line)
+- G0c shelled rim:    attached (Sketch2 opened on the rim, both rim loops projected, no error line)
+- G0d converted mesh: "Create Sketch: this face has no supported stable semantic lineage; choose a supported exact face or explicitly use fixed:true"
+                      (with the hint "This face cannot provide a durable attachment. Choose another face or explicitly use a fixed plane." and the "Use fixed plane" button; report draft "CREATE SKETCH: operation failed")
+None shows "this face can't keep an attachment: ...".
+
+Q14, the target face's name before / after the edit (model.faces; it has no certificate field, so the
+"certificate" column is sketch.create's reply field `attachment`):
+- control: F2:top exact true, area 1,200; attachment exact_face
+- G0a:     F2:top exact true -> F3:face:5 exact FALSE (every face of the body exact false after Align); still attachment exact_face
+           (the name is lost, but the face still attaches: as the accuracy review predicted, ACCURACY C.6 / C.11)
+- G0b:     F2:top exact true -> F2:top exact true, area 1,200 (the merged top keeps Body1's name; Body2's top is gone); exact_face
+- G0c:     F2:top exact true (1,200) -> F2:top exact true, area 264 (the 2 mm rim); exact_face
+- G0d:     (mesh) -> F4:face:5 exact false after Convert Mesh; refused with the sketch_face.rs 223 line, not the C.1 line

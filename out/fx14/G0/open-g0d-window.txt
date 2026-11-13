@@ -1,0 +1,1 @@
+open {"content": [{"text": "{\n  \"errors\": 0,\n  \"features\": 2,\n  \"name\": \"g0d\",\n  \"path\": \"/root/g0d.sc\"\n}", "type": "text"}]}

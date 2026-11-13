@@ -1,0 +1,2284 @@
+######## g0a
+-> new_design {}
+<- isError False: {
+  "name": "Untitled"
+}
+
+-> execute {"command": "sketch.create", "params": {"plane": "XY"}, "verbose": false}
+<- isError False: {
+  "attachment": "fixed",
+  "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [],
+    "points": []
+  },
+  "name": "Sketch1",
+  "projected": null,
+  "sketch": 1
+}
+
+-> execute {"command": "sketch.rectangle.two_point", "params": {"p0": [0, 0], "p1": [40, 30]}, "verbose": false}
+<- isError False: {
+  "corners": {
+    "bottom_left": "p1",
+    "bottom_right": "p2",
+    "top_left": "p4",
+    "top_right": "p3"
+  },
+  "created": {
+    "constraints": [
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5"
+    ],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "sides": {
+    "bottom": "l1",
+    "left": "l4",
+    "right": "l2",
+    "top": "l3"
+  },
+  "sketch": {
+    "dof": 2,
+    "solved": true
+  }
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 1,
+  "sketch": 1
+}
+
+-> execute {"command": "solid.extrude", "params": {"distance": 20, "operation": "new"}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [],
+  "created_bodies": [
+    "Body1"
+  ],
+  "feature": 2,
+  "ms": 0.783237,
+  "name": "Extrude1",
+  "removed_bodies": [],
+  "warning": null
+}
+
+== model.faces Body1 plain block (control): isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:start",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        0.0
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        0.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        30.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F2:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        20.0
+      ]
+    }
+  ]
+}
+
+-> execute {"command": "sketch.create", "params": {"plane": {"face": [20, 15, 20]}}, "verbose": false}
+<- isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 3
+}
+
+#### control sketch.create face [20,15,20]: isError False
+#### reply: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 3
+}
+
+-> undo {}
+<- isError False: {
+  "undone": "Create Sketch"
+}
+
+after undo: (24000.0, [('Body1', 24000.0)])
+== model.faces Body1 G0a before Align: isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:start",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        0.0
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        0.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        30.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F2:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        20.0
+      ]
+    }
+  ]
+}
+
+-> execute {"command": "solid.align", "params": {"bodies": ["Body1"], "from": [0, 0, 0], "to": [0, 0, 5]}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [
+    "Body1"
+  ],
+  "created_bodies": [],
+  "feature": 3,
+  "ms": 0.09844,
+  "name": "Align1",
+  "removed_bodies": [],
+  "warning": null
+}
+
+== model.faces Body1 G0a after Align: isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        5.0
+      ],
+      "exact": false,
+      "index": 0,
+      "name": "F3:face:0",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        5.0
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        15.0
+      ],
+      "exact": false,
+      "index": 1,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        0.0,
+        12.639320225002104
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        15.0
+      ],
+      "exact": false,
+      "index": 2,
+      "name": "F2:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        11.972243622680054
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        15.0
+      ],
+      "exact": false,
+      "index": 3,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        30.0,
+        12.639320225002104
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        15.0
+      ],
+      "exact": false,
+      "index": 4,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        11.972243622680054
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        25.0
+      ],
+      "exact": false,
+      "index": 5,
+      "name": "F3:face:5",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        25.0
+      ]
+    }
+  ]
+}
+
+-> save {"path": "/root/g0a.sc"}
+<- isError False: {
+  "bytes": 11057,
+  "name": "g0a",
+  "path": "/root/g0a.sc"
+}
+
+== g0a: volume (24000.0, [('Body1', 24000.0)])
+-> execute {"command": "sketch.create", "params": {"plane": {"face": [20, 15, 25]}}, "verbose": false}
+<- isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 4
+}
+
+#### g0a sketch.create face [20, 15, 25]: isError False
+#### reply: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 4
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 1,
+  "sketch": 4
+}
+
+######## g0b
+-> new_design {}
+<- isError False: {
+  "name": "Untitled"
+}
+
+-> execute {"command": "sketch.create", "params": {"plane": "XY"}, "verbose": false}
+<- isError False: {
+  "attachment": "fixed",
+  "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [],
+    "points": []
+  },
+  "name": "Sketch1",
+  "projected": null,
+  "sketch": 1
+}
+
+-> execute {"command": "sketch.rectangle.two_point", "params": {"p0": [0, 0], "p1": [20, 30]}, "verbose": false}
+<- isError False: {
+  "corners": {
+    "bottom_left": "p1",
+    "bottom_right": "p2",
+    "top_left": "p4",
+    "top_right": "p3"
+  },
+  "created": {
+    "constraints": [
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5"
+    ],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "sides": {
+    "bottom": "l1",
+    "left": "l4",
+    "right": "l2",
+    "top": "l3"
+  },
+  "sketch": {
+    "dof": 2,
+    "solved": true
+  }
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 1,
+  "sketch": 1
+}
+
+-> execute {"command": "solid.extrude", "params": {"distance": 20, "operation": "new"}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [],
+  "created_bodies": [
+    "Body1"
+  ],
+  "feature": 2,
+  "ms": 0.373446,
+  "name": "Extrude1",
+  "removed_bodies": [],
+  "warning": null
+}
+
+-> execute {"command": "sketch.create", "params": {"plane": "XY"}, "verbose": false}
+<- isError False: {
+  "attachment": "fixed",
+  "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [],
+    "points": []
+  },
+  "name": "Sketch2",
+  "projected": null,
+  "sketch": 3
+}
+
+-> execute {"command": "sketch.rectangle.two_point", "params": {"p0": [20, 0], "p1": [40, 30]}, "verbose": false}
+<- isError False: {
+  "corners": {
+    "bottom_left": "p1",
+    "bottom_right": "p2",
+    "top_left": "p4",
+    "top_right": "p3"
+  },
+  "created": {
+    "constraints": [
+      "k1",
+      "k2",
+      "k3",
+      "k4"
+    ],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "sides": {
+    "bottom": "l1",
+    "left": "l4",
+    "right": "l2",
+    "top": "l3"
+  },
+  "sketch": {
+    "dof": 4,
+    "solved": true
+  }
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 1,
+  "sketch": 3
+}
+
+-> execute {"command": "solid.extrude", "params": {"distance": 20, "operation": "new"}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [],
+  "created_bodies": [
+    "Body2"
+  ],
+  "feature": 4,
+  "ms": 0.330492,
+  "name": "Extrude2",
+  "removed_bodies": [],
+  "warning": null
+}
+
+bodies ['Body1', 'Body2']
+== model.faces Body1 G0b before Combine (target): isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 600.0,
+      "centroid": [
+        10.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:start",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        13.027756377319946,
+        6.972243622680054,
+        0.0
+      ]
+    },
+    {
+      "area": 400.0,
+      "centroid": [
+        10.000000000000002,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        14.142135623730951,
+        0.0,
+        5.857864376269049
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        20.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        20.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 400.0,
+      "centroid": [
+        10.000000000000002,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        5.857864376269049,
+        30.0,
+        5.857864376269049
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        10.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F2:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        13.027756377319946,
+        6.972243622680054,
+        20.0
+      ]
+    }
+  ]
+}
+
+== model.faces Body2 G0b before Combine (tool): isError False
+{
+  "body": "Body2",
+  "faces": [
+    {
+      "area": 600.0,
+      "centroid": [
+        30.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F4:start",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        33.027756377319946,
+        6.972243622680054,
+        0.0
+      ]
+    },
+    {
+      "area": 400.0,
+      "centroid": [
+        30.0,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F4:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        34.14213562373095,
+        0.0,
+        5.857864376269049
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F4:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 400.0,
+      "centroid": [
+        30.0,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F4:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        25.85786437626905,
+        30.0,
+        5.857864376269049
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        20.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F4:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        20.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        30.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F4:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        33.027756377319946,
+        6.972243622680054,
+        20.0
+      ]
+    }
+  ]
+}
+
+-> execute {"command": "solid.combine", "params": {"target": "Body1", "tools": ["Body2"], "operation": "join"}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [
+    "Body1"
+  ],
+  "created_bodies": [],
+  "feature": 5,
+  "ms": 5.540986,
+  "name": "Combine1",
+  "removed_bodies": [
+    "Body2"
+  ],
+  "warning": null
+}
+
+== model.faces Body1 G0b after Combine: isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:start",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        0.0
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        0.0,
+        12.360679774997896
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F4:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        30.0,
+        12.360679774997896
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F2:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        20.0
+      ]
+    }
+  ]
+}
+
+-> save {"path": "/root/g0b.sc"}
+<- isError False: {
+  "bytes": 12550,
+  "name": "g0b",
+  "path": "/root/g0b.sc"
+}
+
+== g0b: volume (24000.0, [('Body1', 24000.0)])
+-> execute {"command": "sketch.create", "params": {"plane": {"face": [20, 15, 20]}}, "verbose": false}
+<- isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch3",
+  "projected": "j1",
+  "sketch": 6
+}
+
+#### g0b sketch.create face [20, 15, 20]: isError False
+#### reply: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch3",
+  "projected": "j1",
+  "sketch": 6
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 1,
+  "sketch": 6
+}
+
+######## g0c
+-> new_design {}
+<- isError False: {
+  "name": "Untitled"
+}
+
+-> execute {"command": "sketch.create", "params": {"plane": "XY"}, "verbose": false}
+<- isError False: {
+  "attachment": "fixed",
+  "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [],
+    "points": []
+  },
+  "name": "Sketch1",
+  "projected": null,
+  "sketch": 1
+}
+
+-> execute {"command": "sketch.rectangle.two_point", "params": {"p0": [0, 0], "p1": [40, 30]}, "verbose": false}
+<- isError False: {
+  "corners": {
+    "bottom_left": "p1",
+    "bottom_right": "p2",
+    "top_left": "p4",
+    "top_right": "p3"
+  },
+  "created": {
+    "constraints": [
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5"
+    ],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "sides": {
+    "bottom": "l1",
+    "left": "l4",
+    "right": "l2",
+    "top": "l3"
+  },
+  "sketch": {
+    "dof": 2,
+    "solved": true
+  }
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 1,
+  "sketch": 1
+}
+
+-> execute {"command": "solid.extrude", "params": {"distance": 20, "operation": "new"}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [],
+  "created_bodies": [
+    "Body1"
+  ],
+  "feature": 2,
+  "ms": 0.402088,
+  "name": "Extrude1",
+  "removed_bodies": [],
+  "warning": null
+}
+
+== model.faces Body1 G0c before Shell: isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:start",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        0.0
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        0.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        30.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F2:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        20.0
+      ]
+    }
+  ]
+}
+
+-> execute {"command": "solid.shell", "params": {"faces": [[20, 15, 20]], "thickness": 2}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [
+    "Body1"
+  ],
+  "created_bodies": [],
+  "feature": 3,
+  "ms": 2.880738,
+  "name": "Shell1",
+  "removed_bodies": [],
+  "warning": null
+}
+
+== model.faces Body1 G0c after Shell: isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        23.027756377319946,
+        13.027756377319946
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        30.0,
+        12.360679774997896
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        6.972243622680054,
+        13.027756377319946
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        0.0,
+        12.360679774997896
+      ]
+    },
+    {
+      "area": 468.0,
+      "centroid": [
+        38.0,
+        15.0,
+        11.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F3:inner:F2:side:l2",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        38.0,
+        21.811388300841895,
+        13.811388300841895
+      ]
+    },
+    {
+      "area": 648.0,
+      "centroid": [
+        20.0,
+        28.0,
+        11.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F3:inner:F2:side:l3",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "point": [
+        8.875388202501894,
+        28.0,
+        13.124611797498108
+      ]
+    },
+    {
+      "area": 468.0,
+      "centroid": [
+        2.0,
+        15.0,
+        11.0
+      ],
+      "exact": true,
+      "index": 6,
+      "name": "F3:inner:F2:side:l4",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        2.0,
+        8.188611699158102,
+        13.811388300841895
+      ]
+    },
+    {
+      "area": 648.0,
+      "centroid": [
+        20.0,
+        2.0,
+        11.0
+      ],
+      "exact": true,
+      "index": 7,
+      "name": "F3:inner:F2:side:l1",
+      "plane_normal": [
+        0.0,
+        1.0,
+        -0.0
+      ],
+      "point": [
+        31.12461179749811,
+        2.0,
+        13.124611797498108
+      ]
+    },
+    {
+      "area": 264.0,
+      "centroid": [
+        20.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 8,
+      "name": "F2:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        37.61208402806735,
+        0.9891071813818334,
+        20.0
+      ]
+    },
+    {
+      "area": 936.0,
+      "centroid": [
+        20.0,
+        15.0,
+        2.0
+      ],
+      "exact": true,
+      "index": 9,
+      "name": "F3:inner:F2:start",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        10.796396688825482,
+        19.20360331117452,
+        2.0
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 10,
+      "name": "F2:start",
+      "plane_normal": [
+        -0.0,
+        0.0,
+        -1.0
+      ],
+      "point": [
+        10.0,
+        20.0,
+        0.0
+      ]
+    }
+  ]
+}
+
+-> save {"path": "/root/g0c.sc"}
+<- isError False: {
+  "bytes": 14915,
+  "name": "g0c",
+  "path": "/root/g0c.sc"
+}
+
+== g0c: volume (7152.0, [('Body1', 7152.0)])
+-> execute {"command": "sketch.create", "params": {"plane": {"face": [1, 15, 20]}}, "verbose": false}
+<- isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "l7",
+      "l8"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 4
+}
+
+#### g0c sketch.create face [1, 15, 20]: isError False
+#### reply: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "l7",
+      "l8"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 4
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 2,
+  "sketch": 4
+}
+
+######## g0d
+-> new_design {}
+<- isError False: {
+  "name": "Untitled"
+}
+
+-> execute {"command": "sketch.create", "params": {"plane": "XY"}, "verbose": false}
+<- isError False: {
+  "attachment": "fixed",
+  "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [],
+    "points": []
+  },
+  "name": "Sketch1",
+  "projected": null,
+  "sketch": 1
+}
+
+-> execute {"command": "sketch.rectangle.two_point", "params": {"p0": [0, 0], "p1": [40, 30]}, "verbose": false}
+<- isError False: {
+  "corners": {
+    "bottom_left": "p1",
+    "bottom_right": "p2",
+    "top_left": "p4",
+    "top_right": "p3"
+  },
+  "created": {
+    "constraints": [
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5"
+    ],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "sides": {
+    "bottom": "l1",
+    "left": "l4",
+    "right": "l2",
+    "top": "l3"
+  },
+  "sketch": {
+    "dof": 2,
+    "solved": true
+  }
+}
+
+-> execute {"command": "sketch.finish", "params": {}, "verbose": false}
+<- isError False: {
+  "profiles": 1,
+  "sketch": 1
+}
+
+-> execute {"command": "solid.extrude", "params": {"distance": 20, "operation": "new"}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [],
+  "created_bodies": [
+    "Body1"
+  ],
+  "feature": 2,
+  "ms": 0.380152,
+  "name": "Extrude1",
+  "removed_bodies": [],
+  "warning": null
+}
+
+== model.faces Body1 G0d block before Save As Mesh: isError False
+{
+  "body": "Body1",
+  "faces": [
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "exact": true,
+      "index": 0,
+      "name": "F2:start",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        0.0
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 1,
+      "name": "F2:side:l1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        0.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 2,
+      "name": "F2:side:l2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": true,
+      "index": 3,
+      "name": "F2:side:l3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        30.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": true,
+      "index": 4,
+      "name": "F2:side:l4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        20.0
+      ],
+      "exact": true,
+      "index": 5,
+      "name": "F2:top",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        20.0
+      ]
+    }
+  ]
+}
+
+-> execute {"command": "file.save_mesh", "params": {"path": "/root/g0d.stl"}, "verbose": false}
+<- isError False: {
+  "bytes": 684,
+  "format": "StlBinary",
+  "path": "/root/g0d.stl"
+}
+
+-> new_design {}
+<- isError False: {
+  "name": "Untitled"
+}
+
+-> execute {"command": "file.insert_mesh", "params": {"path": "/root/g0d.stl"}, "verbose": false}
+<- isError False: {
+  "component": 1,
+  "component_name": "g0d",
+  "created_bodies": [
+    "g0d"
+  ],
+  "feature": 3,
+  "name": "g0d",
+  "occurrence": 2,
+  "path": "/root/g0d.stl",
+  "warnings": []
+}
+
+bodies after insert ['g0d']
+-> execute {"command": "mesh.convert", "params": {"body": "g0d"}, "verbose": false}
+<- isError False: {
+  "changed_bodies": [],
+  "created_bodies": [
+    "g0d"
+  ],
+  "feature": 4,
+  "ms": 2.28581,
+  "name": "ConvertMesh1",
+  "removed_bodies": [],
+  "warning": null
+}
+
+bodies after convert ['g0d'] (24000.0, [('g0d', 24000.0)])
+== model.faces g0d G0d after Convert Mesh: isError False
+{
+  "body": "g0d",
+  "faces": [
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        0.0
+      ],
+      "exact": false,
+      "index": 0,
+      "name": "F4:face:0",
+      "plane_normal": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        0.0
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        0.0,
+        10.000000000000002
+      ],
+      "exact": false,
+      "index": 1,
+      "name": "F4:face:1",
+      "plane_normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "point": [
+        32.3606797749979,
+        0.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        40.0,
+        15.0,
+        10.0
+      ],
+      "exact": false,
+      "index": 2,
+      "name": "F4:face:2",
+      "plane_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        40.0,
+        23.027756377319946,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 800.0,
+      "centroid": [
+        20.000000000000004,
+        30.0,
+        10.000000000000002
+      ],
+      "exact": false,
+      "index": 3,
+      "name": "F4:face:3",
+      "plane_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "point": [
+        7.639320225002103,
+        30.0,
+        7.639320225002103
+      ]
+    },
+    {
+      "area": 600.0,
+      "centroid": [
+        0.0,
+        15.0,
+        10.0
+      ],
+      "exact": false,
+      "index": 4,
+      "name": "F4:face:4",
+      "plane_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "point": [
+        0.0,
+        6.972243622680054,
+        6.972243622680054
+      ]
+    },
+    {
+      "area": 1200.0,
+      "centroid": [
+        20.0,
+        15.0,
+        20.0
+      ],
+      "exact": false,
+      "index": 5,
+      "name": "F4:face:5",
+      "plane_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "point": [
+        30.0,
+        10.0,
+        20.0
+      ]
+    }
+  ]
+}
+
+-> save {"path": "/root/g0d.sc"}
+<- isError False: {
+  "bytes": 10818,
+  "name": "g0d",
+  "path": "/root/g0d.sc"
+}
+
+== g0d: volume (24000.0, [('g0d', 24000.0)])
+-> execute {"command": "sketch.create", "params": {"plane": {"face": [20, 15, 20]}}, "verbose": false}
+<- isError True: invalid parameters for `sketch.create`: this face has no supported stable semantic lineage; choose a supported exact face or explicitly use fixed:true
+
+#### g0d sketch.create face [20, 15, 20]: isError True
+#### reply: invalid parameters for `sketch.create`: this face has no supported stable semantic lineage; choose a supported exact face or explicitly use fixed:true
+
+######## SUMMARY
+control: isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 3
+}
+g0a: isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 4
+}
+g0b: isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  "name": "Sketch3",
+  "projected": "j1",
+  "sketch": 6
+}
+g0c: isError False: {
+  "attachment": "exact_face",
+  "created": {
+    "constraints": [],
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "l7",
+      "l8"
+    ],
+    "dimensions": [],
+    "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7",
+      "p8"
+    ]
+  },
+  "name": "Sketch2",
+  "projected": "j1",
+  "sketch": 4
+}
+g0d: isError True: invalid parameters for `sketch.create`: this face has no supported stable semantic lineage; choose a supported exact face or explicitly use fixed:true
