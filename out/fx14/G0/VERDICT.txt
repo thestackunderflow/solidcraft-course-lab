@@ -18,4 +18,4 @@ Q14, the target face's name before / after the edit (model.faces; it has no cert
            (the name is lost, but the face still attaches: as the accuracy review predicted, ACCURACY C.6 / C.11)
 - G0b:     F2:top exact true -> F2:top exact true, area 1,200 (the merged top keeps Body1's name; Body2's top is gone); exact_face
 - G0c:     F2:top exact true (1,200) -> F2:top exact true, area 264 (the 2 mm rim); exact_face
-- G0d:     (mesh) -> F4:face:5 exact false after Convert Mesh; refused with the sketch_face.rs 223 line, not the C.1 line
+- G0d:     (mesh) -> F4:face:5 exact false after Convert Mesh; refused with the sketch_face.rs 224 line, not the C.1 line
