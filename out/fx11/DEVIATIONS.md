@@ -22,3 +22,10 @@ Nothing was re-scored. Every take is kept, including the failed attempt in A-att
    Browser row's right-click > Properties (as the dialog title "Properties: Tower" shows). Shots are named by row
    (props-row1 = Tower = top, props-row2 = Tower (1) = bottom) rather than top/bottom.
 7. **R1 not run** (this stage was no-AI by the brief); runs/R1/DEFERRED.txt. env.txt has no R1 Claude Code version.
+8. **R1 run on the PC (13 Nov 2026), takes P-D on the Ubuntu box, same image sc5-l5:0.28.0.** lab/fx11R1.sh +
+   claude-run/fx11run.sh are copies of the fx10 pair (start file out/fx11/P/tower.sc, prompt and cap $0.25 from
+   LAB-fx11 section 4; no other change). One run, no retry, no harness failure; class A, $0.1440. The cap is checked
+   before the start (budget.py), not enforced mid-run (as fx6-fx10); the turn limit is l2drive's 420 s (wall 93 s).
+   The owner's claude.ai connectors also showed as connected in `claude mcp list` (as fx9/fx10); none was called.
+   Footage note: crop/mask Claude Code's greyed suggested prompt "Save it and export both halves as STLs to /root"
+   (not Claude's words), as fx10. The terminal font drops a glyph in the tool summary ("Listed 1 d r ctory"); leave it.

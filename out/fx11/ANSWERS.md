@@ -1,4 +1,4 @@
-# fx11 lab answers (PLAN §0.4 Q1-Q7, Q5b; Q15 deferred), 12-13 Nov 2026 UTC
+# fx11 lab answers (PLAN §0.4 Q1-Q7, Q5b; Q15 = R1 on the PC), 12-13 Nov 2026 UTC
 
 SolidCraft 0.28.0 in `sc5-l5:0.28.0` on the Ubuntu lab box, `--network none`, UI scale 1.8, 2880 x 1620, 30 fps.
 Pre-registration e482bd4 (LAB-fx11.md v1). Deviations: DEVIATIONS.md (7 items, none changes a result). No stop rule
@@ -53,4 +53,7 @@ line** (C/topface.png). S2 end frame: C/s2-frame.png (the tower, Plane1 at 210 a
 `the tool does not split the body` (no prefix). The window shows a toast **with** the prefix: `Split Body: the tool
 does not split the body` (D/reply.png). Timeline unchanged after.
 
-**Q15 (R1).** Not run in this stage (runs/R1/DEFERRED.txt).
+**Q15 (R1).** Run on the PC 13 Nov (DEVIATIONS 8). **Class A**, $0.1440 (claude-sonnet-5-5, Claude Code 2.1.311). Claude
+never tried XY: from inspect_design it said "the XY plane at the origin only touches its bottom face" and split with a
+plane parallel to XY at z = 100, saying so. Two bodies: Tower (1) bottom 58,506.68, Tower top 54,972.98 mm3 = take B
+exactly; sum 113,479.66. Not saved. It guessed the bore was "a pocket near z = 200" (it runs to z = 5). runs/R1/tools.txt.

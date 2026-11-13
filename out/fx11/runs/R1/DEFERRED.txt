@@ -1,2 +1,0 @@
-fx11 R1 (LAB-fx11 section 4) not run in the lab stage: the brief for this stage was "no Claude/AI runs". R1 runs on the
-PC only (the owner's login, network on), cap $0.25, prompt and classes as pre-registered. Start file: out/fx11/P/tower.sc.
