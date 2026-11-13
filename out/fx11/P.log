@@ -1,0 +1,19 @@
+tower: isError None; {"completed": 8, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["c1"], "dimensions": [], "points": ["c1.center"]}, "sketch": {"dof": 1, "solved": true}}, {"profiles": 1, "sketch": 1}, {"changed_bodies": [], "created_bodies": ["Tower"], "feature": 2, "ms": 1.360193, "name": "Extrude1", "removed_bodies": [], "warning": null}, {"attachment": "exact_face", "created": {"constraints": [], "curves": ["a1", "a2"], "dimensions"
+tower-made: volume_mm3 113479.66244567354 bodies ['Tower'] bbox [{"max": [20.000000000000004, 20.000000000000007, 200.0000000000001], "min": [-20.0, -20.000000000000014, -4.440892098500626e-14]}] timeline ["Sketch1", "Extrude1", "Sketch2", "Extrude2"]
+save tower.sc: isError None; {"bytes": 10251, "name": "tower", "path": "/root/tower.sc"}
+reopen tower.sc: isError None
+tower-reopened: volume_mm3 113479.66244567354 bodies ['Tower'] bbox [{"max": [20.000000000000004, 20.000000000000007, 200.0000000000001], "min": [-20.0, -20.000000000000014, -4.440892098500626e-14]}] timeline ["Sketch1", "Extrude1", "Sketch2", "Extrude2"]
+CHECK tower: reopened 113479.66244567354 expected 113490.03 -> OK
+tower-sym: isError None; {"completed": 8, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["c1"], "dimensions": [], "points": ["c1.center"]}, "sketch": {"dof": 1, "solved": true}}, {"profiles": 1, "sketch": 1}, {"changed_bodies": [], "created_bodies": ["Tower"], "feature": 2, "ms": 1.188953, "name": "Extrude1", "removed_bodies": [], "warning": null}, {"attachment": "exact_face", "created": {"constraints": [], "curves": ["a1", "a2"], "dimensions"
+tower-sym-made: volume_mm3 113479.66244567353 bodies ['Tower'] bbox [{"max": [20.00000000000071, 20.000000000000433, 100.00000000000004], "min": [-20.0, -20.000000000000007, -100.0000000000002]}] timeline ["Sketch1", "Extrude1", "Sketch2", "Extrude2"]
+save tower-sym.sc: isError None; {"bytes": 10633, "name": "tower-sym", "path": "/root/tower-sym.sc"}
+reopen tower-sym.sc: isError None
+tower-sym-reopened: volume_mm3 113479.66244567353 bodies ['Tower'] bbox [{"max": [20.00000000000071, 20.000000000000433, 100.00000000000004], "min": [-20.0, -20.000000000000007, -100.0000000000002]}] timeline ["Sketch1", "Extrude1", "Sketch2", "Extrude2"]
+CHECK tower-sym: reopened 113479.66244567353 expected 113490.03 -> OK
+block: isError None; {"completed": 4, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "points": ["p1", "p2", "p3", "p4"]}, "sides": {"bottom": "l1", "left": "l4", "right": "l2", "top": "l3"}, "sketch": {"dof": 4, "solved": true}}, {"profiles": 1, "sketch": 1}, {"changed_bodies": [], "creat
+block-made: volume_mm3 32000.0 bodies ['Block'] bbox [{"max": [10.0, 10.0, 80.0], "min": [-10.0, -10.0, 0.0]}] timeline ["Sketch1", "Extrude1"]
+save block.sc: isError None; {"bytes": 6501, "name": "block", "path": "/root/block.sc"}
+reopen block.sc: isError None
+block-reopened: volume_mm3 32000.0 bodies ['Block'] bbox [{"max": [10.0, 10.0, 80.0], "min": [-10.0, -10.0, 0.0]}] timeline ["Sketch1", "Extrude1"]
+CHECK block: reopened 32000.0 expected 32000.0 -> OK
+P done
