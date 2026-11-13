@@ -1,0 +1,36 @@
+{"t": 0.511, "event": "recording started: full SolidCraft window, ~/cup.sc: hold 3 s"}
+{"t": 6.540, "event": "Shell (Model tab > Modify > Shell)"}
+{"t": 11.587, "event": "Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog.png: hold 2 s"}
+{"t": 15.076, "event": "zoom target: the Tangent chain checkbox (ticked): hold 2 s"}
+{"t": 18.038, "event": "untick Tangent chain"}
+{"t": 22.881, "event": "click the top face at (0, 0, 80), chain off"}
+{"t": 27.756, "event": "preview on the top pick, chain off, as shown in preview.png: hold 4 s"}
+{"t": 33.459, "event": "Thickness: 2 mm (typed), Tab"}
+{"t": 41.171, "event": "OK"}
+{"t": 51.330, "event": "shell top chain off: b-after volume 33899.75429365892 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']"}
+{"t": 51.337, "event": "Browser: Body1 right-click > Properties"}
+{"t": 59.923, "event": "Properties as shown in props.png: hold 4 s"}
+{"t": 65.411, "event": "Close"}
+{"t": 72.604, "event": "Inspect > Section"}
+{"t": 76.698, "event": "Browser: expand Origin, Plane = XZ"}
+{"t": 84.189, "event": "Flip"}
+{"t": 88.265, "event": "OK"}
+{"t": 92.805, "event": "the hollow cup in section as shown in section.png: hold 3 s"}
+{"t": 100.362, "event": "Inspect > Measure"}
+{"t": 104.335, "event": "Measure: the outer side face"}
+{"t": 107.820, "event": "Measure: the inner side face"}
+{"t": 112.711, "event": "side wall (Min) as shown in wall.png: hold 4 s"}
+{"t": 118.082, "event": "Measure: clear"}
+{"t": 121.556, "event": "Measure: the inner floor"}
+{"t": 125.067, "event": "view from below (the gizmo's -Z)"}
+{"t": 129.496, "event": "Measure: the outer bottom face"}
+{"t": 134.348, "event": "floor as shown in floor.png: hold 4 s"}
+{"t": 139.612, "event": "Measure: close"}
+{"t": 143.118, "event": "Home view"}
+{"t": 147.898, "event": "the hollow cup in section, Home view: hold 2 s"}
+{"t": 151.340, "event": "section off (the pill's x)"}
+{"t": 156.108, "event": "F11: the hollow cup turning"}
+{"t": 156.126, "event": "slow orbit (Orbit button, drag)"}
+{"t": 169.809, "event": "Home view"}
+{"t": 176.149, "event": "hold 3 s"}
+{"t": 179.161, "event": "recording stopped"}

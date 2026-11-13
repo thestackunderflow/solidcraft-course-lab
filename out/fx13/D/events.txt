@@ -1,0 +1,8 @@
+17:01:38.3  recording started: SolidCraft window (top) + terminal strip: hold 3 s
+17:01:41.4  typed: python3 -I D/noai.py |& tee D/reply.txt
+17:01:51.9  call 1 (tangent_chain true): solid.shell {"faces": [[0, 0, 80]], "thickness": 2, "tangent_chain": true}: refused
+17:01:51.9  call 1 (tangent_chain true) reply: "Tangent Chain opens every face of this body, leaving no walls; turn off Tangent Chain to remove only the picked faces", isError: true
+17:01:58.9  call 2 (tangent_chain not given): solid.shell {"faces": [[0, 0, 80]], "thickness": 2}: built
+17:01:58.9  call 2 (tangent_chain not given) reply: "{\n  \"changed_bodies\": [\n    \"Body1\"\n  ],\n  \"created_bodies\": [],\n  \"feature\": 4,\n  \"ms\": 376.205739,\n  \"name\": \"Shell1\",\n  \"removed_bodies\": [],\n  \"warning\": null\n}", isError: false
+17:02:03.5  reply + window shown: hold 5 s
+17:02:14.1  recording stopped

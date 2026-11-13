@@ -1,0 +1,17 @@
+cup: batch isError None; {"completed": 5, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["c1"], "dimensions": [], "points": ["c1.center"]}, "sketch": {"dof": 1, "solved": true}}, {"profiles": 1, "sketch": 1}, {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 1.294122, "name": "Extrude1", "removed_bodies": [], "warning": nul
+save cup.sc: isError None; {"bytes": 14568, "name": "cup", "path": "/root/cup.sc"}
+reopen cup.sc: isError None
+CHECK cup: volume 226012.51665644397 expected 226014.67 (1 bodies, Body1); faces 8 expected 5 -> OK (face count differs: logged)
+cup-bottom: batch isError None; {"completed": 5, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["c1"], "dimensions": [], "points": ["c1.center"]}, "sketch": {"dof": 1, "solved": true}}, {"profiles": 1, "sketch": 1}, {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 0.942241, "name": "Extrude1", "removed_bodies": [], "warning": nul
+save cup-bottom.sc: isError None; {"bytes": 11308, "name": "cup-bottom", "path": "/root/cup-bottom.sc"}
+reopen cup-bottom.sc: isError None
+CHECK cup-bottom: volume 226102.53446639227 expected 226104.67 (1 bodies, Body1); faces 6 expected 4 -> OK (face count differs: logged)
+cup-r3: batch isError None; {"completed": 5, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["c1"], "dimensions": [], "points": ["c1.center"]}, "sketch": {"dof": 1, "solved": true}}, {"profiles": 1, "sketch": 1}, {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 0.914435, "name": "Extrude1", "removed_bodies": [], "warning": nul
+save cup-r3.sc: isError None; {"bytes": 13930, "name": "cup-r3", "path": "/root/cup-r3.sc"}
+reopen cup-r3.sc: isError None
+CHECK cup-r3: volume 225477.36619383565 expected 225482.81 (1 bodies, Body1); faces 8 expected 5 -> OK (face count differs: logged)
+cup40: batch isError None; {"completed": 5, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"created": {"constraints": ["k1"], "curves": ["c1"], "dimensions": [], "points": ["c1.center"]}, "sketch": {"dof": 1, "solved": true}}, {"profiles": 1, "sketch": 1}, {"changed_bodies": [], "created_bodies": ["Body1"], "feature": 2, "ms": 1.020544, "name": "Extrude1", "removed_bodies": [], "warning": nul
+save cup40.sc: isError None; {"bytes": 15436, "name": "cup40", "path": "/root/cup40.sc"}
+reopen cup40.sc: isError None
+CHECK cup40: volume 50211.711781823076 expected 50212.15 (1 bodies, Body1); faces 8 expected 5 -> OK (face count differs: logged)
+P done

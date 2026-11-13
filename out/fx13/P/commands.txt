@@ -1,0 +1,119 @@
+== list_commands solid.shell
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "shell",
+    "id": "solid.shell",
+    "label": "Shell",
+    "panel": "MODIFY",
+    "params": "faces: [[x,y,z] points on the faces to remove, or face names from model.faces]; thickness: expr; direction?: inside|outside|both; tangent_chain?: bool (also open faces joined smoothly to the picked ones); body?",
+    "shortcut": null,
+    "tab": "SOLID"
+  }
+]
+
+== list_commands solid.fillet
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "fillet",
+    "id": "solid.fillet",
+    "label": "Fillet",
+    "panel": "MODIFY",
+    "params": "edges: [[x,y,z] point on edge | {body, index}]; radius: expr; body?; type?: constant|curvature (alias g2: curvature-continuous quintic between planar faces along straight edges, one planar end face at each end (including sloped ends); radius sets the equivalent circular setback, not constant curvature; exact fit only)|chord (radius is the width across)|variable (radius at the end nearest start, radius2 at the other; one end may be 0, where the round closes to the corner)|spline (the radius along the edge is a clamped B-spline from the end nearest start: radius is its first control radius, radii the rest, knots its knot vector from 0 to 1; one end may be 0); radius2?; start?: [x,y,z]; radii?: [expr, …]; knots?: [number, …]; mid?: [[position 0…1 from start, radius expr], …] (variable radii between the ends); smooth?: bool (smooth instead of straight between the radii); corner?: rolling|g2 (rolling, the default: the corners where three blended edges meet are pieces of the rolling ball's sphere, tangent to each blend; g2: a patch repeating each blend's surface up to the second order, constant-radius exact fillets only, refused where it cannot be built); fit?: exact|reduce|taper (exact, the default: a radius too large for the geometry around the edges is refused; reduce: where it doesn't fit it is reduced to the largest that does, one radius for edges sharing a face; the smallest used is returned as `radius_applied`, each edge's as `radii_applied: [{edge: [x,y,z], radius}]`, and noted in the feature's warning; taper: along each straight edge between planar faces where it doesn't fit, the radius follows the room there as a smooth spline, down to 0 where a face closes to a point, noted in the feature's warning)",
+    "shortcut": "F",
+    "tab": "SOLID"
+  }
+]
+
+== list_commands solid.extrude
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "extrude",
+    "id": "solid.extrude",
+    "label": "Extrude",
+    "panel": "CREATE",
+    "params": "distance: expr (or through_all: true); taper?: angle expr (positive: outward, so the far end is larger along the extrusion direction; negative: inward, so the far end is smaller); sketch?: id|name (default: active or last sketch); profiles?: all | [index] | [{curves: [ids]}] (the profile whose outer loop is made of exactly these curves, or pieces of them; found again on every recompute, so it follows parameter changes; islands inside are its holes; an error when no profile or several match) | [{point:[x,y]}] (index and point picks are stored by their curves when that finds the same profile; a pick on a drawn profile that reference geometry, such as the projected outline of the face the sketch is on, cuts into regions takes the whole drawn profile); exact_regions?: bool (each index or point pick is exactly the region it names, as the dialogs send); default: every drawn profile, except that a loop inside another is its hole and a loop inside that hole is material again; face?: [x,y,z] (extrude a planar body face instead of a sketch profile); faces?: [[x,y,z],…] (coplanar faces of one body); face_body?: name (whose face, where faces of several bodies meet at the point); direction?: positive|negative|symmetric (distance is total thickness, split evenly around the start plane); convention?: total_distance|legacy_per_side (default total_distance; legacy preserves older symmetric extents); distance2?: expr (Two Sides: a second distance the other way from the first side, which may be through_all or to; with direction: negative the first side goes against the normal and distance2 along it); start_offset?: expr (along the sketch normal, also with direction: negative); to?: [x,y,z] (To Object: a face, vertex or point; to_offset?: expr past it); from?: [x,y,z] (From Object: start at that face or point); operation?: new|join|cut|intersect|auto (cut into a body, otherwise join existing solids; new in an empty component); targets?: [body] (Join from a face, or from a sketch on a body's face, defaults to that face's body; explicit targets or participants override); name?; body_name?; thin?: true (Thin: a wall along sketch curves instead of the profiles) with curves?: [curve ids] (open chains and closed loops, joined where they meet end to end; default: every drawn curve of the sketch), thickness: expr, side?: center|inside|outside|two_sides (a closed loop's inside is the area it encloses, an open chain's the side it bends toward, a straight line's the left of its first curve as drawn; default center), thickness2?: expr (two_sides: the thickness outside); corners are mitred, crossing walls are one",
+    "shortcut": "E",
+    "tab": "SOLID"
+  }
+]
+
+== list_commands sketch.circle
+[
+  {
+    "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+    "enabled": false,
+    "icon": "circle",
+    "id": "sketch.circle.center",
+    "label": "Center Diameter Circle",
+    "panel": "CREATE",
+    "params": "center: [x,y] or point ref, radius | diameter: number; through?: point ref (a point the circle passes through, kept on it: where the tool's second click snapped); construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete…)",
+    "shortcut": "C",
+    "tab": "SKETCH"
+  },
+  {
+    "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+    "enabled": false,
+    "icon": "circle2",
+    "id": "sketch.circle.two_point",
+    "label": "2-Point Circle",
+    "panel": "CREATE",
+    "params": "p0, p1: diameter ends; construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete…)",
+    "shortcut": null,
+    "tab": "SKETCH"
+  },
+  {
+    "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+    "enabled": false,
+    "icon": "circle3",
+    "id": "sketch.circle.three_point",
+    "label": "3-Point Circle",
+    "panel": "CREATE",
+    "params": "p0, p1, p2; construction?: bool; connect?: bool (default true: a new point landing exactly on an existing point, the origin too, is made coincident with it). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete…)",
+    "shortcut": null,
+    "tab": "SKETCH"
+  },
+  {
+    "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+    "enabled": false,
+    "icon": "circle_tt",
+    "id": "sketch.circle.two_tangent",
+    "label": "2-Tangent Circle",
+    "panel": "CREATE",
+    "params": "curves: [two lines/circles/arcs], radius | diameter: expr, near: [x,y] (which of the solutions). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete…)",
+    "shortcut": null,
+    "tab": "SKETCH"
+  },
+  {
+    "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+    "enabled": false,
+    "icon": "circle_ttt",
+    "id": "sketch.circle.three_tangent",
+    "label": "3-Tangent Circle",
+    "panel": "CREATE",
+    "params": "curves: [three lines/circles/arcs], near: [x,y] (which of the solutions). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete…)",
+    "shortcut": null,
+    "tab": "SKETCH"
+  }
+]
+
+== list_commands model.faces
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "inspect",
+    "id": "model.faces",
+    "label": "List Faces",
+    "panel": "",
+    "params": "body: name → per face: index, name (what face.delete, sheet.convert `face`, solid.shell … take in place of a point), exact, area, centroid (not always on the face), plane_normal, point (a point on the face that picks it), cylinder? ({origin, axis, radius} of a cylindrical face), sheet_face? (a folded sheet's face: `sheet:<body>:<panel>:<side>`, panel base or a flange's tag F<feature>.<k>, side top | bottom | rim.<edge> | bend.inner | bend.outer; taken wherever a face name is, and it holds while sizes change and flanges come and go)",
+    "shortcut": null,
+    "tab": ""
+  }
+]
+

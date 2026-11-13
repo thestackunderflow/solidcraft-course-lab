@@ -1,0 +1,1 @@
+c-40 volume 11532.785341762 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']

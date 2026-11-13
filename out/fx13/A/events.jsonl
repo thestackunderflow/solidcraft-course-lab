@@ -1,0 +1,32 @@
+{"t": 0.523, "event": "recording started: full SolidCraft window, ~/cup.sc: hold 3 s"}
+{"t": 3.543, "event": "slow orbit (Orbit button, drag)"}
+{"t": 16.013, "event": "Home view"}
+{"t": 23.769, "event": "Inspect > Section"}
+{"t": 27.665, "event": "Browser: expand Origin, Plane = XZ"}
+{"t": 34.900, "event": "Flip"}
+{"t": 38.896, "event": "OK"}
+{"t": 43.471, "event": "section of the solid cup: hold 2 s"}
+{"t": 46.854, "event": "section off (the pill's x)"}
+{"t": 51.588, "event": "Home view"}
+{"t": 59.495, "event": "Shell (Model tab > Modify > Shell)"}
+{"t": 64.598, "event": "Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog.png: hold 2 s"}
+{"t": 68.062, "event": "click the top face at (0, 0, 80)"}
+{"t": 73.172, "event": "preview on the top pick, chain on, as shown in preview.png: hold 4 s"}
+{"t": 78.710, "event": "Thickness: 2 mm (typed), Tab"}
+{"t": 84.870, "event": "shell top chain on: full line as shown in refusal.png: hold 4 s"}
+{"t": 90.271, "event": "the line held 8 s (F4 slow zoom)"}
+{"t": 99.664, "event": "Create Issue... (draft only, not submitted)"}
+{"t": 104.987, "event": "report draft as shown in report.png: hold 4 s"}
+{"t": 110.258, "event": "Close draft"}
+{"t": 116.186, "event": "Cancel"}
+{"t": 122.951, "event": "after Cancel: a-after-cancel volume 226012.51665644397 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']"}
+{"t": 122.961, "event": "Q3b: Shell again, chain left on"}
+{"t": 126.181, "event": "Shell (Model tab > Modify > Shell)"}
+{"t": 131.171, "event": "Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog2.png: hold 2 s"}
+{"t": 134.619, "event": "click the SIDE at (30, 0, 40)"}
+{"t": 139.241, "event": "Thickness: 2 mm (typed), Tab"}
+{"t": 145.369, "event": "shell side chain on: lit faces and line as shown in side.png: hold 4 s"}
+{"t": 150.771, "event": "close the dialog (its x)"}
+{"t": 155.842, "event": "after: a-after volume 226012.51665644397 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']"}
+{"t": 155.850, "event": "hold 3 s"}
+{"t": 158.865, "event": "recording stopped"}

@@ -1,0 +1,15 @@
+$ python3 -I D/noai.py |& tee D/reply.txt
+-> open {"path": "/root/cup.sc"}
+<- ok
+   {   "errors": 0,   "features": 3,   "name": "cup",   "path": "/root/cup.sc" }
+-> execute {"command": "solid.shell", "params": {"faces": [[0, 0, 80]], "thickness": 2, "tangent_chain": true}, "verbose": false}
+<- isError: true
+   Tangent Chain opens every face of this body, leaving no walls; turn off Tangent Chain to remove only the picked faces
+-> open {"path": "/root/cup.sc"}
+<- ok
+   {   "errors": 0,   "features": 3,   "name": "cup",   "path": "/root/cup.sc" }
+-> execute {"command": "solid.shell", "params": {"faces": [[0, 0, 80]], "thickness": 2}, "verbose": false}
+<- ok
+   {   "changed_bodies": [     "Body1"   ],   "created_bodies": [],   "feature": 4,   "ms": 376.205739,   "name": "Shell1",   "removed_bodies": [],
+   "warning": null }
+$ 

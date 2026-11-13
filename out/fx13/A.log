@@ -1,0 +1,36 @@
+a-before volume 226012.51665644397 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+ev: recording started: full SolidCraft window, ~/cup.sc: hold 3 s
+ev: slow orbit (Orbit button, drag)
+ev: Home view
+ev: Inspect > Section
+ev: Browser: expand Origin, Plane = XZ
+ev: Flip
+ev: OK
+ev: section of the solid cup: hold 2 s
+ev: section off (the pill's x)
+ev: Home view
+ev: Shell (Model tab > Modify > Shell)
+ev: Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog.png: hold 2 s
+ev: click the top face at (0, 0, 80)
+ev: preview on the top pick, chain on, as shown in preview.png: hold 4 s
+ev: Thickness: 2 mm (typed), Tab
+ev: shell top chain on: full line as shown in refusal.png: hold 4 s
+ev: the line held 8 s (F4 slow zoom)
+ev: Create Issue... (draft only, not submitted)
+ev: report draft as shown in report.png: hold 4 s
+ev: Close draft
+ev: Cancel
+a-after-cancel volume 226012.51665644397 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+ev: after Cancel: a-after-cancel volume 226012.51665644397 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+ev: Q3b: Shell again, chain left on
+ev: Shell (Model tab > Modify > Shell)
+ev: Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog2.png: hold 2 s
+ev: click the SIDE at (30, 0, 40)
+ev: Thickness: 2 mm (typed), Tab
+ev: shell side chain on: lit faces and line as shown in side.png: hold 4 s
+ev: close the dialog (its x)
+a-after volume 226012.51665644397 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+ev: after: a-after volume 226012.51665644397 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+ev: hold 3 s
+ev: recording stopped
+A done

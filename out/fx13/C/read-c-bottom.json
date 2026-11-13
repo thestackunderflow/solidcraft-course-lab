@@ -1,0 +1,269 @@
+{
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 34334.51504122053,
+    "bbox": {
+     "max": [
+      30.0,
+      30.000000000000007,
+      80.00000000000004
+     ],
+     "min": [
+      -30.000000000000004,
+      -30.00000000000001,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     2.9550239193917585e-09,
+     -9.310996662615581e-14,
+     34.452968406603866
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 5,
+    "face_types": {
+     "cylinder": 2,
+     "other": 1,
+     "plane": 3
+    },
+    "faces": 6,
+    "kernel": {
+     "edges": 16,
+     "faces": 9,
+     "shells": 1,
+     "vertices": 10
+    },
+    "mass_g": 43.84680601365309,
+    "material": "Default",
+    "name": "Body1",
+    "vertices": 5,
+    "volume_mm3": 33989.77210360704
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 34334.51504122053,
+   "edges": 5,
+   "faces": 6,
+   "mass_g": 43.84680601365309,
+   "open_bodies_skipped": 0,
+   "vertices": 5,
+   "volume_mm3": 33989.77210360704
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 34334.51504122053,
+    "bbox": {
+     "max": [
+      30.0,
+      30.000000000000007,
+      80.00000000000004
+     ],
+     "min": [
+      -30.000000000000004,
+      -30.00000000000001,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     2.9550239193917585e-09,
+     -9.310996662615581e-14,
+     34.452968406603866
+    ],
+    "closed": true,
+    "edges": 5,
+    "face_types": {
+     "cylinder": 2,
+     "other": 1,
+     "plane": 3
+    },
+    "faces": 6,
+    "kernel": {
+     "edges": 16,
+     "faces": 9,
+     "shells": 1,
+     "vertices": 10
+    },
+    "name": "Body1",
+    "vertices": 5,
+    "visible": true,
+    "volume_mm3": 33989.77210360704
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 4,
+  "metadata": {},
+  "name": "cup-bottom",
+  "params": [],
+  "path": null,
+  "redo": 0,
+  "revision": 6,
+  "selection": [],
+  "sketches": [
+   {
+    "constraints": [
+     {
+      "id": "k1",
+      "name": "Coincident",
+      "p": 0,
+      "q": 1,
+      "type": "coincident"
+     }
+    ],
+    "curves": [
+     {
+      "center": "c1.center",
+      "center_at": [
+       0.0,
+       0.0
+      ],
+      "construction": false,
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "c1",
+      "radius": 30.0,
+      "type": "circle"
+     }
+    ],
+    "dof": 1,
+    "failing": [],
+    "fully_constrained": false,
+    "id": 1,
+    "links": [],
+    "name": "Sketch1",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "points": [
+     {
+      "at": [
+       0.0,
+       0.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "origin",
+      "link": null,
+      "world": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       0.0,
+       0.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "c1.center",
+      "link": null,
+      "world": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    ],
+    "profiles": [
+     {
+      "area_mm2": 2827.4333882308138,
+      "centroid_sketch": [
+       1.6620244698765282e-15,
+       7.538901947376553e-16
+      ],
+      "curves": [
+       "c1"
+      ],
+      "holes": [],
+      "index": 0
+     }
+    ],
+    "status": "solved",
+    "visible": false,
+    "wires": []
+   }
+  ],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 1,
+    "ms": 0.047160999999999995,
+    "name": "Sketch1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "Sketch",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 2,
+    "ms": 0.942241,
+    "name": "Extrude1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "ExtrudeFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 3,
+    "ms": 24.221467999999998,
+    "name": "Fillet1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "FilletFeature",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 4,
+    "ms": 422.422394,
+    "name": "Shell1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "ShellFeature",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

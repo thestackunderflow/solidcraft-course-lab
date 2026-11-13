@@ -1,0 +1,13 @@
+[
+  {
+    "disabled_reason": null,
+    "enabled": true,
+    "icon": "shell",
+    "id": "solid.shell",
+    "label": "Shell",
+    "panel": "MODIFY",
+    "params": "faces: [[x,y,z] points on the faces to remove, or face names from model.faces]; thickness: expr; direction?: inside|outside|both; tangent_chain?: bool (also open faces joined smoothly to the picked ones); body?",
+    "shortcut": null,
+    "tab": "SOLID"
+  }
+]

@@ -1,0 +1,38 @@
+{"t": 0.519, "event": "recording started: full SolidCraft window, ~/cup-bottom.sc (the second cup): hold 3 s"}
+{"t": 3.538, "event": "the second cup held 5 s (Short S2 end frame)"}
+{"t": 12.991, "event": "Shell (Model tab > Modify > Shell)"}
+{"t": 17.953, "event": "Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-bottom.png: hold 2 s"}
+{"t": 21.417, "event": "click the top face, chain left on"}
+{"t": 26.395, "event": "second cup chain on: lit faces as shown in preview-bottom.png: hold 4 s"}
+{"t": 32.022, "event": "Thickness: 2 mm (typed), Tab"}
+{"t": 39.708, "event": "OK"}
+{"t": 49.031, "event": "second cup: c-bottom volume 33989.77210360704 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']"}
+{"t": 49.049, "event": "Browser: Body1 right-click > Properties"}
+{"t": 57.478, "event": "Properties as shown in props-bottom.png: hold 4 s"}
+{"t": 62.969, "event": "Close"}
+{"t": 67.190, "event": "open ~/cup40.sc (the your-turn cup, a new tab)"}
+{"t": 76.200, "event": "Shell (Model tab > Modify > Shell)"}
+{"t": 81.197, "event": "Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-40.png: hold 2 s"}
+{"t": 84.755, "event": "zoom target: the Tangent chain checkbox (ticked): hold 2 s"}
+{"t": 87.676, "event": "untick Tangent chain"}
+{"t": 92.876, "event": "click the top face, chain off"}
+{"t": 97.703, "event": "Thickness: 2 mm (typed), Tab"}
+{"t": 103.662, "event": "your-turn cup chain off as shown in preview-40.png: hold 3 s"}
+{"t": 108.246, "event": "OK"}
+{"t": 119.112, "event": "your-turn cup: c-40 volume 11532.785341762 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']"}
+{"t": 119.130, "event": "Browser: Body1 right-click > Properties"}
+{"t": 127.449, "event": "Properties as shown in props-40.png: hold 4 s"}
+{"t": 133.022, "event": "Close"}
+{"t": 137.351, "event": "open ~/cup-r3.sc (rounds 3, a new tab)"}
+{"t": 146.460, "event": "Shell (Model tab > Modify > Shell)"}
+{"t": 151.515, "event": "Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-r3.png: hold 2 s"}
+{"t": 155.021, "event": "zoom target: the Tangent chain checkbox (ticked): hold 2 s"}
+{"t": 158.066, "event": "untick Tangent chain"}
+{"t": 162.999, "event": "click the top face, chain off"}
+{"t": 168.030, "event": "Thickness: 2 mm (typed), Tab"}
+{"t": 174.034, "event": "r3 chain off: as shown in r3.png: hold 4 s"}
+{"t": 179.612, "event": "OK"}
+{"t": 188.786, "event": "r3 after OK: c-r3 volume 225477.36619383565 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']"}
+{"t": 188.796, "event": "close the dialog if open (its x)"}
+{"t": 193.042, "event": "hold 3 s"}
+{"t": 196.061, "event": "recording stopped"}

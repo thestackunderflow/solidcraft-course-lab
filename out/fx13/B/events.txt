@@ -1,0 +1,36 @@
+16:53:59.1  recording started: full SolidCraft window, ~/cup.sc: hold 3 s
+16:54:05.1  Shell (Model tab > Modify > Shell)
+16:54:10.2  Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog.png: hold 2 s
+16:54:13.7  zoom target: the Tangent chain checkbox (ticked): hold 2 s
+16:54:16.6  untick Tangent chain
+16:54:21.5  click the top face at (0, 0, 80), chain off
+16:54:26.4  preview on the top pick, chain off, as shown in preview.png: hold 4 s
+16:54:32.1  Thickness: 2 mm (typed), Tab
+16:54:39.8  OK
+16:54:49.9  shell top chain off: b-after volume 33899.75429365892 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']
+16:54:49.9  Browser: Body1 right-click > Properties
+16:54:58.5  Properties as shown in props.png: hold 4 s
+16:55:04.0  Close
+16:55:11.2  Inspect > Section
+16:55:15.3  Browser: expand Origin, Plane = XZ
+16:55:22.8  Flip
+16:55:26.9  OK
+16:55:31.4  the hollow cup in section as shown in section.png: hold 3 s
+16:55:39.0  Inspect > Measure
+16:55:42.9  Measure: the outer side face
+16:55:46.4  Measure: the inner side face
+16:55:51.3  side wall (Min) as shown in wall.png: hold 4 s
+16:55:56.7  Measure: clear
+16:56:00.2  Measure: the inner floor
+16:56:03.7  view from below (the gizmo's -Z)
+16:56:08.1  Measure: the outer bottom face
+16:56:12.9  floor as shown in floor.png: hold 4 s
+16:56:18.2  Measure: close
+16:56:21.7  Home view
+16:56:26.5  the hollow cup in section, Home view: hold 2 s
+16:56:29.9  section off (the pill's x)
+16:56:34.7  F11: the hollow cup turning
+16:56:34.7  slow orbit (Orbit button, drag)
+16:56:48.4  Home view
+16:56:54.7  hold 3 s
+16:56:57.8  recording stopped

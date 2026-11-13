@@ -1,0 +1,38 @@
+16:57:26.1  recording started: full SolidCraft window, ~/cup-bottom.sc (the second cup): hold 3 s
+16:57:29.1  the second cup held 5 s (Short S2 end frame)
+16:57:38.6  Shell (Model tab > Modify > Shell)
+16:57:43.5  Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-bottom.png: hold 2 s
+16:57:47.0  click the top face, chain left on
+16:57:52.0  second cup chain on: lit faces as shown in preview-bottom.png: hold 4 s
+16:57:57.6  Thickness: 2 mm (typed), Tab
+16:58:05.3  OK
+16:58:14.6  second cup: c-bottom volume 33989.77210360704 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']
+16:58:14.6  Browser: Body1 right-click > Properties
+16:58:23.1  Properties as shown in props-bottom.png: hold 4 s
+16:58:28.6  Close
+16:58:32.8  open ~/cup40.sc (the your-turn cup, a new tab)
+16:58:41.8  Shell (Model tab > Modify > Shell)
+16:58:46.8  Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-40.png: hold 2 s
+16:58:50.3  zoom target: the Tangent chain checkbox (ticked): hold 2 s
+16:58:53.3  untick Tangent chain
+16:58:58.5  click the top face, chain off
+16:59:03.3  Thickness: 2 mm (typed), Tab
+16:59:09.3  your-turn cup chain off as shown in preview-40.png: hold 3 s
+16:59:13.8  OK
+16:59:24.7  your-turn cup: c-40 volume 11532.785341762 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']
+16:59:24.7  Browser: Body1 right-click > Properties
+16:59:33.0  Properties as shown in props-40.png: hold 4 s
+16:59:38.6  Close
+16:59:42.9  open ~/cup-r3.sc (rounds 3, a new tab)
+16:59:52.1  Shell (Model tab > Modify > Shell)
+16:59:57.1  Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-r3.png: hold 2 s
+17:00:00.6  zoom target: the Tangent chain checkbox (ticked): hold 2 s
+17:00:03.7  untick Tangent chain
+17:00:08.6  click the top face, chain off
+17:00:13.6  Thickness: 2 mm (typed), Tab
+17:00:19.6  r3 chain off: as shown in r3.png: hold 4 s
+17:00:25.2  OK
+17:00:34.4  r3 after OK: c-r3 volume 225477.36619383565 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+17:00:34.4  close the dialog if open (its x)
+17:00:38.6  hold 3 s
+17:00:41.7  recording stopped

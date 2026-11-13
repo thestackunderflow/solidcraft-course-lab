@@ -1,0 +1,1 @@
+open {"content": [{"text": "{\n  \"errors\": 0,\n  \"features\": 3,\n  \"name\": \"cup-bottom\",\n  \"path\": \"/root/cup-bottom.sc\"\n}", "type": "text"}]}

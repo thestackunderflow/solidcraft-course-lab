@@ -1,0 +1,42 @@
+ev: recording started: full SolidCraft window, ~/cup-bottom.sc (the second cup): hold 3 s
+ev: the second cup held 5 s (Short S2 end frame)
+ev: Shell (Model tab > Modify > Shell)
+ev: Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-bottom.png: hold 2 s
+ev: click the top face, chain left on
+ev: second cup chain on: lit faces as shown in preview-bottom.png: hold 4 s
+ev: Thickness: 2 mm (typed), Tab
+ev: OK
+c-bottom volume 33989.77210360704 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']
+ev: second cup: c-bottom volume 33989.77210360704 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']
+ev: Browser: Body1 right-click > Properties
+ev: Properties as shown in props-bottom.png: hold 4 s
+ev: Close
+ev: open ~/cup40.sc (the your-turn cup, a new tab)
+ev: Shell (Model tab > Modify > Shell)
+ev: Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-40.png: hold 2 s
+ev: zoom target: the Tangent chain checkbox (ticked): hold 2 s
+ev: untick Tangent chain
+ev: click the top face, chain off
+ev: Thickness: 2 mm (typed), Tab
+ev: your-turn cup chain off as shown in preview-40.png: hold 3 s
+ev: OK
+c-40 volume 11532.785341762 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']
+ev: your-turn cup: c-40 volume 11532.785341762 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1', 'Shell1']
+ev: Browser: Body1 right-click > Properties
+ev: Properties as shown in props-40.png: hold 4 s
+ev: Close
+ev: open ~/cup-r3.sc (rounds 3, a new tab)
+ev: Shell (Model tab > Modify > Shell)
+ev: Shell dialog with its defaults (Tangent chain ticked?, Thickness, Direction) as shown in dialog-r3.png: hold 2 s
+ev: zoom target: the Tangent chain checkbox (ticked): hold 2 s
+ev: untick Tangent chain
+ev: click the top face, chain off
+ev: Thickness: 2 mm (typed), Tab
+ev: r3 chain off: as shown in r3.png: hold 4 s
+ev: OK
+c-r3 volume 225477.36619383565 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+ev: r3 after OK: c-r3 volume 225477.36619383565 bodies 1 timeline ['Sketch1', 'Extrude1', 'Fillet1']
+ev: close the dialog if open (its x)
+ev: hold 3 s
+ev: recording stopped
+C done

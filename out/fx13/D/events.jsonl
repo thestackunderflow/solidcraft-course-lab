@@ -1,0 +1,8 @@
+{"t": 0.515, "event": "recording started: SolidCraft window (top) + terminal strip: hold 3 s"}
+{"t": 3.525, "event": "typed: python3 -I D/noai.py |& tee D/reply.txt"}
+{"t": 14.028, "event": "call 1 (tangent_chain true): solid.shell {\"faces\": [[0, 0, 80]], \"thickness\": 2, \"tangent_chain\": true}: refused"}
+{"t": 14.028, "event": "call 1 (tangent_chain true) reply: \"Tangent Chain opens every face of this body, leaving no walls; turn off Tangent Chain to remove only the picked faces\", isError: true"}
+{"t": 20.971, "event": "call 2 (tangent_chain not given): solid.shell {\"faces\": [[0, 0, 80]], \"thickness\": 2}: built"}
+{"t": 20.971, "event": "call 2 (tangent_chain not given) reply: \"{\\n  \\\"changed_bodies\\\": [\\n    \\\"Body1\\\"\\n  ],\\n  \\\"created_bodies\\\": [],\\n  \\\"feature\\\": 4,\\n  \\\"ms\\\": 376.205739,\\n  \\\"name\\\": \\\"Shell1\\\",\\n  \\\"removed_bodies\\\": [],\\n  \\\"warning\\\": null\\n}\", isError: false"}
+{"t": 25.687, "event": "reply + window shown: hold 5 s"}
+{"t": 36.287, "event": "recording stopped"}
