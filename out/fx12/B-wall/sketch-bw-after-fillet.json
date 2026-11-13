@@ -1,0 +1,720 @@
+{
+ "constraints": [
+  {
+   "id": "k1",
+   "l": 0,
+   "name": "Horizontal",
+   "type": "horizontal"
+  },
+  {
+   "id": "k2",
+   "l": 2,
+   "name": "Horizontal",
+   "type": "horizontal"
+  },
+  {
+   "id": "k3",
+   "l": 1,
+   "name": "Vertical",
+   "type": "vertical"
+  },
+  {
+   "id": "k4",
+   "l": 3,
+   "name": "Vertical",
+   "type": "vertical"
+  },
+  {
+   "expression": "60 mm",
+   "id": "k5",
+   "l": 0,
+   "name": "LinearDimension",
+   "param": "d1",
+   "type": "length",
+   "value": 60.0
+  },
+  {
+   "expression": "40 mm",
+   "id": "k6",
+   "l": 1,
+   "name": "LinearDimension",
+   "param": "d2",
+   "type": "length",
+   "value": 40.0
+  },
+  {
+   "a": 0,
+   "b": 4,
+   "id": "k7",
+   "name": "Parallel",
+   "type": "parallel"
+  },
+  {
+   "a": 1,
+   "b": 5,
+   "id": "k8",
+   "name": "Parallel",
+   "type": "parallel"
+  },
+  {
+   "a": 2,
+   "b": 6,
+   "id": "k9",
+   "name": "Parallel",
+   "type": "parallel"
+  },
+  {
+   "a": 3,
+   "b": 7,
+   "id": "k10",
+   "name": "Parallel",
+   "type": "parallel"
+  },
+  {
+   "a": 4,
+   "b": 8,
+   "id": "k12",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "id": "k13",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "c": 8,
+   "expression": "3 mm",
+   "id": "k14",
+   "name": "RadialDimension",
+   "param": "d3",
+   "type": "radius",
+   "value": 3.0
+  },
+  {
+   "a": 6,
+   "b": 9,
+   "id": "k15",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "a": 7,
+   "b": 9,
+   "id": "k16",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "id": "k17",
+   "name": "Equal",
+   "type": "equal"
+  },
+  {
+   "a": 5,
+   "b": 10,
+   "id": "k18",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "a": 6,
+   "b": 10,
+   "id": "k19",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "a": 8,
+   "b": 10,
+   "id": "k20",
+   "name": "Equal",
+   "type": "equal"
+  },
+  {
+   "a": 4,
+   "b": 11,
+   "id": "k21",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "a": 5,
+   "b": 11,
+   "id": "k22",
+   "name": "Tangent",
+   "type": "tangent"
+  },
+  {
+   "a": 8,
+   "b": 11,
+   "id": "k23",
+   "name": "Equal",
+   "type": "equal"
+  }
+ ],
+ "curves": [
+  {
+   "construction": false,
+   "end": "p2",
+   "end_at": [
+    30.0,
+    -20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l1",
+   "start": "p1",
+   "start_at": [
+    -30.0,
+    -20.0
+   ],
+   "type": "line"
+  },
+  {
+   "construction": false,
+   "end": "p3",
+   "end_at": [
+    30.0,
+    20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l2",
+   "start": "p2",
+   "start_at": [
+    30.0,
+    -20.0
+   ],
+   "type": "line"
+  },
+  {
+   "construction": false,
+   "end": "p4",
+   "end_at": [
+    -30.0,
+    20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l3",
+   "start": "p3",
+   "start_at": [
+    30.0,
+    20.0
+   ],
+   "type": "line"
+  },
+  {
+   "construction": false,
+   "end": "p1",
+   "end_at": [
+    -30.0,
+    -20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l4",
+   "start": "p4",
+   "start_at": [
+    -30.0,
+    20.0
+   ],
+   "type": "line"
+  },
+  {
+   "construction": false,
+   "end": "p15",
+   "end_at": [
+    25.0,
+    -18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l5",
+   "start": "p9",
+   "start_at": [
+    -25.0,
+    -18.0
+   ],
+   "type": "line"
+  },
+  {
+   "construction": false,
+   "end": "p13",
+   "end_at": [
+    28.0,
+    15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l6",
+   "start": "p16",
+   "start_at": [
+    28.0,
+    -15.0
+   ],
+   "type": "line"
+  },
+  {
+   "construction": false,
+   "end": "p11",
+   "end_at": [
+    -25.0,
+    18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l7",
+   "start": "p14",
+   "start_at": [
+    25.0,
+    18.0
+   ],
+   "type": "line"
+  },
+  {
+   "construction": false,
+   "end": "p10",
+   "end_at": [
+    -28.0,
+    -15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "l8",
+   "start": "p12",
+   "start_at": [
+    -28.0,
+    15.0
+   ],
+   "type": "line"
+  },
+  {
+   "center": "a1.center",
+   "center_at": [
+    -25.0,
+    -15.0
+   ],
+   "construction": false,
+   "end": "p9",
+   "end_at": [
+    -25.0,
+    -18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a1",
+   "radius": 3.0,
+   "start": "p10",
+   "start_at": [
+    -28.0,
+    -15.0
+   ],
+   "type": "arc"
+  },
+  {
+   "center": "a2.center",
+   "center_at": [
+    -25.0,
+    15.0
+   ],
+   "construction": false,
+   "end": "p12",
+   "end_at": [
+    -28.0,
+    15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a2",
+   "radius": 3.0,
+   "start": "p11",
+   "start_at": [
+    -25.0,
+    18.0
+   ],
+   "type": "arc"
+  },
+  {
+   "center": "a3.center",
+   "center_at": [
+    25.0,
+    15.0
+   ],
+   "construction": false,
+   "end": "p14",
+   "end_at": [
+    25.0,
+    18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a3",
+   "radius": 3.0,
+   "start": "p13",
+   "start_at": [
+    28.0,
+    15.0
+   ],
+   "type": "arc"
+  },
+  {
+   "center": "a4.center",
+   "center_at": [
+    25.0,
+    -15.0
+   ],
+   "construction": false,
+   "end": "p16",
+   "end_at": [
+    28.0,
+    -15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a4",
+   "radius": 3.0,
+   "start": "p15",
+   "start_at": [
+    25.0,
+    -18.0
+   ],
+   "type": "arc"
+  }
+ ],
+ "dof": 6,
+ "failing": [],
+ "fully_constrained": false,
+ "id": 1,
+ "links": [],
+ "name": "Sketch1",
+ "plane": {
+  "origin": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "x_dir": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "y_dir": [
+   0.0,
+   1.0,
+   0.0
+  ]
+ },
+ "points": [
+  {
+   "at": [
+    0.0,
+    0.0
+   ],
+   "fixed": true,
+   "fully_constrained": true,
+   "id": "origin",
+   "link": null,
+   "world": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -30.0,
+    -20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p1",
+   "link": null,
+   "world": [
+    -30.0,
+    -20.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    30.0,
+    -20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p2",
+   "link": null,
+   "world": [
+    30.0,
+    -20.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    30.0,
+    20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p3",
+   "link": null,
+   "world": [
+    30.0,
+    20.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -30.0,
+    20.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p4",
+   "link": null,
+   "world": [
+    -30.0,
+    20.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -25.0,
+    -18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p9",
+   "link": null,
+   "world": [
+    -25.0,
+    -18.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -28.0,
+    -15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p10",
+   "link": null,
+   "world": [
+    -28.0,
+    -15.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -25.0,
+    -15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a1.center",
+   "link": null,
+   "world": [
+    -25.0,
+    -15.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -25.0,
+    18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p11",
+   "link": null,
+   "world": [
+    -25.0,
+    18.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -28.0,
+    15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p12",
+   "link": null,
+   "world": [
+    -28.0,
+    15.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    -25.0,
+    15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a2.center",
+   "link": null,
+   "world": [
+    -25.0,
+    15.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    28.0,
+    15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p13",
+   "link": null,
+   "world": [
+    28.0,
+    15.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    25.0,
+    18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p14",
+   "link": null,
+   "world": [
+    25.0,
+    18.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    25.0,
+    15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a3.center",
+   "link": null,
+   "world": [
+    25.0,
+    15.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    25.0,
+    -18.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p15",
+   "link": null,
+   "world": [
+    25.0,
+    -18.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    28.0,
+    -15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "p16",
+   "link": null,
+   "world": [
+    28.0,
+    -15.0,
+    0.0
+   ]
+  },
+  {
+   "at": [
+    25.0,
+    -15.0
+   ],
+   "fixed": false,
+   "fully_constrained": false,
+   "id": "a4.center",
+   "link": null,
+   "world": [
+    25.0,
+    -15.0,
+    0.0
+   ]
+  }
+ ],
+ "profiles": [
+  {
+   "area_mm2": 391.72566611769184,
+   "centroid_sketch": [
+    -4.474260410149173e-16,
+    0.0
+   ],
+   "curves": [
+    "l1",
+    "l2",
+    "l3",
+    "l4"
+   ],
+   "holes": [
+    [
+     "l5",
+     "a4",
+     "l6",
+     "a3",
+     "l7",
+     "a2",
+     "l8",
+     "a1"
+    ]
+   ],
+   "index": 0
+  },
+  {
+   "area_mm2": 2008.2743338823084,
+   "centroid_sketch": [
+    -7.713052289818092e-16,
+    3.0191764314884274e-16
+   ],
+   "curves": [
+    "l5",
+    "a4",
+    "l6",
+    "a3",
+    "l7",
+    "a2",
+    "l8",
+    "a1"
+   ],
+   "holes": [],
+   "index": 1
+  }
+ ],
+ "status": "solved",
+ "visible": true,
+ "wires": []
+}

@@ -1,0 +1,38 @@
+ev: recording started: full SolidCraft window, ~/tray.sc: hold 3 s
+ev: Browser: double-click Sketch1 (Edit Sketch)
+curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2
+ev: select the copy's top line
+ev: right-click: the menu
+ev: Break Offset Association
+curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints none | links [] | regions [384.0, 2016.0] | dof 6
+ev: after one Break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints none | links [] | regions [384.0, 2016.0] | dof 6
+ev: Sketch > Modify > Fillet
+ev: Radius: 3 mm
+ev: inner corner bottom left
+ev: inner corner top left
+ev: inner corner top right
+ev: inner corner bottom right
+ev: OK
+curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line a1:arc(R3) a2:arc(R3) a3:arc(R3) a4:arc(R3) | offset constraints none | links [] | regions [391.73, 2008.27] | dof 6
+ev: fillet after break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line a1:arc(R3) a2:arc(R3) a3:arc(R3) a4:arc(R3) | offset constraints none | links [] | regions [391.73, 2008.27] | dof 6
+ev: the sketch with four inside R3: hold 4 s
+ev: Finish Sketch
+ev: Model > Extrude; the ring region
+ev: Distance 20 mm
+ev: OK
+ev: Home view
+b-after-extrude volume 7834.6147106794015 bodies 1 timeline ['Sketch1', 'Extrude1']
+ev: Browser: Body1 right-click > Properties
+ev: Properties held 4 s
+ev: Close
+ev: Edit Sketch again (Bodies listed) for Measure
+ev: Browser: double-click Sketch1 (Edit Sketch)
+ev: Inspect > Measure
+ev: Measure: the outside corner (30, 20)
+ev: Measure: the inner arc (top right)
+ev: wall at the corner (Min) as shown in wall.png: hold 4 s
+ev: Finish Sketch
+b-after volume 7834.6147106794015 bodies 1 timeline ['Sketch1', 'Extrude1']
+ev: hold 3 s
+ev: recording stopped
+B done

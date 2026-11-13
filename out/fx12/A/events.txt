@@ -1,0 +1,19 @@
+12:35:22.2  recording started: full SolidCraft window, ~/tray.sc: hold 3 s
+12:35:25.2  Browser: double-click Sketch1 (Edit Sketch)
+12:35:30.7  the sketch with the copy (outline 60 x 40, the 2 mm offset): hold 4 s
+12:35:36.2  Sketch > Modify > Fillet
+12:35:42.6  Radius: 3 mm
+12:35:46.0  click one inner corner (the copy's top right, p7)
+12:35:50.4  fillet copy: full line as shown in refusal.png: hold 4 s
+12:35:56.0  Create Issue... (draft only, not submitted)
+12:36:01.3  report draft: hold 4 s
+12:36:06.5  Close draft
+12:36:10.0  Cancel
+12:36:14.5  after the Fillet: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2
+12:36:14.5  Sketch > Modify > Equal Distance Chamfer
+12:36:22.1  click the same inner corner (p7)
+12:36:25.7  chamfer copy: line as shown in chamfer.png: hold 4 s
+12:36:31.3  Cancel
+12:36:35.5  after: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2
+12:36:35.5  hold 3 s
+12:36:38.5  recording stopped

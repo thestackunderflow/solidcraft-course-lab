@@ -1,0 +1,31 @@
+{"t": 0.525, "event": "recording started: full SolidCraft window, ~/tray-plain.sc (outline 60 x 40 only): hold 3 s"}
+{"t": 3.543, "event": "Browser: double-click Sketch1 (Edit Sketch)"}
+{"t": 9.207, "event": "Sketch > Modify > Fillet"}
+{"t": 13.340, "event": "Radius: 1.5 mm"}
+{"t": 16.939, "event": "outline corner bottom left"}
+{"t": 20.095, "event": "outline corner top left"}
+{"t": 23.178, "event": "outline corner top right"}
+{"t": 26.217, "event": "outline corner bottom right"}
+{"t": 32.870, "event": "OK"}
+{"t": 38.365, "event": "outline rounded 1.5: hold 5 s"}
+{"t": 44.888, "event": "Sketch > Modify > Offset"}
+{"t": 49.012, "event": "the outline's top line (Chain on)"}
+{"t": 52.936, "event": "Distance: 2 mm"}
+{"t": 59.285, "event": "OK"}
+{"t": 64.879, "event": "offset after round 1.5: curves l1:line l2:line l3:line l4:line a1:arc(R1.5) a2:arc(R1.5) a3:arc(R1.5) a4:arc(R1.5) l5:line l6:line l7:line l8:line | offset constraints ['k29'] | links [] | regions [382.07, 2016.0] | dof 2"}
+{"t": 64.894, "event": "the copy: hold 4 s"}
+{"t": 73.450, "event": "Inspect > Measure"}
+{"t": 77.455, "event": "Measure: the inside corner (top right)"}
+{"t": 82.051, "event": "inside corner as shown in measure.png: hold 4 s"}
+{"t": 87.380, "event": "Measure: add the outline's arc (top right)"}
+{"t": 92.073, "event": "wall at the corner as shown in wall.png: hold 4 s"}
+{"t": 98.347, "event": "Finish Sketch"}
+{"t": 106.734, "event": "Model > Extrude; the ring region"}
+{"t": 114.911, "event": "Distance 20 mm"}
+{"t": 121.917, "event": "OK"}
+{"t": 126.919, "event": "Home view"}
+{"t": 131.748, "event": "Browser: Body1 right-click > Properties"}
+{"t": 140.353, "event": "Properties held 4 s"}
+{"t": 145.772, "event": "Close"}
+{"t": 150.262, "event": "hold 3 s"}
+{"t": 153.277, "event": "recording stopped"}

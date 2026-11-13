@@ -1,0 +1,1 @@
+[{"tool": "execute", "arguments": {"command": "sketch.fillet", "params": {"points": ["p7"], "radius": 3}}, "isError": true, "texts": ["invalid parameters for `sketch.fillet`: `l6` is an offset, and its corners follow its source curves: round or cut the source corners before offsetting, or break the offset association first"]}]

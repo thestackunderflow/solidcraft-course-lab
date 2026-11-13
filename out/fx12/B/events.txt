@@ -1,0 +1,32 @@
+12:37:28.1  recording started: full SolidCraft window, ~/tray.sc: hold 3 s
+12:37:31.2  Browser: double-click Sketch1 (Edit Sketch)
+12:37:36.6  select the copy's top line
+12:37:40.1  right-click: the menu
+12:37:43.7  Break Offset Association
+12:37:53.9  after one Break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints none | links [] | regions [384.0, 2016.0] | dof 6
+12:37:53.9  Sketch > Modify > Fillet
+12:37:58.0  Radius: 3 mm
+12:38:01.5  inner corner bottom left
+12:38:04.6  inner corner top left
+12:38:07.6  inner corner top right
+12:38:10.7  inner corner bottom right
+12:38:17.3  OK
+12:38:22.9  fillet after break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line a1:arc(R3) a2:arc(R3) a3:arc(R3) a4:arc(R3) | offset constraints none | links [] | regions [391.73, 2008.27] | dof 6
+12:38:22.9  the sketch with four inside R3: hold 4 s
+12:38:28.5  Finish Sketch
+12:38:37.0  Model > Extrude; the ring region
+12:38:45.0  Distance 20 mm
+12:38:52.1  OK
+12:38:57.1  Home view
+12:39:02.2  Browser: Body1 right-click > Properties
+12:39:10.7  Properties held 4 s
+12:39:16.1  Close
+12:39:20.7  Edit Sketch again (Bodies listed) for Measure
+12:39:20.7  Browser: double-click Sketch1 (Edit Sketch)
+12:39:29.5  Inspect > Measure
+12:39:33.6  Measure: the outside corner (30, 20)
+12:39:37.1  Measure: the inner arc (top right)
+12:39:41.9  wall at the corner (Min) as shown in wall.png: hold 4 s
+12:39:48.3  Finish Sketch
+12:39:54.0  hold 3 s
+12:39:57.0  recording stopped

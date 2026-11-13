@@ -1,0 +1,20 @@
+{"t": 0.524, "event": "recording started: full SolidCraft window, ~/tray.sc: hold 3 s"}
+{"t": 3.544, "event": "Browser: double-click Sketch1 (Edit Sketch)"}
+{"t": 9.086, "event": "select the copy's top line"}
+{"t": 12.785, "event": "right-click: the menu"}
+{"t": 14.912, "event": "Break Offset Association"}
+{"t": 20.418, "event": "Sketch > Modify > Fillet"}
+{"t": 24.420, "event": "Radius: 3 mm"}
+{"t": 27.771, "event": "inner corner bottom left"}
+{"t": 30.852, "event": "inner corner top left"}
+{"t": 33.877, "event": "inner corner top right"}
+{"t": 36.885, "event": "inner corner bottom right"}
+{"t": 39.991, "event": "OK"}
+{"t": 45.503, "event": "fillet after break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line a1:arc(R3) a2:arc(R3) a3:arc(R3) a4:arc(R3) | offset constraints none | links [] | regions [391.73, 2008.27] | dof 6"}
+{"t": 48.699, "event": "Inspect > Measure"}
+{"t": 52.701, "event": "Measure: the outside corner (30, 20)"}
+{"t": 56.074, "event": "Measure: the inner arc (top right)"}
+{"t": 60.620, "event": "wall at the corner (Min) as shown in wall.png: hold 4 s"}
+{"t": 67.150, "event": "Finish Sketch"}
+{"t": 72.310, "event": "hold 3 s"}
+{"t": 75.320, "event": "recording stopped"}

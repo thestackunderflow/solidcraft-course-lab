@@ -1,0 +1,7 @@
+{"t": 0.517, "event": "recording started: SolidCraft window (top) + terminal strip: hold 3 s"}
+{"t": 3.526, "event": "typed: python3 -I D/noai.py |& tee D/reply.txt"}
+{"t": 13.092, "event": "sketch.fillet points [p7] radius 3: refused"}
+{"t": 13.092, "event": "reply: \"invalid parameters for `sketch.fillet`: `l6` is an offset, and its corners follow its source curves: round or cut the source corners before offsetting, or break the offset association first\", isError: true"}
+{"t": 15.160, "event": "reply + window shown: hold 5 s"}
+{"t": 21.552, "event": "after: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2"}
+{"t": 23.562, "event": "recording stopped"}

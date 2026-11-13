@@ -1,0 +1,1 @@
+curves l1:line l2:line l3:line l4:line a1:arc(R5) a2:arc(R5) a3:arc(R5) a4:arc(R5) | offset constraints none | links [] | regions [2378.54] | dof 2

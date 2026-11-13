@@ -1,0 +1,13 @@
+[
+  {
+    "disabled_reason": "no sketch is being edited (Create Sketch or Edit Sketch first)",
+    "enabled": false,
+    "icon": "sketch_fillet",
+    "id": "sketch.fillet",
+    "label": "Fillet",
+    "panel": "MODIFY",
+    "params": "point: corner shared by two curves (\"l1.end\") | points: [corners] (all rounded alike: one radius, the rest equal; a corner is a point reference or {a, b}, the two curves meeting there) | a, b: two lines or arcs meeting at a corner; radius: expr. A corner that dimensions or constraints measure to stays as a virtual sharp corner on both curves' extensions (`virtual_corners`; the moved ones in `moved_to_virtual_corner`). Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete…)",
+    "shortcut": null,
+    "tab": "SKETCH"
+  }
+]

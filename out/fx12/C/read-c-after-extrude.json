@@ -1,0 +1,1153 @@
+{
+ "measure": {
+  "bodies": [
+   {
+    "area_mm2": 8145.8021005034225,
+    "bbox": {
+     "max": [
+      30.0,
+      20.0,
+      20.000000000000014
+     ],
+     "min": [
+      -30.0,
+      -20.000000000000004,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     8.865409777709079e-15,
+     3.641686764488554e-15,
+     9.999999999999998
+    ],
+    "closed": true,
+    "density_g_cm3": 1.29,
+    "edges": 48,
+    "face_types": {
+     "cylinder": 8,
+     "plane": 10
+    },
+    "faces": 18,
+    "kernel": {
+     "edges": 48,
+     "faces": 18,
+     "shells": 1,
+     "vertices": 32
+    },
+    "mass_g": 9.552775455902266,
+    "material": "Default",
+    "name": "Body1",
+    "vertices": 32,
+    "volume_mm3": 7405.252291397104
+   }
+  ],
+  "body_count": 1,
+  "total": {
+   "area_mm2": 8145.8021005034225,
+   "edges": 48,
+   "faces": 18,
+   "mass_g": 9.552775455902266,
+   "open_bodies_skipped": 0,
+   "vertices": 32,
+   "volume_mm3": 7405.252291397104
+  }
+ },
+ "design": {
+  "active_sketch": null,
+  "bodies": [
+   {
+    "area_mm2": 8145.8021005034225,
+    "bbox": {
+     "max": [
+      30.0,
+      20.0,
+      20.000000000000014
+     ],
+     "min": [
+      -30.0,
+      -20.000000000000004,
+      0.0
+     ]
+    },
+    "center_of_mass": [
+     8.865409777709079e-15,
+     3.641686764488554e-15,
+     9.999999999999998
+    ],
+    "closed": true,
+    "edges": 48,
+    "face_types": {
+     "cylinder": 8,
+     "plane": 10
+    },
+    "faces": 18,
+    "kernel": {
+     "edges": 48,
+     "faces": 18,
+     "shells": 1,
+     "vertices": 32
+    },
+    "name": "Body1",
+    "vertices": 32,
+    "visible": true,
+    "volume_mm3": 7405.252291397104
+   }
+  ],
+  "dirty": true,
+  "hidden_origin": [],
+  "marker": 2,
+  "metadata": {},
+  "name": "tray-plain",
+  "params": [
+   {
+    "comment": "",
+    "error": null,
+    "expression": "60 mm",
+    "model": true,
+    "name": "d1",
+    "unit": "mm",
+    "value": 60.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "40 mm",
+    "model": true,
+    "name": "d2",
+    "unit": "mm",
+    "value": 40.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "5 mm",
+    "model": true,
+    "name": "d3",
+    "unit": "mm",
+    "value": 5.0
+   },
+   {
+    "comment": "",
+    "error": null,
+    "expression": "2 mm",
+    "model": true,
+    "name": "d4",
+    "unit": "mm",
+    "value": 2.0
+   }
+  ],
+  "path": null,
+  "redo": 0,
+  "revision": 15,
+  "selection": [],
+  "sketches": [
+   {
+    "constraints": [
+     {
+      "id": "k1",
+      "l": 0,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "id": "k2",
+      "l": 2,
+      "name": "Horizontal",
+      "type": "horizontal"
+     },
+     {
+      "id": "k3",
+      "l": 1,
+      "name": "Vertical",
+      "type": "vertical"
+     },
+     {
+      "id": "k4",
+      "l": 3,
+      "name": "Vertical",
+      "type": "vertical"
+     },
+     {
+      "expression": "60 mm",
+      "id": "k5",
+      "name": "LinearDimension",
+      "p": 1,
+      "param": "d1",
+      "q": 2,
+      "type": "distance",
+      "value": 60.0
+     },
+     {
+      "expression": "40 mm",
+      "id": "k6",
+      "name": "LinearDimension",
+      "p": 2,
+      "param": "d2",
+      "q": 3,
+      "type": "distance",
+      "value": 40.0
+     },
+     {
+      "c": 0,
+      "id": "k7",
+      "name": "Coincident",
+      "p": 1,
+      "type": "point_on_curve"
+     },
+     {
+      "c": 3,
+      "id": "k8",
+      "name": "Coincident",
+      "p": 1,
+      "type": "point_on_curve"
+     },
+     {
+      "a": 0,
+      "b": 4,
+      "id": "k9",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "a": 3,
+      "b": 4,
+      "id": "k10",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "c": 4,
+      "expression": "5 mm",
+      "id": "k11",
+      "name": "RadialDimension",
+      "param": "d3",
+      "type": "radius",
+      "value": 5.0
+     },
+     {
+      "a": 2,
+      "b": 5,
+      "id": "k12",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "a": 3,
+      "b": 5,
+      "id": "k13",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "a": 4,
+      "b": 5,
+      "id": "k14",
+      "name": "Equal",
+      "type": "equal"
+     },
+     {
+      "c": 1,
+      "id": "k15",
+      "name": "Coincident",
+      "p": 3,
+      "type": "point_on_curve"
+     },
+     {
+      "c": 2,
+      "id": "k16",
+      "name": "Coincident",
+      "p": 3,
+      "type": "point_on_curve"
+     },
+     {
+      "a": 1,
+      "b": 6,
+      "id": "k17",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "a": 2,
+      "b": 6,
+      "id": "k18",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "a": 4,
+      "b": 6,
+      "id": "k19",
+      "name": "Equal",
+      "type": "equal"
+     },
+     {
+      "c": 0,
+      "id": "k20",
+      "name": "Coincident",
+      "p": 2,
+      "type": "point_on_curve"
+     },
+     {
+      "c": 1,
+      "id": "k21",
+      "name": "Coincident",
+      "p": 2,
+      "type": "point_on_curve"
+     },
+     {
+      "a": 0,
+      "b": 7,
+      "id": "k22",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "a": 1,
+      "b": 7,
+      "id": "k23",
+      "name": "Tangent",
+      "type": "tangent"
+     },
+     {
+      "a": 4,
+      "b": 7,
+      "id": "k24",
+      "name": "Equal",
+      "type": "equal"
+     },
+     {
+      "a": 2,
+      "b": 8,
+      "id": "k25",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "a": 3,
+      "b": 10,
+      "id": "k26",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "a": 0,
+      "b": 12,
+      "id": "k27",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "a": 1,
+      "b": 14,
+      "id": "k28",
+      "name": "Parallel",
+      "type": "parallel"
+     },
+     {
+      "expression": "2 mm",
+      "id": "k29",
+      "name": "OffsetDimension",
+      "output": "l5",
+      "param": "d4",
+      "reverse": false,
+      "type": "offset_distance",
+      "value": 2.0
+     }
+    ],
+    "curves": [
+     {
+      "construction": false,
+      "end": "p11",
+      "end_at": [
+       25.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l1",
+      "start": "p5",
+      "start_at": [
+       -25.0,
+       -20.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p9",
+      "end_at": [
+       30.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l2",
+      "start": "p12",
+      "start_at": [
+       30.0,
+       -15.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p7",
+      "end_at": [
+       -25.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l3",
+      "start": "p10",
+      "start_at": [
+       25.0,
+       20.0
+      ],
+      "type": "line"
+     },
+     {
+      "construction": false,
+      "end": "p6",
+      "end_at": [
+       -30.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "l4",
+      "start": "p8",
+      "start_at": [
+       -30.0,
+       15.0
+      ],
+      "type": "line"
+     },
+     {
+      "center": "a1.center",
+      "center_at": [
+       -25.0,
+       -15.0
+      ],
+      "construction": false,
+      "end": "p5",
+      "end_at": [
+       -25.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a1",
+      "radius": 5.0,
+      "start": "p6",
+      "start_at": [
+       -30.0,
+       -15.0
+      ],
+      "type": "arc"
+     },
+     {
+      "center": "a2.center",
+      "center_at": [
+       -25.0,
+       15.0
+      ],
+      "construction": false,
+      "end": "p8",
+      "end_at": [
+       -30.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a2",
+      "radius": 5.0,
+      "start": "p7",
+      "start_at": [
+       -25.0,
+       20.0
+      ],
+      "type": "arc"
+     },
+     {
+      "center": "a3.center",
+      "center_at": [
+       25.0,
+       15.0
+      ],
+      "construction": false,
+      "end": "p10",
+      "end_at": [
+       25.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a3",
+      "radius": 5.0,
+      "start": "p9",
+      "start_at": [
+       30.0,
+       15.0
+      ],
+      "type": "arc"
+     },
+     {
+      "center": "a4.center",
+      "center_at": [
+       25.0,
+       -15.0
+      ],
+      "construction": false,
+      "end": "p12",
+      "end_at": [
+       30.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a4",
+      "radius": 5.0,
+      "start": "p11",
+      "start_at": [
+       25.0,
+       -20.0
+      ],
+      "type": "arc"
+     },
+     {
+      "construction": false,
+      "end": "p14",
+      "end_at": [
+       -25.0,
+       18.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l5",
+      "start": "p13",
+      "start_at": [
+       25.0,
+       18.0
+      ],
+      "type": "line"
+     },
+     {
+      "center": "a2.center",
+      "center_at": [
+       -25.0,
+       15.0
+      ],
+      "construction": false,
+      "end": "p15",
+      "end_at": [
+       -28.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a5",
+      "radius": 3.0,
+      "start": "p14",
+      "start_at": [
+       -25.0,
+       18.0
+      ],
+      "type": "arc"
+     },
+     {
+      "construction": false,
+      "end": "p16",
+      "end_at": [
+       -28.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l6",
+      "start": "p15",
+      "start_at": [
+       -28.0,
+       15.0
+      ],
+      "type": "line"
+     },
+     {
+      "center": "a1.center",
+      "center_at": [
+       -25.0,
+       -15.0
+      ],
+      "construction": false,
+      "end": "p17",
+      "end_at": [
+       -25.0,
+       -18.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a6",
+      "radius": 3.0,
+      "start": "p16",
+      "start_at": [
+       -28.0,
+       -15.0
+      ],
+      "type": "arc"
+     },
+     {
+      "construction": false,
+      "end": "p18",
+      "end_at": [
+       25.0,
+       -18.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l7",
+      "start": "p17",
+      "start_at": [
+       -25.0,
+       -18.0
+      ],
+      "type": "line"
+     },
+     {
+      "center": "a4.center",
+      "center_at": [
+       25.0,
+       -15.0
+      ],
+      "construction": false,
+      "end": "p19",
+      "end_at": [
+       28.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a7",
+      "radius": 3.0,
+      "start": "p18",
+      "start_at": [
+       25.0,
+       -18.0
+      ],
+      "type": "arc"
+     },
+     {
+      "construction": false,
+      "end": "p20",
+      "end_at": [
+       28.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": true,
+      "id": "l8",
+      "start": "p19",
+      "start_at": [
+       28.0,
+       -15.0
+      ],
+      "type": "line"
+     },
+     {
+      "center": "a3.center",
+      "center_at": [
+       25.0,
+       15.0
+      ],
+      "construction": false,
+      "end": "p13",
+      "end_at": [
+       25.0,
+       18.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a8",
+      "radius": 3.0,
+      "start": "p20",
+      "start_at": [
+       28.0,
+       15.0
+      ],
+      "type": "arc"
+     }
+    ],
+    "dof": 2,
+    "failing": [],
+    "fully_constrained": false,
+    "id": 1,
+    "links": [],
+    "name": "Sketch1",
+    "plane": {
+     "origin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "x_dir": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "y_dir": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "points": [
+     {
+      "at": [
+       0.0,
+       0.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "origin",
+      "link": null,
+      "world": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -30.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "corner1",
+      "link": null,
+      "world": [
+       -30.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       30.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "corner3",
+      "link": null,
+      "world": [
+       30.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       30.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "corner2",
+      "link": null,
+      "world": [
+       30.0,
+       20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -25.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p5",
+      "link": null,
+      "world": [
+       -25.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -30.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p6",
+      "link": null,
+      "world": [
+       -30.0,
+       -15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -25.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a1.center",
+      "link": null,
+      "world": [
+       -25.0,
+       -15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -25.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p7",
+      "link": null,
+      "world": [
+       -25.0,
+       20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -30.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p8",
+      "link": null,
+      "world": [
+       -30.0,
+       15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -25.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a2.center",
+      "link": null,
+      "world": [
+       -25.0,
+       15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       30.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p9",
+      "link": null,
+      "world": [
+       30.0,
+       15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       25.0,
+       20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p10",
+      "link": null,
+      "world": [
+       25.0,
+       20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       25.0,
+       15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a3.center",
+      "link": null,
+      "world": [
+       25.0,
+       15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       25.0,
+       -20.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p11",
+      "link": null,
+      "world": [
+       25.0,
+       -20.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       30.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "p12",
+      "link": null,
+      "world": [
+       30.0,
+       -15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       25.0,
+       -15.0
+      ],
+      "fixed": false,
+      "fully_constrained": false,
+      "id": "a4.center",
+      "link": null,
+      "world": [
+       25.0,
+       -15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       25.0,
+       18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p13",
+      "link": null,
+      "world": [
+       25.0,
+       18.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -25.0,
+       18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p14",
+      "link": null,
+      "world": [
+       -25.0,
+       18.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -28.0,
+       15.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p15",
+      "link": null,
+      "world": [
+       -28.0,
+       15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -28.0,
+       -15.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p16",
+      "link": null,
+      "world": [
+       -28.0,
+       -15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       -25.0,
+       -18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p17",
+      "link": null,
+      "world": [
+       -25.0,
+       -18.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       25.0,
+       -18.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p18",
+      "link": null,
+      "world": [
+       25.0,
+       -18.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       28.0,
+       -15.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p19",
+      "link": null,
+      "world": [
+       28.0,
+       -15.0,
+       0.0
+      ]
+     },
+     {
+      "at": [
+       28.0,
+       15.0
+      ],
+      "fixed": true,
+      "fully_constrained": true,
+      "id": "p20",
+      "link": null,
+      "world": [
+       28.0,
+       15.0,
+       0.0
+      ]
+     }
+    ],
+    "profiles": [
+     {
+      "area_mm2": 370.26548245743675,
+      "centroid_sketch": [
+       -3.268737572008837e-14,
+       -1.4072850953901219e-16
+      ],
+      "curves": [
+       "l1",
+       "a4",
+       "l2",
+       "a3",
+       "l3",
+       "a2",
+       "l4",
+       "a1"
+      ],
+      "holes": [
+       [
+        "l5",
+        "a5",
+        "l6",
+        "a6",
+        "l7",
+        "a7",
+        "l8",
+        "a8"
+       ]
+      ],
+      "index": 0
+     },
+     {
+      "area_mm2": 2008.2743338823084,
+      "centroid_sketch": [
+       1.2949436413180835e-15,
+       -6.415749916912908e-16
+      ],
+      "curves": [
+       "l5",
+       "a5",
+       "l6",
+       "a6",
+       "l7",
+       "a7",
+       "l8",
+       "a8"
+      ],
+      "holes": [],
+      "index": 1
+     }
+    ],
+    "status": "solved",
+    "visible": false,
+    "wires": []
+   }
+  ],
+  "timeline": [
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 1,
+    "ms": 0.570934,
+    "name": "Sketch1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "Sketch",
+    "warning": null
+   },
+   {
+    "boolean_diagnostics": {
+     "events": [],
+     "truncated": false
+    },
+    "error": null,
+    "id": 2,
+    "ms": 2.021671,
+    "name": "Extrude1",
+    "rolled_back": false,
+    "suppressed": false,
+    "type": "ExtrudeFeature",
+    "warning": null
+   }
+  ],
+  "undo": 0,
+  "units": "mm"
+ }
+}

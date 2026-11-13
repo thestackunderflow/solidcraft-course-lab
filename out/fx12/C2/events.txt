@@ -1,0 +1,31 @@
+12:43:32.8  recording started: full SolidCraft window, ~/tray-plain.sc (outline 60 x 40 only): hold 3 s
+12:43:35.8  Browser: double-click Sketch1 (Edit Sketch)
+12:43:41.5  Sketch > Modify > Fillet
+12:43:45.6  Radius: 1.5 mm
+12:43:49.2  outline corner bottom left
+12:43:52.4  outline corner top left
+12:43:55.5  outline corner top right
+12:43:58.5  outline corner bottom right
+12:44:05.2  OK
+12:44:10.6  outline rounded 1.5: hold 5 s
+12:44:17.2  Sketch > Modify > Offset
+12:44:21.3  the outline's top line (Chain on)
+12:44:25.2  Distance: 2 mm
+12:44:31.6  OK
+12:44:37.2  offset after round 1.5: curves l1:line l2:line l3:line l4:line a1:arc(R1.5) a2:arc(R1.5) a3:arc(R1.5) a4:arc(R1.5) l5:line l6:line l7:line l8:line | offset constraints ['k29'] | links [] | regions [382.07, 2016.0] | dof 2
+12:44:37.2  the copy: hold 4 s
+12:44:45.7  Inspect > Measure
+12:44:49.7  Measure: the inside corner (top right)
+12:44:54.3  inside corner as shown in measure.png: hold 4 s
+12:44:59.7  Measure: add the outline's arc (top right)
+12:45:04.3  wall at the corner as shown in wall.png: hold 4 s
+12:45:10.6  Finish Sketch
+12:45:19.0  Model > Extrude; the ring region
+12:45:27.2  Distance 20 mm
+12:45:34.2  OK
+12:45:39.2  Home view
+12:45:44.0  Browser: Body1 right-click > Properties
+12:45:52.6  Properties held 4 s
+12:45:58.1  Close
+12:46:02.5  hold 3 s
+12:46:05.6  recording stopped

@@ -1,0 +1,7 @@
+ev: recording started: SolidCraft window (top) + terminal strip: hold 3 s
+ev: typed: python3 -I D/noai.py |& tee D/reply.txt
+ev: reply + window shown: hold 5 s
+curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2
+ev: after: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2
+ev: recording stopped
+D done

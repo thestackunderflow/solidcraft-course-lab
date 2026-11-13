@@ -1,0 +1,20 @@
+12:47:55.4  recording started: full SolidCraft window, ~/tray.sc: hold 3 s
+12:47:58.4  Browser: double-click Sketch1 (Edit Sketch)
+12:48:03.9  select the copy's top line
+12:48:07.6  right-click: the menu
+12:48:09.8  Break Offset Association
+12:48:15.3  Sketch > Modify > Fillet
+12:48:19.3  Radius: 3 mm
+12:48:22.6  inner corner bottom left
+12:48:25.7  inner corner top left
+12:48:28.7  inner corner top right
+12:48:31.7  inner corner bottom right
+12:48:34.8  OK
+12:48:40.3  fillet after break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line a1:arc(R3) a2:arc(R3) a3:arc(R3) a4:arc(R3) | offset constraints none | links [] | regions [391.73, 2008.27] | dof 6
+12:48:43.6  Inspect > Measure
+12:48:47.6  Measure: the outside corner (30, 20)
+12:48:50.9  Measure: the inner arc (top right)
+12:48:55.5  wall at the corner (Min) as shown in wall.png: hold 4 s
+12:49:02.0  Finish Sketch
+12:49:07.2  hold 3 s
+12:49:10.2  recording stopped

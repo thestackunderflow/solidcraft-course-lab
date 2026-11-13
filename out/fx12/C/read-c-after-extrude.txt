@@ -1,0 +1,1 @@
+c-after-extrude volume 7405.252291397104 bodies 1 timeline ['Sketch1', 'Extrude1']

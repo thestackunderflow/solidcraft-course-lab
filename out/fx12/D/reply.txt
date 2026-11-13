@@ -1,0 +1,10 @@
+-> open {"path": "/root/tray.sc"}
+<- ok
+   {   "errors": 0,   "features": 1,   "name": "tray",   "path": "/root/tray.sc" }
+-> execute {"command": "sketch.edit", "params": {"sketch": "Sketch1"}, "verbose": false}
+<- ok
+   {   "name": "Sketch1",   "sketch": 1 }
+-> execute {"command": "sketch.fillet", "params": {"points": ["p7"], "radius": 3}, "verbose": false}
+<- isError: true
+   invalid parameters for `sketch.fillet`: `l6` is an offset, and its corners follow its source curves: round or cut the source corners before
+   offsetting, or break the offset association first

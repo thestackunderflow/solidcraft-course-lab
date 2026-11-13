@@ -1,0 +1,35 @@
+ev: recording started: full SolidCraft window, ~/tray-plain.sc (outline 60 x 40 only): hold 3 s
+ev: Browser: double-click Sketch1 (Edit Sketch)
+ev: Sketch > Modify > Fillet
+ev: Radius: 1.5 mm
+ev: outline corner bottom left
+ev: outline corner top left
+ev: outline corner top right
+ev: outline corner bottom right
+ev: OK
+curves l1:line l2:line l3:line l4:line a1:arc(R1.5) a2:arc(R1.5) a3:arc(R1.5) a4:arc(R1.5) | offset constraints none | links [] | regions [2398.07] | dof 2
+ev: outline rounded 1.5: hold 5 s
+ev: Sketch > Modify > Offset
+ev: the outline's top line (Chain on)
+ev: Distance: 2 mm
+ev: OK
+curves l1:line l2:line l3:line l4:line a1:arc(R1.5) a2:arc(R1.5) a3:arc(R1.5) a4:arc(R1.5) l5:line l6:line l7:line l8:line | offset constraints ['k29'] | links [] | regions [382.07, 2016.0] | dof 2
+ev: offset after round 1.5: curves l1:line l2:line l3:line l4:line a1:arc(R1.5) a2:arc(R1.5) a3:arc(R1.5) a4:arc(R1.5) l5:line l6:line l7:line l8:line | offset constraints ['k29'] | links [] | regions [382.07, 2016.0] | dof 2
+ev: the copy: hold 4 s
+ev: Inspect > Measure
+ev: Measure: the inside corner (top right)
+ev: inside corner as shown in measure.png: hold 4 s
+ev: Measure: add the outline's arc (top right)
+ev: wall at the corner as shown in wall.png: hold 4 s
+ev: Finish Sketch
+ev: Model > Extrude; the ring region
+ev: Distance 20 mm
+ev: OK
+ev: Home view
+c-after-extrude volume 7641.3463020771305 bodies 1 timeline ['Sketch1', 'Extrude1']
+ev: Browser: Body1 right-click > Properties
+ev: Properties held 4 s
+ev: Close
+ev: hold 3 s
+ev: recording stopped
+C2 done

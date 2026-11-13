@@ -1,0 +1,19 @@
+{"t": 0.520, "event": "recording started: full SolidCraft window, ~/tray.sc: hold 3 s"}
+{"t": 3.537, "event": "Browser: double-click Sketch1 (Edit Sketch)"}
+{"t": 9.025, "event": "the sketch with the copy (outline 60 x 40, the 2 mm offset): hold 4 s"}
+{"t": 14.505, "event": "Sketch > Modify > Fillet"}
+{"t": 20.902, "event": "Radius: 3 mm"}
+{"t": 24.343, "event": "click one inner corner (the copy's top right, p7)"}
+{"t": 28.720, "event": "fillet copy: full line as shown in refusal.png: hold 4 s"}
+{"t": 34.324, "event": "Create Issue... (draft only, not submitted)"}
+{"t": 39.574, "event": "report draft: hold 4 s"}
+{"t": 44.869, "event": "Close draft"}
+{"t": 48.285, "event": "Cancel"}
+{"t": 52.799, "event": "after the Fillet: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2"}
+{"t": 52.806, "event": "Sketch > Modify > Equal Distance Chamfer"}
+{"t": 60.370, "event": "click the same inner corner (p7)"}
+{"t": 64.001, "event": "chamfer copy: line as shown in chamfer.png: hold 4 s"}
+{"t": 69.581, "event": "Cancel"}
+{"t": 73.782, "event": "after: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2"}
+{"t": 73.794, "event": "hold 3 s"}
+{"t": 76.808, "event": "recording stopped"}

@@ -1,0 +1,7 @@
+12:46:35.6  recording started: SolidCraft window (top) + terminal strip: hold 3 s
+12:46:38.6  typed: python3 -I D/noai.py |& tee D/reply.txt
+12:46:48.2  sketch.fillet points [p7] radius 3: refused
+12:46:48.2  reply: "invalid parameters for `sketch.fillet`: `l6` is an offset, and its corners follow its source curves: round or cut the source corners before offsetting, or break the offset association first", isError: true
+12:46:50.2  reply + window shown: hold 5 s
+12:46:56.6  after: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints ['k11'] | links [] | regions [384.0, 2016.0] | dof 2
+12:46:58.6  recording stopped

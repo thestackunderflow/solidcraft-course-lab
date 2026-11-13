@@ -1,0 +1,2 @@
+outline l1 l2 l3 l4 (p1 p2 p3 p4 corners at (-30,-20) (30,-20) (30,20) (-30,20))
+offset copy l5 l6 l7 l8; points p5 p6 p7 p8; sides [{"curves": ["l5", "l6", "l7", "l8"], "distance": 2.0, "param": "d3"}]

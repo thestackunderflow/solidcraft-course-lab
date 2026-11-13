@@ -1,0 +1,32 @@
+{"t": 0.524, "event": "recording started: full SolidCraft window, ~/tray.sc: hold 3 s"}
+{"t": 3.547, "event": "Browser: double-click Sketch1 (Edit Sketch)"}
+{"t": 9.022, "event": "select the copy's top line"}
+{"t": 12.433, "event": "right-click: the menu"}
+{"t": 16.070, "event": "Break Offset Association"}
+{"t": 26.311, "event": "after one Break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line | offset constraints none | links [] | regions [384.0, 2016.0] | dof 6"}
+{"t": 26.331, "event": "Sketch > Modify > Fillet"}
+{"t": 30.423, "event": "Radius: 3 mm"}
+{"t": 33.837, "event": "inner corner bottom left"}
+{"t": 36.977, "event": "inner corner top left"}
+{"t": 40.027, "event": "inner corner top right"}
+{"t": 43.090, "event": "inner corner bottom right"}
+{"t": 49.715, "event": "OK"}
+{"t": 55.286, "event": "fillet after break: curves l1:line l2:line l3:line l4:line l5:line l6:line l7:line l8:line a1:arc(R3) a2:arc(R3) a3:arc(R3) a4:arc(R3) | offset constraints none | links [] | regions [391.73, 2008.27] | dof 6"}
+{"t": 55.303, "event": "the sketch with four inside R3: hold 4 s"}
+{"t": 60.850, "event": "Finish Sketch"}
+{"t": 69.375, "event": "Model > Extrude; the ring region"}
+{"t": 77.410, "event": "Distance 20 mm"}
+{"t": 84.534, "event": "OK"}
+{"t": 89.526, "event": "Home view"}
+{"t": 94.590, "event": "Browser: Body1 right-click > Properties"}
+{"t": 103.123, "event": "Properties held 4 s"}
+{"t": 108.510, "event": "Close"}
+{"t": 113.048, "event": "Edit Sketch again (Bodies listed) for Measure"}
+{"t": 113.059, "event": "Browser: double-click Sketch1 (Edit Sketch)"}
+{"t": 121.912, "event": "Inspect > Measure"}
+{"t": 126.001, "event": "Measure: the outside corner (30, 20)"}
+{"t": 129.461, "event": "Measure: the inner arc (top right)"}
+{"t": 134.288, "event": "wall at the corner (Min) as shown in wall.png: hold 4 s"}
+{"t": 140.695, "event": "Finish Sketch"}
+{"t": 146.405, "event": "hold 3 s"}
+{"t": 149.427, "event": "recording stopped"}

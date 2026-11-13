@@ -1,0 +1,197 @@
+open {
+  "errors": 0,
+  "features": 1,
+  "name": "tray-plain",
+  "path": "/root/tray-plain.sc"
+}
+-> sketch.edit {"sketch": "Sketch1"}
+<- isError False: {
+  "name": "Sketch1",
+  "sketch": 1
+}
+-> sketch.fillet {"points": ["p1", "p2", "p3", "p4"], "radius": 5}
+<- isError False: {
+  "constraints": [
+    "k9",
+    "k10",
+    "k11",
+    "k14",
+    "k15",
+    "k16",
+    "k19",
+    "k20",
+    "k21",
+    "k22",
+    "k23",
+    "k24"
+  ],
+  "created": {
+    "constraints": [
+      "k7",
+      "k8",
+      "k9",
+      "k10",
+      "k12",
+      "k13",
+      "k14",
+      "k15",
+      "k16",
+      "k17",
+      "k18",
+      "k19",
+      "k20",
+      "k21",
+      "k22",
+      "k23",
+      "k24"
+    ],
+    "curves": [
+      "a1",
+      "a2",
+      "a3",
+      "a4"
+    ],
+    "dimensions": [
+      "k11"
+    ],
+    "points": [
+      "corner1",
+      "corner2",
+      "corner3",
+      "p
+-> sketch.offset {"curves": ["l1"], "distance": 2, "side": [0, 0]}
+<- isError False: {
+  "association": "o1",
+  "constraints": [
+    "k25",
+    "k26",
+    "k27",
+    "k28",
+    "k29"
+  ],
+  "created": {
+    "constraints": [
+      "k25",
+      "k26",
+      "k27",
+      "k28"
+    ],
+    "curves": [
+      "l5",
+      "a5",
+      "l6",
+      "a6",
+      "l7",
+      "a7",
+      "l8",
+      "a8"
+    ],
+    "dimensions": [
+      "k29"
+    ],
+    "points": [
+      "p13",
+      "p14",
+      "p15",
+      "p16",
+      "p17",
+      "p18",
+      "p19",
+      "p20"
+    ]
+  },
+  "param": "d4",
+  "sides": [
+    {
+      "association": "o1",
+      "curves": [
+        "l5",
+        "a5",
+       
+-> sketch.inspect {}
+<- isError False: {
+  "constraints": [
+    {
+      "id": "k1",
+      "l": 0,
+      "name": "Horizontal",
+      "type": "horizontal"
+    },
+    {
+      "id": "k2",
+      "l": 2,
+      "name": "Horizontal",
+      "type": "horizontal"
+    },
+    {
+      "id": "k3",
+      "l": 1,
+      "name": "Vertical",
+      "type": "vertical"
+    },
+    {
+      "id": "k4",
+      "l": 3,
+      "name": "Vertical",
+      "type": "vertical"
+    },
+    {
+      "expression": "60 mm",
+      "id": "k5",
+      "name": "LinearDimension",
+      "p": 1,
+      "param": "d1",
+      "q": 2,
+      "type": "distance",
+      "value": 60.0
+    },
+SUMMARY before: curves [('l1', 'line', None), ('l2', 'line', None), ('l3', 'line', None), ('l4', 'line', None), ('a1', 'arc', 5.0), ('a2', 'arc', 5.0), ('a3', 'arc', 5.0), ('a4', 'arc', 5.0), ('l5', 'line', None), ('a5', 'arc', 3.0), ('l6', 'line', None), ('a6', 'arc', 3.0), ('l7', 'line', None), ('a7', 'arc', 3.0), ('l8', 'line', None), ('a8', 'arc', 3.0)] | offset constraints ['k29'] | regions [370.27, 2008.27]
+-> set_parameter d1 = 70 mm
+<- isError False {
+  "display_value": 70.0,
+  "errors": [],
+  "expression": "70 mm",
+  "name": "d1",
+  "recomputed": 1,
+  "restored": 0,
+  "value": 70.0
+}
+-> sketch.inspect {}
+<- isError False: {
+  "constraints": [
+    {
+      "id": "k1",
+      "l": 0,
+      "name": "Horizontal",
+      "type": "horizontal"
+    },
+    {
+      "id": "k2",
+      "l": 2,
+      "name": "Horizontal",
+      "type": "horizontal"
+    },
+    {
+      "id": "k3",
+      "l": 1,
+      "name": "Vertical",
+      "type": "vertical"
+    },
+    {
+      "id": "k4",
+      "l": 3,
+      "name": "Vertical",
+      "type": "vertical"
+    },
+    {
+      "expression": "70 mm",
+      "id": "k5",
+      "name": "LinearDimension",
+      "p": 1,
+      "param": "d1",
+      "q": 2,
+      "type": "distance",
+      "value": 70.0
+    },
+SUMMARY after: curves [('l1', 'line', None), ('l2', 'line', None), ('l3', 'line', None), ('l4', 'line', None), ('a1', 'arc', 5.0), ('a2', 'arc', 5.0), ('a3', 'arc', 5.0), ('a4', 'arc', 5.0), ('l5', 'line', None), ('a5', 'arc', 3.0), ('l6', 'line', None), ('a6', 'arc', 3.0), ('l7', 'line', None), ('a7', 'arc', 3.0), ('l8', 'line', None), ('a8', 'arc', 3.0)] | offset constraints ['k29'] | regions [410.27, 2368.27]
+C14 done

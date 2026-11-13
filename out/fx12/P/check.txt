@@ -1,0 +1,18 @@
+tray: isError None; {"completed": 5, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "poi
+tray-made: curves [["l1", "line", [-30.0, -20.0], [30.0, -20.0]], ["l2", "line", [30.0, -20.0], [30.0, 20.0]], ["l3", "line", [30.0, 20.0], [-30.0, 20.0]], ["l4", "line", [-30.0, 20.0], [-30.0, -20.0]], ["l5", "line", [-28.0, -18.0], [28.0, -18.0]], ["l6", "line", [28.0, -18.0], [28.0, 18.0]], ["l7", "line", [28.0, 18.0], [-28.0, 18.0]], ["l8", "line", [-28.0, 18.0], [-28.0, -18.0]]]; region areas [384.0, 2016.0]; links []
+save tray.sc: isError None; {"bytes": 1099, "name": "tray", "path": "/root/tray.sc"}
+reopen tray.sc: isError None
+tray-reopened: curves [["l1", "line", [-30.0, -20.0], [30.0, -20.0]], ["l2", "line", [30.0, -20.0], [30.0, 20.0]], ["l3", "line", [30.0, 20.0], [-30.0, 20.0]], ["l4", "line", [-30.0, 20.0], [-30.0, -20.0]], ["l5", "line", [-28.0, -18.0], [28.0, -18.0]], ["l6", "line", [28.0, -18.0], [28.0, 18.0]], ["l7", "line", [28.0, 18.0], [-28.0, 18.0]], ["l8", "line", [-28.0, 18.0], [-28.0, -18.0]]]; region areas [384.0, 2016.0]; links []
+CHECK tray: regions [384.0, 2016.0] expected [384.0, 2016.0], ids kept ['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'l7', 'l8'] -> OK
+tray-plain: isError None; {"completed": 4, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "poi
+tray-plain-made: curves [["l1", "line", [-30.0, -20.0], [30.0, -20.0]], ["l2", "line", [30.0, -20.0], [30.0, 20.0]], ["l3", "line", [30.0, 20.0], [-30.0, 20.0]], ["l4", "line", [-30.0, 20.0], [-30.0, -20.0]]]; region areas [2400.0]; links []
+save tray-plain.sc: isError None; {"bytes": 820, "name": "tray-plain", "path": "/root/tray-plain.sc"}
+reopen tray-plain.sc: isError None
+tray-plain-reopened: curves [["l1", "line", [-30.0, -20.0], [30.0, -20.0]], ["l2", "line", [30.0, -20.0], [30.0, 20.0]], ["l3", "line", [30.0, 20.0], [-30.0, 20.0]], ["l4", "line", [-30.0, 20.0], [-30.0, -20.0]]]; region areas [2400.0]; links []
+CHECK tray-plain: regions [2400.0] expected [2400.0], ids kept ['l1', 'l2', 'l3', 'l4'] -> OK
+box: isError None; {"completed": 4, "ok": true, "results": [{"attachment": "fixed", "created": {"constraints": [], "curves": [], "dimensions": [], "points": []}, "name": "Sketch1", "projected": null, "sketch": 1}, {"corners": {"bottom_left": "p1", "bottom_right": "p2", "top_left": "p4", "top_right": "p3"}, "created": {"constraints": ["k1", "k2", "k3", "k4"], "curves": ["l1", "l2", "l3", "l4"], "dimensions": [], "poi
+box-made: curves [["l1", "line", [-25.0, -15.0], [25.0, -15.0]], ["l2", "line", [25.0, -15.0], [25.0, 15.0]], ["l3", "line", [25.0, 15.0], [-25.0, 15.0]], ["l4", "line", [-25.0, 15.0], [-25.0, -15.0]]]; region areas [1500.0]; links []
+save box.sc: isError None; {"bytes": 816, "name": "box", "path": "/root/box.sc"}
+reopen box.sc: isError None
+box-reopened: curves [["l1", "line", [-25.0, -15.0], [25.0, -15.0]], ["l2", "line", [25.0, -15.0], [25.0, 15.0]], ["l3", "line", [25.0, 15.0], [-25.0, 15.0]], ["l4", "line", [-25.0, 15.0], [-25.0, -15.0]]]; region areas [1500.0]; links []
+CHECK box: regions [1500.0] expected [1500.0], ids kept ['l1', 'l2', 'l3', 'l4'] -> OK
